@@ -401,8 +401,14 @@ st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 st.title("🔥 DEV'S ALLIANCE – Sistema de Rendimiento")
 st.write("Análisis de actividad, daño, puntos y consistencia")
+st.warning(
+    "📢 NOTA IMPORTANTE:\n\n"
+    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
+    "daño, puntos y consistencia.\n"
+    "Los rangos se actualizan periódicamente y sirven como referencia interna "
+    "para la gestión de la alianza."
+)
 
-print("Si estás en Mobile, ver preferiblemente horizontal")
 
 # Filtro
 estado_filtrado = st.multiselect(
