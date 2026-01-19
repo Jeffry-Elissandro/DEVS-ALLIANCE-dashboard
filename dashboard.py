@@ -441,6 +441,7 @@ fig = px.bar(
     x="Score",
     y="Nombre",
     color="Estado",
+    orientation="h",
     color_discrete_map=color_map,
     text="Score",
     hover_data={
