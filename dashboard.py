@@ -418,8 +418,6 @@ if st.session_state.mostrar_nota:
 
 st.write("Análisis de actividad, daño, puntos y consistencia")
 
-st.caption("👉 Desliza horizontalmente para ver todos los miembros")
-
 
 # Filtro
 estado_filtrado = st.multiselect(
@@ -461,6 +459,9 @@ fig = px.bar(
     width=ancho_grafica
 )
 
+st.info("📱 En móviles, desliza horizontalmente la gráfica para ver todos los miembros")
+
+
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
 
 fig.update_layout(
@@ -472,6 +473,22 @@ fig.update_layout(
         tickfont=dict(size=12),
         automargin=True
     )
+)
+
+st.markdown(
+    """
+    <div style="overflow-x: auto; width: 100%;">
+    """,
+    unsafe_allow_html=True
+)
+
+st.plotly_chart(fig, use_container_width=False)
+
+st.markdown(
+    """
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
 
