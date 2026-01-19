@@ -385,7 +385,7 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 # Filtro
 estado_filtrado = st.multiselect(
     "Filtrar por estado:",
-    ["TOP", "Elite" "Sólido", "Aceptable", "Ineficiente"],
+    ["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"],
     default=["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"]
 )
 
