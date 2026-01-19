@@ -438,10 +438,9 @@ ancho_grafica = max(1200, len(df_filtrado) * 120)
 # ============================
 fig = px.bar(
     df_filtrado,
-    x="Score",
-    y="Nombre",
+    x="Nombre",
+    y="Score",
     color="Estado",
-    orientation="h",
     color_discrete_map=color_map,
     text="Score",
     hover_data={
