@@ -5,7 +5,6 @@ import streamlit as st
 if "mostrar_nota" not in st.session_state:
     st.session_state.mostrar_nota = True
 
-
 # ============================
 # CONFIGURACIÓN
 # ============================
@@ -406,7 +405,7 @@ st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 st.title("🔥 DEV'S ALLIANCE – Sistema de Rendimiento")
 if st.session_state.mostrar_nota:
     st.warning(
-       "📢 NOTA IMPORTANTE:\n\n"
+        "📢 NOTA IMPORTANTE:\n\n"
     "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
@@ -452,7 +451,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros"
+    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026"
 )
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
