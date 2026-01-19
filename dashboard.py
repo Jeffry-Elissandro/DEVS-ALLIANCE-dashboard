@@ -407,8 +407,8 @@ st.warning(
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
     "para la gestión de la alianza. \n"
-    "Si estas en Mobile hazlo horizontal y puedes resetear con el botón a la derecha "
-    "- CHESS"
+    "Si estas en Mobile miralo horizontal. Además puedes resetear con el botón a la derecha "
+    "o bien, descargar el PNG para más comodidad - CHESS"
 )
 
 
