@@ -402,11 +402,10 @@ st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 st.title("🔥 DEV'S ALLIANCE – Sistema de Rendimiento")
 st.write("Análisis de actividad, daño, puntos y consistencia")
 
+print("Si estás en Mobile, ver preferiblemente horizontal")
+
 # Filtro
 estado_filtrado = st.multiselect(
-    "Mobile = Horizontal" \
-    "PC = Normal" \
-    "Si se atora, toca Reset a la derecha" \
     "Filtrar por estado:",
     orden_estados,
     default=orden_estados
