@@ -418,6 +418,8 @@ if st.session_state.mostrar_nota:
 
 st.write("Análisis de actividad, daño, puntos y consistencia")
 
+st.caption("👉 Desliza horizontalmente para ver todos los miembros")
+
 
 # Filtro
 estado_filtrado = st.multiselect(
@@ -451,19 +453,25 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026"
+    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026",
+    width=ancho_grafica
 )
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
 
 fig.update_layout(
     xaxis_tickangle=-45,
-    yaxis_title="Rendimiento (%)",
-    yaxis_range=[0, 100],
-    height=600
+    yaxis_title="Rendimiento %",
+    height=600,
+    margin=dict(l=40, r=40, t=80, b=150),
+    xaxis=dict(
+        tickfont=dict(size=12),
+        automargin=True
+    )
 )
 
-st.plotly_chart(fig, use_container_width=True)
+
+st.plotly_chart(fig, use_container_width=False)
 
 
 # ============================
