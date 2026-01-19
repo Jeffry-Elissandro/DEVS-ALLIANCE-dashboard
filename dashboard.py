@@ -2,6 +2,10 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+if "mostrar_nota" not in st.session_state:
+    st.session_state.mostrar_nota = True
+
+
 # ============================
 # CONFIGURACIÓN
 # ============================
@@ -400,16 +404,20 @@ color_map = {
 st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 st.title("🔥 DEV'S ALLIANCE – Sistema de Rendimiento")
-st.write("Análisis de actividad, daño, puntos y consistencia")
-st.warning(
-    "📢 NOTA IMPORTANTE:\n\n"
+if st.session_state.mostrar_nota:
+    st.warning(
+       "📢 NOTA IMPORTANTE:\n\n"
     "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
     "para la gestión de la alianza. \n"
     "Si estas en Mobile miralo horizontal. Además puedes resetear con el botón a la derecha "
     "o bien, descargar el PNG para más comodidad - CHESS"
-)
+    )
+    if st.button("Entendido"):
+        st.session_state.mostrar_nota = False
+
+st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 # Filtro
@@ -444,7 +452,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026"
+    title="Rendimiento de los miembros"
 )
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
