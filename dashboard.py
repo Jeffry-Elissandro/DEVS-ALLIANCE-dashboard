@@ -372,7 +372,27 @@ def clasificar(score):
     else:
         return "Ineficiente"
 
+
 df["Estado"] = df["Score"].apply(clasificar)
+
+orden_estados = ["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"]
+
+df["Estado"] = pd.Categorical(
+    df["Estado"],
+    categories=orden_estados,
+    ordered=True
+)
+
+df = df.sort_values(by=["Estado", "Score"], ascending=[True, False])
+
+color_map = {
+    "TOP": "#ffff26",          # amarillo
+    "Elite": "#1349dd",        # azul
+    "Sólido": "#0ff10f",       # verde
+    "Aceptable": "#e67e22",    # naranja
+    "Ineficiente": "#e74c3c"   # rojo oscuro
+}
+
 
 # ============================
 # INTERFAZ
@@ -385,11 +405,12 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 # Filtro
 estado_filtrado = st.multiselect(
     "Filtrar por estado:",
-    ["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"],
-    default=["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"]
+    orden_estados,
+    default=orden_estados
 )
 
 df_filtrado = df[df["Estado"].isin(estado_filtrado)]
+
 
 # ============================
 # GRÁFICA INTERACTIVA
@@ -399,18 +420,34 @@ fig = px.bar(
     x="Nombre",
     y="Score",
     color="Estado",
+    color_discrete_map=color_map,
     text="Score",
-    hover_data=["Rango", "ID", "Poder", "Nivel", "Actividad", "Daño", "Puntos", "Consistencia"],
+    hover_data={
+        "Estado": True,
+        "Rango": True,
+        "ID": True,
+        "Nivel": True,
+        "Poder": True,
+        "Actividad": True,
+        "Daño": True,
+        "Puntos": True,
+        "Consistencia": True,
+        "Score": False
+    },
     title="Rendimiento de los miembros"
 )
 
+fig.update_traces(texttemplate="%{text}%", textposition="outside")
+
 fig.update_layout(
     xaxis_tickangle=-45,
-    yaxis_title="Rendimiento %",
+    yaxis_title="Rendimiento (%)",
+    yaxis_range=[0, 100],
     height=600
 )
 
 st.plotly_chart(fig, use_container_width=True)
+
 
 # ============================
 # TABLA DE DATOS
