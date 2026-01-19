@@ -509,7 +509,31 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.plotly_chart(fig, use_container_width=False, key="grafica_rendimiento")
+# ============================
+# CONFIGURACIÓN DE PLOTLY
+# ============================
+plotly_config = {
+    "scrollZoom": False,        # Desactiva zoom con scroll/touch
+    "displayModeBar": True,     # Muestra barra de herramientas
+    "displaylogo": False,       # Quita logo de Plotly
+    "modeBarButtonsToRemove": [
+        "zoom2d",
+        "select2d",
+        "lasso2d",
+        "zoomIn2d",
+        "zoomOut2d",
+        "autoScale2d",
+        "resetScale2d"
+    ]
+}
+
+st.plotly_chart(
+    fig,
+    use_container_width=False,
+    key="grafica_rendimiento",
+    config=plotly_config
+)
+
 
 
 st.markdown(
