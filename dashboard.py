@@ -33,9 +33,9 @@ data = [
         "Poder": 640342,
         "Nivel": 76,
         "Actividad": 5,
-        "Daño": 1,
-        "Puntos": 1,
-        "Consistencia": 1
+        "Daño": 6,
+        "Puntos": 8,
+        "Consistencia": 7
     },
     {
         "Nombre": "Arcabius",
