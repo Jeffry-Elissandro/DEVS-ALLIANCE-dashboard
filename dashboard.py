@@ -54,7 +54,7 @@ data = [
         "ID": "1ak1-fm1pl",
         "Poder": 923148,
         "Nivel": 71,
-        "Actividad": 10,
+        "Actividad": 8,
         "Daño": 4,
         "Puntos": 10,
         "Consistencia": 7
@@ -87,7 +87,7 @@ data = [
         "ID": "3r1v-i03ks",
         "Poder": 946197,
         "Nivel": 70,
-        "Actividad": 10,
+        "Actividad": 8,
         "Daño": 7,
         "Puntos": 10,
         "Consistencia": 8
@@ -120,7 +120,7 @@ data = [
         "ID": "3pni-nyf54",
         "Poder": 578309,
         "Nivel": 74,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 4,
         "Puntos": 10,
         "Consistencia": 6
@@ -131,7 +131,7 @@ data = [
         "ID": "4jos-r67gh",
         "Poder": 636274,
         "Nivel": 76,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 4,
         "Puntos": 10,
         "Consistencia": 7
@@ -142,7 +142,7 @@ data = [
         "ID": "4yo3-cioo1",
         "Poder": 797375,
         "Nivel": 74,
-        "Actividad": 10,
+        "Actividad": 7,
         "Daño": 5,
         "Puntos": 10,
         "Consistencia": 5
@@ -164,7 +164,7 @@ data = [
         "ID": "01e6-cjcu2",
         "Poder": 409685,
         "Nivel": 67,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 3,
         "Puntos": 10,
         "Consistencia": 5
@@ -175,7 +175,7 @@ data = [
         "ID": "1d3k-mznw3",
         "Poder": 448386,
         "Nivel": 72,
-        "Actividad": 10,
+        "Actividad": 9,
         "Daño": 9,
         "Puntos": 10,
         "Consistencia": 9
@@ -186,7 +186,7 @@ data = [
         "ID": "12u8-9x3w1",
         "Poder": 2263655,
         "Nivel": 78,
-        "Actividad": 10,
+        "Actividad": 9,
         "Daño": 10,
         "Puntos": 9,
         "Consistencia": 9
@@ -208,7 +208,7 @@ data = [
         "ID": "4ekl-amdrf",
         "Poder": 868769,
         "Nivel": 74,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 4,
         "Puntos": 9,
         "Consistencia": 7
@@ -219,7 +219,7 @@ data = [
         "ID": "3q6s-dssmd",
         "Poder": 3498663,
         "Nivel": 80,
-        "Actividad": 10,
+        "Actividad": 9,
         "Daño": 10,
         "Puntos": 9,
         "Consistencia": 9
@@ -230,7 +230,7 @@ data = [
         "ID": "0316-9bwz0",
         "Poder": 2769159,
         "Nivel": 73,
-        "Actividad": 10,
+        "Actividad": 8,
         "Daño": 10,
         "Puntos": 8,
         "Consistencia": 9
@@ -241,7 +241,7 @@ data = [
         "ID": "4e75-mx46l",
         "Poder": 633945,
         "Nivel": 74,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 3,
         "Puntos": 8,
         "Consistencia": 6
@@ -252,7 +252,7 @@ data = [
         "ID": "4ybn-mnv3x",
         "Poder": 703109,
         "Nivel": 69,
-        "Actividad": 10,
+        "Actividad": 7,
         "Daño": 10,
         "Puntos": 7,
         "Consistencia": 8
@@ -263,7 +263,7 @@ data = [
         "ID": "46rw-ef8ec",
         "Poder": 910234,
         "Nivel": 73,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 5,
         "Puntos": 6,
         "Consistencia": 7
@@ -274,7 +274,7 @@ data = [
         "ID": "3j6t-ckkfp",
         "Poder": 916755,
         "Nivel": 75,
-        "Actividad": 9,
+        "Actividad": 6,
         "Daño": 4,
         "Puntos": 6,
         "Consistencia": 6
@@ -285,7 +285,7 @@ data = [
         "ID": "0qph-cbpiv",
         "Poder": 1810380,
         "Nivel": 80,
-        "Actividad": 10,
+        "Actividad": 5,
         "Daño": 8,
         "Puntos": 6,
         "Consistencia": 8
@@ -296,7 +296,7 @@ data = [
         "ID": "0pf7-i1l5w",
         "Poder": 638219,
         "Nivel": 64,
-        "Actividad": 10,
+        "Actividad": 5,
         "Daño": 2,
         "Puntos": 6,
         "Consistencia": 5
@@ -307,7 +307,7 @@ data = [
         "ID": "4j53-gd6c5",
         "Poder": 753905,
         "Nivel": 74,
-        "Actividad": 10,
+        "Actividad": 4,
         "Daño": 3,
         "Puntos": 5,
         "Consistencia": 5
@@ -318,17 +318,28 @@ data = [
         "ID": "4d6g-cqz8y",
         "Poder": 641011,
         "Nivel": 72,
-        "Actividad": 10,
+        "Actividad": 4,
         "Daño": 2,
         "Puntos": 4,
-        "Consistencia": 10
+        "Consistencia": 4
     },
     {
-        "Nombre": "Chris",
-        "Rango": "Especialista",
-        "ID": "1l4y-eguc1",
-        "Poder": 867520,
+        "Nombre": "Sapulinga01",
+        "Rango": "Miembro",
+        "ID": "33ou-fej3y",
+        "Poder": 663553,
         "Nivel": 75,
+        "Actividad": 4,
+        "Daño": 6,
+        "Puntos": 1,
+        "Consistencia": 3
+    },
+    {
+        "Nombre": "Aquio",
+        "Rango": "Especialista",
+        "ID": "0jj3-2yyeu",
+        "Poder": 1186568,
+        "Nivel": 73,
         "Actividad": 0,
         "Daño": 0,
         "Puntos": 0,
