@@ -361,7 +361,7 @@ df["Score"] = (
 
 # Clasificación
 def clasificar(score):
-    if score >= 100:
+    if score == 100:
         return "TOP"
     elif score >= 85:
         return "Elite"
