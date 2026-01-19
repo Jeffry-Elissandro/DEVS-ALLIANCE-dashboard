@@ -430,6 +430,10 @@ estado_filtrado = st.multiselect(
 
 df_filtrado = df[df["Estado"].isin(estado_filtrado)]
 
+# Ancho dinámico según cantidad de jugadores visibles
+ancho_grafica = max(1200, len(df_filtrado) * 120)
+
+
 
 # ============================
 # GRÁFICA INTERACTIVA
