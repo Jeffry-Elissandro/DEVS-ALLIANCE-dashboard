@@ -437,6 +437,8 @@ fig = px.bar(
     title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026                                    VER EN HORIZONTAL ✅"
 )
 
+title = "Prueba de titulo, xd"
+
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
 
 fig.update_layout(
