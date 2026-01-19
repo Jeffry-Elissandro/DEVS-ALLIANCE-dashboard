@@ -27,48 +27,15 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "yo 456",
-        "Rango": "Colider",
-        "ID": "4jos-r67gh",
-        "Poder": 640342,
-        "Nivel": 76,
-        "Actividad": 5,
-        "Daño": 6,
-        "Puntos": 8,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "Arcabius",
+        "Nombre": "Chris",
         "Rango": "Especialista",
-        "ID": "3nzc-bbblj",
-        "Poder": 1694592,
-        "Nivel": 76,
-        "Actividad": 7,
-        "Daño": 8,
-        "Puntos": 7,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "*Aquio*",
-        "Rango": "Miembro",
-        "ID": "X9Z8",
-        "Poder": 720000,
-        "Nivel": 70,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 7,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "[Skull_hunter]",
-        "Rango": "Miembro",
-        "ID": "HH77",
-        "Poder": 400000,
-        "Nivel": 65,
-        "Actividad": 3,
-        "Daño": 4,
-        "Puntos": 3,
-        "Consistencia": 2
+        "ID": "1l4y-eguc1",
+        "Poder": 867520,
+        "Nivel": 75,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     }
 ]
 
