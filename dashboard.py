@@ -459,6 +459,33 @@ fig = px.bar(
     width=ancho_grafica
 )
 
+fig_mobile = px.bar(
+    df_filtrado.sort_values("Score"),
+    x="Score",
+    y="Nombre",
+    color="Estado",
+    color_discrete_map=color_map,
+    orientation="h",
+    text="Score",
+    hover_data=[
+        "Estado", "Rango", "ID", "Nivel", "Poder",
+        "Actividad", "Daño", "Puntos", "Consistencia"
+    ],
+    title="Rendimiento de los miembros (Vista Mobile)",
+    height=max(600, len(df_filtrado) * 35)
+)
+
+fig_mobile.update_traces(texttemplate="%{text}%", textposition="outside")
+fig_mobile.update_layout(
+    xaxis_title="Rendimiento %",
+    yaxis_title="",
+    margin=dict(l=120, r=40, t=80, b=40)
+)
+
+# Selector de vista
+modo_mobile = st.checkbox("📱 Modo Mobile (vista optimizada)", value=False)
+
+
 st.info("📱 En móviles, desliza horizontalmente la gráfica para ver todos los miembros")
 
 
