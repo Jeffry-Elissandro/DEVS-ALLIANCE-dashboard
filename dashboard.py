@@ -482,7 +482,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.plotly_chart(fig, use_container_width=False)
+st.plotly_chart(fig, use_container_width=False, key="grafica_rendimiento")
+
 
 st.markdown(
     """
