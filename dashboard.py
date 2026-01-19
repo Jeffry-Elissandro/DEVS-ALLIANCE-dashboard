@@ -404,6 +404,9 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 
 # Filtro
 estado_filtrado = st.multiselect(
+    "Mobile = Horizontal" \
+    "PC = Normal" \
+    "Si se atora, toca Reset a la derecha" \
     "Filtrar por estado:",
     orden_estados,
     default=orden_estados
@@ -434,10 +437,8 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026                                    VER EN HORIZONTAL ✅"
+    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026"
 )
-
-title = "Prueba de titulo, xd"
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
 
