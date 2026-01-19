@@ -361,7 +361,9 @@ df["Score"] = (
 
 # Clasificación
 def clasificar(score):
-    if score >= 85:
+    if score >= 100:
+        return "TOP"
+    elif score >= 85:
         return "Elite"
     elif score >= 70:
         return "Sólido"
@@ -383,8 +385,8 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 # Filtro
 estado_filtrado = st.multiselect(
     "Filtrar por estado:",
-    ["Elite", "Sólido", "Aceptable", "Ineficiente"],
-    default=["Elite", "Sólido", "Aceptable", "Ineficiente"]
+    ["TOP", "Elite" "Sólido", "Aceptable", "Ineficiente"],
+    default=["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"]
 )
 
 df_filtrado = df[df["Estado"].isin(estado_filtrado)]
