@@ -434,8 +434,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026",
-    title="VER EN HORIZONTAL!✅"
+    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026                                    VER EN HORIZONTAL ✅"
 )
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
