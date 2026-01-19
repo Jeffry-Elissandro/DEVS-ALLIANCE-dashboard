@@ -410,8 +410,8 @@ if st.session_state.mostrar_nota:
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
     "para la gestión de la alianza. \n"
-    "Si estas en Mobile miralo horizontal. Además puedes resetear con el botón a la derecha "
-    "o bien, descargar el PNG para más comodidad - CHESS"
+    "También puedes interactuar con la gráfica con las herramientas disponibles a la  "
+    "derecha, o bien, descargar el PNG de la gráfica para más comodidad - CHESS"
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
@@ -483,10 +483,10 @@ fig_mobile.update_layout(
 )
 
 # Selector de vista
-modo_mobile = st.checkbox("📱 Modo Mobile (vista optimizada)", value=False)
+modo_mobile = st.checkbox("📱 Modo Mobile - vista optimizada (En Desarrollo)", value=False)
 
 
-st.info("📱 En móviles, desliza horizontalmente la gráfica para ver todos los miembros")
+st.info("📱 En móvil, observa en horizontal la gráfica")
 
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
