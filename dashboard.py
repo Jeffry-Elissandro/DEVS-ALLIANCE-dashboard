@@ -513,9 +513,9 @@ st.markdown(
 # CONFIGURACIÓN DE PLOTLY
 # ============================
 plotly_config = {
-    "scrollZoom": False,        # Desactiva zoom con scroll/touch
-    "displayModeBar": True,     # Muestra barra de herramientas
-    "displaylogo": False,       # Quita logo de Plotly
+    "scrollZoom": False,        # ❌ desactiva zoom con scroll / touch
+    "displayModeBar": True,
+    "displaylogo": False,
     "modeBarButtonsToRemove": [
         "zoom2d",
         "select2d",
@@ -526,6 +526,19 @@ plotly_config = {
         "resetScale2d"
     ]
 }
+
+fig.update_layout(dragmode="pan")
+
+fig.update_traces(texttemplate="%{text}%", textposition="outside")
+
+fig.update_layout(
+    dragmode="pan",            # ✅ PAN por defecto
+    xaxis_tickangle=-45,
+    yaxis_title="Rendimiento %",
+    height=600,
+    margin=dict(l=40, r=40, t=80, b=150)
+)
+
 
 st.plotly_chart(
     fig,
