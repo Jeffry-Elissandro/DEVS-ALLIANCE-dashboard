@@ -406,7 +406,9 @@ st.warning(
     "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
-    "para la gestión de la alianza."
+    "para la gestión de la alianza. \n"
+    "Si estas en Mobile hazlo horizontal y puedes resetear con el botón a la derecha "
+    "- CHESS"
 )
 
 
