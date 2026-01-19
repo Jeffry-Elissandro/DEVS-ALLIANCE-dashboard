@@ -457,7 +457,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026":
+    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026",
     width=ancho_grafica
 )
 
