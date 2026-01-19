@@ -438,8 +438,8 @@ ancho_grafica = max(1200, len(df_filtrado) * 120)
 # ============================
 fig = px.bar(
     df_filtrado,
-    x="Nombre",
-    y="Score",
+    x="Score",
+    y="Nombre",
     color="Estado",
     color_discrete_map=color_map,
     text="Score",
