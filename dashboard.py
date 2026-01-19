@@ -493,9 +493,6 @@ st.markdown(
 )
 
 
-st.plotly_chart(fig, use_container_width=False)
-
-
 # ============================
 # TABLA DE DATOS
 # ============================
