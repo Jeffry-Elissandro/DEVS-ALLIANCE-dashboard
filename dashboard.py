@@ -582,9 +582,9 @@ st.markdown(
     font-size: 16px;
     line-height: 1.6;
     ">
-    ¡Saludos Gente!
-    ¿Tienes problemas para hacer más daño al Jefe de Inmortales?,
-    No te preocupes... te mostraré el equipo ideal para que logres,
+    ¡Saludos Gente!\n
+    ¿Tienes problemas para hacer más daño al Jefe de Inmortales?\n
+    No te preocupes... te mostraré el equipo ideal para que logres\n
     hacer más daño y puedas superarte esta temporada de Gremios!.
     </p>
 
