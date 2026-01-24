@@ -574,6 +574,17 @@ st.markdown(
         🎬EQUIPO PARA JEFE DE INMORTALES
     </h2>
 
+     <p style="
+    text-align: center;
+    color: #cccccc;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    font-size: 32px;
+    line-height: 1.6;
+    ">
+    ¡Saludos Gente!
+    </p>
+
     <p style="
     text-align: center;
     color: #cccccc;
@@ -582,9 +593,8 @@ st.markdown(
     font-size: 16px;
     line-height: 1.6;
     ">
-    ¡Saludos Gente!;
-    ¿Tienes problemas para hacer más daño al Jefe de Inmortales?;
-    No te preocupes... te mostraré el equipo ideal para que logres;
+    ¿Tienes problemas para hacer más daño al Jefe de Inmortales?
+    No te preocupes... te mostraré el equipo ideal para que logres
     hacer más daño y puedas superarte esta temporada de Gremios!.
     </p>
 
