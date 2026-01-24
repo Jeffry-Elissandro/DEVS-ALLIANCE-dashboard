@@ -563,4 +563,48 @@ st.markdown(
 st.subheader("📊 Tabla completa de miembros")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
+
+#Video Promocional DEVS
+
+st.markdown("---")
+
+st.markdown(
+    """
+    <h2 style="text-align:center; color:#ff4b4b; margin-bottom:20px;">
+        🎬EQUIPO PARA JEFE DE INMORTALES
+    </h2>
+
+    <div style="
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    ">
+        <div style="
+            border: 4px solid #ff4b4b;
+            border-radius: 16px;
+            padding: 10px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(255, 75, 75, 0.6);
+        ">
+            <video 
+                controls
+                autoplay
+                muted
+                loop
+                style="
+                    width: 100%;
+                    border-radius: 12px;
+                "
+            >
+                <source src="URL.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 #python -m streamlit run dashboard.py
