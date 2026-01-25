@@ -618,7 +618,14 @@ components.html(
             🛠️ Recomendación
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Revisa el vi
+            Revisa el video recomendado al final de la página y ajusta tu equipo
+            para maximizar sinergias.
+        </p>
+    </div>
+    """,
+    height=380
+)
+
 
 
 
