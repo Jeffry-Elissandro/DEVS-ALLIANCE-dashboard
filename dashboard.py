@@ -638,63 +638,52 @@ components.html(
 
 #Para mostrar las cartas
 
-import streamlit.components.v1 as components
-
-components.html(
-"""
+st.markdown("""
 <style>
-.cards-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 220px;
+.card-container {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-main {
-    width: 260px;
-    box-shadow: 0 0 28px rgba(255, 75, 75, 0.9);
+/* IMPORTANTE */
+.card-container img {
+    display: block;
 }
 
 /* Hover SOLO desktop */
 @media (hover: hover) {
-    .card:hover {
-        transform: translateY(-8px) scale(1.06);
-        box-shadow: 0 0 40px rgba(255, 75, 75, 1);
+    .card-container:hover {
+        transform: translateY(-6px) scale(1.05);
+        box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
     }
 }
 
-.card img {
-    width: 100%;
-    display: block;
+/* Carta central */
+.card-main {
+    box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 </style>
+""", unsafe_allow_html=True)
 
-<div class="cards-wrapper">
-    <div class="card">
-        <img src="carta_annie.png">
-    </div>
 
-    <div class="card card-main">
-        <img src="carta_peacock.png">
-    </div>
+col1, col2, col3 = st.columns([1, 1.2, 1])
 
-    <div class="card">
-        <img src="carta_painwheel.png">
-    </div>
-</div>
-""",
-height=420
-)
+with col1:
+    st.markdown("<div class='card-container'>", unsafe_allow_html=True)
+    st.image("carta_annie.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
+with col2:
+    st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
+    st.image("carta_peacock.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with col3:
+    st.markdown("<div class='card-container'>", unsafe_allow_html=True)
+    st.image("carta_painwheel.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 
