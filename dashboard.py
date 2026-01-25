@@ -439,7 +439,7 @@ st.divider()
 
 st.markdown("""
 <style>
-/* Animación suave de entrada */
+/* Animación suave */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -451,12 +451,13 @@ st.markdown("""
     }
 }
 
-/* Contenedor animado */
-.kpi-animate {
+/* Aplica animación a los KPIs */
+div[data-testid="metric-container"] {
     animation: fadeUp 0.8s ease-out both;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
