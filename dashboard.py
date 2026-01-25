@@ -642,7 +642,7 @@ st.markdown("---")
 
 st.markdown("""
 <h2 style="text-align:center; color:#ff4b4b; margin-bottom:10px;">
-🃏 Equipo recomendado
+ Equipo recomendado
 </h2>
 
 <p style="
@@ -662,7 +662,6 @@ gap: 30px;
 flex-wrap: wrap;
 ">
 
-    <!-- CARTA 1 -->
     <div style="
     width: 220px;
     border-radius: 16px;
@@ -672,7 +671,6 @@ flex-wrap: wrap;
         <img src="carta_annie.png" style="width:100%;">
     </div>
 
-    <!-- CARTA CENTRAL (DESTACADA) -->
     <div style="
     width: 260px;
     transform: scale(1.08);
@@ -683,7 +681,6 @@ flex-wrap: wrap;
         <img src="carta_peacock.png" style="width:100%;">
     </div>
 
-    <!-- CARTA 3 -->
     <div style="
     width: 220px;
     border-radius: 16px;
