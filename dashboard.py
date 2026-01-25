@@ -645,40 +645,49 @@ st.markdown("""
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
+    cursor: pointer;
 }
 
-/* HOVER DESKTOP */
+/* Hover SOLO en desktop */
 @media (hover: hover) {
     .card:hover {
-        transform: translateY(-6px) scale(1.04);
-        box-shadow: 0 0 30px rgba(255, 75, 75, 0.95);
+        transform: translateY(-6px) scale(1.05);
+        box-shadow: 0 0 35px rgba(255, 75, 75, 1);
     }
 }
 
-/* CARTA CENTRAL (DESTACADA) */
+/* Carta central */
 .card-main {
-    box-shadow: 0 0 28px rgba(255, 75, 75, 0.85);
+    box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 </style>
-""", unsafe_allow_html=True)
+""", unsafe_al_
+
 
 
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+        <img src="carta_annie.png" style="width:100%; display:block;">
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card card-main'>", unsafe_allow_html=True)
-    st.image("carta_peacock.png", use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card card-main">
+        <img src="carta_peacock.png" style="width:100%; display:block;">
+    </div>
+    """, unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.image("carta_painwheel.png", use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class="card">
+        <img src="carta_painwheel.png" style="width:100%; display:block;">
+    </div>
+    """, unsafe_allow_html=True)
+
 
 
 
