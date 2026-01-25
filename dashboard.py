@@ -721,8 +721,6 @@ st.markdown(
 
 #Para justificar el rendimiento de cada miembro
 
-st.divider()
-
 
 st.markdown("---")
 
