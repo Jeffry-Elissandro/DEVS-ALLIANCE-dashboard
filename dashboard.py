@@ -565,6 +565,8 @@ st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_wi
 
 
 #Video Promocional DEVS
+#<!-- URL embed solo funciona dentro de iframe -->
+
 
 st.markdown("---")
 
@@ -612,19 +614,16 @@ st.markdown(
             width: 100%;
             box-shadow: 0 0 20px rgba(255, 75, 75, 0.6);
         ">
-            <video 
-                controls
-                autoplay
-                muted
-                loop
-                style="
-                    width: 100%;
-                    border-radius: 12px;
-                "
-            >
-                <source src="URL.mp4" type="video/mp4">
-                Tu navegador no soporta video HTML5.
-            </video>
+            <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/XwXHEG6iJbE?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style="border-radius:12px;"
+            ></iframe>
         </div>
     </div>
     """,
