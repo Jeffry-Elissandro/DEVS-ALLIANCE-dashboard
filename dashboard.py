@@ -439,21 +439,11 @@ st.divider()
 
 st.markdown("""
 <style>
-/* Animación suave */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Aplica animación a los KPIs */
 div[data-testid="metric-container"] {
-    animation: fadeUp 0.8s ease-out both;
+    background: rgba(255, 75, 75, 0.05);
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 0 18px rgba(255, 75, 75, 0.35);
 }
 </style>
 """, unsafe_allow_html=True)
