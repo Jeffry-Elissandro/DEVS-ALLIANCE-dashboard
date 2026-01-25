@@ -634,6 +634,70 @@ components.html(
     height=800
 )
 
+
+
+#Para mostrar las cartas
+
+st.markdown("---")
+
+st.markdown("""
+<h2 style="text-align:center; color:#ff4b4b; margin-bottom:10px;">
+🃏 Equipo recomendado
+</h2>
+
+<p style="
+text-align:center;
+color:#cccccc;
+max-width:800px;
+margin: 0 auto 40px auto;
+font-size:16px;
+">
+Estos son los personajes clave utilizados en el video para maximizar el daño al Jefe de Inmortales.
+</p>
+
+<div style="
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+">
+
+    <!-- CARTA 1 -->
+    <div style="
+    width: 220px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
+    overflow: hidden;
+    ">
+        <img src="carta_annie.png" style="width:100%;">
+    </div>
+
+    <!-- CARTA CENTRAL (DESTACADA) -->
+    <div style="
+    width: 260px;
+    transform: scale(1.08);
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(255, 75, 75, 0.9);
+    overflow: hidden;
+    ">
+        <img src="carta_peacock.png" style="width:100%;">
+    </div>
+
+    <!-- CARTA 3 -->
+    <div style="
+    width: 220px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
+    overflow: hidden;
+    ">
+        <img src="carta_painwheel.png" style="width:100%;">
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
 #Para Comentarios
 
 st.markdown("---")
