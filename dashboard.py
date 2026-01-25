@@ -634,6 +634,21 @@ components.html(
     height=800
 )
 
+#Para Comentarios
+
+st.markdown("---")
+st.subheader("💬 Comentarios de la Alianza")
+
+nombre = st.text_input("Tu nombre o Nick")
+comentario = st.text_area("Escribe tu comentario")
+
+if st.button("Enviar comentario"):
+    if nombre and comentario:
+        with open("comentarios.txt", "a", encoding="utf-8") as f:
+            f.write(f"{nombre}: {comentario}\n---\n")
+        st.success("¡Comentario enviado!")
+    else:
+        st.warning("Completa todos los campos")
 
 
 #python -m streamlit run dashboard.py
