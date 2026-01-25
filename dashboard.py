@@ -578,6 +578,63 @@ st.divider()
 
 
 
+#Para objetivo semanal
+
+
+st.markdown("---")
+
+st.subheader("🎯 Objetivo Semanal de la Alianza")
+
+st.markdown(
+    """
+    <div style="
+        background: linear-gradient(145deg, rgba(255,75,75,0.12), rgba(120,40,40,0.06));
+        border-radius: 18px;
+        padding: 22px 26px;
+        box-shadow: 0 10px 30px rgba(255,75,75,0.35);
+        max-width: 1000px;
+        margin: 0 auto 20px auto;
+    ">
+        <h3 style="color:#ff4b4b; margin-bottom:10px;">
+            📈 Meta clara
+        </h3>
+        <p style="color:#dddddd; font-size:16px;">
+            Alcanzar un <strong>promedio general superior al 75%</strong> en el rendimiento
+            total de la alianza durante esta semana.
+        </p>
+
+        <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
+            🔥 Enfoque principal
+        </h3>
+        <p style="color:#dddddd; font-size:16px;">
+            Priorizar <strong>daño constante al Jefe de Inmortales</strong> y mantener
+            actividad regular en eventos clave.
+        </p>
+
+        <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
+            🛠️ Recomendación
+        </h3>
+        <p style="color:#dddddd; font-size:16px;">
+            Revisa el video recomendado al final de la página y ajusta tu equipo
+            para maximizar sinergias.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.caption(
+    "Este objetivo se actualiza semanalmente y sirve como referencia colectiva, "
+    "no como sanción individual."
+)
+
+
+
+
+
+
+
+
 
 # Filtro
 estado_filtrado = st.multiselect(
