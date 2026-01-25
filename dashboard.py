@@ -435,7 +435,7 @@ riesgo_count = len(df[df["Estado"] == "Ineficiente"])
 st.divider()
 
 
-st.subheader("📊 Resumen Ejecutivo de la Alianza")
+st.subheader("🛠️ Resumen Ejecutivo de la Alianza")
 
 kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 
@@ -447,7 +447,7 @@ with kpi1:
 
 with kpi2:
     st.metric(
-        label="📊 Promedio general",
+        label="🔖 Promedio general",
         value=f"{promedio_general} %"
     )
 
@@ -770,6 +770,7 @@ if st.button("Enviar comentario"):
     else:
         st.warning("Completa todos los campos")
 
+st.divider()
 
 #Para mostrar los comentarios
 
