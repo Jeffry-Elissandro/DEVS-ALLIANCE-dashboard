@@ -638,60 +638,32 @@ components.html(
 
 #Para mostrar las cartas
 
-st.markdown("---")
-
 st.markdown("""
-<h2 style="text-align:center; color:#ff4b4b; margin-bottom:10px;">
-Equipo recomendado
-</h2>
-
-<p style="
-text-align:center;
-color:#cccccc;
-max-width:800px;
-margin: 0 auto 40px auto;
-font-size:16px;
-">
-Estos son los personajes clave utilizados en el video para maximizar el daño al Jefe de Inmortales.
-</p>
-
-<div style="
-display: flex;
-justify-content: center;
-gap: 30px;
-flex-wrap: wrap;
-">
-
-<div style="
-width: 220px;
-border-radius: 16px;
-box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
-overflow: hidden;
-">
-<img src="carta_annie.png" style="width:100%;">
-</div>
-
-<div style="
-width: 260px;
-transform: scale(1.08);
-border-radius: 18px;
-box-shadow: 0 0 25px rgba(255, 75, 75, 0.9);
-overflow: hidden;
-">
-<img src="carta_peacock.png" style="width:100%;">
-</div>
-
-<div style="
-width: 220px;
-border-radius: 16px;
-box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
-overflow: hidden;
-">
-<img src="carta_painwheel.png" style="width:100%;">
-</div>
-
-</div>
+<style>
+.card-glow {
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 75, 75, 0.7);
+}
+</style>
 """, unsafe_allow_html=True)
+
+col1, col2, col3 = st.columns([1, 1.2, 1])
+
+with col1:
+    st.markdown("<div class='card-glow'>", unsafe_allow_html=True)
+    st.image("carta_annie.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with col2:
+    st.markdown("<div class='card-glow'>", unsafe_allow_html=True)
+    st.image("carta_peacock.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with col3:
+    st.markdown("<div class='card-glow'>", unsafe_allow_html=True)
+    st.image("carta_painwheel.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
