@@ -435,6 +435,36 @@ riesgo_count = len(df[df["Estado"] == "Ineficiente"])
 st.divider()
 
 
+
+
+st.markdown("""
+<style>
+/* Animación suave de entrada */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor animado */
+.kpi-animate {
+    animation: fadeUp 0.8s ease-out both;
+}
+</style>
+""", unsafe_allow_html=True)
+
+
+
+st.markdown("<div class='kpi-animate'>", unsafe_allow_html=True)
+
+
+
+
 st.subheader("🛠️ Resumen Ejecutivo de la Alianza")
 
 kpi1, kpi2, kpi3, kpi4 = st.columns(4)
@@ -462,6 +492,10 @@ with kpi4:
         label="⚠️ En riesgo",
         value=riesgo_count
     )
+
+
+st.markdown("<div class='kpi-animate'>", unsafe_allow_html=True)
+
 
 st.caption(
     "Este resumen refleja el estado actual del rendimiento de la alianza "
