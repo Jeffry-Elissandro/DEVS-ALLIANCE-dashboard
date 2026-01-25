@@ -439,14 +439,33 @@ st.divider()
 
 st.markdown("""
 <style>
+/* Estilo visual para KPIs */
 div[data-testid="metric-container"] {
-    background: rgba(255, 75, 75, 0.05);
-    border-radius: 14px;
-    padding: 14px;
-    box-shadow: 0 0 18px rgba(255, 75, 75, 0.35);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 75, 75, 0.08),
+        rgba(120, 40, 40, 0.04)
+    );
+    border-radius: 16px;
+    padding: 18px 14px;
+    box-shadow:
+        0 8px 20px rgba(255, 75, 75, 0.35),
+        inset 0 0 0 1px rgba(255, 75, 75, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Micro realce solo en desktop */
+@media (hover: hover) {
+    div[data-testid="metric-container"]:hover {
+        transform: translateY(-3px);
+        box-shadow:
+            0 14px 30px rgba(255, 75, 75, 0.55),
+            inset 0 0 0 1px rgba(255, 75, 75, 0.35);
+    }
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
