@@ -640,12 +640,16 @@ components.html(
 
 st.markdown("""
 <style>
-/* Contenedor de la carta */
 .card-container {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* IMPORTANTE */
+.card-container img {
+    display: block;
 }
 
 /* Hover SOLO desktop */
@@ -656,12 +660,13 @@ st.markdown("""
     }
 }
 
-/* Carta central destacada */
+/* Carta central */
 .card-main {
     box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
