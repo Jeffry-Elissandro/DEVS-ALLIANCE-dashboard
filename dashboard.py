@@ -651,4 +651,15 @@ if st.button("Enviar comentario"):
         st.warning("Completa todos los campos")
 
 
+#Para mostrar los comentarios
+
+st.markdown("### 🗨️ Opiniones de los miembros")
+
+try:
+    with open("comentarios.txt", "r", encoding="utf-8") as f:
+        st.text(f.read())
+except FileNotFoundError:
+    st.info("Aún no hay comentarios.")
+
+
 #python -m streamlit run dashboard.py
