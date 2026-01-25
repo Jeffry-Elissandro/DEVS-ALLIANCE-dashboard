@@ -605,7 +605,7 @@ components.html(
         font-family: sans-serif;
     ">
         <h3 style="color:#ff4b4b; margin-bottom:10px;">
-            📈 Meta clara
+            📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
             Alcanzar un <strong>promedio general superior al 75%</strong> en el rendimiento
@@ -621,7 +621,7 @@ components.html(
         </p>
 
         <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
-            🛠️ Recomendación
+            🏅 Recomendación
         </h3>
         <p style="color:#dddddd; font-size:16px;">
             Revisa el video recomendado al final de la página y ajusta tu equipo
@@ -643,7 +643,7 @@ st.caption(
 
 
 
-
+st.divider()
 
 
 
@@ -795,7 +795,7 @@ st.markdown("---")
 
 st.markdown("""
 <h3 style="text-align:center; color:#ff4b4b; margin-bottom:10px;">
-📊 ¿Cómo se evalúa el rendimiento?
+🔎 ¿Cómo se evalúa el rendimiento?
 </h3>
 
 <p style="
@@ -866,7 +866,7 @@ border-radius: 16px;
 padding: 20px;
 box-shadow: 0 0 20px rgba(255,75,75,0.25);
 ">
-<h4 style="color:#ff7b7b; margin-bottom:10px;">💬 Mensaje importante</h4>
+<h4 style="color:#ff7b7b; margin-bottom:10px;">🏆 Mensaje importante</h4>
 <p style="color:#dddddd; font-size:14px; line-height:1.6;">
 El estado asignado <b>no es permanente</b>.
 Todos los miembros pueden mejorar su posición
@@ -1043,7 +1043,7 @@ st.divider()
 
 #Para mostrar los comentarios
 
-st.markdown("### 🗨️ Opiniones de los miembros")
+st.markdown("### 🌟 Opiniones de los miembros")
 
 try:
     with open("comentarios.txt", "r", encoding="utf-8") as f:
