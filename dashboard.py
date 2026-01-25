@@ -718,6 +718,105 @@ st.markdown(
 
 
 
+
+#Para justificar el rendimiento de cada miembro
+
+st.divider()
+
+
+st.markdown("---")
+
+st.markdown("""
+<h3 style="text-align:center; color:#ff4b4b; margin-bottom:10px;">
+📊 ¿Cómo se evalúa el rendimiento?
+</h3>
+
+<p style="
+text-align:center;
+color:#cccccc;
+max-width:900px;
+margin: 0 auto 30px auto;
+font-size:15px;
+line-height:1.6;
+">
+El sistema de rendimiento evalúa a cada integrante considerando múltiples factores.
+El objetivo no es castigar, sino <b>identificar fortalezas, detectar áreas de mejora</b>
+y mantener el crecimiento de la alianza.
+</p>
+
+<div style="
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+">
+
+<!-- FACTORES -->
+<div style="
+flex: 1;
+min-width: 260px;
+max-width: 360px;
+background: rgba(255,255,255,0.03);
+border-radius: 16px;
+padding: 20px;
+box-shadow: 0 0 20px rgba(255,75,75,0.25);
+">
+<h4 style="color:#ff7b7b; margin-bottom:10px;">⚙️ Factores evaluados</h4>
+<ul style="color:#dddddd; font-size:14px; line-height:1.6;">
+<li><b>Actividad:</b> Participación constante.</li>
+<li><b>Daño:</b> Aporte real en combates.</li>
+<li><b>Puntos:</b> Resultado acumulado.</li>
+<li><b>Consistencia:</b> Rendimiento estable semana a semana.</li>
+</ul>
+</div>
+
+<!-- ESTADOS -->
+<div style="
+flex: 1;
+min-width: 260px;
+max-width: 360px;
+background: rgba(255,255,255,0.03);
+border-radius: 16px;
+padding: 20px;
+box-shadow: 0 0 20px rgba(255,75,75,0.25);
+">
+<h4 style="color:#ff7b7b; margin-bottom:10px;">🏷️ Estados de rendimiento</h4>
+<ul style="color:#dddddd; font-size:14px; line-height:1.6;">
+<li><b>TOP:</b> Rendimiento sobresaliente y constante.</li>
+<li><b>Elite / Sólido:</b> Buen desempeño general.</li>
+<li><b>Aceptable:</b> Cumple, pero puede mejorar.</li>
+<li><b>Ineficiente:</b> Bajo impacto o poca actividad.</li>
+</ul>
+</div>
+
+<!-- MENSAJE -->
+<div style="
+flex: 1;
+min-width: 260px;
+max-width: 360px;
+background: rgba(255,255,255,0.03);
+border-radius: 16px;
+padding: 20px;
+box-shadow: 0 0 20px rgba(255,75,75,0.25);
+">
+<h4 style="color:#ff7b7b; margin-bottom:10px;">💬 Mensaje importante</h4>
+<p style="color:#dddddd; font-size:14px; line-height:1.6;">
+El estado asignado <b>no es permanente</b>.
+Todos los miembros pueden mejorar su posición
+aumentando su participación, daño y consistencia.
+</p>
+</div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
 st.divider()
 
 
