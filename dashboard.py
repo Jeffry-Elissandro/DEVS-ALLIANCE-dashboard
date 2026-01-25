@@ -419,6 +419,60 @@ if st.session_state.mostrar_nota:
 st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
+
+
+
+#Sistema KPIs
+
+total_miembros = len(df)
+
+promedio_general = round(df["Score"].mean(), 1)
+
+top_count = len(df[df["Estado"] == "TOP"])
+
+riesgo_count = len(df[df["Estado"] == "Ineficiente"])
+
+
+st.subheader("📊 Resumen Ejecutivo de la Alianza")
+
+kpi1, kpi2, kpi3, kpi4 = st.columns(4)
+
+with kpi1:
+    st.metric(
+        label="👥 Miembros evaluados",
+        value=total_miembros
+    )
+
+with kpi2:
+    st.metric(
+        label="📊 Promedio general",
+        value=f"{promedio_general} %"
+    )
+
+with kpi3:
+    st.metric(
+        label="🏆 TOP actuales",
+        value=top_count
+    )
+
+with kpi4:
+    st.metric(
+        label="⚠️ En riesgo",
+        value=riesgo_count
+    )
+
+st.caption(
+    "Este resumen refleja el estado actual del rendimiento de la alianza "
+    "y se actualiza conforme cambian los datos."
+)
+
+
+
+
+
+
+
+
 # Filtro
 estado_filtrado = st.multiselect(
     "Filtrar por estado:",
