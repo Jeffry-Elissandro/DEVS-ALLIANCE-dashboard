@@ -568,67 +568,72 @@ st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_wi
 #<!-- URL embed solo funciona dentro de iframe -->
 
 
+import streamlit as st
+import streamlit.components.v1 as components
+
 st.markdown("---")
 
-st.markdown(
+components.html(
     """
-    <h2 style="text-align:center; color:#ff4b4b; margin-bottom:20px;">
-        🎬EQUIPO PARA JEFE DE INMORTALES
-    </h2>
+    <div style="text-align:center;">
 
-     <p style="
-    text-align: center;
-    color: #cccccc;
-    max-width: 800px;
-    margin: 0 auto 25px auto;
-    font-size: 32px;
-    line-height: 1.6;
-    ">
-    ¡Saludos Gente!
-    </p>
+        <h2 style="color:#ff4b4b; margin-bottom:20px;">
+            🎬 EQUIPO PARA JEFE DE INMORTALES
+        </h2>
 
-    <p style="
-    text-align: center;
-    color: #cccccc;
-    max-width: 800px;
-    margin: 0 auto 25px auto;
-    font-size: 16px;
-    line-height: 1.6;
-    ">
-    ¿Tienes problemas para hacer más daño al Jefe de Inmortales?
-    No te preocupes... te mostraré el equipo ideal para que logres
-    hacer más daño y puedas superarte esta temporada de Gremios!.
-    </p>
-
-
-    <div style="
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    ">
-        <div style="
-            border: 4px solid #ff4b4b;
-            border-radius: 16px;
-            padding: 10px;
-            max-width: 900px;
-            width: 100%;
-            box-shadow: 0 0 20px rgba(255, 75, 75, 0.6);
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 20px auto;
+            font-size:28px;
+            line-height:1.6;
         ">
-            <iframe
-                width="100%"
-                height="500"
-                src="https://www.youtube.com/embed/XwXHEG6iJbE?rel=0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="border-radius:12px;"
-            ></iframe>
+            ¡Saludos Gente!
+        </p>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            ¿Tienes problemas para hacer más daño al Jefe de Inmortales?
+            No te preocupes... te mostraré el equipo ideal para que logres
+            hacer más daño y puedas superarte esta temporada de Gremios.
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE?rel=0&autoplay=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
         </div>
+
     </div>
     """,
-    unsafe_allow_html=True
+    height=800
 )
+
 
 
 #python -m streamlit run dashboard.py
