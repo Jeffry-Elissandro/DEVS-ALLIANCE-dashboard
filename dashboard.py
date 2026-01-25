@@ -642,7 +642,7 @@ st.markdown("---")
 
 st.markdown("""
 <h2 style="text-align:center; color:#ff4b4b; margin-bottom:10px;">
- Equipo recomendado
+Equipo recomendado
 </h2>
 
 <p style="
@@ -662,36 +662,37 @@ gap: 30px;
 flex-wrap: wrap;
 ">
 
-    <div style="
-    width: 220px;
-    border-radius: 16px;
-    box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
-    overflow: hidden;
-    ">
-        <img src="carta_annie.png" style="width:100%;">
-    </div>
+<div style="
+width: 220px;
+border-radius: 16px;
+box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
+overflow: hidden;
+">
+<img src="carta_annie.png" style="width:100%;">
+</div>
 
-    <div style="
-    width: 260px;
-    transform: scale(1.08);
-    border-radius: 18px;
-    box-shadow: 0 0 25px rgba(255, 75, 75, 0.9);
-    overflow: hidden;
-    ">
-        <img src="carta_peacock.png" style="width:100%;">
-    </div>
+<div style="
+width: 260px;
+transform: scale(1.08);
+border-radius: 18px;
+box-shadow: 0 0 25px rgba(255, 75, 75, 0.9);
+overflow: hidden;
+">
+<img src="carta_peacock.png" style="width:100%;">
+</div>
 
-    <div style="
-    width: 220px;
-    border-radius: 16px;
-    box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
-    overflow: hidden;
-    ">
-        <img src="carta_painwheel.png" style="width:100%;">
-    </div>
+<div style="
+width: 220px;
+border-radius: 16px;
+box-shadow: 0 0 15px rgba(150, 80, 255, 0.6);
+overflow: hidden;
+">
+<img src="carta_painwheel.png" style="width:100%;">
+</div>
 
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
