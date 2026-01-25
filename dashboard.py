@@ -574,7 +574,13 @@ st.caption(
 
 
 
-st.divider()
+
+
+
+# st.divider() Sirve para dejar espacios
+
+
+
 
 
 
