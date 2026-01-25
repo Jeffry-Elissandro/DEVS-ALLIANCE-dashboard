@@ -470,41 +470,82 @@ div[data-testid="metric-container"] {
 
 
 
-st.markdown("<div class='kpi-animate'>", unsafe_allow_html=True)
 
 
 
 
 st.subheader("🛠️ Resumen Ejecutivo de la Alianza")
 
-kpi1, kpi2, kpi3, kpi4 = st.columns(4)
+st.markdown("""
+<style>
+.kpi-card {
+    background: linear-gradient(
+        145deg,
+        rgba(255, 75, 75, 0.12),
+        rgba(120, 40, 40, 0.06)
+    );
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 75, 75, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-with kpi1:
-    st.metric(
-        label="👥 Miembros evaluados",
-        value=total_miembros
-    )
+@media (hover: hover) {
+    .kpi-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 35px rgba(255, 75, 75, 0.6);
+    }
+}
 
-with kpi2:
-    st.metric(
-        label="🔖 Promedio general",
-        value=f"{promedio_general} %"
-    )
+.kpi-title {
+    font-size: 15px;
+    color: #ffb3b3;
+    margin-bottom: 8px;
+}
 
-with kpi3:
-    st.metric(
-        label="🏆 TOP actuales",
-        value=top_count
-    )
+.kpi-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+</style>
+""", unsafe_allow_html=True)
 
-with kpi4:
-    st.metric(
-        label="⚠️ En riesgo",
-        value=riesgo_count
-    )
+c1, c2, c3, c4 = st.columns(4)
 
+with c1:
+    st.markdown(f"""
+    <div class="kpi-card">
+        <div class="kpi-title">👥 Miembros evaluados</div>
+        <div class="kpi-value">{total_miembros}</div>
+    </div>
+    """, unsafe_allow_html=True)
 
-st.markdown("<div class='kpi-animate'>", unsafe_allow_html=True)
+with c2:
+    st.markdown(f"""
+    <div class="kpi-card">
+        <div class="kpi-title">🔖 Promedio general</div>
+        <div class="kpi-value">{promedio_general}%</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with c3:
+    st.markdown(f"""
+    <div class="kpi-card">
+        <div class="kpi-title">🏆 TOP actuales</div>
+        <div class="kpi-value">{top_count}</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+with c4:
+    st.markdown(f"""
+    <div class="kpi-card">
+        <div class="kpi-title">⚠️ En riesgo</div>
+        <div class="kpi-value">{riesgo_count}</div>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 
 st.caption(
