@@ -433,7 +433,6 @@ top_count = len(df[df["Estado"] == "TOP"])
 riesgo_count = len(df[df["Estado"] == "Ineficiente"])
 
 st.divider()
-st.divider()
 
 
 st.subheader("📊 Resumen Ejecutivo de la Alianza")
@@ -472,7 +471,6 @@ st.caption(
 
 
 
-st.divider()
 st.divider()
 
 
@@ -614,6 +612,10 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+
+
+st.divider()
 
 
 # ============================
