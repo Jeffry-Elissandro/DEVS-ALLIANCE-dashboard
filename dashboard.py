@@ -484,11 +484,12 @@ st.markdown("""
         rgba(255, 75, 75, 0.12),
         rgba(120, 40, 40, 0.06)
     );
-    border-radius: 18px;
-    padding: 20px;
+    border-radius: 16px;
+    padding: 14px 12px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(255, 75, 75, 0.4);
+    box-shadow: 0 8px 18px rgba(255, 75, 75, 0.4);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    min-height: 110px;
 }
 
 @media (hover: hover) {
@@ -499,18 +500,35 @@ st.markdown("""
 }
 
 .kpi-title {
-    font-size: 15px;
+    font-size: 14px;
     color: #ffb3b3;
     margin-bottom: 8px;
 }
 
 .kpi-value {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     color: #ffffff;
 }
+            
+/* Hover solo desktop */
+@media (hover: hover) {
+    .kpi-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 28px rgba(255, 75, 75, 0.55);
+    }
+}
+
+/* Mobile: separación vertical clara */
+@media (max-width: 768px) {
+    .kpi-card {
+        margin-bottom: 16px;          /* 🧠 aire entre tarjetas */
+    }
+}
 </style>
 """, unsafe_allow_html=True)
+
+
 
 c1, c2, c3, c4 = st.columns(4)
 
