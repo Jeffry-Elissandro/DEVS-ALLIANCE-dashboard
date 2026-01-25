@@ -577,9 +577,9 @@ components.html(
     """
     <div style="text-align:center;">
 
-        <h2 style="color:#ff4b4b; margin-bottom:20px;">
+        <h1 style="color:#ff4b4b; margin-bottom:20px;">
             🎬 EQUIPO PARA JEFE DE INMORTALES
-        </h2>
+        </h1>
 
         <p style="
             color:#cccccc;
