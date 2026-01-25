@@ -640,12 +640,28 @@ components.html(
 
 st.markdown("""
 <style>
-.card-glow {
+.card {
     border-radius: 16px;
-    box-shadow: 0 0 20px rgba(255, 75, 75, 0.7);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
+}
+
+/* HOVER DESKTOP */
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-6px) scale(1.04);
+        box-shadow: 0 0 30px rgba(255, 75, 75, 0.95);
+    }
+}
+
+/* CARTA CENTRAL (DESTACADA) */
+.card-main {
+    box-shadow: 0 0 28px rgba(255, 75, 75, 0.85);
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
