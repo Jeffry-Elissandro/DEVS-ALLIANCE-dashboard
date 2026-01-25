@@ -623,6 +623,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
 st.caption(
     "Este objetivo se actualiza semanalmente y sirve como referencia colectiva, "
     "no como sanción individual."
