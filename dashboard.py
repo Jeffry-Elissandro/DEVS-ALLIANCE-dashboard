@@ -585,7 +585,9 @@ st.markdown("---")
 
 st.subheader("🎯 Objetivo Semanal de la Alianza")
 
-st.markdown(
+import streamlit.components.v1 as components
+
+components.html(
     """
     <div style="
         background: linear-gradient(145deg, rgba(255,75,75,0.12), rgba(120,40,40,0.06));
@@ -593,7 +595,8 @@ st.markdown(
         padding: 22px 26px;
         box-shadow: 0 10px 30px rgba(255,75,75,0.35);
         max-width: 1000px;
-        margin: 0 auto 20px auto;
+        margin: 20px auto 30px auto;
+        font-family: sans-serif;
     ">
         <h3 style="color:#ff4b4b; margin-bottom:10px;">
             📈 Meta clara
@@ -615,13 +618,8 @@ st.markdown(
             🛠️ Recomendación
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Revisa el video recomendado al final de la página y ajusta tu equipo
-            para maximizar sinergias.
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+            Revisa el vi
+
 
 
 st.caption(
