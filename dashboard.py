@@ -661,7 +661,8 @@ st.markdown("""
     box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 </style>
-""", unsafe_al_
+""", unsafe_allow_html=True)
+
 
 
 
@@ -687,6 +688,7 @@ with col3:
         <img src="carta_painwheel.png" style="width:100%; display:block;">
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
