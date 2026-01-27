@@ -787,12 +787,32 @@ st.markdown(
 
 #Para el mensaje de invitación a solucionar errores
 
-st.info(
-    "ℹ️ **Nota importante**\n\n"
-    "Si consideras que tu puntuación presenta algún error o no refleja correctamente tu actividad, "
-    "puedes dejar un comentario más abajo. Lo revisaré personalmente y, si corresponde, se corregirá. "
-    "Este sistema es una referencia interna y siempre está abierto a ajustes justos."
+st.markdown(
+    """
+    <div style="
+        background: rgba(255, 75, 75, 0.08);
+        border-left: 5px solid #ff4b4b;
+        border-radius: 14px;
+        padding: 18px 22px;
+        margin: 25px auto 10px auto;
+        max-width: 900px;
+    ">
+        <p style="
+            margin: 0;
+            color: #f2f2f2;
+            font-size: 16px;
+            line-height: 1.6;
+        ">
+            💬 <strong>¿Notas algo extraño en tu puntuación?</strong><br>
+            Si consideras que tu puntuación presenta algún error o no refleja correctamente tu actividad, 
+            puedes dejar un comentario más abajo. Lo revisaré personalmente y, si corresponde, se corregirá. 
+            Este sistema es una referencia interna y siempre está abierto a cambios justos.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
+
 
 st.caption("El objetivo del ranking es mejorar como alianza, no señalar errores individuales.")
 
