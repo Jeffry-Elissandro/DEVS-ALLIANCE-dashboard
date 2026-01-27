@@ -479,6 +479,8 @@ st.markdown(
 
 
 
+
+
 #Sistema KPIs
 
 total_miembros = len(df)
