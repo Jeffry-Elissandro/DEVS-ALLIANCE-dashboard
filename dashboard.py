@@ -1266,4 +1266,29 @@ except FileNotFoundError:
     st.info("Aún no hay comentarios.")
 
 
+
+
+
+
+
+
+#Para EasterEgg
+
+st.divider()
+
+col1, col2, col3 = st.columns([1, 1, 1])
+
+with col2:
+    st.image(
+        "Ms_Fortune_head.gif",
+        width=180  # ajusta según tu gusto
+    )
+
+
+
+
+
+
+
+
 #python -m streamlit run dashboard.py
