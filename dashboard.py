@@ -19,7 +19,7 @@ PESO_CONSISTENCIA = 0.15
 # ============================
 data = [
     {
-        "Nombre": "CHESSDEV",
+        "Nombre": "CHESSDEV", 
         "Rango": "Líder",
         "ID": "0gd5-r41k7",
         "Poder": 1002193,
@@ -30,7 +30,7 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "Chris",
+        "Nombre": "Chris", 
         "Rango": "Especialista",
         "ID": "1l4y-eguc1",
         "Poder": 867520,
@@ -41,62 +41,62 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "aru_25",
+        "Nombre": "aru_25", 
         "Rango": "Miembro",
         "ID": "38l9-o56hb",
         "Poder": 438611,
         "Nivel": 64,
         "Actividad": 10,
-        "Daño": 5,
+        "Daño": 10,
         "Puntos": 10,
-        "Consistencia": 8
+        "Consistencia": 10
     },
     {
-        "Nombre": "DLGPRO",
+        "Nombre": "DLGPRO", 
         "Rango": "Miembro",
         "ID": "1ak1-fm1pl",
         "Poder": 923148,
         "Nivel": 71,
-        "Actividad": 8,
-        "Daño": 4,
+        "Actividad": 10,
+        "Daño": 6,
         "Puntos": 10,
-        "Consistencia": 7
+        "Consistencia": 8
     },
     {
-        "Nombre": "Arcos 16",
+        "Nombre": "Arcos 16", 
         "Rango": "Miembro",
         "ID": "3j75-94r2o",
         "Poder": 748226,
         "Nivel": 70,
         "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "lucysaurio",
-        "Rango": "Miembro",
-        "ID": "4rrf-tsbt4",
-        "Poder": 250450,
-        "Nivel": 65,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "William_Afton_1983",
-        "Rango": "Miembro",
-        "ID": "3r1v-i03ks",
-        "Poder": 946197,
-        "Nivel": 70,
-        "Actividad": 8,
         "Daño": 7,
         "Puntos": 10,
         "Consistencia": 8
     },
     {
-        "Nombre": "SkibidiLopez",
+        "Nombre": "lucysaurio", 
+        "Rango": "Miembro",
+        "ID": "4rrf-tsbt4",
+        "Poder": 250450,
+        "Nivel": 65,
+        "Actividad": 10,
+        "Daño": 8,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "William_Afton_1983", 
+        "Rango": "Miembro",
+        "ID": "3r1v-i03ks",
+        "Poder": 946197,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 7,
+        "Puntos": 10,
+        "Consistencia": 9
+    },
+    {
+        "Nombre": "SkibidiLopez", 
         "Rango": "Miembro",
         "ID": "0ph6-5s5bh",
         "Poder": 1975525,
@@ -107,7 +107,7 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "Lady_Navier",
+        "Nombre": "Lady_Navier", 
         "Rango": "Especialista",
         "ID": "50is-suxy9",
         "Poder": 575151,
@@ -118,95 +118,95 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "KSTKBMS23",
+        "Nombre": "KSTKBMS23", 
         "Rango": "Miembro",
         "ID": "3pni-nyf54",
         "Poder": 578309,
         "Nivel": 74,
-        "Actividad": 6,
-        "Daño": 4,
+        "Actividad": 10,
+        "Daño": 7,
         "Puntos": 10,
-        "Consistencia": 6
+        "Consistencia": 8
     },
     {
-        "Nombre": "yo 456",
+        "Nombre": "yo 456", 
         "Rango": "Colider",
         "ID": "4jos-r67gh",
         "Poder": 636274,
         "Nivel": 76,
-        "Actividad": 6,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 7
+        "Actividad": 8,
+        "Daño": 2,
+        "Puntos": 8,
+        "Consistencia": 4
     },
     {
-        "Nombre": "mya",
+        "Nombre": "mya", 
         "Rango": "Miembro",
         "ID": "4yo3-cioo1",
         "Poder": 797375,
         "Nivel": 74,
-        "Actividad": 7,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 5
+        "Actividad": 10,
+        "Daño": 9,
+        "Puntos": 9,
+        "Consistencia": 9
     },
     {
-        "Nombre": "Arcabius",
+        "Nombre": "Arcabius", 
         "Rango": "Especialista",
         "ID": "3nzc-bbblj",
         "Poder": 1771581,
         "Nivel": 77,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
+        "Puntos": 8,
+        "Consistencia": 9
     },
     {
-        "Nombre": "Lady.Moon",
+        "Nombre": "Lady.Moon", 
         "Rango": "Miembro",
         "ID": "01e6-cjcu2",
         "Poder": 409685,
         "Nivel": 67,
-        "Actividad": 6,
+        "Actividad": 10,
         "Daño": 3,
-        "Puntos": 10,
-        "Consistencia": 5
+        "Puntos": 7,
+        "Consistencia": 6
     },
     {
-        "Nombre": "ROON2526",
+        "Nombre": "ROON2526", 
         "Rango": "Miembro",
         "ID": "1d3k-mznw3",
         "Poder": 448386,
         "Nivel": 72,
-        "Actividad": 9,
-        "Daño": 9,
+        "Actividad": 10,
+        "Daño": 10,
         "Puntos": 10,
-        "Consistencia": 9
+        "Consistencia": 10
     },
     {
-        "Nombre": "Experience^w^",
+        "Nombre": "Experience^w^", 
         "Rango": "Miembro",
         "ID": "12u8-9x3w1",
         "Poder": 2263655,
         "Nivel": 78,
-        "Actividad": 9,
-        "Daño": 10,
-        "Puntos": 9,
-        "Consistencia": 9
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 6,
+        "Consistencia": 7
     },
     {
-        "Nombre": "hellsing AG",
+        "Nombre": "hellsing AG", 
         "Rango": "Miembro",
         "ID": "0q9y-mxd7g",
         "Poder": 451700,
         "Nivel": 75,
         "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 9,
-        "Consistencia": 10
+        "Daño": 5,
+        "Puntos": 6,
+        "Consistencia": 6
     },
     {
-        "Nombre": "eusebio uwu",
+        "Nombre": "eusebio uwu", 
         "Rango": "Miembro",
         "ID": "4ekl-amdrf",
         "Poder": 868769,
@@ -217,138 +217,132 @@ data = [
         "Consistencia": 7
     },
     {
-        "Nombre": "Bonilla Elias",
+        "Nombre": "Bonilla Elias", 
         "Rango": "Miembro",
         "ID": "3q6s-dssmd",
         "Poder": 3498663,
         "Nivel": 80,
-        "Actividad": 9,
+        "Actividad": 10,
         "Daño": 10,
-        "Puntos": 9,
-        "Consistencia": 9
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
-        "Nombre": "Ander_Wedd_45",
+        "Nombre": "Ander_Wedd_45", 
         "Rango": "Miembro",
         "ID": "0316-9bwz0",
         "Poder": 2769159,
         "Nivel": 73,
-        "Actividad": 8,
-        "Daño": 10,
-        "Puntos": 8,
+        "Actividad": 10,
+        "Daño": 9,
+        "Puntos": 10,
         "Consistencia": 9
     },
     {
-        "Nombre": "sofiii12",
+        "Nombre": "sofiii12", 
         "Rango": "Miembro",
         "ID": "4e75-mx46l",
         "Poder": 633945,
         "Nivel": 74,
-        "Actividad": 6,
-        "Daño": 3,
+        "Actividad": 10,
+        "Daño": 4,
         "Puntos": 8,
         "Consistencia": 6
     },
     {
-        "Nombre": "pijuynic3127",
+        "Nombre": "pijuynic3127", 
         "Rango": "Miembro",
         "ID": "4ybn-mnv3x",
         "Poder": 703109,
         "Nivel": 69,
-        "Actividad": 7,
+        "Actividad": 10,
         "Daño": 10,
         "Puntos": 7,
-        "Consistencia": 8
+        "Consistencia": 7
     },
     {
-        "Nombre": "exterminador de bts",
+        "Nombre": "exterminador de bts", 
         "Rango": "Especialista",
         "ID": "46rw-ef8ec",
         "Poder": 910234,
         "Nivel": 73,
-        "Actividad": 6,
-        "Daño": 5,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 7,
+        "Puntos": 5,
         "Consistencia": 7
     },
     {
-        "Nombre": "AlexBBV",
-        "Rango": "Miembro",
-        "ID": "3j6t-ckkfp",
-        "Poder": 916755,
-        "Nivel": 75,
-        "Actividad": 6,
-        "Daño": 4,
-        "Puntos": 6,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "Benja",
+        "Nombre": "Benja", 
         "Rango": "Miembro",
         "ID": "0qph-cbpiv",
         "Poder": 1810380,
         "Nivel": 80,
-        "Actividad": 5,
-        "Daño": 8,
-        "Puntos": 6,
-        "Consistencia": 8
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 7,
+        "Consistencia": 7
     },
     {
-        "Nombre": "unu880",
+        "Nombre": "Elizabeth c.v13", 
         "Rango": "Miembro",
-        "ID": "0pf7-i1l5w",
-        "Poder": 638219,
-        "Nivel": 64,
-        "Actividad": 5,
-        "Daño": 2,
-        "Puntos": 6,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "karma_ichikawa",
-        "Rango": "Miembro",
-        "ID": "4j53-gd6c5",
-        "Poder": 753905,
-        "Nivel": 74,
-        "Actividad": 4,
-        "Daño": 3,
-        "Puntos": 5,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "Elizabeth c.v13",
-        "Rango": "Especialista",
         "ID": "4d6g-cqz8y",
         "Poder": 641011,
         "Nivel": 72,
         "Actividad": 4,
-        "Daño": 2,
-        "Puntos": 4,
+        "Daño": 0,
+        "Puntos": 2,
         "Consistencia": 4
     },
     {
-        "Nombre": "Sapulinga01",
+        "Nombre": "Pxneda", 
         "Rango": "Miembro",
-        "ID": "33ou-fej3y",
-        "Poder": 663553,
-        "Nivel": 75,
-        "Actividad": 4,
-        "Daño": 6,
-        "Puntos": 1,
-        "Consistencia": 3
+        "ID": "3uxe-dhcdm",
+        "Poder": 626123,
+        "Nivel": 74,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
-        "Nombre": "Aquio",
-        "Rango": "Especialista",
-        "ID": "0jj3-2yyeu",
-        "Poder": 1186568,
-        "Nivel": 73,
-        "Actividad": 0,
-        "Daño": 0,
-        "Puntos": 0,
-        "Consistencia": 1
+        "Nombre": "black lagoon69", 
+        "Rango": "Miembro",
+        "ID": "4iu7-dxzm0",
+        "Poder": 1745060,
+        "Nivel": 75,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 9,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Artuxx<D", 
+        "Rango": "Miembro",
+        "ID": "16ln-8xkeg",
+        "Poder": 553274,
+        "Nivel": 72,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 8,
+        "Consistencia": 4
+    },
+    {
+        "Nombre": "Yander758", 
+        "Rango": "Miembro",
+        "ID": "044e-oopz4",
+        "Poder": 311505,
+        "Nivel": 68,
+        "Actividad": 5,
+        "Daño": 2,
+        "Puntos": 3,
+        "Consistencia": 3
     }
 ]
+
+
+
+
+
 
 # ============================
 # CÁLCULO DE RENDIMIENTO
@@ -608,24 +602,24 @@ components.html(
             📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Alcanzar un <strong>promedio general superior al 75%</strong> en el rendimiento
-            total de la alianza durante esta semana.
+            Alcanzar los 16k de puntos para el <strong>rango diamante</strong> 
+            de gremios esta semana.
         </p>
 
         <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
             🔥 Enfoque principal
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Priorizar <strong>daño constante al Jefe de Inmortales</strong> y mantener
-            actividad regular en eventos clave.
+            Priorizar <strong>operaciones de gremio</strong> y mantener
+            actividad en el evento.
         </p>
 
         <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
             🏅 Recomendación
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Revisa el video recomendado al final de la página y ajusta tu equipo
-            para maximizar sinergias.
+            Realiza las operaciones constantemente, aprocechando que se
+            reinicia cada 24 horas.
         </p>
     </div>
     """,
@@ -684,7 +678,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana de Gremios 12/18 Enero 2026",
+    title="Rendimiento de los miembros - Semana 2 de Gremios 19/25 Enero 2026",
     width=ancho_grafica
 )
 
@@ -890,7 +884,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("📊 Tabla completa de miembros")
+st.subheader("📊 Tabla completa de miembros - ACTUALIZADA!🏆")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
