@@ -420,7 +420,9 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 
 #Para el mensaje de agradecimiento rango oro
 
-st.markdown(
+import streamlit.components.v1 as components
+
+components.html(
     """
     <div style="
         background: linear-gradient(145deg, rgba(255,215,0,0.12), rgba(255,75,75,0.10));
@@ -429,6 +431,7 @@ st.markdown(
         box-shadow: 0 0 35px rgba(255, 200, 75, 0.55);
         margin: 30px auto 35px auto;
         max-width: 1100px;
+        font-family: Arial, sans-serif;
     ">
 
         <div style="text-align:center;">
@@ -466,7 +469,7 @@ st.markdown(
 
     </div>
     """,
-    unsafe_allow_html=True
+    height=520
 )
 
 
