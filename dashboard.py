@@ -501,23 +501,31 @@ components.html(
     <div style="
         max-width: 1000px;
         margin: 30px auto 40px auto;
-        padding: 22px;
-        border-radius: 20px;
+        padding: 26px 22px 28px 22px;
+        border-radius: 22px;
         background: rgba(255, 0, 156, 0.08);
-        box-shadow: 0 0 35px rgba(255, 0, 156, 0.45);
+        box-shadow: 0 0 40px rgba(255, 0, 156, 0.5);
         font-family: Arial, sans-serif;
+        text-align: center;
     ">
 
+        <!-- IMAGEN DIAMANTE -->
+        <img src="Gramio_Diamante_Logotipo.png"
+             style="
+                width: 120px;
+                max-width: 40vw;
+                margin-bottom: 14px;
+                filter: drop-shadow(0 0 18px rgba(255, 0, 156, 0.95));
+             " />
+
         <h3 style="
-            text-align: center;
             color: rgba(255, 0, 156, 0.94);
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         ">
-            ✨ Progreso hacia Diamante
+            Progreso hacia Diamante
         </h3>
 
         <p style="
-            text-align: center;
             color: #dddddd;
             font-size: 15px;
             margin-bottom: 18px;
@@ -525,6 +533,7 @@ components.html(
             {puntaje_actual:,} / {puntaje_meta:,} puntos alcanzados
         </p>
 
+        <!-- BARRA -->
         <div style="
             width: 100%;
             height: 22px;
@@ -550,7 +559,6 @@ components.html(
         </div>
 
         <p style="
-            text-align: center;
             color: #f0f0f0;
             margin-top: 12px;
             font-size: 14px;
@@ -560,8 +568,9 @@ components.html(
 
     </div>
     """,
-    height=260
+    height=320
 )
+
 
 
 
