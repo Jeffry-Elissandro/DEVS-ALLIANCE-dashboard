@@ -1274,13 +1274,22 @@ except FileNotFoundError:
 
 #Para EasterEgg
 
-st.divider()
+import base64
 
-st.markdown("""
+def load_gif(path):
+    with open(path, "rb") as f:
+        data = base64.b64encode(f.read()).decode("utf-8")
+    return f"data:image/gif;base64,{data}"
+
+
+
+gif_src = load_gif("secreto.gif")
+
+st.markdown(f"""
 <div style="text-align:center; margin-top:30px;">
-    <img src="Ms_Fortune_head.gif" width="180">
+    <img src="{gif_src}" width="180">
     <p style="color:#777; font-size:12px; margin-top:8px;">
-        Has llegado hasta el final 👀
+        ¡Gracias por ver!
     </p>
 </div>
 """, unsafe_allow_html=True)
