@@ -484,6 +484,87 @@ components.html(
 
 
 
+# ============================
+# PROGRESO HACIA DIAMANTE
+# ============================
+
+puntaje_actual = 14000   # Oro actual
+puntaje_meta = 16000     # Diamante
+
+porcentaje = int((puntaje_actual / puntaje_meta) * 100)
+
+
+import streamlit.components.v1 as components
+
+components.html(
+    f"""
+    <div style="
+        max-width: 1000px;
+        margin: 30px auto 40px auto;
+        padding: 22px;
+        border-radius: 20px;
+        background: rgba(255, 0, 156, 0.08);
+        box-shadow: 0 0 35px rgba(255, 0, 156, 0.45);
+        font-family: Arial, sans-serif;
+    ">
+
+        <h3 style="
+            text-align: center;
+            color: rgba(255, 0, 156, 0.94);
+            margin-bottom: 14px;
+        ">
+            ✨ Progreso hacia Diamante
+        </h3>
+
+        <p style="
+            text-align: center;
+            color: #dddddd;
+            font-size: 15px;
+            margin-bottom: 18px;
+        ">
+            {puntaje_actual:,} / {puntaje_meta:,} puntos alcanzados
+        </p>
+
+        <div style="
+            width: 100%;
+            height: 22px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+        ">
+            <div style="
+                width: {porcentaje}%;
+                height: 100%;
+                background: linear-gradient(
+                    90deg,
+                    rgba(255, 0, 156, 0.85),
+                    rgba(255, 120, 220, 1)
+                );
+                box-shadow:
+                    0 0 18px rgba(255, 0, 156, 0.95),
+                    inset 0 0 6px rgba(255,255,255,0.35);
+                transition: width 0.8s ease;
+            ">
+            </div>
+        </div>
+
+        <p style="
+            text-align: center;
+            color: #f0f0f0;
+            margin-top: 12px;
+            font-size: 14px;
+        ">
+            {porcentaje}% completado — cada aporte nos acerca más 👍
+        </p>
+
+    </div>
+    """,
+    height=260
+)
+
+
+
 
 
 
