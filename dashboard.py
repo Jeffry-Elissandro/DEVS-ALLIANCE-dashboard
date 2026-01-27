@@ -496,6 +496,22 @@ porcentaje = int((puntaje_actual / puntaje_meta) * 100)
 
 import streamlit.components.v1 as components
 
+
+
+import base64
+
+def img_to_base64(path):
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+
+diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
+
+
+
+
+
+
 components.html(
     f"""
     <div style="
@@ -510,13 +526,14 @@ components.html(
     ">
 
         <!-- IMAGEN DIAMANTE -->
-        <img src="Gramio_Diamante_Logotipo.png"
-             style="
-                width: 120px;
-                max-width: 40vw;
-                margin-bottom: 14px;
-                filter: drop-shadow(0 0 18px rgba(255, 0, 156, 0.95));
-             " />
+        <img src="data:image/png;base64,{diamante_img}"
+     style="
+        width: 120px;
+        max-width: 40vw;
+        margin-bottom: 14px;
+        filter: drop-shadow(0 0 18px rgba(255, 0, 156, 0.95));
+     " />
+
 
         <h3 style="
             color: rgba(255, 0, 156, 0.94);
