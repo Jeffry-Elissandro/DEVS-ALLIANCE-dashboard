@@ -416,6 +416,69 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
+
+
+#Para el mensaje de agradecimiento rango oro
+
+st.markdown(
+    """
+    <div style="
+        background: linear-gradient(145deg, rgba(255,215,0,0.12), rgba(255,75,75,0.10));
+        border-radius: 22px;
+        padding: 26px;
+        box-shadow: 0 0 35px rgba(255, 200, 75, 0.55);
+        margin: 30px auto 35px auto;
+        max-width: 1100px;
+    ">
+
+        <div style="text-align:center;">
+            <img src="Gremios_Rango_14k.png" style="
+                max-width: 100%;
+                border-radius: 18px;
+                box-shadow: 0 0 25px rgba(255, 215, 0, 0.65);
+                margin-bottom: 22px;
+            ">
+        </div>
+
+        <h2 style="
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 12px;
+        ">
+            💎 A un paso de Diamante
+        </h2>
+
+        <p style="
+            text-align: center;
+            color: #f0f0f0;
+            font-size: 17px;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.7;
+        ">
+            Esta semana estuvimos <strong>muy cerca de alcanzar el rango Diamante (16,000 puntos)</strong>,
+            quedándonos en <strong>Oro con 14,000</strong>.
+            <br><br>
+            El potencial está ahí. Con un poco más de constancia y apoyo entre todos,
+            <strong>Diamante es totalmente alcanzable</strong>.
+            Cada aporte cuenta 🏅
+        </p>
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
+
+
+
+
 #Sistema KPIs
 
 total_miembros = len(df)
@@ -465,7 +528,7 @@ div[data-testid="metric-container"] {
 
 
 
-
+#Resumen ejeutivo
 
 
 st.subheader("🛠️ Resumen Ejecutivo de la Alianza")
