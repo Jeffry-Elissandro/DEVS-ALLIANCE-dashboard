@@ -535,12 +535,12 @@ components.html(
      " />
 
 
-        <h3 style="
+        <h1 style="
             color: rgba(255, 0, 156, 0.94);
             margin-bottom: 12px;
         ">
             Progreso hacia Diamante
-        </h3>
+        </h1>
 
         <p style="
             color: #dddddd;
