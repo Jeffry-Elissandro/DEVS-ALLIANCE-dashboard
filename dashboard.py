@@ -1276,13 +1276,14 @@ except FileNotFoundError:
 
 st.divider()
 
-col1, col2, col3 = st.columns([1, 1, 1])
-
-with col2:
-    st.image(
-        "Ms_Fortune_head.gif",
-        width=180  # ajusta según tu gusto
-    )
+st.markdown("""
+<div style="text-align:center; margin-top:30px;">
+    <img src="Ms_Fortune_head.gif" width="180">
+    <p style="color:#777; font-size:12px; margin-top:8px;">
+        Has llegado hasta el final 👀
+    </p>
+</div>
+""", unsafe_allow_html=True)
 
 
 
