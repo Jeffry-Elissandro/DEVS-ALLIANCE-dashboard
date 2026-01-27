@@ -782,6 +782,25 @@ st.markdown(
 
 
 
+
+
+
+#Para el mensaje de invitación a solucionar errores
+
+st.info(
+    "ℹ️ **Nota importante**\n\n"
+    "Si consideras que tu puntuación presenta algún error o no refleja correctamente tu actividad, "
+    "puedes dejar un comentario más abajo. Lo revisaré personalmente y, si corresponde, se corregirá. "
+    "Este sistema es una referencia interna y siempre está abierto a ajustes justos."
+)
+
+st.caption("El objetivo del ranking es mejorar como alianza, no señalar errores individuales.")
+
+
+
+
+
+
 #Para justificar el rendimiento de cada miembro
 
 
