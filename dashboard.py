@@ -416,6 +416,62 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
+#Voz humana antes que numeros
+
+st.markdown(
+    """
+<div style="
+    margin: 40px auto 50px auto;
+    max-width: 900px;
+    padding: 28px 26px;
+    border-radius: 20px;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 75, 75, 0.08),
+        rgba(120, 40, 40, 0.04)
+    );
+    box-shadow:
+        0 0 35px rgba(255, 75, 75, 0.35),
+        inset 0 0 0 1px rgba(255, 75, 75, 0.25);
+    text-align: center;
+">
+
+<h2 style="color:#ff4b4b; margin-bottom:16px;">
+🤍 A quienes forman y formaron parte de esta alianza
+</h2>
+
+<p style="color:#dddddd; font-size:17px; line-height:1.7; margin-bottom:14px;">
+Cada miembro que ha pasado por esta alianza dejó una huella.
+Algunos siguen aquí, otros tomaron caminos distintos, pero
+<strong>todos aportaron algo valioso</strong> en algún momento.
+</p>
+
+<p style="color:#cccccc; font-size:15px; line-height:1.6; margin-bottom:14px;">
+Las decisiones basadas en rendimiento no invalidan el esfuerzo,
+el apoyo ni el tiempo compartido. A veces liderar implica elegir
+lo que es mejor para el grupo, incluso cuando no es lo más fácil.
+</p>
+
+<p style="color:#bbbbbb; font-size:14px; line-height:1.6;">
+Si hoy estás aquí, gracias por seguir creyendo.
+Si ya no lo estás, gracias por haber sido parte.<br>
+<strong>Esta alianza se construyó con personas, no solo con números.</strong>
+</p>
+
+</div>
+""",
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
+
+
+
 
 
 #Para el mensaje de agradecimiento rango oro
@@ -488,7 +544,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10640   # Oro actual
+puntaje_actual = 10715   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
