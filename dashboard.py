@@ -474,6 +474,7 @@ Si ya no lo estás, gracias por haber sido parte.<br>
 
 
 
+
 #Para el mensaje de agradecimiento rango oro
 
 import base64
