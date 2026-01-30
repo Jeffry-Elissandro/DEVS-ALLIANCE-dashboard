@@ -397,20 +397,8 @@ color_map = {
 st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 st.title("💎 DEV'S ALLIANCE – Sistema de Rendimiento")
-if st.session_state.mostrar_nota:
-    st.warning(
-        "📢 NOTA IMPORTANTE:\n\n"
-    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
-    "daño, puntos y consistencia.\n"
-    "Los rangos se actualizan periódicamente y sirven como referencia interna "
-    "para la gestión de la alianza. \n"
-    "También puedes interactuar con la gráfica con las herramientas disponibles a la  "
-    "derecha, o bien, descargar el PNG de la gráfica para más comodidad - CHESS"
-    )
-    if st.button("Entendido"):
-        st.session_state.mostrar_nota = False
 
-st.write("Análisis de actividad, daño, puntos y consistencia")
+
 
 
 
@@ -466,6 +454,30 @@ aunque hoy no todas sigan presentes.
     unsafe_allow_html=True
 )
 
+
+
+
+
+
+
+
+
+
+
+if st.session_state.mostrar_nota:
+    st.warning(
+        "📢 NOTA IMPORTANTE:\n\n"
+    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
+    "daño, puntos y consistencia.\n"
+    "Los rangos se actualizan periódicamente y sirven como referencia interna "
+    "para la gestión de la alianza. \n"
+    "También puedes interactuar con la gráfica con las herramientas disponibles a la  "
+    "derecha, o bien, descargar el PNG de la gráfica para más comodidad - CHESS"
+    )
+    if st.button("Entendido"):
+        st.session_state.mostrar_nota = False
+
+st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
