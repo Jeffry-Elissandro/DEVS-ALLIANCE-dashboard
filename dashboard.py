@@ -561,7 +561,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 12905   # Oro actual
+puntaje_actual = 13310   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
