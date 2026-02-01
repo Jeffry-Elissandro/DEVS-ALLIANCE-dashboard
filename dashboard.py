@@ -398,7 +398,7 @@ st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 st.title("💎 DEV'S ALLIANCE – Sistema de Rendimiento")
 
-
+st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
@@ -477,7 +477,6 @@ if st.session_state.mostrar_nota:
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
 
-st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
