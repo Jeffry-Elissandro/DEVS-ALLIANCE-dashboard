@@ -1418,7 +1418,8 @@ st.markdown(f"""
 }}
 .dev-card:hover{{
   transform:translateY(-4px) scale(1.04);
-  box-shadow:0 0 12px rgba(56,189,248,0.35);
+  box-shadow:0 0 15px rgba(212,175,55,0.6);
+  border-color:#D4AF37;
 }}
 </style>
 
