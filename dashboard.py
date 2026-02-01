@@ -1338,7 +1338,7 @@ st.markdown("""
   display:block;
   margin-top:6px;
   font-size:12px;
-  color:#cbd5f1;
+  color:#e5f3ff;
 }
 
 .dev-card:hover{
@@ -1414,7 +1414,7 @@ st.markdown(f"""
   display:block;
   margin-top:6px;
   font-size:12px;
-  color:#000;
+  color:#e5f3ff;
 }}
 .dev-card:hover{{
   transform:translateY(-4px) scale(1.04);
