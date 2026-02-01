@@ -1238,7 +1238,7 @@ with col1:
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.image("carta_peacock.png", use_container_width=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
