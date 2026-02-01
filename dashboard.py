@@ -1389,19 +1389,21 @@ gap:14px;
 
 <!-- MIEMBRO -->
 <div class="dev-card">
-<img src="data:1/png;base64,AAAABBBBCCCC...">
-<span>Jugador1</span>
+  <img src="images/1.png">
+  <span>Jugador1</span>
 </div>
 
 <div class="dev-card">
-<img src="data:2/png;base64,AAAABBBBCCCC...">
-<span>Jugador2</span>
+  <img src="images/2.png">
+  <span>Jugador2</span>
 </div>
 
+
 <div class="dev-card">
-<img src="data:2/png;base64,AAAABBBBCCCC...">
-<span>Jugador3</span>
+  <img src="images/3.png">
+  <span>Jugador3</span>
 </div>
+
 
 <!-- DUPLICA BLOQUES PARA MÁS MIEMBROS -->
 
