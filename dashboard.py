@@ -1206,23 +1206,10 @@ components.html(
 #Para el Título Equipo de la Semana
 
 st.markdown("""
-<div style="
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-  margin:35px auto 20px;
-  text-align:center;
-">
-  <h1 style="
-    font-family: 'Orbitron', sans-serif;
-    font-size:42px;
-    font-weight:800;
-    letter-spacing:2px;
-    color:#ffffff;
-    text-transform:uppercase;
-    text-shadow:
-      0 0 6px rgba(255,255,255,0.6),
-      0 0 14px rgba(99,102,241,0.6),
-      0 0 28px rgba(99,102,241,0.45);
-    @keyframes glow {
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+<style>
+@keyframes glow {
   0% {
     text-shadow: 
       0 0 6px rgba(255,255,255,0.6),
@@ -1237,9 +1224,17 @@ st.markdown("""
   }
 }
 
-    animation: glow 1.5s ease-in-out infinite alternate;
-    
-    h1:hover {
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size:42px;
+  font-weight:800;
+  letter-spacing:2px;
+  color:#ffffff;
+  text-transform:uppercase;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+h1:hover {
   color:#FFD700; /* dorado brillante */
   text-shadow:
     0 0 10px rgba(255,255,255,0.9),
@@ -1248,14 +1243,15 @@ st.markdown("""
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
-  ">
-    Equipo de la Semana
-  </h1>
-</div>
+</style>
 
-            """,
-    unsafe_allow_html=True
-)
+<div style="
+  margin:35px auto 20px;
+  text-align:center;
+">
+  <h1>Equipo de la Semana</h1>
+</div>
+""", unsafe_allow_html=True)
 
 
 
