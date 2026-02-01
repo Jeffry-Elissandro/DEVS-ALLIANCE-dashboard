@@ -1317,35 +1317,42 @@ aunque hoy no todas sigan presentes.
 #Para mostrar tabla de MIEMBROS!
 
 
-st.markdown("""
+st.markdown(f"""
 <style>
-.dev-card{
-  background:#292929e6;
-  border-radius:12px;
+.dev-card {{
+  background:linear-gradient(
+    180deg,
+    rgba(15,23,42,0.9),
+    rgba(2,6,23,0.9)
+  );
+  border-radius:14px;
   padding:8px;
-  transition:0.25s;
   cursor:pointer;
-  border:2px solid #70d4daf2; /* dorado suave */
-}
+  border:1px solid rgba(212,177,95,0.25);
+  transition:0.3s ease;
+}}
 
-.dev-card img{
+.dev-card img {{
   width:100%;
   border-radius:10px;
   display:block;
-}
+}}
 
-.dev-card span{
+.dev-card span {{
   display:block;
   margin-top:6px;
   font-size:12px;
   color:#e5f3ff;
-}
+  letter-spacing:0.5px;
+}}
 
-.dev-card:hover{
-  transform:translateY(-4px) scale(1.04);
-  box-shadow:0 0 15px rgba(212,175,55,0.6);  /* dorado elegante */
-  border-color:#D4AF37; /* dorado más cálido */
-}
+.dev-card:hover {{
+  transform:translateY(-6px) scale(1.06);
+  box-shadow:
+    0 0 12px rgba(212,177,95,0.35),
+    0 0 25px rgba(212,177,95,0.15);
+  border-color:#d4b15f;
+}}
 </style>
 """, unsafe_allow_html=True)
 
@@ -1426,15 +1433,31 @@ st.markdown(f"""
 <div style="
 max-width:1100px;
 margin:40px auto;
-padding:25px;
-background:linear-gradient(180deg, rgba(88, 88, 88, 1), rgba(122, 126, 127, 1)); /*fondo general*/
-border-radius:16px;
-box-shadow:0 0 25px rgba(0,0,0,0.35);
+padding:28px;
+background:linear-gradient(180deg,#0b0f1a,#020617);
+border-radius:18px;
+box-shadow:
+  0 0 35px rgba(0,0,0,0.6),
+  inset 0 0 40px rgba(212,177,95,0.05);
 text-align:center;
 ">
 
-<h2 style="color:#e5f3ff;">💜 Miembros Actuales — Alianza DEVS</h2>
-<p style="color:#fff;">Cada rostro aquí representa compromiso, constancia y equipo.</p>
+<h2 style="
+color:#f5e6b8;
+margin-bottom:6px;
+font-size:26px;
+letter-spacing:1px;
+">
+💜 Miembros Actuales — Alianza DEVS
+</h2>
+
+<p style="
+color:#9fb3c8;
+font-size:14px;
+margin-bottom:22px;
+">
+Cada rostro aquí representa compromiso, constancia y equipo.
+</p>
 
 <div style="
 display:grid;
