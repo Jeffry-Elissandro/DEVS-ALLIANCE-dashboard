@@ -1389,18 +1389,18 @@ gap:14px;
 
 <!-- MIEMBRO -->
 <div class="dev-card">
-  <img src="1.png">
+  st.image("1.png", width=90)
   <span>Jugador1</span>
 </div>
 
 <div class="dev-card">
-  <img src="2.png">
+  st.image("2.png", width=90)
   <span>Jugador2</span>
 </div>
 
 
 <div class="dev-card">
-  <img src="3.png">
+  st.image("3.png", width=90)
   <span>Jugador3</span>
 </div>
 
