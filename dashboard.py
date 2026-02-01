@@ -1325,6 +1325,7 @@ st.markdown("""
   padding:8px;
   transition:0.25s;
   cursor:pointer;
+  border:2px solid #FFD700; /* dorado brillante */
 }
 
 .dev-card img{
@@ -1342,7 +1343,8 @@ st.markdown("""
 
 .dev-card:hover{
   transform:translateY(-4px) scale(1.04);
-  box-shadow:0 0 12px rgba(56,189,248,0.35);
+  box-shadow:0 0 15px rgba(255,215,0,0.8);  /* dorado intenso */
+  border-color:#FFA500; /* dorado anaranjado para contraste */
 }
 </style>
 """, unsafe_allow_html=True)
