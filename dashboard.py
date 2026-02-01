@@ -1224,35 +1224,32 @@ st.markdown("""
   }
 }
 
-h1 {
+/* SOLO afecta al título con clase .special-title */
+.special-title {
   font-family: 'Orbitron', sans-serif;
   font-size:42px;
   font-weight:800;
   letter-spacing:2px;
-  color:#f0f0f0; /* blanco suave/plateado */
+  color:#f0f0f0;
   text-transform:uppercase;
   animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-h1:hover {
-  color:#000000; /* morado suave */
+.special-title:hover {
+  color:#ffffff;
   text-shadow:
-  0 0 6px rgba(255,255,255,0.8),
-  0 0 14px rgba(192,192,192,0.7), /* plateado */
-  0 0 28px rgba(255,255,255,0.6);
+    0 0 12px rgba(255,255,255,1),
+    0 0 24px rgba(192,192,192,0.9),
+    0 0 48px rgba(255,255,255,0.8);
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
 </style>
 
-<div style="
-  margin:35px auto 20px;
-  text-align:center;
-">
-  <h1>Equipo de la Semana</h1>
+<div style="margin:35px auto 20px; text-align:center;">
+  <h1 class="special-title">Equipo de la Semana</h1>
 </div>
 """, unsafe_allow_html=True)
-
 
 
 
