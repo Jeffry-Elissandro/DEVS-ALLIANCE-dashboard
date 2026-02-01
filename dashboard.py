@@ -1212,15 +1212,15 @@ st.markdown("""
 @keyframes glow {
   0% {
     text-shadow: 
-      0 0 6px rgba(255,255,255,0.6),
-      0 0 14px rgba(255,215,0,0.6),
-      0 0 28px rgba(255,215,0,0.45);
+      0 0 6px rgba(255,255,255,0.7),
+      0 0 14px rgba(192,192,192,0.6),
+      0 0 28px rgba(255,255,255,0.5);
   }
   100% {
     text-shadow: 
-      0 0 10px rgba(255,255,255,0.8),
-      0 0 20px rgba(255,215,0,0.8),
-      0 0 40px rgba(255,215,0,0.6);
+      0 0 10px rgba(255,255,255,0.9),
+      0 0 20px rgba(192,192,192,0.8),
+      0 0 40px rgba(255,255,255,0.7);
   }
 }
 
@@ -1229,7 +1229,7 @@ h1 {
   font-size:42px;
   font-weight:800;
   letter-spacing:2px;
-  color:#ffffff;
+  color:#f0f0f0; /* blanco suave/plateado */
   text-transform:uppercase;
   animation: glow 1.5s ease-in-out infinite alternate;
 }
@@ -1237,9 +1237,9 @@ h1 {
 h1:hover {
   color:#FFD700; /* dorado brillante */
   text-shadow:
-    0 0 10px rgba(255,255,255,0.9),
-    0 0 20px rgba(255,215,0,0.9),
-    0 0 40px rgba(255,215,0,0.7);
+  0 0 6px rgba(255,255,255,0.8),
+  0 0 14px rgba(192,192,192,0.7), /* plateado */
+  0 0 28px rgba(255,255,255,0.6);
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
