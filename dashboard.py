@@ -1197,6 +1197,52 @@ components.html(
 
 
 
+
+
+
+
+
+
+#Para el Título Equipo de la Semana
+
+st.markdown("""
+<div style="
+  margin:35px auto 20px;
+  text-align:center;
+">
+  <h1 style="
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:2px;
+    color:#ffffff;
+    text-transform:uppercase;
+    text-shadow:
+      0 0 6px rgba(255,255,255,0.6),
+      0 0 14px rgba(99,102,241,0.6),
+      0 0 28px rgba(99,102,241,0.45);
+  ">
+    Equipo de la Semana
+  </h1>
+</div>
+
+            """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Para mostrar las cartas
 
 st.markdown("""
