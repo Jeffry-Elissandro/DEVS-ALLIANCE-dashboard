@@ -1378,6 +1378,21 @@ img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
+img16 = img_base64("16.png")
+img17 = img_base64("17.png")
+img18 = img_base64("18.png")
+img19 = img_base64("19.png")
+img20 = img_base64("20.png")
+img21 = img_base64("21.png")
+img22 = img_base64("22.png")
+img23 = img_base64("23.png")
+img24 = img_base64("24.png")
+img25 = img_base64("25.png")
+img26 = img_base64("26.png")
+img27 = img_base64("27.png")
+img28 = img_base64("28.png")
+img29 = img_base64("29.png")
+img30 = img_base64("30.png")
 
 st.markdown(f"""
 <style>
@@ -1496,6 +1511,81 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img16}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img17}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img18}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img19}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img20}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img21}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img22}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img23}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img24}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img25}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img26}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img27}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img28}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img29}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img30}">
   <span>Jugador3</span>
 </div>
 
