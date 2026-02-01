@@ -1352,6 +1352,34 @@ st.markdown("""
 
 
 
+
+
+
+
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+
+img = img_base64("1.png")
+img = img_base64("2.png")
+img = img_base64("3.png")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import streamlit as st
 
 st.markdown("""
