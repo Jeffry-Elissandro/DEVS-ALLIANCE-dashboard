@@ -1369,28 +1369,28 @@ img3 = img_base64("3.png")
 
 st.markdown(f"""
 <style>
-.dev-card{
+.dev-card{{
   background:#020617;
   border-radius:12px;
   padding:8px;
   transition:0.25s;
   cursor:pointer;
-}
-.dev-card img{
+}}
+.dev-card img{{
   width:100%;
   border-radius:10px;
   display:block;
-}
-.dev-card span{
+}}
+.dev-card span{{
   display:block;
   margin-top:6px;
   font-size:12px;
   color:#cbd5f1;
-}
-.dev-card:hover{
+}}
+.dev-card:hover{{
   transform:translateY(-4px) scale(1.04);
   box-shadow:0 0 12px rgba(56,189,248,0.35);
-}
+}}
 </style>
 
 <div style="
