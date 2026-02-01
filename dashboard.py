@@ -1325,7 +1325,7 @@ st.markdown("""
   padding:8px;
   transition:0.25s;
   cursor:pointer;
-  border:2px solid #E6C200; /* dorado suave */
+  border:2px solid #70d4daf2; /* dorado suave */
 }
 
 .dev-card img{
@@ -1399,7 +1399,7 @@ img30 = img_base64("30.png")
 st.markdown(f"""
 <style>
 .dev-card{{
-  background:#deb300d4; /* Fondo de las cartas */
+  background:#c4d1d3e6; /* Fondo de las cartas */
   border-radius:12px;
   padding:8px;
   transition:0.25s;
@@ -1426,7 +1426,7 @@ st.markdown(f"""
 max-width:1100px;
 margin:40px auto;
 padding:25px;
-background:linear-gradient(180deg, rgba(204, 153, 6, 1), rgba(240, 183, 20, 1)); /*fondo general*/
+background:linear-gradient(180deg, rgba(177, 187, 188, 1), rgba(125, 135, 136, 1)); /*fondo general*/
 border-radius:16px;
 box-shadow:0 0 25px rgba(0,0,0,0.35);
 text-align:center;
