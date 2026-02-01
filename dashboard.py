@@ -1317,6 +1317,8 @@ aunque hoy no todas sigan presentes.
 #Para mostrar tabal de MIEMBROS!
 
 
+st.markdown("""
+<style>
 .dev-card{
   background:#020617;
   border-radius:12px;
@@ -1342,9 +1344,16 @@ aunque hoy no todas sigan presentes.
   transform:translateY(-4px) scale(1.04);
   box-shadow:0 0 12px rgba(56,189,248,0.35);
 }
+</style>
+""", unsafe_allow_html=True)
 
 
 
+
+
+
+
+st.markdown("""
 <div style="
 max-width:1100px;
 margin:40px auto;
@@ -1398,7 +1407,7 @@ gap:14px;
 
 </div>
 </div>
-
+""", unsafe_allow_html=True)
 
 
 
