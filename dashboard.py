@@ -1338,7 +1338,7 @@ st.markdown("""
   display:block;
   margin-top:6px;
   font-size:12px;
-  color:#ffffffd9;
+  color:#cbd5f1;
 }
 
 .dev-card:hover{
