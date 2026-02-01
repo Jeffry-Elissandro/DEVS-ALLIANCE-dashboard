@@ -1235,7 +1235,7 @@ h1 {
 }
 
 h1:hover {
-  color:#FFD700; /* dorado brillante */
+  color:#8cfbff; /* celeste suave */
   text-shadow:
   0 0 6px rgba(255,255,255,0.8),
   0 0 14px rgba(192,192,192,0.7), /* plateado */
