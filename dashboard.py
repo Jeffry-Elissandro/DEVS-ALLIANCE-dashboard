@@ -1352,7 +1352,6 @@ st.markdown("""
 
 
 
-import streamlit as st
 
 st.markdown("""
 <div style="
@@ -1381,6 +1380,11 @@ font-size:15px;
 ">
 Cada rostro aquí representa compromiso, constancia y equipo.
 </p>
+
+            
+
+            
+import streamlit as st            
 
 cols = st.columns(8)  # ajusta columnas
 
