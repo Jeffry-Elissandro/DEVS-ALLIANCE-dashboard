@@ -1366,6 +1366,18 @@ def img_base64(path):
 img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
+img4 = img_base64("4.png")
+img5 = img_base64("5.png")
+img6 = img_base64("6.png")
+img7 = img_base64("7.png")
+img8 = img_base64("8.png")
+img9 = img_base64("9.png")
+img10 = img_base64("10.png")
+img11 = img_base64("11.png")
+img12 = img_base64("12.png")
+img13 = img_base64("13.png")
+img14 = img_base64("14.png")
+img15 = img_base64("15.png")
 
 st.markdown(f"""
 <style>
@@ -1426,6 +1438,69 @@ gap:14px;
   <img src="data:image/png;base64,{img3}">
   <span>Jugador3</span>
 </div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img4}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img5}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img6}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img7}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img8}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img9}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img10}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img11}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img12}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img13}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img14}">
+  <span>Jugador3</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img15}">
+  <span>Jugador3</span>
+</div>
+
+
+
 
 </div>
 </div>
