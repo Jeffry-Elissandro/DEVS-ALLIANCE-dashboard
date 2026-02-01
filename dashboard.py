@@ -1320,7 +1320,7 @@ aunque hoy no todas sigan presentes.
 st.markdown("""
 <style>
 .dev-card{
-  background:#fff8dc;
+  background:#6980b4e6;
   border-radius:12px;
   padding:8px;
   transition:0.25s;
@@ -1338,7 +1338,7 @@ st.markdown("""
   display:block;
   margin-top:6px;
   font-size:12px;
-  color:#cbd5f1;
+  color:#fff;
 }
 
 .dev-card:hover{
@@ -1399,7 +1399,7 @@ img30 = img_base64("30.png")
 st.markdown(f"""
 <style>
 .dev-card{{
-  background:#c4d1d3e6; /* Fondo de las cartas */
+  background:#6980b4e6; /* Fondo de las cartas */
   border-radius:12px;
   padding:8px;
   transition:0.25s;
@@ -1426,14 +1426,14 @@ st.markdown(f"""
 max-width:1100px;
 margin:40px auto;
 padding:25px;
-background:linear-gradient(180deg, rgba(177, 187, 188, 1), rgba(125, 135, 136, 1)); /*fondo general*/
+background:linear-gradient(180deg, rgba(88, 88, 88, 1), rgba(122, 126, 127, 1)); /*fondo general*/
 border-radius:16px;
 box-shadow:0 0 25px rgba(0,0,0,0.35);
 text-align:center;
 ">
 
 <h2 style="color:#e5f3ff;">💜 Miembros Actuales — Alianza DEVS</h2>
-<p style="color:#000;">Cada rostro aquí representa compromiso, constancia y equipo.</p>
+<p style="color:#fff;">Cada rostro aquí representa compromiso, constancia y equipo.</p>
 
 <div style="
 display:grid;
