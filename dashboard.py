@@ -1352,6 +1352,7 @@ st.markdown("""
 
 
 
+import streamlit as st
 
 st.markdown("""
 <div style="
@@ -1381,23 +1382,29 @@ font-size:15px;
 Cada rostro aquí representa compromiso, constancia y equipo.
 </p>
 
-            
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(90px,1fr));
+gap:14px;
+">
 
-            
-import streamlit as st            
+<!-- MIEMBRO -->
+<div class="dev-card">
+  <img src="1.png">
+  <span>Jugador1</span>
+</div>
 
-cols = st.columns(8)  # ajusta columnas
+<div class="dev-card">
+  <img src="2.png">
+  <span>Jugador2</span>
+</div>
 
-members = [
-    ("1.png", "Jugador1"),
-    ("2.png", "Jugador2"),
-    ("3.png", "Jugador3"),
-]
 
-for i, (img, name) in enumerate(members):
-    with cols[i % len(cols)]:
-        st.image(img, width=90)
-        st.caption(name)
+<div class="dev-card">
+  <img src="3.png">
+  <span>Jugador3</span>
+</div>
+
 
 <!-- DUPLICA BLOQUES PARA MÁS MIEMBROS -->
 
