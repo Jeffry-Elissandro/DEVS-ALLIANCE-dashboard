@@ -1207,10 +1207,12 @@ components.html(
 
 st.markdown("""
 <div style="
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   margin:35px auto 20px;
   text-align:center;
 ">
   <h1 style="
+    font-family: 'Orbitron', sans-serif;
     font-size:42px;
     font-weight:800;
     letter-spacing:2px;
@@ -1220,6 +1222,32 @@ st.markdown("""
       0 0 6px rgba(255,255,255,0.6),
       0 0 14px rgba(99,102,241,0.6),
       0 0 28px rgba(99,102,241,0.45);
+    @keyframes glow {
+  0% {
+    text-shadow: 
+      0 0 6px rgba(255,255,255,0.6),
+      0 0 14px rgba(255,215,0,0.6),
+      0 0 28px rgba(255,215,0,0.45);
+  }
+  100% {
+    text-shadow: 
+      0 0 10px rgba(255,255,255,0.8),
+      0 0 20px rgba(255,215,0,0.8),
+      0 0 40px rgba(255,215,0,0.6);
+  }
+}
+
+    animation: glow 1.5s ease-in-out infinite alternate;
+    
+    h1:hover {
+  color:#FFD700; /* dorado brillante */
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.9),
+    0 0 20px rgba(255,215,0,0.9),
+    0 0 40px rgba(255,215,0,0.7);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
   ">
     Equipo de la Semana
   </h1>
