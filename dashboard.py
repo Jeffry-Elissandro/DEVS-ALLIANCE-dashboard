@@ -1414,7 +1414,7 @@ st.markdown(f"""
   display:block;
   margin-top:6px;
   font-size:12px;
-  color:#cbd5f1;
+  color:#000;
 }}
 .dev-card:hover{{
   transform:translateY(-4px) scale(1.04);
@@ -1433,7 +1433,7 @@ text-align:center;
 ">
 
 <h2 style="color:#e5f3ff;">💜 Miembros Actuales — Alianza DEVS</h2>
-<p style="color:#9fb3c8;">Cada rostro aquí representa compromiso, constancia y equipo.</p>
+<p style="color:#000;">Cada rostro aquí representa compromiso, constancia y equipo.</p>
 
 <div style="
 display:grid;
