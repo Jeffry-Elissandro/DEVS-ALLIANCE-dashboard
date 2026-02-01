@@ -1320,12 +1320,12 @@ aunque hoy no todas sigan presentes.
 st.markdown("""
 <style>
 .dev-card{
-  background:#020617;
+  background:#fff8dc; /* fondo crema dentro de la tarjeta */
   border-radius:12px;
   padding:8px;
   transition:0.25s;
   cursor:pointer;
-  border:2px solid #FFD700; /* dorado brillante */
+  border:2px solid #E6C200; /* dorado suave */
 }
 
 .dev-card img{
@@ -1343,8 +1343,8 @@ st.markdown("""
 
 .dev-card:hover{
   transform:translateY(-4px) scale(1.04);
-  box-shadow:0 0 15px rgba(255,215,0,0.8);  /* dorado intenso */
-  border-color:#FFA500; /* dorado anaranjado para contraste */
+  box-shadow:0 0 15px rgba(212,175,55,0.6);  /* dorado elegante */
+  border-color:#D4AF37; /* dorado más cálido */
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1426,7 +1426,7 @@ st.markdown(f"""
 max-width:1100px;
 margin:40px auto;
 padding:25px;
-background:linear-gradient(180deg,#1e293b,#0f172a);
+background:linear-gradient(180deg,#fffacd,#fdf5e6); 
 border-radius:16px;
 box-shadow:0 0 25px rgba(0,0,0,0.35);
 text-align:center;
