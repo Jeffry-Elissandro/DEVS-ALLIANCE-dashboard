@@ -821,7 +821,7 @@ components.html(
         </p>
     </div>
     """,
-    height=380
+    height=400
 )
 
 
