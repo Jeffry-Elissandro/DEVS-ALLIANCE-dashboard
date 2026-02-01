@@ -1314,6 +1314,97 @@ aunque hoy no todas sigan presentes.
 
 
 
+#Para mostrar tabal de MIEMBROS!
+
+
+.dev-card{
+  background:#020617;
+  border-radius:12px;
+  padding:8px;
+  transition:0.25s;
+  cursor:pointer;
+}
+
+.dev-card img{
+  width:100%;
+  border-radius:10px;
+  display:block;
+}
+
+.dev-card span{
+  display:block;
+  margin-top:6px;
+  font-size:12px;
+  color:#cbd5f1;
+}
+
+.dev-card:hover{
+  transform:translateY(-4px) scale(1.04);
+  box-shadow:0 0 12px rgba(56,189,248,0.35);
+}
+
+
+
+<div style="
+max-width:1100px;
+margin:40px auto;
+padding:25px;
+background:linear-gradient(180deg,#1e293b,#0f172a);
+border-radius:16px;
+box-shadow:0 0 25px rgba(0,0,0,0.35);
+text-align:center;
+">
+
+<h2 style="
+color:#e5f3ff;
+margin-bottom:8px;
+font-size:26px;
+letter-spacing:1px;
+">
+💜 Miembros Actuales — Alianza DEVS
+</h2>
+
+<p style="
+color:#9fb3c8;
+margin-bottom:22px;
+font-size:15px;
+">
+Cada rostro aquí representa compromiso, constancia y equipo.
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(90px,1fr));
+gap:14px;
+">
+
+<!-- MIEMBRO -->
+<div class="dev-card">
+<img src="data:1/png;base64,AAAABBBBCCCC...">
+<span>Jugador1</span>
+</div>
+
+<div class="dev-card">
+<img src="data:2/png;base64,AAAABBBBCCCC...">
+<span>Jugador2</span>
+</div>
+
+<div class="dev-card">
+<img src="data:2/png;base64,AAAABBBBCCCC...">
+<span>Jugador3</span>
+</div>
+
+<!-- DUPLICA BLOQUES PARA MÁS MIEMBROS -->
+
+</div>
+</div>
+
+
+
+
+
+
+
 
 
 
