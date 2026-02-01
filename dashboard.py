@@ -1399,7 +1399,7 @@ img30 = img_base64("30.png")
 st.markdown(f"""
 <style>
 .dev-card{{
-  background:#fff8dc;
+  background:#fff8dc; /* Fondo de las cartas */
   border-radius:12px;
   padding:8px;
   transition:0.25s;
@@ -1426,7 +1426,7 @@ st.markdown(f"""
 max-width:1100px;
 margin:40px auto;
 padding:25px;
-background:linear-gradient(180deg, rgba(184,134,11,0.85), rgba(139,69,19,0.85)); /*fondo general*/
+background:linear-gradient(180deg, rgba(228, 203, 132, 1), rgba(232, 199, 103, 1)); /*fondo general*/
 border-radius:16px;
 box-shadow:0 0 25px rgba(0,0,0,0.35);
 text-align:center;
