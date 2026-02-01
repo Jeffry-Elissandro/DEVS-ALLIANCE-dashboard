@@ -1399,7 +1399,7 @@ img30 = img_base64("30.png")
 st.markdown(f"""
 <style>
 .dev-card{{
-  background:#fff8dc; /* Fondo de las cartas */
+  background:#deb300d4; /* Fondo de las cartas */
   border-radius:12px;
   padding:8px;
   transition:0.25s;
