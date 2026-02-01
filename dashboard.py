@@ -1317,43 +1317,6 @@ aunque hoy no todas sigan presentes.
 #Para mostrar tabla de MIEMBROS!
 
 
-st.markdown("""
-<style>
-.dev-card{
-  background:#292929e6;
-  border-radius:12px;
-  padding:8px;
-  transition:0.25s;
-  cursor:pointer;
-  border:2px solid #70d4daf2; /* dorado suave */
-}
-
-.dev-card img{
-  width:100%;
-  border-radius:10px;
-  display:block;
-}
-
-.dev-card span{
-  display:block;
-  margin-top:6px;
-  font-size:12px;
-  color:#e5f3ff;
-}
-
-.dev-card:hover{
-  transform:translateY(-4px) scale(1.04);
-  box-shadow:0 0 15px rgba(212,175,55,0.6);  /* dorado elegante */
-  border-color:#D4AF37; /* dorado más cálido */
-}
-</style>
-""", unsafe_allow_html=True)
-
-
-
-
-
-
 
 
 
