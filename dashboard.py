@@ -1320,7 +1320,7 @@ aunque hoy no todas sigan presentes.
 st.markdown("""
 <style>
 .dev-card{
-  background:#6980b4e6;
+  background:#292929e6;
   border-radius:12px;
   padding:8px;
   transition:0.25s;
@@ -1338,7 +1338,7 @@ st.markdown("""
   display:block;
   margin-top:6px;
   font-size:12px;
-  color:#fff;
+  color:#ffffffd9;
 }
 
 .dev-card:hover{
@@ -1399,7 +1399,7 @@ img30 = img_base64("30.png")
 st.markdown(f"""
 <style>
 .dev-card{{
-  background:#6980b4e6; /* Fondo de las cartas */
+  background:#292929e6; /* Fondo de las cartas */
   border-radius:12px;
   padding:8px;
   transition:0.25s;
