@@ -9,8 +9,8 @@ if "mostrar_nota" not in st.session_state:
 # CONFIGURACIÓN
 # ============================
 PESO_ACTIVIDAD = 0.30
-PESO_DANO = 0.30
-PESO_PUNTOS = 0.25
+PESO_DANO = 0.25
+PESO_PUNTOS = 0.30
 PESO_CONSISTENCIA = 0.15
 
 # ============================
@@ -505,7 +505,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 13310   # Oro actual
+puntaje_actual = 13865   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -907,7 +907,7 @@ fig_mobile.update_layout(
 modo_mobile = st.checkbox("📱 Modo Mobile - vista optimizada (En Desarrollo)", value=False)
 
 
-st.info("📱 En móvil, observa en horizontal la gráfica")
+st.info("➡️ En móvil, observa en horizontal la gráfica")
 
 
 fig.update_traces(texttemplate="%{text}%", textposition="outside")
