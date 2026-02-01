@@ -602,7 +602,7 @@ components.html(
 
     </div>
     """,
-    height=320
+    height=420
 )
 
 
