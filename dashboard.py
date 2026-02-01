@@ -404,61 +404,6 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
-#Voz humana antes que numeros
-
-st.markdown(
-    """
-<div style="
-    margin: 40px auto 50px auto;
-    max-width: 900px;
-    padding: 30px 28px;
-    border-radius: 20px;
-    background: linear-gradient(
-        145deg,
-        rgba(127, 179, 200, 0.12),
-        rgba(90, 130, 150, 0.06)
-    );
-    box-shadow:
-        0 0 28px rgba(127, 179, 200, 0.35),
-        inset 0 0 0 1px rgba(127, 179, 200, 0.25);
-    text-align: center;
-">
-
-<h2 style="color:#9fd3e8; margin-bottom:16px;">
-🤍 Un mensaje para quienes han sido parte
-</h2>
-
-<p style="color:#e0e0e0; font-size:17px; line-height:1.7; margin-bottom:14px;">
-Cada persona que pasó por esta alianza dejó algo.
-A veces fue apoyo, a veces constancia, a veces simplemente estar ahí.
-Algunos siguen caminando con nosotros, otros tomaron su propio rumbo,
-pero <strong>ningún paso fue en vano</strong>.
-</p>
-
-<p style="color:#d0d0d0; font-size:15px; line-height:1.6; margin-bottom:14px;">
-Tomar decisiones no siempre es fácil.
-Hay momentos en los que toca pensar en el grupo,
-aunque eso duela más de lo que se nota desde fuera.
-Eso no borra lo vivido, ni el esfuerzo, ni el tiempo compartido.
-</p>
-
-<p style="color:#b8b8b8; font-size:14px; line-height:1.6;">
-Si hoy sigues aquí, gracias por quedarte.
-Si ya no estás, gracias por haber estado.
-Este espacio existe porque hubo personas que lo hicieron posible,
-aunque hoy no todas sigan presentes.
-</p>
-
-</div>
-""",
-    unsafe_allow_html=True
-)
-
-
-
-
-
-
 
 
 
@@ -1300,6 +1245,69 @@ with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
     st.image("carta_painwheel.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+#Voz humana antes que numeros
+
+
+st.divider()
+
+st.markdown(
+    """
+<div style="
+    margin: 40px auto 50px auto;
+    max-width: 900px;
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: linear-gradient(
+        145deg,
+        rgba(127, 179, 200, 0.12),
+        rgba(90, 130, 150, 0.06)
+    );
+    box-shadow:
+        0 0 28px rgba(127, 179, 200, 0.35),
+        inset 0 0 0 1px rgba(127, 179, 200, 0.25);
+    text-align: center;
+">
+
+<h2 style="color:#9fd3e8; margin-bottom:16px;">
+🤍 Un mensaje para quienes han sido parte
+</h2>
+
+<p style="color:#e0e0e0; font-size:17px; line-height:1.7; margin-bottom:14px;">
+Cada persona que pasó por esta alianza dejó algo.
+A veces fue apoyo, a veces constancia, a veces simplemente estar ahí.
+Algunos siguen caminando con nosotros, otros tomaron su propio rumbo,
+pero <strong>ningún paso fue en vano</strong>.
+</p>
+
+<p style="color:#d0d0d0; font-size:15px; line-height:1.6; margin-bottom:14px;">
+Tomar decisiones no siempre es fácil.
+Hay momentos en los que toca pensar en el grupo,
+aunque eso duela más de lo que se nota desde fuera.
+Eso no borra lo vivido, ni el esfuerzo, ni el tiempo compartido.
+</p>
+
+<p style="color:#b8b8b8; font-size:14px; line-height:1.6;">
+Si hoy sigues aquí, gracias por quedarte.
+Si ya no estás, gracias por haber estado.
+Este espacio existe porque hubo personas que lo hicieron posible,
+aunque hoy no todas sigan presentes.
+</p>
+
+</div>
+""",
+    unsafe_allow_html=True
+)
+
 
 
 
