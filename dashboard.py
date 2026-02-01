@@ -1314,7 +1314,7 @@ aunque hoy no todas sigan presentes.
 
 
 
-#Para mostrar tabal de MIEMBROS!
+#Para mostrar tabla de MIEMBROS!
 
 
 st.markdown("""
@@ -1367,7 +1367,7 @@ img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 
-st.markdown("""
+st.markdown(f"""
 <style>
 .dev-card{
   background:#020617;
