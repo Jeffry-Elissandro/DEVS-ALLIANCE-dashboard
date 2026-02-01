@@ -1440,153 +1440,153 @@ gap:14px;
 ">
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img1}">
-  <span>Jugador1</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img2}">
-  <span>Jugador2</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img3}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img4}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img5}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img6}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img7}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img8}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img9}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img10}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img12}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img13}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img14}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img15}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img16}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img17}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img18}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img19}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img20}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img21}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img22}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img23}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img24}">
-  <span>Jugador3</span>
+  <img src="data:image/png;base64,{img26}">
+  <span>CHESSDEV</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img25}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img26}">
-  <span>Jugador3</span>
+  <span>»Chris«</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img27}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img28}">
-  <span>Jugador3</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>Jugador3</span>
+  <span>Lady_Navier</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img30}">
-  <span>Jugador3</span>
+  <span>brinda con queso</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img29}">
+  <span>aru_25</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img28}">
+  <span>DLGPRO</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img19}">
+  <span>black lagoon69</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img23}">
+  <span>SkibidiLopez</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img24}">
+  <span>Artuxx<D</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img22}">
+  <span>lucysaurio</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img21}">
+  <span>William_Afton_1983</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img18}">
+  <span>Pxneda</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img20}">
+  <span>RIXTUN</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img16}">
+  <span>"mya"</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img17}">
+  <span>Arcos 16</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img14}">
+  <span>Experience^w^</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img7}">
+  <span>KSTKBMS23</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img15}">
+  <span>Lady.Moon</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img12}">
+  <span>sofiii12</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img13}">
+  <span>ROON2526</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img11}">
+  <span>Ander_Wedd_45</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img6}">
+  <span>exterminador de bts</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img10}">
+  <span>hellsing AG</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img9}">
+  <span>Benja</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img8}">
+  <span>Bonilla Elias</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img5}">
+  <span>pijuynic3127</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img4}">
+  <span>Athenacatevv</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img1}">
+  <span>yo 456</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img2}">
+  <span>FRANCIS798</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img3}">
+  <span>Oliver's</span>
 </div>
 
 
