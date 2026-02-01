@@ -1356,33 +1356,43 @@ st.markdown("""
 
 
 
+import streamlit as st
 import base64
 
 def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-
-img = img_base64("1.png")
-img = img_base64("2.png")
-img = img_base64("3.png")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import streamlit as st
+img1 = img_base64("1.png")
+img2 = img_base64("2.png")
+img3 = img_base64("3.png")
 
 st.markdown("""
+<style>
+.dev-card{
+  background:#020617;
+  border-radius:12px;
+  padding:8px;
+  transition:0.25s;
+  cursor:pointer;
+}
+.dev-card img{
+  width:100%;
+  border-radius:10px;
+  display:block;
+}
+.dev-card span{
+  display:block;
+  margin-top:6px;
+  font-size:12px;
+  color:#cbd5f1;
+}
+.dev-card:hover{
+  transform:translateY(-4px) scale(1.04);
+  box-shadow:0 0 12px rgba(56,189,248,0.35);
+}
+</style>
+
 <div style="
 max-width:1100px;
 margin:40px auto;
@@ -1393,22 +1403,8 @@ box-shadow:0 0 25px rgba(0,0,0,0.35);
 text-align:center;
 ">
 
-<h2 style="
-color:#e5f3ff;
-margin-bottom:8px;
-font-size:26px;
-letter-spacing:1px;
-">
-💜 Miembros Actuales — Alianza DEVS
-</h2>
-
-<p style="
-color:#9fb3c8;
-margin-bottom:22px;
-font-size:15px;
-">
-Cada rostro aquí representa compromiso, constancia y equipo.
-</p>
+<h2 style="color:#e5f3ff;">💜 Miembros Actuales — Alianza DEVS</h2>
+<p style="color:#9fb3c8;">Cada rostro aquí representa compromiso, constancia y equipo.</p>
 
 <div style="
 display:grid;
@@ -1416,29 +1412,25 @@ grid-template-columns:repeat(auto-fill,minmax(90px,1fr));
 gap:14px;
 ">
 
-<!-- MIEMBRO -->
 <div class="dev-card">
-  <img src="1.png">
+  <img src="data:image/png;base64,{img1}">
   <span>Jugador1</span>
 </div>
 
 <div class="dev-card">
-  <img src="2.png">
+  <img src="data:image/png;base64,{img2}">
   <span>Jugador2</span>
 </div>
 
-
 <div class="dev-card">
-  <img src="3.png">
+  <img src="data:image/png;base64,{img3}">
   <span>Jugador3</span>
 </div>
-
-
-<!-- DUPLICA BLOQUES PARA MÁS MIEMBROS -->
 
 </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
