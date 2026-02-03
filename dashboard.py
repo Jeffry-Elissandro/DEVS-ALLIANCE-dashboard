@@ -1173,7 +1173,7 @@ components.html(
             A este punto ya todos saben la estrategia para atacar al jefe  
             de inmortales Eliza, pero por si acaso, este video es recomendado.
             Recuerda que este video no es mio, lo muestro porque yo no cuento con  
-            las variantes. Creditos al canal de Natsu.
+            las variantes. Creditos al canal de AlannAx.
         </p>
 
         <div style="
@@ -1192,7 +1192,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE?rel=0&autoplay=0"
+                    src="https://www.youtube.com/watch?v=EsdLZ80r1cE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
