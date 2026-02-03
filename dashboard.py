@@ -1192,7 +1192,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/TRJLFXSQD5M"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE?rel=0&autoplay=0"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
