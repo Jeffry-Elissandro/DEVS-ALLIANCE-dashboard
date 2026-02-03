@@ -457,7 +457,7 @@ import streamlit.components.v1 as components
 
 
 
-img_banner = img_to_base64("Gremios_Rango_14k.png")
+img_banner = img_to_base64("Gremios_Rango_15k.png")
 
 
 
