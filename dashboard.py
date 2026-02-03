@@ -516,7 +516,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 1890   # Oro actual
+puntaje_actual = 2270   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1172,8 +1172,8 @@ components.html(
         ">
             A este punto ya todos saben la estrategia para atacar al jefe  
             de inmortales Eliza, pero por si acaso, este video es recomendado.
-            Recuerda que este video no es mio, lo muestro porque yo no cuento con  
-            las variantes. Creditos al canal de AlannAx.
+            Recuerda que este video <strong>NO</strong> es mio, lo muestro porque yo no cuento con  
+            las variantes (ni tiempo xd). Creditos al canal de <strong>AlannAx</strong>.
         </p>
 
         <div style="
