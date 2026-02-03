@@ -80,9 +80,9 @@ data = [
         "Poder": 250450,
         "Nivel": 65,
         "Actividad": 10,
-        "Daño": 8,
+        "Daño": 6,
         "Puntos": 10,
-        "Consistencia": 8
+        "Consistencia": 7
     },
     {
         "Nombre": "William_Afton_1983", 
@@ -93,7 +93,7 @@ data = [
         "Actividad": 10,
         "Daño": 7,
         "Puntos": 10,
-        "Consistencia": 9
+        "Consistencia": 8
     },
     {
         "Nombre": "SkibidiLopez", 
@@ -124,7 +124,7 @@ data = [
         "Poder": 578309,
         "Nivel": 74,
         "Actividad": 10,
-        "Daño": 7,
+        "Daño": 6,
         "Puntos": 10,
         "Consistencia": 8
     },
@@ -134,9 +134,9 @@ data = [
         "ID": "4jos-r67gh",
         "Poder": 636274,
         "Nivel": 76,
-        "Actividad": 8,
+        "Actividad": 6,
         "Daño": 2,
-        "Puntos": 8,
+        "Puntos": 6,
         "Consistencia": 4
     },
     {
@@ -146,20 +146,20 @@ data = [
         "Poder": 797375,
         "Nivel": 74,
         "Actividad": 10,
-        "Daño": 9,
-        "Puntos": 9,
-        "Consistencia": 9
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
-        "Nombre": "Arcabius", 
-        "Rango": "Especialista",
-        "ID": "3nzc-bbblj",
-        "Poder": 1771581,
-        "Nivel": 77,
+        "Nombre": "brinda con queso",
+        "Rango": "Miembro",
+        "ID": "04kr-9jlo3",
+        "Poder": 1124141,
+        "Nivel": 76,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 8,
-        "Consistencia": 9
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "Lady.Moon", 
@@ -168,9 +168,9 @@ data = [
         "Poder": 409685,
         "Nivel": 67,
         "Actividad": 10,
-        "Daño": 3,
-        "Puntos": 7,
-        "Consistencia": 6
+        "Daño": 6,
+        "Puntos": 9,
+        "Consistencia": 7
     },
     {
         "Nombre": "ROON2526", 
@@ -180,8 +180,8 @@ data = [
         "Nivel": 72,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
+        "Puntos": 8,
+        "Consistencia": 9
     },
     {
         "Nombre": "Experience^w^", 
@@ -190,9 +190,9 @@ data = [
         "Poder": 2263655,
         "Nivel": 78,
         "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 6,
-        "Consistencia": 7
+        "Daño": 8,
+        "Puntos": 8,
+        "Consistencia": 8
     },
     {
         "Nombre": "hellsing AG", 
@@ -201,20 +201,20 @@ data = [
         "Poder": 451700,
         "Nivel": 75,
         "Actividad": 10,
-        "Daño": 5,
+        "Daño": 10,
         "Puntos": 6,
-        "Consistencia": 6
+        "Consistencia": 7
     },
     {
-        "Nombre": "eusebio uwu", 
+        "Nombre": "Oliver's",
         "Rango": "Miembro",
-        "ID": "4ekl-amdrf",
-        "Poder": 868769,
+        "ID": "02q1-fbme5",
+        "Poder": 728931,
         "Nivel": 74,
-        "Actividad": 6,
-        "Daño": 4,
-        "Puntos": 9,
-        "Consistencia": 7
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 4,
+        "Consistencia": 6
     },
     {
         "Nombre": "Bonilla Elias", 
@@ -222,10 +222,10 @@ data = [
         "ID": "3q6s-dssmd",
         "Poder": 3498663,
         "Nivel": 80,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
+        "Actividad": 7,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
     },
     {
         "Nombre": "Ander_Wedd_45", 
@@ -234,8 +234,8 @@ data = [
         "Poder": 2769159,
         "Nivel": 73,
         "Actividad": 10,
-        "Daño": 9,
-        "Puntos": 10,
+        "Daño": 10,
+        "Puntos": 9,
         "Consistencia": 9
     },
     {
@@ -245,31 +245,31 @@ data = [
         "Poder": 633945,
         "Nivel": 74,
         "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 8,
-        "Consistencia": 6
+        "Daño": 5,
+        "Puntos": 7,
+        "Consistencia": 7
     },
     {
-        "Nombre": "pijuynic3127", 
+        "Nombre": "Pijuynic",
         "Rango": "Miembro",
         "ID": "4ybn-mnv3x",
         "Poder": 703109,
         "Nivel": 69,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 7,
+        "Puntos": 6,
         "Consistencia": 7
     },
     {
         "Nombre": "exterminador de bts", 
-        "Rango": "Especialista",
+        "Rango": "Miembro",
         "ID": "46rw-ef8ec",
         "Poder": 910234,
         "Nivel": 73,
         "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 5,
-        "Consistencia": 7
+        "Daño": 5,
+        "Puntos": 7,
+        "Consistencia": 6
     },
     {
         "Nombre": "Benja", 
@@ -279,19 +279,19 @@ data = [
         "Nivel": 80,
         "Actividad": 10,
         "Daño": 5,
-        "Puntos": 7,
-        "Consistencia": 7
+        "Puntos": 6,
+        "Consistencia": 6
     },
     {
-        "Nombre": "Elizabeth c.v13", 
+        "Nombre": "RIXTUN",
         "Rango": "Miembro",
-        "ID": "4d6g-cqz8y",
-        "Poder": 641011,
-        "Nivel": 72,
-        "Actividad": 4,
-        "Daño": 0,
-        "Puntos": 2,
-        "Consistencia": 4
+        "ID": "3b2h-9oglo",
+        "Poder": 364734,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 6,
+        "Puntos": 10,
+        "Consistencia": 7
     },
     {
         "Nombre": "Pxneda", 
@@ -312,7 +312,7 @@ data = [
         "Nivel": 75,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 9,
+        "Puntos": 10,
         "Consistencia": 10
     },
     {
@@ -322,20 +322,31 @@ data = [
         "Poder": 553274,
         "Nivel": 72,
         "Actividad": 10,
-        "Daño": 3,
-        "Puntos": 8,
-        "Consistencia": 4
+        "Daño": 5,
+        "Puntos": 10,
+        "Consistencia": 7
     },
     {
-        "Nombre": "Yander758", 
+        "Nombre": "FRANCIS798",
+        "Rango": "Miembro",
+        "ID": "0jx8-r7vfz",
+        "Poder": 463118,
+        "Nivel": 76,
+        "Actividad": 10,
+        "Daño": 9,
+        "Puntos": 5,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "Athencatevv",
         "Rango": "Miembro",
         "ID": "044e-oopz4",
         "Poder": 311505,
         "Nivel": 68,
-        "Actividad": 5,
-        "Daño": 2,
-        "Puntos": 3,
-        "Consistencia": 3
+        "Actividad": 10,
+        "Daño": 1,
+        "Puntos": 6,
+        "Consistencia": 6
     }
 ]
 
@@ -485,10 +496,10 @@ components.html(
             line-height:1.7;
         ">
             Esta semana estuvimos <strong>muy cerca de alcanzar el rango Diamante (16,000 puntos)</strong>,
-            quedándonos en <strong>Oro con 14,000</strong>.
+            quedándonos en <strong>Oro con 15,200</strong>.
             <br><br>
             El potencial está ahí. Con constancia y trabajo en equipo,
-            <strong>Diamante es totalmente alcanzable</strong>.
+            <strong>Diamante AHORA SÍ es totalmente alcanzable</strong>.
         </p>
 
     </div>
@@ -505,7 +516,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 14795   # Oro actual
+puntaje_actual = 1890   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -816,7 +827,7 @@ components.html(
             🏅 Recomendación
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Realiza las operaciones constantemente, aprocechando que se
+            Realizar las operaciones constantemente, aprocechando que se
             reinicia cada 24 horas.
         </p>
     </div>
@@ -876,7 +887,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana 2 de Gremios 19/25 Enero 2026",
+    title="Rendimiento de los miembros - Semana 3 de Gremios - 26 Enero / 1 Febrero 2026",
     width=ancho_grafica
 )
 
@@ -1159,9 +1170,10 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Tienes problemas para hacer más daño al Jefe de Inmortales?
-            No te preocupes... te mostraré el equipo ideal para que logres
-            hacer más daño y puedas superarte esta temporada de Gremios.
+            A este punto ya todos saben la estrategia para atacar al jefe  
+            de inmortales Eliza, pero por si acaso, este video es recomendado.
+            Recuerda que este video no es mio, lo muestro porque yo no cuento con  
+            las variantes. Creditos al canal de Natsu.
         </p>
 
         <div style="
@@ -1180,7 +1192,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE?rel=0&autoplay=0"
+                    src="https://www.youtube.com/watch?v=TRJLFXSQD5M"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1300,17 +1312,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
+    st.image("carta_valentine.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_painwheel.png", use_container_width=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -1589,7 +1601,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img18}">
-  <span>Pxneda</span>
+  <span>TwerlenK</span>
 </div>
 
 <div class="dev-card">
@@ -1659,7 +1671,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>pijuynic3127</span>
+  <span>xXDrive_shXx</span>
 </div>
 
 <div class="dev-card">
