@@ -1121,7 +1121,7 @@ aumentando su participación, daño y consistencia.
 
 
 
-
+st.divider()
 
 
 
@@ -1136,7 +1136,11 @@ aumentando su participación, daño y consistencia.
 
 import streamlit as st
 
-st.set_page_config(page_title="Score Recomendado Alianza", layout="centered")
+# Configuración global de la página
+st.set_page_config(
+    page_title="Score Recomendado Alianza",
+    layout="wide"   # 👈 Esto activa Wide mode por defecto
+)
 
 st.markdown("""
 <div style="
@@ -1187,6 +1191,7 @@ st.markdown("""
 
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
