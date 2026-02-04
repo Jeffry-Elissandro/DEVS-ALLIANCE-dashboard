@@ -1833,6 +1833,80 @@ gap:14px;
 
 
 
+
+
+
+
+# --- Imagen del nuevo miembro ---
+img_new = img_base64("2.png")
+
+st.markdown(f"""
+<div style="
+  max-width:800px;
+  margin:40px auto;
+  padding:22px;
+  background:linear-gradient(180deg,#020617,#0f172a);
+  border-radius:18px;
+  border:2px solid rgba(168,85,247,0.55);
+  box-shadow:
+    0 0 25px rgba(168,85,247,0.45),
+    inset 0 0 18px rgba(99,102,241,0.25);
+  display:flex;
+  align-items:center;
+  gap:22px;
+">
+
+  <!-- Avatar -->
+  <img src="data:image/png;base64,{img_new}" style="
+    width:96px;
+    height:96px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #a855f7;
+    box-shadow:0 0 18px rgba(168,85,247,0.9);
+  ">
+
+  <!-- Texto -->
+  <div>
+    <h3 style="
+      margin:0;
+      font-size:22px;
+      color:#ffffff;
+      letter-spacing:1px;
+      text-shadow:0 0 10px rgba(168,85,247,0.8);
+    ">
+      ✨ Bienvenido, <span style="color:#d8b4fe;">tomohu</span>
+    </h3>
+
+    <p style="
+      margin-top:6px;
+      font-size:14px;
+      color:#c7d2fe;
+      line-height:1.6;
+    ">
+      Nos alegra tenerte en la alianza.
+    </p>
+  </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Para Comentarios
 
 st.markdown("---")
