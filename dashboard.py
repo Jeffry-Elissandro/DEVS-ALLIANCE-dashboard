@@ -1144,7 +1144,7 @@ st.set_page_config(page_title="Score Recomendado Alianza", layout="wide")
 import base64
 with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
-Recomendado_Imagen = "data:image/gif;base64,AAAA..."
+Recomendado_Imagen = f"data:image/gif;base64,{data}"
 
 
 
