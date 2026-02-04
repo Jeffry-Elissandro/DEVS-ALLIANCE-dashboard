@@ -1136,6 +1136,18 @@ st.divider()
 
 import streamlit as st
 
+
+
+
+st.set_page_config(page_title="Score Recomendado Alianza", layout="wide")
+
+import base64
+with open("tu_imagen.gif", "rb") as f:
+    data = base64.b64encode(f.read()).decode("utf-8")
+Recomendado_Imagen = "data:image/gif;base64,AAAA..."
+
+
+
 # Configuración global de la página
 st.set_page_config(
     page_title="Score Recomendado Alianza",
@@ -1174,6 +1186,11 @@ st.markdown("""
     No es una exigencia, sino una meta motivadora que refleja el compromiso colectivo.
   </p>
 
+  <!-- Imagen/GIF en Base64 -->
+  <div style="text-align:center; margin:20px 0;">
+    <img src="{Recomendado_Imagen}" alt="Imagen" style="max-width:100%; border-radius:12px; box-shadow:0 0 15px rgba(99,102,241,0.5);" />
+  </div>
+            
   <div style="
     display:flex;
     justify-content:space-around;
