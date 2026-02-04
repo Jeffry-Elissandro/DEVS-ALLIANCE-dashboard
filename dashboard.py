@@ -1837,8 +1837,14 @@ gap:14px;
 
 import streamlit.components.v1 as components
 
+
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
 # --- Imagen del nuevo miembro ---
-img_new = img_base64("2.png")
+img_new = img_base64("2temporal.png")
 
 components.html(
     f"""
