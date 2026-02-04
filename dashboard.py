@@ -1784,7 +1784,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img2}"> #Miembro Nuevo
+  <img src="data:image/png;base64,{img2}"> /* New */
   <span>tomohu</span>
 </div>
 
