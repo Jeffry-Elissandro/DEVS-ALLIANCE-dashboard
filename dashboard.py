@@ -1126,6 +1126,100 @@ aumentando su participación, daño y consistencia.
 
 
 
+
+
+
+
+#Para explicar el Promedio A Superar para mantenerse a flote en la alianza
+
+
+
+st.markdown("""
+<div style="
+  max-width:900px;
+  margin:35px auto;
+  padding:22px 26px;
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border-radius:16px;
+  box-shadow:0 0 25px rgba(99,102,241,0.25);
+  border:1px solid rgba(99,102,241,0.35);
+">
+
+  <h3 style="
+    text-align:center;
+    color:#ffffff;
+    font-size:22px;
+    letter-spacing:1.5px;
+    margin-bottom:10px;
+    text-shadow:0 0 10px rgba(99,102,241,0.6);
+  ">
+    🎟️Rango a Conseguir 
+  </h3>
+
+  <p style="
+    text-align:center;
+    color:#9fb3c8;
+    font-size:14px;
+    margin-bottom:18px;
+  ">
+    Este es el promedio recomendado que un miembro debe superar para
+    <strong style="color:#e5f3ff;">asegurar su lugar entre lo mejor de la alianza </strong>
+    además de asegurar que no será remplazado.
+  </p>
+
+  <!-- Barra -->
+  <div style="
+    background:#020617;
+    border-radius:12px;
+    padding:6px;
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.6);
+  ">
+    <div style="
+      width:78%; /* AJUSTA ESTE VALOR */
+      height:14px;
+      border-radius:10px;
+      background:linear-gradient(
+        90deg,
+        #22d3ee,
+        #6366f1,
+        #a855f7
+      );
+      box-shadow:0 0 12px rgba(99,102,241,0.75);
+    "></div>
+  </div>
+
+  <!-- Valores -->
+  <div style="
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    font-size:13px;
+    color:#cbd5f1;
+  ">
+    <span>Promedio Recomendado</span>
+    <span>
+      <strong style="color:#ffffff;">500</strong> / 830
+    </span>
+  </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 st.divider()
 
 
