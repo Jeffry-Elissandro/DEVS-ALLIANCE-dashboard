@@ -1840,7 +1840,8 @@ gap:14px;
 # --- Imagen del nuevo miembro ---
 img_new = img_base64("2.png")
 
-st.markdown(f"""
+st.markdown(
+    f"""
 <div style="
   max-width:800px;
   margin:40px auto;
@@ -1883,13 +1884,13 @@ st.markdown(f"""
       font-size:14px;
       color:#c7d2fe;
       line-height:1.6;
-    ">
-      Nos alegra tenerte en la alianza.
-    </p>
+    ">Nos alegra tenerte en la alianza.</p>
   </div>
 
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True
+)
 
 
 
