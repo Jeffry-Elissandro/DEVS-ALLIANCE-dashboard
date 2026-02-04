@@ -1844,60 +1844,75 @@ def img_base64(path):
         return base64.b64encode(f.read()).decode()
 
 # --- Imagen del nuevo miembro ---
-img_new = img_base64("2temporal.png")
+img_new1 = img_base64("2temporal.png")
+img_new2 = img_base64("Imagen_para_testeos.png")
+img_new3 = img_base64("Imagen_para_testeos.png")
+img_new4 = img_base64("Imagen_para_testeos.png")
 
-components.html(
-    f"""
-<div style="
-      max-width:800px;
-      margin:40px auto;
-      padding:22px;
-      background:linear-gradient(180deg,#020617,#0f172a);
-      border-radius:18px;
-      border:2px solid rgba(168,85,247,0.55);
-      box-shadow:
-        0 0 25px rgba(168,85,247,0.45),
-        inset 0 0 18px rgba(99,102,241,0.25);
-      display:flex;
-      align-items:center;
-      gap:22px;
-    ">
 
-      <!-- Avatar -->
-      <img src="data:image/png;base64,{img_new}" style="
-        width:96px;
-        height:96px;
-        border-radius:50%;
-        object-fit:cover;
-        border:3px solid #a855f7;
-        box-shadow:0 0 18px rgba(168,85,247,0.9);
-      ">
 
-      <!-- Texto -->
-      <div>
-        <h3 style="
-          margin:0;
-          font-size:22px;
-          color:#ffffff;
-          letter-spacing:1px;
-          text-shadow:0 0 10px rgba(168,85,247,0.8);
+
+# Lista de nuevos miembros (nombre + imagen)
+nuevos_miembros = [
+    {"nombre": "tomohu", "imagen": "2temporal.png"},
+    {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
+    {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
+    {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
+]
+
+for miembro in nuevos_miembros:
+    img_new = img_base64(miembro["imagen"])
+    components.html(
+        f"""
+        <div style="
+          max-width:800px;
+          margin:20px auto;
+          padding:22px;
+          background:linear-gradient(180deg,#020617,#0f172a);
+          border-radius:18px;
+          border:2px solid rgba(168,85,247,0.55);
+          box-shadow:
+            0 0 25px rgba(168,85,247,0.45),
+            inset 0 0 18px rgba(99,102,241,0.25);
+          display:flex;
+          align-items:center;
+          gap:22px;
         ">
-          ✨ Bienvenido, <span style="color:#d8b4fe;">tomohu</span>
-        </h3>
 
-        <p style="
-          margin-top:6px;
-          font-size:14px;
-          color:#c7d2fe;
-          line-height:1.6;
-        ">Nos alegra tenerte en la alianza.</p>
-      </div>
+          <!-- Avatar -->
+          <img src="data:image/png;base64,{img_new}" style="
+            width:96px;
+            height:96px;
+            border-radius:50%;
+            object-fit:cover;
+            border:3px solid #a855f7;
+            box-shadow:0 0 18px rgba(168,85,247,0.9);
+          ">
 
-    </div>
-    """,
-    height=250
-)
+          <!-- Texto -->
+          <div>
+            <h3 style="
+              margin:0;
+              font-size:22px;
+              color:#ffffff;
+              letter-spacing:1px;
+              text-shadow:0 0 10px rgba(168,85,247,0.8);
+            ">
+              ✨ Bienvenido, <span style="color:#d8b4fe;">{miembro["nombre"]}</span>
+            </h3>
 
+            <p style="
+              margin-top:6px;
+              font-size:14px;
+              color:#c7d2fe;
+              line-height:1.6;
+            ">Nos alegra tenerte en la alianza.</p>
+          </div>
+
+        </div>
+        """,
+        height=250
+    )
 
 
 
