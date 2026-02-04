@@ -1784,7 +1784,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img2}"> /* New */
+  <img src="data:image/png;base64,{img2}">
   <span>tomohu</span>
 </div>
 
@@ -1799,6 +1799,15 @@ gap:14px;
 </div>
 </div>
 """, unsafe_allow_html=True)
+
+
+
+
+# Eliminated FRANCIS CHANGE TO tomohu
+
+
+
+
 
 
 
