@@ -1136,7 +1136,7 @@ aumentando su participación, daño y consistencia.
 
 import streamlit as st
 
-st.set_page_config(page_title="Score Alianza", layout="centered")
+st.set_page_config(page_title="Score Recomendado Alianza", layout="centered")
 
 st.markdown("""
 <div style="
@@ -1157,7 +1157,7 @@ st.markdown("""
     margin-bottom:10px;
     text-shadow:0 0 12px rgba(99,102,241,0.6);
   ">
-    🏆 Score Recomendado
+    🏆 Score Recomendado de la Alianza
   </h2>
 
   <p style="
@@ -1166,35 +1166,25 @@ st.markdown("""
     font-size:15px;
     margin-bottom:18px;
   ">
-    Supera este promedio para <strong style="color:#e5f3ff;">asegurar tu lugar</strong> 
-    entre los mejores de la Alianza y demostrar tu compromiso.
+    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
+    No es una exigencia, sino una meta motivadora que refleja el compromiso colectivo.
   </p>
 
 </div>
 """, unsafe_allow_html=True)
 
-# Valores actuales del jugador (ejemplo)
-medallas_actuales = 620
-daño_actual = 210_000_000
-
-# Objetivos recomendados
-medallas_meta = 500
-daño_meta = 200_000_000
-
-# Mostrar métricas
+# Mostrar metas recomendadas de forma general
 col1, col2 = st.columns(2)
-col1.metric("Medallas Semanales", f"{medallas_actuales}", f"Meta: {medallas_meta}")
-col2.metric("Daño Total", f"{daño_actual:,}", f"Meta: {daño_meta:,}")
+col1.metric("Medallas Recomendadas", "500 / semana")
+col2.metric("Daño Recomendado", "200,000,000")
 
-# Barras de progreso
-st.progress(min(medallas_actuales/medallas_meta, 1.0))
-st.progress(min(daño_actual/daño_meta, 1.0))
+# Barra visual general (no individual)
+st.markdown("### 📊 Nivel de referencia")
+st.progress(1.0)  # Barra llena para simbolizar que es un objetivo fijo
 
-# Mensaje motivador
-if medallas_actuales >= medallas_meta and daño_actual >= daño_meta:
-    st.success("🎉 ¡Excelente! Has superado el promedio recomendado, tu lugar en la Alianza está asegurado.")
-else:
-    st.info("💡 Sigue esforzándote, estás cerca de alcanzar el promedio recomendado.")
+# Mensaje motivador colectivo
+st.info("💡 Alcanzar este promedio asegura que la Alianza se mantenga fuerte y competitiva. ¡Vamos por más!")
+
 
 
 
