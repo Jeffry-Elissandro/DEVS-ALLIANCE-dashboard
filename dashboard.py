@@ -1864,6 +1864,20 @@ for miembro in nuevos_miembros:
     img_new = img_base64(miembro["imagen"])
     components.html(
         f"""
+
+         <h2 style="
+      text-align:center;
+      font-size:28px;
+      color:#ffffff;
+      text-shadow:0 0 12px rgba(255,255,255,0.9),
+                   0 0 24px rgba(255,255,255,0.7);
+      margin-bottom:24px;
+    ">
+      Recientes
+    </h2>
+
+
+
         <div style="
           max-width:800px;
           margin:20px auto;
