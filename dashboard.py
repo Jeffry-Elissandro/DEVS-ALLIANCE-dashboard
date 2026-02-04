@@ -1134,6 +1134,10 @@ aumentando su participación, daño y consistencia.
 
 
 
+import streamlit as st
+
+st.set_page_config(page_title="Score Alianza", layout="centered")
+
 st.markdown("""
 <div style="
   max-width:900px;
@@ -1145,65 +1149,52 @@ st.markdown("""
   border:1px solid rgba(99,102,241,0.35);
 ">
 
-  <h3 style="
+  <h2 style="
     text-align:center;
     color:#ffffff;
-    font-size:22px;
+    font-size:26px;
     letter-spacing:1.5px;
     margin-bottom:10px;
-    text-shadow:0 0 10px rgba(99,102,241,0.6);
+    text-shadow:0 0 12px rgba(99,102,241,0.6);
   ">
-    🎟️Rango a Conseguir 
-  </h3>
+    🏆 Score Recomendado
+  </h2>
 
   <p style="
     text-align:center;
     color:#9fb3c8;
-    font-size:14px;
+    font-size:15px;
     margin-bottom:18px;
   ">
-    Este es el promedio recomendado que un miembro debe superar para
-    <strong style="color:#e5f3ff;">asegurar su lugar entre lo mejor de la alianza </strong>
-    además de asegurar que no será remplazado.
+    Supera este promedio para <strong style="color:#e5f3ff;">asegurar tu lugar</strong> 
+    entre los mejores de la Alianza y demostrar tu compromiso.
   </p>
-
-  <!-- Barra -->
-  <div style="
-    background:#020617;
-    border-radius:12px;
-    padding:6px;
-    box-shadow:inset 0 0 10px rgba(0,0,0,0.6);
-  ">
-    <div style="
-      width:78%; /* AJUSTA ESTE VALOR */
-      height:14px;
-      border-radius:10px;
-      background:linear-gradient(
-        90deg,
-        #22d3ee,
-        #6366f1,
-        #a855f7
-      );
-      box-shadow:0 0 12px rgba(99,102,241,0.75);
-    "></div>
-  </div>
-
-  <!-- Valores -->
-  <div style="
-    display:flex;
-    justify-content:space-between;
-    margin-top:10px;
-    font-size:13px;
-    color:#cbd5f1;
-  ">
-    <span>Promedio Recomendado</span>
-    <span>
-      <strong style="color:#ffffff;">500</strong> / 830
-    </span>
-  </div>
 
 </div>
 """, unsafe_allow_html=True)
+
+# Valores actuales del jugador (ejemplo)
+medallas_actuales = 620
+daño_actual = 210_000_000
+
+# Objetivos recomendados
+medallas_meta = 500
+daño_meta = 200_000_000
+
+# Mostrar métricas
+col1, col2 = st.columns(2)
+col1.metric("Medallas Semanales", f"{medallas_actuales}", f"Meta: {medallas_meta}")
+col2.metric("Daño Total", f"{daño_actual:,}", f"Meta: {daño_meta:,}")
+
+# Barras de progreso
+st.progress(min(medallas_actuales/medallas_meta, 1.0))
+st.progress(min(daño_actual/daño_meta, 1.0))
+
+# Mensaje motivador
+if medallas_actuales >= medallas_meta and daño_actual >= daño_meta:
+    st.success("🎉 ¡Excelente! Has superado el promedio recomendado, tu lugar en la Alianza está asegurado.")
+else:
+    st.info("💡 Sigue esforzándote, estás cerca de alcanzar el promedio recomendado.")
 
 
 
