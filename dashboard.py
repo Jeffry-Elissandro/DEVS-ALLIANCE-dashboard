@@ -1170,21 +1170,23 @@ st.markdown("""
     No es una exigencia, sino una meta motivadora que refleja el compromiso colectivo.
   </p>
 
+  <div style="
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+    font-size:16px;
+    color:#cbd5f1;
+  ">
+    <div style="text-align:center;">
+      <strong style="color:#ffffff;">500</strong><br>Medallas / semana
+    </div>
+    <div style="text-align:center;">
+      <strong style="color:#ffffff;">200,000,000</strong><br>Daño total
+    </div>
+  </div>
+
 </div>
 """, unsafe_allow_html=True)
-
-# Mostrar metas recomendadas de forma general
-col1, col2 = st.columns(2)
-col1.metric("Medallas Recomendadas", "500 / semana")
-col2.metric("Daño Recomendado", "200,000,000")
-
-# Barra visual general (no individual)
-st.markdown("### 📊 Nivel de referencia")
-st.progress(1.0)  # Barra llena para simbolizar que es un objetivo fijo
-
-# Mensaje motivador colectivo
-st.info("💡 Alcanzar este promedio asegura que la Alianza se mantenga fuerte y competitiva. ¡Vamos por más!")
-
 
 
 
