@@ -526,6 +526,12 @@ import streamlit.components.v1 as components
 
 
 
+
+
+
+
+
+
 import base64
 
 def img_to_base64(path):
@@ -536,6 +542,12 @@ def img_to_base64(path):
 diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
+
+
+file_path = "Skull_characteres.gif"
+with open(file_path, "rb") as f:
+    data = f.read()
+    encoded = base64.b64encode(f.read()).decode("utf-8")
 
 
 
@@ -611,11 +623,14 @@ components.html(
             {porcentaje}% completado — cada aporte nos acerca más
         </p>
 
+                <!-- GIF -->
+        <img src="data:image/gif;base64,{encoded}" alt="gif animado"
+             width="345" height="445" />
+
     </div>
     """,
-    height=420
+    height=700
 )
-
 
 
 
