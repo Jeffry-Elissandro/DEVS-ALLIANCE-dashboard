@@ -547,7 +547,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 file_path = "Skull_characteres.gif"
 with open(file_path, "rb") as f:
     data = f.read()
-    encoded = base64.b64encode(f.read()).decode("utf-8")
+    encoded = base64.b64encode(data).decode("utf-8")
 
 
 
