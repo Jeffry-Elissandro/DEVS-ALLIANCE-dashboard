@@ -1154,7 +1154,7 @@ st.set_page_config(
     layout="wide"   # 👈 Esto activa Wide mode por defecto
 )
 
-st.markdown("""
+st.markdown(f"""
 <div style="
   max-width:900px;
   margin:35px auto;
