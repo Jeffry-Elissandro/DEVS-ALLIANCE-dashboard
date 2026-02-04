@@ -1857,7 +1857,7 @@ nuevos_miembros = [
     {"nombre": "tomohu", "imagen": "2temporal.png"},
     {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
     {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
-    {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
+    {"nombre": "long string of characters to test", "imagen": "Imagen_para_testeos.png"},
 ]
 
 for miembro in nuevos_miembros:
