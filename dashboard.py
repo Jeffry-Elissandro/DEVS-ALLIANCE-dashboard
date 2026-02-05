@@ -455,8 +455,8 @@ def img_base64(path):
         return base64.b64encode(f.read()).decode()
 
 # Carga de imágenes
-fondo_img = img_base64("fondo.png")       # 1920x743
-principal_img = img_base64("imagen.png")  # 590x799
+fondo_img = img_base64("fondo_gradiente_oscuro.png")       # 1920x743
+principal_img = img_base64("Critty_Kitty.png")  # 590x799
 
 components.html(
     f"""
