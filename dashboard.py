@@ -455,13 +455,12 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-# Cargar la imagen final
 misterio_img = img_base64("Critty_Kitty.png")
 
 components.html(
     f"""
     <div style="
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 18px;
       background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
@@ -487,7 +486,6 @@ components.html(
       <!-- Imagen -->
       <img src="data:image/png;base64,{misterio_img}" style="
         width: 100%;
-        max-width: 800px;
         height: auto;
         border-radius: 12px;
         box-shadow: 0 0 25px rgba(255,255,255,0.15);
@@ -495,7 +493,7 @@ components.html(
 
     </div>
     """,
-    height=700
+    height=800  # puedes aumentar este valor o incluso quitarlo
 )
 
 
