@@ -454,60 +454,84 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-# Carga de imágenes
 fondo_img = img_base64("fondo_gradiente_oscuro.png")       # 1920x743
 principal_img = img_base64("Critty_Kitty.png")  # 590x799
 
 components.html(
     f"""
-    <div style="
-      position: relative;
-      max-width: 100%;
-      margin: 40px auto;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 0 25px rgba(0,0,0,0.7);
-    ">
+    <style>
+      .contenedor {{
+        position: relative;
+        max-width: 100%;
+        margin: 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(0,0,0,0.7);
+      }}
 
-      <!-- Fondo -->
-      <img src="data:image/png;base64,{fondo_img}" style="
+      .contenedor img.fondo {{
         width: 100%;
         height: auto;
         display: block;
         filter: brightness(0.7) contrast(1.2);
-      ">
+      }}
 
-      <!-- Texto arriba -->
-      <h2 style="
+      .contenedor h2 {{
         position: absolute;
-        top: 20px;
+        top: 5%;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 42px;
-        color: #ffffff;
+        font-size: 2.2em;
+        color: #fff;
         text-shadow: 0 0 12px rgba(255,255,255,0.9),
                      0 0 24px rgba(255,255,255,0.7);
         margin: 0;
-      ">
-        MUY PRONTO
-      </h2>
+      }}
 
-      <!-- Imagen delantera -->
-      <img src="data:image/png;base64,{principal_img}" style="
+      .contenedor img.delantera {{
         position: absolute;
-        bottom: 20px;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
-        width: 300px;   /* ajusta proporcionalmente */
+        width: 35%;
+        max-width: 350px;
         height: auto;
-        max-height: 600px;
         filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
-      ">
+      }}
 
+      /* Ajustes para pantallas pequeñas */
+      @media (max-width: 768px) {{
+        .contenedor h2 {{
+          font-size: 1.6em;
+          top: 8%;
+        }}
+        .contenedor img.delantera {{
+          width: 60%;
+          max-width: 280px;
+          bottom: 10%;
+        }}
+      }}
+
+      @media (max-width: 480px) {{
+        .contenedor h2 {{
+          font-size: 1.3em;
+        }}
+        .contenedor img.delantera {{
+          width: 75%;
+          max-width: 240px;
+        }}
+      }}
+    </style>
+
+    <div class="contenedor">
+      <img src="data:image/png;base64,{fondo_img}" class="fondo">
+      <h2>MUY PRONTO</h2>
+      <img src="data:image/png;base64,{principal_img}" class="delantera">
     </div>
     """,
     height=600
 )
+
 
 
 
