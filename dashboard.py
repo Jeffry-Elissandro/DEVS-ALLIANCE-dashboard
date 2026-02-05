@@ -447,89 +447,55 @@ if st.session_state.mostrar_nota:
 #Para Promocionar el nuevo JEFE MS.FORTUNE
 
 
-import streamlit.components.v1 as components
+import streamlit as st
 import base64
+import streamlit.components.v1 as components
 
 def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-fondo_img = img_base64("fondo_gradiente_oscuro.png")       # 1920x743
-principal_img = img_base64("Critty_Kitty.png")  # 590x799
+# Cargar la imagen final
+misterio_img = img_base64("Critty_Kitty.png")
 
 components.html(
     f"""
-    <style>
-      .contenedor {{
-        position: relative;
-        max-width: 100%;
-        margin: 20px auto;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 0 25px rgba(0,0,0,0.7);
-      }}
+    <div style="
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 18px;
+      background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
+      border-radius: 22px;
+      border: 2px solid rgba(180,180,180,0.55);
+      box-shadow:
+        0 0 25px rgba(120,120,120,0.45),
+        inset 0 0 18px rgba(80,80,80,0.35);
+      text-align: center;
+    ">
 
-      .contenedor img.fondo {{
-        width: 100%;
-        height: auto;
-        display: block;
-        filter: brightness(0.7) contrast(1.2);
-      }}
-
-      .contenedor h2 {{
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2.2em;
-        color: #fff;
+      <!-- Título -->
+      <h2 style="
+        font-size: 32px;
+        color: #ffffff;
         text-shadow: 0 0 12px rgba(255,255,255,0.9),
-                     0 0 24px rgba(255,255,255,0.7);
-        margin: 0;
-      }}
+                     0 0 24px rgba(200,200,200,0.7);
+        margin-bottom: 20px;
+      ">
+        MUY PRONTO
+      </h2>
 
-      .contenedor img.delantera {{
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 35%;
-        max-width: 350px;
+      <!-- Imagen -->
+      <img src="data:image/png;base64,{misterio_img}" style="
+        width: 100%;
+        max-width: 800px;
         height: auto;
-        filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
-      }}
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(255,255,255,0.15);
+      " />
 
-      /* Ajustes para pantallas pequeñas */
-      @media (max-width: 768px) {{
-        .contenedor h2 {{
-          font-size: 1.6em;
-          top: 8%;
-        }}
-        .contenedor img.delantera {{
-          width: 60%;
-          max-width: 280px;
-          bottom: 10%;
-        }}
-      }}
-
-      @media (max-width: 480px) {{
-        .contenedor h2 {{
-          font-size: 1.3em;
-        }}
-        .contenedor img.delantera {{
-          width: 75%;
-          max-width: 240px;
-        }}
-      }}
-    </style>
-
-    <div class="contenedor">
-      <img src="data:image/png;base64,{fondo_img}" class="fondo">
-      <h2>MUY PRONTO</h2>
-      <img src="data:image/png;base64,{principal_img}" class="delantera">
     </div>
     """,
-    height=600
+    height=700
 )
 
 
