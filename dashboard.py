@@ -426,9 +426,8 @@ if st.session_state.mostrar_nota:
     "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
-    "para la gestión de la alianza. \n"
-    "También puedes interactuar con la gráfica con las herramientas disponibles a la  "
-    "derecha, o bien, descargar el PNG de la gráfica para más comodidad - CHESS"
+    "para la gestión de la alianza. Todas las noticias o avisos serán "
+     "informados por aquí. Ante dudas no temas en preguntar - CHESS \n" 
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
