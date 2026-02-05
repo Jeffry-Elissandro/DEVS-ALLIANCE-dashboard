@@ -485,7 +485,7 @@ components.html(
 
       <!-- Imagen -->
       <img src="data:image/png;base64,{misterio_img}" style="
-        width: 100%;
+        width: 200%;
         height: auto;
         border-radius: 12px;
         box-shadow: 0 0 25px rgba(255,255,255,0.15);
