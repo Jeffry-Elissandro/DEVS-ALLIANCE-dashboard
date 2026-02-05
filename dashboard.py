@@ -447,9 +447,8 @@ if st.session_state.mostrar_nota:
 #Para Promocionar el nuevo JEFE MS.FORTUNE
 
 
-import streamlit as st
-import base64
 import streamlit.components.v1 as components
+import base64
 
 def img_base64(path):
     with open(path, "rb") as f:
@@ -459,41 +458,51 @@ misterio_img = img_base64("Critty_Kitty.png")
 
 components.html(
     f"""
-    <div style="
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 18px;
-      background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
-      border-radius: 22px;
-      border: 2px solid rgba(180,180,180,0.55);
-      box-shadow:
-        0 0 25px rgba(120,120,120,0.45),
-        inset 0 0 18px rgba(80,80,80,0.35);
-      text-align: center;
-    ">
+    <style>
+      .contenedor {{
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 18px;
+        background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
+        border-radius: 22px;
+        border: 2px solid rgba(180,180,180,0.55);
+        box-shadow: 0 0 25px rgba(120,120,120,0.45),
+                    inset 0 0 18px rgba(80,80,80,0.35);
+        text-align: center;
+      }}
 
-      <!-- Título -->
-      <h2 style="
+      .contenedor h2 {{
         font-size: 32px;
         color: #ffffff;
         text-shadow: 0 0 12px rgba(255,255,255,0.9),
                      0 0 24px rgba(200,200,200,0.7);
         margin-bottom: 20px;
-      ">
-        MUY PRONTO
-      </h2>
+      }}
 
-      <!-- Imagen -->
-      <img src="data:image/png;base64,{misterio_img}" style="
-        width: 50%;
+      .contenedor img {{
+        width: 50%;   /* por defecto en PC */
         height: auto;
         border-radius: 12px;
         box-shadow: 0 0 25px rgba(255,255,255,0.15);
-      " />
+      }}
 
+      /* En pantallas pequeñas (mobile) */
+      @media (max-width: 768px) {{
+        .contenedor img {{
+          width: 100%;  /* ocupa todo el ancho en mobile */
+        }}
+        .contenedor h2 {{
+          font-size: 24px;
+        }}
+      }}
+    </style>
+
+    <div class="contenedor">
+      <h2>MUY PRONTO</h2>
+      <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
-    height=800  # puedes aumentar este valor o incluso quitarlo
+    height=900
 )
 
 
