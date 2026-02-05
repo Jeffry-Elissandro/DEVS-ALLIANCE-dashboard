@@ -489,11 +489,13 @@ components.html(
         height: auto;
         border-radius: 12px;
         box-shadow: 0 0 25px rgba(255,255,255,0.15);
+        display: block;
+        margin: 0 auto;
       " />
 
     </div>
     """,
-    height=800  # puedes aumentar este valor o incluso quitarlo
+    height=None  # deja que Streamlit calcule la altura automáticamente
 )
 
 
