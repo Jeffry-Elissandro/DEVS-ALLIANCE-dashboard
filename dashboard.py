@@ -1860,12 +1860,11 @@ nuevos_miembros = [
     {"nombre": "long string of characters to test", "imagen": "Imagen_para_testeos.png"},
 ]
 
-for miembro in nuevos_miembros:
-    img_new = img_base64(miembro["imagen"])
-    components.html(
-        f"""
 
-         <h2 style="
+
+components.html(
+    """
+    <h2 style="
       text-align:center;
       font-size:28px;
       color:#ffffff;
@@ -1873,11 +1872,18 @@ for miembro in nuevos_miembros:
                    0 0 24px rgba(255,255,255,0.7);
       margin-bottom:24px;
     ">
-      Recientes
+      ✨ Recientes ✨
     </h2>
+    """,
+    height=80
+)
 
 
 
+for miembro in nuevos_miembros:
+    img_new = img_base64(miembro["imagen"])
+    components.html(
+        f"""
         <div style="
           max-width:800px;
           margin:20px auto;
