@@ -498,7 +498,7 @@ components.html(
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        width: 350px;   /* ajusta proporcionalmente */
+        width: 300px;   /* ajusta proporcionalmente */
         height: auto;
         max-height: 600px;
         filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
