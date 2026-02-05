@@ -444,6 +444,81 @@ if st.session_state.mostrar_nota:
 
 
 
+#Para Promocionar el nuevo JEFE MS.FORTUNE
+
+
+import streamlit as st
+import base64
+import streamlit.components.v1 as components
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+# Carga de imágenes
+fondo_img = img_base64("fondo_gradiente_oscuro.png")       #  fondo oscuro/gris
+principal_img = img_base64("Critty_Kitty.png")  #  imagen que va encima
+
+components.html(
+    f"""
+    <div style="
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    ">
+
+      <!-- Fondo -->
+      <img src="data:image/png;base64,{fondo_img}" style="
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: brightness(0.7) contrast(1.2);
+      ">
+
+      <!-- Texto arriba -->
+      <h2 style="
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 32px;
+        color: #ffffff;
+        text-shadow: 0 0 12px rgba(255,255,255,0.9),
+                     0 0 24px rgba(255,255,255,0.7);
+        margin: 0;
+      ">
+        MUY PRONTO
+      </h2>
+
+      <!-- Imagen encima del fondo -->
+      <img src="data:image/png;base64,{principal_img}" style="
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        max-width: 80%;
+        filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
+      ">
+
+    </div>
+    """,
+    height=500
+)
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Para el mensaje de agradecimiento rango oro
