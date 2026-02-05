@@ -1872,7 +1872,7 @@ components.html(
                    0 0 24px rgba(255,255,255,0.7);
       margin-bottom:24px;
     ">
-      Recientes
+      Incorporaciones
     </h2>
     """,
     height=80
