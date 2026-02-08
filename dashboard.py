@@ -611,7 +611,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>MUY PRONTO</h2>
+      <h2>MAÑANA</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
@@ -701,7 +701,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 14770   # Oro actual
+puntaje_actual = 14985   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
