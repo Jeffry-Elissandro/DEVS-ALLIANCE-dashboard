@@ -447,7 +447,7 @@ if st.session_state.mostrar_nota:
 # PRESENTACIÓN A NUEVO COLIDER »chris«
 
 
-import streamlit as st 
+import streamlit as st
 import base64
 
 def img_base64(path):
@@ -455,11 +455,6 @@ def img_base64(path):
         data = f.read()
     return base64.b64encode(data).decode("utf-8")
 
-
-
-
-
-# Imagen del nuevo Colíder
 img_colider = img_base64("25.png")
 
 st.markdown(f"""
@@ -468,12 +463,12 @@ st.markdown(f"""
   max-width:900px;
   margin:50px auto;
   padding:26px;
-  background:linear-gradient(180deg,#020617,#0b1225);
+  background:linear-gradient(180deg,#0f172a,#1e293b);
   border-radius:20px;
-  border:2px solid rgba(255,215,0,0.55);
+  border:2px solid rgba(120,180,255,0.55);
   box-shadow:
-    0 0 35px rgba(255,215,0,0.35),
-    inset 0 0 25px rgba(255,215,0,0.15);
+    0 0 35px rgba(120,180,255,0.35),
+    inset 0 0 25px rgba(120,180,255,0.15);
   display:flex;
   align-items:center;
   gap:26px;
@@ -484,8 +479,8 @@ st.markdown(f"""
   .colider-card:hover {{
     transform:translateY(-6px);
     box-shadow:
-      0 0 55px rgba(255,215,0,0.65),
-      inset 0 0 30px rgba(255,215,0,0.25);
+      0 0 55px rgba(120,180,255,0.65),
+      inset 0 0 30px rgba(120,180,255,0.25);
   }}
 }}
 
@@ -494,8 +489,8 @@ st.markdown(f"""
   height:110px;
   border-radius:50%;
   object-fit:cover;
-  border:4px solid gold;
-  box-shadow:0 0 25px rgba(255,215,0,0.9);
+  border:4px solid #60a5fa;
+  box-shadow:0 0 25px rgba(120,180,255,0.9);
 }}
 
 .colider-title {{
@@ -503,20 +498,20 @@ st.markdown(f"""
   color:#ffffff;
   margin:0;
   letter-spacing:1px;
-  text-shadow:0 0 12px rgba(255,215,0,0.9);
+  text-shadow:0 0 12px rgba(120,180,255,0.9);
 }}
 
 .colider-text {{
   margin-top:10px;
   font-size:15px;
-  color:#e5e7eb;
+  color:#cbd5e1;
   line-height:1.7;
 }}
 
 .colider-rank {{
   margin-top:12px;
   font-size:13px;
-  color:#fde68a;
+  color:#93c5fd;
   letter-spacing:1px;
 }}
 </style>
@@ -546,6 +541,7 @@ st.markdown(f"""
 
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
