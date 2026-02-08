@@ -828,7 +828,7 @@ components.html(
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
-             width="210" height="210" />
+             width="250" height="250" />
 
     </div>
     """,
