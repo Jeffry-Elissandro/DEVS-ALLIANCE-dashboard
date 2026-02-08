@@ -437,6 +437,24 @@ if st.session_state.mostrar_nota:
 
 
 
+#Para ambientar la web (bloque opcional)
+
+st.markdown("## 🌿 Ambiente")
+
+with st.expander("🎧 Música ambiental (opcional)", expanded=False):
+    st.caption(
+        "Activa el sonido si deseas una experiencia más inmersiva. "
+    )
+
+    st.audio(
+        "tipe_beat_web.mp3",
+        format="audio/mp3",
+        loop=True
+    )
+
+
+
+
 
 
 
