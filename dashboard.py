@@ -464,86 +464,82 @@ st.markdown(
     f"""
     <style>
     .colider-card {{
-      max-width:950px;
-      margin:60px auto;
-      padding:32px;
-      background:linear-gradient(145deg,#0f172a,#1e293b 60%,#111827);
-      border-radius:24px;
-      border:3px solid rgba(255,215,0,0.65);
+      max-width:900px;
+      margin:50px auto;
+      padding:26px;
+      background:linear-gradient(180deg,#0f172a,#1e293b);
+      border-radius:20px;
+      border:2px solid rgba(120,180,255,0.55);
       box-shadow:
-        0 0 45px rgba(255,215,0,0.45),
-        inset 0 0 35px rgba(255,215,0,0.25);
+        0 0 35px rgba(120,180,255,0.35),
+        inset 0 0 25px rgba(120,180,255,0.15);
       display:flex;
       align-items:center;
-      gap:32px;
-      transition:0.4s ease;
+      gap:26px;
+      transition:0.35s ease;
     }}
 
     @media (hover:hover) {{
       .colider-card:hover {{
-        transform:scale(1.02);
+        transform:translateY(-6px);
         box-shadow:
-          0 0 65px rgba(255,215,0,0.75),
-          inset 0 0 40px rgba(255,215,0,0.35);
+          0 0 55px rgba(120,180,255,0.65),
+          inset 0 0 30px rgba(120,180,255,0.25);
       }}
     }}
 
     .colider-avatar {{
-      width:120px;
-      height:120px;
+      width:110px;
+      height:110px;
       border-radius:50%;
       object-fit:cover;
-      border:5px solid gold;
-      box-shadow:0 0 35px rgba(255,215,0,0.9);
+      border:4px solid #60a5fa;
+      box-shadow:0 0 25px rgba(120,180,255,0.9);
     }}
 
     .colider-title {{
-      font-size:30px;
-      color:#facc15;
+      font-size:24px;
+      color:#ffffff;
       margin:0;
-      letter-spacing:2px;
-      font-weight:bold;
-      text-shadow:0 0 18px rgba(255,215,0,1);
+      letter-spacing:1px;
+      text-shadow:0 0 12px rgba(120,180,255,0.9);
     }}
 
     .colider-text {{
-      margin-top:14px;
-      font-size:16px;
-      color:#e5e7eb;
-      line-height:1.8;
+      margin-top:10px;
+      font-size:15px;
+      color:#cbd5e1;
+      line-height:1.7;
     }}
 
     .colider-rank {{
-      margin-top:16px;
-      font-size:14px;
-      color:#fcd34d;
-      letter-spacing:1.5px;
-      font-weight:bold;
-      text-transform:uppercase;
+      margin-top:12px;
+      font-size:13px;
+      color:#93c5fd;
+      letter-spacing:1px;
     }}
     </style>
 
     <div class="colider-card">
       <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
       <div>
-        <h3 class="colider-title">👑 ¡Ascenso Épico a Colíder!</h3>
+        <h3 class="colider-title">👑 Ascenso a Colíder</h3>
         <p class="colider-text">
-          Este logro no es casualidad, es el fruto de <strong>valor, disciplina y liderazgo</strong>.
+          Este ascenso es bien merecido.
+          Es el resultado de <strong>constancia, compromiso y apoyo real</strong>
+          en los momentos que más se necesitó.
           <br><br>
-          Has demostrado que la verdadera fuerza está en la <em>perseverancia</em> y en el apoyo inquebrantable
-          a la alianza en cada batalla.
-          <br><br>
-          Hoy celebramos tu ascenso con orgullo, porque tu ejemplo inspira a todos.
+          Un sincero agradecimiento por siempre seguir adelante 
+          cuando hubo que sostener la alianza y jamás rendirse.
         </p>
         <div class="colider-rank">
-          ✨ Felicitaciones — tu nombre queda marcado en la historia ✨
+          Felicitaciones — tu lugar se ganó con hechos.
         </div>
       </div>
     </div>
     """,
     unsafe_allow_html=True
 )
-
 
 
 
