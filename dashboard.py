@@ -457,7 +457,7 @@ def img_base64(path):
     return base64.b64encode(data).decode("utf-8")
 
 # Imagen del nuevo Colíder
-img_colider = img_base64("25.png")
+img_colider = img_base64("new_colider.png")
 
 # Tarjeta de felicitación estilo póster
 st.markdown(
