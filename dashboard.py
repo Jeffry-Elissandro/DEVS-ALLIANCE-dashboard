@@ -587,7 +587,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 13430   # Oro actual
+puntaje_actual = 14685   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1796,7 +1796,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img16}">
-  <span>SAUL GOODMAN</span>
+  <span>E A R T H L I N G O</span>
 </div>
 
 <div class="dev-card">
@@ -1891,6 +1891,8 @@ gap:14px;
 
 # Eliminated FRANCIS CHANGE TO tomohu
 # Eliminated "mya" CHANGE TO SAUL GOODMAN
+# Eliminated GOODMAN CHANGE TO SAUL E A R T H L I N G O
+
 
 
 
@@ -1928,7 +1930,7 @@ img_new4 = img_base64("Imagen_para_testeos.png")
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
     {"nombre": "rottqned", "imagen": "2temporal.png"},
-    {"nombre": "SAUL GOODMAN", "imagen": "16temporal.png"},
+    {"nombre": "E A R T H L I N G O", "imagen": "16temporal.png"},
     {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
     {"nombre": "long string of characters to test", "imagen": "Imagen_para_testeos.png"},
 ]
