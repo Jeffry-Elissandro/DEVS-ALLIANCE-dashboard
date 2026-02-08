@@ -443,6 +443,112 @@ if st.session_state.mostrar_nota:
 
 
 
+
+# PRESENTACIÓN A NUEVO COLIDER »chris«
+
+
+# Imagen del nuevo Colíder
+img_colider = img_base64("25.png")
+
+st.markdown(f"""
+<style>
+.colider-card {{
+  max-width:900px;
+  margin:50px auto;
+  padding:26px;
+  background:linear-gradient(180deg,#020617,#0b1225);
+  border-radius:20px;
+  border:2px solid rgba(255,215,0,0.55);
+  box-shadow:
+    0 0 35px rgba(255,215,0,0.35),
+    inset 0 0 25px rgba(255,215,0,0.15);
+  display:flex;
+  align-items:center;
+  gap:26px;
+  transition:0.35s ease;
+}}
+
+@media (hover:hover) {{
+  .colider-card:hover {{
+    transform:translateY(-6px);
+    box-shadow:
+      0 0 55px rgba(255,215,0,0.65),
+      inset 0 0 30px rgba(255,215,0,0.25);
+  }}
+}}
+
+.colider-avatar {{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid gold;
+  box-shadow:0 0 25px rgba(255,215,0,0.9);
+}}
+
+.colider-title {{
+  font-size:24px;
+  color:#ffffff;
+  margin:0;
+  letter-spacing:1px;
+  text-shadow:0 0 12px rgba(255,215,0,0.9);
+}}
+
+.colider-text {{
+  margin-top:10px;
+  font-size:15px;
+  color:#e5e7eb;
+  line-height:1.7;
+}}
+
+.colider-rank {{
+  margin-top:12px;
+  font-size:13px;
+  color:#fde68a;
+  letter-spacing:1px;
+}}
+</style>
+
+<div class="colider-card">
+
+  <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
+
+  <div>
+    <h3 class="colider-title">
+      👑 Ascenso a Colíder
+    </h3>
+
+    <p class="colider-text">
+      Este ascenso es bien merecido.
+      Es el resultado de <strong>constancia, compromiso y apoyo real</strong>
+      en los momentos que más se necesitó.
+      <br><br>
+      Un sincero agradecimiento por siempre seguir adelante 
+      cuando hubo que sostener la alianza y jamás rendirse.
+    </p>
+
+    <div class="colider-rank">
+      Felicitaciones — tu lugar se ganó con hechos.
+    </div>
+  </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Para Promocionar el nuevo JEFE MS.FORTUNE
 
 
@@ -1889,10 +1995,17 @@ gap:14px;
 
 
 
+
+# C H A N G E S ! ! !
+
+
 # Eliminated FRANCIS CHANGE TO tomohu
 # Eliminated "mya" CHANGE TO SAUL GOODMAN
 # Eliminated GOODMAN CHANGE TO SAUL E A R T H L I N G O
 
+#Change yo 456 Colider to Especialist
+#Change »chris« Especialist to Colider
+#07/02/2026 18:45
 
 
 
