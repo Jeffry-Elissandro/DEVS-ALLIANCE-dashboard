@@ -447,6 +447,18 @@ if st.session_state.mostrar_nota:
 # PRESENTACIÓN A NUEVO COLIDER »chris«
 
 
+import streamlit as st 
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode("utf-8")
+
+
+
+
+
 # Imagen del nuevo Colíder
 img_colider = img_base64("25.png")
 
