@@ -629,7 +629,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>MAÑANA</h2>
+      <h2>¿HOY?</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
