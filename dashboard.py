@@ -831,7 +831,7 @@ components.html(
              width="250" height="250" />
 
         <div style="text-align:center;">
-      <strong style="color:#fff;">¡GRACIAS!</strong><br><style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</style>
+      <strong style="color:#fff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
     </div>
 
     </div>
