@@ -830,6 +830,10 @@ components.html(
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
 
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡GRACIAS!</strong><br>Logramos Llegar a Rango Diamante esta Temporada
+    </div>
+
     </div>
     """,
     height=700
