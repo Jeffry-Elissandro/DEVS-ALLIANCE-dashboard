@@ -651,64 +651,8 @@ components.html(
 
 #Para el mensaje de agradecimiento rango oro
 
-import base64
-
-def img_to_base64(path):
-    with open(path, "rb") as img:
-        return base64.b64encode(img.read()).decode()
-import streamlit.components.v1 as components
 
 
-
-img_banner = img_to_base64("Gremios_Rango_15k.png")
-
-
-
-
-components.html(
-    f"""
-    <div style="
-        background: linear-gradient(145deg, rgba(255,215,0,0.12), rgba(255,75,75,0.10));
-        border-radius: 22px;
-        padding: 26px;
-        box-shadow: 0 0 35px rgba(255, 200, 75, 0.55);
-        margin: 30px auto 35px auto;
-        max-width: 1100px;
-        font-family: Arial, sans-serif;
-    ">
-
-        <div style="text-align:center;">
-            <img src="data:image/png;base64,{img_banner}" style="
-                max-width: 100%;
-                border-radius: 18px;
-                box-shadow: 0 0 25px rgba(255, 215, 0, 0.65);
-                margin-bottom: 22px;
-            ">
-        </div>
-
-        <h2 style="text-align:center; color:#ffd700;">
-            💎 A un paso de Diamante
-        </h2>
-
-        <p style="
-            text-align:center;
-            color:#f0f0f0;
-            font-size:17px;
-            max-width:900px;
-            margin:0 auto;
-            line-height:1.7;
-        ">
-            Esta semana estuvimos <strong>muy cerca de alcanzar el rango Diamante (16,000 puntos)</strong>,
-            quedándonos en <strong>Oro con 15,200</strong>.
-            <br><br>
-            El potencial está ahí. Con constancia y trabajo en equipo,
-            <strong>Diamante AHORA SÍ es totalmente alcanzable</strong>.
-        </p>
-
-    </div>
-    """,
-    height=920
-)
 
 
 
