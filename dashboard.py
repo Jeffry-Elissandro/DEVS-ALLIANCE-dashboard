@@ -767,7 +767,7 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte nos acerca más
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
