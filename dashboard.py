@@ -1577,17 +1577,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_valentine.png", use_container_width=True)
+    st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.image("carta_beowulf.png", use_container_width=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.image("carta_painwheel.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
