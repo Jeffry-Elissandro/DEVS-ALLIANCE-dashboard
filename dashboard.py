@@ -1994,6 +1994,50 @@ for miembro in nuevos_miembros:
 
 
 
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+# Cargar tu GIF
+gif_base64 = img_base64("desapair.gif")
+
+# CSS para centrar y estilizar
+st.markdown("""
+<style>
+.gif-block {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+.gif-block img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+.gif-caption {
+    font-size: 28px;
+    color: #f0f0f0;
+    margin-top: 20px;
+    font-weight: bold;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# HTML con GIF y frase
+st.markdown(f"""
+<div class="gif-block">
+    <img src="data:image/gif;base64,{gif_base64}">
+    <div class="gif-caption">Estado actual de admin ser como: </div>
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
 
 
 
