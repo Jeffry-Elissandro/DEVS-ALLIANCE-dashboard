@@ -1348,7 +1348,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://youtu.be/XwXHEG6iJbE"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
