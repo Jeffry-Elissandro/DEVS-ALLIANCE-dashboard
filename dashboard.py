@@ -142,7 +142,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
 
 
-# CARAJO DE NUEVO ENFERMO >:O
+# CARAJO DENUEVO ENFERMO >:O
 
 
 import streamlit as st
@@ -186,7 +186,7 @@ st.markdown(f"""
 }}
 
 .sick-text {{
-    color: #cbd5f5;
+    color: #cbd5f7; /* corregido */
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 14px;
@@ -236,6 +236,9 @@ st.markdown(f"""
 
 </div>
 """, unsafe_allow_html=True)
+
+
+
 
 
 
