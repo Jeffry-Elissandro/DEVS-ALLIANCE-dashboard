@@ -522,7 +522,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>Proximamente xd</h2>
+      <h2>16 DE FEBRERO</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
