@@ -18,7 +18,17 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-
+    {
+        "Nombre": "Borra la cuenta", 
+        "Rango": "nose",
+        "ID": "0000-00000",
+        "Poder": 9999999,
+        "Nivel": 0,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
 ]
 
 
