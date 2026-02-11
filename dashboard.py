@@ -17,6 +17,11 @@ PESO_CONSISTENCIA = 0.15
 # DATOS DE LA ALIANZA
 # (Edita aquí tus 30 jugadores)
 # ============================
+data = [
+
+]
+
+
 
 
 
