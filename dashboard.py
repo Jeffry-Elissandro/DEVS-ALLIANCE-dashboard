@@ -154,9 +154,10 @@ def img_base64(path):
 
 sick_img = img_base64("sick_admin.png")
 
-st.markdown(f"""
+# Inyectar CSS
+st.markdown("""
 <style>
-.sick-note {{
+.sick-note {
     max-width: 1000px;
     margin: 50px auto;
     padding: 28px;
@@ -171,45 +172,41 @@ st.markdown(f"""
     grid-template-columns: 1fr 260px;
     gap: 26px;
     align-items: center;
-}}
-
-.sick-note img {{
+}
+.sick-note img {
     width: 100%;
     border-radius: 14px;
     filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.35));
-}}
-
-.sick-title {{
+}
+.sick-title {
     color: #e5e7eb;
     font-size: 26px;
     margin-bottom: 12px;
-}}
-
-.sick-text {{
-    color: #cbd5f7; /* corregido */
+}
+.sick-text {
+    color: #cbd5f7;
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 14px;
-}}
-
-.sick-footer {{
+}
+.sick-footer {
     color: #a5b4fc;
     font-size: 14px;
-}}
-
-@media (max-width: 768px) {{
-    .sick-note {{
+}
+@media (max-width: 768px) {
+    .sick-note {
         grid-template-columns: 1fr;
         text-align: center;
-    }}
-}}
+    }
+}
 </style>
+""", unsafe_allow_html=True)
 
+# Renderizar HTML
+st.markdown(f"""
 <div class="sick-note">
-
   <div>
     <div class="sick-title">¡Saludos gente! 😅</div>
-
     <div class="sick-text">
       En estos días no me encuentro al 100% de salud, por lo que estaré
       tomándome un pequeño tiempo para recuperarme con calma.
@@ -217,25 +214,22 @@ st.markdown(f"""
       Mientras tanto, <strong>nuestro Colíder queda a cargo</strong> para
       asegurar que todo siga funcionando como debe.
     </div>
-
     <div class="sick-text">
       Seguiré presente en la medida de lo posible, aportando y tratando de
       mantener la web actualizada.  
       Esto es solo una pausa, no una ausencia.
     </div>
-
     <div class="sick-footer">
       Gracias por la comprensión, el apoyo y la buena vibra 💜  
       Nos seguimos cuidando como equipo.
     </div>
   </div>
-
   <div>
     <img src="data:image/png;base64,{sick_img}">
   </div>
-
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
