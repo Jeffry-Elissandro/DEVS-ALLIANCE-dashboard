@@ -17,340 +17,6 @@ PESO_CONSISTENCIA = 0.15
 # DATOS DE LA ALIANZA
 # (Edita aquí tus 30 jugadores)
 # ============================
-data = [
-    {
-        "Nombre": "CHESSDEV", 
-        "Rango": "Líder",
-        "ID": "0gd5-r41k7",
-        "Poder": 1002193,
-        "Nivel": 78,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Chris", 
-        "Rango": "Especialista",
-        "ID": "1l4y-eguc1",
-        "Poder": 867520,
-        "Nivel": 75,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "aru_25", 
-        "Rango": "Miembro",
-        "ID": "38l9-o56hb",
-        "Poder": 438611,
-        "Nivel": 64,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "DLGPRO", 
-        "Rango": "Miembro",
-        "ID": "1ak1-fm1pl",
-        "Poder": 923148,
-        "Nivel": 71,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "Arcos 16", 
-        "Rango": "Miembro",
-        "ID": "3j75-94r2o",
-        "Poder": 748226,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "lucysaurio", 
-        "Rango": "Miembro",
-        "ID": "4rrf-tsbt4",
-        "Poder": 250450,
-        "Nivel": 65,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "William_Afton_1983", 
-        "Rango": "Miembro",
-        "ID": "3r1v-i03ks",
-        "Poder": 946197,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "SkibidiLopez", 
-        "Rango": "Miembro",
-        "ID": "0ph6-5s5bh",
-        "Poder": 1975525,
-        "Nivel": 73,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Lady_Navier", 
-        "Rango": "Especialista",
-        "ID": "50is-suxy9",
-        "Poder": 575151,
-        "Nivel": 64,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "KSTKBMS23", 
-        "Rango": "Miembro",
-        "ID": "3pni-nyf54",
-        "Poder": 578309,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "yo 456", 
-        "Rango": "Colider",
-        "ID": "4jos-r67gh",
-        "Poder": 636274,
-        "Nivel": 76,
-        "Actividad": 6,
-        "Daño": 2,
-        "Puntos": 6,
-        "Consistencia": 4
-    },
-    {
-        "Nombre": "mya", 
-        "Rango": "Miembro",
-        "ID": "4yo3-cioo1",
-        "Poder": 797375,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "brinda con queso",
-        "Rango": "Miembro",
-        "ID": "04kr-9jlo3",
-        "Poder": 1124141,
-        "Nivel": 76,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Lady.Moon", 
-        "Rango": "Miembro",
-        "ID": "01e6-cjcu2",
-        "Poder": 409685,
-        "Nivel": 67,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 9,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "ROON2526", 
-        "Rango": "Miembro",
-        "ID": "1d3k-mznw3",
-        "Poder": 448386,
-        "Nivel": 72,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 8,
-        "Consistencia": 9
-    },
-    {
-        "Nombre": "Experience^w^", 
-        "Rango": "Miembro",
-        "ID": "12u8-9x3w1",
-        "Poder": 2263655,
-        "Nivel": 78,
-        "Actividad": 10,
-        "Daño": 8,
-        "Puntos": 8,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "hellsing AG", 
-        "Rango": "Miembro",
-        "ID": "0q9y-mxd7g",
-        "Poder": 451700,
-        "Nivel": 75,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 6,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "Oliver's",
-        "Rango": "Miembro",
-        "ID": "02q1-fbme5",
-        "Poder": 728931,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 4,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "Bonilla Elias", 
-        "Rango": "Miembro",
-        "ID": "3q6s-dssmd",
-        "Poder": 3498663,
-        "Nivel": 80,
-        "Actividad": 7,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "Ander_Wedd_45", 
-        "Rango": "Miembro",
-        "ID": "0316-9bwz0",
-        "Poder": 2769159,
-        "Nivel": 73,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 9,
-        "Consistencia": 9
-    },
-    {
-        "Nombre": "sofiii12", 
-        "Rango": "Miembro",
-        "ID": "4e75-mx46l",
-        "Poder": 633945,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 7,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "Pijuynic",
-        "Rango": "Miembro",
-        "ID": "4ybn-mnv3x",
-        "Poder": 703109,
-        "Nivel": 69,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 6,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "exterminador de bts", 
-        "Rango": "Miembro",
-        "ID": "46rw-ef8ec",
-        "Poder": 910234,
-        "Nivel": 73,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 7,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "Benja", 
-        "Rango": "Miembro",
-        "ID": "0qph-cbpiv",
-        "Poder": 1810380,
-        "Nivel": 80,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 6,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "RIXTUN",
-        "Rango": "Miembro",
-        "ID": "3b2h-9oglo",
-        "Poder": 364734,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "Pxneda", 
-        "Rango": "Miembro",
-        "ID": "3uxe-dhcdm",
-        "Poder": 626123,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "black lagoon69", 
-        "Rango": "Miembro",
-        "ID": "4iu7-dxzm0",
-        "Poder": 1745060,
-        "Nivel": 75,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Artuxx<D", 
-        "Rango": "Miembro",
-        "ID": "16ln-8xkeg",
-        "Poder": 553274,
-        "Nivel": 72,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "FRANCIS798", #Miembro Eliminado
-        "Rango": "Miembro",
-        "ID": "0jx8-r7vfz",
-        "Poder": 463118,
-        "Nivel": 76,
-        "Actividad": 10,
-        "Daño": 9,
-        "Puntos": 5,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "Athencatevv",
-        "Rango": "Miembro",
-        "ID": "044e-oopz4",
-        "Poder": 311505,
-        "Nivel": 68,
-        "Actividad": 10,
-        "Daño": 1,
-        "Puntos": 6,
-        "Consistencia": 6
-    }
-]
-
-
 
 
 
@@ -451,6 +117,115 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         format="audio/mp3",
         loop=True
     )
+
+
+
+
+
+
+
+
+
+
+# CARAJO DE NUEVO ENFERMO >:O
+
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+sick_img = img_base64("sick_admin.png")
+
+st.markdown(f"""
+<style>
+.sick-note {{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 28px;
+    background: linear-gradient(
+        180deg,
+        rgba(99, 102, 241, 0.08),
+        rgba(168, 85, 247, 0.06)
+    );
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 26px;
+    align-items: center;
+}}
+
+.sick-note img {{
+    width: 100%;
+    border-radius: 14px;
+    filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.35));
+}}
+
+.sick-title {{
+    color: #e5e7eb;
+    font-size: 26px;
+    margin-bottom: 12px;
+}}
+
+.sick-text {{
+    color: #cbd5f5;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}}
+
+.sick-footer {{
+    color: #a5b4fc;
+    font-size: 14px;
+}}
+
+@media (max-width: 768px) {{
+    .sick-note {{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }}
+}}
+</style>
+
+<div class="sick-note">
+
+  <div>
+    <div class="sick-title">¡Saludos gente! 😅</div>
+
+    <div class="sick-text">
+      En estos días no me encuentro al 100% de salud, por lo que estaré
+      tomándome un pequeño tiempo para recuperarme con calma.
+      <br><br>
+      Mientras tanto, <strong>nuestro Colíder queda a cargo</strong> para
+      asegurar que todo siga funcionando como debe.
+    </div>
+
+    <div class="sick-text">
+      Seguiré presente en la medida de lo posible, aportando y tratando de
+      mantener la web actualizada.  
+      Esto es solo una pausa, no una ausencia.
+    </div>
+
+    <div class="sick-footer">
+      Gracias por la comprensión, el apoyo y la buena vibra 💜  
+      Nos seguimos cuidando como equipo.
+    </div>
+  </div>
+
+  <div>
+    <img src="data:image/png;base64,{sick_img}">
+  </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
 
 
 
@@ -569,6 +344,112 @@ st.markdown(
 
 
 
+# AGRADECIMIENTO A NAVIER
+
+
+import streamlit as st
+import base64
+
+# Función para convertir imagen a base64
+def img_base64(path):
+    with open(path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode("utf-8")
+
+# Imagen del nuevo Colíder
+img_colider = img_base64("27.png")
+
+# Tarjeta de felicitación estilo rango superior
+st.markdown(
+    f"""
+    <style>
+    .colider-card {{
+      max-width:700px;
+      margin:60px auto;
+      padding:40px 30px;
+      background:linear-gradient(180deg,#0f0f0f,#1a1a1a 70%,#0f0f0f);
+      border-radius:18px;
+      border:2px solid rgba(180,180,180,0.35);
+      box-shadow:
+        0 0 40px rgba(120,120,120,0.45),
+        inset 0 0 25px rgba(180,180,180,0.15);
+      text-align:center;
+      transition:0.4s ease;
+    }}
+
+    @media (hover:hover) {{
+      .colider-card:hover {{
+        transform:scale(1.02);
+        box-shadow:
+          0 0 65px rgba(200,200,200,0.65),
+          inset 0 0 35px rgba(180,180,180,0.25);
+      }}
+    }}
+
+    .colider-avatar {{
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid #9ca3af;
+      box-shadow:0 0 30px rgba(200,200,200,0.8);
+      margin-bottom:20px;
+    }}
+
+    .colider-title {{
+      font-size:28px;
+      color:#f3f4f6;
+      margin:0;
+      letter-spacing:2px;
+      font-weight:bold;
+      text-shadow:0 0 15px rgba(180,180,180,0.9);
+    }}
+
+    .colider-text {{
+      margin-top:18px;
+      font-size:16px;
+      color:#d1d5db;
+      line-height:1.8;
+    }}
+
+    .colider-rank {{
+      margin-top:22px;
+      font-size:14px;
+      color:#9ca3af;
+      letter-spacing:1.5px;
+      font-weight:bold;
+      text-transform:uppercase;
+    }}
+    </style>
+
+    <div class="colider-card">
+      <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
+      <h3 class="colider-title">Destacado de la semana</h3>
+      <p class="colider-text">
+        Este puesto es realmente exclusivo.
+        Fuiste el único miembro capaz de conseguir <strong>Todos los Puntos </strong>
+        de gremio. ¡Tu ayuda nos llevo a completar el Diamante!
+        <br><br>
+        Un sincero agradecimiento por siempre seguir superándote, 
+        incluso hasta superar límites.
+      </p>
+      <div class="colider-rank">
+        Felicitaciones — Eres el miembro más comprometido
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -629,7 +510,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>¿HOY?</h2>
+      <h2>Proximamente xd</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
@@ -977,16 +858,16 @@ components.html(
             📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Alcanzar los 16k de puntos para el <strong>rango diamante</strong> 
-            de gremios esta semana.
+            Que el admin se mejore y de paso borre la cuenta <strong>xd</strong> 
+            .
         </p>
 
         <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
             🔥 Enfoque principal
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Priorizar <strong>operaciones de gremio</strong> y mantener
-            actividad en el evento.
+            Mantenernos estables con las <strong>operaciones de gremio</strong> y llegar a 
+            diamante u oro.
         </p>
 
         <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
@@ -994,7 +875,7 @@ components.html(
         </h3>
         <p style="color:#dddddd; font-size:16px;">
             Realizar las operaciones constantemente, aprocechando que se
-            reinicia cada 24 horas.
+            reinician cada 24 horas.
         </p>
     </div>
     """,
@@ -1053,7 +934,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana 3 de Gremios - 26 Enero / 1 Febrero 2026",
+    title="Rendimiento de los miembros - NO UPDATE, SORRY",
     width=ancho_grafica
 )
 
@@ -1397,7 +1278,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("📊 Tabla completa de miembros - ACTUALIZADA!🏆")
+st.subheader("📊 Tabla completa de miembros - ACTUALIZACIÓN PRONTO ⚙️")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
@@ -1435,10 +1316,8 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            A este punto ya todos saben la estrategia para atacar al jefe  
-            de inmortales Eliza, pero por si acaso, este video es recomendado.
-            Recuerda que este video <strong>NO</strong> es mio, lo muestro porque yo no cuento con  
-            las variantes (ni tiempo xd). Creditos al canal de <strong>AlannAx</strong>.
+            No llegó el nuevo jefe de inmortales <strong>Critty Kitty</strong> esta semana.
+            Sin embargo, pueden seguir con el equipo contra Marie que, igualmente, tiene muchas ventajas.
         </p>
 
         <div style="
@@ -1457,7 +1336,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/EsdLZ80r1cE?rel=0&autoplay=0"
+                    src="https://youtu.be/XwXHEG6iJbE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1792,7 +1671,7 @@ margin-bottom:6px;
 font-size:26px;
 letter-spacing:1px;
 ">
-💜 Miembros Actuales — Alianza DEVS
+💜 Miembros Actuales (creo) — Alianza DEVS
 </h2>
 
 <p style="
@@ -2018,7 +1897,7 @@ img_new4 = img_base64("Imagen_para_testeos.png")
 nuevos_miembros = [
     {"nombre": "rottqned", "imagen": "2temporal.png"},
     {"nombre": "E A R T H L I N G O", "imagen": "16temporal.png"},
-    {"nombre": "Test", "imagen": "Imagen_para_testeos.png"},
+    {"nombre": "Esta sección no se actualizó xd", "imagen": "Imagen_para_testeos.png"},
     {"nombre": "long string of characters to test", "imagen": "Imagen_para_testeos.png"},
 ]
 
