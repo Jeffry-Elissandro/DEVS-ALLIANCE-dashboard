@@ -19,22 +19,325 @@ PESO_CONSISTENCIA = 0.15
 # ============================
 data = [
     {
-        "Nombre": "Borra la cuenta", 
-        "Rango": "nose",
-        "ID": "0000-00000",
-        "Poder": 9999999,
-        "Nivel": 0,
+        "Nombre": "CHESSDEV", 
+        "Rango": "Líder",
+        "ID": "0gd5-r41k7",
+        "Poder": 1266707,
+        "Nivel": 79,
         "Actividad": 10,
         "Daño": 10,
         "Puntos": 10,
         "Consistencia": 10
     },
+    {
+        "Nombre": "»alex«", 
+        "Rango": "Colíder",
+        "ID": "1l4y-eguc1",
+        "Poder": 958033,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Lady_Navier", 
+        "Rango": "Especialista",
+        "ID": "50is-suxy9",
+        "Poder": 705004,
+        "Nivel": 66,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "TwerlenK", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "MRchochox", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 52,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "EARTHLINGO", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 68,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Adrexolm", 
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "DLGPRO", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 72,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "xXDrive_shXx", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 76,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "viejamiada", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 74,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "KSTKBMS23", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "jfglhg", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "William_Afton_1983", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 72,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Blood Skull RD", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "KilLeo0217", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 78,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Experience^w^", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "ArtuxxD", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 73,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Skullgirls14203520", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 62,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Oliver's", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 75,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Ander_Weed_45", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 75,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Arcos16", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 71,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "black lagoon69", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 76,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "STANLEY GOAT", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 69,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "NERE OTAKO", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 66,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Bonilla Elias", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 80,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "defuncion", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 73,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "exterminador de bts", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 74,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "sofiii12", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 74,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "rottqned", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 74,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
+    }
 ]
-
-
-
-
-
 
 # ============================
 # CÁLCULO DE RENDIMIENTO
@@ -369,7 +672,7 @@ def img_base64(path):
     return base64.b64encode(data).decode("utf-8")
 
 # Imagen del nuevo Colíder
-img_colider = img_base64("27.png")
+img_colider = img_base64("3.png")
 
 # Tarjeta de felicitación estilo rango superior
 st.markdown(
@@ -556,7 +859,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16000   # Oro actual
+puntaje_actual = 10810   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -584,7 +887,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -660,16 +963,12 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte será de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-        <div style="text-align:center;">
-      <strong style="color:#fff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -870,7 +1169,7 @@ components.html(
             📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Que el admin se mejore y de paso borre la cuenta <strong>xd</strong> 
+            Seguir mejorando los puntos de gremio para suber, actualmente nuestro <strong>TOP 280</strong> 
             .
         </p>
 
@@ -946,7 +1245,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - NO UPDATE, SORRY",
+    title="Rendimiento de los miembros - ⚠️SE ACTUALIZARÁ AL FINALIZAR LA SEMANA",
     width=ancho_grafica
 )
 
@@ -1330,6 +1629,8 @@ components.html(
         ">
             No llegó el nuevo jefe de inmortales <strong>Critty Kitty</strong> esta semana.
             Sin embargo, pueden seguir con el equipo contra Marie que, igualmente, tiene muchas ventajas.
+            Además, ahora que ya no tiene el modificador, es recomendado llevarla con Fukua y Annie.
+            Una alternativa muy conocida es <strong>Robo Fortune - Terrrminator</strong>.
         </p>
 
         <div style="
@@ -1636,7 +1937,7 @@ img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
-img30 = img_base64("30.png")
+img30 = img_base64("Imagen_para_testeos.png")
 
 st.markdown(f"""
 <style>
@@ -1683,7 +1984,7 @@ margin-bottom:6px;
 font-size:26px;
 letter-spacing:1px;
 ">
-💜 Miembros Actuales (creo) — Alianza DEVS
+💜 Miembros Actuales — Alianza DEVS
 </h2>
 
 <p style="
@@ -1701,53 +2002,103 @@ gap:14px;
 ">
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img26}">
+  <img src="data:image/png;base64,{img1}">
   <span>CHESSDEV</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img25}">
-  <span>»Chris«</span>
+  <img src="data:image/png;base64,{img2}">
+  <span>»alex«</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img27}">
+  <img src="data:image/png;base64,{img3}">
   <span>Lady_Navier</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img30}">
-  <span>brinda con queso</span>
+  <img src="data:image/png;base64,{img4}">
+  <span>TwerlenK</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>aru_25</span>
+  <img src="data:image/png;base64,{img5}">
+  <span>rottqned</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img28}">
-  <span>DLGPRO</span>
+  <img src="data:image/png;base64,{img6}">
+  <span>sofiii12</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img19}">
+  <img src="data:image/png;base64,{img7}">
+  <span>exterminador de bts</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img8}">
+  <span>defuncion</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img9}">
+  <span>Bonilla Elias</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img10}">
+  <span>NERE OTAKO</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img11}">
+  <span>STANLEY GOAT</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img12}">
   <span>black lagoon69</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img23}">
-  <span>SkibidiLopez</span>
+  <img src="data:image/png;base64,{img13}">
+  <span>Arcos 16</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}">
-  <span>Artuxx<D</span>
+  <img src="data:image/png;base64,{img14}">
+  <span>Ander_Weed_45</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img22}">
-  <span>lucysaurio</span>
+  <img src="data:image/png;base64,{img15}">
+  <span>Olive's</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img16}">
+  <span>Skullgirls14203520</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img17}">
+  <span>ArtuxxD</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img18}">
+  <span>Experience^w^</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img19}">
+  <span>KilLeo0217</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img20}">
+  <span>Blood Skull RD</span>
 </div>
 
 <div class="dev-card">
@@ -1756,98 +2107,48 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img18}">
-  <span>TwerlenK</span>
+  <img src="data:image/png;base64,{img22}">
+  <span>jfglhg</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img20}">
-  <span>RIXTUN</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img16}">
-  <span>E A R T H L I N G O</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img17}">
-  <span>Arcos 16</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img14}">
-  <span>Experience^w^</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img7}">
+  <img src="data:image/png;base64,{img23}">
   <span>KSTKBMS23</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img15}">
-  <span>Lady.Moon</span>
+  <img src="data:image/png;base64,{img24}">
+  <span>viejamiada</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img12}">
-  <span>sofiii12</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img13}">
-  <span>ROON2526</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>Ander_Wedd_45</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img6}">
-  <span>exterminador de bts</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img10}">
-  <span>hellsing AG</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img9}">
-  <span>Benja</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img8}">
-  <span>Bonilla Elias</span>
-</div>
-
-<div class="dev-card">
-  <img src="data:image/png;base64,{img5}">
+  <img src="data:image/png;base64,{img25}">
   <span>xXDrive_shXx</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img4}">
-  <span>Athenacatevv</span>
+  <img src="data:image/png;base64,{img26}">
+  <span>DLGPRO</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img1}">
-  <span>yo 456</span>
+  <img src="data:image/png;base64,{img27}">
+  <span>Adrexolm</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img2}">
-  <span>rottqned</span>
+  <img src="data:image/png;base64,{img28}">
+  <span>E A R T H L I N G O</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img3}">
-  <span>Oliver's</span>
+  <img src="data:image/png;base64,{img29}">
+  <span>MRchochox</span>
+</div>
+
+<div class="dev-card">
+  <img src="data:image/png;base64,{img30}">
+  <span>Disponible</span>
 </div>
 
 
@@ -1907,10 +2208,15 @@ img_new4 = img_base64("Imagen_para_testeos.png")
 
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
-    {"nombre": "rottqned", "imagen": "2temporal.png"},
-    {"nombre": "E A R T H L I N G O", "imagen": "16temporal.png"},
-    {"nombre": "Esta sección no se actualizó xd", "imagen": "Imagen_para_testeos.png"},
-    {"nombre": "long string of characters to test", "imagen": "Imagen_para_testeos.png"},
+    {"nombre": "Adrexolm", "imagen": "27.png"},
+    {"nombre": "Blood Skull RD", "imagen": "20.png"},
+    {"nombre": "KilLeo0217", "imagen": "19.png"},
+    {"nombre": "Skullgirls14203520", "imagen": "16.png"},
+    {"nombre": "STANLEY GOAT", "imagen": "11.png"},
+    {"nombre": "NERE OTAKO", "imagen": "10.png"},
+    {"nombre": "defuncion", "imagen": "8.png"},
+    {"nombre": "jfglhg", "imagen": "22.png"},
+    {"nombre": "MRchochox", "imagen": "29.png"},
 ]
 
 
@@ -1986,56 +2292,6 @@ for miembro in nuevos_miembros:
         """,
         height=250
     )
-
-
-
-
-
-
-
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-# Cargar tu GIF
-gif_base64 = img_base64("desapair.gif")
-
-# CSS para centrar y estilizar
-st.markdown("""
-<style>
-.gif-block {
-    max-width: 800px;
-    margin: 60px auto;
-    text-align: center;
-}
-.gif-block img {
-    width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.25);
-}
-.gif-caption {
-    font-size: 28px;
-    color: #f0f0f0;
-    margin-top: 20px;
-    font-weight: bold;
-}
-</style>
-""", unsafe_allow_html=True)
-
-# HTML con GIF y frase
-st.markdown(f"""
-<div class="gif-block">
-    <img src="data:image/gif;base64,{gif_base64}">
-    <div class="gif-caption">Estado actual de admin ser como: </div>
-</div>
-""", unsafe_allow_html=True)
-
-
-
 
 
 
