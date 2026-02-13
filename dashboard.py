@@ -2198,12 +2198,6 @@ def img_base64(path):
         return base64.b64encode(f.read()).decode()
 
 # --- Imagen del nuevo miembro ---
-img_new1 = img_base64("2temporal.png")
-img_new2 = img_base64("Imagen_para_testeos.png")
-img_new3 = img_base64("Imagen_para_testeos.png")
-img_new4 = img_base64("Imagen_para_testeos.png")
-
-
 
 
 # Lista de nuevos miembros (nombre + imagen)
