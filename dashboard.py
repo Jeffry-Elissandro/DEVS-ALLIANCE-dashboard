@@ -2073,7 +2073,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>Olive's</span>
+  <span>Oliver's</span>
 </div>
 
 <div class="dev-card">
@@ -2205,7 +2205,7 @@ nuevos_miembros = [
     {"nombre": "Adrexolm", "imagen": "27.png"},
     {"nombre": "Blood Skull RD", "imagen": "20.png"},
     {"nombre": "KilLeo0217", "imagen": "19.png"},
-    {"nombre": "Skullgirls14203520", "imagen": "16.png"},
+    {"nombre": "Skullgirls1420352", "imagen": "16.png"},
     {"nombre": "STANLEY GOAT", "imagen": "11.png"},
     {"nombre": "NERE OTAKO", "imagen": "10.png"},
     {"nombre": "defuncion", "imagen": "8.png"},
