@@ -540,6 +540,98 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
 
 
+#VALENTINE´S DAY
+
+import streamlit as st
+
+st.set_page_config(layout="wide")
+
+st.markdown(
+    """
+    <style>
+    .love-card {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 40px 30px;
+      background: linear-gradient(135deg, #ff4d6d, #ff99ac);
+      border-radius: 20px;
+      border: 2px solid rgba(255,255,255,0.4);
+      box-shadow: 0 0 40px rgba(255,150,150,0.6),
+                  inset 0 0 25px rgba(255,200,200,0.3);
+      text-align: center;
+      transition: 0.4s ease;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 40px rgba(255,150,150,0.6); }
+      to { box-shadow: 0 0 70px rgba(255,200,200,0.9); }
+    }
+
+    .love-title {
+      font-size: 32px;
+      color: #fff;
+      margin: 0;
+      font-weight: bold;
+      text-shadow: 0 0 15px rgba(255,255,255,0.9);
+      letter-spacing: 2px;
+    }
+
+    .love-text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    .love-footer {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #fff;
+      letter-spacing: 1.5px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .heart-icon {
+      font-size: 40px;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(255,255,255,0.8);
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    </style>
+
+    <div class="love-card">
+      <div class="heart-icon">💖</div>
+      <h3 class="love-title">¡Feliz Día del Cariño!</h3>
+      <p class="love-text">
+        Hoy celebramos la amistad, el afecto y la unión que nos inspira a seguir adelante juntos.
+        <br><br>
+        Que este día sea un recordatorio de la fuerza que tenemos como grupo
+        y de la alegría que compartimos en cada momento.
+      </p>
+      <div class="love-footer">
+        Con gratitud y cariño para todos 💕
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
 
 
 
