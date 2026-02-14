@@ -542,6 +542,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
 #VALENTINE´S DAY
 
+
 import streamlit as st
 
 st.set_page_config(layout="wide")
@@ -549,54 +550,56 @@ st.set_page_config(layout="wide")
 st.markdown(
     """
     <style>
-    .love-card {
+    .cariño-card {
       max-width: 700px;
       margin: 60px auto;
       padding: 40px 30px;
-      background: linear-gradient(135deg, #ff4d6d, #ff99ac);
-      border-radius: 20px;
-      border: 2px solid rgba(255,255,255,0.4);
-      box-shadow: 0 0 40px rgba(255,150,150,0.6),
-                  inset 0 0 25px rgba(255,200,200,0.3);
+      background: #1a1a1a;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 80, 120, 0.4);
+      box-shadow: 0 0 25px rgba(255, 80, 120, 0.25);
       text-align: center;
       transition: 0.4s ease;
-      animation: glow 3s ease-in-out infinite alternate;
     }
 
-    @keyframes glow {
-      from { box-shadow: 0 0 40px rgba(255,150,150,0.6); }
-      to { box-shadow: 0 0 70px rgba(255,200,200,0.9); }
+    .cariño-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 40px rgba(255, 100, 140, 0.45);
     }
 
-    .love-title {
-      font-size: 32px;
-      color: #fff;
+    .cariño-title {
+      font-size: 28px;
+      color: #ff4d6d;
       margin: 0;
       font-weight: bold;
-      text-shadow: 0 0 15px rgba(255,255,255,0.9);
       letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(255, 80, 120, 0.8);
     }
 
-    .love-text {
+    .cariño-text {
       margin-top: 20px;
-      font-size: 18px;
-      color: #fff;
+      font-size: 16px;
+      color: #e5e5e5;
       line-height: 1.8;
     }
 
-    .love-footer {
-      margin-top: 25px;
+    .cariño-divider {
+      margin: 25px auto;
+      width: 60%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #ff4d6d, transparent);
+    }
+
+    .cariño-footer {
       font-size: 14px;
-      color: #fff;
+      color: #aaa;
       letter-spacing: 1.5px;
-      font-weight: bold;
       text-transform: uppercase;
     }
 
-    .heart-icon {
-      font-size: 40px;
-      color: #fff;
-      text-shadow: 0 0 20px rgba(255,255,255,0.8);
+    .pulse-heart {
+      font-size: 36px;
+      color: #ff4d6d;
       animation: heartbeat 1.5s infinite;
     }
 
@@ -609,17 +612,18 @@ st.markdown(
     }
     </style>
 
-    <div class="love-card">
-      <div class="heart-icon">💖</div>
-      <h3 class="love-title">¡Feliz Día del Cariño!</h3>
-      <p class="love-text">
-        Hoy celebramos la amistad, el afecto y la unión que nos inspira a seguir adelante juntos.
+    <div class="cariño-card">
+      <div class="pulse-heart">❤</div>
+      <h3 class="cariño-title">Día del Cariño</h3>
+      <div class="cariño-divider"></div>
+      <p class="cariño-text">
+        Un día para recordar que la unión, la amistad y el afecto
+        nos hacen más fuertes como comunidad.
         <br><br>
-        Que este día sea un recordatorio de la fuerza que tenemos como grupo
-        y de la alegría que compartimos en cada momento.
+        Que este espacio sea siempre un lugar de apoyo, gratitud y alegría compartida.
       </p>
-      <div class="love-footer">
-        Con gratitud y cariño para todos 💕
+      <div class="cariño-footer">
+        Celebrando juntos con aprecio
       </div>
     </div>
     """,
