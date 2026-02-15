@@ -2385,29 +2385,87 @@ for miembro in nuevos_miembros:
 
 #Para Comentarios
 
+import streamlit as st
+import base64
+from datetime import datetime
+
 st.markdown("---")
 st.subheader("💬 Comentarios de la Alianza")
 
 nombre = st.text_input("Tu nombre o Nick")
 comentario = st.text_area("Escribe tu comentario")
+imagen = st.file_uploader("Adjuntar imagen (opcional)", type=["png", "jpg", "jpeg"])
 
 if st.button("Enviar comentario"):
     if nombre and comentario:
+        
+        img_base64 = ""
+        if imagen is not None:
+            img_bytes = imagen.read()
+            img_base64 = base64.b64encode(img_bytes).decode("utf-8")
+
         with open("comentarios.txt", "a", encoding="utf-8") as f:
-            f.write(f"{nombre}: {comentario}\n---\n")
+            f.write(f"Nombre:{nombre}\n")
+            f.write(f"Mensaje:{comentario}\n")
+            f.write(f"Imagen:{img_base64}\n")
+            f.write(f"Fecha:{datetime.now()}\n")
+            f.write("===\n")
+
         st.success("¡Comentario enviado!")
     else:
-        st.warning("Completa todos los campos")
+        st.warning("Completa Nombre y Mensaje")
 
 st.divider()
 
+
 #Para mostrar los comentarios
 
-st.markdown("### 🌟 Opiniones de los miembros")
+st.subheader("🌟 Opiniones de los Miembros")
 
 try:
     with open("comentarios.txt", "r", encoding="utf-8") as f:
-        st.text(f.read())
+        contenido = f.read().split("===\n")
+
+    for bloque in reversed(contenido):
+        if bloque.strip():
+            lineas = bloque.split("\n")
+            
+            nombre = lineas[0].replace("Nombre:", "")
+            mensaje = lineas[1].replace("Mensaje:", "")
+            img_data = lineas[2].replace("Imagen:", "")
+
+            st.markdown(f"""
+            <div style="
+                background: rgba(99,102,241,0.08);
+                padding:16px;
+                border-radius:14px;
+                margin-bottom:14px;
+                box-shadow:0 0 15px rgba(99,102,241,0.2);
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                gap:15px;
+            ">
+                <div style="flex:1;">
+                    <strong style="color:#a5b4fc;">{nombre}</strong>
+                    <p style="color:#e5e7eb; margin:8px 0;">{mensaje}</p>
+                </div>
+            """, unsafe_allow_html=True)
+
+            if img_data.strip() != "":
+                st.markdown(f"""
+                <img src="data:image/png;base64,{img_data}"
+                     style="
+                        width:80px;
+                        height:80px;
+                        object-fit:cover;
+                        border-radius:10px;
+                        box-shadow:0 0 10px rgba(255,255,255,0.3);
+                     ">
+                """, unsafe_allow_html=True)
+
+            st.markdown("</div>", unsafe_allow_html=True)
+
 except FileNotFoundError:
     st.info("Aún no hay comentarios.")
 
