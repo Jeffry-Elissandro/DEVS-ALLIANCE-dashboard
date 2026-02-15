@@ -1250,7 +1250,7 @@ components.html(
             📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Seguir mejorando los puntos de gremio para suber, actualmente nuestro <strong>TOP 280</strong> 
+            Seguir mejorando los puntos de gremio para subir, actualmente nuestro <strong>TOP 240</strong> 
             .
         </p>
 
@@ -1266,7 +1266,7 @@ components.html(
             🏅 Recomendación
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Realizar las operaciones constantemente, aprocechando que se
+            Realizar las operaciones constantemente, aprovechando que se
             reinician cada 24 horas.
         </p>
     </div>
