@@ -1052,7 +1052,7 @@ components.html(
              width="250" height="250" />
 
          <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡GRACIAS!</strong><br>Logramos Llegar a Rango Diamante esta Temporada
+      <strong style="color:#ffffff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
     </div>
 
     </div>
