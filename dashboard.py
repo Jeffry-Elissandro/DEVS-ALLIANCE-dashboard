@@ -1051,7 +1051,9 @@ components.html(
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
 
-        <strong style="color:#fff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>     
+         <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡GRACIAS!</strong><br>Logramos Llegar a Rango Diamante esta Temporada
+    </div>
 
     </div>
     """,
