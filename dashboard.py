@@ -337,11 +337,11 @@ data = [
         "Puntos": 6,
         "Consistencia": 6
     },{
-        "Nombre": "Tik_lmao", 
+        "Nombre": "Disponible", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 67,
+        "Nivel": 70,
         "Actividad": 6,
         "Daño": 6,
         "Puntos": 6,
@@ -2022,7 +2022,7 @@ img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
-img30 = img_base64("30.png")
+img30 = img_base64("Imagen_para_testeos.png")
 
 st.markdown(f"""
 <style>
@@ -2233,7 +2233,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img30}">
-  <span>Tik_lmao</span>
+  <span>Disponible</span>
 </div>
 
 
@@ -2296,7 +2296,6 @@ nuevos_miembros = [
     {"nombre": "defuncion", "imagen": "8.png"},
     {"nombre": "jfglhg", "imagen": "22.png"},
     {"nombre": "MRchochox", "imagen": "29.png"},
-    {"nombre": "Tik_lmao", "imagen": "30.png"},
     {"nombre": "CoinXY", "imagen": "6.png"},
     {"nombre": "¶ØrNHÛß", "imagen": "15.png"},
 ]
