@@ -401,7 +401,7 @@ color_map = {
 # ============================
 st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
-st.title("💎 DEV'S ALLIANCE – Sistema de Rendimiento")
+st.title("💎 DEV'S ALLIANCE – WEB OFICIAL")
 
 st.write("Análisis de actividad, daño, puntos y consistencia")
 
