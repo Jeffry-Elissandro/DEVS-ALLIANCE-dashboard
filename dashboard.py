@@ -906,7 +906,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>16 DE FEBRERO</h2>
+      <h2>¡MAÑANA!</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
@@ -940,7 +940,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15545   # Oro actual
+puntaje_actual = 15760   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -968,7 +968,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1326,7 +1326,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - ⚠️SE ACTUALIZARÁ AL FINALIZAR LA SEMANA",
+    title="Rendimiento de los miembros - ⚠️SE ACTUALIZARÁ ESTA NOCHE",
     width=ancho_grafica
 )
 
