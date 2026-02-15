@@ -217,11 +217,11 @@ data = [
         "Consistencia": 6
     },
     {
-        "Nombre": "Oliver's", 
+        "Nombre": "¶ØrNHÛß", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 75,
+        "Nivel": 68,
         "Actividad": 6,
         "Daño": 6,
         "Puntos": 6,
@@ -940,7 +940,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15760   # Oro actual
+puntaje_actual = 15925   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2154,7 +2154,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>Oliver's</span>
+  <span>¶ØrNHÛß</span>
 </div>
 
 <div class="dev-card">
@@ -2294,6 +2294,7 @@ nuevos_miembros = [
     {"nombre": "MRchochox", "imagen": "29.png"},
     {"nombre": "Tik_lmao", "imagen": "30.png"},
     {"nombre": "CoinXY", "imagen": "6.png"},
+    {"nombre": "¶ØrNHÛß", "imagen": "15.png"},
 ]
 
 
