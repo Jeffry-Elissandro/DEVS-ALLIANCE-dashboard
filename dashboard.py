@@ -2424,50 +2424,84 @@ st.subheader("🌟 Opiniones de los Miembros")
 
 try:
     with open("comentarios.txt", "r", encoding="utf-8") as f:
-        contenido = f.read().split("===\n")
+        contenido = f.read()
 
-    for bloque in reversed(contenido):
-        if bloque.strip():
-            lineas = bloque.split("\n")
-            
-            nombre = lineas[0].replace("Nombre:", "")
-            mensaje = lineas[1].replace("Mensaje:", "")
-            img_data = lineas[2].replace("Imagen:", "")
+    # Detectar si es formato nuevo
+    if "===" in contenido:
+        bloques = contenido.split("===\n")
+        
+        for bloque in reversed(bloques):
+            if bloque.strip():
+                lineas = bloque.strip().split("\n")
+                
+                nombre = ""
+                mensaje = ""
+                img_data = ""
 
-            st.markdown(f"""
-            <div style="
-                background: rgba(99,102,241,0.08);
-                padding:16px;
-                border-radius:14px;
-                margin-bottom:14px;
-                box-shadow:0 0 15px rgba(99,102,241,0.2);
-                display:flex;
-                justify-content:space-between;
-                align-items:center;
-                gap:15px;
-            ">
-                <div style="flex:1;">
+                for linea in lineas:
+                    if linea.startswith("Nombre:"):
+                        nombre = linea.replace("Nombre:", "")
+                    elif linea.startswith("Mensaje:"):
+                        mensaje = linea.replace("Mensaje:", "")
+                    elif linea.startswith("Imagen:"):
+                        img_data = linea.replace("Imagen:", "")
+
+                st.markdown(f"""
+                <div style="
+                    background: rgba(99,102,241,0.08);
+                    padding:16px;
+                    border-radius:14px;
+                    margin-bottom:14px;
+                    box-shadow:0 0 15px rgba(99,102,241,0.2);
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    gap:15px;
+                ">
+                    <div style="flex:1;">
+                        <strong style="color:#a5b4fc;">{nombre}</strong>
+                        <p style="color:#e5e7eb; margin:8px 0;">{mensaje}</p>
+                    </div>
+                """, unsafe_allow_html=True)
+
+                if img_data.strip():
+                    st.markdown(f"""
+                    <img src="data:image/png;base64,{img_data}"
+                         style="
+                            width:80px;
+                            height:80px;
+                            object-fit:cover;
+                            border-radius:10px;
+                            box-shadow:0 0 10px rgba(255,255,255,0.3);
+                         ">
+                    """, unsafe_allow_html=True)
+
+                st.markdown("</div>", unsafe_allow_html=True)
+
+    else:
+        # Formato antiguo
+        bloques = contenido.split("---\n")
+
+        for bloque in reversed(bloques):
+            if ":" in bloque:
+                nombre, mensaje = bloque.split(":", 1)
+
+                st.markdown(f"""
+                <div style="
+                    background: rgba(99,102,241,0.08);
+                    padding:16px;
+                    border-radius:14px;
+                    margin-bottom:14px;
+                    box-shadow:0 0 15px rgba(99,102,241,0.2);
+                ">
                     <strong style="color:#a5b4fc;">{nombre}</strong>
                     <p style="color:#e5e7eb; margin:8px 0;">{mensaje}</p>
                 </div>
-            """, unsafe_allow_html=True)
-
-            if img_data.strip() != "":
-                st.markdown(f"""
-                <img src="data:image/png;base64,{img_data}"
-                     style="
-                        width:80px;
-                        height:80px;
-                        object-fit:cover;
-                        border-radius:10px;
-                        box-shadow:0 0 10px rgba(255,255,255,0.3);
-                     ">
                 """, unsafe_allow_html=True)
-
-            st.markdown("</div>", unsafe_allow_html=True)
 
 except FileNotFoundError:
     st.info("Aún no hay comentarios.")
+
 
 
 
