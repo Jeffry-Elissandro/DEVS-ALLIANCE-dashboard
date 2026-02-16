@@ -813,7 +813,7 @@ components.html(
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
-    height=900
+    height=1100
 )
 
 
