@@ -656,7 +656,7 @@ def img_base64(path):
     return base64.b64encode(data).decode("utf-8")
 
 # Imagen del nuevo Colíder
-img_colider = img_base64("3.png")
+img_colider = img_base64("27.png")
 
 # Tarjeta de felicitación estilo rango superior
 st.markdown(
@@ -726,14 +726,14 @@ st.markdown(
       <h3 class="colider-title">Destacado de la semana</h3>
       <p class="colider-text">
         Este puesto es realmente exclusivo.
-        Fuiste el único miembro capaz de conseguir <strong>Todos los Puntos </strong>
-        de gremio. ¡Tu ayuda nos llevo a completar el Diamante!
+        ¡Fuiste el miembro capaz de conseguir la mayor <strong>Cantidad de Daño </strong>
+        siendo la increíble cifra de 6 Billones!
         <br><br>
         Un sincero agradecimiento por siempre seguir superándote, 
         incluso hasta superar límites.
       </p>
       <div class="colider-rank">
-        Felicitaciones — Eres el miembro más comprometido
+        Felicitaciones — Adrexolm
       </div>
     </div>
     """,
