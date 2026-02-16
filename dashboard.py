@@ -727,7 +727,7 @@ st.markdown(
       <p class="colider-text">
         Este puesto es realmente exclusivo.
         ¡Fuiste el miembro capaz de conseguir la mayor <strong>Cantidad de Daño </strong>
-        siendo la increíble cifra de 6 Billones!
+        siendo la increíble cifra de <strong>6 Billones!</strong>
         <br><br>
         Un sincero agradecimiento por siempre seguir superándote, 
         incluso hasta superar límites.
@@ -765,7 +765,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-misterio_img = img_base64("Critty_Kitty.png")
+misterio_img = img_base64("New_Raid_Boss.png")
 
 components.html(
     f"""
@@ -809,7 +809,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>¡MAÑANA!</h2>
+      <h2>Critty Kitty</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
