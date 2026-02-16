@@ -2190,11 +2190,6 @@ def img_base64(path):
 
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
-    {"nombre": "Blood Skull RD", "imagen": "20.png"},
-    {"nombre": "KilLeo0217", "imagen": "19.png"},
-    {"nombre": "Skullgirls1420352", "imagen": "16.png"},
-    {"nombre": "STANLEY GOAT", "imagen": "11.png"},
-    {"nombre": "NERE OTAKO", "imagen": "10.png"},
     {"nombre": "defuncion", "imagen": "8.png"},
     {"nombre": "jfglhg", "imagen": "22.png"},
     {"nombre": "MRchochox", "imagen": "29.png"},
