@@ -2496,6 +2496,40 @@ except FileNotFoundError:
 
 
 
+
+
+
+
+
+
+#Para limpiar Manualmente
+
+if st.button("🗑️ Borrar todos los comentarios"):
+    open("comentarios.txt", "w").close()
+    st.success("Chat borrado correctamente.")
+
+
+
+admin_pass = st.text_input("Clave admin", type="password")
+
+if admin_pass == "TuClaveSecreta123":
+    if st.button("🗑️ Borrar chat"):
+        open("comentarios.txt", "w").close()
+        st.success("Chat eliminado.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 st.divider() 
 
 
