@@ -1233,7 +1233,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - ⚠️SE ACTUALIZARÁ ESTA NOCHE",
+    title="Rendimiento de los miembros - ⚠️SE ACTUALIZARÁ ESTA TARDE",
     width=ancho_grafica
 )
 
