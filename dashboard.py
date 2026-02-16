@@ -2022,7 +2022,7 @@ img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
-img30 = img_base64("30.png")
+img30 = img_base64("Imagen_para_testeos.png")
 
 st.markdown(f"""
 <style>
@@ -2233,7 +2233,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img30}">
-  <span>Alxx10</span>
+  <span>Disponible</span>
 </div>
 
 
@@ -2297,7 +2297,6 @@ nuevos_miembros = [
     {"nombre": "MRchochox", "imagen": "29.png"},
     {"nombre": "CoinXY", "imagen": "6.png"},
     {"nombre": "¶ØrNHÛß", "imagen": "15.png"},
-    {"nombre": "Alxx10", "imagen": "30.png"},
 ]
 
 
