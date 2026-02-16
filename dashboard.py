@@ -2503,7 +2503,7 @@ st.divider()
 
 admin_pass = st.text_input("Clave admin", type="password")
 
-if admin_pass == "TuClaveSecreta123":
+if admin_pass == "CHESSCOM":
     st.success("Acceso concedido")
     
     if st.button("🗑️ Borrar chat completamente"):
