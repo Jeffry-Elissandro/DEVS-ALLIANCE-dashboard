@@ -1925,7 +1925,7 @@ img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
-img30 = img_base64("imagen_para_testeos.png")
+img30 = img_base64("Imagen_para_testeos.png")
 
 st.markdown(f"""
 <style>
