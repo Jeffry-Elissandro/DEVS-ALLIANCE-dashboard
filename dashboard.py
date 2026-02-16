@@ -2376,7 +2376,106 @@ for miembro in nuevos_miembros:
 
 
 
+#Para establecer ciclo horario
+# ==============================
+# ESTABLECER CICLO DE TEMPORADA
+# ==============================
 
+from datetime import datetime, timedelta
+
+def obtener_inicio_temporada():
+    ahora = datetime.now()
+
+    # Lunes = 0
+    dias_desde_lunes = ahora.weekday()
+
+    ultimo_lunes = ahora - timedelta(days=dias_desde_lunes)
+
+    # Ajustamos a lunes 12:00
+    inicio_temporada = ultimo_lunes.replace(
+        hour=12,
+        minute=0,
+        second=0,
+        microsecond=0
+    )
+
+    # Si aún no llega el lunes 12:00 de esta semana
+    if ahora < inicio_temporada:
+        inicio_temporada -= timedelta(days=7)
+
+    return inicio_temporada
+
+
+
+
+
+
+
+
+
+# ==============================
+# LIMPIEZA AUTOMÁTICA POR TEMPORADA
+# ==============================
+
+def limpiar_por_temporada():
+    try:
+        with open("comentarios.txt", "r", encoding="utf-8") as f:
+            contenido = f.read()
+
+        # Unificar delimitadores
+        contenido = contenido.replace("===\n", "§§§")
+        bloques = contenido.split("§§§")
+
+        inicio_temporada = obtener_inicio_temporada()
+        inicio_siguiente = inicio_temporada + timedelta(days=7)
+
+        bloques_validos = []
+
+        for bloque in bloques:
+            bloque = bloque.strip()
+            if not bloque:
+                continue
+
+            if "Fecha:" in bloque:
+                lineas = bloque.split("\n")
+                fecha_texto = ""
+
+                for linea in lineas:
+                    if linea.startswith("Fecha:"):
+                        fecha_texto = linea.replace("Fecha:", "").strip()
+
+                if fecha_texto:
+                    try:
+                        fecha_comentario = datetime.strptime(
+                            fecha_texto,
+                            "%Y-%m-%d %H:%M:%S"
+                        )
+                    except:
+                        continue
+
+                    # Validar si pertenece a la temporada actual
+                    if inicio_temporada <= fecha_comentario < inicio_siguiente:
+                        bloques_validos.append(bloque + "\n===\n")
+
+        # Reescribir archivo solo con temporada actual
+        with open("comentarios.txt", "w", encoding="utf-8") as f:
+            for bloque in bloques_validos:
+                f.write(bloque)
+
+    except FileNotFoundError:
+        pass
+
+
+
+
+inicio = obtener_inicio_temporada()
+fin = inicio + timedelta(days=7)
+
+st.caption(
+    f"🗓 Temporada activa: "
+    f"{inicio.strftime('%d %b %H:%M')} - "
+    f"{fin.strftime('%d %b %H:%M')}"
+)
 
 
 
@@ -2407,7 +2506,7 @@ if st.button("Enviar comentario"):
             f.write(f"Nombre:{nombre}\n")
             f.write(f"Mensaje:{comentario}\n")
             f.write(f"Imagen:{img_base64}\n")
-            f.write(f"Fecha:{datetime.now()}\n")
+            f.write(f"Fecha:{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             f.write("===\n")
 
         st.success("¡Comentario enviado!")
