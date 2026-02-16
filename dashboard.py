@@ -1919,13 +1919,13 @@ img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
-img24 = img_base64("24.png")
+img24 = img_base64("imagen_para_testeos.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
-img30 = img_base64("30.png")
+img30 = img_base64("imagen_para_testeos.png")
 
 st.markdown(f"""
 <style>
@@ -2106,7 +2106,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}">
-  <span>viejamiada</span>
+  <span>Disponible</span>
 </div>
 
 <div class="dev-card">
@@ -2136,7 +2136,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img30}">
-  <span>|yisus_starsswell|</span>
+  <span>Disponible</span>
 </div>
 
 
@@ -2190,12 +2190,9 @@ def img_base64(path):
 
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
-    {"nombre": "defuncion", "imagen": "8.png"},
-    {"nombre": "jfglhg", "imagen": "22.png"},
     {"nombre": "MRchochox", "imagen": "29.png"},
     {"nombre": "CoinXY", "imagen": "6.png"},
     {"nombre": "¶ØrNHÛß", "imagen": "15.png"},
-    {"nombre": "|yisus_starsswell|", "imagen": "30.png"},
 ]
 
 
