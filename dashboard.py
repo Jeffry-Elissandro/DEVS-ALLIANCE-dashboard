@@ -2500,22 +2500,19 @@ except FileNotFoundError:
 
 
 
+#Para Limpieza Manual
 
-
-#Para limpiar Manualmente
-
-if st.button("🗑️ Borrar todos los comentarios"):
-    open("comentarios.txt", "w").close()
-    st.success("Chat borrado correctamente.")
-
-
+st.divider()
 
 admin_pass = st.text_input("Clave admin", type="password")
 
 if admin_pass == "TuClaveSecreta123":
-    if st.button("🗑️ Borrar chat"):
+    st.success("Acceso concedido")
+    
+    if st.button("🗑️ Borrar chat completamente"):
         open("comentarios.txt", "w").close()
-        st.success("Chat eliminado.")
+        st.success("Chat eliminado correctamente.")
+
 
 
 
