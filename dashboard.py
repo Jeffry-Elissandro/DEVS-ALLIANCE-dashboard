@@ -1838,20 +1838,13 @@ import streamlit as st
 st.markdown("""
 <style>
 .card-container {
-    position: relative;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: rgba(17, 24, 39, 0.85);
     padding: 0;
-}
-
-/* Imagen dentro de la carta */
-.card-img {
-    display: block;
-    width: 100%;
-    border-radius: 16px;
+    text-align: center;
 }
 
 /* Hover SOLO desktop */
@@ -1867,12 +1860,8 @@ st.markdown("""
     box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 
-/* Subtítulos superpuestos ARRIBA */
+/* Título arriba */
 .card-caption {
-    position: absolute;
-    top: 0; /* arriba de la imagen */
-    left: 0;
-    width: 100%;
     font-size: 17px;
     font-weight: 700;
     color: #facc15; /* dorado elegante */
@@ -1882,6 +1871,7 @@ st.markdown("""
     text-shadow: 0 2px 6px rgba(0,0,0,0.9);
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .card-container:hover .card-caption {
@@ -1894,28 +1884,19 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("""
-    <div class='card-container'>
-        <div class='card-caption'>SOPORTES</div>
-        <img src='Soportes_1.png' class='card-img'>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.image("Soportes_1.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("""
-    <div class='card-container card-main'>
-        <div class='card-caption'>ATACANTES</div>
-        <img src='Atacantes.png' class='card-img'>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
+    st.image("Atacantes.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("""
-    <div class='card-container'>
-        <div class='card-caption'>SOPORTES</div>
-        <img src='Soportes_2.png' class='card-img'>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.image("Soportes_2.png", use_container_width=True)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 
