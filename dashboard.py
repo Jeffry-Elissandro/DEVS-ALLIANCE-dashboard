@@ -1851,7 +1851,7 @@ st.markdown("""
 @media (hover: hover) {
     .card-container:hover {
         transform: translateY(-6px) scale(1.05);
-        box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
+        box-shadow: 0 0 35px rgba(255, 255, 255, 0.95);
     }
 }
 
