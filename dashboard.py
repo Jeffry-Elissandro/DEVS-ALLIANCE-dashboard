@@ -1855,7 +1855,7 @@ st.markdown("""
     }
 }
 
-.cariño-container:hover {
+.card-container:hover {
       transform: scale(1.02);
       box-shadow: 0 0 35px rgba(255, 255, 255, 0.95);
             
