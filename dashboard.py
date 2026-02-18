@@ -650,7 +650,7 @@ st.markdown(f"""
 
 
 
-
+st.driver()
 
 
 
@@ -678,16 +678,17 @@ st.markdown(f"""
   text-align:center;
 ">
 
-  <h2 style="
-    color:#facc15;
-    font-size:34px;
-    font-weight:bold;
-    margin-bottom:18px;
-    letter-spacing:1.5px;
-    text-shadow:0 0 18px rgba(250,204,21,0.7);
-  ">
-    ¡RÉCORD HISTÓRICO ALCANZADO!
-  </h2>
+ <div style="
+  max-width:950px;
+  margin:40px auto;
+  padding:20px;
+  background:transparent;
+  border-radius:20px;
+  font-family:'Segoe UI',sans-serif;
+  text-align:center;
+">
+
+  <h2 class="record-title">¡RÉCORD HISTÓRICO ALCANZADO!</h2>
 
   <p style="
     color:#e5e7eb;
@@ -748,7 +749,7 @@ st.markdown(f"""
 
 
 
-
+st.driver()
 
 
 
