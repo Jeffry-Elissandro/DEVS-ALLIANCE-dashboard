@@ -660,72 +660,62 @@ st.markdown(f"""
 # ==============================
 
 st.markdown("""
-<div style="
-    background: linear-gradient(135deg, rgba(234,179,8,0.15), rgba(251,191,36,0.08));
-    padding:28px;
-    border-radius:18px;
-    margin-bottom:30px;
-    border: 1px solid rgba(251,191,36,0.4);
-    box-shadow: 0 0 30px rgba(251,191,36,0.35);
-">
+<style>
+.record-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 28px;
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.12), rgba(253, 224, 71, 0.08));
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(250, 204, 21, 0.25);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+.record-title {
+    color: #facc15;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+.record-text {
+    color: #f3f4f6;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+.record-footer {
+    color: #fde68a;
+    font-weight: 600;
+    margin-top: 18px;
+}
+</style>
+""", unsafe_allow_html=True)
 
-<h2 style="
-    color:#facc15;
-    margin-bottom:16px;
-    text-align:center;
-    letter-spacing:1px;
-">
-🏆 ¡RÉCORD NUEVO ALCANZADO!
-</h2>
-
-<p style="
-    color:#f3f4f6;
-    font-size:16px;
-    line-height:1.7;
-    text-align:center;
-">
-Oficialmente ahora somos parte de los <strong>TOP 100 gremios a nivel global</strong>,
-alcanzando el puesto <strong>97</strong>.
-</p>
-
-<p style="
-    color:#e5e7eb;
-    font-size:15px;
-    line-height:1.6;
-    text-align:center;
-    margin-top:14px;
-">
-Para algunos puede parecer muy alejado, pero quienes llevamos tiempo en esta alianza
-sabemos lo que realmente significa. En nuestros inicios, el objetivo parecía lejano;
-nuestro mejor puesto en ese entonces fue alrededor del <strong>TOP 5800</strong>.
-</p>
-
-<p style="
-    color:#e5e7eb;
-    font-size:15px;
-    line-height:1.6;
-    text-align:center;
-    margin-top:10px;
-">
-Hoy demostramos que el crecimiento constante, la constancia y el trabajo en equipo
-pueden llevarnos mucho más lejos de lo que imaginábamos.
-Este logro no pertenece a una sola persona, pertenece a toda la alianza.
-</p>
-
-<p style="
-    color:#fde68a;
-    font-weight:600;
-    text-align:center;
-    margin-top:18px;
-">
-Este no es el final - Gracias
-</p>
-
+st.markdown("""
+<div class="record-card">
+    <div class="record-title">🏆 ¡RÉCORD NUEVO ALCANZADO!</div>
+    <div class="record-text">
+        Oficialmente ahora somos parte de los <strong>TOP 100 gremios a nivel global</strong>,
+        alcanzando el puesto <strong>97</strong>.
+    </div>
+    <div class="record-text">
+        Para algunos puede parecer muy alejado, pero quienes llevamos tiempo en esta alianza
+        sabemos lo que realmente significa. En nuestros inicios, el objetivo parecía lejano;
+        nuestro mejor puesto en ese entonces fue alrededor del <strong>TOP 5800</strong>.
+    </div>
+    <div class="record-text">
+        Hoy demostramos que el crecimiento constante, la constancia y el trabajo en equipo
+        pueden llevarnos mucho más lejos de lo que imaginábamos.
+        Este logro no pertenece a una sola persona, pertenece a toda la alianza.
+    </div>
+    <div class="record-footer">Este no es el final — Gracias</div>
 </div>
 """, unsafe_allow_html=True)
 
-# Imagen horizontal de prueba
-st.image("TOP_97.png", use_column_width=True)
+# Imagen más pequeña y centrada
+st.image("TOP_97.png", use_column_width=False, width=400)
+
 
 
 
