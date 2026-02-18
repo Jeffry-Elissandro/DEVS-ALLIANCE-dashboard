@@ -57,9 +57,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 77,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 9,
+        "Daño": 4,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -68,9 +68,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 52,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -79,9 +79,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 68,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -90,10 +90,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 79,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "DLGPRO", 
@@ -101,9 +101,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 72,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -112,10 +112,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 76,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "viejamiada", 
@@ -123,10 +123,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 74,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "KSTKBMS23", 
@@ -134,10 +134,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 77,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 7,
+        "Puntos": 10,
+        "Consistencia": 8
     },
     {
         "Nombre": "jfglhg", 
@@ -145,10 +145,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 79,
-        "Actividad": 6,
+        "Actividad": 10,
         "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Puntos": 10,
+        "Consistencia": 7
     },
     {
         "Nombre": "William_Afton_1983", 
@@ -156,10 +156,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 72,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 9,
+        "Puntos": 10,
+        "Consistencia": 9
     },
     {
         "Nombre": "Blood Skull RD", 
@@ -167,10 +167,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 77,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "KilLeo0217", 
@@ -178,10 +178,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 78,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "Experience^w^", 
@@ -189,10 +189,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 79,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 7,
+        "Puntos": 10,
+        "Consistencia": 8
     },
     {
         "Nombre": "ArtuxxD", 
@@ -200,9 +200,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 73,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -211,10 +211,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 62,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
+        "Consistencia": 5
     },
     {
         "Nombre": "¶ØrNHÛß", 
@@ -222,10 +222,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 68,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 7,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 4
     },
     {
         "Nombre": "Ander_Weed_45", 
@@ -233,10 +233,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 75,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 8,
+        "Consistencia": 8
     },
     {
         "Nombre": "Arcos16", 
@@ -244,10 +244,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 71,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
+        "Consistencia": 5
     },
     {
         "Nombre": "black lagoon69", 
@@ -255,10 +255,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 76,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 9,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 9
     },
     {
         "Nombre": "STANLEY GOAT", 
@@ -266,9 +266,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 69,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -277,9 +277,9 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 66,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
@@ -288,10 +288,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 80,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 9,
+        "Daño": 4,
+        "Puntos": 8,
+        "Consistencia": 5
     },
     {
         "Nombre": "defuncion", 
@@ -299,10 +299,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 73,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 10,
+        "Consistencia": 7
     },
     {
         "Nombre": "exterminador de bts", 
@@ -310,10 +310,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 74,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 8,
+        "Consistencia": 7
     },
     {
         "Nombre": "CoinXY", 
@@ -321,10 +321,10 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 79,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "rottqned", 
@@ -332,20 +332,20 @@ data = [
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 74,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 9,
+        "Consistencia": 8
     },{
-        "Nombre": "Disponible", 
+        "Nombre": "|yisus_starsswell|", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 70,
-        "Actividad": 6,
+        "Nivel": 80,
+        "Actividad": 10,
         "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Puntos": 8,
+        "Consistencia": 7
     }
 ]
 
@@ -540,104 +540,6 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
 
 
-#VALENTINE´S DAY
-
-
-import streamlit as st
-
-st.set_page_config(layout="wide")
-
-st.markdown(
-    """
-    <style>
-    .cariño-card {
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 40px 30px;
-      background: #1a1a1a;
-      border-radius: 16px;
-      border: 1px solid rgba(255, 80, 120, 0.4);
-      box-shadow: 0 0 25px rgba(255, 80, 120, 0.25);
-      text-align: center;
-      transition: 0.4s ease;
-    }
-
-    .cariño-card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 40px rgba(255, 100, 140, 0.45);
-    }
-
-    .cariño-title {
-      font-size: 28px;
-      color: #ff4d6d;
-      margin: 0;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(255, 80, 120, 0.8);
-    }
-
-    .cariño-text {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #e5e5e5;
-      line-height: 1.8;
-    }
-
-    .cariño-divider {
-      margin: 25px auto;
-      width: 60%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #ff4d6d, transparent);
-    }
-
-    .cariño-footer {
-      font-size: 14px;
-      color: #aaa;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    .pulse-heart {
-      font-size: 36px;
-      color: #ff4d6d;
-      animation: heartbeat 1.5s infinite;
-    }
-
-    @keyframes heartbeat {
-      0% { transform: scale(1); }
-      25% { transform: scale(1.2); }
-      50% { transform: scale(1); }
-      75% { transform: scale(1.2); }
-      100% { transform: scale(1); }
-    }
-    </style>
-
-    <div class="cariño-card">
-      <div class="pulse-heart">❤</div>
-      <h3 class="cariño-title">Día del Cariño</h3>
-      <div class="cariño-divider"></div>
-      <p class="cariño-text">
-        Un día para recordar que la unión, la amistad y el afecto
-        nos hacen más fuertes como comunidad.
-        <br><br>
-        Que este espacio sea siempre un lugar de apoyo, gratitud y alegría compartida.
-      </p>
-      <div class="cariño-footer">
-        Celebrando juntos con aprecio
-      </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -765,7 +667,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-misterio_img = img_base64("New_Raid_Boss.png")
+misterio_img = img_base64("Ms_Fortune_Inmortals.png")
 
 components.html(
     f"""
@@ -809,7 +711,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h2>Critty Kitty</h2>
+      <h2>NEW BOSS</h2>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
@@ -843,7 +745,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16115   # Oro actual
+puntaje_actual = 8690   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -871,7 +773,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -947,16 +849,12 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte será de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-         <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1157,7 +1055,7 @@ components.html(
             📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Seguir mejorando los puntos de gremio para subir, actualmente nuestro <strong>TOP 240</strong> 
+            Seguir mejorando los puntos de gremio para subir, actualmente nuestro <strong>¡TOP 110!/strong> 
             .
         </p>
 
@@ -1233,7 +1131,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - ⚠️SE ACTUALIZARÁ ESTA TARDE",
+    title="Rendimiento de los miembros - Semana No.5 - 09/15 Febrero",
     width=ancho_grafica
 )
 
@@ -1615,10 +1513,10 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            No llegó el nuevo jefe de inmortales <strong>Critty Kitty</strong> esta semana.
-            Sin embargo, pueden seguir con el equipo contra Marie que, igualmente, tiene muchas ventajas.
-            Además, ahora que ya no tiene el modificador, es recomendado llevarla con Fukua y Annie.
-            Una alternativa muy conocida es <strong>Robo Fortune - Terrrminator</strong>.
+            Finalmente tenemos al nuevo jefe de inmortales <strong>Critty Kitty</strong> y con ella vino una 
+            pelea con modificadores realmente interesantes, que se pueden aprovechar a favor para 
+            hacer un daño exponencial. Realmente los equipos son muchos, pero los más recomendados son los siguientes...
+            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong>
         </p>
 
         <div style="
@@ -1637,7 +1535,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
+                    src="https://www.youtube.com/embed/VAL9efW_hHY"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1704,7 +1602,7 @@ st.markdown("""
 </style>
 
 <div style="margin:35px auto 20px; text-align:center;">
-  <h1 class="special-title">Equipo de la Semana (Buscando)</h1>
+  <h1 class="special-title">Equipo de la Semana</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -1757,17 +1655,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
+    st.image("carta_umbrella.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.image("carta_marie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_painwheel.png", use_container_width=True)
+    st.image("carta_painwheel_tiránico.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -1925,7 +1823,7 @@ img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
-img30 = img_base64("Imagen_para_testeos.png")
+img30 = img_base64("30.png")
 
 st.markdown(f"""
 <style>
@@ -2105,8 +2003,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img30}">
-  <span>Disponible</span>
+  <img src="data:image/png;base64,{img24}">
+  <span>zoroiluvyu</span>
 </div>
 
 <div class="dev-card">
@@ -2136,7 +2034,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img30}">
-  <span>Disponible</span>
+  <span>Rukawa_Noceda</span>
 </div>
 
 
@@ -2190,9 +2088,8 @@ def img_base64(path):
 
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
-    {"nombre": "MRchochox", "imagen": "29.png"},
-    {"nombre": "CoinXY", "imagen": "6.png"},
-    {"nombre": "¶ØrNHÛß", "imagen": "15.png"},
+    {"nombre": "zoroiluvyu", "imagen": "24.png"},
+    {"nombre": "Rukawa_Noceda", "imagen": "30.png"},
 ]
 
 
