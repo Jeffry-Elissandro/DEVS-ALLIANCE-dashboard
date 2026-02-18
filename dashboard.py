@@ -1829,7 +1829,9 @@ st.markdown("""
 
 
 
-#Para mostrar las cartas
+# ==============================
+# CARTAS CON SUBTÍTULOS
+# ==============================
 
 st.markdown("""
 <style>
@@ -1838,11 +1840,14 @@ st.markdown("""
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Centrar subtítulos */
+    padding-bottom: 10px;
 }
 
 /* IMPORTANTE */
 .card-container img {
     display: block;
+    margin: 0 auto;
 }
 
 /* Hover SOLO desktop */
@@ -1857,27 +1862,35 @@ st.markdown("""
 .card-main {
     box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
+
+/* Subtítulos */
+.card-caption {
+    color: #e5e7eb;
+    font-size: 14px;
+    margin-top: 8px;
+}
 </style>
 """, unsafe_allow_html=True)
-
 
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
     st.image("carta_umbrella.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>Umbrella — Carta especial</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
     st.image("carta_marie.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>Marie — Carta principal</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
     st.image("carta_painwheel_tiránico.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
-
 
 
 
