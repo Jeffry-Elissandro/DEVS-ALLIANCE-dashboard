@@ -557,44 +557,47 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
 st.markdown("""
 <div style="
-    background: rgba(244,63,94,0.08);
-    padding:22px;
-    border-radius:16px;
-    margin-bottom:25px;
-    box-shadow:0 0 22px rgba(244,63,94,0.25);
+    background: linear-gradient(135deg, rgba(244,63,94,0.12), rgba(244,114,182,0.12));
+    padding:24px;
+    border-radius:18px;
+    margin-bottom:28px;
+    box-shadow:0 4px 18px rgba(244,63,94,0.25);
+    font-family: 'Segoe UI', sans-serif;
 ">
 
-<h3 style="color:#fda4af; margin-bottom:12px;">
+<h3 style="color:#f87171; margin-bottom:14px; text-align:center;">
 ¡Saludos Gente!
 </h3>
 
-<p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+<p style="color:#f3f4f6; font-size:15px; line-height:1.7; text-align:justify;">
 Quiero ofrecer una disculpa sincera por la actualización tardía de la página esta semana.
 Mi intención siempre fue mantener la web actualizada lo antes posible, sin embargo,
 esta temporada trajo varios cambios importantes dentro del gremio al mismo tiempo,
 lo que complicó la organización y la implementación de las nuevas modificaciones.
 </p>
 
-<p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+<p style="color:#f3f4f6; font-size:15px; line-height:1.7; text-align:justify;">
 Además, durante estos días estuve atendiendo asuntos personales y académicos
 que redujeron considerablemente mi disponibilidad. Aun así, mi compromiso con
 la alianza se mantiene firme.
 </p>
 
-<p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+<p style="color:#f3f4f6; font-size:15px; line-height:1.7; text-align:justify;">
 Me responsabilizo por el retraso y trabajaré para que no vuelva a ocurrir,
 salvo que se presente una situación verdaderamente urgente o imprevista.
 Gracias por su comprensión y por seguir formando parte de esta comunidad.
 </p>
 
-<p style="color:#a5b4fc; margin-top:14px;">
+<p style="color:#a5b4fc; margin-top:16px; text-align:right; font-weight:bold;">
 — CHESSDEV
 </p>
 
 </div>
 """, unsafe_allow_html=True)
 
-st.image("sorry_alliance.png", use_column_width=True)
+# Imagen con tamaño controlado y estilo
+st.image("sorry_alliance.png", use_column_width=False, width=400, caption="Gracias por su comprensión 🙏")
+
 
 
 
