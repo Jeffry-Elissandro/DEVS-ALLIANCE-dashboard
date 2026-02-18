@@ -1836,20 +1836,21 @@ st.markdown("""
 st.markdown("""
 <style>
 .card-container {
+    position: relative;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    background: rgba(17, 24, 39, 0.85); /* Fondo oscuro semitransparente */
-    padding: 12px;
+    background: rgba(17, 24, 39, 0.85);
+    padding: 0; /* quitamos padding para que la imagen ocupe todo */
 }
 
 /* Imagen dentro de la carta */
 .card-container img {
     display: block;
-    margin: 0 auto;
-    border-radius: 12px;
+    width: 100%;
+    border-radius: 16px;
 }
 
 /* Hover SOLO desktop */
@@ -1865,17 +1866,25 @@ st.markdown("""
     box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 
-/* Subtítulos arriba */
+/* Subtítulos sobre la imagen */
 .card-caption {
-    font-size: 16px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
     font-weight: 700;
-    color: #facc15; /* Dorado */
-    text-shadow: 0 0 8px rgba(250, 204, 21, 0.6);
-    background: rgba(31, 41, 55, 0.9);
-    padding: 8px 12px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    display: inline-block;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(255,75,75,0.9), rgba(150,80,255,0.9));
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.card-container:hover .card-caption {
+    background: linear-gradient(90deg, rgba(250,204,21,0.9), rgba(255,75,75,0.9));
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1884,21 +1893,22 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.markdown("<div class='card-caption'>Umbrella — Carta especial</div>", unsafe_allow_html=True)
     st.image("carta_umbrella.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>Umbrella — Carta especial</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.markdown("<div class='card-caption'>Marie — Carta principal</div>", unsafe_allow_html=True)
     st.image("carta_marie.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>Marie — Carta principal</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
     st.image("carta_painwheel_tiránico.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
