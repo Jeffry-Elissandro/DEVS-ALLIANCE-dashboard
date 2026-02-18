@@ -1833,6 +1833,8 @@ st.markdown("""
 # CARTAS CON SUBTÍTULOS ARRIBA
 # ==============================
 
+import streamlit as st
+
 st.markdown("""
 <style>
 .card-container {
@@ -1846,7 +1848,7 @@ st.markdown("""
 }
 
 /* Imagen dentro de la carta */
-.card-container img {
+.card-img {
     display: block;
     width: 100%;
     border-radius: 16px;
@@ -1892,22 +1894,29 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.markdown("<div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_1.png", use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class='card-container'>
+        <div class='card-caption'>SOPORTES</div>
+        <img src='Soportes_1.png' class='card-img'>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.markdown("<div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("Atacantes.png", use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class='card-container card-main'>
+        <div class='card-caption'>ATACANTES</div>
+        <img src='Atacantes.png' class='card-img'>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.markdown("<div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_2.png", use_container_width=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div class='card-container'>
+        <div class='card-caption'>SOPORTES</div>
+        <img src='Soportes_2.png' class='card-img'>
+    </div>
+    """, unsafe_allow_html=True)
+
 
 
 
