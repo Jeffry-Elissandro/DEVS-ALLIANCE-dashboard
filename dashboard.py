@@ -655,6 +655,74 @@ st.markdown(f"""
 
 
 
+# ==============================
+# RÉCORD HISTÓRICO - TOP 97
+# ==============================
+
+st.markdown("""
+<style>
+.record-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    background: #111827;
+    border-radius: 20px;
+    border: 2px solid #facc15;
+    box-shadow: 0 8px 28px rgba(250, 204, 21, 0.35);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+.record-header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #facc15;
+    margin-bottom: 18px;
+    letter-spacing: 1.2px;
+}
+.record-subtitle {
+    font-size: 18px;
+    color: #f3f4f6;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+.record-text {
+    font-size: 15px;
+    color: #e5e7eb;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+.record-footer {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fde68a;
+    margin-top: 20px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="record-container">
+    <div class="record-header">🏆 ¡RÉCORD NUEVO ALCANZADO!</div>
+    <div class="record-subtitle">
+        Oficialmente ahora somos parte de los <strong>TOP 100 gremios a nivel global</strong>,
+        alcanzando el puesto <strong>97</strong>.
+    </div>
+    <div class="record-text">
+        Para algunos puede parecer muy alejado, pero quienes llevamos tiempo en esta alianza
+        sabemos lo que realmente significa. En nuestros inicios, el objetivo parecía lejano;
+        nuestro mejor puesto en ese entonces fue alrededor del <strong>TOP 5800</strong>.
+    </div>
+    <div class="record-text">
+        Hoy demostramos que el crecimiento constante, la constancia y el trabajo en equipo
+        pueden llevarnos mucho más lejos de lo que imaginábamos.
+        Este logro no pertenece a una sola persona, pertenece a toda la alianza.
+    </div>
+    <div class="record-footer">Este no es el final — Gracias</div>
+</div>
+""", unsafe_allow_html=True)
+
+# Imagen más pequeña y centrada
+st.image("TOP_97.png", use_column_width=False, width=300)
 
 
 
