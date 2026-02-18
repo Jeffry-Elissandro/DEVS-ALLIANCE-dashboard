@@ -650,7 +650,7 @@ st.markdown(f"""
 
 
 
-st.diviver()
+st.divider()
 
 
 
@@ -749,7 +749,7 @@ st.markdown(f"""
 
 
 
-st.diviver()
+st.divider()
 
 
 
