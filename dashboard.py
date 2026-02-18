@@ -655,74 +655,94 @@ st.markdown(f"""
 
 
 
+import streamlit as st
+import base64
+
+# Convertir imagen a base64 (para mejor control de estilo)
+with open("TOP_97.png", "rb") as f:
+    data = base64.b64encode(f.read()).decode("utf-8")
+top_img = f"data:image/png;base64,{data}"
+
 # ==============================
 # RÉCORD HISTÓRICO - TOP 97
 # ==============================
 
-st.markdown("""
-<style>
-.record-container {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 32px 28px;
-    background: #111827;
-    border-radius: 20px;
-    border: 2px solid #facc15;
-    box-shadow: 0 8px 28px rgba(250, 204, 21, 0.35);
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
-}
-.record-header {
-    font-size: 30px;
-    font-weight: bold;
-    color: #facc15;
-    margin-bottom: 18px;
-    letter-spacing: 1.2px;
-}
-.record-subtitle {
-    font-size: 18px;
-    color: #f3f4f6;
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-.record-text {
-    font-size: 15px;
-    color: #e5e7eb;
-    margin-bottom: 14px;
-    line-height: 1.6;
-}
-.record-footer {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fde68a;
-    margin-top: 20px;
-}
-</style>
-""", unsafe_allow_html=True)
+st.markdown(f"""
+<div style="
+  max-width:950px;
+  margin:40px auto;
+  padding:30px;
+  background:linear-gradient(180deg,#0f172a,#1e293b);
+  border-radius:20px;
+  box-shadow:0 0 35px rgba(250,204,21,0.35);
+  border:1px solid rgba(250,204,21,0.45);
+  font-family:'Segoe UI',sans-serif;
+">
 
-st.markdown("""
-<div class="record-container">
-    <div class="record-header">🏆 ¡RÉCORD NUEVO ALCANZADO!</div>
-    <div class="record-subtitle">
-        Oficialmente ahora somos parte de los <strong>TOP 100 gremios a nivel global</strong>,
-        alcanzando el puesto <strong>97</strong>.
-    </div>
-    <div class="record-text">
-        Para algunos puede parecer muy alejado, pero quienes llevamos tiempo en esta alianza
-        sabemos lo que realmente significa. En nuestros inicios, el objetivo parecía lejano;
-        nuestro mejor puesto en ese entonces fue alrededor del <strong>TOP 5800</strong>.
-    </div>
-    <div class="record-text">
-        Hoy demostramos que el crecimiento constante, la constancia y el trabajo en equipo
-        pueden llevarnos mucho más lejos de lo que imaginábamos.
-        Este logro no pertenece a una sola persona, pertenece a toda la alianza.
-    </div>
-    <div class="record-footer">Este no es el final — Gracias</div>
+  <h2 style="
+    text-align:center;
+    color:#facc15;
+    font-size:30px;
+    letter-spacing:1.5px;
+    margin-bottom:14px;
+    text-shadow:0 0 15px rgba(250,204,21,0.6);
+  ">
+     ¡RÉCORD HISTÓRICO ALCANZADO!
+  </h2>
+
+  <p style="
+    text-align:center;
+    color:#e5e7eb;
+    font-size:17px;
+    margin-bottom:20px;
+    line-height:1.7;
+  ">
+    Oficialmente ahora somos parte de los <strong style="color:#fde68a;">TOP 100 gremios a nivel global</strong>,
+    alcanzando el puesto <strong style="color:#fde68a;">97</strong>.
+  </p>
+
+  <!-- Imagen en Base64 -->
+  <div style="text-align:center; margin:25px 0;">
+    <img src="{top_img}" alt="TOP 97" style="max-width:280px; border-radius:14px; box-shadow:0 0 20px rgba(250,204,21,0.5);" />
+  </div>
+
+  <p style="
+    text-align:center;
+    color:#cbd5e1;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:14px;
+  ">
+    Para algunos puede parecer muy alejado, pero quienes llevamos tiempo en esta alianza
+    sabemos lo que realmente significa. En nuestros inicios, el objetivo parecía lejano;
+    nuestro mejor puesto en ese entonces fue alrededor del <strong>TOP 5800</strong>.
+  </p>
+
+  <p style="
+    text-align:center;
+    color:#cbd5e1;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:14px;
+  ">
+    Hoy demostramos que el crecimiento constante, la constancia y el trabajo en equipo
+    pueden llevarnos mucho más lejos de lo que imaginábamos.
+    Este logro no pertenece a una sola persona, pertenece a toda la alianza.
+  </p>
+
+  <p style="
+    text-align:center;
+    color:#fde68a;
+    font-weight:600;
+    font-size:16px;
+    margin-top:20px;
+  ">
+    Este no es el final — Gracias 
+  </p>
+
 </div>
 """, unsafe_allow_html=True)
 
-# Imagen más pequeña y centrada
-st.image("TOP_97.png", use_column_width=False, width=300)
 
 
 
