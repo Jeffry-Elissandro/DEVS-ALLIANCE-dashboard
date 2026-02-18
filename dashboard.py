@@ -1867,14 +1867,14 @@ st.markdown("""
 
 /* Subtítulos arriba */
 .card-caption {
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: #facc15; /* Dorado */
     text-shadow: 0 0 8px rgba(250, 204, 21, 0.6);
-    background: rgba(31, 41, 55, 0.6);
-    padding: 6px 10px;
-    border-radius: 8px;
+    background: rgba(31, 41, 55, 0.9);
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
     display: inline-block;
 }
 </style>
@@ -1899,6 +1899,7 @@ with col3:
     st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
     st.image("carta_painwheel_tiránico.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
