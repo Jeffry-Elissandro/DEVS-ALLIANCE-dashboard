@@ -755,110 +755,6 @@ st.divider()
 
 
 
-# AGRADECIMIENTO A NAVIER
-
-
-import streamlit as st
-import base64
-
-# Función para convertir imagen a base64
-def img_base64(path):
-    with open(path, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode("utf-8")
-
-# Imagen del nuevo Colíder
-img_colider = img_base64("27.png")
-
-# Tarjeta de felicitación estilo rango superior
-st.markdown(
-    f"""
-    <style>
-    .colider-card {{
-      max-width:700px;
-      margin:60px auto;
-      padding:40px 30px;
-      background:linear-gradient(180deg,#0f0f0f,#1a1a1a 70%,#0f0f0f);
-      border-radius:18px;
-      border:2px solid rgba(180,180,180,0.35);
-      box-shadow:
-        0 0 40px rgba(120,120,120,0.45),
-        inset 0 0 25px rgba(180,180,180,0.15);
-      text-align:center;
-      transition:0.4s ease;
-    }}
-
-    @media (hover:hover) {{
-      .colider-card:hover {{
-        transform:scale(1.02);
-        box-shadow:
-          0 0 65px rgba(200,200,200,0.65),
-          inset 0 0 35px rgba(180,180,180,0.25);
-      }}
-    }}
-
-    .colider-avatar {{
-      width:140px;
-      height:140px;
-      border-radius:50%;
-      object-fit:cover;
-      border:4px solid #9ca3af;
-      box-shadow:0 0 30px rgba(200,200,200,0.8);
-      margin-bottom:20px;
-    }}
-
-    .colider-title {{
-      font-size:28px;
-      color:#f3f4f6;
-      margin:0;
-      letter-spacing:2px;
-      font-weight:bold;
-      text-shadow:0 0 15px rgba(180,180,180,0.9);
-    }}
-
-    .colider-text {{
-      margin-top:18px;
-      font-size:16px;
-      color:#d1d5db;
-      line-height:1.8;
-    }}
-
-    .colider-rank {{
-      margin-top:22px;
-      font-size:14px;
-      color:#9ca3af;
-      letter-spacing:1.5px;
-      font-weight:bold;
-      text-transform:uppercase;
-    }}
-    </style>
-
-    <div class="colider-card">
-      <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
-      <h3 class="colider-title">Destacado de la semana</h3>
-      <p class="colider-text">
-        Este puesto es realmente exclusivo.
-        ¡Fuiste el miembro capaz de conseguir la mayor <strong>Cantidad de Daño </strong>
-        siendo la increíble cifra de <strong>6 Billones!</strong>
-        <br><br>
-        Un sincero agradecimiento por siempre seguir superándote, 
-        incluso hasta superar límites.
-      </p>
-      <div class="colider-rank">
-        Felicitaciones — Adrexolm
-      </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
-
-
-
-
-
 
 
 
@@ -955,7 +851,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 8950   # Oro actual
+puntaje_actual = 10675   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2045,7 +1941,7 @@ img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
-img9 = img_base64("9.png")
+img9 = img_base64("Imagen_para_testeos.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
 img12 = img_base64("12.png")
@@ -2172,7 +2068,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img9}">
-  <span>Bonilla Elias</span>
+  <span>Disponible</span>
 </div>
 
 <div class="dev-card">
