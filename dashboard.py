@@ -1857,7 +1857,7 @@ st.markdown("""
 
 /* Carta central */
 .card-main {
-    box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
+    box-shadow: box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
 }
 
 /* Título arriba */
@@ -1872,11 +1872,12 @@ st.markdown("""
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     margin: 0;
+    height: 8px;
 }
 
 .card-container:hover .card-caption {
-    background: rgba(250,204,21,0.85); /* dorado brillante al hover */
-    color: #111; /* contraste elegante */
+    background: rgba(0, 0, 0, 1); /* dorado brillante al hover */
+    color: #fff; /* contraste elegante */
 }
 </style>
 """, unsafe_allow_html=True)
