@@ -1868,23 +1868,23 @@ st.markdown("""
 /* Subtítulos superpuestos ARRIBA */
 .card-caption {
     position: absolute;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0; /* arriba de la imagen */
+    left: 0;
+    width: 100%;
     font-size: 17px;
     font-weight: 700;
     color: #facc15; /* dorado elegante */
-    background: rgba(0,0,0,0.65); /* fondo oscuro semitransparente */
-    padding: 6px 14px;
-    border-radius: 8px;
+    background: rgba(0,0,0,0.7); /* franja oscura semitransparente */
+    padding: 10px;
+    text-align: center;
     text-shadow: 0 2px 6px rgba(0,0,0,0.9);
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
 
 .card-container:hover .card-caption {
-    color: #fff;
-    background: rgba(250,204,21,0.85); /* dorado más brillante al hover */
+    background: rgba(250,204,21,0.85); /* dorado brillante al hover */
+    color: #111; /* contraste elegante */
 }
 </style>
 """, unsafe_allow_html=True)
