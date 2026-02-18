@@ -1841,9 +1841,8 @@ st.markdown("""
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
     background: rgba(17, 24, 39, 0.85);
-    padding: 0; /* quitamos padding para que la imagen ocupe todo */
+    padding: 0;
 }
 
 /* Imagen dentro de la carta */
@@ -1866,25 +1865,26 @@ st.markdown("""
     box-shadow: 0 0 30px rgba(255, 75, 75, 0.9);
 }
 
-/* Subtítulos sobre la imagen */
+/* Subtítulos superpuestos ARRIBA */
 .card-caption {
     position: absolute;
-    bottom: 12px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
-    color: #fff;
-    background: linear-gradient(90deg, rgba(255,75,75,0.9), rgba(150,80,255,0.9));
-    padding: 8px 16px;
+    color: #facc15; /* dorado elegante */
+    background: rgba(0,0,0,0.65); /* fondo oscuro semitransparente */
+    padding: 6px 14px;
     border-radius: 8px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
-    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+    letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
 
 .card-container:hover .card-caption {
-    background: linear-gradient(90deg, rgba(250,204,21,0.9), rgba(255,75,75,0.9));
+    color: #fff;
+    background: rgba(250,204,21,0.85); /* dorado más brillante al hover */
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1908,6 +1908,7 @@ with col3:
     st.image("carta_painwheel_tiránico.png", use_container_width=True)
     st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
