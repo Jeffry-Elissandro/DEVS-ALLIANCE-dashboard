@@ -1840,14 +1840,16 @@ st.markdown("""
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center; /* Centrar subtítulos */
-    padding-bottom: 10px;
+    text-align: center; /* Centrar contenido */
+    padding: 12px 8px;
+    background: rgba(31, 41, 55, 0.6); /* Fondo semitransparente para subtítulo */
 }
 
-/* IMPORTANTE */
+/* Imagen dentro de la carta */
 .card-container img {
     display: block;
     margin: 0 auto;
+    border-radius: 12px;
 }
 
 /* Hover SOLO desktop */
@@ -1865,9 +1867,11 @@ st.markdown("""
 
 /* Subtítulos */
 .card-caption {
-    color: #e5e7eb;
-    font-size: 14px;
-    margin-top: 8px;
+    color: #f3f4f6;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    text-shadow: 0 0 8px rgba(150, 80, 255, 0.6);
 }
 </style>
 """, unsafe_allow_html=True)
@@ -1891,7 +1895,6 @@ with col3:
     st.image("carta_painwheel_tiránico.png", use_container_width=True)
     st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
-
 
 
 
