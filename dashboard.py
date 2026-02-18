@@ -655,6 +655,80 @@ st.markdown(f"""
 
 
 
+# ==============================
+# RÉCORD HISTÓRICO - TOP 97
+# ==============================
+
+st.markdown("""
+<div style="
+    background: linear-gradient(135deg, rgba(234,179,8,0.15), rgba(251,191,36,0.08));
+    padding:28px;
+    border-radius:18px;
+    margin-bottom:30px;
+    border: 1px solid rgba(251,191,36,0.4);
+    box-shadow: 0 0 30px rgba(251,191,36,0.35);
+">
+
+<h2 style="
+    color:#facc15;
+    margin-bottom:16px;
+    text-align:center;
+    letter-spacing:1px;
+">
+🏆 ¡RÉCORD NUEVO ALCANZADO!
+</h2>
+
+<p style="
+    color:#f3f4f6;
+    font-size:16px;
+    line-height:1.7;
+    text-align:center;
+">
+Oficialmente ahora somos parte de los <strong>TOP 100 gremios a nivel global</strong>,
+alcanzando el puesto <strong>97</strong>.
+</p>
+
+<p style="
+    color:#e5e7eb;
+    font-size:15px;
+    line-height:1.6;
+    text-align:center;
+    margin-top:14px;
+">
+Para algunos puede parecer muy alejado, pero quienes llevamos tiempo en esta alianza
+sabemos lo que realmente significa. En nuestros inicios, el objetivo parecía lejano;
+nuestro mejor puesto en ese entonces fue alrededor del <strong>TOP 5800</strong>.
+</p>
+
+<p style="
+    color:#e5e7eb;
+    font-size:15px;
+    line-height:1.6;
+    text-align:center;
+    margin-top:10px;
+">
+Hoy demostramos que el crecimiento constante, la constancia y el trabajo en equipo
+pueden llevarnos mucho más lejos de lo que imaginábamos.
+Este logro no pertenece a una sola persona, pertenece a toda la alianza.
+</p>
+
+<p style="
+    color:#fde68a;
+    font-weight:600;
+    text-align:center;
+    margin-top:18px;
+">
+Este no es el final - Gracias
+</p>
+
+</div>
+""", unsafe_allow_html=True)
+
+# Imagen horizontal de prueba
+st.image("TOP_97.png", use_column_width=True)
+
+
+
 
 
 
