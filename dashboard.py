@@ -1855,6 +1855,11 @@ st.markdown("""
     }
 }
 
+.cariño-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 35px rgba(255, 255, 255, 0.95);
+            
+
 /* Carta central */
 .card-main {
     box-shadow: box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
