@@ -1872,7 +1872,6 @@ st.markdown("""
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     margin: 0;
-    height: 8px;
 }
 
 .card-container:hover .card-caption {
