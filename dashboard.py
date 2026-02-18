@@ -851,7 +851,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10910   # Oro actual
+puntaje_actual = 11045   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2063,7 +2063,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img8}">
-  <span>defuncion</span>
+  <span>lolbit--Chan</span>
 </div>
 
 <div class="dev-card">
@@ -2230,6 +2230,7 @@ nuevos_miembros = [
     {"nombre": "zoroiluvyu", "imagen": "24.png"},
     {"nombre": "Rukawa_Noceda", "imagen": "30.png"},
     {"nombre": "BAKI", "imagen": "9.png"},
+    {"nombre": "lolbit--Chan", "imagen": "8.png"},
 ]
 
 
