@@ -1893,20 +1893,20 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_umbrella.png", use_container_width=True)
-    st.markdown("<div class='card-caption'>Umbrella — Carta especial</div>", unsafe_allow_html=True)
+    st.image("Soportes_1.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'>", unsafe_allow_html=True)
-    st.image("carta_marie.png", use_container_width=True)
-    st.markdown("<div class='card-caption'>Marie — Carta principal</div>", unsafe_allow_html=True)
+    st.image("Atacantes.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'>", unsafe_allow_html=True)
-    st.image("carta_painwheel_tiránico.png", use_container_width=True)
-    st.markdown("<div class='card-caption'>Painwheel — Carta tiránica</div>", unsafe_allow_html=True)
+    st.image("Soportes_2.png", use_container_width=True)
+    st.markdown("<div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
