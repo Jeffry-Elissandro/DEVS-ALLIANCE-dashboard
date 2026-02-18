@@ -555,48 +555,97 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 # MENSAJE DEL ADMINISTRADOR
 # ==============================
 
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+sorry_img = img_base64("sorry_alliance.png")
+
+# Inyectar CSS
 st.markdown("""
-<div style="
-    background: #1f2937;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:20px;
-    border:1px solid #374151;
-    font-family: 'Segoe UI', sans-serif;
-">
+<style>
+.admin-note {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 28px;
+    background: linear-gradient(
+        180deg,
+        rgba(244, 63, 94, 0.08),
+        rgba(251, 113, 133, 0.06)
+    );
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(244, 63, 94, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 26px;
+    align-items: center;
+}
+.admin-note img {
+    width: 100%;
+    border-radius: 14px;
+    filter: drop-shadow(0 0 12px rgba(244, 63, 94, 0.35));
+}
+.admin-title {
+    color: #fca5a5;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.admin-text {
+    color: #f3f4f6;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+.admin-footer {
+    color: #fda4af;
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .admin-note {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
 
-<h3 style="color:#f87171; margin-bottom:12px; text-align:center;">
-¡Saludos Gente!
-</h3>
-
-<p style="color:#d1d5db; font-size:15px; line-height:1.6; text-align:justify;">
-Quiero ofrecer una disculpa sincera por la actualización tardía de la página esta semana.
-Mi intención siempre fue mantener la web actualizada lo antes posible, sin embargo,
-esta temporada trajo varios cambios importantes dentro del gremio al mismo tiempo,
-lo que complicó la organización y la implementación de las nuevas modificaciones.
-</p>
-
-<p style="color:#d1d5db; font-size:15px; line-height:1.6; text-align:justify;">
-Además, durante estos días estuve atendiendo asuntos personales y académicos
-que redujeron considerablemente mi disponibilidad. Aun así, mi compromiso con
-la alianza se mantiene firme.
-</p>
-
-<p style="color:#d1d5db; font-size:15px; line-height:1.6; text-align:justify;">
-Me responsabilizo por el retraso y trabajaré para que no vuelva a ocurrir,
-salvo que se presente una situación verdaderamente urgente o imprevista.
-Gracias por su comprensión y por seguir formando parte de esta comunidad.
-</p>
-
-<p style="color:#93c5fd; margin-top:14px; text-align:right; font-weight:bold;">
-— CHESSDEV
-</p>
-
+# Renderizar HTML
+st.markdown(f"""
+<div class="admin-note">
+  <div>
+    <div class="admin-title">¡Saludos Gente!</div>
+    <div class="admin-text">
+      Quiero ofrecer una disculpa sincera por la actualización tardía de la página esta semana.
+      Mi intención siempre fue mantener la web actualizada lo antes posible, sin embargo,
+      esta temporada trajo varios cambios importantes dentro del gremio al mismo tiempo,
+      lo que complicó la organización y la implementación de las nuevas modificaciones.
+    </div>
+    <div class="admin-text">
+      Además, durante estos días estuve atendiendo asuntos personales y académicos
+      que redujeron considerablemente mi disponibilidad. Aun así, mi compromiso con
+      la alianza se mantiene firme.
+    </div>
+    <div class="admin-text">
+      Me responsabilizo por el retraso y trabajaré para que no vuelva a ocurrir,
+      salvo que se presente una situación verdaderamente urgente o imprevista.
+      Gracias por su comprensión y por seguir formando parte de esta comunidad.
+    </div>
+    <div class="admin-footer">
+      — CHESSDEV
+    </div>
+  </div>
+  <div>
+    <img src="data:image/png;base64,{sorry_img}">
+  </div>
 </div>
 """, unsafe_allow_html=True)
 
-# Imagen más pequeña y sin caption
-st.image("sorry_alliance.png", use_column_width=False, width=250)
 
 
 
