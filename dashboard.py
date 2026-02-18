@@ -1838,11 +1838,12 @@ import streamlit as st
 st.markdown("""
 <style>
 .card-container {
+    border: 2px solid rgba(150, 80, 255, 0.9); /* borde morado */
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 0 14px rgba(150, 80, 255, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: rgba(17, 24, 39, 0.85);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, background 0.3s ease;
+    background: rgba(17, 24, 39, 0.85); /* fondo oscuro */
     padding: 0;
     text-align: center;
 }
@@ -1851,25 +1852,29 @@ st.markdown("""
 @media (hover: hover) {
     .card-container:hover {
         transform: translateY(-6px) scale(1.05);
+        border: 2px solid #fff; /* borde blanco */
         box-shadow: 0 0 35px rgba(255, 255, 255, 0.95);
     }
 }
 
-.card-container:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 35px rgba(255, 255, 255, 0.95);
-            
+/* Hover y active (para mobile) */
+.card-container:hover,
+.card-container:active {
+    transform: scale(1.02);
+    border: 2px solid #fff; /* borde blanco */
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.95);
+}
 
 /* Carta central */
 .card-main {
-    box-shadow: box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
+    box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
 }
 
 /* Título arriba */
 .card-caption {
     font-size: 17px;
     font-weight: 700;
-    color: #facc15; /* dorado elegante */
+    color: #facc15; /* amarillo dorado */
     background: rgba(0,0,0,0.7); /* franja oscura semitransparente */
     padding: 10px;
     text-align: center;
@@ -1879,9 +1884,10 @@ st.markdown("""
     margin: 0;
 }
 
-.card-container:hover .card-caption {
-    background: rgba(0, 0, 0, 1); /* dorado brillante al hover */
-    color: #fff; /* contraste elegante */
+.card-container:hover .card-caption,
+.card-container:active .card-caption {
+    background: rgba(0, 0, 0, 1); /* fondo negro */
+    color: #fff; /* texto blanco */
 }
 </style>
 """, unsafe_allow_html=True)
