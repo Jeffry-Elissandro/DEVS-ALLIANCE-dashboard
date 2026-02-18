@@ -851,7 +851,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10675   # Oro actual
+puntaje_actual = 10910   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1941,7 +1941,7 @@ img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
-img9 = img_base64("Imagen_para_testeos.png")
+img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
 img12 = img_base64("12.png")
@@ -2068,7 +2068,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img9}">
-  <span>Disponible</span>
+  <span>BAKI</span>
 </div>
 
 <div class="dev-card">
@@ -2229,6 +2229,7 @@ def img_base64(path):
 nuevos_miembros = [
     {"nombre": "zoroiluvyu", "imagen": "24.png"},
     {"nombre": "Rukawa_Noceda", "imagen": "30.png"},
+    {"nombre": "BAKI", "imagen": "9.png"},
 ]
 
 
