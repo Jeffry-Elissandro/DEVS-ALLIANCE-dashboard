@@ -346,6 +346,16 @@ data = [
         "Daño": 6,
         "Puntos": 8,
         "Consistencia": 7
+    },{
+        "Nombre": "TEST", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 80,
+        "Actividad": 4,
+        "Daño": 4,
+        "Puntos": 4,
+        "Consistencia": 4
     }
 ]
 
@@ -533,6 +543,64 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         format="audio/mp3",
         loop=True
     )
+
+
+
+
+
+
+
+
+# ==============================
+# MENSAJE DEL ADMINISTRADOR
+# ==============================
+
+st.markdown("""
+<div style="
+    background: rgba(244,63,94,0.08);
+    padding:22px;
+    border-radius:16px;
+    margin-bottom:25px;
+    box-shadow:0 0 22px rgba(244,63,94,0.25);
+">
+
+<h3 style="color:#fda4af; margin-bottom:12px;">
+¡Saludos Gente!
+</h3>
+
+<p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+Quiero ofrecer una disculpa sincera por la actualización tardía de la página esta semana.
+Mi intención siempre fue mantener la web actualizada lo antes posible, sin embargo,
+esta temporada trajo varios cambios importantes dentro del gremio al mismo tiempo,
+lo que complicó la organización y la implementación de las nuevas modificaciones.
+</p>
+
+<p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+Además, durante estos días estuve atendiendo asuntos personales y académicos
+que redujeron considerablemente mi disponibilidad. Aun así, mi compromiso con
+la alianza se mantiene firme.
+</p>
+
+<p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+Me responsabilizo por el retraso y trabajaré para que no vuelva a ocurrir,
+salvo que se presente una situación verdaderamente urgente o imprevista.
+Gracias por su comprensión y por seguir formando parte de esta comunidad.
+</p>
+
+<p style="color:#a5b4fc; margin-top:14px;">
+— CHESSDEV
+</p>
+
+</div>
+""", unsafe_allow_html=True)
+
+st.image("sorry_alliance.png", use_column_width=True)
+
+
+
+
+
+
 
 
 
@@ -1055,7 +1123,7 @@ components.html(
             📌 Meta clara
         </h3>
         <p style="color:#dddddd; font-size:16px;">
-            Seguir mejorando los puntos de gremio para subir, actualmente nuestro <strong>¡TOP 110!/strong> 
+            Seguir mejorando los puntos de gremio para subir, actualmente nuestro <strong>¡TOP 110!</strong> 
             .
         </p>
 
@@ -1475,7 +1543,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("📊 Tabla completa de miembros - ACTUALIZACIÓN PRONTO ⚙️")
+st.subheader("📊 Tabla completa de miembros - Casi Completa ⚙️")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
