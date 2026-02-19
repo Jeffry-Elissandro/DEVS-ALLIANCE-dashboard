@@ -668,17 +668,22 @@ top_img = f"data:image/png;base64,{data}"
 # ==============================
 
 st.markdown(f"""
-<div style="
-  max-width:950px;
-  margin:40px auto;
-  padding:20px;
-  background:transparent; /* Fondo transparente */
-  border-radius:20px;
-  font-family:'Segoe UI',sans-serif;
-  text-align:center;
-">
+<style>
+  .responsive-img {{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(250,204,21,0.6);
+  }}
 
- <div style="
+  @media (max-width: 768px) {{
+    .responsive-img {{
+      max-width: 300px; /* tamaño más pequeño en móviles */
+    }}
+  }}
+</style>
+
+<div style="
   max-width:950px;
   margin:40px auto;
   padding:20px;
@@ -700,9 +705,9 @@ st.markdown(f"""
     alcanzando el puesto <strong style="color:#fde68a;">97</strong>.
   </p>
 
-  <!-- Imagen más grande -->
+  <!-- Imagen responsiva -->
   <div style="text-align:center; margin:30px 0;">
-    <img src="{top_img}" alt="TOP 97" style="max-width:500px; border-radius:16px; box-shadow:0 0 25px rgba(250,204,21,0.6);" />
+    <img src="{top_img}" alt="TOP 97" class="responsive-img" />
   </div>
 
   <p style="
@@ -739,6 +744,7 @@ st.markdown(f"""
 
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
