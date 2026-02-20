@@ -2683,8 +2683,7 @@ st.markdown("""
     </h3>
     <p style="color:#e5e7eb; font-size:14px; margin-bottom:20px;">
     ¿Deseas hablar directamente conmigo?<br>
-    Puedes contarme lo que quieras con confianza.<br>
-    Solo tú y yo veremos la conversación.
+    Puedes contarme lo que quieras con confianza, es algo que solo sabremos nosotros y respeto tu opinión 💚
     </p>
     <a href="https://wa.me/50248320737" target="_blank"
        style="
@@ -2697,8 +2696,7 @@ st.markdown("""
            font-weight:bold;
            box-shadow:0 4px 12px rgba(0,0,0,0.25);
        ">
-       “Por si necesitas contarme algo con confianza.
-Lo que escribas aquí será leído únicamente por mí.”
+       “CHESSDEV CONTACT”
     </a>
 </div>
 """, unsafe_allow_html=True)
