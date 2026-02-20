@@ -669,38 +669,52 @@ st.divider()
 import base64
 import streamlit as st
 
+# Convertir imagen a base64
 with open("Skull_bord_dark.png", "rb") as img_file:
     img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
 
+# Bloque HTML con media queries
 html_code = f"""
-<div style="
-    background: url('data:image/png;base64,{img_base64}') no-repeat center center;
-    background-size: 100% 100%;
-    background-color: transparent;
-    padding:70px; /* Ajusta este valor según grosor del borde */
-    border-radius:12px;
-    margin:40px 0 60px 0;
-    min-height:600px;
-    color:#fefefe;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align:center;
-    box-sizing: border-box;
-">
+<style>
+    .skull-container {{
+        background: url('data:image/png;base64,{img_base64}') no-repeat center center;
+        background-size: 70% 100%; /* PC por defecto */
+        background-color: transparent;
+        padding:70px;
+        border-radius:12px;
+        margin:40px 0 60px 0;
+        min-height:600px;
+        color:#fefefe;
+        font-family: 'Trebuchet MS', sans-serif;
+        text-align:center;
+        box-sizing: border-box;
+    }}
+
+    /* Ajustes para pantallas pequeñas (Mobile) */
+    @media (max-width: 768px) {{
+        .skull-container {{
+            background-size: 100% 100%; /* Mobile */
+            padding:40px; /* Reducir padding para móviles */
+            min-height:500px;
+        }}
+    }}
+</style>
+
+<div class="skull-container">
     <h2 style="color:gold; margin-bottom:20px;">Comunidad Skulldevs</h2>
 
     <div style="margin-bottom:25px;">
-        <h3 style="color:#fff;">Noticias de la Comunidad</h3>
+        <h3 style="color:#fff;">Comunidad Skulldevs</h3>
         <p style="color:#ddd; font-size:14px;">
             Aquí compartimos las últimas novedades, ideas y aportes de nuestros miembros.
         </p>
-        <!-- Enlace a YouTube -->
-  <p style="margin-top:25px;">
-    <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
-       target="_blank"
-       style="color:gold; text-decoration:none; font-weight:bold;">
-       ➤ Ver más
-    </a>
-  </p>
+        <p style="margin-top:25px;">
+            <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
+               target="_blank"
+               style="color:gold; text-decoration:none; font-weight:bold;">
+               ➤ Ver más
+            </a>
+        </p>
     </div>
 
     <div style="margin-bottom:25px;">
@@ -708,14 +722,13 @@ html_code = f"""
         <p style="color:#ddd; font-size:14px;">
             Cada jornada resaltamos un aporte especial.
         </p>
-        <!-- Enlace a YouTube -->
-  <p style="margin-top:25px;">
-    <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
-       target="_blank"
-       style="color:gold; text-decoration:none; font-weight:bold;">
-       ➤ Ver más
-    </a>
-  </p>
+        <p style="margin-top:25px;">
+            <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
+               target="_blank"
+               style="color:gold; text-decoration:none; font-weight:bold;">
+               ➤ Ver más
+            </a>
+        </p>
     </div>
 
     <div style="margin-bottom:25px;">
@@ -723,19 +736,19 @@ html_code = f"""
         <p style="color:#ddd; font-size:14px;">
             Mantente atento a los próximos encuentros y eventos. THIS IS A TEST
         </p>
-        <!-- Enlace a YouTube -->
-  <p style="margin-top:25px;">
-    <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
-       target="_blank"
-       style="color:gold; text-decoration:none; font-weight:bold;">
-       ➤ Ver más
-    </a>
-  </p>
+        <p style="margin-top:25px;">
+            <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
+               target="_blank"
+               style="color:gold; text-decoration:none; font-weight:bold;">
+               ➤ Ver más
+            </a>
+        </p>
     </div>
 </div>
 """
 
 st.components.v1.html(html_code, height=800)
+
 
 
 
