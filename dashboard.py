@@ -2327,36 +2327,69 @@ st.divider()
 # MEME DEL DÍA
 # ==============================
 
-st.markdown("""
-<div style="
-    background: rgba(16,185,129,0.08);
-    padding:20px;
-    border-radius:16px;
-    margin:30px 0 20px 0;
-    border: 1px dashed rgba(16,185,129,0.4);
-    box-shadow: 0 0 18px rgba(16,185,129,0.25);
-    text-align:center;
-">
+import base64
 
-<h3 style="
-    color:#34d399;
-    margin-bottom:12px;
-">
-Skullmomazo del Día
-</h3>
+# 🔢 Cambia SOLO este nombre cada día
+nombre_imagen = "skull_meme_1.png"
 
-<p style="
-    color:#d1fae5;
-    font-size:14px;
-    margin-top:8px;
-">
-Lo admito, si fui
-</p>
+try:
+    with open(nombre_imagen, "rb") as img_file:
+        img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
 
-</div>
-""", unsafe_allow_html=True)
+    st.markdown("""
+    <div style="
+        background: rgba(88,28,135,0.10);
+        padding:24px;
+        border-radius:18px;
+        margin:35px 0 25px 0;
+        border: 1px solid rgba(168,85,247,0.35);
+        box-shadow: 0 0 22px rgba(168,85,247,0.25);
+        text-align:center;
+    ">
+    
+    <h3 style="
+        color:#e9d5ff;
+        margin-bottom:18px;
+        letter-spacing:0.5px;
+    ">
+        Skullmomazo del día 💀
+    </h3>
+    """, unsafe_allow_html=True)
 
-st.image("skull_meme_1.png", use_column_width=True)
+    # Imagen controlada para que nunca rompa el diseño
+    st.markdown(f"""
+        <img src="data:image/png;base64,{img_base64}"
+             style="
+                max-width:650px;
+                width:100%;
+                max-height:500px;
+                object-fit:contain;
+                border-radius:14px;
+                box-shadow:0 0 18px rgba(0,0,0,0.4);
+             ">
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+        <p style="
+            color:#ddd6fe;
+            font-size:14px;
+            margin-top:18px;
+        ">
+            Lo admito, si fui
+        </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+except FileNotFoundError:
+    st.info("No se encontró el meme de hoy.")
+
+
+
+
+
+
+
 
 
 
