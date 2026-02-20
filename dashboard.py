@@ -694,7 +694,7 @@ html_code = f"""
     @media (max-width: 768px) {{
         .skull-container {{
             background-size: 100% 100%; /* Mobile */
-            padding:40px; /* Reducir padding para móviles */
+            padding:60px; /* Reducir padding para móviles */
             min-height:500px;
         }}
     }}
