@@ -666,11 +666,17 @@ st.divider()
 # TEST DESIGNE SKULLGIRLS WEB
 # ==============================
 
+import base64
 import streamlit as st
 
-st.markdown("""
+# Convertir imagen a base64
+with open("Skull_bord_dark.png", "rb") as img_file:
+    img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
+
+# Usar la imagen como fondo
+st.markdown(f"""
 <div style="
-    background: url('Skull_bord_dark.png') no-repeat center center;
+    background: url('data:image/png;base64,{img_base64}') no-repeat center center;
     background-size: cover;
     padding:40px;
     border-radius:12px;
@@ -717,6 +723,7 @@ st.markdown("""
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
