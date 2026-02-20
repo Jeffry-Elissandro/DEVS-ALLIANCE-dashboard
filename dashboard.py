@@ -2816,7 +2816,20 @@ st.markdown("""
            font-weight:bold;
            box-shadow:0 4px 12px rgba(0,0,0,0.25);
        ">
-       “CHESSDEV CONTACT”
+       CHESSDEV CONTACT
+    </a>
+    <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank"
+       style="
+           display:inline-block;
+           background:#25D366;
+           color:white;
+           padding:12px 22px;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:bold;
+           box-shadow:0 4px 12px rgba(0,0,0,0.25);
+       ">
+       CHESSDEV CHANEL
     </a>
 </div>
 """, unsafe_allow_html=True)
