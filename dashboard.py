@@ -2323,6 +2323,13 @@ st.divider()
 
 
 
+
+
+# ==============================
+# MEME DEL DÍA
+# ==============================
+
+
 import base64
 import streamlit as st
 
@@ -2336,25 +2343,26 @@ try:
     st.markdown("""
     <div style="
         background: linear-gradient(135deg, rgba(88,28,135,0.25), rgba(168,85,247,0.15));
-        padding:28px;
-        border-radius:20px;
-        margin:40px 0 30px 0;
+        padding:22px;
+        border-radius:18px;
+        margin:35px 0 60px 0; /* 👈 espacio extra debajo */
         border: 1px solid rgba(168,85,247,0.35);
-        box-shadow: 0 4px 25px rgba(168,85,247,0.25);
+        box-shadow: 0 4px 22px rgba(168,85,247,0.25);
         text-align:center;
     ">
     
     <h3 style="
         color:#f5f3ff;
-        margin-bottom:20px;
-        letter-spacing:0.8px;
+        margin:10px 0 16px 0; /* 👈 menos espacio arriba/abajo */
+        letter-spacing:0.6px;
         font-family: 'Trebuchet MS', sans-serif;
+        font-size:22px;
     ">
         Skullmomazo del día 💀
     </h3>
     """, unsafe_allow_html=True)
 
-    # Imagen centrada dentro del mismo contenedor
+    # Imagen centrada
     st.markdown(f"""
         <div style="display:flex; justify-content:center;">
             <img src="data:image/png;base64,{img_base64}"
@@ -2363,17 +2371,19 @@ try:
                     width:100%;
                     max-height:500px;
                     object-fit:contain;
-                    border-radius:16px;
+                    border-radius:14px;
                     box-shadow:0 0 20px rgba(0,0,0,0.45);
                  ">
         </div>
     """, unsafe_allow_html=True)
 
+    # Descripción centrada
     st.markdown("""
         <p style="
             color:#ddd6fe;
             font-size:15px;
-            margin-top:20px;
+            margin-top:18px;
+            text-align:center;
             font-style:italic;
         ">
             Lo admito, sí fui
@@ -2384,6 +2394,7 @@ try:
 
 except FileNotFoundError:
     st.info("No se encontró el meme de hoy.")
+
 
 
 
