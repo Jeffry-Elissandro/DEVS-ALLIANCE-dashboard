@@ -669,23 +669,22 @@ st.divider()
 import base64
 import streamlit as st
 
-# Convertir imagen a base64
 with open("Skull_bord_dark.png", "rb") as img_file:
     img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
 
-# Bloque HTML con estilos
 html_code = f"""
 <div style="
     background: url('data:image/png;base64,{img_base64}') no-repeat center center;
-    background-size: 70% 100%;
+    background-size: 100% 100%;
     background-color: transparent;
-    padding:40px;
+    padding:80px; /* Ajusta este valor según grosor del borde */
     border-radius:12px;
     margin:40px 0 60px 0;
     min-height:600px;
     color:#fefefe;
     font-family: 'Trebuchet MS', sans-serif;
     text-align:center;
+    box-sizing: border-box;
 ">
     <h2 style="color:gold; margin-bottom:20px;">Comunidad Skulldevs</h2>
 
@@ -693,7 +692,6 @@ html_code = f"""
         <h3 style="color:#fff;">Noticias de la Comunidad</h3>
         <p style="color:#ddd; font-size:14px;">
             Aquí compartimos las últimas novedades, ideas y aportes de nuestros miembros.
-            Un espacio para estar al día y disfrutar juntos del proyecto.
         </p>
         <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
     </div>
@@ -701,8 +699,7 @@ html_code = f"""
     <div style="margin-bottom:25px;">
         <h3 style="color:#fff;">Destacado del Día</h3>
         <p style="color:#ddd; font-size:14px;">
-            Cada jornada resaltamos un aporte especial: puede ser un meme, una jugada
-            brillante o una reflexión que inspire a la comunidad.
+            Cada jornada resaltamos un aporte especial.
         </p>
         <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Ver más</a>
     </div>
@@ -710,16 +707,15 @@ html_code = f"""
     <div style="margin-bottom:25px;">
         <h3 style="color:#fff;">Próximas Actividades</h3>
         <p style="color:#ddd; font-size:14px;">
-            Mantente atento a los próximos encuentros, partidas amistosas y eventos
-            que organizaremos para seguir compartiendo nuestra pasión. THIS IS A TEST
+            Mantente atento a los próximos encuentros y eventos. THIS IS A TEST
         </p>
         <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
     </div>
 </div>
 """
 
-# Renderizar correctamente el HTML
 st.components.v1.html(html_code, height=800)
+
 
 
 
