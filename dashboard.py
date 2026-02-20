@@ -857,7 +857,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 11045   # Oro actual
+puntaje_actual = 12915   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2233,8 +2233,7 @@ def img_base64(path):
 
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
-    {"nombre": "zoroiluvyu", "imagen": "24.png"},
-    {"nombre": "Rukawa_Noceda", "imagen": "30.png"},
+
     {"nombre": "BAKI", "imagen": "9.png"},
     {"nombre": "lolbit--Chan", "imagen": "8.png"},
 ]
@@ -2312,6 +2311,58 @@ for miembro in nuevos_miembros:
         """,
         height=250
     )
+
+
+
+
+
+
+
+
+st.divider()
+
+
+
+# ==============================
+# MEME DEL DÍA
+# ==============================
+
+st.markdown("""
+<div style="
+    background: rgba(16,185,129,0.08);
+    padding:20px;
+    border-radius:16px;
+    margin:30px 0 20px 0;
+    border: 1px dashed rgba(16,185,129,0.4);
+    box-shadow: 0 0 18px rgba(16,185,129,0.25);
+    text-align:center;
+">
+
+<h3 style="
+    color:#34d399;
+    margin-bottom:12px;
+">
+Skullmomazo del Día
+</h3>
+
+<p style="
+    color:#d1fae5;
+    font-size:14px;
+    margin-top:8px;
+">
+Lo admito, si fui
+</p>
+
+</div>
+""", unsafe_allow_html=True)
+
+st.image("skull_meme_1.png", use_column_width=True)
+
+
+
+
+
+
 
 
 
