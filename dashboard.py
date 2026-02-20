@@ -655,6 +655,96 @@ st.divider()
 
 
 
+
+
+
+
+
+
+
+# ==============================
+# TEST DESIGNE SKULLGIRLS WEB
+# ==============================
+
+import streamlit as st
+
+st.markdown("""
+<div style="
+    background: rgba(0,0,0,0.6); /* fondo semitransparente */
+    padding:28px;
+    border-radius:12px;
+    margin:40px 0 60px 0;
+    border: 2px solid gold; /* borde dorado */
+    box-shadow: 0 0 18px rgba(255,215,0,0.4);
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #fefefe;
+">
+    <h2 style="color:gold; margin-bottom:18px; text-align:center;">
+        Skullgirls Designe Test
+    </h2>
+
+    <div style="margin-bottom:25px;">
+        <h3 style="color:#fff;">Skullgirls Championship Series</h3>
+        <p style="color:#ddd; font-size:14px;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+            Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+            Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+        </p>
+        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">
+            ➤ Continue Reading
+        </a>
+    </div>
+
+    <div style="margin-bottom:25px;">
+        <h3 style="color:#fff;">A New Star Enters the Spotlight!</h3>
+        <p style="color:#ddd; font-size:14px;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+            Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+            Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+        </p>
+        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">
+            ➤ Continue Reading
+        </a>
+    </div>
+
+    <div style="margin-bottom:25px;">
+        <h3 style="color:#fff;">Skullgirls 2nd Encore at Frosty Faustings XIII</h3>
+        <p style="color:#ddd; font-size:14px;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+            Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+            Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+        </p>
+        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">
+            ➤ Continue Reading
+        </a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+st.divider()
+
 import streamlit as st
 import base64
 
