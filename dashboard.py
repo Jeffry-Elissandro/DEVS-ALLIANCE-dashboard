@@ -2653,6 +2653,56 @@ if admin_pass == "CHESSCOM":
 
 
 
+st.divider()
+
+
+
+
+
+
+
+
+# ==============================
+# CONTACTO PRIVADO CON EL ADMIN
+# ==============================
+
+import streamlit as st
+
+st.markdown("""
+<div style="
+    background: rgba(59,130,246,0.08);
+    padding:22px;
+    border-radius:16px;
+    margin:40px 0 60px 0;
+    border: 1px solid rgba(59,130,246,0.35);
+    box-shadow: 0 0 18px rgba(59,130,246,0.25);
+    text-align:center;
+">
+    <h3 style="color:#93c5fd; margin-bottom:12px;">
+    🔐 Contacto Privado con CHESSDEV
+    </h3>
+    <p style="color:#e5e7eb; font-size:14px; margin-bottom:20px;">
+    ¿Deseas hablar directamente conmigo?<br>
+    Puedes contarme lo que quieras con confianza.<br>
+    Solo tú y yo veremos la conversación.
+    </p>
+    <a href="https://wa.me/50248320737" target="_blank"
+       style="
+           display:inline-block;
+           background:#25D366;
+           color:white;
+           padding:12px 22px;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:bold;
+           box-shadow:0 4px 12px rgba(0,0,0,0.25);
+       ">
+       “Por si necesitas contarme algo con confianza.
+Lo que escribas aquí será leído únicamente por mí.”
+    </a>
+</div>
+""", unsafe_allow_html=True)
+
 
 
 
