@@ -2323,11 +2323,8 @@ st.divider()
 
 
 
-# ==============================
-# MEME DEL DÍA
-# ==============================
-
 import base64
+import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
 nombre_imagen = "skull_meme_1.png"
@@ -2338,44 +2335,48 @@ try:
 
     st.markdown("""
     <div style="
-        background: rgba(88,28,135,0.10);
-        padding:24px;
-        border-radius:18px;
-        margin:35px 0 25px 0;
+        background: linear-gradient(135deg, rgba(88,28,135,0.25), rgba(168,85,247,0.15));
+        padding:28px;
+        border-radius:20px;
+        margin:40px 0 30px 0;
         border: 1px solid rgba(168,85,247,0.35);
-        box-shadow: 0 0 22px rgba(168,85,247,0.25);
+        box-shadow: 0 4px 25px rgba(168,85,247,0.25);
         text-align:center;
     ">
     
     <h3 style="
-        color:#e9d5ff;
-        margin-bottom:18px;
-        letter-spacing:0.5px;
+        color:#f5f3ff;
+        margin-bottom:20px;
+        letter-spacing:0.8px;
+        font-family: 'Trebuchet MS', sans-serif;
     ">
         Skullmomazo del día 💀
     </h3>
     """, unsafe_allow_html=True)
 
-    # Imagen controlada para que nunca rompa el diseño
+    # Imagen centrada dentro del mismo contenedor
     st.markdown(f"""
-        <img src="data:image/png;base64,{img_base64}"
-             style="
-                max-width:650px;
-                width:100%;
-                max-height:500px;
-                object-fit:contain;
-                border-radius:14px;
-                box-shadow:0 0 18px rgba(0,0,0,0.4);
-             ">
+        <div style="display:flex; justify-content:center;">
+            <img src="data:image/png;base64,{img_base64}"
+                 style="
+                    max-width:600px;
+                    width:100%;
+                    max-height:500px;
+                    object-fit:contain;
+                    border-radius:16px;
+                    box-shadow:0 0 20px rgba(0,0,0,0.45);
+                 ">
+        </div>
     """, unsafe_allow_html=True)
 
     st.markdown("""
         <p style="
             color:#ddd6fe;
-            font-size:14px;
-            margin-top:18px;
+            font-size:15px;
+            margin-top:20px;
+            font-style:italic;
         ">
-            Lo admito, si fui
+            Lo admito, sí fui
         </p>
 
     </div>
@@ -2383,6 +2384,7 @@ try:
 
 except FileNotFoundError:
     st.info("No se encontró el meme de hoy.")
+
 
 
 
