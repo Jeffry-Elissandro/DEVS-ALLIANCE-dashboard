@@ -678,7 +678,7 @@ html_code = f"""
 <style>
     .skull-container {{
         background: url('data:image/png;base64,{img_base64}') no-repeat center center;
-        background-size: 70% 100%; /* PC por defecto */
+        background-size: 60% 100%; /* PC por defecto */
         background-color: transparent;
         padding:70px;
         border-radius:12px;
