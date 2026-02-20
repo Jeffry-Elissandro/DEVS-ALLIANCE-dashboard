@@ -677,7 +677,7 @@ html_code = f"""
     background: url('data:image/png;base64,{img_base64}') no-repeat center center;
     background-size: 70% 100%;
     background-color: transparent;
-    padding:40px; /* Ajusta este valor según grosor del borde */
+    padding:70px; /* Ajusta este valor según grosor del borde */
     border-radius:12px;
     margin:40px 0 60px 0;
     min-height:600px;
