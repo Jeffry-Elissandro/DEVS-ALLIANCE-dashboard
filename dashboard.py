@@ -693,7 +693,7 @@ html_code = f"""
         <p style="color:#ddd; font-size:14px;">
             Aquí compartimos las últimas novedades, ideas y aportes de nuestros miembros.
         </p>
-        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
+        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
     </div>
 
     <div style="margin-bottom:25px;">
@@ -701,7 +701,7 @@ html_code = f"""
         <p style="color:#ddd; font-size:14px;">
             Cada jornada resaltamos un aporte especial.
         </p>
-        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Ver más</a>
+        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" style="color:gold; text-decoration:none; font-weight:bold;">➤ Ver más</a>
     </div>
 
     <div style="margin-bottom:25px;">
@@ -709,7 +709,7 @@ html_code = f"""
         <p style="color:#ddd; font-size:14px;">
             Mantente atento a los próximos encuentros y eventos. THIS IS A TEST
         </p>
-        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
+        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
     </div>
 </div>
 """
