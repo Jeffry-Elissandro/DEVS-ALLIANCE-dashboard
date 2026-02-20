@@ -718,7 +718,7 @@ html_code = f"""
     </div>
 
     <div style="margin-bottom:25px;">
-        <h3 style="color:#fff;">Destacado del Día</h3>
+        <h3 style="color:#fff;">Espacio en desarrollo</h3>
         <p style="color:#ddd; font-size:14px;">
             Cada jornada resaltamos un aporte especial.
         </p>
@@ -732,9 +732,9 @@ html_code = f"""
     </div>
 
     <div style="margin-bottom:25px;">
-        <h3 style="color:#fff;">Próximas Actividades</h3>
+        <h3 style="color:#fff;">Texto 1</h3>
         <p style="color:#ddd; font-size:14px;">
-            Mantente atento a los próximos encuentros y eventos. THIS IS A TEST
+            Este espacio es experimental, no le des importancia. THIS IS A TEST
         </p>
         <p style="margin-top:25px;">
             <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw"
@@ -977,7 +977,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 12915   # Oro actual
+puntaje_actual = 15285   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2214,12 +2214,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img13}">
-  <span>Arcos 16</span>
+  <span>Battousai saramo</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img14}">
-  <span>Ander_Weed_45</span>
+  <span>Sam   :3</span>
 </div>
 
 <div class="dev-card">
@@ -2239,7 +2239,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img18}">
-  <span>Experience^w^</span>
+  <span>Straw_berryy</span>
 </div>
 
 <div class="dev-card">
@@ -2284,7 +2284,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img27}">
-  <span>Adrexolm</span>
+  <span>birdflash</span>
 </div>
 
 <div class="dev-card">
@@ -2354,8 +2354,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "BAKI", "imagen": "9.png"},
-    {"nombre": "lolbit--Chan", "imagen": "8.png"},
+    {"nombre": "Battousai saramo", "imagen": "13.png"},
+    {"nombre": "Sam   :3", "imagen": "14.png"},
+    {"nombre": "Straw_berryy", "imagen": "18.png"},
+    {"nombre": "birdflash", "imagen": "27.png"},
 ]
 
 
@@ -2803,7 +2805,7 @@ st.markdown("""
     </h3>
     <p style="color:#e5e7eb; font-size:14px; margin-bottom:20px;">
     ¿Deseas hablar directamente conmigo?<br>
-    Puedes contarme lo que quieras con confianza, es algo que solo sabremos nosotros y respeto tu opinión 💚
+    Puedes contarme lo que quieras con confianza, respeto tu opinión 💚
     </p>
     <a href="https://wa.me/50248320737" target="_blank"
        style="
