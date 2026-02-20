@@ -675,7 +675,7 @@ with open("Skull_bord_dark.png", "rb") as img_file:
 html_code = f"""
 <div style="
     background: url('data:image/png;base64,{img_base64}') no-repeat center center;
-    background-size: 70% 100%;
+    background-size: 100% 100%;
     background-color: transparent;
     padding:70px; /* Ajusta este valor según grosor del borde */
     border-radius:12px;
