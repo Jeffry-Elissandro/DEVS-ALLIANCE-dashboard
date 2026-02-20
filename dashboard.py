@@ -673,16 +673,16 @@ import streamlit as st
 with open("Skull_bord_dark.png", "rb") as img_file:
     img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
 
-# Bloque con marco y contenido
-st.markdown(f"""
+# Bloque completo en un solo markdown
+html_code = f"""
 <div style="
     background: url('data:image/png;base64,{img_base64}') no-repeat center center;
-    background-size: contain; /* asegura que se vea completo */
-    background-color: transparent; /* fondo transparente */
+    background-size: contain;
+    background-color: transparent;
     padding:40px;
     border-radius:12px;
     margin:40px 0 60px 0;
-    min-height:600px; /* 👈 altura mínima para mostrar todo el borde */
+    min-height:600px;
     color:#fefefe;
     font-family: 'Trebuchet MS', sans-serif;
     text-align:center;
@@ -726,7 +726,10 @@ st.markdown(f"""
     </div>
 
 </div>
-""", unsafe_allow_html=True)
+"""
+
+st.markdown(html_code, unsafe_allow_html=True)
+
 
 
 
