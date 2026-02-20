@@ -673,7 +673,7 @@ import streamlit as st
 with open("Skull_bord_dark.png", "rb") as img_file:
     img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
 
-# Bloque completo en un solo markdown
+# Bloque HTML con estilos
 html_code = f"""
 <div style="
     background: url('data:image/png;base64,{img_base64}') no-repeat center center;
@@ -687,10 +687,7 @@ html_code = f"""
     font-family: 'Trebuchet MS', sans-serif;
     text-align:center;
 ">
-
-    <h2 style="color:gold; margin-bottom:20px;">
-        Comunidad Skulldevs
-    </h2>
+    <h2 style="color:gold; margin-bottom:20px;">Comunidad Skulldevs</h2>
 
     <div style="margin-bottom:25px;">
         <h3 style="color:#fff;">Noticias de la Comunidad</h3>
@@ -698,9 +695,7 @@ html_code = f"""
             Aquí compartimos las últimas novedades, ideas y aportes de nuestros miembros.
             Un espacio para estar al día y disfrutar juntos del proyecto.
         </p>
-        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">
-            ➤ Leer más
-        </a>
+        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
     </div>
 
     <div style="margin-bottom:25px;">
@@ -709,9 +704,7 @@ html_code = f"""
             Cada jornada resaltamos un aporte especial: puede ser un meme, una jugada
             brillante o una reflexión que inspire a la comunidad.
         </p>
-        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">
-            ➤ Ver más
-        </a>
+        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Ver más</a>
     </div>
 
     <div style="margin-bottom:25px;">
@@ -720,15 +713,14 @@ html_code = f"""
             Mantente atento a los próximos encuentros, partidas amistosas y eventos
             que organizaremos para seguir compartiendo nuestra pasión. THIS IS A TEST
         </p>
-        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">
-            ➤ Leer más
-        </a>
+        <a href="#" style="color:gold; text-decoration:none; font-weight:bold;">➤ Leer más</a>
     </div>
-
 </div>
 """
 
-st.markdown(html_code, unsafe_allow_html=True)
+# Renderizar correctamente el HTML
+st.components.v1.html(html_code, height=800)
+
 
 
 
