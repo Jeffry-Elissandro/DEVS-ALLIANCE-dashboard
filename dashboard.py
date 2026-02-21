@@ -704,7 +704,7 @@ html_code = f"""
     <h2 style="color:gold; margin-bottom:20px;">Comunidad Skulldevs</h2>
 
     <div style="margin-bottom:25px;">
-        <h3 style="color:#fff;">Comunidad Skulldevs</h3>
+        <h3 style="color:#fff;">Comunidad De Desarrollo</h3>
         <p style="color:#ddd; font-size:14px;">
             Aquí compartimos las últimas novedades, ideas y aportes de nuestros miembros.
         </p>
@@ -2559,7 +2559,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Lo admito, sí fui
+            Hay que aprovehar
         </p>
 
     </div>
