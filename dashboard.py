@@ -1825,14 +1825,14 @@ components.html(
 
     </div>
     """,
-    height=1800
+    height=1870
 )
 
 
 
 
 
-
+st.divider()
 
 
 
