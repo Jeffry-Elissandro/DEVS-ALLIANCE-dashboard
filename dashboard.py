@@ -1825,7 +1825,7 @@ components.html(
 
     </div>
     """,
-    height=1020
+    height=2040
 )
 
 
