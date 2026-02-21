@@ -977,7 +977,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15285   # Oro actual
+puntaje_actual = 17150   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1005,7 +1005,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1081,12 +1081,16 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte será de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+            
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
     </div>
     """,
@@ -2295,7 +2299,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img20}">
-  <span>Blood Skull RD</span>
+  <span>PLAYER 40404</span>
 </div>
 
 <div class="dev-card">
@@ -2404,6 +2408,7 @@ nuevos_miembros = [
     {"nombre": "Sam   :3", "imagen": "14.png"},
     {"nombre": "Straw_berryy", "imagen": "18.png"},
     {"nombre": "birdflash", "imagen": "27.png"},
+    {"nombre": "PLAYER 40404", "imagen": "20.png"},
 ]
 
 
@@ -2502,7 +2507,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_1.png"
+nombre_imagen = "skull_meme_2.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
