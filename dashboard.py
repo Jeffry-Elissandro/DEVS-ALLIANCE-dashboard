@@ -1777,6 +1777,52 @@ components.html(
             </div>
         </div>
 
+
+        st.divider()
+        
+
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            Este es el equipo que use toda la semana, lo recomiendo bastante ya que con 
+            este equipo fui capaz de llegar a <strong>+10 Billones de Daño</strong>.  
+            Lo conveniente es que no se necesitan estadísticas altísimas, simplemente saber aprovechar el modificador 
+            para hacer un daño exponencial con cada golpe, tal como se muestra en el video. 
+            Agradecería si le dan apoyo al video y espero sea de ayuda la idea.
+            Video creado por: <strong>CHESSDEV</strong>
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/c17npuMkiUk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
     </div>
     """,
     height=1020
