@@ -2115,7 +2115,7 @@ img3 = img_base64("3.png")
 img4 = img_base64("4.png")
 img5 = img_base64("5.png")
 img6 = img_base64("6.png")
-img7 = img_base64("7.png")
+img7 = img_base64("Imagen_para_testeos.png")
 img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
@@ -2234,7 +2234,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img7}">
-  <span>exterminador de bts</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2268,8 +2268,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img14}">
-  <span>SAKURA HARUNO</span>
+  <img src="data:image/png;base64,{img7}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2288,8 +2288,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img18}">
-  <span>Straw_berryy</span>
+  <img src="data:image/png;base64,{img7}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2298,8 +2298,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img20}">
-  <span>PLAYER 40404</span>
+  <img src="data:image/png;base64,{img7}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2405,10 +2405,8 @@ def img_base64(path):
 nuevos_miembros = [
 
     {"nombre": "Battousai saramo", "imagen": "13.png"},
-    {"nombre": "Straw_berryy", "imagen": "18.png"},
     {"nombre": "birdflash", "imagen": "27.png"},
-    {"nombre": "PLAYER 40404", "imagen": "20.png"},
-    {"nombre": "SAKURA HARUNO", "imagen": "14.png"},
+    {"nombre": "TEST", "imagen": "imagen_para_testeos.png"},
 ]
 
 
