@@ -2406,7 +2406,6 @@ nuevos_miembros = [
 
     {"nombre": "Battousai saramo", "imagen": "13.png"},
     {"nombre": "birdflash", "imagen": "27.png"},
-    {"nombre": "TEST", "imagen": "imagen_para_testeos.png"},
 ]
 
 
