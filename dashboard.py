@@ -977,7 +977,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 17350   # Oro actual
+puntaje_actual = 18210   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2132,7 +2132,7 @@ img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
-img24 = img_base64("Imagen_para_testeos.png")
+img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
@@ -2319,7 +2319,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}">
-  <span>DISPONIBLE</span>
+  <span>Sam :3</span>
 </div>
 
 <div class="dev-card">
@@ -2507,7 +2507,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_2.png"
+nombre_imagen = "skull_meme_3.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2559,7 +2559,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Hay que aprovechar
+            siempre pasa
         </p>
 
     </div>
