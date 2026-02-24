@@ -19,7 +19,7 @@ PESO_CONSISTENCIA = 0.15
 # ============================
 data = [
     {
-        "Nombre": "CHESSDEV", 
+        "Nombre": "TEST", 
         "Rango": "Líder",
         "ID": "0gd5-r41k7",
         "Poder": 1266707,
@@ -30,333 +30,38 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "»alex«", 
+        "Nombre": "TEST", 
         "Rango": "Colíder",
         "ID": "1l4y-eguc1",
         "Poder": 958033,
         "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
+        "Actividad": 8,
+        "Daño": 8,
+        "Puntos": 8,
+        "Consistencia": 8
     },
     {
-        "Nombre": "Lady_Navier", 
+        "Nombre": "TEST", 
         "Rango": "Especialista",
         "ID": "50is-suxy9",
         "Poder": 705004,
         "Nivel": 66,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "TwerlenK", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 9,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "MRchochox", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 52,
-        "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "EARTHLINGO", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 68,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "Adrexolm", 
-        "Rango": "Especialista",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 79,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "DLGPRO", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 72,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "xXDrive_shXx", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 76,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "viejamiada", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "KSTKBMS23", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "jfglhg", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 79,
-        "Actividad": 10,
+        "Actividad": 6,
         "Daño": 6,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "William_Afton_1983", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 72,
-        "Actividad": 10,
-        "Daño": 9,
-        "Puntos": 10,
-        "Consistencia": 9
-    },
-    {
-        "Nombre": "Blood Skull RD", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "KilLeo0217", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 78,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Experience^w^", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 79,
-        "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "ArtuxxD", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 73,
-        "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 10,
+        "Puntos": 6,
         "Consistencia": 6
     },
     {
-        "Nombre": "Skullgirls14203520", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 62,
-        "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "¶ØrNHÛß", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 68,
-        "Actividad": 7,
-        "Daño": 2,
-        "Puntos": 10,
-        "Consistencia": 4
-    },
-    {
-        "Nombre": "Ander_Weed_45", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 75,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 8,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "Arcos16", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 71,
-        "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "black lagoon69", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 76,
-        "Actividad": 9,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 9
-    },
-    {
-        "Nombre": "STANLEY GOAT", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 69,
-        "Actividad": 10,
-        "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "NERE OTAKO", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 66,
-        "Actividad": 10,
-        "Daño": 3,
-        "Puntos": 10,
-        "Consistencia": 6
-    },
-    {
-        "Nombre": "Bonilla Elias", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 80,
-        "Actividad": 9,
-        "Daño": 4,
-        "Puntos": 8,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "defuncion", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 73,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "exterminador de bts", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 8,
-        "Consistencia": 7
-    },
-    {
-        "Nombre": "CoinXY", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 79,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "rottqned", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 9,
-        "Consistencia": 8
-    },{
-        "Nombre": "|yisus_starsswell|", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 80,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 8,
-        "Consistencia": 7
-    },{
         "Nombre": "TEST", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 80,
+        "Nivel": 76,
         "Actividad": 4,
         "Daño": 4,
         "Puntos": 4,
         "Consistencia": 4
-    }
+    },
 ]
 
 # ============================
@@ -872,7 +577,7 @@ components.html(
              width="250" height="250" />
             
         <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡GRACIAS!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+      <strong style="color:#ffffff;">Actualización Pronto</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
     </div>
 
     </div>
@@ -1968,7 +1673,7 @@ margin-bottom:6px;
 font-size:26px;
 letter-spacing:1px;
 ">
-💜 Miembros Actuales — Alianza DEVS
+💜 Miembros Actuales (creo) — Alianza DEVS
 </h2>
 
 <p style="
