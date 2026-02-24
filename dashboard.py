@@ -30,7 +30,18 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "TEST", 
+        "Nombre": "TEST2", 
+        "Rango": "Colíder",
+        "ID": "1l4y-eguc1",
+        "Poder": 958033,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 9,
+        "Consistencia": 9
+    },
+    {
+        "Nombre": "TEST3", 
         "Rango": "Colíder",
         "ID": "1l4y-eguc1",
         "Poder": 958033,
@@ -41,7 +52,7 @@ data = [
         "Consistencia": 8
     },
     {
-        "Nombre": "TEST", 
+        "Nombre": "TEST4", 
         "Rango": "Especialista",
         "ID": "50is-suxy9",
         "Poder": 705004,
@@ -52,7 +63,7 @@ data = [
         "Consistencia": 6
     },
     {
-        "Nombre": "TEST", 
+        "Nombre": "TEST5", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
