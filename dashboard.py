@@ -2505,30 +2505,27 @@ st.markdown("""
 <style>
 /* Tarjeta principal */
 .contact-card {
-    background: linear-gradient(145deg, #111827, #1f2937); /* degradado oscuro */
+    background: #111827; /* fondo oscuro */
     padding: 32px 24px;
-    border-radius: 20px;
-    margin: 40px 0 60px 0;
+    border-radius: 18px;
+    margin: 40px auto 60px auto;
     border: 1px solid rgba(147,197,253,0.25); /* azul tenue */
-    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.45);
     text-align: center;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Título */
 .contact-card h3 {
-    color: #facc15; /* amarillo dorado para destacar */
+    color: #93c5fd; /* azul claro */
     font-size: 22px;
     margin-bottom: 16px;
     font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
 /* Texto */
 .contact-card p {
-    color: #e5e7eb;
+    color: #d1d5db;
     font-size: 15px;
     margin-bottom: 28px;
     line-height: 1.6;
@@ -2544,32 +2541,19 @@ st.markdown("""
 /* Botón base */
 .contact-buttons a {
     display: block;
-    padding: 14px 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
+    border: 2px solid #60a5fa; /* azul */
+    color: #60a5fa;
     transition: all 0.3s ease;
 }
 
-/* Botón WhatsApp */
-.contact-buttons a.contact {
-    background: #25D366;
+/* Hover */
+.contact-buttons a:hover {
+    background: #60a5fa;
     color: #111827;
-    box-shadow: 0 4px 12px rgba(37,211,102,0.35);
-}
-.contact-buttons a.contact:hover {
-    background: #22c55e;
-    color: white;
-}
-
-/* Botón YouTube */
-.contact-buttons a.channel {
-    background: #ef4444;
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(239,68,68,0.35);
-}
-.contact-buttons a.channel:hover {
-    background: #dc2626;
 }
 </style>
 
@@ -2580,11 +2564,12 @@ st.markdown("""
         Puedes contarme lo que quieras con confianza, respeto tu opinión 💚
     </p>
     <div class="contact-buttons">
-        <a href="https://wa.me/50248320737" target="_blank" class="contact">CHESSDEV CONTACT</a>
-        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank" class="channel">▶CHESSDEV CHANNEL</a>
+        <a href="https://wa.me/50248320737" target="_blank">CHESSDEV CONTACT</a>
+        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank">CHESSDEV CHANNEL</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
