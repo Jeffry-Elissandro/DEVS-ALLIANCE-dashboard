@@ -519,106 +519,97 @@ st.divider()
 import streamlit as st
 import base64
 
-# Función para convertir imagen a base64
 def img_base64(path):
     with open(path, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode("utf-8")
 
-# Lista de miembros destacados (imagen y puntuación)
 miembros_destacados = [
-    {"img": "1.png", "score": "26.287B "},
-    {"img": "4.png", "score": "5.575B "},
-    {"img": "2.png", "score": "4.508B "},
-    {"img": "6.png", "score": "4.445B "},
-    {"img": "12.png", "score": "3.228B "},
-    {"img": "3.png", "score": "2.408B "},
-    {"img": "25.png", "score": "1.631B "},
+    {"img": "1.png", "score": "26.287B"},
+    {"img": "4.png", "score": "5.575B"},
+    {"img": "2.png", "score": "4.508B"},
+    {"img": "6.png", "score": "4.445B"},
+    {"img": "12.png", "score": "3.228B"},
+    {"img": "3.png", "score": "2.408B"},
+    {"img": "25.png", "score": "1.631B"},
     {"img": "19.png", "score": "1.300B"},
-    {"img": "8.png", "score": "1.101B "},
-    {"img": "21.png", "score": "947M "},
+    {"img": "8.png", "score": "1.101B"},
+    {"img": "21.png", "score": "947M"},
 ]
 
-# Convertir imágenes
 for miembro in miembros_destacados:
     miembro["img_b64"] = img_base64(miembro["img"])
 
-# Renderizado
-st.markdown(
+# Construir el HTML dinámico
+members_html = "".join(
     f"""
-    <style>
-    .destacados-card {{
-      max-width:900px;
-      margin:60px auto;
-      padding:40px 30px;
-      background:linear-gradient(180deg,#0f0f0f,#1a1a1a 70%,#0f0f0f);
-      border-radius:18px;
-      border:2px solid rgba(147,197,253,0.35);
-      box-shadow:0 0 40px rgba(120,120,120,0.45),
-                 inset 0 0 25px rgba(147,197,253,0.15);
-      text-align:center;
-    }}
-
-    .destacados-title {{
-      font-size:26px;
-      color:#93c5fd;
-      margin-bottom:28px;
-      font-weight:bold;
-      text-shadow:0 0 15px rgba(147,197,253,0.9);
-    }}
-
-    .grid {{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap:24px;
-      justify-items:center;
-    }}
-
-    .member {{
-      text-align:center;
-    }}
-
-    .member img {{
-      width:100px;
-      height:100px;
-      border-radius:50%;
-      object-fit:cover;
-      border:3px solid #60a5fa;
-      box-shadow:0 0 20px rgba(147,197,253,0.6);
-      margin-bottom:10px;
-      transition:0.3s ease;
-    }}
-
-    .member img:hover {{
-      transform:scale(1.08);
-      box-shadow:0 0 30px rgba(147,197,253,0.9);
-    }}
-
-    .score {{
-      font-size:14px;
-      color:#d1d5db;
-      font-weight:bold;
-    }}
-    </style>
-
-    <div class="destacados-card">
-      <h3 class="destacados-title">🌟 Miembros Destacados de la Temporada</h3>
-      <div class="grid">
-    """ +
-    "".join(
-        f"""
-        <div class="member">
-          <img src="data:image/png;base64,{m['img_b64']}">
-          <div class="score">{m['score']}</div>
-        </div>
-        """ for m in miembros_destacados
-    ) +
-    """
-      </div>
+    <div class="member">
+      <img src="data:image/png;base64,{m['img_b64']}">
+      <div class="score">{m['score']}</div>
     </div>
-    """,
-    unsafe_allow_html=True
+    """ for m in miembros_destacados
 )
+
+# Plantilla completa
+html_code = f"""
+<style>
+.destacados-card {{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px 30px;
+  background:linear-gradient(180deg,#0f0f0f,#1a1a1a 70%,#0f0f0f);
+  border-radius:18px;
+  border:2px solid rgba(147,197,253,0.35);
+  box-shadow:0 0 40px rgba(120,120,120,0.45),
+             inset 0 0 25px rgba(147,197,253,0.15);
+  text-align:center;
+}}
+.destacados-title {{
+  font-size:26px;
+  color:#93c5fd;
+  margin-bottom:28px;
+  font-weight:bold;
+  text-shadow:0 0 15px rgba(147,197,253,0.9);
+}}
+.grid {{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap:24px;
+  justify-items:center;
+}}
+.member {{
+  text-align:center;
+}}
+.member img {{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #60a5fa;
+  box-shadow:0 0 20px rgba(147,197,253,0.6);
+  margin-bottom:10px;
+  transition:0.3s ease;
+}}
+.member img:hover {{
+  transform:scale(1.08);
+  box-shadow:0 0 30px rgba(147,197,253,0.9);
+}}
+.score {{
+  font-size:14px;
+  color:#d1d5db;
+  font-weight:bold;
+}}
+</style>
+
+<div class="destacados-card">
+  <h3 class="destacados-title">🌟 Miembros Destacados de la Temporada</h3>
+  <div class="grid">
+    {members_html}
+  </div>
+</div>
+"""
+
+st.markdown(html_code, unsafe_allow_html=True)
 
 
 
