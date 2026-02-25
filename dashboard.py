@@ -566,32 +566,18 @@ html_code = f"""
   font-size:36px;
   font-weight:bold;
   margin-bottom:28px;
-  background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
+  background: linear-gradient(270deg, #c084fc, #a78bfa, #7c3aed, #d8b4fe);
+  background-size: 600% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
-  animation: colorShift 5s infinite alternate;
+  animation: gradientShift 10s ease infinite;
 }}
 
-@keyframes colorShift {{
-  0% {{
-    background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px rgba(167,139,250,0.7);
-  }}
-  50% {{
-    background: linear-gradient(90deg, #9333ea, #7c3aed, #6d28d9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 25px rgba(147,51,234,0.9);
-  }}
-  100% {{
-    background: linear-gradient(90deg, #a78bfa, #c084fc, #d8b4fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(216,180,254,0.9);
-  }}
+@keyframes gradientShift {{
+  0% {{ background-position: 0% 50%; }}
+  50% {{ background-position: 100% 50%; }}
+  100% {{ background-position: 0% 50%; }}
 }}
 
 .grid {{
@@ -641,7 +627,7 @@ html_code = f"""
 </style>
 
 <div class="destacados-card">
-  <h3 class="destacados-title"> 🎀Destacados en Daño de Temporada</h3>
+  <h3 class="destacados-title">🌌 Destacados en Daño de Temporada</h3>
   <div class="grid">
     {members_html}
   </div>
@@ -649,6 +635,7 @@ html_code = f"""
 """
 
 st.components.v1.html(html_code, height=1250, scrolling=False)
+
 
 
 
