@@ -507,8 +507,6 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
 
 
-
-
 st.divider()
 
 
@@ -519,13 +517,11 @@ st.divider()
 import streamlit as st
 import base64
 
-# Función para convertir imagen a base64
 def img_base64(path):
     with open(path, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode("utf-8")
 
-# Lista de miembros destacados con nombre y puntuación
 miembros_destacados = [
     {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
     {"img": "4.png", "score": "5.575B", "name": "TwerlenK"},
@@ -539,11 +535,9 @@ miembros_destacados = [
     {"img": "21.png", "score": "947M", "name": "William_Afton_1983"},
 ]
 
-# Convertir imágenes
 for miembro in miembros_destacados:
     miembro["img_b64"] = img_base64(miembro["img"])
 
-# Construir HTML de miembros
 members_html = "".join(
     f"""
     <div class="member">
@@ -554,32 +548,45 @@ members_html = "".join(
     """ for m in miembros_destacados
 )
 
-# Plantilla completa
 html_code = f"""
 <style>
 .destacados-card {{
   max-width:1000px;
   margin:60px auto;
   padding:40px 30px;
+  min-height:650px; /* PC */
   background:linear-gradient(180deg,#1a102d,#0f0f0f 70%,#1a102d);
   border-radius:18px;
-  border:2px solid rgba(234,179,8,0.35); /* dorado */
+  border:2px solid rgba(234,179,8,0.35);
   box-shadow:0 0 40px rgba(234,179,8,0.45),
              inset 0 0 25px rgba(234,179,8,0.15);
   text-align:center;
 }}
+@media (max-width: 768px) {{
+  .destacados-card {{
+    min-height:1200px; /* Mobile */
+  }}
+}}
 .destacados-title {{
-  font-size:26px;
-  color:#facc15; /* dorado */
+  font-size:32px;
+  color:#facc15;
   margin-bottom:28px;
   font-weight:bold;
-  text-shadow:0 0 15px rgba(234,179,8,0.9);
+  text-shadow:0 0 20px rgba(167,139,250,0.9);
+  border-bottom:2px solid #a78bfa;
+  display:inline-block;
+  padding-bottom:6px;
 }}
 .grid {{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* PC */
   gap:24px;
   justify-items:center;
+}}
+@media (max-width: 768px) {{
+  .grid {{
+    grid-template-columns: repeat(2, 1fr); /* Mobile */
+  }}
 }}
 .member {{
   text-align:center;
@@ -589,7 +596,7 @@ html_code = f"""
   height:100px;
   border-radius:50%;
   object-fit:cover;
-  border:3px solid #a78bfa; /* violeta */
+  border:3px solid #a78bfa;
   box-shadow:0 0 20px rgba(167,139,250,0.6);
   margin-bottom:10px;
   transition:0.3s ease;
@@ -618,8 +625,8 @@ html_code = f"""
 </div>
 """
 
-# Renderizar como HTML puro (sin scroll interno)
-st.components.v1.html(html_code, height=650, scrolling=True)
+st.components.v1.html(html_code, scrolling=True)
+
 
 
 
