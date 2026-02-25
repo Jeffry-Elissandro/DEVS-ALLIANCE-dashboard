@@ -522,6 +522,7 @@ def img_base64(path):
         data = f.read()
     return base64.b64encode(data).decode("utf-8")
 
+# Lista de miembros destacados con nombre y puntuación
 miembros_destacados = [
     {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
     {"img": "4.png", "score": "5.575B", "name": "TwerlenK"},
@@ -568,14 +569,18 @@ html_code = f"""
   }}
 }}
 .destacados-title {{
-  font-size:32px;
-  color:#facc15;
-  margin-bottom:28px;
+  font-size:34px;
   font-weight:bold;
-  text-shadow:0 0 20px rgba(167,139,250,0.9);
-  border-bottom:2px solid #a78bfa;
-  display:inline-block;
-  padding-bottom:6px;
+  margin-bottom:28px;
+  background: linear-gradient(90deg, #facc15, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(167,139,250,0.8);
+  animation: glow 3s infinite alternate;
+}}
+@keyframes glow {{
+  from {{ text-shadow: 0 0 15px rgba(167,139,250,0.6); }}
+  to {{ text-shadow: 0 0 30px rgba(234,179,8,0.9); }}
 }}
 .grid {{
   display:grid;
@@ -626,6 +631,7 @@ html_code = f"""
 """
 
 st.components.v1.html(html_code, scrolling=True)
+
 
 
 
