@@ -796,7 +796,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 8585   # Oro actual
+puntaje_actual = 9355   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1941,7 +1941,7 @@ img14 = img_base64("14.png")
 img15 = img_base64("15.png")
 img16 = img_base64("16.png")
 img17 = img_base64("17.png")
-img18 = img_base64("Imagen_para_testeos.png")
+img18 = img_base64("18.png")
 img19 = img_base64("19.png")
 img20 = img_base64("20.png")
 img21 = img_base64("21.png")
@@ -2104,7 +2104,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img18}">
-  <span>DISPONIBLE</span>
+  <span>Aesick4u</span>
 </div>
 
 <div class="dev-card">
@@ -2113,8 +2113,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img18}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img20}">
+  <span>Skullgirls10503537</span>
 </div>
 
 <div class="dev-card">
@@ -2221,6 +2221,8 @@ nuevos_miembros = [
 
     {"nombre": "Military Goth", "imagen": "7.png"},
     {"nombre": "mamisiliconn", "imagen": "14.png"},
+    {"nombre": "Aesick4u", "imagen": "18.png"},
+    {"nombre": "Skullgirls10503537", "imagen": "20.png"},
 ]
 
 
