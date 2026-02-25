@@ -519,55 +519,61 @@ st.divider()
 import streamlit as st
 import base64
 
+# Función para convertir imagen a base64
 def img_base64(path):
     with open(path, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode("utf-8")
 
+# Lista de miembros destacados con nombre y puntuación
 miembros_destacados = [
-    {"img": "1.png", "score": "26.287B"},
-    {"img": "4.png", "score": "5.575B"},
-    {"img": "2.png", "score": "4.508B"},
-    {"img": "6.png", "score": "4.445B"},
-    {"img": "12.png", "score": "3.228B"},
-    {"img": "3.png", "score": "2.408B"},
-    {"img": "25.png", "score": "1.631B"},
-    {"img": "19.png", "score": "1.300B"},
-    {"img": "8.png", "score": "1.101B"},
-    {"img": "21.png", "score": "947M"},
+    {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
+    {"img": "4.png", "score": "5.575B", "name": "TwerlenK"},
+    {"img": "2.png", "score": "4.508B", "name": "»alex«"},
+    {"img": "6.png", "score": "4.445B", "name": "CoinXY"},
+    {"img": "12.png", "score": "3.228B", "name": "blacklagoon69"},
+    {"img": "3.png", "score": "2.408B", "name": "Lady_Navier"},
+    {"img": "25.png", "score": "1.631B", "name": "xXDrive_shXx"},
+    {"img": "19.png", "score": "1.300B", "name": "KilLeo0217"},
+    {"img": "8.png", "score": "1.101B", "name": "lolbit--Chan"},
+    {"img": "21.png", "score": "947M", "name": "William_Afton_1983"},
 ]
 
+# Convertir imágenes
 for miembro in miembros_destacados:
     miembro["img_b64"] = img_base64(miembro["img"])
 
+# Construir HTML de miembros
 members_html = "".join(
     f"""
     <div class="member">
       <img src="data:image/png;base64,{m['img_b64']}">
       <div class="score">{m['score']}</div>
+      <div class="name">{m['name']}</div>
     </div>
     """ for m in miembros_destacados
 )
 
+# Plantilla completa
 html_code = f"""
 <style>
 .destacados-card {{
-  max-width:900px;
+  max-width:1000px;
   margin:60px auto;
   padding:40px 30px;
-  background:linear-gradient(180deg,#0f0f0f,#1a1a1a 70%,#0f0f0f);
+  background:linear-gradient(180deg,#1a102d,#0f0f0f 70%,#1a102d);
   border-radius:18px;
-  border:2px solid rgba(147,197,253,0.35);
-  box-shadow:0 0 40px rgba(120,120,120,0.45),
-             inset 0 0 25px rgba(147,197,253,0.15);
+  border:2px solid rgba(234,179,8,0.35); /* dorado */
+  box-shadow:0 0 40px rgba(234,179,8,0.45),
+             inset 0 0 25px rgba(234,179,8,0.15);
   text-align:center;
 }}
 .destacados-title {{
   font-size:26px;
-  color:#93c5fd;
+  color:#facc15; /* dorado */
   margin-bottom:28px;
   font-weight:bold;
-  text-shadow:0 0 15px rgba(147,197,253,0.9);
+  text-shadow:0 0 15px rgba(234,179,8,0.9);
 }}
 .grid {{
   display:grid;
@@ -583,32 +589,38 @@ html_code = f"""
   height:100px;
   border-radius:50%;
   object-fit:cover;
-  border:3px solid #60a5fa;
-  box-shadow:0 0 20px rgba(147,197,253,0.6);
+  border:3px solid #a78bfa; /* violeta */
+  box-shadow:0 0 20px rgba(167,139,250,0.6);
   margin-bottom:10px;
   transition:0.3s ease;
 }}
 .member img:hover {{
   transform:scale(1.08);
-  box-shadow:0 0 30px rgba(147,197,253,0.9);
+  box-shadow:0 0 30px rgba(167,139,250,0.9);
 }}
 .score {{
   font-size:14px;
-  color:#d1d5db;
+  color:#f3f4f6;
   font-weight:bold;
+}}
+.name {{
+  font-size:13px;
+  color:#d1d5db;
+  margin-top:4px;
 }}
 </style>
 
 <div class="destacados-card">
-  <h3 class="destacados-title">🌟 Miembros Destacados de la Temporada</h3>
+  <h3 class="destacados-title">🌟 Destacados en Daño de Temporada</h3>
   <div class="grid">
     {members_html}
   </div>
 </div>
 """
 
-# Renderizar como HTML puro
-st.components.v1.html(html_code, height=800, scrolling=True)
+# Renderizar como HTML puro (sin scroll interno)
+st.components.v1.html(html_code, scrolling=True)
+
 
 
 
