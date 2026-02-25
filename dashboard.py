@@ -565,13 +565,13 @@ html_code = f"""
 
 @media (min-width: 769px) {{
   .destacados-card {{
-    height:650px; /* PC */
+    min-height:650px; /* PC */
   }}
 }}
 
 @media (max-width: 768px) {{
   .destacados-card {{
-    height:1200px; /* Mobile */
+    min-height:1200px; /* Mobile */
   }}
 }}
 
@@ -645,6 +645,7 @@ html_code = f"""
   </div>
 </div>
 """
+
 
 
 
