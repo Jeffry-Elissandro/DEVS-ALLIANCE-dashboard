@@ -566,18 +566,23 @@ html_code = f"""
   font-size:36px;
   font-weight:bold;
   margin-bottom:28px;
-  background: linear-gradient(270deg, #c084fc, #a78bfa, #7c3aed, #d8b4fe);
-  background-size: 600% 600%;
+  background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
-  animation: gradientShift 10s ease infinite;
+  text-shadow: 0 0 20px rgba(167,139,250,0.7);
+  animation: glowPurple 3s infinite alternate;
 }}
 
-@keyframes gradientShift {{
-  0% {{ background-position: 0% 50%; }}
-  50% {{ background-position: 100% 50%; }}
-  100% {{ background-position: 0% 50%; }}
+@keyframes glowPurple {{
+  from {{
+    text-shadow: 0 0 15px rgba(167,139,250,0.6),
+                 0 0 30px rgba(147,51,234,0.5);
+  }}
+  to {{
+    text-shadow: 0 0 25px rgba(192,132,252,0.9),
+                 0 0 40px rgba(147,51,234,0.8);
+  }}
 }}
 
 .grid {{
@@ -627,14 +632,15 @@ html_code = f"""
 </style>
 
 <div class="destacados-card">
-  <h3 class="destacados-title">🌌 Destacados en Daño de Temporada</h3>
+  <h3 class="destacados-title"> 🎀 Destacados en Daño de Temporada</h3>
   <div class="grid">
     {members_html}
   </div>
 </div>
 """
 
-st.components.v1.html(html_code, height=1250, scrolling=False)
+st.components.v1.html(html_code, scrolling=True)
+
 
 
 
