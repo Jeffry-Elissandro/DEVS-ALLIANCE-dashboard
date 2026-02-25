@@ -634,7 +634,7 @@ html_code = f"""
 """
 
 # Aquí definimos un height suficientemente grande para cubrir ambas versiones
-st.components.v1.html(html_code, height=1200, scrolling=False)
+st.components.v1.html(html_code, height=1250, scrolling=False)
 
 
 
