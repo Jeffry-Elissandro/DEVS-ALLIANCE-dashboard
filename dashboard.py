@@ -556,7 +556,7 @@ html_code = f"""
   padding:40px 30px;
   background:linear-gradient(180deg,#1a102d,#0f0f0f 70%,#1a102d);
   border-radius:18px;
-  border:2px solid rgba(167,139,250,0.45); /* borde morado */
+  border:2px solid rgba(167,139,250,0.45);
   box-shadow:0 0 40px rgba(167,139,250,0.45),
              inset 0 0 25px rgba(167,139,250,0.25);
   text-align:center;
@@ -569,26 +569,41 @@ html_code = f"""
   background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 25px rgba(167,139,250,0.8);
-  animation: glow 3s infinite alternate;
   letter-spacing: 2px;
+  animation: colorShift 5s infinite alternate;
 }}
 
-@keyframes glow {{
-  from {{ text-shadow: 0 0 15px rgba(167,139,250,0.6); }}
-  to {{ text-shadow: 0 0 30px rgba(192,132,252,0.9); }}
+@keyframes colorShift {{
+  0% {{
+    background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(167,139,250,0.7);
+  }}
+  50% {{
+    background: linear-gradient(90deg, #9333ea, #7c3aed, #6d28d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px rgba(147,51,234,0.9);
+  }}
+  100% {{
+    background: linear-gradient(90deg, #a78bfa, #c084fc, #d8b4fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(216,180,254,0.9);
+  }}
 }}
 
 .grid {{
   display:grid;
-  grid-template-columns: repeat(5, 1fr); /* PC: 5 columnas */
+  grid-template-columns: repeat(5, 1fr);
   gap:24px;
   justify-items:center;
 }}
 
 @media (max-width: 768px) {{
   .grid {{
-    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
   }}
 }}
 
@@ -601,7 +616,7 @@ html_code = f"""
   height:100px;
   border-radius:50%;
   object-fit:cover;
-  border:3px solid #c084fc; /* borde morado claro */
+  border:3px solid #c084fc;
   box-shadow:0 0 20px rgba(167,139,250,0.6);
   margin-bottom:10px;
   transition:0.3s ease;
@@ -614,27 +629,27 @@ html_code = f"""
 
 .score {{
   font-size:14px;
-  color:#e9d5ff; /* texto lila */
+  color:#e9d5ff;
   font-weight:bold;
 }}
 
 .name {{
   font-size:13px;
-  color:#d8b4fe; /* texto morado claro */
+  color:#d8b4fe;
   margin-top:4px;
 }}
 </style>
 
 <div class="destacados-card">
-  <h3 class="destacados-title">🎀 Destacados en Daño de Temporada</h3>
+  <h3 class="destacados-title"> 🎀Destacados en Daño de Temporada</h3>
   <div class="grid">
     {members_html}
   </div>
 </div>
 """
 
-# Aquí definimos un height suficientemente grande para cubrir ambas versiones
 st.components.v1.html(html_code, height=1250, scrolling=False)
+
 
 
 
