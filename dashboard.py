@@ -19,7 +19,7 @@ PESO_CONSISTENCIA = 0.15
 # ============================
 data = [
     {
-        "Nombre": "TEST", 
+        "Nombre": "CHESSDEV",
         "Rango": "Líder",
         "ID": "0gd5-r41k7",
         "Poder": 1266707,
@@ -30,49 +30,291 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "TEST2", 
+        "Nombre": "»alex«", 
         "Rango": "Colíder",
         "ID": "1l4y-eguc1",
         "Poder": 958033,
         "Nivel": 77,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 9,
-        "Consistencia": 9
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
-        "Nombre": "TEST3", 
-        "Rango": "Colíder",
-        "ID": "1l4y-eguc1",
-        "Poder": 958033,
-        "Nivel": 77,
-        "Actividad": 8,
-        "Daño": 8,
-        "Puntos": 8,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "TEST4", 
+        "Nombre": "Lady_Navier", 
         "Rango": "Especialista",
         "ID": "50is-suxy9",
         "Poder": 705004,
         "Nivel": 66,
-        "Actividad": 6,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "TwerlenK", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "MRchochox", 
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 52,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "EARTHLINGO", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 68,
+        "Actividad": 10,
+        "Daño": 8,
+        "Puntos": 10,
+        "Consistencia": 9
+    },
+    {
+        "Nombre": "Rukawa_Noceda",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 64,
+        "Actividad": 10,
+        "Daño": 8,
+        "Puntos": 10,
+        "Consistencia": 9
+    },
+    {
+        "Nombre": "DLGPRO", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 72,
+        "Actividad": 10,
         "Daño": 6,
-        "Puntos": 6,
+        "Puntos": 10,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "xXDrive_shXx", 
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 76,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Sam :3",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 63,
+        "Actividad": 10,
+        "Daño": 7,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "KSTKBMS23", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "jfglhg", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "William_Afton_1983", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 72,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "BAKI",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
         "Consistencia": 6
     },
     {
-        "Nombre": "TEST5", 
+        "Nombre": "KilLeo0217", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 78,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Battousai saramo",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "ArtuxxD", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 73,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Skullgirls14203520", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 62,
+        "Actividad": 10,
+        "Daño": 7,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "¶ØrNHÛß", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 68,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "lolbit--Chan",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 75,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "birdflash",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "black lagoon69", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 76,
-        "Actividad": 4,
-        "Daño": 4,
-        "Puntos": 4,
-        "Consistencia": 4
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
+    {
+        "Nombre": "STANLEY GOAT", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 69,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "NERE OTAKO", 
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 66,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "mamisilicon",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 60,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 6,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "CoinXY", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "rottqned", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 74,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    }
 ]
 
 # ============================
@@ -388,80 +630,6 @@ st.divider()
 
 
 
-#Para Promocionar el nuevo JEFE MS.FORTUNE
-
-
-import streamlit.components.v1 as components
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-misterio_img = img_base64("Ms_Fortune_Inmortals.png")
-
-components.html(
-    f"""
-    <style>
-      .contenedor {{
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 18px;
-        background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
-        border-radius: 22px;
-        border: 2px solid rgba(180,180,180,0.55);
-        box-shadow: 0 0 25px rgba(120,120,120,0.45),
-                    inset 0 0 18px rgba(80,80,80,0.35);
-        text-align: center;
-      }}
-
-      .contenedor h2 {{
-        font-size: 32px;
-        color: #ffffff;
-        text-shadow: 0 0 12px rgba(255,255,255,0.9),
-                     0 0 24px rgba(200,200,200,0.7);
-        margin-bottom: 20px;
-      }}
-
-      .contenedor img {{
-        width: 50%;   /* por defecto en PC */
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 0 25px rgba(255,255,255,0.15);
-      }}
-
-      /* En pantallas pequeñas (mobile) */
-      @media (max-width: 768px) {{
-        .contenedor img {{
-          width: 100%;  /* ocupa todo el ancho en mobile */
-        }}
-        .contenedor h2 {{
-          font-size: 24px;
-        }}
-      }}
-    </style>
-
-    <div class="contenedor">
-      <h2>NEW BOSS</h2>
-      <img src="data:image/png;base64,{misterio_img}" />
-    </div>
-    """,
-    height=1100
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Para el mensaje de agradecimiento rango oro
 
 
@@ -476,7 +644,7 @@ components.html(
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 18210   # Oro actual
+puntaje_actual = 8585   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -504,7 +672,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -580,16 +748,12 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-            
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">Actualización Pronto</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -866,7 +1030,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana No.5 - 09/15 Febrero",
+    title="Rendimiento de los miembros - Semana No.6 - 16/22 Febrero",
     width=ancho_grafica
 )
 
@@ -1614,7 +1778,7 @@ img3 = img_base64("3.png")
 img4 = img_base64("4.png")
 img5 = img_base64("5.png")
 img6 = img_base64("6.png")
-img7 = img_base64("Imagen_para_testeos.png")
+img7 = img_base64("7.png")
 img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
@@ -1625,7 +1789,7 @@ img14 = img_base64("14.png")
 img15 = img_base64("15.png")
 img16 = img_base64("16.png")
 img17 = img_base64("17.png")
-img18 = img_base64("18.png")
+img18 = img_base64("Imagen_para_testeos.png")
 img19 = img_base64("19.png")
 img20 = img_base64("20.png")
 img21 = img_base64("21.png")
@@ -1684,7 +1848,7 @@ margin-bottom:6px;
 font-size:26px;
 letter-spacing:1px;
 ">
-💜 Miembros Actuales (creo) — Alianza DEVS
+💜 Miembros Actuales — Alianza DEVS
 </h2>
 
 <p style="
@@ -1733,7 +1897,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img7}">
-  <span>DISPONIBLE</span>
+  <span>Military Goth</span>
 </div>
 
 <div class="dev-card">
@@ -1767,8 +1931,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img7}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img14}">
+  <span>mamisiliconn</span>
 </div>
 
 <div class="dev-card">
@@ -1787,7 +1951,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img7}">
+  <img src="data:image/png;base64,{img18}">
   <span>DISPONIBLE</span>
 </div>
 
@@ -1797,7 +1961,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img7}">
+  <img src="data:image/png;base64,{img18}">
   <span>DISPONIBLE</span>
 </div>
 
@@ -1903,7 +2067,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "TEST", "imagen": "Imagen_para_testeos.png"},
+    {"nombre": "Military Goth", "imagen": "7.png"},
+    {"nombre": "mamisiliconn", "imagen": "14.png"},
 ]
 
 
@@ -2002,7 +2167,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_4.png"
+nombre_imagen = "skull_meme_5.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2054,7 +2219,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Creeme, los muchachos tendrán hambre
+            XD
         </p>
 
     </div>
@@ -2337,50 +2502,72 @@ st.divider()
 import streamlit as st
 
 st.markdown("""
-<div style="
-    background: rgba(59,130,246,0.08);
-    padding:22px;
-    border-radius:16px;
-    margin:40px 0 60px 0;
+<style>
+/* Contenedor principal */
+.contact-card {
+    background: #1f2937; /* gris oscuro */
+    padding: 24px;
+    border-radius: 16px;
+    margin: 40px 0 60px 0;
     border: 1px solid rgba(59,130,246,0.35);
     box-shadow: 0 0 18px rgba(59,130,246,0.25);
-    text-align:center;
-">
-    <h3 style="color:#93c5fd; margin-bottom:12px;">
-    🔐 Contacto Privado con CHESSDEV
-    </h3>
-    <p style="color:#e5e7eb; font-size:14px; margin-bottom:20px;">
-    ¿Deseas hablar directamente conmigo?<br>
-    Puedes contarme lo que quieras con confianza, respeto tu opinión 💚
+    text-align: center;
+}
+
+/* Título */
+.contact-card h3 {
+    color: #60a5fa; /* azul claro */
+    margin-bottom: 12px;
+}
+
+/* Texto */
+.contact-card p {
+    color: #d1d5db; /* gris claro */
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+/* Contenedor de botones responsivo */
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Botones */
+.contact-buttons a {
+    flex: 1 1 200px; /* se adaptan al ancho disponible */
+    max-width: 220px;
+    background: #25D366; /* verde WhatsApp */
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: background 0.3s ease;
+}
+
+/* Hover */
+.contact-buttons a:hover {
+    background: #22c55e; /* verde más oscuro */
+}
+</style>
+
+<div class="contact-card">
+    <h3>🔐 Contacto Privado con CHESSDEV</h3>
+    <p>
+        ¿Deseas hablar directamente conmigo?<br>
+        Puedes contarme lo que quieras con confianza, respeto tu opinión 💚
     </p>
-    <a href="https://wa.me/50248320737" target="_blank"
-       style="
-           display:inline-block;
-           background:#25D366;
-           color:white;
-           padding:12px 22px;
-           border-radius:8px;
-           text-decoration:none;
-           font-weight:bold;
-           box-shadow:0 4px 12px rgba(0,0,0,0.25);
-       ">
-       CHESSDEV CONTACT
-    </a>
-    <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank"
-       style="
-           display:inline-block;
-           background:#25D366;
-           color:white;
-           padding:12px 22px;
-           border-radius:8px;
-           text-decoration:none;
-           font-weight:bold;
-           box-shadow:0 4px 12px rgba(0,0,0,0.25);
-       ">
-       CHESSDEV CHANEL
-    </a>
+    <div class="contact-buttons">
+        <a href="https://wa.me/50248320737" target="_blank">CHESSDEV CONTACT</a>
+        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank">CHESSDEV CHANEL</a>
+    </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
