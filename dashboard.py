@@ -561,18 +561,17 @@ html_code = f"""
   box-shadow:0 0 40px rgba(234,179,8,0.45),
              inset 0 0 25px rgba(234,179,8,0.15);
   text-align:center;
-  min-height:auto; /* se adapta al contenido */
 }}
 
 @media (min-width: 769px) {{
   .destacados-card {{
-    min-height:650px; /* PC */
+    height:650px; /* PC */
   }}
 }}
 
 @media (max-width: 768px) {{
   .destacados-card {{
-    min-height:1200px; /* Mobile */
+    height:1200px; /* Mobile */
   }}
 }}
 
@@ -647,7 +646,6 @@ html_code = f"""
 </div>
 """
 
-st.components.v1.html(html_code, scrolling=True)
 
 
 
