@@ -646,6 +646,9 @@ html_code = f"""
 </div>
 """
 
+# Aquí dejamos que el CSS maneje la altura, sin forzar height en Streamlit
+st.components.v1.html(html_code, scrolling=True)
+
 
 
 
