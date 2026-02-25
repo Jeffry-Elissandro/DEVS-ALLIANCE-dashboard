@@ -522,7 +522,6 @@ def img_base64(path):
         data = f.read()
     return base64.b64encode(data).decode("utf-8")
 
-# Lista de miembros destacados con nombre y puntuación
 miembros_destacados = [
     {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
     {"img": "4.png", "score": "5.575B", "name": "TwerlenK"},
@@ -561,18 +560,6 @@ html_code = f"""
   box-shadow:0 0 40px rgba(234,179,8,0.45),
              inset 0 0 25px rgba(234,179,8,0.15);
   text-align:center;
-}}
-
-@media (min-width: 769px) {{
-  .destacados-card {{
-    min-height:650px; /* PC */
-  }}
-}}
-
-@media (max-width: 768px) {{
-  .destacados-card {{
-    min-height:1200px; /* Mobile */
-  }}
 }}
 
 .destacados-title {{
@@ -646,8 +633,11 @@ html_code = f"""
 </div>
 """
 
-# Aquí dejamos que el CSS maneje la altura, sin forzar height en Streamlit
-st.components.v1.html(html_code, scrolling=True)
+# Aquí definimos un height suficientemente grande para cubrir ambas versiones
+st.components.v1.html(html_code, height=1200, scrolling=False)
+
+
+
 
 
 
