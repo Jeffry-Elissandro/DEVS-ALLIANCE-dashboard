@@ -555,21 +555,29 @@ html_code = f"""
   max-width:1000px;
   margin:60px auto;
   padding:40px 30px;
-  min-height:650px; /* PC */
   background:linear-gradient(180deg,#1a102d,#0f0f0f 70%,#1a102d);
   border-radius:18px;
   border:2px solid rgba(234,179,8,0.35);
   box-shadow:0 0 40px rgba(234,179,8,0.45),
              inset 0 0 25px rgba(234,179,8,0.15);
   text-align:center;
+  min-height:auto; /* se adapta al contenido */
 }}
+
+@media (min-width: 769px) {{
+  .destacados-card {{
+    min-height:650px; /* PC */
+  }}
+}}
+
 @media (max-width: 768px) {{
   .destacados-card {{
     min-height:1200px; /* Mobile */
   }}
 }}
+
 .destacados-title {{
-  font-size:34px;
+  font-size:36px;
   font-weight:bold;
   margin-bottom:28px;
   background: linear-gradient(90deg, #facc15, #a78bfa);
@@ -577,25 +585,31 @@ html_code = f"""
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 25px rgba(167,139,250,0.8);
   animation: glow 3s infinite alternate;
+  letter-spacing: 2px;
 }}
+
 @keyframes glow {{
   from {{ text-shadow: 0 0 15px rgba(167,139,250,0.6); }}
   to {{ text-shadow: 0 0 30px rgba(234,179,8,0.9); }}
 }}
+
 .grid {{
   display:grid;
-  grid-template-columns: repeat(5, 1fr); /* PC */
+  grid-template-columns: repeat(5, 1fr); /* PC: 5 columnas */
   gap:24px;
   justify-items:center;
 }}
+
 @media (max-width: 768px) {{
   .grid {{
-    grid-template-columns: repeat(2, 1fr); /* Mobile */
+    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columnas */
   }}
 }}
+
 .member {{
   text-align:center;
 }}
+
 .member img {{
   width:100px;
   height:100px;
@@ -606,15 +620,18 @@ html_code = f"""
   margin-bottom:10px;
   transition:0.3s ease;
 }}
+
 .member img:hover {{
   transform:scale(1.08);
   box-shadow:0 0 30px rgba(167,139,250,0.9);
 }}
+
 .score {{
   font-size:14px;
   color:#f3f4f6;
   font-weight:bold;
 }}
+
 .name {{
   font-size:13px;
   color:#d1d5db;
@@ -631,6 +648,7 @@ html_code = f"""
 """
 
 st.components.v1.html(html_code, scrolling=True)
+
 
 
 
