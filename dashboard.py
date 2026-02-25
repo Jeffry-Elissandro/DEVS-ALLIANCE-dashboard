@@ -537,23 +537,24 @@ miembros_destacados = [
     {"img": "21.png", "score": "947M"},
 ]
 
+# Convertir imágenes
 for miembro in miembros_destacados:
     miembro["img_b64"] = img_base64(miembro["img"])
 
-# Construir el HTML dinámico
-members_html = "".join(
-    f"""
+# Construir HTML de miembros
+members_html = ""
+for m in miembros_destacados:
+    members_html += f"""
     <div class="member">
       <img src="data:image/png;base64,{m['img_b64']}">
       <div class="score">{m['score']}</div>
     </div>
-    """ for m in miembros_destacados
-)
+    """
 
 # Plantilla completa
-html_code = f"""
+html_code = """
 <style>
-.destacados-card {{
+.destacados-card {
   max-width:900px;
   margin:60px auto;
   padding:40px 30px;
@@ -563,24 +564,24 @@ html_code = f"""
   box-shadow:0 0 40px rgba(120,120,120,0.45),
              inset 0 0 25px rgba(147,197,253,0.15);
   text-align:center;
-}}
-.destacados-title {{
+}
+.destacados-title {
   font-size:26px;
   color:#93c5fd;
   margin-bottom:28px;
   font-weight:bold;
   text-shadow:0 0 15px rgba(147,197,253,0.9);
-}}
-.grid {{
+}
+.grid {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap:24px;
   justify-items:center;
-}}
-.member {{
+}
+.member {
   text-align:center;
-}}
-.member img {{
+}
+.member img {
   width:100px;
   height:100px;
   border-radius:50%;
@@ -589,27 +590,28 @@ html_code = f"""
   box-shadow:0 0 20px rgba(147,197,253,0.6);
   margin-bottom:10px;
   transition:0.3s ease;
-}}
-.member img:hover {{
+}
+.member img:hover {
   transform:scale(1.08);
   box-shadow:0 0 30px rgba(147,197,253,0.9);
-}}
-.score {{
+}
+.score {
   font-size:14px;
   color:#d1d5db;
   font-weight:bold;
-}}
+}
 </style>
 
 <div class="destacados-card">
   <h3 class="destacados-title">🌟 Miembros Destacados de la Temporada</h3>
   <div class="grid">
-    {members_html}
+""" + members_html + """
   </div>
 </div>
 """
 
 st.markdown(html_code, unsafe_allow_html=True)
+
 
 
 
