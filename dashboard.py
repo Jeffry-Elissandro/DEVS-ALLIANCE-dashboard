@@ -619,7 +619,7 @@ html_code = f"""
 """
 
 # Renderizar como HTML puro (sin scroll interno)
-st.components.v1.html(html_code, height=600, scrolling=True)
+st.components.v1.html(html_code, height=650, scrolling=True)
 
 
 
