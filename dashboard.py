@@ -2503,55 +2503,73 @@ import streamlit as st
 
 st.markdown("""
 <style>
-/* Contenedor principal */
+/* Tarjeta principal */
 .contact-card {
-    background: #1f2937; /* gris oscuro */
-    padding: 24px;
-    border-radius: 16px;
+    background: linear-gradient(145deg, #111827, #1f2937); /* degradado oscuro */
+    padding: 32px 24px;
+    border-radius: 20px;
     margin: 40px 0 60px 0;
-    border: 1px solid rgba(59,130,246,0.35);
-    box-shadow: 0 0 18px rgba(59,130,246,0.25);
+    border: 1px solid rgba(147,197,253,0.25); /* azul tenue */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
     text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Título */
 .contact-card h3 {
-    color: #60a5fa; /* azul claro */
-    margin-bottom: 12px;
+    color: #facc15; /* amarillo dorado para destacar */
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 /* Texto */
 .contact-card p {
-    color: #d1d5db; /* gris claro */
+    color: #e5e7eb;
     font-size: 15px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
+    line-height: 1.6;
 }
 
-/* Contenedor de botones responsivo */
+/* Contenedor de botones */
 .contact-buttons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+    flex-direction: column;
+    gap: 14px;
 }
 
-/* Botones */
+/* Botón base */
 .contact-buttons a {
-    flex: 1 1 200px; /* se adaptan al ancho disponible */
-    max-width: 220px;
-    background: #25D366; /* verde WhatsApp */
-    color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
+    display: block;
+    padding: 14px 20px;
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    transition: background 0.3s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-/* Hover */
-.contact-buttons a:hover {
-    background: #22c55e; /* verde más oscuro */
+/* Botón WhatsApp */
+.contact-buttons a.contact {
+    background: #25D366;
+    color: #111827;
+    box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+}
+.contact-buttons a.contact:hover {
+    background: #22c55e;
+    color: white;
+}
+
+/* Botón YouTube */
+.contact-buttons a.channel {
+    background: #ef4444;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(239,68,68,0.35);
+}
+.contact-buttons a.channel:hover {
+    background: #dc2626;
 }
 </style>
 
@@ -2562,11 +2580,12 @@ st.markdown("""
         Puedes contarme lo que quieras con confianza, respeto tu opinión 💚
     </p>
     <div class="contact-buttons">
-        <a href="https://wa.me/50248320737" target="_blank">CHESSDEV CONTACT</a>
-        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank">CHESSDEV CHANEL</a>
+        <a href="https://wa.me/50248320737" target="_blank" class="contact">CHESSDEV CONTACT</a>
+        <a href="https://www.youtube.com/channel/UC3E1IMA4c6-U-_atZOomvPw" target="_blank" class="channel">▶CHESSDEV CHANNEL</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
