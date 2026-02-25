@@ -523,7 +523,7 @@ import base64
 def img_base64(path):
     with open(path, "rb") as f:
         data = f.read()
-    return base64.b64encode(f.read()).decode("utf-8")
+    return base64.b64encode(data).decode("utf-8")
 
 # Lista de miembros destacados (imagen y puntuación)
 miembros_destacados = [
