@@ -556,9 +556,9 @@ html_code = f"""
   padding:40px 30px;
   background:linear-gradient(180deg,#1a102d,#0f0f0f 70%,#1a102d);
   border-radius:18px;
-  border:2px solid rgba(234,179,8,0.35);
-  box-shadow:0 0 40px rgba(234,179,8,0.45),
-             inset 0 0 25px rgba(234,179,8,0.15);
+  border:2px solid rgba(167,139,250,0.45); /* borde morado */
+  box-shadow:0 0 40px rgba(167,139,250,0.45),
+             inset 0 0 25px rgba(167,139,250,0.25);
   text-align:center;
 }}
 
@@ -566,7 +566,7 @@ html_code = f"""
   font-size:36px;
   font-weight:bold;
   margin-bottom:28px;
-  background: linear-gradient(90deg, #facc15, #a78bfa);
+  background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 25px rgba(167,139,250,0.8);
@@ -576,7 +576,7 @@ html_code = f"""
 
 @keyframes glow {{
   from {{ text-shadow: 0 0 15px rgba(167,139,250,0.6); }}
-  to {{ text-shadow: 0 0 30px rgba(234,179,8,0.9); }}
+  to {{ text-shadow: 0 0 30px rgba(192,132,252,0.9); }}
 }}
 
 .grid {{
@@ -601,7 +601,7 @@ html_code = f"""
   height:100px;
   border-radius:50%;
   object-fit:cover;
-  border:3px solid #a78bfa;
+  border:3px solid #c084fc; /* borde morado claro */
   box-shadow:0 0 20px rgba(167,139,250,0.6);
   margin-bottom:10px;
   transition:0.3s ease;
@@ -609,24 +609,24 @@ html_code = f"""
 
 .member img:hover {{
   transform:scale(1.08);
-  box-shadow:0 0 30px rgba(167,139,250,0.9);
+  box-shadow:0 0 30px rgba(192,132,252,0.9);
 }}
 
 .score {{
   font-size:14px;
-  color:#f3f4f6;
+  color:#e9d5ff; /* texto lila */
   font-weight:bold;
 }}
 
 .name {{
   font-size:13px;
-  color:#d1d5db;
+  color:#d8b4fe; /* texto morado claro */
   margin-top:4px;
 }}
 </style>
 
 <div class="destacados-card">
-  <h3 class="destacados-title">🌟 Destacados en Daño de Temporada</h3>
+  <h3 class="destacados-title">🎀 Destacados en Daño de Temporada</h3>
   <div class="grid">
     {members_html}
   </div>
