@@ -497,7 +497,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     )
 
     st.audio(
-        "tipe_beat_web.mp3",
+        "tipe_beat_web R&B Remix.mp3",
         format="audio/mp3",
         loop=True
     )
