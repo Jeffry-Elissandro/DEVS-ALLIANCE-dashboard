@@ -530,99 +530,75 @@ def img_base64(path):
 img_regla = img_base64("guild_rules.png")  # Cambia el nombre si deseas
 
 # ==============================
-# BLOQUE VISUAL
+# BLOQUE CSS
 # ==============================
-st.markdown(f"""
+st.markdown("""
 <style>
-
-.regla-box {{
+.regla-box {
     max-width:1100px;
     margin:40px auto;
     padding:30px;
     border-radius:18px;
-
     background: linear-gradient(180deg, #0f172a, #020617);
     box-shadow: 0 0 35px rgba(34,197,94,0.25);
-
     display:flex;
     align-items:center;
     gap:30px;
-}}
-
-.regla-img img {{
+}
+.regla-img img {
     max-width:100%;
     border-radius:16px;
     box-shadow: 0 0 25px rgba(255,255,255,0.15);
-}}
-
-.regla-text h2 {{
+}
+.regla-text h2 {
     color:#86efac;
     font-size:26px;
     margin-bottom:12px;
-}}
-
-.regla-text p {{
+}
+.regla-text p {
     color:#e5e7eb;
     font-size:15px;
     line-height:1.6;
-}}
-
-.regla-highlight {{
+}
+.regla-highlight {
     color:#4ade80;
     font-weight:bold;
-}}
-
-.regla-warning {{
+}
+.regla-warning {
     color:#facc15;
     font-weight:bold;
-}}
-
-@media (max-width: 768px) {{
-    .regla-box {{
+}
+@media (max-width: 768px) {
+    .regla-box {
         flex-direction:column;
         text-align:center;
-    }}
-}}
-
+    }
+}
 </style>
+""", unsafe_allow_html=True)
 
+# ==============================
+# BLOQUE HTML
+# ==============================
+st.markdown(f"""
 <div class="regla-box">
-
     <div class="regla-img" style="flex:1;">
         <img src="data:image/png;base64,{img_regla}">
     </div>
-
     <div class="regla-text" style="flex:2;">
         <h2>DEVS - REGLA</h2>
-
-        <p>
-        Para mantener el equilibrio y asegurar el crecimiento de la alianza, se realiza una 
-        <span class="regla-warning">LIMPIEZA semanal cada sábado por la noche</span>.
-        </p>
-
-        <p>
-        El objetivo es claro y accesible: cada miembro debe alcanzar al menos 
-        <span class="regla-highlight">500 puntos semanales</span>.
-        </p>
-
-        <p>
-        Esta meta puede lograrse fácilmente completando actividades diarias, sin necesidad de exigencias extremas.
-        </p>
-
-        <p>
-        Aquellos que cumplan o superen este valor continúan formando parte del equipo.
-        En caso contrario, se considerará dar oportunidad a nuevos miembros que puedan aportar al progreso del gremio.
-        </p>
-
-        <p>
-        Esta medida no busca excluir, sino 
-        <span class="regla-highlight">mantener un entorno activo, justo y comprometido para todos</span>, ya que 
-        la recompenza es para el que verdaderamente se esfuerza y aporta.
-        </p>
+        <p>Para mantener el equilibrio y asegurar el crecimiento de la alianza, se realiza una 
+        <span class="regla-warning">LIMPIEZA semanal cada sábado por la noche</span>.</p>
+        <p>El objetivo es claro y accesible: cada miembro debe alcanzar al menos 
+        <span class="regla-highlight">500 puntos semanales</span>.</p>
+        <p>Esta meta puede lograrse fácilmente completando actividades diarias, sin necesidad de exigencias extremas.</p>
+        <p>Quienes cumplan o superen este valor continúan formando parte del equipo. En caso contrario, se dará oportunidad a nuevos miembros que puedan aportar al progreso del gremio.</p>
+        <p>Esta medida no busca excluir, sino 
+        <span class="regla-highlight">mantener un entorno activo, justo y comprometido para todos</span>, ya que la recompensa es para el que verdaderamente se esfuerza y aporta.</p>
     </div>
-
 </div>
 """, unsafe_allow_html=True)
+
 
 st.divider()
 
