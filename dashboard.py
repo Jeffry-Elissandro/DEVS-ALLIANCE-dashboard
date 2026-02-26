@@ -511,6 +511,102 @@ st.divider()
 
 
 
+
+
+# ==============================
+# REGLAS DE RENDIMIENTO Y LIMPIEZA
+# ==============================
+
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+img_regla = img_base64("guild_rules.png")  # ← tu imagen aquí
+
+
+st.markdown(f"""
+<div style="
+    display:flex;
+    align-items:center;
+    gap:25px;
+    max-width:1100px;
+    margin:50px auto;
+    padding:30px;
+    background:linear-gradient(135deg, rgba(34,197,94,0.12), rgba(59,130,246,0.10));
+    border-radius:20px;
+    box-shadow:0 0 35px rgba(0,0,0,0.35);
+    border:1px solid rgba(34,197,94,0.35);
+">
+
+    <!-- Imagen -->
+    <div style="flex:1; text-align:center;">
+        <img src="data:image/png;base64,{img_regla}" style="
+            max-width:100%;
+            border-radius:16px;
+            box-shadow:0 0 25px rgba(34,197,94,0.4);
+        ">
+    </div>
+
+    <!-- Texto -->
+    <div style="flex:2;">
+
+        <h2 style="
+            color:#86efac;
+            margin-bottom:12px;
+            text-shadow:0 0 12px rgba(34,197,94,0.6);
+        ">
+        📊 Sistema de Rendimiento del Gremio
+        </h2>
+
+        <p style="color:#e5e7eb; font-size:15px; line-height:1.6;">
+        Nuestro objetivo es crecer como equipo, y para lograrlo necesitamos compromiso de todos.
+        Cada semana, un miembro puede alcanzar hasta <strong>830 puntos</strong>.
+        </p>
+
+        <p style="color:#d1fae5; font-size:16px; margin-top:10px;">
+        💠 Meta mínima para permanecer: <strong style="color:#4ade80;">500 puntos</strong>
+        </p>
+
+        <p style="color:#e5e7eb; font-size:14px; margin-top:12px;">
+        Esta meta es accesible y puede lograrse completando actividades diarias.
+        Sabemos que todos tienen responsabilidades, por eso damos el tiempo suficiente.
+        </p>
+
+        <hr style="border:0.5px solid rgba(255,255,255,0.1); margin:15px 0;">
+
+        <p style="color:#fde68a; font-size:15px;">
+        🗓 <strong>Limpieza del gremio:</strong> Cada <strong>Sábado por la noche</strong>
+        </p>
+
+        <p style="color:#e5e7eb; font-size:14px;">
+        Ese día revisamos el rendimiento general y damos una última oportunidad para alcanzar la meta.
+        </p>
+
+        <p style="color:#c7d2fe; font-size:14px; margin-top:10px;">
+        Los miembros que cumplan o superen la meta continúan sin problema.
+        En caso contrario, se dará prioridad a nuevos integrantes que puedan aportar al crecimiento del equipo.
+        </p>
+
+        <p style="color:#93c5fd; font-size:13px; margin-top:12px;">
+        💬 Este sistema no busca excluir, sino mantener el equilibrio y el progreso del gremio.
+        </p>
+
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+st.divider()
+
+
+
+
+
+
+
+
+
 #Para destacados por daño en BILLONES
 
 
