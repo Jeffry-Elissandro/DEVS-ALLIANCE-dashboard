@@ -796,7 +796,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 9355   # Oro actual
+puntaje_actual = 11145   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2219,7 +2219,6 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Military Goth", "imagen": "7.png"},
     {"nombre": "mamisiliconn", "imagen": "14.png"},
     {"nombre": "Aesick4u", "imagen": "18.png"},
     {"nombre": "Skullgirls10503537", "imagen": "20.png"},
@@ -2321,7 +2320,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_5.png"
+nombre_imagen = "skull_meme_6.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2373,7 +2372,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            XD
+            haces tus momos en el skull
         </p>
 
     </div>
