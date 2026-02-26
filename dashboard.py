@@ -545,6 +545,11 @@ st.markdown("""
     align-items:center;
     gap:30px;
 }
+.regla-box:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: 0 0 45px rgba(34,197,94,0.35);
+}
 .regla-img img {
     max-width:100%;
     border-radius:16px;
