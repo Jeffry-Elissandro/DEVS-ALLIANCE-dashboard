@@ -496,7 +496,7 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # Diccionario de opciones: nombre corto -> archivo
+    # Opciones: nombre corto -> archivo
     opciones = {
         "🌌 Tipe beat": "tipe_beat_web.mp3",
         "🎤 R&B": "tipe_beat_web R&B Remix.mp3",
@@ -505,31 +505,37 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         "🎧 Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
     }
 
-    # CSS para botones llamativos
+    # CSS para botones llamativos con animación
     st.markdown("""
     <style>
     .music-buttons {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 15px;
         justify-content: center;
-        margin: 15px 0;
+        margin: 20px 0;
     }
     .music-buttons button {
-        padding: 12px 20px;
-        border-radius: 10px;
+        padding: 14px 24px;
+        border-radius: 12px;
         border: none;
         font-weight: bold;
         cursor: pointer;
         color: white;
+        font-size: 16px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-        font-size: 15px;
+        animation: pulse 3s infinite;
     }
     .music-buttons button:hover {
         transform: scale(1.08);
-        box-shadow: 0 0 15px rgba(255,255,255,0.6);
+        box-shadow: 0 0 20px rgba(255,255,255,0.7);
     }
-    /* Colores distintos por botón */
+    @keyframes pulse {
+        0% { box-shadow: 0 0 10px rgba(255,255,255,0.3); }
+        50% { box-shadow: 0 0 25px rgba(255,255,255,0.6); }
+        100% { box-shadow: 0 0 10px rgba(255,255,255,0.3); }
+    }
+    /* Colores distintos */
     .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
     .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
     .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
@@ -538,7 +544,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </style>
     """, unsafe_allow_html=True)
 
-    # Crear botones en fila
+    # Mostrar botones en fila
     col1, col2, col3, col4, col5 = st.columns(5)
     if col1.button("🌌 Tipe beat"):
         st.session_state["musica"] = opciones["🌌 Tipe beat"]
@@ -554,6 +560,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     # Reproducir la pista seleccionada
     if "musica" in st.session_state:
         st.audio(st.session_state["musica"], format="audio/mp3", loop=True)
+
 
 
 
