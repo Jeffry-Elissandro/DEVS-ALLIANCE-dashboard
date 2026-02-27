@@ -496,70 +496,68 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # Opciones: nombre corto -> archivo
+    # Diccionario de opciones: nombre corto -> archivo
     opciones = {
-        "🌌 Tipe beat": "tipe_beat_web.mp3",
-        "🎤 R&B": "tipe_beat_web R&B Remix.mp3",
-        "🎸 Rock": "tipe_beat_web Rock Remix.mp3",
-        "🔥 Trap": "tipe_beat_web Trap Remix.mp3",
-        "🎧 Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
+        "Tipe beat": "tipe_beat_web.mp3",
+        "R&B": "tipe_beat_web R&B Remix.mp3",
+        "Rock": "tipe_beat_web Rock Remix.mp3",
+        "Trap": "tipe_beat_web Trap Remix.mp3",
+        "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
     }
 
-    # CSS para estilo tipo "card"
+    # CSS para botones centrados y coloridos
     st.markdown("""
     <style>
-    .music-card {
-        display: inline-block;
-        padding: 14px 22px;
-        margin: 8px;
-        border-radius: 12px;
+    .music-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    .music-buttons button {
+        padding: 12px 20px;
+        border-radius: 10px;
+        border: none;
         font-weight: bold;
         cursor: pointer;
         color: white;
-        font-size: 16px;
+        font-size: 15px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .music-card:hover {
+    .music-buttons button:hover {
         transform: scale(1.08);
-        box-shadow: 0 0 20px rgba(255,255,255,0.7);
+        box-shadow: 0 0 15px rgba(255,255,255,0.6);
     }
-    /* Colores */
     .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
     .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
     .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
     .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
     .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
-    /* Activo */
-    .active {
-        border: 2px solid #fff;
-        box-shadow: 0 0 25px rgba(255,255,255,0.9);
-        animation: glow 2s infinite alternate;
-    }
-    @keyframes glow {
-        from { box-shadow: 0 0 15px rgba(255,255,255,0.6); }
-        to { box-shadow: 0 0 30px rgba(255,255,255,1); }
-    }
     </style>
     """, unsafe_allow_html=True)
 
-    # Mostrar botones tipo card
-    for nombre, archivo in opciones.items():
-        clase = "music-card "
-        if "musica" in st.session_state and st.session_state["musica"] == archivo:
-            clase += "active"
-        else:
-            if "Tipe" in nombre: clase += "btn-tipe"
-            elif "R&B" in nombre: clase += "btn-rnb"
-            elif "Rock" in nombre: clase += "btn-rock"
-            elif "Trap" in nombre: clase += "btn-trap"
-            elif "Lo-Fi" in nombre: clase += "btn-lofi"
+    # Mostrar botones en fila
+    col1, col2, col3, col4, col5 = st.columns(5)
+    if col1.button("Tipe beat"):
+        st.session_state["musica"] = opciones["Tipe beat"]
+    if col2.button("R&B"):
+        st.session_state["musica"] = opciones["R&B"]
+    if col3.button("Rock"):
+        st.session_state["musica"] = opciones["Rock"]
+    if col4.button("Trap"):
+        st.session_state["musica"] = opciones["Trap"]
+    if col5.button("Lo-Fi"):
+        st.session_state["musica"] = opciones["Lo-Fi"]
 
-        if st.button(nombre):
-            st.session_state["musica"] = archivo
-
-    # Reproducir la pista seleccionada
+    # Reproducir la pista seleccionada en loop sin barra
     if "musica" in st.session_state:
-        st.audio(st.session_state["musica"], format="audio/mp3", loop=True)
+        st.markdown(f"""
+        <audio autoplay loop hidden>
+            <source src="{st.session_state['musica']}" type="audio/mp3">
+        </audio>
+        """, unsafe_allow_html=True)
+
 
 
 
