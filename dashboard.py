@@ -958,7 +958,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 12595   # Oro actual
+puntaje_actual = 13675   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2097,7 +2097,7 @@ img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
-img12 = img_base64("12.png")
+img12 = img_base64("Imagen_para_testeos.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
@@ -2236,7 +2236,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img12}">
-  <span>black lagoon69</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2381,7 +2381,6 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "mamisiliconn", "imagen": "14.png"},
     {"nombre": "Aesick4u", "imagen": "18.png"},
     {"nombre": "Skullgirls10503537", "imagen": "20.png"},
 ]
@@ -2482,7 +2481,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_6.png"
+nombre_imagen = "skull_meme_7.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2534,7 +2533,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            haces tus momos en el skull
+            aunque sea 15
         </p>
 
     </div>
