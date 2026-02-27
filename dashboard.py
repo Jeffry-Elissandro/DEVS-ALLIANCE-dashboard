@@ -950,7 +950,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 13675   # Oro actual
+puntaje_actual = 14090   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2089,7 +2089,7 @@ img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
-img12 = img_base64("Imagen_para_testeos.png")
+img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
@@ -2228,7 +2228,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img12}">
-  <span>DISPONIBLE</span>
+  <span>dayia</span>
 </div>
 
 <div class="dev-card">
@@ -2375,6 +2375,7 @@ nuevos_miembros = [
 
     {"nombre": "Aesick4u", "imagen": "18.png"},
     {"nombre": "Skullgirls10503537", "imagen": "20.png"},
+    {"nombre": "dayia", "imagen": "12.png"},
 ]
 
 
