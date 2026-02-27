@@ -496,7 +496,7 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # Diccionario de opciones: nombre corto -> archivo
+    # Opciones: nombre corto -> archivo
     opciones = {
         "Tipe beat": "tipe_beat_web.mp3",
         "R&B": "tipe_beat_web R&B Remix.mp3",
@@ -511,15 +511,12 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .music-buttons {
         display: flex;
         justify-content: center;
-        gap: 15px;
-        margin: 20px 0;
+        gap: 18px;
+        margin: 25px 0;
         flex-wrap: wrap;
     }
-    .music-buttons form {
-        display: inline;
-    }
     .music-buttons button {
-        padding: 14px 24px;
+        padding: 14px 26px;
         border-radius: 12px;
         border: none;
         font-weight: bold;
@@ -542,22 +539,22 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
     # Mostrar botones centrados
     st.markdown('<div class="music-buttons">', unsafe_allow_html=True)
-    if st.button("Tipe beat", key="tipe"):
+    if st.button("Tipe beat"):
         st.session_state["musica"] = opciones["Tipe beat"]
-    if st.button("R&B", key="rnb"):
+    if st.button("R&B"):
         st.session_state["musica"] = opciones["R&B"]
-    if st.button("Rock", key="rock"):
+    if st.button("Rock"):
         st.session_state["musica"] = opciones["Rock"]
-    if st.button("Trap", key="trap"):
+    if st.button("Trap"):
         st.session_state["musica"] = opciones["Trap"]
-    if st.button("Lo-Fi", key="lofi"):
+    if st.button("Lo-Fi"):
         st.session_state["musica"] = opciones["Lo-Fi"]
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Reproducir la pista seleccionada en loop sin barra visible
     if "musica" in st.session_state:
         st.markdown(f"""
-        <audio autoplay loop>
+        <audio autoplay loop style="display:none;">
             <source src="{st.session_state['musica']}" type="audio/mp3">
         </audio>
         """, unsafe_allow_html=True)
