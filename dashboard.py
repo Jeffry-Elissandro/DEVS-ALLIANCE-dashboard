@@ -525,27 +525,37 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
     .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
     </style>
-
-    <div class="music-buttons">
-        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
-        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
-        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
-        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
-        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
-    </div>
-
-    <audio id="bg-music" loop></audio>
-
-    <script>
-    function playMusic(file) {
-        var player = document.getElementById('bg-music');
-        player.src = file;
-        player.play();
-    }
-    </script>
     """, unsafe_allow_html=True)
 
+    # Opciones de música
+    opciones = {
+        "Tipe beat": "tipe_beat_web.mp3",
+        "R&B": "tipe_beat_web R&B Remix.mp3",
+        "Rock": "tipe_beat_web Rock Remix.mp3",
+        "Trap": "tipe_beat_web Trap Remix.mp3",
+        "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
+    }
 
+    # Mostrar botones
+    col1, col2, col3, col4, col5 = st.columns(5)
+    if col1.button("Tipe beat"):
+        st.session_state["musica"] = opciones["Tipe beat"]
+    if col2.button("R&B"):
+        st.session_state["musica"] = opciones["R&B"]
+    if col3.button("Rock"):
+        st.session_state["musica"] = opciones["Rock"]
+    if col4.button("Trap"):
+        st.session_state["musica"] = opciones["Trap"]
+    if col5.button("Lo-Fi"):
+        st.session_state["musica"] = opciones["Lo-Fi"]
+
+    # Reproducir la pista seleccionada en loop sin barra visible
+    if "musica" in st.session_state:
+        st.markdown(f"""
+        <audio autoplay loop style="display:none;">
+            <source src="{st.session_state['musica']}" type="audio/mp3">
+        </audio>
+        """, unsafe_allow_html=True)
 
 
 st.divider()
