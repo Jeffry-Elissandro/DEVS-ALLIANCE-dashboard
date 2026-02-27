@@ -496,7 +496,6 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # HTML + JS para un player invisible controlado por botones
     st.markdown("""
     <style>
     .music-buttons {
@@ -536,6 +535,12 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </div>
 
     <audio id="bg-music" loop></audio>
+                
+    # Reproducir la pista seleccionada en loop sin barra visible
+    if "musica" in st.session_state:
+            <audio autoplay loop style="display:none;">
+                <source src="{st.session_state['musica']}" type="audio/mp3">
+            </audio>
 
     <script>
     function playMusic(file) {
