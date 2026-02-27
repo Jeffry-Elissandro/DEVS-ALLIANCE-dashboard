@@ -496,7 +496,7 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # Diccionario de opciones: nombre corto -> archivo
+    # Opciones: nombre corto -> archivo
     opciones = {
         "Tipe beat": "tipe_beat_web.mp3",
         "R&B": "tipe_beat_web R&B Remix.mp3",
@@ -516,18 +516,18 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         flex-wrap: wrap;
     }
     .music-buttons button {
-        padding: 12px 20px;
-        border-radius: 10px;
+        padding: 14px 24px;
+        border-radius: 12px;
         border: none;
         font-weight: bold;
         cursor: pointer;
         color: white;
-        font-size: 15px;
+        font-size: 16px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .music-buttons button:hover {
         transform: scale(1.08);
-        box-shadow: 0 0 15px rgba(255,255,255,0.6);
+        box-shadow: 0 0 20px rgba(255,255,255,0.7);
     }
     .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
     .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
@@ -557,9 +557,6 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
             <source src="{st.session_state['musica']}" type="audio/mp3">
         </audio>
         """, unsafe_allow_html=True)
-
-
-
 
 
 
