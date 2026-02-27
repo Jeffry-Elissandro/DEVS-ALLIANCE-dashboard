@@ -496,7 +496,7 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # Opciones: nombre corto -> archivo
+    # Diccionario de opciones: nombre corto -> archivo
     opciones = {
         "Tipe beat": "tipe_beat_web.mp3",
         "R&B": "tipe_beat_web R&B Remix.mp3",
@@ -505,7 +505,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
     }
 
-    # CSS para botones centrados y coloridos
+    # CSS para botones coloridos y centrados
     st.markdown("""
     <style>
     .music-buttons {
@@ -514,6 +514,9 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         gap: 15px;
         margin: 20px 0;
         flex-wrap: wrap;
+    }
+    .music-buttons form {
+        display: inline;
     }
     .music-buttons button {
         padding: 14px 24px;
@@ -537,23 +540,24 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </style>
     """, unsafe_allow_html=True)
 
-    # Mostrar botones en fila
-    col1, col2, col3, col4, col5 = st.columns(5)
-    if col1.button("Tipe beat"):
+    # Mostrar botones centrados
+    st.markdown('<div class="music-buttons">', unsafe_allow_html=True)
+    if st.button("Tipe beat", key="tipe"):
         st.session_state["musica"] = opciones["Tipe beat"]
-    if col2.button("R&B"):
+    if st.button("R&B", key="rnb"):
         st.session_state["musica"] = opciones["R&B"]
-    if col3.button("Rock"):
+    if st.button("Rock", key="rock"):
         st.session_state["musica"] = opciones["Rock"]
-    if col4.button("Trap"):
+    if st.button("Trap", key="trap"):
         st.session_state["musica"] = opciones["Trap"]
-    if col5.button("Lo-Fi"):
+    if st.button("Lo-Fi", key="lofi"):
         st.session_state["musica"] = opciones["Lo-Fi"]
+    st.markdown('</div>', unsafe_allow_html=True)
 
-    # Reproducir la pista seleccionada en loop sin barra
+    # Reproducir la pista seleccionada en loop sin barra visible
     if "musica" in st.session_state:
         st.markdown(f"""
-        <audio autoplay loop hidden>
+        <audio autoplay loop>
             <source src="{st.session_state['musica']}" type="audio/mp3">
         </audio>
         """, unsafe_allow_html=True)
