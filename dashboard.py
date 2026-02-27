@@ -489,22 +489,63 @@ st.markdown(css + html, unsafe_allow_html=True)
 
 #Para ambientar la web (bloque opcional)
 
+import streamlit as st
+
 st.markdown("## 🌿 Ambiente")
 
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
-    st.caption(
-        "Activa el sonido si deseas una experiencia más inmersiva. "
-    )
+    st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    st.audio(
+    # Opciones de música
+    opciones = [
+        "tipe_beat_web.mp3 (Original)",
         "tipe_beat_web R&B Remix.mp3",
-        format="audio/mp3",
-        loop=True
-    )
+        "tipe_beat_web Rock Remix.mp3",
+        "tipe_beat_web Trap Remix.mp3",
+        "tipe_beat_web Lo-Fi Remix.mp3"
+    ]
 
+    # Selector
+    seleccion = st.selectbox("🎶 Selecciona la versión:", opciones)
 
+    # Reproducir la pista seleccionada
+    st.audio(seleccion.split(" (")[0], format="audio/mp3", loop=True)
 
+    # Diseño llamativo con HTML/CSS
+    st.markdown("""
+    <style>
+    .music-card {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #1a102d, #3b0764);
+        border-radius: 15px;
+        border: 2px solid rgba(167,139,250,0.45);
+        box-shadow: 0 0 25px rgba(167,139,250,0.6);
+        text-align: center;
+        color: #e9d5ff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .music-card h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #c084fc, #a78bfa, #7c3aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientShift 8s ease infinite;
+    }
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    </style>
 
+    <div class="music-card">
+        <h4>Música Ambiental DEV</h4>
+        <p>Disfruta de un beat suave o sus remixes para acompañar tu experiencia.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 
 st.divider()
