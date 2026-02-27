@@ -526,6 +526,14 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
     .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
     </style>
+                
+    <div class="music-buttons">
+        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
+        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
+        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
+        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
+        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
+    </div>
     """, unsafe_allow_html=True)
 
     # Diccionario de opciones: nombre corto -> archivo
