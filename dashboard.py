@@ -498,14 +498,14 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 
     # Diccionario de opciones: nombre corto -> archivo
     opciones = {
-        "Tipe beat": "tipe_beat_web.mp3",
-        "R&B": "tipe_beat_web R&B Remix.mp3",
-        "Rock": "tipe_beat_web Rock Remix.mp3",
-        "Trap": "tipe_beat_web Trap Remix.mp3",
-        "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
+        "🌌 Tipe beat": "tipe_beat_web.mp3",
+        "🎤 R&B": "tipe_beat_web R&B Remix.mp3",
+        "🎸 Rock": "tipe_beat_web Rock Remix.mp3",
+        "🔥 Trap": "tipe_beat_web Trap Remix.mp3",
+        "🎧 Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
     }
 
-    # Estilos CSS para botones llamativos
+    # CSS para botones llamativos
     st.markdown("""
     <style>
     .music-buttons {
@@ -516,13 +516,14 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         margin: 15px 0;
     }
     .music-buttons button {
-        padding: 10px 18px;
-        border-radius: 8px;
+        padding: 12px 20px;
+        border-radius: 10px;
         border: none;
         font-weight: bold;
         cursor: pointer;
         color: white;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+        font-size: 15px;
     }
     .music-buttons button:hover {
         transform: scale(1.08);
@@ -537,32 +538,23 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </style>
     """, unsafe_allow_html=True)
 
-    # Mostrar botones
+    # Crear botones en fila
     col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        if st.button("Tipe beat", key="tipe"):
-            seleccion = opciones["Tipe beat"]
-            st.session_state["musica"] = seleccion
-    with col2:
-        if st.button("R&B", key="rnb"):
-            seleccion = opciones["R&B"]
-            st.session_state["musica"] = seleccion
-    with col3:
-        if st.button("Rock", key="rock"):
-            seleccion = opciones["Rock"]
-            st.session_state["musica"] = seleccion
-    with col4:
-        if st.button("Trap", key="trap"):
-            seleccion = opciones["Trap"]
-            st.session_state["musica"] = seleccion
-    with col5:
-        if st.button("Lo-Fi", key="lofi"):
-            seleccion = opciones["Lo-Fi"]
-            st.session_state["musica"] = seleccion
+    if col1.button("🌌 Tipe beat"):
+        st.session_state["musica"] = opciones["🌌 Tipe beat"]
+    if col2.button("🎤 R&B"):
+        st.session_state["musica"] = opciones["🎤 R&B"]
+    if col3.button("🎸 Rock"):
+        st.session_state["musica"] = opciones["🎸 Rock"]
+    if col4.button("🔥 Trap"):
+        st.session_state["musica"] = opciones["🔥 Trap"]
+    if col5.button("🎧 Lo-Fi"):
+        st.session_state["musica"] = opciones["🎧 Lo-Fi"]
 
     # Reproducir la pista seleccionada
     if "musica" in st.session_state:
         st.audio(st.session_state["musica"], format="audio/mp3", loop=True)
+
 
 
 st.divider()
