@@ -527,25 +527,26 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </style>
 
     <div class="music-buttons">
-        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
-        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
-        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
-        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
-        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
+        <form method="post">
+            <button class="btn-tipe" name="musica" value="tipe_beat_web.mp3">Tipe beat</button>
+            <button class="btn-rnb" name="musica" value="tipe_beat_web R&B Remix.mp3">R&B</button>
+            <button class="btn-rock" name="musica" value="tipe_beat_web Rock Remix.mp3">Rock</button>
+            <button class="btn-trap" name="musica" value="tipe_beat_web Trap Remix.mp3">Trap</button>
+            <button class="btn-lofi" name="musica" value="tipe_beat_web Lo-Fi Remix.mp3">Lo-Fi</button>
+        </form>
     </div>
-
-    <audio id="bg-music" loop></audio>
-
-    <script>
-    function playMusic(file) {
-        var player = document.getElementById('bg-music');
-        player.src = file;
-        player.play();
-    }
-    </script>
     """, unsafe_allow_html=True)
 
+    # Capturar el valor del botón presionado
+    musica = st.experimental_get_query_params().get("musica", [None])[0]
 
+    # Reproducir la pista seleccionada en loop sin barra visible
+    if musica:
+        st.markdown(f"""
+        <audio autoplay loop style="display:none;">
+            <source src="{musica}" type="audio/mp3">
+        </audio>
+        """, unsafe_allow_html=True)
 
 
 st.divider()
