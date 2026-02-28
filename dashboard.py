@@ -556,16 +556,20 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
     </div>
 
-    <audio id="bg-music" loop autoplay style="display:none;"></audio>
+    <!-- Barra de reproducción visible -->
+    <audio id="bg-music" controls loop style="width:100%; margin-top:20px;"></audio>
 
     <script>
     function playMusic(file) {
         var player = document.getElementById('bg-music');
-        player.src = file;
-        player.play();
+        player.pause();          // detener cualquier reproducción previa
+        player.src = file;       // asignar nueva pista
+        player.load();           // recargar el elemento
+        player.play();           // iniciar reproducción
     }
     </script>
     """, unsafe_allow_html=True)
+
 
 
 
