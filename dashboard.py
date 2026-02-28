@@ -2286,7 +2286,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img20}">
-  <span>DISPONIBLE</span>
+  <span>Chopper:3</span>
 </div>
 
 <div class="dev-card">
