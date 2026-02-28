@@ -2912,56 +2912,50 @@ st.divider()
 
 import streamlit as st
 
-# Estilos avanzados con animaciones y efectos
 st.markdown("""
     <style>
+    body {
+        background: radial-gradient(circle at center, #0f0f0f, #000000);
+        overflow-x: hidden;
+    }
     .codigo-hub-section {
         padding: 60px 20px;
         text-align: center;
-        background-color: #0f0f0f;
         color: #ffffff;
         font-family: 'Arial', sans-serif;
         margin-top: 80px;
         position: relative;
+        z-index: 1;
+    }
+    /* Partículas */
+    .particles {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: 0;
         overflow: hidden;
     }
-    /* Animación de entrada */
-    .codigo-hub-section {
-        animation: fadeInUp 1.2s ease-out;
+    .particle {
+        position: absolute;
+        background: rgba(0,255,163,0.8);
+        border-radius: 50%;
+        animation: float 10s infinite ease-in-out;
     }
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
+    @keyframes float {
+        0% { transform: translateY(0) scale(1); opacity: 1; }
+        50% { transform: translateY(-50px) scale(1.2); opacity: 0.6; }
+        100% { transform: translateY(0) scale(1); opacity: 1; }
     }
     .codigo-hub-section__title {
         font-size: 2.8rem;
         font-weight: bold;
         margin-bottom: 10px;
-        text-shadow: 0 0 15px rgba(0,255,163,0.7);
-        transition: transform 0.3s ease;
+        text-shadow: 0 0 20px #00ffa3;
+        animation: glow 2s infinite alternate;
     }
-    .codigo-hub-section__title:hover {
-        transform: scale(1.05);
-        color: #00ffa3;
-    }
-    .codigo-hub-section__line {
-        width: 100px;
-        height: 4px;
-        background: linear-gradient(90deg, #00ffa3, #00c3ff);
-        margin: 0 auto 20px auto;
-        border-radius: 2px;
-        box-shadow: 0 0 10px rgba(0,255,163,0.8);
-        animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-        0% { transform: scaleX(1); opacity: 1; }
-        50% { transform: scaleX(1.2); opacity: 0.6; }
-        100% { transform: scaleX(1); opacity: 1; }
-    }
-    .codigo-hub-section__desc {
-        font-size: 1.2rem;
-        margin-bottom: 40px;
-        opacity: 0.9;
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #00ffa3; }
+        to { text-shadow: 0 0 25px #00c3ff; }
     }
     .codigo-hub-section__video {
         max-width: 800px;
@@ -2972,8 +2966,8 @@ st.markdown("""
         transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
     .codigo-hub-section__video:hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 40px rgba(0,255,163,0.9);
+        transform: scale(1.03);
+        box-shadow: 0 0 50px rgba(0,255,163,1);
     }
     iframe {
         width: 100%;
@@ -2983,13 +2977,18 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Sección con animaciones y efectos
+# Fondo con partículas
 st.markdown("""
+<div class="particles">
+  <div class="particle" style="width:10px; height:10px; top:20%; left:30%;"></div>
+  <div class="particle" style="width:8px; height:8px; top:50%; left:70%;"></div>
+  <div class="particle" style="width:12px; height:12px; top:80%; left:40%;"></div>
+</div>
+
 <div class="codigo-hub-section">
     <h2 class="codigo-hub-section__title">
         Mi <span>Último Video</span>
     </h2>
-    <div class="codigo-hub-section__line"></div>
     <p class="codigo-hub-section__desc">
         Aquí te comparto mi más reciente novedad en el canal.
     </p>
