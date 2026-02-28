@@ -490,15 +490,13 @@ st.markdown(css + html, unsafe_allow_html=True)
 #Para ambientar la web (bloque opcional)
 
 import streamlit as st
-import streamlit.components.v1 as components
 
 st.markdown("## 🌿 Ambiente")
 
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # Estilos para los botones
-    styles = """
+    st.markdown("""
     <style>
     .music-buttons {
         display: flex;
@@ -527,10 +525,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
     .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
     </style>
-    """
 
-    # Botones
-    buttons_html = """
     <div class="music-buttons">
         <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
         <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
@@ -538,29 +533,17 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
         <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
     </div>
-    """
 
-    # Elemento de audio oculto
-    audio_html = """
-    <audio id="bg-music" loop style="display:none"></audio>
-    """
+    <audio id="bg-music" loop autoplay style="display:none;"></audio>
 
-    # Script JavaScript
-    script = """
     <script>
     function playMusic(file) {
-        const player = document.getElementById('bg-music');
+        var player = document.getElementById('bg-music');
         player.src = file;
         player.play();
     }
     </script>
-    """
-
-    # Unir todo
-    html_content = styles + buttons_html + audio_html + script
-
-    # Mostrar sin height fijo
-    components.html(html_content)
+    """, unsafe_allow_html=True)
 
 
 
