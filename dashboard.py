@@ -518,9 +518,10 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # CSS para los botones
+    # CSS para los botones con estilo
     st.markdown("""
     <style>
+    /* Estilo para la sección de botones */
     .music-buttons {
         display: flex;
         justify-content: center;
@@ -528,6 +529,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         margin: 25px 0;
         flex-wrap: wrap;
     }
+    /* Estilo para cada botón */
     .music-buttons button {
         padding: 14px 26px;
         border-radius: 12px;
@@ -538,10 +540,12 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         font-size: 16px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+    /* Hover para los botones */
     .music-buttons button:hover {
         transform: scale(1.08);
         box-shadow: 0 0 20px rgba(255,255,255,0.7);
     }
+    /* Colores con gradiente para cada botón */
     .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
     .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
     .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
@@ -550,7 +554,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </style>
     """, unsafe_allow_html=True)
 
-    # Lista de canciones
+    # Diccionario de canciones
     canciones = {
         "Tipe beat": "tipe_beat_web.mp3",
         "R&B": "tipe_beat_web R&B Remix.mp3",
@@ -559,17 +563,16 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
     }
 
-    # Variable para almacenar la canción seleccionada
+    # Crear los botones con estilo
     if 'selected_song' not in st.session_state:
         st.session_state['selected_song'] = None
 
-    # Crear los botones con estilos
     cols = st.columns(5)
     for idx, (nombre, archivo) in enumerate(canciones.items()):
-        if cols[idx].button(nombre, key=nombre):
+        if cols[idx].button(nombre, key=nombre, help=f"Reproducir {nombre}"):
             st.session_state['selected_song'] = archivo
 
-    # Reproduce la canción seleccionada
+    # Reproducir la canción seleccionada
     if st.session_state['selected_song']:
         st.audio(st.session_state['selected_song'], format='mp3', autoplay=True, loop=True)
 
