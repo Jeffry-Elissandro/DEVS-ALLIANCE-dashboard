@@ -2917,64 +2917,26 @@ import streamlit as st
 
 st.markdown("""
     <style>
-    /* Encapsulamos todo dentro de #ultimo-video-section */
-    #ultimo-video-section {
-        padding: 60px 20px;
-        text-align: center;
-        color: #ffffff;
-        font-family: 'Arial', sans-serif;
-        margin-top: 80px;
-        position: relative;
-        z-index: 1;
-        animation: fadeInUp 1.2s ease-out;
-    }
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Partículas SOLO dentro de esta sección */
-    #ultimo-video-section .particles {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        z-index: 0;
-        overflow: hidden;
-        pointer-events: none;
-    }
-    #ultimo-video-section .particle {
-        position: absolute;
-        background: rgba(0,255,163,0.8);
-        border-radius: 50%;
-        animation: float 15s infinite ease-in-out;
-    }
-    @keyframes float {
-        0% { transform: translateY(0) translateX(0); opacity: 1; }
-        25% { transform: translateY(-60px) translateX(30px); opacity: 0.7; }
-        50% { transform: translateY(-30px) translateX(-30px); opacity: 0.5; }
-        75% { transform: translateY(40px) translateX(20px); opacity: 0.8; }
-        100% { transform: translateY(0) translateX(0); opacity: 1; }
-    }
-
-    /* Título encapsulado */
-    #ultimo-video-section .codigo-hub-section__title {
-        font-size: 2.8rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-shadow: 0 0 15px #00ffa3, 0 0 30px #00c3ff;
-        animation: glow 2s infinite alternate;
-        transition: transform 0.3s ease;
-    }
-    @keyframes glow {
+    /* Encapsulado: SOLO afecta a .ultimo-video-title */
+    @keyframes greenGlow {
         from { text-shadow: 0 0 15px #00ffa3; }
         to { text-shadow: 0 0 30px #00c3ff; }
     }
-    #ultimo-video-section .codigo-hub-section__title:hover {
+
+    .ultimo-video-title {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-shadow: 0 0 15px #00ffa3, 0 0 30px #00c3ff;
+        animation: greenGlow 2s infinite alternate;
+        transition: transform 0.3s ease;
+    }
+    .ultimo-video-title:hover {
         transform: scale(1.08);
     }
 
-    /* Línea decorativa encapsulada */
-    #ultimo-video-section .codigo-hub-section__line {
+    .ultimo-video-line {
         width: 100px;
         height: 4px;
         background: linear-gradient(90deg, #00ffa3, #00c3ff);
@@ -2989,8 +2951,7 @@ st.markdown("""
         100% { transform: scaleX(1); opacity: 1; }
     }
 
-    /* Video encapsulado */
-    #ultimo-video-section .codigo-hub-section__video {
+    .ultimo-video-box {
         max-width: 800px;
         margin: 0 auto;
         border-radius: 12px;
@@ -2998,12 +2959,11 @@ st.markdown("""
         box-shadow: 0 0 25px rgba(0,255,163,0.6);
         transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
-    #ultimo-video-section .codigo-hub-section__video:hover {
+    .ultimo-video-box:hover {
         transform: scale(1.03);
         box-shadow: 0 0 50px rgba(0,255,163,1);
     }
-
-    #ultimo-video-section iframe {
+    iframe {
         width: 100%;
         height: 450px;
         border: none;
@@ -3011,28 +2971,17 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Sección encapsulada
+# Sección "Mi Último Video" con clases exclusivas
 st.markdown("""
-<div id="ultimo-video-section">
-  <div class="particles">
-    <div class="particle" style="width:12px; height:12px; top:20%; left:30%;"></div>
-    <div class="particle" style="width:8px; height:8px; top:50%; left:70%;"></div>
-    <div class="particle" style="width:10px; height:10px; top:80%; left:40%;"></div>
-    <div class="particle" style="width:14px; height:14px; top:35%; left:55%;"></div>
-    <div class="particle" style="width:9px; height:9px; top:15%; left:80%;"></div>
-    <div class="particle" style="width:11px; height:11px; top:65%; left:20%;"></div>
-    <div class="particle" style="width:7px; height:7px; top:75%; left:60%;"></div>
-    <div class="particle" style="width:13px; height:13px; top:45%; left:10%;"></div>
-  </div>
-
-  <h2 class="codigo-hub-section__title">
+<div style="padding:60px 20px; text-align:center; margin-top:80px;">
+  <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
-  <div class="codigo-hub-section__line"></div>
-  <p class="codigo-hub-section__desc">
+  <div class="ultimo-video-line"></div>
+  <p style="font-size:1.2rem; margin-bottom:40px;">
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
-  <div class="codigo-hub-section__video">
+  <div class="ultimo-video-box">
       <iframe src="https://www.youtube.com/embed/oDYnPPIvMl4" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
