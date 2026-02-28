@@ -2945,13 +2945,13 @@ st.markdown("""
         position: absolute;
         background: rgba(0,255,163,0.8);
         border-radius: 50%;
-        animation: float 12s infinite ease-in-out;
+        animation: float 15s infinite ease-in-out;
     }
     @keyframes float {
         0% { transform: translateY(0) translateX(0); opacity: 1; }
-        25% { transform: translateY(-40px) translateX(20px); opacity: 0.7; }
-        50% { transform: translateY(-20px) translateX(-20px); opacity: 0.5; }
-        75% { transform: translateY(30px) translateX(10px); opacity: 0.8; }
+        25% { transform: translateY(-60px) translateX(30px); opacity: 0.7; }
+        50% { transform: translateY(-30px) translateX(-30px); opacity: 0.5; }
+        75% { transform: translateY(40px) translateX(20px); opacity: 0.8; }
         100% { transform: translateY(0) translateX(0); opacity: 1; }
     }
     /* Título con glow */
@@ -3006,13 +3006,17 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Fondo con partículas y sección
+# Fondo con muchas partículas
 st.markdown("""
 <div class="particles">
   <div class="particle" style="width:12px; height:12px; top:20%; left:30%;"></div>
   <div class="particle" style="width:8px; height:8px; top:50%; left:70%;"></div>
   <div class="particle" style="width:10px; height:10px; top:80%; left:40%;"></div>
   <div class="particle" style="width:14px; height:14px; top:35%; left:55%;"></div>
+  <div class="particle" style="width:9px; height:9px; top:15%; left:80%;"></div>
+  <div class="particle" style="width:11px; height:11px; top:65%; left:20%;"></div>
+  <div class="particle" style="width:7px; height:7px; top:75%; left:60%;"></div>
+  <div class="particle" style="width:13px; height:13px; top:45%; left:10%;"></div>
 </div>
 
 <div class="codigo-hub-section">
