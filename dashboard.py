@@ -2912,7 +2912,7 @@ st.divider()
 
 import streamlit as st
 
-# Estilos CSS para la sección final
+# Estilos avanzados con animaciones y efectos
 st.markdown("""
     <style>
     .codigo-hub-section {
@@ -2921,32 +2921,59 @@ st.markdown("""
         background-color: #0f0f0f;
         color: #ffffff;
         font-family: 'Arial', sans-serif;
-        margin-top: 80px; /* asegura que quede al final */
+        margin-top: 80px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* Animación de entrada */
+    .codigo-hub-section {
+        animation: fadeInUp 1.2s ease-out;
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
     }
     .codigo-hub-section__title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         font-weight: bold;
         margin-bottom: 10px;
+        text-shadow: 0 0 15px rgba(0,255,163,0.7);
+        transition: transform 0.3s ease;
     }
-    .codigo-hub-section__title span {
+    .codigo-hub-section__title:hover {
+        transform: scale(1.05);
         color: #00ffa3;
     }
     .codigo-hub-section__line {
-        width: 80px;
+        width: 100px;
         height: 4px;
-        background: #00ffa3;
+        background: linear-gradient(90deg, #00ffa3, #00c3ff);
         margin: 0 auto 20px auto;
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(0,255,163,0.8);
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0% { transform: scaleX(1); opacity: 1; }
+        50% { transform: scaleX(1.2); opacity: 0.6; }
+        100% { transform: scaleX(1); opacity: 1; }
     }
     .codigo-hub-section__desc {
         font-size: 1.2rem;
         margin-bottom: 40px;
+        opacity: 0.9;
     }
     .codigo-hub-section__video {
         max-width: 800px;
         margin: 0 auto;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 0 20px rgba(0,255,163,0.5);
+        box-shadow: 0 0 25px rgba(0,255,163,0.6);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .codigo-hub-section__video:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 40px rgba(0,255,163,0.9);
     }
     iframe {
         width: 100%;
@@ -2956,7 +2983,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Sección "Mi último video"
+# Sección con animaciones y efectos
 st.markdown("""
 <div class="codigo-hub-section">
     <h2 class="codigo-hub-section__title">
