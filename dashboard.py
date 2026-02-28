@@ -964,7 +964,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16785   # Oro actual
+puntaje_actual = 16980   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2115,7 +2115,7 @@ img16 = img_base64("16.png")
 img17 = img_base64("17.png")
 img18 = img_base64("18.png")
 img19 = img_base64("19.png")
-img20 = img_base64("Imagen_para_testeos.png")
+img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
