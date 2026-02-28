@@ -495,55 +495,56 @@ st.markdown("## 🌿 Ambiente")
 
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
+    col1, col2 = st.columns(2)
 
-    st.markdown("""
-    <style>
-    .music-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 18px;
-        margin: 25px 0;
-        flex-wrap: wrap;
-    }
-    .music-buttons button {
-        padding: 14px 26px;
-        border-radius: 12px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-        color: white;
-        font-size: 16px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .music-buttons button:hover {
-        transform: scale(1.08);
-        box-shadow: 0 0 20px rgba(255,255,255,0.7);
-    }
-    .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
-    .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
-    .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
-    .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
-    .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
-    </style>
+    with col1:
+        st.markdown("""
+        <style>
+       .music-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       .music-button {
+            background-color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+       .music-button:hover {
+            background-color: #444;
+        }
+        </style>
+        """)
 
-    <div class="music-buttons">
-        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
-        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
-        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
-        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
-        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
-    </div>
+        st.markdown("""
+        <button class="music-button" id="button1" onclick="playAudio('sound1')">Versión 1</button>
+        <button class="music-button" id="button2" onclick="playAudio('sound2')">Versión 2</button>
+        """)
 
-    <audio id="bg-music" loop autoplay style="display:none;"></audio>
+    with col2:
+        st.audio("", format="audio/wav")
 
-    <script>
-    function playMusic(file) {
-        var player = document.getElementById('bg-music');
-        player.src = file;
-        player.play();
-    }
-    </script>
-    """, unsafe_allow_html=True)
+st.js"""
+const audioElements = document.querySelectorAll('audio');
+const musicButtons = document.querySelectorAll('.music-button');
+
+musicButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const audioId = button.id.replace('button', '');
+    const audioElement = audioElements[0];
+    audioElement.src = `sound/${audioId}.wav`;
+    audioElement.play();
+  });
+});
+
+function playAudio(audioId) {
+  const audioElement = audioElements[0];
+  audioElement.src = `sound/${audioId}.wav`;
+  audioElement.play();
+}
+""")
 
 
 
