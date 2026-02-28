@@ -2895,12 +2895,86 @@ st.markdown("""
 
 
 
+st.divider()
 
 
 
 
 
 
+
+
+
+# ==============================
+# MIS ÚLTIMAS NOVEDADES
+# ==============================
+
+
+import streamlit as st
+
+# Estilos CSS para la sección final
+st.markdown("""
+    <style>
+    .codigo-hub-section {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #0f0f0f;
+        color: #ffffff;
+        font-family: 'Arial', sans-serif;
+        margin-top: 80px; /* asegura que quede al final */
+    }
+    .codigo-hub-section__title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .codigo-hub-section__title span {
+        color: #00ffa3;
+    }
+    .codigo-hub-section__line {
+        width: 80px;
+        height: 4px;
+        background: #00ffa3;
+        margin: 0 auto 20px auto;
+    }
+    .codigo-hub-section__desc {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+    .codigo-hub-section__video {
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,255,163,0.5);
+    }
+    iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Sección "Mi último video"
+st.markdown("""
+<div class="codigo-hub-section">
+    <h2 class="codigo-hub-section__title">
+        Mi <span>Último Video</span>
+    </h2>
+    <div class="codigo-hub-section__line"></div>
+    <p class="codigo-hub-section__desc">
+        Aquí te comparto mi más reciente novedad en el canal.
+    </p>
+    <div class="codigo-hub-section__video">
+        <iframe src="https://www.youtube.com/embed/oDYnPPIvMl4" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 
 
