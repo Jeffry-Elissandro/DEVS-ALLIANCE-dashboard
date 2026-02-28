@@ -992,7 +992,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1074,6 +1074,10 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+    <div style="text-align:center;">
+      <strong style="color:#ffffff;">Gracias</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
     </div>
     """,
