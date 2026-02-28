@@ -513,64 +513,59 @@ st.markdown(css + html, unsafe_allow_html=True)
 
 import streamlit as st
 
-# Añadir estilos CSS para botones coloridos
-st.markdown(
-    """
+st.markdown("## 🌿 Ambiente")
+
+with st.expander("🎧 Música ambiental (opcional)", expanded=False):
+    st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
+
+    st.markdown("""
     <style>
-       .music-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 18px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
-       .music-buttons button {
-            padding: 14px 26px;
-            border: none;
-            border-radius: 10px;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-        }
-       .music-buttons button:hover {
-            background-color: #3e8e41;
-        }
+    .music-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 25px 0;
+        flex-wrap: wrap;
+    }
+    .music-buttons button {
+        padding: 14px 26px;
+        border-radius: 12px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .music-buttons button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 20px rgba(255,255,255,0.7);
+    }
+    .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
+    .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
+    .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
+    .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
+    .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
     </style>
-    """,
-    unsafe_allow_html=True
-)
 
-# Título de la app
-st.title("Reproductor de Música con Botones Coloridos")
+    <div class="music-buttons">
+        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
+        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
+        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
+        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
+        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
+    </div>
 
-# Opciones de canciones disponibles
-canciones = {
-    "Canción 1": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    "Canción 2": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    "Canción 3": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
-}
+    <audio id="bg-music" loop autoplay style="display:none;"></audio>
 
-# Selección de canción
-opcion = st.selectbox("Elige una canción para reproducir:", list(canciones.keys()))
-
-# Mostrar botones con estilo
-st.markdown(
-    '<div class="music-buttons">',
-    unsafe_allow_html=True
-)
-
-# Crear botones para cada canción
-for nombre in canciones:
-    if st.button(nombre):
-        opcion = nombre  # Actualizar la opción si se presiona un botón
-
-st.markdown('</div>', unsafe_allow_html=True)
-
-# Reproducir la canción seleccionada o la elegida con el botón
-if opcion:
-    url_audio = canciones[opcion]
-    st.audio(url_audio, format='mp3')
+    <script>
+    function playMusic(file) {
+        var player = document.getElementById('bg-music');
+        player.src = file;
+        player.play();
+    }
+    </script>
+    """, unsafe_allow_html=True)
 
 
 
