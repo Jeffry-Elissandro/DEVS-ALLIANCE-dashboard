@@ -2393,6 +2393,7 @@ nuevos_miembros = [
 
     {"nombre": "Aesick4u", "imagen": "18.png"},
     {"nombre": "dayia", "imagen": "12.png"},
+    {"nombre": "Chopper:3", "imagen": "20.png"},
 ]
 
 
