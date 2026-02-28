@@ -518,6 +518,7 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
+    # Estilos CSS para los botones
     st.markdown("""
     <style>
     .music-buttons {
@@ -547,25 +548,30 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
     .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
     </style>
-
-    <div class="music-buttons">
-        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
-        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
-        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
-        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
-        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
-    </div>
-
-    <audio id="bg-music" loop autoplay style="display:none;"></audio>
-
-    <script>
-    function playMusic(file) {
-        var player = document.getElementById('bg-music');
-        player.src = file;
-        player.play();
-    }
-    </script>
     """, unsafe_allow_html=True)
+
+    # Variables para almacenar qué canción se selecciona
+    if 'selected_song' not in st.session_state:
+        st.session_state['selected_song'] = None
+
+    # Lista de canciones y archivos
+    canciones = {
+        "Tipe beat": "tipe_beat_web.mp3",
+        "R&B": "tipe_beat_web R&B Remix.mp3",
+        "Rock": "tipe_beat_web Rock Remix.mp3",
+        "Trap": "tipe_beat_web Trap Remix.mp3",
+        "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
+    }
+
+    # Crear los botones y asignarles acción
+    cols = st.columns(5)
+    for idx, (nombre, archivo) in enumerate(canciones.items()):
+        if cols[idx].button(nombre, key=nombre):
+            st.session_state['selected_song'] = archivo
+
+    # Mostrar el reproductor si hay una canción seleccionada
+    if st.session_state['selected_song']:
+        st.audio(st.session_state['selected_song'], format='mp3', autoplay=True, loop=True)
 
 
 
