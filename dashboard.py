@@ -942,7 +942,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15075   # Oro actual
+puntaje_actual = 15715   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2083,13 +2083,13 @@ img10 = img_base64("10.png")
 img11 = img_base64("11.png")
 img12 = img_base64("12.png")
 img13 = img_base64("13.png")
-img14 = img_base64("14.png")
+img14 = img_base64("Imagen_para_testeos.png")
 img15 = img_base64("15.png")
 img16 = img_base64("16.png")
 img17 = img_base64("17.png")
 img18 = img_base64("18.png")
 img19 = img_base64("19.png")
-img20 = img_base64("Imagen_para_testeos.png")
+img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
@@ -2230,7 +2230,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img14}">
-  <span>mamisiliconn</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2260,7 +2260,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img20}">
-  <span>DISPONIBLE</span>
+  <span>LoveyManny</span>
 </div>
 
 <div class="dev-card">
@@ -2367,6 +2367,7 @@ nuevos_miembros = [
 
     {"nombre": "Aesick4u", "imagen": "18.png"},
     {"nombre": "dayia", "imagen": "12.png"},
+    {"nombre": "LoveyManny", "imagen": "20.png"},
 ]
 
 
@@ -2465,7 +2466,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_7.png"
+nombre_imagen = "skull_meme_8.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2517,7 +2518,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            aunque sea 15
+            🫵
         </p>
 
     </div>
