@@ -1900,14 +1900,14 @@ st.markdown("""
 
 /* Carta central */
 .card-main {
-    box-shadow: 0 0 35px rgba(255, 75, 75, 0.95);
+    box-shadow: 0 0 35px rgba(255, 77, 240, 0.5);
 }
 
 /* Título arriba */
 .card-caption {
     font-size: 17px;
     font-weight: 700;
-    color: #facc15; /* amarillo dorado */
+    color: #fa15c8; /* amarillo dorado */
     background: rgba(0,0,0,0.7); /* franja oscura semitransparente */
     padding: 10px;
     text-align: center;
