@@ -525,7 +525,6 @@ audio_tipe = load_audio_base64("tipe_beat_web.mp3")
 audio_rnb = load_audio_base64("tipe_beat_web R&B Remix.mp3")
 audio_rock = load_audio_base64("tipe_beat_web Rock Remix.mp3")
 audio_trap = load_audio_base64("tipe_beat_web Trap Remix.mp3")
-audio_lofi = load_audio_base64("tipe_beat_web Lo-Fi Remix.mp3")
 
 st.markdown("## 🌿 Ambiente")
 
@@ -567,7 +566,6 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         <button class="btn-rnb" onclick="playMusic('{audio_rnb}')">R&B</button>
         <button class="btn-rock" onclick="playMusic('{audio_rock}')">Rock</button>
         <button class="btn-trap" onclick="playMusic('{audio_trap}')">Trap</button>
-        <button class="btn-lofi" onclick="playMusic('{audio_lofi}')">Lo-Fi</button>
     </div>
 
     <audio id="bg-music" controls style="width:100%; margin-top:15px;"></audio>
