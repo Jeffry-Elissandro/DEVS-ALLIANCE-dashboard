@@ -432,53 +432,63 @@ st.set_page_config(layout="wide")
 
 css = """
 <style>
-#embedim--heart{
-  position:fixed;
-  left:0;top:0;bottom:0;
-  width:100vw;height:100vh;
-  overflow:hidden;
-  z-index:9999999;
-  pointer-events:none
+#embedim--particles {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: 100vw; height: 100vh;
+  overflow: hidden;
+  z-index: 9999999;
+  pointer-events: none;
 }
-.heart { position: relative; }
-.heart:before, .heart:after {
-  position: absolute; content: "";
-  left: 18px; top: 0; width: 18px; height: 30px;
-  background: #CC2022;
-  border-radius: 30px 30px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatUp 12s linear infinite;
 }
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+.x {
+  position: absolute;
+  top: 702px; /* posición inicial */
+  animation: moveClouds 15s linear infinite, sideWays 5s ease-in-out infinite;
 }
-@keyframes moveclouds {0% { top: 702px; } 100% { top: -702px; } }
-@keyframes sideWays {0% { margin-left:0px; } 100% { margin-left:50px; } }
-.x { position: absolute; top: 0; }
-.x:nth-child(2){ left: 5%; transform: scale(0.6); opacity: 0.6; animation: moveclouds 15s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(3){ left: 25%; transform: scale(0.5); opacity: 0.5; animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(4){ left: 40%; transform: scale(0.8); opacity: 0.8; animation: moveclouds 20s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(5){ left: 55%; transform: scale(0.9); opacity: 0.9; animation: moveclouds 18s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(6){ left: 60%; transform: scale(0.3); opacity: 0.3; animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(7){ left: 72%; transform: scale(0.5); opacity: 0.6; animation: moveclouds 15s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(8){ left: 88%; transform: scale(0.4); opacity: 0.2; animation: moveclouds 10s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(9){ left: 90%; transform: scale(0.2); opacity: 0.4; animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate; }
+.x:nth-child(2){ left: 5%; opacity: 0.6; transform: scale(0.5); }
+.x:nth-child(3){ left: 25%; opacity: 0.4; transform: scale(0.4); }
+.x:nth-child(4){ left: 40%; opacity: 0.8; transform: scale(0.6); }
+.x:nth-child(5){ left: 55%; opacity: 0.7; transform: scale(0.5); }
+.x:nth-child(6){ left: 60%; opacity: 0.3; transform: scale(0.4); }
+.x:nth-child(7){ left: 72%; opacity: 0.5; transform: scale(0.5); }
+.x:nth-child(8){ left: 88%; opacity: 0.2; transform: scale(0.3); }
+.x:nth-child(9){ left: 90%; opacity: 0.4; transform: scale(0.4); }
+
+@keyframes floatUp {
+  0% { transform: translateY(702px); opacity: 0.8; }
+  100% { transform: translateY(-702px); opacity: 0; }
+}
+@keyframes moveClouds {
+  0% { top: 702px; }
+  100% { top: -702px; }
+}
+@keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 50px; }
+}
 </style>
 """
 
 html = """
-<div id="embedim--heart">
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
+<div id="embedim--particles">
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
 </div>
 """
 
