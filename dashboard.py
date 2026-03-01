@@ -432,7 +432,7 @@ st.set_page_config(layout="wide")
 
 css = """
 <style>
-#embedim--heart{
+#embedim--particles{
   position:fixed;
   left:0;top:0;bottom:0;
   width:100vw;height:100vh;
@@ -440,45 +440,62 @@ css = """
   z-index:9999999;
   pointer-events:none
 }
-.heart { position: relative; }
-.heart:before, .heart:after {
-  position: absolute; content: "";
-  left: 18px; top: 0; width: 18px; height: 30px;
-  background: #CC2022;
-  border-radius: 30px 30px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+
+.particle {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px white;
 }
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+
+/* ANIMACIONES */
+@keyframes moveUp {
+  0% { top: 100vh; }
+  100% { top: -10vh; }
 }
-@keyframes moveclouds {0% { top: 702px; } 100% { top: -702px; } }
-@keyframes sideWays {0% { margin-left:0px; } 100% { margin-left:50px; } }
-.x { position: absolute; top: 0; }
-.x:nth-child(2){ left: 5%; transform: scale(0.6); opacity: 0.6; animation: moveclouds 15s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(3){ left: 25%; transform: scale(0.5); opacity: 0.5; animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(4){ left: 40%; transform: scale(0.8); opacity: 0.8; animation: moveclouds 20s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(5){ left: 55%; transform: scale(0.9); opacity: 0.9; animation: moveclouds 18s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(6){ left: 60%; transform: scale(0.3); opacity: 0.3; animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(7){ left: 72%; transform: scale(0.5); opacity: 0.6; animation: moveclouds 15s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(8){ left: 88%; transform: scale(0.4); opacity: 0.2; animation: moveclouds 10s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(9){ left: 90%; transform: scale(0.2); opacity: 0.4; animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate; }
+
+@keyframes sideWays {
+  0% { margin-left: 0px; }
+  100% { margin-left: 60px; }
+}
+
+/* BASE */
+.x {
+  position: absolute;
+  top: 0;
+}
+
+/* VARIACIONES (simulan aleatorio) */
+.x:nth-child(1){ left: 7%;  transform: scale(0.4); opacity:0.3; animation: moveUp 12s linear infinite, sideWays 4s ease-in-out infinite alternate;}
+.x:nth-child(2){ left: 18%; transform: scale(0.6); opacity:0.6; animation: moveUp 18s linear infinite, sideWays 6s ease-in-out infinite alternate;}
+.x:nth-child(3){ left: 29%; transform: scale(0.5); opacity:0.5; animation: moveUp 25s linear infinite, sideWays 5s ease-in-out infinite alternate;}
+.x:nth-child(4){ left: 41%; transform: scale(0.8); opacity:0.8; animation: moveUp 20s linear infinite, sideWays 7s ease-in-out infinite alternate;}
+.x:nth-child(5){ left: 53%; transform: scale(0.9); opacity:0.9; animation: moveUp 17s linear infinite, sideWays 6s ease-in-out infinite alternate;}
+.x:nth-child(6){ left: 64%; transform: scale(0.3); opacity:0.3; animation: moveUp 14s linear infinite, sideWays 4s ease-in-out infinite alternate;}
+.x:nth-child(7){ left: 72%; transform: scale(0.5); opacity:0.6; animation: moveUp 19s linear infinite, sideWays 5s ease-in-out infinite alternate;}
+.x:nth-child(8){ left: 85%; transform: scale(0.4); opacity:0.2; animation: moveUp 11s linear infinite, sideWays 3s ease-in-out infinite alternate;}
+.x:nth-child(9){ left: 93%; transform: scale(0.2); opacity:0.4; animation: moveUp 16s linear infinite, sideWays 6s ease-in-out infinite alternate;}
+.x:nth-child(10){ left: 12%; transform: scale(0.7); opacity:0.7; animation: moveUp 22s linear infinite, sideWays 5s ease-in-out infinite alternate;}
+.x:nth-child(11){ left: 36%; transform: scale(0.45); opacity:0.5; animation: moveUp 15s linear infinite, sideWays 4s ease-in-out infinite alternate;}
+.x:nth-child(12){ left: 68%; transform: scale(0.65); opacity:0.7; animation: moveUp 21s linear infinite, sideWays 6s ease-in-out infinite alternate;}
 </style>
 """
 
 html = """
-<div id="embedim--heart">
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
+<div id="embedim--particles">
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particle"></div></div>
 </div>
 """
 
