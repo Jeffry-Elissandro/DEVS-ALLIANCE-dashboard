@@ -568,7 +568,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         <button class="btn-trap" onclick="playMusic('{audio_trap}')">Trap</button>
     </div>
 
-    <audio id="bg-music" controls style="width:100%; margin-top:15px;"></audio>
+    <audio id="bg-music" controls loop style="width:100%; margin-top:15px; filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);"></audio>
 
     <script>
     function playMusic(base64Audio) {{
