@@ -574,6 +574,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     function playMusic(base64Audio) {{
         var player = document.getElementById('bg-music');
         player.src = "data:audio/mp3;base64," + base64Audio;
+        player.loop = true;
         player.play();
     }}
     </script>
