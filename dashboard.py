@@ -438,7 +438,7 @@ html = """
   left: 0; top: 0;
   width: 100vw; height: 100vh;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 999999999;
   pointer-events: none;
 }
 .particle {
@@ -488,7 +488,7 @@ setInterval(createParticle, 300);
 </script>
 """
 
-components.html(html, height=0, width=0)
+components.html(html, height=300, width=0)
 
 
 
