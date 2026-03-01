@@ -2980,7 +2980,7 @@ st.markdown("""
         overflow: hidden;
         pointer-events: none;
     }
-    #ultimo-video-section .particle {
+    #ultimo-video-section .particles {
         position: absolute;
         background: rgba(0,255,163,0.8);
         border-radius: 50%;
