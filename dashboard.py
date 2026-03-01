@@ -3101,22 +3101,36 @@ st.divider()
 
 import base64
 
-# Ruta a tu imagen
-ruta_imagen = 'Imagen_para_testeos.png'
+# Rutas a tus imágenes
+ruta_imagen1 = 'Imagen_para_testeos.png'
 ruta_imagen2 = 'Imagen_para_testeos.png'
 ruta_imagen3 = 'Imagen_para_testeos.png'
 ruta_imagen4 = 'Imagen_para_testeos.png'
 ruta_imagen5 = 'Imagen_para_testeos.png'
 
-# Leer y codificar en base64
-with open(ruta_imagen, 'rb') as img_file:
-    base64_str = base64.b64encode(img_file.read()).decode('utf-8')
+# Leer y codificar en base64 todas las imágenes
+def codificar_imagen(ruta):
+    with open(ruta, 'rb') as img_file:
+        return base64.b64encode(img_file.read()).decode('utf-8')
 
-# Datos del contenido
-titulo = "Mi Título"
-descripcion = "Descripción breve de la cápsula."
+base64_img1 = codificar_imagen(ruta_imagen1)
+base64_img2 = codificar_imagen(ruta_imagen2)
+base64_img3 = codificar_imagen(ruta_imagen3)
+base64_img4 = codificar_imagen(ruta_imagen4)
+base64_img5 = codificar_imagen(ruta_imagen5)
 
-# Generar el código HTML
+# Datos de cada cápsula
+titulos = ["Título 1", "Título 2", "Título 3", "Título 4", "Título 5"]
+descripciones = [
+    "Descripción de la cápsula 1.",
+    "Descripción de la cápsula 2.",
+    "Descripción de la cápsula 3.",
+    "Descripción de la cápsula 4.",
+    "Descripción de la cápsula 5."
+]
+imagenes_base64 = [base64_img1, base64_img2, base64_img3, base64_img4, base64_img5]
+
+# Generar el HTML completo
 html = f'''
 <!DOCTYPE html>
 <html lang="es">
@@ -3214,24 +3228,14 @@ p {{
 
 <div class="slider">
   <div class="slide-track">
-    <!-- Cápsula 1 -->
+    <!-- Cápsulas -->
+    {''.join(f'''
     <div class="capsula">
-      <img src="data:image/png;base64,{base64_str}" alt="Mi Imagen"/>
-      <h3>{titulo}</h3>
-      <p>{descripcion}</p>
+      <img src="data:image/png;base64,{imagenes_base64[i]}" alt="Imagen {i+1}"/>
+      <h3>{titulos[i]}</h3>
+      <p>{descripciones[i]}</p>
     </div>
-    <!-- Repetir varias veces para efecto continuo -->
-    <div class="capsula">
-      <img src="data:image/png;base64,{base64_str}" alt="Mi Imagen"/>
-      <h3>{titulo}</h3>
-      <p>{descripcion}</p>
-    </div>
-    <div class="capsula">
-      <img src="data:image/png;base64,{base64_str}" alt="Mi Imagen"/>
-      <h3>{titulo}</h3>
-      <p>{descripcion}</p>
-    </div>
-    <!-- Agrega más si quieres -->
+    ''' for i in range(len(imagenes_base64)))}
   </div>
 </div>
 
@@ -3239,7 +3243,7 @@ p {{
 </html>
 '''
 
-# Guardar en un archivo
+# Guardar en archivo
 with open('carrusel.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
