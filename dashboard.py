@@ -518,60 +518,60 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # CSS para los botones
+    # 🎨 Estilos CSS personalizados
     st.markdown("""
     <style>
-    .music-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 18px;
-        margin: 25px 0;
-        flex-wrap: wrap;
-    }
-    .music-buttons button {
-        padding: 14px 26px;
+    div.stButton > button {
+        width: 100%;
+        padding: 14px;
         border-radius: 12px;
         border: none;
         font-weight: bold;
-        cursor: pointer;
         color: white;
-        font-size: 16px;
+        font-size: 15px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .music-buttons button:hover {
+    div.stButton > button:hover {
         transform: scale(1.08);
         box-shadow: 0 0 20px rgba(255,255,255,0.7);
     }
-    .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
-    .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
-    .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
-    .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
-    .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
+
+    /* Colores individuales */
+    .tipe button { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
+    .rnb button { background: linear-gradient(135deg,#ec4899,#f472b6); }
+    .rock button { background: linear-gradient(135deg,#ef4444,#f87171); }
+    .trap button { background: linear-gradient(135deg,#22c55e,#4ade80); }
+    .lofi button { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
     </style>
     """, unsafe_allow_html=True)
 
-    # Lista de canciones
+    # 🎵 Estado de la canción seleccionada
+    if 'selected_song' not in st.session_state:
+        st.session_state.selected_song = None
+
+    # 🎼 Lista de canciones
     canciones = {
-        "Tipe beat": "tipe_beat_web.mp3",
-        "R&B": "tipe_beat_web R&B Remix.mp3",
-        "Rock": "tipe_beat_web Rock Remix.mp3",
-        "Trap": "tipe_beat_web Trap Remix.mp3",
-        "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
+        "Tipe beat": ("tipe_beat_web.mp3", "tipe"),
+        "R&B": ("tipe_beat_web R&B Remix.mp3", "rnb"),
+        "Rock": ("tipe_beat_web Rock Remix.mp3", "rock"),
+        "Trap": ("tipe_beat_web Trap Remix.mp3", "trap"),
+        "Lo-Fi": ("tipe_beat_web Lo-Fi Remix.mp3", "lofi")
     }
 
-    # Variable para almacenar la canción seleccionada
-    if 'selected_song' not in st.session_state:
-        st.session_state['selected_song'] = None
-
-    # Crear los botones con estilos
+    # 🔲 Crear columnas (botones alineados)
     cols = st.columns(5)
-    for idx, (nombre, archivo) in enumerate(canciones.items()):
-        if cols[idx].button(nombre, key=nombre):
-            st.session_state['selected_song'] = archivo
 
-    # Reproduce la canción seleccionada
-    if st.session_state['selected_song']:
-        st.audio(st.session_state['selected_song'], format='mp3', autoplay=True, loop=True)
+    for idx, (nombre, (archivo, clase)) in enumerate(canciones.items()):
+        with cols[idx]:
+            st.markdown(f'<div class="{clase}">', unsafe_allow_html=True)
+            if st.button(nombre, key=nombre):
+                st.session_state.selected_song = archivo
+            st.markdown('</div>', unsafe_allow_html=True)
+
+    # 🔊 Reproductor
+    if st.session_state.selected_song:
+        st.markdown("### ▶️ Reproduciendo")
+        st.audio(st.session_state.selected_song, format='audio/mp3')
 
 
 
