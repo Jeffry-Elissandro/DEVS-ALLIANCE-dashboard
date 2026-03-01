@@ -3099,103 +3099,151 @@ st.divider()
 # ==============================
 
 
-import streamlit as st
 import base64
 
-# Función para convertir imágenes a base64 (solo ejemplo, reemplaza con tus cadenas)
-def encode_image(image_path):
-    with open(image_path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode()
+# Ruta a tu imagen
+ruta_imagen = 'Imagen_para_testeos.png'
+ruta_imagen2 = 'Imagen_para_testeos.png'
+ruta_imagen3 = 'Imagen_para_testeos.png'
+ruta_imagen4 = 'Imagen_para_testeos.png'
+ruta_imagen5 = 'Imagen_para_testeos.png'
 
-# Aquí pones tus cadenas base64 de las 5 imágenes
-# Reemplaza estas cadenas con las tuyas
-imágenes_base64 = [
-    "Imagen_para_testeos.png",
-    "Imagen_para_testeos.png",
-    "Imagen_para_testeos.png",
-    "Imagen_para_testeos.png",
-    "Imagen_para_testeos.png",
-]
+# Leer y codificar en base64
+with open(ruta_imagen, 'rb') as img_file:
+    base64_str = base64.b64encode(img_file.read()).decode('utf-8')
 
-# Títulos y descripciones para cada cápsula
-titulos = [
-    "Título 1",
-    "Título 2",
-    "Título 3",
-    "Título 4",
-    "Título 5",
-]
+# Datos del contenido
+titulo = "Mi Título"
+descripcion = "Descripción breve de la cápsula."
 
-descripciones = [
-    "Descripción de la cápsula 1",
-    "Descripción de la cápsula 2",
-    "Descripción de la cápsula 3",
-    "Descripción de la cápsula 4",
-    "Descripción de la cápsula 5",
-]
-
-# Generar el contenido HTML para el carrusel
-html = """
+# Generar el código HTML
+html = f'''
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Carrusel Cápsulas</title>
 <style>
-.carousel-container {
-  width: 100%;
+body {{
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}}
+
+@keyframes scroll {{
+  0% {{ transform: translateX(0); }}
+  100% {{ transform: translateX(-50%); }}
+}}
+
+.slider {{
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: auto;
+  margin: auto;
   overflow: hidden;
   position: relative;
-}
-.carousel {
+  width: 960px;
+  border-radius: 10px;
+}}
+
+.slider::before,
+.slider::after {{
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(227, 227, 227, 1) 0%, rgba(227, 227, 227, 0) 100%);
+}}
+.slider::after {{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}}
+.slider::before {{
+  left: 0;
+  top: 0;
+}}
+
+.slide-track {{
   display: flex;
-  width: 500%;
-  animation: slide 25s infinite;
-}
-@keyframes slide {
-  0% { transform: translateX(0%); }
-  20% { transform: translateX(0%); }
-  25% { transform: translateX(-20%); }
-  45% { transform: translateX(-20%); }
-  50% { transform: translateX(-40%); }
-  70% { transform: translateX(-40%); }
-  75% { transform: translateX(-60%); }
-  95% { transform: translateX(-60%); }
-  100% { transform: translateX(0%); }
-}
-.capsula {
-  flex: 1 0 100%;
+  width: calc(250px * 14);
+  animation: scroll 40s linear infinite;
+}}
+
+.capsula {{
+  flex: 0 0 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
-}
-.capsula img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
+  background: #fff;
+  margin: 0 5px;
+  border-radius: 8px;
+  text-align: center;
+}}
+
+.capsula img {{
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
   margin-bottom: 10px;
-}
+}}
+
+h3 {{
+  margin: 5px 0;
+  font-size: 1.1em;
+}}
+
+p {{
+  font-size: 0.9em;
+  color: #333;
+}}
 </style>
-<div class="carousel-container">
-  <div class="carousel">
-"""
+</head>
+<body>
 
-# Añadir cada cápsula al HTML
-for i in range(5):
-    html += f"""
+<div class="slider">
+  <div class="slide-track">
+    <!-- Cápsula 1 -->
     <div class="capsula">
-      <img src="data:image/png;base64,{imágenes_base64[i]}" />
-      <h3>{titulos[i]}</h3>
-      <p>{descripciones[i]}</p>
+      <img src="data:image/png;base64,{base64_str}" alt="Mi Imagen"/>
+      <h3>{titulo}</h3>
+      <p>{descripcion}</p>
     </div>
-    """
-
-html += """
+    <!-- Repetir varias veces para efecto continuo -->
+    <div class="capsula">
+      <img src="data:image/png;base64,{base64_str}" alt="Mi Imagen"/>
+      <h3>{titulo}</h3>
+      <p>{descripcion}</p>
+    </div>
+    <div class="capsula">
+      <img src="data:image/png;base64,{base64_str}" alt="Mi Imagen"/>
+      <h3>{titulo}</h3>
+      <p>{descripcion}</p>
+    </div>
+    <!-- Agrega más si quieres -->
   </div>
 </div>
-"""
 
-# Mostrar en Streamlit
-st.markdown(html, unsafe_allow_html=True)
+</body>
+</html>
+'''
+
+# Guardar en un archivo
+with open('carrusel.html', 'w', encoding='utf-8') as f:
+    f.write(html)
+
+print("Archivo 'carrusel.html' generado.")
 
 
 
