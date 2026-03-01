@@ -432,7 +432,7 @@ st.set_page_config(layout="wide")
 
 css = """
 <style>
-#embedim--particles{
+#embedim--particlesA{
   position:fixed;
   left:0;top:0;bottom:0;
   width:100vw;height:100vh;
@@ -441,7 +441,7 @@ css = """
   pointer-events:none
 }
 
-.particle {
+.particleA {
   width: 6px;
   height: 6px;
   background: white;
@@ -484,18 +484,18 @@ css = """
 
 html = """
 <div id="embedim--particles">
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
-  <div class="x"><div class="particle"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
+  <div class="x"><div class="particleA"></div></div>
 </div>
 """
 
@@ -2972,7 +2972,7 @@ st.markdown("""
     }
 
     /* Partículas SOLO dentro de esta sección */
-    #ultimo-video-section .particles {
+    #ultimo-video-section .particlesB {
         position: absolute;
         top: 0; left: 0;
         width: 100%; height: 100%;
@@ -2980,7 +2980,7 @@ st.markdown("""
         overflow: hidden;
         pointer-events: none;
     }
-    #ultimo-video-section .particle {
+    #ultimo-video-section .particleB {
         position: absolute;
         background: rgba(0,255,163,0.8);
         border-radius: 50%;
@@ -3053,15 +3053,15 @@ st.markdown("""
 # Sección encapsulada con partículas
 st.markdown("""
 <div id="ultimo-video-section">
-  <div class="particles">
-    <div class="particle" style="width:12px; height:12px; top:20%; left:30%;"></div>
-    <div class="particle" style="width:8px; height:8px; top:50%; left:70%;"></div>
-    <div class="particle" style="width:10px; height:10px; top:80%; left:40%;"></div>
-    <div class="particle" style="width:14px; height:14px; top:35%; left:55%;"></div>
-    <div class="particle" style="width:9px; height:9px; top:15%; left:80%;"></div>
-    <div class="particle" style="width:11px; height:11px; top:65%; left:20%;"></div>
-    <div class="particle" style="width:7px; height:7px; top:75%; left:60%;"></div>
-    <div class="particle" style="width:13px; height:13px; top:45%; left:10%;"></div>
+  <div class="particlesB">
+    <div class="particleB" style="width:12px; height:12px; top:20%; left:30%;"></div>
+    <div class="particleB" style="width:8px; height:8px; top:50%; left:70%;"></div>
+    <div class="particleB" style="width:10px; height:10px; top:80%; left:40%;"></div>
+    <div class="particleB" style="width:14px; height:14px; top:35%; left:55%;"></div>
+    <div class="particleB" style="width:9px; height:9px; top:15%; left:80%;"></div>
+    <div class="particleB" style="width:11px; height:11px; top:65%; left:20%;"></div>
+    <div class="particleB" style="width:7px; height:7px; top:75%; left:60%;"></div>
+    <div class="particleB" style="width:13px; height:13px; top:45%; left:10%;"></div>
   </div>
 
   <h2 class="ultimo-video-title">
