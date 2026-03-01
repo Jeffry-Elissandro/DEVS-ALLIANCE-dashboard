@@ -557,7 +557,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     }}
     .btn-tipe {{ background: linear-gradient(135deg,#7c3aed,#a78bfa); }}
     .btn-rnb {{ background: linear-gradient(135deg,#ec4899,#f472b6); }}
-    .btn-rnb2 {{ background: linear-gradient(135deg, #89c2d9, #a2d4dd); }}
+    .btn-rnb2 {{ background: linear-gradient(135deg, #03a9f4, #3498db); }}
     .btn-rock {{ background: linear-gradient(135deg,#ef4444,#f87171); }}
     .btn-trap {{ background: linear-gradient(135deg,#22c55e,#4ade80); }}
     .btn-lofi {{ background: linear-gradient(135deg,#06b6d4,#60a5fa); }}
