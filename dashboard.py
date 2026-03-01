@@ -512,14 +512,18 @@ st.markdown(css + html, unsafe_allow_html=True)
 #Para ambientar la web (bloque opcional)
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.markdown("## 🌿 Ambiente")
 
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    st.markdown("""
+    components.html("""
     <style>
+    body {
+        background-color: transparent;
+    }
     .music-buttons {
         display: flex;
         justify-content: center;
@@ -556,7 +560,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
     </div>
 
-    <audio id="bg-music" loop autoplay style="display:none;"></audio>
+    <audio id="bg-music" loop></audio>
 
     <script>
     function playMusic(file) {
@@ -565,7 +569,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         player.play();
     }
     </script>
-    """, unsafe_allow_html=True)
+    """, height=200)
 
 
 
