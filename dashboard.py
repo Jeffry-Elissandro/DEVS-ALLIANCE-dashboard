@@ -512,22 +512,36 @@ st.markdown(css + html, unsafe_allow_html=True)
 #Para ambientar la web (bloque opcional)
 
 import streamlit as st
+import streamlit.components.v1 as components
+import base64
+
+def load_audio_base64(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+        return base64.b64encode(data).decode()
+
+# 🔊 Cargar audios locales
+audio_tipe = load_audio_base64("tipe_beat_web.mp3")
+audio_rnb = load_audio_base64("tipe_beat_web R&B Remix.mp3")
+audio_rock = load_audio_base64("tipe_beat_web Rock Remix.mp3")
+audio_trap = load_audio_base64("tipe_beat_web Trap Remix.mp3")
+audio_lofi = load_audio_base64("tipe_beat_web Lo-Fi Remix.mp3")
 
 st.markdown("## 🌿 Ambiente")
 
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    st.markdown("""
+    components.html(f"""
     <style>
-    .music-buttons {
+    .music-buttons {{
         display: flex;
         justify-content: center;
         gap: 18px;
         margin: 25px 0;
         flex-wrap: wrap;
-    }
-    .music-buttons button {
+    }}
+    .music-buttons button {{
         padding: 14px 26px;
         border-radius: 12px;
         border: none;
@@ -536,36 +550,36 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         color: white;
         font-size: 16px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .music-buttons button:hover {
+    }}
+    .music-buttons button:hover {{
         transform: scale(1.08);
         box-shadow: 0 0 20px rgba(255,255,255,0.7);
-    }
-    .btn-tipe { background: linear-gradient(135deg,#7c3aed,#a78bfa); }
-    .btn-rnb { background: linear-gradient(135deg,#ec4899,#f472b6); }
-    .btn-rock { background: linear-gradient(135deg,#ef4444,#f87171); }
-    .btn-trap { background: linear-gradient(135deg,#22c55e,#4ade80); }
-    .btn-lofi { background: linear-gradient(135deg,#06b6d4,#60a5fa); }
+    }}
+    .btn-tipe {{ background: linear-gradient(135deg,#7c3aed,#a78bfa); }}
+    .btn-rnb {{ background: linear-gradient(135deg,#ec4899,#f472b6); }}
+    .btn-rock {{ background: linear-gradient(135deg,#ef4444,#f87171); }}
+    .btn-trap {{ background: linear-gradient(135deg,#22c55e,#4ade80); }}
+    .btn-lofi {{ background: linear-gradient(135deg,#06b6d4,#60a5fa); }}
     </style>
 
     <div class="music-buttons">
-        <button class="btn-tipe" onclick="playMusic('tipe_beat_web.mp3')">Tipe beat</button>
-        <button class="btn-rnb" onclick="playMusic('tipe_beat_web R&B Remix.mp3')">R&B</button>
-        <button class="btn-rock" onclick="playMusic('tipe_beat_web Rock Remix.mp3')">Rock</button>
-        <button class="btn-trap" onclick="playMusic('tipe_beat_web Trap Remix.mp3')">Trap</button>
-        <button class="btn-lofi" onclick="playMusic('tipe_beat_web Lo-Fi Remix.mp3')">Lo-Fi</button>
+        <button class="btn-tipe" onclick="playMusic('{audio_tipe}')">Tipe beat</button>
+        <button class="btn-rnb" onclick="playMusic('{audio_rnb}')">R&B</button>
+        <button class="btn-rock" onclick="playMusic('{audio_rock}')">Rock</button>
+        <button class="btn-trap" onclick="playMusic('{audio_trap}')">Trap</button>
+        <button class="btn-lofi" onclick="playMusic('{audio_lofi}')">Lo-Fi</button>
     </div>
 
-    <audio id="bg-music" loop autoplay style="display:none;"></audio>
+    <audio id="bg-music" controls style="width:100%; margin-top:15px;"></audio>
 
     <script>
-    function playMusic(file) {
+    function playMusic(base64Audio) {{
         var player = document.getElementById('bg-music');
-        player.src = file;
+        player.src = "data:audio/mp3;base64," + base64Audio;
         player.play();
-    }
+    }}
     </script>
-    """, unsafe_allow_html=True)
+    """, height=300)
 
 
 
