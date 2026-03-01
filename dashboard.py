@@ -3083,6 +3083,218 @@ st.markdown("""
 
 
 
+st.divider()
+
+
+
+
+
+
+
+
+
+
+# ==============================
+# CARRUSEL
+# ==============================
+
+
+import streamlit as st
+import streamlit.components.v1 as components
+import base64
+
+# Listado de testimonios
+testimonios = []
+
+# Selecciona las imágenes
+imagen1 = st.file_uploader("Subir imagen 1", type=["jpg", "png"])
+imagen2 = st.file_uploader("Subir imagen 2", type=["jpg", "png"])
+imagen3 = st.file_uploader("Subir imagen 3", type=["jpg", "png"])
+imagen4 = st.file_uploader("Subir imagen 4", type=["jpg", "png"])
+imagen5 = st.file_uploader("Subir imagen 5", type=["jpg", "png"])
+
+# Función para convertir imagen a base64
+def imagen_a_base64(imagen):
+    if imagen is not None:
+        imagen_base64 = base64.b64encode(imagen.read()).decode()
+        return imagen_base64
+    else:
+        return None
+
+# Crear columnas
+columnas = st.columns(2)
+
+# Crear botón de enviar
+with columnas[0]:
+    if st.button("Enviar"):
+        # Obtener imágenes
+        imagen1_base64 = imagen_a_base64(imagen1)
+        imagen2_base64 = imagen_a_base64(imagen2)
+        imagen3_base64 = imagen_a_base64(imagen3)
+        imagen4_base64 = imagen_a_base64(imagen4)
+        imagen5_base64 = imagen_a_base64(imagen5)
+
+        # Imprimir imágenes en base64
+        if imagen1_base64:
+            st.image(imagen1_base64, width=200)
+        if imagen2_base64:
+            st.image(imagen2_base64, width=200)
+        if imagen3_base64:
+            st.image(imagen3_base64, width=200)
+        if imagen4_base64:
+            st.image(imagen4_base64, width=200)
+        if imagen5_base64:
+            st.image(imagen5_base64, width=200)
+
+        # Agregar testimonio
+        st.write("Testimonio agregado con éxito!")
+    else:
+        st.write("Presiona el botón para enviar")
+
+# Imprimir texto
+st.write("Ingrese el texto del testimonio:")
+txt = st.text_area("Testimonio", height=100)
+if st.button("Agregar"):
+    # Agregar testimonio
+    testimonio = {
+        "texto": txt,
+        "imagenes": []
+    }
+    if imagen1_base64:
+        testimonio["imagenes"].append(imagen1_base64)
+    if imagen2_base64:
+        testimonio["imagenes"].append(imagen2_base64)
+    if imagen3_base64:
+        testimonio["imagenes"].append(imagen3_base64)
+    if imagen4_base64:
+        testimonio["imagenes"].append(imagen4_base64)
+    if imagen5_base64:
+        testimonio["imagenes"].append(imagen5_base64)
+    testimonios.append(testimonio)
+    st.write("Testimonio agregado con éxito!")
+
+# Imprimir testimonios
+st.write("Testimonios agregados:")
+for i, testimonio in enumerate(testimonios):
+    st.write(f"Testimonio {i+1}:")
+    st.write(testimonio["texto"])
+    if testimonio["imagenes"]:
+        st.write("Imágenes:")
+        for imagen in testimonio["imagenes"]:
+            st.image(imagen, width=200)
+    else:
+        st.write("Sin imágenes")
+
+
+
+
+
+
+
+
+
+
+
+import streamlit as st
+import base64
+
+# Función para convertir imágenes a base64 (solo ejemplo, reemplaza con tus cadenas)
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode()
+
+# Aquí pones tus cadenas base64 de las 5 imágenes
+# Reemplaza estas cadenas con las tuyas
+imágenes_base64 = [
+    "Imagen_para_testeos.png",
+    "Imagen_para_testeos.png",
+    "Imagen_para_testeos.png",
+    "Imagen_para_testeos.png",
+    "Imagen_para_testeos.png",
+]
+
+# Títulos y descripciones para cada cápsula
+titulos = [
+    "Título 1",
+    "Título 2",
+    "Título 3",
+    "Título 4",
+    "Título 5",
+]
+
+descripciones = [
+    "Descripción de la cápsula 1",
+    "Descripción de la cápsula 2",
+    "Descripción de la cápsula 3",
+    "Descripción de la cápsula 4",
+    "Descripción de la cápsula 5",
+]
+
+# Generar el contenido HTML para el carrusel
+html = """
+<style>
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel {
+  display: flex;
+  width: 500%;
+  animation: slide 25s infinite;
+}
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-20%); }
+  45% { transform: translateX(-20%); }
+  50% { transform: translateX(-40%); }
+  70% { transform: translateX(-40%); }
+  75% { transform: translateX(-60%); }
+  95% { transform: translateX(-60%); }
+  100% { transform: translateX(0%); }
+}
+.capsula {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.capsula img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+</style>
+<div class="carousel-container">
+  <div class="carousel">
+"""
+
+# Añadir cada cápsula al HTML
+for i in range(5):
+    html += f"""
+    <div class="capsula">
+      <img src="data:image/png;base64,{imágenes_base64[i]}" />
+      <h3>{titulos[i]}</h3>
+      <p>{descripciones[i]}</p>
+    </div>
+    """
+
+html += """
+  </div>
+</div>
+"""
+
+# Mostrar en Streamlit
+st.markdown(html, unsafe_allow_html=True)
+
+
+
 
 
 
