@@ -526,6 +526,7 @@ audio_rnb = load_audio_base64("tipe_beat_web R&B Remix.mp3")
 audio_rnb2 = load_audio_base64("tipe_beat_web R&B 2 Remix.mp3")
 audio_rock = load_audio_base64("tipe_beat_web Rock Remix.mp3")
 audio_trap = load_audio_base64("tipe_beat_web Trap Remix.mp3")
+audio_drill = load_audio_base64("tipe_beat_web Drill Remix.mp3")
 
 st.markdown("## 🌿 Ambiente")
 
@@ -561,6 +562,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .btn-rock {{ background: linear-gradient(135deg,#ef4444,#f87171); }}
     .btn-trap {{ background: linear-gradient(135deg,#22c55e,#4ade80); }}
     .btn-lofi {{ background: linear-gradient(135deg,#06b6d4,#60a5fa); }}
+    .btn-drill {{ background: linear-gradient(135deg, #ffd700, #ffea00); }}
     </style>
 
     <div class="music-buttons">
@@ -569,6 +571,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         <button class="btn-rnb2" onclick="playMusic('{audio_rnb2}')">R&B 2</button>
         <button class="btn-rock" onclick="playMusic('{audio_rock}')">Rock</button>
         <button class="btn-trap" onclick="playMusic('{audio_trap}')">Trap</button>
+        <button class="btn-drill" onclick="playMusic('{audio_drill}')">Drill</button>
     </div>
 
     <audio id="bg-music" controls loop style="width:100%; margin-top:15px; filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);"></audio>
