@@ -427,62 +427,67 @@ if st.session_state.mostrar_nota:
 
 
 import streamlit as st
+import streamlit.components.v1 as components
+import random
 
-st.set_page_config(layout="wide")
-
-css = """
+# Define el código CSS y HTML en una cadena multilínea
+html_code = f"""
 <style>
-#embedim--heart{
+#embedim--light {{
   position:fixed;
   left:0;top:0;bottom:0;
   width:100vw;height:100vh;
   overflow:hidden;
   z-index:9999999;
-  pointer-events:none
-}
-.heart { position: relative; }
-.heart:before, .heart:after {
-  position: absolute; content: "";
-  left: 18px; top: 0; width: 18px; height: 30px;
-  background: #CC2022;
-  border-radius: 30px 30px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-@keyframes moveclouds {0% { top: 702px; } 100% { top: -702px; } }
-@keyframes sideWays {0% { margin-left:0px; } 100% { margin-left:50px; } }
-.x { position: absolute; top: 0; }
-.x:nth-child(2){ left: 5%; transform: scale(0.6); opacity: 0.6; animation: moveclouds 15s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(3){ left: 25%; transform: scale(0.5); opacity: 0.5; animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(4){ left: 40%; transform: scale(0.8); opacity: 0.8; animation: moveclouds 20s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(5){ left: 55%; transform: scale(0.9); opacity: 0.9; animation: moveclouds 18s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(6){ left: 60%; transform: scale(0.3); opacity: 0.3; animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(7){ left: 72%; transform: scale(0.5); opacity: 0.6; animation: moveclouds 15s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(8){ left: 88%; transform: scale(0.4); opacity: 0.2; animation: moveclouds 10s linear infinite, sideWays 5s ease-in-out infinite alternate; }
-.x:nth-child(9){ left: 90%; transform: scale(0.2); opacity: 0.4; animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate; }
+  pointer-events:none;
+}}
+.light {{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #ffffaa, #ffcc00, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px #ffffaa;
+  opacity: 0.8;
+  animation: floatUp 20s linear infinite, flicker 2s ease-in-out infinite;
+}}
+@keyframes floatUp {{
+  0% {{ transform: translateY(100vh) translateX(0); opacity: 1; }}
+  100% {{ transform: translateY(-10vh) translateX(20px); opacity: 0; }}
+}}
+@keyframes flicker {{
+  0%, 100% {{ opacity: 0.8; }}
+  50% {{ opacity: 0.4; }}
+}}
 </style>
 """
 
-html = """
-<div id="embedim--heart">
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
-  <div class="x"><div class="heart"></div></div>
+# Generar partículas de luz
+num_particles = 30
+particles_html = ""
+for _ in range(num_particles):
+    left = random.randint(0, 100)
+    size = random.randint(4, 10)
+    delay = random.uniform(0, 20)
+    particles_html += f"""
+    <div class="light" style="
+      left: {left}%;
+      width: {size}px;
+      height: {size}px;
+      animation-delay: {delay}s;
+      "></div>
+    """
+
+# Encapsular todo en una sola cadena
+full_html = f"""
+{html_code}
+<div id='embedim--light'>
+{particles_html}
 </div>
 """
 
-st.markdown(css + html, unsafe_allow_html=True)
+# Mostrar en Streamlit usando components.html()
+components.html(full_html, height=600)
 
 
 
