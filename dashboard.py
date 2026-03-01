@@ -518,7 +518,7 @@ st.markdown("## 🌿 Ambiente")
 with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
-    # CSS para los botones con estilo
+    # CSS para los botones
     st.markdown("""
     <style>
     .music-buttons {
@@ -559,17 +559,17 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
         "Lo-Fi": "tipe_beat_web Lo-Fi Remix.mp3"
     }
 
-    # Variable para guardar la canción seleccionada
+    # Variable para almacenar la canción seleccionada
     if 'selected_song' not in st.session_state:
         st.session_state['selected_song'] = None
 
-    # Mostrar botones con estilo
-    col1, col2, col3, col4, col5 = st.columns(5)
-    for (nombre, archivo), col in zip(canciones.items(), [col1, col2, col3, col4, col5]):
-        if col.button(nombre, key=nombre):
+    # Crear los botones con estilos
+    cols = st.columns(5)
+    for idx, (nombre, archivo) in enumerate(canciones.items()):
+        if cols[idx].button(nombre, key=nombre):
             st.session_state['selected_song'] = archivo
 
-    # Reproducir la canción seleccionada automáticamente
+    # Reproduce la canción seleccionada
     if st.session_state['selected_song']:
         st.audio(st.session_state['selected_song'], format='mp3', autoplay=True, loop=True)
 
