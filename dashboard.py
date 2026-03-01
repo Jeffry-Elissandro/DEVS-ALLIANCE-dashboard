@@ -3054,14 +3054,14 @@ st.markdown("""
 st.markdown("""
 <div id="ultimo-video-section">
   <div class="particles">
-    <div class="particles" style="width:12px; height:12px; top:20%; left:30%;"></div>
-    <div class="particles" style="width:8px; height:8px; top:50%; left:70%;"></div>
-    <div class="particles" style="width:10px; height:10px; top:80%; left:40%;"></div>
-    <div class="particles" style="width:14px; height:14px; top:35%; left:55%;"></div>
-    <div class="particles" style="width:9px; height:9px; top:15%; left:80%;"></div>
-    <div class="particles" style="width:11px; height:11px; top:65%; left:20%;"></div>
-    <div class="particles" style="width:7px; height:7px; top:75%; left:60%;"></div>
-    <div class="particles" style="width:13px; height:13px; top:45%; left:10%;"></div>
+    <div class="particle" style="width:12px; height:12px; top:20%; left:30%;"></div>
+    <div class="particle" style="width:8px; height:8px; top:50%; left:70%;"></div>
+    <div class="particle" style="width:10px; height:10px; top:80%; left:40%;"></div>
+    <div class="particle" style="width:14px; height:14px; top:35%; left:55%;"></div>
+    <div class="particle" style="width:9px; height:9px; top:15%; left:80%;"></div>
+    <div class="particle" style="width:11px; height:11px; top:65%; left:20%;"></div>
+    <div class="particle" style="width:7px; height:7px; top:75%; left:60%;"></div>
+    <div class="particle" style="width:13px; height:13px; top:45%; left:10%;"></div>
   </div>
 
   <h2 class="ultimo-video-title">
