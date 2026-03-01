@@ -977,7 +977,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16980   # Oro actual
+puntaje_actual = 17705   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1089,7 +1089,7 @@ components.html(
              width="250" height="250" />
 
     <div style="text-align:center;">
-      <strong style="color:#ffffff;">Gracias</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
     </div>
 
     </div>
@@ -1663,7 +1663,7 @@ st.markdown(f"""
     margin-bottom:18px;
   ">
     Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
-    No es una exigencia, sino una meta motivadora que refleja el compromiso colectivo.
+    Es una meta motivadora que refleja el compromiso colectivo.
   </p>
 
   <!-- Imagen/GIF en Base64 -->
@@ -2404,7 +2404,6 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Aesick4u", "imagen": "18.png"},
     {"nombre": "dayia", "imagen": "12.png"},
     {"nombre": "Chopper:3", "imagen": "20.png"},
 ]
@@ -2505,7 +2504,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_8.png"
+nombre_imagen = "skull_meme_9.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2557,7 +2556,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            🫵
+            bro es el sinko peso
         </p>
 
     </div>
