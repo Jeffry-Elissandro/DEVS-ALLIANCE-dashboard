@@ -3116,6 +3116,11 @@ img2 = img_base64("TEST_2.png")
 img3 = img_base64("TEST_3.png")
 img4 = img_base64("TEST_4.png")
 img5 = img_base64("TEST_5.png")
+img5 = img_base64("TEST_6.png")
+img5 = img_base64("TEST_7.png")
+img5 = img_base64("TEST_8.png")
+img5 = img_base64("TEST_9.png")
+img5 = img_base64("TEST_10.png")
 
 css = """
 <style>
@@ -3173,12 +3178,22 @@ f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="tit
 f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">Título 6</div><div class="desc">Descripción 6</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">Título 7</div><div class="desc">Descripción 7</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">Título 8</div><div class="desc">Descripción 8</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">Título 9</div><div class="desc">Descripción 9</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">Título 10</div><div class="desc">Descripción 10</div></div>'
 
 f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">Título 6</div><div class="desc">Descripción 6</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">Título 7</div><div class="desc">Descripción 7</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">Título 8</div><div class="desc">Descripción 8</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">Título 9</div><div class="desc">Descripción 9</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">Título 10</div><div class="desc">Descripción 10</div></div>'
 
 '  </div>'
 '</div>'
