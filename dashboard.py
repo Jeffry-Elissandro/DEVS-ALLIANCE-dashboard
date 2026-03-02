@@ -2582,7 +2582,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            real
+            amanecí muerto
         </p>
 
     </div>
