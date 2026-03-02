@@ -580,8 +580,8 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     .btn-rock {{ background: linear-gradient(135deg,#ef4444,#f87171); }}
     .btn-trap {{ background: linear-gradient(135deg,#22c55e,#4ade80); }}
     .btn-lofi {{ background: linear-gradient(135deg,#06b6d4,#60a5fa); }}
-    .btn-drill {{ background: linear-gradient(135deg, #ffd700, #ffea00); }}
-    .btn-techno {{ background: linear-gradient(135deg, #75002D, #80002E); }}
+    .btn-drill {{ background: linear-gradient(135deg, #ffd700, #f5e647); }}
+    .btn-techno {{ background: linear-gradient(135deg, #75002D, #ad0341); }}
     </style>
 
     <div class="music-buttons">
