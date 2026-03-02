@@ -2971,6 +2971,28 @@ st.markdown("""
         to { opacity: 1; transform: translateY(0); }
     }
 
+/* NEW badge */
+#ultimo-video-section .new-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff2b2b;
+    color: white;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(255, 43, 43, 0.8);
+    animation: pulseNew 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseNew {
+    0% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 43, 43, 0.6); }
+    50% { transform: scale(1.1); box-shadow: 0 0 25px rgba(255, 43, 43, 1); }
+    100% { transform: scale(1); box-shadow: 0 0 10px rgba(255, 43, 43, 0.6); }
+}
+            
     /* Partículas SOLO dentro de esta sección */
     #ultimo-video-section .particlesB {
         position: absolute;
@@ -3063,7 +3085,7 @@ st.markdown("""
     <div class="particleB" style="width:7px; height:7px; top:75%; left:60%;"></div>
     <div class="particleB" style="width:13px; height:13px; top:45%; left:10%;"></div>
   </div>
-
+  <div class="new-badge">NEW</div>
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
