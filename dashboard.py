@@ -3098,156 +3098,141 @@ st.divider()
 # CARRUSEL
 # ==============================
 
+import streamlit as st
 
-import base64
+st.set_page_config(layout="wide")
 
-# Rutas a tus imágenes
-ruta_imagen1 = 'Imagen_para_testeos.png'
-ruta_imagen2 = 'Imagen_para_testeos.png'
-ruta_imagen3 = 'Imagen_para_testeos.png'
-ruta_imagen4 = 'Imagen_para_testeos.png'
-ruta_imagen5 = 'Imagen_para_testeos.png'
+# === TUS IMÁGENES BASE64 ===
+img1 = "TEST_1.png"
+img2 = "TEST_2.png"
+img3 = "TEST_3.png"
+img4 = "TEST_4.png"
+img5 = "TEST_5.png"
 
-# Leer y codificar en base64 todas las imágenes
-def codificar_imagen(ruta):
-    with open(ruta, 'rb') as img_file:
-        return base64.b64encode(img_file.read()).decode('utf-8')
-
-base64_img1 = codificar_imagen(ruta_imagen1)
-base64_img2 = codificar_imagen(ruta_imagen2)
-base64_img3 = codificar_imagen(ruta_imagen3)
-base64_img4 = codificar_imagen(ruta_imagen4)
-base64_img5 = codificar_imagen(ruta_imagen5)
-
-# Datos de cada cápsula
-titulos = ["Título 1", "Título 2", "Título 3", "Título 4", "Título 5"]
-descripciones = [
-    "Descripción de la cápsula 1.",
-    "Descripción de la cápsula 2.",
-    "Descripción de la cápsula 3.",
-    "Descripción de la cápsula 4.",
-    "Descripción de la cápsula 5."
-]
-imagenes_base64 = [base64_img1, base64_img2, base64_img3, base64_img4, base64_img5]
-
-# Generar el HTML completo
-html = f'''
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Carrusel Cápsulas</title>
+css = """
 <style>
-body {{
-  align-items: center;
-  background: #E3E3E3;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
 
-@keyframes scroll {{
-  0% {{ transform: translateX(0); }}
-  100% {{ transform: translateX(-50%); }}
-}}
+.slide-track {
+    display: flex;
+    width: calc(300px * 10);
+    animation: scroll 30s linear infinite;
+}
 
-.slider {{
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 960px;
-  border-radius: 10px;
-}}
+.slide {
+    width: 300px;
+    margin: 0 10px;
+    background: #1e1e1e;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: transform 0.3s;
+}
 
-.slider::before,
-.slider::after {{
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-  background: linear-gradient(to right, rgba(227, 227, 227, 1) 0%, rgba(227, 227, 227, 0) 100%);
-}}
-.slider::after {{
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}}
-.slider::before {{
-  left: 0;
-  top: 0;
-}}
+.slide:hover {
+    transform: scale(1.05);
+}
 
-.slide-track {{
-  display: flex;
-  width: calc(250px * 14);
-  animation: scroll 40s linear infinite;
-}}
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-.capsula {{
-  flex: 0 0 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-  background: #fff;
-  margin: 0 5px;
-  border-radius: 8px;
-  text-align: center;
-}}
+.title {
+    font-weight: bold;
+    margin-top: 10px;
+}
 
-.capsula img {{
-  max-width: 200px;
-  max-height: 150px;
-  width: auto;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}}
+.desc {
+    font-size: 14px;
+    opacity: 0.8;
+}
 
-h3 {{
-  margin: 5px 0;
-  font-size: 1.1em;
-}}
-
-p {{
-  font-size: 0.9em;
-  color: #333;
-}}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 5)); }
+}
 </style>
-</head>
-<body>
+"""
 
+html = f"""
 <div class="slider">
   <div class="slide-track">
-    <!-- Cápsulas -->
-    {''.join(f'''
-    <div class="capsula">
-      <img src="data:image/png;base64,{imagenes_base64[i]}" alt="Imagen {i+1}"/>
-      <h3>{titulos[i]}</h3>
-      <p>{descripciones[i]}</p>
+
+    <!-- ORIGINALES -->
+    <div class="slide">
+        <img src="data:image/png;base64,{img1}">
+        <div class="title">Título 1</div>
+        <div class="desc">Descripción 1</div>
     </div>
-    ''' for i in range(len(imagenes_base64)))}
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img2}">
+        <div class="title">Título 2</div>
+        <div class="desc">Descripción 2</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img3}">
+        <div class="title">Título 3</div>
+        <div class="desc">Descripción 3</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img4}">
+        <div class="title">Título 4</div>
+        <div class="desc">Descripción 4</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img5}">
+        <div class="title">Título 5</div>
+        <div class="desc">Descripción 5</div>
+    </div>
+
+    <!-- DUPLICADOS (loop infinito) -->
+    <div class="slide">
+        <img src="data:image/png;base64,{img1}">
+        <div class="title">Título 1</div>
+        <div class="desc">Descripción 1</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img2}">
+        <div class="title">Título 2</div>
+        <div class="desc">Descripción 2</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img3}">
+        <div class="title">Título 3</div>
+        <div class="desc">Descripción 3</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img4}">
+        <div class="title">Título 4</div>
+        <div class="desc">Descripción 4</div>
+    </div>
+
+    <div class="slide">
+        <img src="data:image/png;base64,{img5}">
+        <div class="title">Título 5</div>
+        <div class="desc">Descripción 5</div>
+    </div>
+
   </div>
 </div>
+"""
 
-</body>
-</html>
-'''
-
-# Guardar en archivo
-with open('carrusel.html', 'w', encoding='utf-8') as f:
-    f.write(html)
-
-print("Archivo 'carrusel.html' generado.")
+st.markdown(css + html, unsafe_allow_html=True)
 
 
 
