@@ -3116,11 +3116,11 @@ img2 = img_base64("TEST_2.png")
 img3 = img_base64("TEST_3.png")
 img4 = img_base64("TEST_4.png")
 img5 = img_base64("TEST_5.png")
-img5 = img_base64("TEST_6.png")
-img5 = img_base64("TEST_7.png")
-img5 = img_base64("TEST_8.png")
-img5 = img_base64("TEST_9.png")
-img5 = img_base64("TEST_10.png")
+img6 = img_base64("TEST_6.png")
+img7 = img_base64("TEST_7.png")
+img8 = img_base64("TEST_8.png")
+img9 = img_base64("TEST_9.png")
+img10 = img_base64("TEST_10.png")
 
 css = """
 <style>
