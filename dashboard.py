@@ -3102,6 +3102,13 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
+
+# Leer y codificar en base64
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+
 # ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
 img1 = "TEST_1.png"
 img2 = "TEST_2.png"
