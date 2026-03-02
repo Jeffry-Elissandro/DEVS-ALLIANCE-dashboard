@@ -3099,6 +3099,7 @@ st.divider()
 # ==============================
 
 import streamlit as st
+import base64
 
 st.set_page_config(layout="wide")
 
@@ -3110,11 +3111,11 @@ def img_base64(path):
 
 
 # ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
-img1 = "TEST_1.png"
-img2 = "TEST_2.png"
-img3 = "TEST_3.png"
-img4 = "TEST_4.png"
-img5 = "TEST_5.png"
+img1 = img_base64("TEST_1.png")
+img2 = img_base64("TEST_2.png")
+img3 = img_base64("TEST_3.png")
+img4 = img_base64("TEST_4.png")
+img5 = img_base64("TEST_5.png")
 
 css = """
 <style>
