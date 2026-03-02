@@ -3102,7 +3102,7 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 
-# === TUS IMÁGENES BASE64 ===
+# ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
 img1 = "TEST_1.png"
 img2 = "TEST_2.png"
 img3 = "TEST_3.png"
@@ -3132,12 +3132,6 @@ css = """
     padding: 10px;
     text-align: center;
     color: white;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-    transition: transform 0.3s;
-}
-
-.slide:hover {
-    transform: scale(1.05);
 }
 
 .slide img {
@@ -3162,75 +3156,25 @@ css = """
 </style>
 """
 
-html = f"""
-<div class="slider">
-  <div class="slide-track">
+html = (
+'<div class="slider">'
+'  <div class="slide-track">'
 
-    <!-- ORIGINALES -->
-    <div class="slide">
-        <img src="data:image/png;base64,{img1}">
-        <div class="title">Título 1</div>
-        <div class="desc">Descripción 1</div>
-    </div>
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
 
-    <div class="slide">
-        <img src="data:image/png;base64,{img2}">
-        <div class="title">Título 2</div>
-        <div class="desc">Descripción 2</div>
-    </div>
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
 
-    <div class="slide">
-        <img src="data:image/png;base64,{img3}">
-        <div class="title">Título 3</div>
-        <div class="desc">Descripción 3</div>
-    </div>
-
-    <div class="slide">
-        <img src="data:image/png;base64,{img4}">
-        <div class="title">Título 4</div>
-        <div class="desc">Descripción 4</div>
-    </div>
-
-    <div class="slide">
-        <img src="data:image/png;base64,{img5}">
-        <div class="title">Título 5</div>
-        <div class="desc">Descripción 5</div>
-    </div>
-
-    <!-- DUPLICADOS (loop infinito) -->
-    <div class="slide">
-        <img src="data:image/png;base64,{img1}">
-        <div class="title">Título 1</div>
-        <div class="desc">Descripción 1</div>
-    </div>
-
-    <div class="slide">
-        <img src="data:image/png;base64,{img2}">
-        <div class="title">Título 2</div>
-        <div class="desc">Descripción 2</div>
-    </div>
-
-    <div class="slide">
-        <img src="data:image/png;base64,{img3}">
-        <div class="title">Título 3</div>
-        <div class="desc">Descripción 3</div>
-    </div>
-
-    <div class="slide">
-        <img src="data:image/png;base64,{img4}">
-        <div class="title">Título 4</div>
-        <div class="desc">Descripción 4</div>
-    </div>
-
-    <div class="slide">
-        <img src="data:image/png;base64,{img5}">
-        <div class="title">Título 5</div>
-        <div class="desc">Descripción 5</div>
-    </div>
-
-  </div>
-</div>
-"""
+'  </div>'
+'</div>'
+)
 
 st.markdown(css + html, unsafe_allow_html=True)
 
