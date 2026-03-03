@@ -1616,7 +1616,7 @@ components.html(
             line-height:1.6;
         ">
             Marie regresa, y con ella la pelea que desafía la 
-            estrategia y habilidad para lograr hacer un gran daño-
+            estrategia y habilidad para lograr hacer un gran daño. 
             Si tienes complicaciones, puedes ver estos videos para 
             entender cómo funcionan los modificadores y las 
             combinaciones que puedes aplicar. 
@@ -1639,7 +1639,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/AuMZjb8T7MI"
+                    src="https://www.youtube.com/embed/rwSmbfFmzPg"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1662,10 +1662,10 @@ components.html(
             line-height:1.6;
         ">
             Nuevamente regresa el Jefe de Inmortales Marie, además de 
-            devolverle la habilidad de ganar prexisión, por 
+            devolverle la habilidad de ganar precisión, por 
             lo que nuevamente funciona la estrategia de usar a 
-            <strong>Peacock - Ladrón de la Navidad</strong> por lo que te 
-            dejo un video para que veas cómo hacer más daño
+            <strong>Peacock - Ladrón de la Navidad</strong> así que te 
+            dejo un video para que veas algunos consejos de cómo hacer más daño
             Video creado por: <strong>CHESSDEV</strong>
         </p>
 
@@ -1836,7 +1836,7 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("carta_peacock.png", use_container_width=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
