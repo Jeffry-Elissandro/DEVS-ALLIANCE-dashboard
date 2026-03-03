@@ -718,162 +718,6 @@ st.divider()
 
 
 
-#Para destacados por daño en BILLONES
-
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode("utf-8")
-
-miembros_destacados = [
-    {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
-    {"img": "4.png", "score": "5.575B", "name": "TwerlenK"},
-    {"img": "2.png", "score": "4.508B", "name": "»alex«"},
-    {"img": "6.png", "score": "4.445B", "name": "CoinXY"},
-    {"img": "12.png", "score": "3.228B", "name": "blacklagoon69"},
-    {"img": "3.png", "score": "2.408B", "name": "Lady_Navier"},
-    {"img": "25.png", "score": "1.631B", "name": "xXDrive_shXx"},
-    {"img": "19.png", "score": "1.300B", "name": "KilLeo0217"},
-    {"img": "8.png", "score": "1.101B", "name": "lolbit--Chan"},
-    {"img": "21.png", "score": "947M", "name": "William_Afton_1983"},
-]
-
-for miembro in miembros_destacados:
-    miembro["img_b64"] = img_base64(miembro["img"])
-
-members_html = "".join(
-    f"""
-    <div class="member">
-      <img src="data:image/png;base64,{m['img_b64']}">
-      <div class="score">{m['score']}</div>
-      <div class="name">{m['name']}</div>
-    </div>
-    """ for m in miembros_destacados
-)
-
-html_code = f"""
-<style>
-.destacados-card {{
-  max-width:1000px;
-  margin:60px auto;
-  padding:40px 30px;
-  background:linear-gradient(180deg,#1a102d,#0f0f0f 70%,#1a102d);
-  border-radius:18px;
-  border:2px solid rgba(167,139,250,0.45);
-  box-shadow:0 0 40px rgba(167,139,250,0.45),
-             inset 0 0 25px rgba(167,139,250,0.25);
-  text-align:center;
-}}
-
-.destacados-title {{
-  font-size:36px;
-  font-weight:bold;
-  margin-bottom:28px;
-  background: linear-gradient(270deg, #c084fc, #a78bfa, #7c3aed, #d8b4fe);
-  background-size: 600% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 2px;
-  animation: gradientShift 10s ease infinite;
-}}
-
-@keyframes gradientShift {{
-  0% {{ background-position: 0% 50%; }}
-  50% {{ background-position: 100% 50%; }}
-  100% {{ background-position: 0% 50%; }}
-}}
-
-.grid {{
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap:24px;
-  justify-items:center;
-}}
-
-@media (max-width: 768px) {{
-  .grid {{
-    grid-template-columns: repeat(2, 1fr);
-  }}
-}}
-
-.member {{
-  text-align:center;
-}}
-
-.member img {{
-  width:100px;
-  height:100px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #c084fc;
-  box-shadow:0 0 20px rgba(167,139,250,0.6);
-  margin-bottom:10px;
-  transition:0.3s ease;
-}}
-
-.member img:hover {{
-  transform:scale(1.08);
-  box-shadow:0 0 30px rgba(192,132,252,0.9);
-}}
-
-.score {{
-  font-size:14px;
-  color:#e9d5ff;
-  font-weight:bold;
-}}
-
-.name {{
-  font-size:13px;
-  color:#d8b4fe;
-  margin-top:4px;
-}}
-</style>
-
-<div class="destacados-card">
-  <h3 class="destacados-title"> 💜Destacados en Daño de Temporada</h3>
-  <div class="grid">
-    {members_html}
-  </div>
-</div>
-"""
-
-st.components.v1.html(html_code, height=1250, scrolling=False)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-st.divider()
 
 import streamlit as st
 import base64
@@ -1003,7 +847,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 19080   # Oro actual
+puntaje_actual = 4710   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1031,7 +875,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1113,10 +957,6 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1393,7 +1233,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana No.6 - 16/22 Febrero",
+    title="Rendimiento de los miembros - Catualización Pronto ⚠️",
     width=ancho_grafica
 )
 
@@ -1775,10 +1615,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Finalmente tenemos al nuevo jefe de inmortales <strong>Critty Kitty</strong> y con ella vino una 
-            pelea con modificadores realmente interesantes, que se pueden aprovechar a favor para 
-            hacer un daño exponencial. Realmente los equipos son muchos, pero los más recomendados son los siguientes...
-            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong>
+            Marie regresa, y con ella la pelea que desafía la 
+            estrategia y habilidad para lograr hacer un gran daño-
+            Si tienes complicaciones, puedes ver estos videos para 
+            entender cómo funcionan los modificadores y las 
+            combinaciones que puedes aplicar. 
+            Video creado por: <strong>Delphaber7</strong>
         </p>
 
         <div style="
@@ -1797,7 +1639,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/VAL9efW_hHY"
+                    src="https://www.youtube.com/embed/AuMZjb8T7MI"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1819,11 +1661,11 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Este es el equipo que use toda la semana, lo recomiendo bastante ya que con 
-            este equipo fui capaz de llegar a <strong>+10 Billones de Daño</strong>.  
-            Lo conveniente es que no se necesitan estadísticas altísimas, simplemente saber aprovechar el modificador 
-            para hacer un daño exponencial con cada golpe, tal como se muestra en el video. 
-            Agradecería si le dan apoyo al video y espero sea de ayuda la idea.
+            Nuevamente regresa el Jefe de Inmortales Marie, además de 
+            devolverle la habilidad de ganar prexisión, por 
+            lo que nuevamente funciona la estrategia de usar a 
+            <strong>Peacock - Ladrón de la Navidad</strong> por lo que te 
+            dejo un video para que veas cómo hacer más daño
             Video creado por: <strong>CHESSDEV</strong>
         </p>
 
@@ -1843,7 +1685,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/c17npuMkiUk"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1994,17 +1836,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_1.png", use_container_width=True)
+    st.image("carta_peacock.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("Atacantes.png", use_container_width=True)
+    st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_2.png", use_container_width=True)
+    st.image("carta_painwheel.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2325,7 +2167,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img20}">
-  <span>Chopper:3</span>
+  <span>eduguti</span>
 </div>
 
 <div class="dev-card">
@@ -2430,8 +2272,7 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "dayia", "imagen": "12.png"},
-    {"nombre": "Chopper:3", "imagen": "20.png"},
+    {"nombre": "eduguti", "imagen": "20.png"},
 ]
 
 
