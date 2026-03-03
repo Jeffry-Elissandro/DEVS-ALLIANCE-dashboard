@@ -847,7 +847,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 4710   # Oro actual
+puntaje_actual = 5905   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2371,7 +2371,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_10.png"
+nombre_imagen = "skull_meme_11.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2423,7 +2423,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            amanecí muerto
+            Posting eres tú?
         </p>
 
     </div>
