@@ -1705,7 +1705,7 @@ HTML = f"""
 
 </div>
 """
-st.markdown(HTML, unsafe_allow_html=True)
+st.markdown(unsafe_allow_html=True)
 
 
 
