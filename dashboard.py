@@ -45,7 +45,7 @@ data = [
         "Rango": "Especialista",
         "ID": "50is-suxy9",
         "Poder": 705004,
-        "Nivel": 66,
+        "Nivel": 67,
         "Actividad": 10,
         "Daño": 10,
         "Puntos": 10,
@@ -67,7 +67,7 @@ data = [
         "Rango": "Especialista",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 52,
+        "Nivel": 55,
         "Actividad": 10,
         "Daño": 10,
         "Puntos": 10,
@@ -80,9 +80,9 @@ data = [
         "Poder": 000,
         "Nivel": 68,
         "Actividad": 10,
-        "Daño": 8,
+        "Daño": 10,
         "Puntos": 10,
-        "Consistencia": 9
+        "Consistencia": 10
     },
     {
         "Nombre": "Rukawa_Noceda",
@@ -91,9 +91,9 @@ data = [
         "Poder": 000,
         "Nivel": 64,
         "Actividad": 10,
-        "Daño": 8,
+        "Daño": 6,
         "Puntos": 10,
-        "Consistencia": 9
+        "Consistencia": 7
     },
     {
         "Nombre": "DLGPRO", 
@@ -104,7 +104,7 @@ data = [
         "Actividad": 10,
         "Daño": 6,
         "Puntos": 10,
-        "Consistencia": 7
+        "Consistencia": 8
     },
     {
         "Nombre": "xXDrive_shXx", 
@@ -709,6 +709,138 @@ st.markdown(f"""
 
 
 st.divider()
+
+
+
+
+
+
+
+#VERSIÓN 5 MIEMBROS
+
+import streamlit as st
+import base64
+
+top5 = miembros_destacados[:5]
+
+members_html = "".join(
+    f"""
+    <div class="member rank-{i+1}">
+      <img src="data:image/png;base64,{m['img_b64']}">
+      <div class="score">{m['score']}</div>
+      <div class="name">{m['name']}</div>
+    </div>
+    """ for i, m in enumerate(top5)
+)
+
+html_code = f"""
+<style>
+
+.destacados-card {{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px 20px;
+  background: radial-gradient(circle at top, #1a102d, #050505 80%);
+  border-radius:20px;
+  border:2px solid rgba(124,58,237,0.4);
+  box-shadow:0 0 60px rgba(124,58,237,0.4);
+  text-align:center;
+}}
+
+.destacados-title {{
+  font-size:38px;
+  font-weight:bold;
+  margin-bottom:40px;
+  color:#c084fc;
+  letter-spacing:2px;
+}}
+
+.grid {{
+  display:flex;
+  justify-content:center;
+  align-items:end;
+  gap:20px;
+}}
+
+.member {{
+  text-align:center;
+  transition:0.3s ease;
+}}
+
+.member img {{
+  border-radius:50%;
+  object-fit:cover;
+  transition:0.3s ease;
+}}
+
+/* 🥇 TOP 1 */
+.rank-1 img {{
+  width:140px;
+  height:140px;
+  border:4px solid #FFD700;
+  box-shadow:0 0 35px #FFD700;
+}}
+
+.rank-1 {{
+  transform:translateY(-20px);
+}}
+
+/* 🥈 TOP 2 */
+.rank-2 img {{
+  width:110px;
+  height:110px;
+  border:3px solid #C0C0C0;
+  box-shadow:0 0 25px #C0C0C0;
+}}
+
+/* 🥉 TOP 3 */
+.rank-3 img {{
+  width:110px;
+  height:110px;
+  border:3px solid #CD7F32;
+  box-shadow:0 0 25px #CD7F32;
+}}
+
+/* 🏅 4 y 5 */
+.rank-4 img, .rank-5 img {{
+  width:90px;
+  height:90px;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 20px rgba(167,139,250,0.6);
+}}
+
+/* TEXTO */
+.score {{
+  font-size:14px;
+  font-weight:bold;
+  margin-top:8px;
+  color:#e9d5ff;
+}}
+
+.name {{
+  font-size:13px;
+  color:#d8b4fe;
+}}
+
+/* HOVER */
+.member:hover {{
+  transform:scale(1.08);
+}}
+
+</style>
+
+<div class="destacados-card">
+  <h3 class="destacados-title">🏆 TOP 5 DAÑO DE TEMPORADA</h3>
+  <div class="grid">
+    {members_html}
+  </div>
+</div>
+"""
+
+st.components.v1.html(html_code, height=600, scrolling=False)
+
+st.divider()
+
 
 
 
@@ -3095,6 +3227,69 @@ st.markdown(f"""
     </p>
 </div>
 """, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+# ==============================
+# NOTAS
+# ==============================
+
+
+#Para dejar divisiones notables (incluye una línea y una hitbox lineal) se usa la función st.divider()
+
+#Para cambiar las URL de enlaces externos (YouTube) se usa la función embed y cambiar el código final de base 64
+
+#Para agregar imágenes se cargan localmente con la función import base 64 y asegurar la extensión
+
+#Para códigos erroneos o de constante error se encapsula todo el código para que funcione y lea la instrucción crrectamente
+
+#Para cuando se repita constantemente el código, se debe dar un prompt indicando que se debe "encapsular"
+#todo el código para no confundir las instrucciones con texto plano, por uso de diversos lenguajes.
+
+#Un posible indicador de que el código funciona es que la estructura del bloque lleve varias llaves, 
+#señal de que el código leerá las instrucciones de forma más precisa
+
+#En ciertas ocasiones el código puede confundir las notas "#"" con instrucciones, por lo que se pueden remover para renderizar.
+
+#Cuando la página no logre cargar correctamente los videos o URLs externas se debe recargar o borrar Cookies.
+
+#Cuando no haya compatibilidad con Mobile (sistema UX/UI) se debe dar un prompt indicando que solo necesita "reestructuración de compatibilidad"
+
+#Cuando la línea de código no muestra la imagen previa, se debe revisar si tiene la extensión correcra, si existe en el código,
+#si el formato asignado es correcto o si la línea de código es incorrecta.
+
+#Si el código no logra renderizar el código puede deberse a que falta una librería o instrucción para mostrar
+#como funciones pertenecientes al hosting Streamlit
+
+#Si se desconocen las dimensiones de elementos se puede indicar la instrucción en el prompt para otorgar un código
+#con limitaciones, tanto para PC como para Mobile
+
+#Si las dimensiones otorgadas no son las correctas, pero si cuenta con el diseño y funcionalidad, se puede intentar
+#encontrar una versión correcta de tamaño, modificando la hitbox con Height para altura y Weidht para ancho.
+#(Usualmente se usa más Height para dejar espacio vertical, por si el apartado visual no alcanza)
+
+#Si las imágenes no cuentan con la extensión correcta se pueden usar las herramientas externas de IA para
+#cambiar el formato o propiedades (Esta instrucción es muy intuitiva)
+
+#Cuando Se usan archivos grandes/pesados se debe esperar tiempo adicional para actualizar, debido a que son
+#archivos que pasan por proceso de conversión a base 64 para renderizar.
+
+#Para secciones que sean demasiado grandes, se debe reducir el tamaño de las dimensiones para evitar 
+#que cree un scroll interno, ya que afecta principalmente a la versión Mobile.
+
+#Cuando la página cargue
+
+
+
+
 
 
 
