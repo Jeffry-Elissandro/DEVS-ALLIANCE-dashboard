@@ -1005,6 +1005,22 @@ with open(file_path, "rb") as f:
 
 components.html(
     f"""
+       <style>
+    @keyframes pulseGlow {{
+      0% {{
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(255, 0, 156, 0.6));
+      }}
+      50% {{
+        transform: scale(1.06);
+        filter: drop-shadow(0 0 35px rgba(255, 0, 156, 1));
+      }}
+      100% {{
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(255, 0, 156, 0.6));
+      }}
+    }}
+    </style>
     <div style="
         max-width: 1000px;
         margin: 30px auto 40px auto;
@@ -1014,7 +1030,9 @@ components.html(
         box-shadow: 0 0 40px rgba(255, 0, 156, 0.5);
         font-family: Arial, sans-serif;
         text-align: center;
+        
     ">
+    
         <!-- IMAGEN DIAMANTE -->
         <img src="data:image/png;base64,{diamante_img}"
      style="
