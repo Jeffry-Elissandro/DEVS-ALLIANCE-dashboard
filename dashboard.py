@@ -1617,117 +1617,123 @@ st.divider()
 
 #Para explicar el Promedio A Superar para mantenerse a flote en la alianza
 
-
-
 import streamlit as st
-
-
-
-
-st.set_page_config(page_title="Score Recomendado Alianza", layout="wide")
-
 import base64
+
+# Configuración de la página (SOLO UNA VEZ)
+st.set_page_config(
+    page_title="Score Recomendado Alianza",
+    layout="wide"
+)
+
+# Cargar GIF en base64
 with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
 Recomendado_Imagen = f"data:image/gif;base64,{data}"
 
 
-
-# Configuración global de la página
-st.set_page_config(
-    page_title="Score Recomendado Alianza",
-    layout="wide"   # 👈 Esto activa Wide mode por defecto
-)
-
-st.markdown(f"""
+# =========================
+# 🎨 ESTILOS (CSS separado)
+# =========================
+st.markdown("""
 <style>
 
-.reco-card {{
+.main-card {
   max-width:900px;
-  margin:40px auto;
-  padding:28px;
-  border-radius:20px;
-  background: radial-gradient(circle at top, #0f172a, #020617 80%);
-  border:1px solid rgba(99,102,241,0.25);
-  box-shadow:0 0 30px rgba(99,102,241,0.25);
-  font-family: Arial, sans-serif;
-}}
+  margin:35px auto;
+  padding:22px 26px;
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border-radius:16px;
+  box-shadow:0 0 25px rgba(99,102,241,0.25);
+  border:1px solid rgba(99,102,241,0.35);
+}
 
-.reco-title {{
+.title {
   text-align:center;
-  font-size:28px;
-  color:#e0e7ff;
-  margin-bottom:10px;
+  color:#ffffff;
+  font-size:26px;
   letter-spacing:1.5px;
-}}
+  margin-bottom:10px;
+  text-shadow:0 0 12px rgba(99,102,241,0.6);
+}
 
-.reco-sub {{
+.desc {
   text-align:center;
-  color:#94a3b8;
+  color:#9fb3c8;
   font-size:15px;
-  margin-bottom:25px;
-  line-height:1.5;
-}}
+  margin-bottom:18px;
+}
 
-.reco-img-box {{
-  display:flex;
-  justify-content:center;
-  margin:25px 0;
-}}
+.img-box {
+  text-align:center;
+  margin:20px 0;
+}
 
-.reco-img {{
+.img-box img {
   max-width:100%;
-  border-radius:14px;
-  border:1px solid rgba(99,102,241,0.3);
-  box-shadow:0 0 20px rgba(99,102,241,0.4);
-}}
+  border-radius:12px;
+  box-shadow:0 0 15px rgba(99,102,241,0.5);
+}
 
-.reco-stats {{
+.stat-container {
   display:flex;
   justify-content:center;
   gap:30px;
   margin-top:25px;
   flex-wrap:wrap;
-}}
+}
 
-.stat-box {{
-  background: rgba(99,102,241,0.08);
-  border:1px solid rgba(99,102,241,0.25);
+.stat-box {
+  background: rgba(255,255,255,0.05);
+  padding:18px 28px;
   border-radius:14px;
-  padding:14px 20px;
-  min-width:160px;
   text-align:center;
-  box-shadow:0 0 15px rgba(99,102,241,0.2);
-}}
+  backdrop-filter: blur(6px);
+  border:1px solid rgba(255,255,255,0.1);
+  box-shadow:0 0 12px rgba(99,102,241,0.2);
+  transition:0.3s;
+}
 
-.stat-value {{
-  color:#ffffff;
-  font-size:18px;
+.stat-box:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow:0 0 18px rgba(99,102,241,0.5);
+}
+
+.stat-value {
+  font-size:22px;
   font-weight:bold;
-}}
+  color:white;
+}
 
-.stat-label {{
-  color:#a5b4fc;
+.stat-label {
   font-size:13px;
-  margin-top:4px;
-}}
+  color:#9fb3c8;
+}
 
 </style>
+""", unsafe_allow_html=True)
 
-<div class="reco-card">
 
-  <div class="reco-title">🏅 Score Recomendado de la Alianza</div>
+# =========================
+# 🧱 CONTENIDO (HTML limpio)
+# =========================
+st.markdown(f"""
+<div class="main-card">
 
-  <div class="reco-sub">
-    Este es el <strong style="color:#e0e7ff;">promedio sugerido</strong> que cada miembro debería alcanzar semanalmente.
+  <div class="title">
+    🏆 Score Recomendado de la Alianza
+  </div>
+
+  <div class="desc">
+    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que cada miembro debería alcanzar semanalmente.
     Representa el equilibrio entre esfuerzo individual y progreso colectivo.
   </div>
 
-  <div class="reco-img-box">
-    <img src="{Recomendado_Imagen}" class="reco-img">
+  <div class="img-box">
+    <img src="{Recomendado_Imagen}">
   </div>
 
-  <div class="reco-stats">
+  <div class="stat-container">
 
     <div class="stat-box">
       <div class="stat-value">500</div>
