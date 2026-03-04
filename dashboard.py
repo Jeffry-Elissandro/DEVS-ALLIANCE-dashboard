@@ -1620,92 +1620,110 @@ st.divider()
 import streamlit as st
 import base64
 
-# Configuración
 st.set_page_config(page_title="Score Recomendado Alianza", layout="wide")
 
 # Cargar GIF
 with open("Recomendado_Imagen.gif", "rb") as f:
-    data = base64.b64encode(f.read()).decode()
-gif = f"data:image/gif;base64,{data}"
+    data = base64.b64encode(f.read()).decode("utf-8")
+Recomendado_Imagen = f"data:image/gif;base64,{data}"
 
-
-# =========================
-# 🎨 BLOQUE 1: CSS (ENCAPSULADO)
-# =========================
-CSS = """
+st.markdown(f"""
 <style>
-.stat-container {
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  margin-top:25px;
-  flex-wrap:wrap;
-}
+@keyframes glowBox {{
+  0% {{ box-shadow: 0 0 10px rgba(99,102,241,0.3); }}
+  50% {{ box-shadow: 0 0 25px rgba(99,102,241,0.7); }}
+  100% {{ box-shadow: 0 0 10px rgba(99,102,241,0.3); }}
+}}
 
-.stat-box {
-  background: rgba(255,255,255,0.05);
-  padding:18px 28px;
-  border-radius:14px;
-  text-align:center;
-  border:1px solid rgba(255,255,255,0.1);
-}
-
-.stat-value {
-  font-size:22px;
-  font-weight:bold;
-  color:white;
-}
-
-.stat-label {
-  font-size:13px;
-  color:#9fb3c8;
-}
+@keyframes float {{
+  0% {{ transform: translateY(0px); }}
+  50% {{ transform: translateY(-6px); }}
+  100% {{ transform: translateY(0px); }}
+}}
 </style>
-"""
-st.markdown(CSS, unsafe_allow_html=True)
 
-
-# =========================
-# 🧱 BLOQUE 2: HTML (ENCAPSULADO)
-# =========================
-HTML = f"""
 <div style="
   max-width:900px;
   margin:35px auto;
-  padding:22px;
+  padding:25px;
   background:linear-gradient(180deg,#0f172a,#020617);
-  border-radius:16px;
+  border-radius:18px;
+  box-shadow:0 0 30px rgba(99,102,241,0.35);
+  border:1px solid rgba(99,102,241,0.4);
+  text-align:center;
 ">
 
-  <h2 style="text-align:center;color:white;">
+  <h2 style="
+    color:white;
+    font-size:28px;
+    margin-bottom:10px;
+    text-shadow:0 0 15px rgba(99,102,241,0.7);
+  ">
     🏆 Score Recomendado de la Alianza
   </h2>
 
-  <p style="text-align:center;color:#9fb3c8;">
-    Promedio sugerido semanal para mantener el rendimiento colectivo.
+  <p style="
+    color:#9fb3c8;
+    font-size:15px;
+    margin-bottom:20px;
+  ">
+    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente.
   </p>
 
-  <div style="text-align:center;margin:20px;">
-    <img src="{gif}" style="max-width:100%;border-radius:12px;">
+  <!-- GIF -->
+  <div style="margin:20px 0;">
+    <img src="{Recomendado_Imagen}" 
+         style="
+           max-width:100%;
+           border-radius:14px;
+           animation: float 3s ease-in-out infinite;
+           box-shadow:0 0 20px rgba(99,102,241,0.6);
+         ">
   </div>
 
-  <div class="stat-container">
+  <!-- STATS -->
+  <div style="
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:25px;
+  ">
 
-    <div class="stat-box">
-      <div class="stat-value">500</div>
-      <div class="stat-label">Medallas / semana</div>
+    <div style="
+      padding:18px 28px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      animation: glowBox 3s infinite;
+    ">
+      <div style="font-size:22px;color:white;font-weight:bold;">
+        500
+      </div>
+      <div style="font-size:13px;color:#9fb3c8;">
+        Medallas / semana
+      </div>
     </div>
 
-    <div class="stat-box">
-      <div class="stat-value">200,000,000</div>
-      <div class="stat-label">Daño total</div>
+    <div style="
+      padding:18px 28px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      animation: glowBox 3s infinite;
+    ">
+      <div style="font-size:22px;color:white;font-weight:bold;">
+        200,000,000
+      </div>
+      <div style="font-size:13px;color:#9fb3c8;">
+        Daño total
+      </div>
     </div>
 
   </div>
 
 </div>
-"""
-st.markdown(unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 
 
