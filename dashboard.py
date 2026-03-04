@@ -1680,12 +1680,6 @@ st.markdown(f"""
   border-radius:14px;
   border:1px solid rgba(99,102,241,0.3);
   box-shadow:0 0 20px rgba(99,102,241,0.4);
-  transition:0.3s ease;
-}}
-
-.reco-img:hover {{
-  transform:scale(1.02);
-  box-shadow:0 0 30px rgba(99,102,241,0.6);
 }}
 
 .reco-stats {{
@@ -1704,12 +1698,6 @@ st.markdown(f"""
   min-width:160px;
   text-align:center;
   box-shadow:0 0 15px rgba(99,102,241,0.2);
-  transition:0.3s ease;
-}}
-
-.stat-box:hover {{
-  transform:translateY(-3px);
-  box-shadow:0 0 25px rgba(99,102,241,0.4);
 }}
 
 .stat-value {{
@@ -1740,6 +1728,7 @@ st.markdown(f"""
   </div>
 
   <div class="reco-stats">
+
     <div class="stat-box">
       <div class="stat-value">500</div>
       <div class="stat-label">Medallas / semana</div>
@@ -1749,6 +1738,7 @@ st.markdown(f"""
       <div class="stat-value">200,000,000</div>
       <div class="stat-label">Daño total</div>
     </div>
+
   </div>
 
 </div>
