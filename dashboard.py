@@ -716,13 +716,28 @@ st.divider()
 
 
 
-#VERSIÓN 5 MIEMBROS
+# VERSIÓN 5 MIEMBROS (CORREGIDA)
 
 import streamlit as st
 import base64
 
-top5 = miembros_destacados[:5]
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
 
+miembros_destacados = [
+    {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
+    {"img": "3.png", "score": "2.408B", "name": "Lady_Navier"},
+    {"img": "6.png", "score": "4.445B", "name": "CoinXY"},
+    {"img": "2.png", "score": "4.508B", "name": "»alex«"},
+    {"img": "19.png", "score": "1.300B", "name": "KilLeo0217"},
+]
+
+# 🔥 Convertir imágenes
+for miembro in miembros_destacados:
+    miembro["img_b64"] = img_base64(miembro["img"])
+
+# 🔥 Generar HTML correctamente
 members_html = "".join(
     f"""
     <div class="member rank-{i+1}">
@@ -730,7 +745,7 @@ members_html = "".join(
       <div class="score">{m['score']}</div>
       <div class="name">{m['name']}</div>
     </div>
-    """ for i, m in enumerate(top5)
+    """ for i, m in enumerate(miembros_destacados)
 )
 
 html_code = f"""
