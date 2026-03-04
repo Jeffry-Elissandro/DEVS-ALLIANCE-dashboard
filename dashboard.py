@@ -1021,7 +1021,7 @@ components.html(
         width: 120px;
         max-width: 40vw;
         margin-bottom: 14px;
-        animation: pulseGlow 2.5s ease-in-out infinite;
+        filter: drop-shadow(0 0 18px rgba(255, 0, 156, 0.95));
      " />
 
 
