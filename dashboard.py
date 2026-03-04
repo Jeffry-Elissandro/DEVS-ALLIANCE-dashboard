@@ -1620,61 +1620,20 @@ st.divider()
 import streamlit as st
 import base64
 
-# Configuración de la página (SOLO UNA VEZ)
-st.set_page_config(
-    page_title="Score Recomendado Alianza",
-    layout="wide"
-)
+# Configuración
+st.set_page_config(page_title="Score Recomendado Alianza", layout="wide")
 
-# Cargar GIF en base64
+# Cargar GIF
 with open("Recomendado_Imagen.gif", "rb") as f:
-    data = base64.b64encode(f.read()).decode("utf-8")
-Recomendado_Imagen = f"data:image/gif;base64,{data}"
+    data = base64.b64encode(f.read()).decode()
+gif = f"data:image/gif;base64,{data}"
 
 
 # =========================
-# 🎨 ESTILOS (CSS separado)
+# 🎨 BLOQUE 1: CSS (ENCAPSULADO)
 # =========================
-st.markdown("""
+CSS = """
 <style>
-
-.main-card {
-  max-width:900px;
-  margin:35px auto;
-  padding:22px 26px;
-  background:linear-gradient(180deg,#0f172a,#020617);
-  border-radius:16px;
-  box-shadow:0 0 25px rgba(99,102,241,0.25);
-  border:1px solid rgba(99,102,241,0.35);
-}
-
-.title {
-  text-align:center;
-  color:#ffffff;
-  font-size:26px;
-  letter-spacing:1.5px;
-  margin-bottom:10px;
-  text-shadow:0 0 12px rgba(99,102,241,0.6);
-}
-
-.desc {
-  text-align:center;
-  color:#9fb3c8;
-  font-size:15px;
-  margin-bottom:18px;
-}
-
-.img-box {
-  text-align:center;
-  margin:20px 0;
-}
-
-.img-box img {
-  max-width:100%;
-  border-radius:12px;
-  box-shadow:0 0 15px rgba(99,102,241,0.5);
-}
-
 .stat-container {
   display:flex;
   justify-content:center;
@@ -1688,15 +1647,7 @@ st.markdown("""
   padding:18px 28px;
   border-radius:14px;
   text-align:center;
-  backdrop-filter: blur(6px);
   border:1px solid rgba(255,255,255,0.1);
-  box-shadow:0 0 12px rgba(99,102,241,0.2);
-  transition:0.3s;
-}
-
-.stat-box:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow:0 0 18px rgba(99,102,241,0.5);
 }
 
 .stat-value {
@@ -1709,28 +1660,33 @@ st.markdown("""
   font-size:13px;
   color:#9fb3c8;
 }
-
 </style>
-""", unsafe_allow_html=True)
+"""
+st.markdown(CSS, unsafe_allow_html=True)
 
 
 # =========================
-# 🧱 CONTENIDO (HTML limpio)
+# 🧱 BLOQUE 2: HTML (ENCAPSULADO)
 # =========================
-st.markdown(f"""
-<div class="main-card">
+HTML = f"""
+<div style="
+  max-width:900px;
+  margin:35px auto;
+  padding:22px;
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border-radius:16px;
+">
 
-  <div class="title">
+  <h2 style="text-align:center;color:white;">
     🏆 Score Recomendado de la Alianza
-  </div>
+  </h2>
 
-  <div class="desc">
-    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que cada miembro debería alcanzar semanalmente.
-    Representa el equilibrio entre esfuerzo individual y progreso colectivo.
-  </div>
+  <p style="text-align:center;color:#9fb3c8;">
+    Promedio sugerido semanal para mantener el rendimiento colectivo.
+  </p>
 
-  <div class="img-box">
-    <img src="{Recomendado_Imagen}">
+  <div style="text-align:center;margin:20px;">
+    <img src="{gif}" style="max-width:100%;border-radius:12px;">
   </div>
 
   <div class="stat-container">
@@ -1748,7 +1704,8 @@ st.markdown(f"""
   </div>
 
 </div>
-""", unsafe_allow_html=True)
+"""
+st.markdown(HTML, unsafe_allow_html=True)
 
 
 
