@@ -1640,54 +1640,114 @@ st.set_page_config(
 )
 
 st.markdown(f"""
-<div style="
+<style>
+
+.reco-card {{
   max-width:900px;
-  margin:35px auto;
-  padding:22px 26px;
-  background:linear-gradient(180deg,#0f172a,#020617);
-  border-radius:16px;
-  box-shadow:0 0 25px rgba(99,102,241,0.25);
-  border:1px solid rgba(99,102,241,0.35);
-">
+  margin:40px auto;
+  padding:28px;
+  border-radius:20px;
+  background: radial-gradient(circle at top, #0f172a, #020617 80%);
+  border:1px solid rgba(99,102,241,0.25);
+  box-shadow:0 0 30px rgba(99,102,241,0.25);
+  font-family: Arial, sans-serif;
+}}
 
-  <h2 style="
-    text-align:center;
-    color:#ffffff;
-    font-size:26px;
-    letter-spacing:1.5px;
-    margin-bottom:10px;
-    text-shadow:0 0 12px rgba(99,102,241,0.6);
-  ">
-    🏆 Score Recomendado de la Alianza
-  </h2>
+.reco-title {{
+  text-align:center;
+  font-size:28px;
+  color:#e0e7ff;
+  margin-bottom:10px;
+  letter-spacing:1.5px;
+}}
 
-  <p style="
-    text-align:center;
-    color:#9fb3c8;
-    font-size:15px;
-    margin-bottom:18px;
-  ">
-    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
-    Es una meta motivadora que refleja el compromiso colectivo.
-  </p>
+.reco-sub {{
+  text-align:center;
+  color:#94a3b8;
+  font-size:15px;
+  margin-bottom:25px;
+  line-height:1.5;
+}}
 
-  <!-- Imagen/GIF en Base64 -->
-  <div style="text-align:center; margin:20px 0;">
-    <img src="{Recomendado_Imagen}" alt="Imagen" style="max-width:100%; border-radius:12px; box-shadow:0 0 15px rgba(99,102,241,0.5);" />
+.reco-img-box {{
+  display:flex;
+  justify-content:center;
+  margin:25px 0;
+}}
+
+.reco-img {{
+  max-width:100%;
+  border-radius:14px;
+  border:1px solid rgba(99,102,241,0.3);
+  box-shadow:0 0 20px rgba(99,102,241,0.4);
+  transition:0.3s ease;
+}}
+
+.reco-img:hover {{
+  transform:scale(1.02);
+  box-shadow:0 0 30px rgba(99,102,241,0.6);
+}}
+
+.reco-stats {{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:25px;
+  flex-wrap:wrap;
+}}
+
+.stat-box {{
+  background: rgba(99,102,241,0.08);
+  border:1px solid rgba(99,102,241,0.25);
+  border-radius:14px;
+  padding:14px 20px;
+  min-width:160px;
+  text-align:center;
+  box-shadow:0 0 15px rgba(99,102,241,0.2);
+  transition:0.3s ease;
+}}
+
+.stat-box:hover {{
+  transform:translateY(-3px);
+  box-shadow:0 0 25px rgba(99,102,241,0.4);
+}}
+
+.stat-value {{
+  color:#ffffff;
+  font-size:18px;
+  font-weight:bold;
+}}
+
+.stat-label {{
+  color:#a5b4fc;
+  font-size:13px;
+  margin-top:4px;
+}}
+
+</style>
+
+<div class="reco-card">
+
+  <div class="reco-title">🏅 Score Recomendado de la Alianza</div>
+
+  <div class="reco-sub">
+    Este es el <strong style="color:#e0e7ff;">promedio sugerido</strong> que cada miembro debería alcanzar semanalmente.
+    Representa el equilibrio entre esfuerzo individual y progreso colectivo.
   </div>
-            
-  <div style="
-    display:flex;
-    justify-content:space-around;
-    margin-top:20px;
-    font-size:16px;
-    color:#cbd5f1;
-  ">
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">500</strong><br>Medallas / semana
+
+  <div class="reco-img-box">
+    <img src="{Recomendado_Imagen}" class="reco-img">
+  </div>
+
+  <div class="reco-stats">
+    <div class="stat-box">
+      <div class="stat-value">500</div>
+      <div class="stat-label">Medallas / semana</div>
     </div>
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">200,000,000</strong><br>Daño total
+
+    <div class="stat-box">
+      <div class="stat-value">200,000,000</div>
+      <div class="stat-label">Daño total</div>
     </div>
   </div>
 
