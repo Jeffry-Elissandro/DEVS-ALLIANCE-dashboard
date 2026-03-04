@@ -1627,21 +1627,19 @@ with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
 Recomendado_Imagen = f"data:image/gif;base64,{data}"
 
-st.markdown(f"""
+# 🔥 CSS SEPARADO (IMPORTANTE)
+st.markdown("""
 <style>
-@keyframes glowBox {{
-  0% {{ box-shadow: 0 0 10px rgba(99,102,241,0.3); }}
-  50% {{ box-shadow: 0 0 25px rgba(99,102,241,0.7); }}
-  100% {{ box-shadow: 0 0 10px rgba(99,102,241,0.3); }}
-}}
-
-@keyframes float {{
-  0% {{ transform: translateY(0px); }}
-  50% {{ transform: translateY(-6px); }}
-  100% {{ transform: translateY(0px); }}
-}}
+@keyframes glowBox {
+  0% { box-shadow: 0 0 10px rgba(99,102,241,0.3); }
+  50% { box-shadow: 0 0 25px rgba(99,102,241,0.7); }
+  100% { box-shadow: 0 0 10px rgba(99,102,241,0.3); }
+}
 </style>
+""", unsafe_allow_html=True)
 
+# 🔥 HTML LIMPIO (SIN <style> dentro)
+st.markdown(f"""
 <div style="
   max-width:900px;
   margin:35px auto;
@@ -1670,13 +1668,12 @@ st.markdown(f"""
     Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente.
   </p>
 
-  <!-- GIF -->
+  <!-- GIF (SIN animaciones externas) -->
   <div style="margin:20px 0;">
     <img src="{Recomendado_Imagen}" 
          style="
            max-width:100%;
            border-radius:14px;
-           animation: float 3s ease-in-out infinite;
            box-shadow:0 0 20px rgba(99,102,241,0.6);
          ">
   </div>
