@@ -102,7 +102,7 @@ data = [
         "Poder": 000,
         "Nivel": 72,
         "Actividad": 10,
-        "Daño": 6,
+        "Daño": 7,
         "Puntos": 10,
         "Consistencia": 8
     },
@@ -124,9 +124,9 @@ data = [
         "Poder": 000,
         "Nivel": 63,
         "Actividad": 10,
-        "Daño": 7,
+        "Daño": 4,
         "Puntos": 10,
-        "Consistencia": 8
+        "Consistencia": 5
     },
     {
         "Nombre": "KSTKBMS23", 
@@ -168,9 +168,9 @@ data = [
         "Poder": 000,
         "Nivel": 70,
         "Actividad": 10,
-        "Daño": 4,
+        "Daño": 5,
         "Puntos": 10,
-        "Consistencia": 6
+        "Consistencia": 5
     },
     {
         "Nombre": "KilLeo0217", 
@@ -223,9 +223,9 @@ data = [
         "Poder": 000,
         "Nivel": 68,
         "Actividad": 10,
-        "Daño": 10,
+        "Daño": 3,
         "Puntos": 10,
-        "Consistencia": 10
+        "Consistencia": 4
     },
     {
         "Nombre": "lolbit--Chan",
@@ -257,15 +257,15 @@ data = [
         "Nivel": 76,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
+        "Puntos": 8,
+        "Consistencia": 9
     },
     {
-        "Nombre": "STANLEY GOAT", 
+        "Nombre": "dayia",
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 69,
+        "Nivel": 70,
         "Actividad": 10,
         "Daño": 10,
         "Puntos": 10,
@@ -283,15 +283,15 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "mamisilicon",
+        "Nombre": "Military Goth",
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 60,
+        "Nivel": 70,
         "Actividad": 10,
         "Daño": 10,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
         "Nombre": "CoinXY", 
@@ -316,26 +316,26 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "TEST1", 
+        "Nombre": "STANLEY GOAT",
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 70,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
-        "Consistencia": 6
+        "Nivel": 71,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     },
     {
-        "Nombre": "TEST2", 
+        "Nombre": "Aesick4u",
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 70,
-        "Actividad": 4,
-        "Daño": 4,
-        "Puntos": 4,
-        "Consistencia": 4
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
     }
 ]
 
@@ -967,7 +967,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 5905   # Oro actual
+puntaje_actual = 9080   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1353,7 +1353,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Actualización Pronto ⚠️",
+    title="Rendimiento de los miembros - Semana NO.7 - 23 Feb/1 Mar ",
     width=ancho_grafica
 )
 
@@ -2491,7 +2491,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_11.png"
+nombre_imagen = "skull_meme_12.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2543,7 +2543,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Posting eres tú?
+            Uff
         </p>
 
     </div>
