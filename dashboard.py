@@ -716,7 +716,7 @@ st.divider()
 
 
 
-# VERSIÓN 5 MIEMBROS (CORREGIDA)
+# VERSIÓN COLECTIVA 5 MIEMBROS (SIN JERARQUÍA)
 
 import streamlit as st
 import base64
@@ -733,19 +733,17 @@ miembros_destacados = [
     {"img": "19.png", "score": "1.300B", "name": "KilLeo0217"},
 ]
 
-# 🔥 Convertir imágenes
 for miembro in miembros_destacados:
     miembro["img_b64"] = img_base64(miembro["img"])
 
-# 🔥 Generar HTML correctamente
 members_html = "".join(
     f"""
-    <div class="member rank-{i+1}">
+    <div class="member">
       <img src="data:image/png;base64,{m['img_b64']}">
       <div class="score">{m['score']}</div>
       <div class="name">{m['name']}</div>
     </div>
-    """ for i, m in enumerate(miembros_destacados)
+    """ for m in miembros_destacados
 )
 
 html_code = f"""
@@ -757,24 +755,31 @@ html_code = f"""
   padding:40px 20px;
   background: radial-gradient(circle at top, #1a102d, #050505 80%);
   border-radius:20px;
-  border:2px solid rgba(124,58,237,0.4);
-  box-shadow:0 0 60px rgba(124,58,237,0.4);
+  border:2px solid rgba(124,58,237,0.3);
+  box-shadow:0 0 40px rgba(124,58,237,0.3);
   text-align:center;
 }}
 
 .destacados-title {{
-  font-size:38px;
+  font-size:34px;
   font-weight:bold;
-  margin-bottom:40px;
+  margin-bottom:10px;
   color:#c084fc;
   letter-spacing:2px;
+}}
+
+.destacados-sub {{
+  font-size:14px;
+  color:#a78bfa;
+  margin-bottom:30px;
+  opacity:0.8;
 }}
 
 .grid {{
   display:flex;
   justify-content:center;
-  align-items:end;
-  gap:20px;
+  flex-wrap:wrap;
+  gap:30px;
 }}
 
 .member {{
@@ -783,52 +788,24 @@ html_code = f"""
 }}
 
 .member img {{
+  width:110px;
+  height:110px;
   border-radius:50%;
   object-fit:cover;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 20px rgba(167,139,250,0.5);
+  margin-bottom:10px;
   transition:0.3s ease;
 }}
 
-/* 🥇 TOP 1 */
-.rank-1 img {{
-  width:140px;
-  height:140px;
-  border:4px solid #FFD700;
-  box-shadow:0 0 35px #FFD700;
+.member:hover img {{
+  transform:scale(1.08);
+  box-shadow:0 0 30px rgba(167,139,250,0.8);
 }}
 
-.rank-1 {{
-  transform:translateY(-20px);
-}}
-
-/* 🥈 TOP 2 */
-.rank-2 img {{
-  width:110px;
-  height:110px;
-  border:3px solid #C0C0C0;
-  box-shadow:0 0 25px #C0C0C0;
-}}
-
-/* 🥉 TOP 3 */
-.rank-3 img {{
-  width:110px;
-  height:110px;
-  border:3px solid #CD7F32;
-  box-shadow:0 0 25px #CD7F32;
-}}
-
-/* 🏅 4 y 5 */
-.rank-4 img, .rank-5 img {{
-  width:90px;
-  height:90px;
-  border:3px solid #a78bfa;
-  box-shadow:0 0 20px rgba(167,139,250,0.6);
-}}
-
-/* TEXTO */
 .score {{
   font-size:14px;
   font-weight:bold;
-  margin-top:8px;
   color:#e9d5ff;
 }}
 
@@ -837,22 +814,18 @@ html_code = f"""
   color:#d8b4fe;
 }}
 
-/* HOVER */
-.member:hover {{
-  transform:scale(1.08);
-}}
-
 </style>
 
 <div class="destacados-card">
-  <h3 class="destacados-title">🏆 TOP 5 DAÑO DE TEMPORADA</h3>
+  <h3 class="destacados-title">💜 Miembros Destacados</h3>
+  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada</div>
   <div class="grid">
     {members_html}
   </div>
 </div>
 """
 
-st.components.v1.html(html_code, height=600, scrolling=False)
+st.components.v1.html(html_code, height=500, scrolling=False)
 
 st.divider()
 
