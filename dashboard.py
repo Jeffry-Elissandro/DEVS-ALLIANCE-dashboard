@@ -726,11 +726,11 @@ def img_base64(path):
         return base64.b64encode(f.read()).decode("utf-8")
 
 miembros_destacados = [
-    {"img": "1.png", "score": "26.287B", "name": "CHESSDEV"},
-    {"img": "3.png", "score": "2.408B", "name": "Lady_Navier"},
-    {"img": "6.png", "score": "4.445B", "name": "CoinXY"},
-    {"img": "2.png", "score": "4.508B", "name": "»alex«"},
-    {"img": "19.png", "score": "1.300B", "name": "KilLeo0217"},
+    {"img": "1.png", "score": "16.465B - 700 points", "name": "CHESSDEV"},
+    {"img": "3.png", "score": "4.401B - 780 points", "name": "Lady_Navier"},
+    {"img": "6.png", "score": "3.047B - 810 points", "name": "CoinXY"},
+    {"img": "19.png", "score": "2.000B - 830 points", "name": "KilLeo0217"},
+    {"img": "2.png", "score": "2.264B - 725 points", "name": "»alex«"},
 ]
 
 for miembro in miembros_destacados:
