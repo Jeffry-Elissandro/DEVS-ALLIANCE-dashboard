@@ -1641,113 +1641,104 @@ st.markdown(f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-.card {{
+.container {{
   max-width:900px;
-  margin:40px auto;
-  padding:28px;
-  border-radius:18px;
-  font-family: 'Inter', sans-serif;
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(99,102,241,0.25);
-  box-shadow: 0 0 30px rgba(99,102,241,0.15);
-  transition: all 0.3s ease;
-}}
-
-.card:hover {{
-  transform: translateY(-4px);
-  box-shadow: 0 0 40px rgba(99,102,241,0.25);
+  margin:50px auto;
+  padding:30px;
+  border-radius:20px;
+  background: linear-gradient(135deg, #020617, #0f172a 60%, #1e293b);
+  border:1px solid rgba(0,255,200,0.2);
+  box-shadow: 0 0 40px rgba(0,255,200,0.15);
+  font-family: Arial, sans-serif;
 }}
 
 .title {{
   text-align:center;
-  color:#ffffff;
-  font-size:28px;
-  font-weight:600;
-  letter-spacing:1px;
-  margin-bottom:12px;
+  font-size:30px;
+  font-weight:bold;
+  color:#00ffc8;
+  margin-bottom:15px;
 }}
 
-.subtitle {{
+.desc {{
   text-align:center;
-  color:#94a3b8;
+  color:#cbd5f1;
   font-size:15px;
   margin-bottom:25px;
 }}
 
-.highlight {{
-  color:#e0f2fe;
-  font-weight:500;
+.desc strong {{
+  color:#00ffc8;
 }}
 
-.image-container img {{
+.img-box {{
+  text-align:center;
+  margin:20px 0;
+}}
+
+.img-box img {{
   max-width:100%;
   border-radius:14px;
-  box-shadow:0 0 20px rgba(99,102,241,0.3);
-  transition: transform 0.4s ease;
-}}
-
-.image-container img:hover {{
-  transform: scale(1.03);
+  border:1px solid rgba(0,255,200,0.3);
 }}
 
 .stats {{
   display:flex;
-  justify-content:space-around;
-  margin-top:28px;
   gap:20px;
+  justify-content:center;
+  margin-top:25px;
 }}
 
-.stat-box {{
+.stat {{
   flex:1;
   text-align:center;
-  padding:18px;
+  padding:20px;
   border-radius:14px;
-  background: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(99,102,241,0.2);
-  transition: all 0.3s ease;
+  background:#020617;
+  border:1px solid rgba(0,255,200,0.2);
+  transition:0.3s;
 }}
 
-.stat-box:hover {{
-  background: rgba(99,102,241,0.1);
-  transform: translateY(-3px);
+.stat:hover {{
+  transform:scale(1.05);
+  box-shadow:0 0 15px rgba(0,255,200,0.4);
 }}
 
-.stat-value {{
-  font-size:22px;
-  color:#ffffff;
-  font-weight:600;
+.value {{
+  font-size:26px;
+  font-weight:bold;
+  color:#00ffc8;
 }}
 
-.stat-label {{
+.label {{
   font-size:14px;
-  color:#cbd5f1;
-  margin-top:6px;
+  color:#94a3b8;
+  margin-top:5px;
 }}
 </style>
 
-<div class="card">
+<div class="container">
 
-  <div class="title">🏆 Score Recomendado de la Alianza</div>
+  <div class="title">⚡ SCORE RECOMENDADO</div>
 
-  <div class="subtitle">
-    Este es el <span class="highlight">promedio sugerido</span> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
-    Es una meta motivadora que refleja el compromiso colectivo.
+  <div class="desc">
+    Promedio que cada miembro debe alcanzar semanalmente para mantener el nivel competitivo de la alianza.  
+    <br><strong>Compromiso = Resultados</strong>
   </div>
 
-  <div class="image-container" style="text-align:center;">
-    <img src="{Recomendado_Imagen}" alt="Imagen">
+  <div class="img-box">
+    <img src="{Recomendado_Imagen}">
   </div>
 
   <div class="stats">
-    <div class="stat-box">
-      <div class="stat-value">500</div>
-      <div class="stat-label">Medallas / semana</div>
+    <div class="stat">
+      <div class="value">500</div>
+      <div class="label">Medallas / semana</div>
     </div>
 
-    <div class="stat-box">
-      <div class="stat-value">200,000,000</div>
-      <div class="stat-label">Daño total</div>
+    <div class="stat">
+      <div class="value">200M</div>
+      <div class="label">Daño total</div>
     </div>
   </div>
 
