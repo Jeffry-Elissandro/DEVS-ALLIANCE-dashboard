@@ -616,6 +616,107 @@ st.divider()
 
 
 
+
+
+
+
+# CARAJO AHORA TRABAJOS
+
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+sick_img = img_base64("Filia_crying.png")
+
+# Inyectar CSS
+st.markdown("""
+<style>
+.sick-note {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 28px;
+    background: linear-gradient(
+        180deg,
+        rgba(99, 102, 241, 0.08),
+        rgba(168, 85, 247, 0.06)
+    );
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 26px;
+    align-items: center;
+}
+.sick-note img {
+    width: 100%;
+    border-radius: 14px;
+    filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.35));
+}
+.sick-title {
+    color: #e5e7eb;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.sick-text {
+    color: #cbd5f7;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+.sick-footer {
+    color: #a5b4fc;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .sick-note {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Renderizar HTML
+st.markdown(f"""
+<div class="sick-note">
+  <div>
+    <div class="sick-title">¡Saludos gente! 😅</div>
+    <div class="sick-text">
+      Quiero informarles que esta semana tengo como 10 mil trabajos pendientes, pero también un proyecto final sumamente importante.
+    </div>
+    <div class="sick-text">
+      Por lo que estaré algo inactivo al menos esta semana. Probablemente no se actualice mucho la página o no tenga un gran aporte en gremios.
+    </div>
+    <div class="sick-footer">
+      Sin embargo prometo mucho más cuando acabe todos mis asuntos pendientes. Es seguro que desde el Lunes de la siguiente temporada volveré a las actividades y updates interesantes, incluyendo premiaciones y nuevos videos. Gracias por comprender, nos vemos luego. 💚
+    </div>
+  </div>
+  <div>
+    <img src="data:image/png;base64,{sick_img}">
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ==============================
 # REGLAS DE RENDIMIENTO Y LIMPIEZA
 # ==============================
