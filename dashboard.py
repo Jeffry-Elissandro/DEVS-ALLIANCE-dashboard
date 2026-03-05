@@ -1638,54 +1638,116 @@ st.set_page_config(
 )
 
 st.markdown(f"""
-<div style="
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+.card {{
   max-width:900px;
-  margin:35px auto;
-  padding:22px 26px;
-  background:linear-gradient(180deg,#0f172a,#020617);
-  border-radius:16px;
-  box-shadow:0 0 25px rgba(99,102,241,0.25);
-  border:1px solid rgba(99,102,241,0.35);
-">
+  margin:40px auto;
+  padding:28px;
+  border-radius:18px;
+  font-family: 'Inter', sans-serif;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(99,102,241,0.25);
+  box-shadow: 0 0 30px rgba(99,102,241,0.15);
+  transition: all 0.3s ease;
+}}
 
-  <h2 style="
-    text-align:center;
-    color:#ffffff;
-    font-size:26px;
-    letter-spacing:1.5px;
-    margin-bottom:10px;
-    text-shadow:0 0 12px rgba(99,102,241,0.6);
-  ">
-    🏆 Score Recomendado de la Alianza
-  </h2>
+.card:hover {{
+  transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(99,102,241,0.25);
+}}
 
-  <p style="
-    text-align:center;
-    color:#9fb3c8;
-    font-size:15px;
-    margin-bottom:18px;
-  ">
-    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
+.title {{
+  text-align:center;
+  color:#ffffff;
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:1px;
+  margin-bottom:12px;
+}}
+
+.subtitle {{
+  text-align:center;
+  color:#94a3b8;
+  font-size:15px;
+  margin-bottom:25px;
+}}
+
+.highlight {{
+  color:#e0f2fe;
+  font-weight:500;
+}}
+
+.image-container img {{
+  max-width:100%;
+  border-radius:14px;
+  box-shadow:0 0 20px rgba(99,102,241,0.3);
+  transition: transform 0.4s ease;
+}}
+
+.image-container img:hover {{
+  transform: scale(1.03);
+}}
+
+.stats {{
+  display:flex;
+  justify-content:space-around;
+  margin-top:28px;
+  gap:20px;
+}}
+
+.stat-box {{
+  flex:1;
+  text-align:center;
+  padding:18px;
+  border-radius:14px;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(99,102,241,0.2);
+  transition: all 0.3s ease;
+}}
+
+.stat-box:hover {{
+  background: rgba(99,102,241,0.1);
+  transform: translateY(-3px);
+}}
+
+.stat-value {{
+  font-size:22px;
+  color:#ffffff;
+  font-weight:600;
+}}
+
+.stat-label {{
+  font-size:14px;
+  color:#cbd5f1;
+  margin-top:6px;
+}}
+</style>
+
+<div class="card">
+
+  <div class="title">🏆 Score Recomendado de la Alianza</div>
+
+  <div class="subtitle">
+    Este es el <span class="highlight">promedio sugerido</span> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
     Es una meta motivadora que refleja el compromiso colectivo.
-  </p>
-
-  <!-- Imagen/GIF en Base64 -->
-  <div style="text-align:center; margin:20px 0;">
-    <img src="{Recomendado_Imagen}" alt="Imagen" style="max-width:100%; border-radius:12px; box-shadow:0 0 15px rgba(99,102,241,0.5);" />
   </div>
-            
-  <div style="
-    display:flex;
-    justify-content:space-around;
-    margin-top:20px;
-    font-size:16px;
-    color:#cbd5f1;
-  ">
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">500</strong><br>Medallas / semana
+
+  <div class="image-container" style="text-align:center;">
+    <img src="{Recomendado_Imagen}" alt="Imagen">
+  </div>
+
+  <div class="stats">
+    <div class="stat-box">
+      <div class="stat-value">500</div>
+      <div class="stat-label">Medallas / semana</div>
     </div>
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">200,000,000</strong><br>Daño total
+
+    <div class="stat-box">
+      <div class="stat-value">200,000,000</div>
+      <div class="stat-label">Daño total</div>
     </div>
   </div>
 
