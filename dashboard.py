@@ -19,7 +19,7 @@ PESO_CONSISTENCIA = 0.15
 # ============================
 data = [
     {
-        "Nombre": "CHESSDEV",
+        "Nombre": "TEST",
         "Rango": "Líder",
         "ID": "0gd5-r41k7",
         "Poder": 1266707,
@@ -30,313 +30,49 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "»alex«", 
+        "Nombre": "TEST2", 
         "Rango": "Colíder",
         "ID": "1l4y-eguc1",
         "Poder": 958033,
         "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
+        "Actividad": 9,
+        "Daño": 9,
+        "Puntos": 9,
+        "Consistencia": 9
     },
     {
-        "Nombre": "Lady_Navier", 
+        "Nombre": "TEST3", 
         "Rango": "Especialista",
         "ID": "50is-suxy9",
         "Poder": 705004,
         "Nivel": 67,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "TwerlenK", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "MRchochox", 
-        "Rango": "Especialista",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 55,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "EARTHLINGO", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 68,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Rukawa_Noceda",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 64,
-        "Actividad": 10,
-        "Daño": 6,
-        "Puntos": 10,
+        "Actividad": 7,
+        "Daño": 7,
+        "Puntos": 7,
         "Consistencia": 7
     },
     {
-        "Nombre": "DLGPRO", 
+        "Nombre": "TEST4", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 72,
-        "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 10,
-        "Consistencia": 8
+        "Nivel": 77,
+        "Actividad": 6,
+        "Daño": 6,
+        "Puntos": 6,
+        "Consistencia": 6
     },
     {
-        "Nombre": "xXDrive_shXx", 
-        "Rango": "Especialista",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 76,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Sam :3",
+        "Nombre": "TEST5", 
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 63,
-        "Actividad": 10,
+        "Nivel": 4,
+        "Actividad": 4,
         "Daño": 4,
-        "Puntos": 10,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "KSTKBMS23", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "jfglhg", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 79,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "William_Afton_1983", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 72,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "BAKI",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 5,
-        "Puntos": 10,
-        "Consistencia": 5
-    },
-    {
-        "Nombre": "KilLeo0217", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 78,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Battousai saramo",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "ArtuxxD", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 73,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Skullgirls14203520", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 62,
-        "Actividad": 10,
-        "Daño": 7,
-        "Puntos": 10,
-        "Consistencia": 8
-    },
-    {
-        "Nombre": "¶ØrNHÛß", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 68,
-        "Actividad": 10,
-        "Daño": 3,
-        "Puntos": 10,
+        "Puntos": 4,
         "Consistencia": 4
     },
-    {
-        "Nombre": "lolbit--Chan",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 75,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "birdflash",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "black lagoon69", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 76,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 8,
-        "Consistencia": 9
-    },
-    {
-        "Nombre": "dayia",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "NERE OTAKO", 
-        "Rango": "Especialista",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 66,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Military Goth",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "CoinXY", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 79,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "rottqned", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 74,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "STANLEY GOAT",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 71,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    },
-    {
-        "Nombre": "Aesick4u",
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 70,
-        "Actividad": 10,
-        "Daño": 10,
-        "Puntos": 10,
-        "Consistencia": 10
-    }
 ]
 
 # ============================
@@ -616,11 +352,9 @@ st.divider()
 
 
 
-
-
-
-
-# CARAJO AHORA TRABAJOS
+#=========================
+#BACK TO THE SHOOW
+#=========================
 
 
 import streamlit as st
@@ -630,82 +364,136 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-sick_img = img_base64("Filia_crying.png")
+admin_img = img_base64("Filia_confident.png")
 
-# Inyectar CSS
 st.markdown("""
 <style>
-.sick-note {
+
+@keyframes pulseGlow {
+0% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
+50% { box-shadow: 0 0 35px rgba(34,211,238,0.6); }
+100% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
+}
+
+.return-note {
     max-width: 1000px;
     margin: 50px auto;
-    padding: 28px;
+    padding: 30px;
+    border-radius: 18px;
+
     background: linear-gradient(
         180deg,
-        rgba(99, 102, 241, 0.08),
-        rgba(168, 85, 247, 0.06)
+        rgba(34,211,238,0.10),
+        rgba(59,130,246,0.10)
     );
-    border-radius: 18px;
-    box-shadow: 0 0 30px rgba(99, 102, 241, 0.25);
+
+    border: 1px solid rgba(56,189,248,0.35);
+
     display: grid;
     grid-template-columns: 1fr 260px;
-    gap: 26px;
+    gap: 28px;
     align-items: center;
+
+    animation: pulseGlow 3s infinite ease-in-out;
 }
-.sick-note img {
+
+.return-note img {
     width: 100%;
     border-radius: 14px;
-    filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.35));
+    filter: drop-shadow(0 0 15px rgba(34,211,238,0.45));
 }
-.sick-title {
-    color: #e5e7eb;
-    font-size: 26px;
-    margin-bottom: 12px;
+
+.return-title {
+    color: #e0f2fe;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
-.sick-text {
+
+.return-text {
     color: #cbd5f7;
     font-size: 16px;
     line-height: 1.7;
     margin-bottom: 14px;
 }
-.sick-footer {
-    color: #a5b4fc;
+
+.return-badge {
+    display: inline-block;
+    background: rgba(34,211,238,0.2);
+    border: 1px solid rgba(34,211,238,0.6);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #67e8f9;
+    margin-bottom: 10px;
+}
+
+.return-footer {
+    margin-top: 10px;
+    color: #7dd3fc;
     font-size: 14px;
 }
-@media (max-width: 768px) {
-    .sick-note {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+
+.return-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: linear-gradient(90deg,#22d3ee,#3b82f6);
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
 }
+
+@media (max-width: 768px) {
+.return-note {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+}
+
 </style>
 """, unsafe_allow_html=True)
 
-# Renderizar HTML
+
 st.markdown(f"""
-<div class="sick-note">
-  <div>
-    <div class="sick-title">¡Saludos gente! 😅</div>
-    <div class="sick-text">
-      Quiero informarles que esta semana tengo como 10 mil trabajos pendientes, pero también un proyecto final sumamente importante.
-    </div>
-    <div class="sick-text">
-      Por lo que estaré algo inactivo al menos esta semana. Probablemente no se actualice mucho la página o no tenga un gran aporte en gremios.
-    </div>
-    <div class="sick-footer">
-      Sin embargo prometo mucho más cuando acabe todos mis asuntos pendientes. Es seguro que desde el Lunes de la siguiente temporada volveré a las actividades y updates interesantes, incluyendo premiaciones y nuevos videos. Gracias por comprender, nos vemos luego. 💚
-    </div>
-  </div>
-  <div>
-    <img src="data:image/png;base64,{sick_img}">
-  </div>
+<div class="return-note">
+
+<div>
+
+<div class="return-badge">● ADMIN ONLINE</div>
+
+<div class="return-title">Estamos de vuelta ⚡</div>
+
+<div class="return-text">
+Después de una breve pausa para atender varios proyectos y responsabilidades,
+he regresado oficialmente al control de la alianza y la administración del sitio.
+</div>
+
+<div class="return-text">
+A partir de ahora retomamos las actividades normales: actualizaciones,
+mejoras en la página, eventos del gremio y nuevos contenidos para la comunidad.
+</div>
+
+<div class="return-text">
+Gracias por la paciencia durante estos días.  
+Ahora volvemos con más energía y nuevas ideas para seguir creciendo.
+</div>
+
+<div class="return-footer">
+La administración ha vuelto al mando. Nos vemos en las actividades y próximos anuncios. 💚
+</div>
+
+<div class="return-button">Back in Command</div>
+
+</div>
+
+<div>
+<img src="data:image/png;base64,{admin_img}">
+</div>
+
 </div>
 """, unsafe_allow_html=True)
-
-
-
-
-
-
 
 
 
@@ -1068,7 +856,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 11030   # Oro actual
+puntaje_actual = 2910   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1473,7 +1261,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - Semana NO.7 - 23 Feb/1 Mar ",
+    title="Rendimiento de los miembros - NO DATA ⚠️ ",
     width=ancho_grafica
 )
 
@@ -1817,7 +1605,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("📊 Tabla completa de miembros - Casi Completa ⚙️")
+st.subheader("📊 Tabla completa de miembros - INCOMPLETO ⚙️")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
@@ -1855,12 +1643,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Marie regresa, y con ella la pelea que desafía la 
-            estrategia y habilidad para lograr hacer un gran daño. 
-            Si tienes complicaciones, puedes ver estos videos para 
-            entender cómo funcionan los modificadores y las 
-            combinaciones que puedes aplicar. 
-            Video creado por: <strong>Delphaber7</strong>
+            Ha vuelto Eliza, uno de los jefes más frustrantes que hemos 
+            tenido, pero aún así podemos demostrar que nada 
+            es siposible, todo problema supone un 
+            reto más a superar ¡vamos con todo!
+            Recomendación de equipo para el jefe de inmortales. 
+            Video creado por: <strong>AlannAx</strong> 💚
         </p>
 
         <div style="
@@ -1879,7 +1667,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/rwSmbfFmzPg"
+                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1888,53 +1676,6 @@ components.html(
                 ></iframe>
             </div>
         </div>
-
-
-        st.divider()
-        
-
-
-        <p style="
-            color:#cccccc;
-            max-width:800px;
-            margin:0 auto 30px auto;
-            font-size:16px;
-            line-height:1.6;
-        ">
-            Nuevamente regresa el Jefe de Inmortales Marie, además de 
-            devolverle la habilidad de ganar precisión, por 
-            lo que nuevamente funciona la estrategia de usar a 
-            <strong>Peacock - Ladrón de la Navidad</strong> así que te 
-            dejo un video para que veas algunos consejos de cómo hacer más daño
-            Video creado por: <strong>CHESSDEV</strong>
-        </p>
-
-        <div style="
-            display:flex;
-            justify-content:center;
-            margin-bottom:40px;
-        ">
-            <div style="
-                border:4px solid #ff4b4b;
-                border-radius:16px;
-                padding:10px;
-                max-width:900px;
-                width:100%;
-                box-shadow:0 0 20px rgba(255,75,75,0.6);
-            ">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="border-radius:12px;"
-                ></iframe>
-            </div>
-        </div>
-
     </div>
     """,
     height=1870
@@ -2075,18 +1816,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
     st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
+    st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("carta_painwheel.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2240,7 +1981,7 @@ img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
-img24 = img_base64("24.png")
+img24 = img_base64("Imagen_para_testeos.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
@@ -2327,7 +2068,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img4}">
-  <span>TwerlenK</span>
+  <span>hyunjinnn111</span>
 </div>
 
 <div class="dev-card">
@@ -2347,7 +2088,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img8}">
-  <span>lolbit--Chan</span>
+  <span>œ oooooo</span>
 </div>
 
 <div class="dev-card">
@@ -2357,7 +2098,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img10}">
-  <span>NERE OTAKO</span>
+  <span>alejomaster123</span>
 </div>
 
 <div class="dev-card">
@@ -2382,12 +2123,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>¶ØrNHÛß</span>
+  <span>onediax</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img16}">
-  <span>Skullgirls14203520</span>
+  <span>ELKIKIDECAROL</span>
 </div>
 
 <div class="dev-card">
@@ -2426,8 +2167,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}">
-  <span>Sam :3</span>
+  <img src="data:image/png;base64,{img24}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2441,13 +2182,13 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img27}">
-  <span>birdflash</span>
+  <img src="data:image/png;base64,{img24}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img28}">
-  <span>E A R T H L I N G O</span>
+  <img src="data:image/png;base64,{img24}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2512,7 +2253,11 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "eduguti", "imagen": "20.png"},
+    {"nombre": "hyunjinnn111", "imagen": "4.png"},
+    {"nombre": "œ oooooo", "imagen": "8.png"},
+    {"nombre": "alejomaster123", "imagen": "10.png"},
+    {"nombre": "onediax", "imagen": "15.png"},
+    {"nombre": "ELKIKIDECAROL", "imagen": "16.png"},
 ]
 
 
@@ -2611,7 +2356,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_12.png"
+nombre_imagen = "skull_meme_13.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2663,7 +2408,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Uff
+            Siempre lo supe
         </p>
 
     </div>
@@ -3175,7 +2920,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/cROX7CqOXRk" 
+      <iframe src="https://www.youtube.com/embed/8ULbOwyoEw0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
