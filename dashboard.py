@@ -884,7 +884,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 2910   # Oro actual
+puntaje_actual = 6510   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2009,7 +2009,7 @@ img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
-img24 = img_base64("Imagen_para_testeos.png")
+img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
@@ -2196,7 +2196,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}"> 
-  <span>DISPONIBLE</span>
+  <span>DeluxDay</span>
 </div>
 
 <div class="dev-card">
@@ -2210,13 +2210,13 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}"> 
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img27}"> 
+  <span>Kenji sato</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}"> 
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img28}"> 
+  <span>bigban360</span>
 </div>
 
 <div class="dev-card">
@@ -2286,6 +2286,9 @@ nuevos_miembros = [
     {"nombre": "alejomaster123", "imagen": "10.png"},
     {"nombre": "onediax", "imagen": "15.png"},
     {"nombre": "ELKIKIDECAROL", "imagen": "16.png"},
+    {"nombre": "DeluxDay", "imagen": "24.png"},
+    {"nombre": "Kenji sato", "imagen": "27.png"},
+    {"nombre": "bigban360", "imagen": "28.png"},
 ]
 
 
@@ -2384,7 +2387,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_13.png"
+nombre_imagen = "skull_meme_14.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2436,7 +2439,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Siempre lo supe
+            Mi economía actual :
         </p>
 
     </div>
