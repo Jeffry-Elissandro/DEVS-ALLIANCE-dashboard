@@ -505,6 +505,154 @@ st.divider()
 
 
 
+
+
+
+
+
+
+#AGRADECER A LA ADMINISTRACIÓN
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+team_img = img_base64("Squigly_hugs.png")
+
+st.markdown("""
+<style>
+
+@keyframes goldGlow {
+0% { box-shadow: 0 0 18px rgba(250,204,21,0.25); }
+50% { box-shadow: 0 0 40px rgba(250,204,21,0.55); }
+100% { box-shadow: 0 0 18px rgba(250,204,21,0.25); }
+}
+
+.admin-team-note {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 28px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(250,204,21,0.10),
+        rgba(234,179,8,0.08)
+    );
+
+    border-radius: 18px;
+    border: 1px solid rgba(250,204,21,0.35);
+
+    box-shadow: 0 0 30px rgba(250,204,21,0.25);
+
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 26px;
+    align-items: center;
+
+    animation: goldGlow 3s ease-in-out infinite;
+}
+
+.admin-team-note img {
+    width: 100%;
+    border-radius: 14px;
+    filter: drop-shadow(0 0 12px rgba(250,204,21,0.45));
+}
+
+.admin-team-title {
+    color: #fef9c3;
+    font-size: 26px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.admin-team-text {
+    color: #fde68a;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.admin-team-footer {
+    color: #facc15;
+    font-size: 14px;
+}
+
+.admin-badge {
+    display: inline-block;
+    background: rgba(250,204,21,0.2);
+    border: 1px solid rgba(250,204,21,0.5);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #fde047;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+.admin-team-note {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+st.markdown(f"""
+<div class="admin-team-note">
+
+<div>
+
+<div class="admin-badge">Agradecimiento</div>
+
+<div class="admin-team-title">al equipo administrativo</div>
+
+<div class="admin-team-text">
+Durante mi ausencia temporal, la alianza continuó funcionando de forma
+estable gracias al trabajo y compromiso del equipo administrativo.
+</div>
+
+<div class="admin-team-text">
+Tanto colíder y especialistas mantuvieron el orden, la actividad y el
+equilibrio dentro de la comunidad, demostrando una gran responsabilidad
+y dedicación hacia el grupo.
+</div>
+
+<div class="admin-team-text">
+Este mensaje es un reconocimiento directo a su esfuerzo y al papel
+fundamental que desempeñaron durante ese periodo.
+</div>
+
+<div class="admin-team-footer">
+Gracias por mantener la alianza firme mientras yo no estaba. Su apoyo es realmente valioso. 💛
+</div>
+
+</div>
+
+<div>
+<img src="data:image/png;base64,{team_img}">
+</div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+st.divider()
+
+
+
+
+
 # ==============================
 # REGLAS DE RENDIMIENTO Y LIMPIEZA
 # ==============================
