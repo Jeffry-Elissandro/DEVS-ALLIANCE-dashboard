@@ -884,7 +884,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 6510   # Oro actual
+puntaje_actual = 9975   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2253,7 +2253,7 @@ gap:14px;
 
 
 
-
+#xd
 
 
 
@@ -2281,11 +2281,6 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "hyunjinnn111", "imagen": "4.png"},
-    {"nombre": "œ oooooo", "imagen": "8.png"},
-    {"nombre": "alejomaster123", "imagen": "10.png"},
-    {"nombre": "onediax", "imagen": "15.png"},
-    {"nombre": "ELKIKIDECAROL", "imagen": "16.png"},
     {"nombre": "DeluxDay", "imagen": "24.png"},
     {"nombre": "Kenji sato", "imagen": "27.png"},
     {"nombre": "bigban360", "imagen": "28.png"},
@@ -2387,7 +2382,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_14.png"
+nombre_imagen = "skull_meme_15.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2439,7 +2434,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Mi economía actual :
+            yo si le doy
         </p>
 
     </div>
@@ -2974,7 +2969,7 @@ st.divider()
 
 
 # ==============================
-# CARRUSEL
+# CARRUSEL / EXPERIMENTAL
 # ==============================
 
 import streamlit as st
