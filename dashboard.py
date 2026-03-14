@@ -2,6 +2,9 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+if "mostrar_nota" not in st.session_state:
+    st.session_state.mostrar_nota = True
+
 # ============================
 # CONFIGURACIÓN
 # ============================
@@ -124,61 +127,28 @@ color_map = {
 # ============================
 st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
-import streamlit as st
-
-if "mostrar_nota" not in st.session_state:
-    st.session_state.mostrar_nota = True
-
-st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
-
-# CSS minimalista
-st.markdown("""
-<style>
-
-.subtext {
-    font-size: 15px;
-    color: #9aa0a6;
-    margin-top: -8px;
-    margin-bottom: 20px;
-}
-
-.notice {
-    background-color: rgba(255, 200, 0, 0.08);
-    border-left: 3px solid #ffc800;
-    padding: 10px 14px;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #dcdcdc;
-    max-width: 600px;
-}
-
-.notice b {
-    color: #ffffff;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-# Título
 st.title("💎 DEV'S ALLIANCE – WEB OFICIAL")
 
-# Descripción simple (sin caja)
-st.markdown(
-    '<div class="subtext">Estadísticas, noticias y vida de la alianza en un solo lugar.</div>',
-    unsafe_allow_html=True
-)
+st.write("Análisis de actividad, daño, puntos y consistencia")
 
-# Aviso compacto
+
+
+
+
+
+
+
+
+
 if st.session_state.mostrar_nota:
-
-    st.markdown("""
-    <div class="notice">
-    <b>📢 Nota:</b> El sistema evalúa actividad, daño, puntos y consistencia.
-    Los rangos se actualizan periódicamente como referencia interna de la alianza.
-    Avisos importantes se publicarán aquí. — <b>CHESS</b>
-    </div>
-    """, unsafe_allow_html=True)
-
+    st.warning(
+        "📢 NOTA IMPORTANTE:\n\n"
+    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
+    "daño, puntos y consistencia.\n"
+    "Los rangos se actualizan periódicamente y sirven como referencia interna "
+    "para la gestión de la alianza. Todas las noticias o avisos serán "
+     "informados por aquí. Ante dudas no temas en preguntar - CHESS \n" 
+    )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
 
