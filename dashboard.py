@@ -6,36 +6,37 @@ if "mostrar_nota" not in st.session_state:
     st.session_state.mostrar_nota = True
 
 
-WEB_TESTING = False  # Cambia a False cuando la web esté estable
+import streamlit as st
 
-ENVIRONMENT = "TESTING"
+WEB_TESTING = True
 
-if WEB_TESTING:
+def show_testing_badge():
     st.markdown("""
     <style>
-    #web-testing-badge {
-        position: fixed;
-        top: 12px;
-        right: 20px;
-        background: #ff4b4b;
-        color: white;
-        padding: 6px 14px;
-        font-size: 12px;
-        font-weight: bold;
-        border-radius: 6px;
-        z-index: 10000;
-        letter-spacing: 1px;
-        box-shadow: 0 3px 8px rgba(0,0,0,0.4);
-        pointer-events: none;
+    .web-testing-badge{
+        position:fixed;
+        top:10px;
+        right:10px;
+        background:#ff4b4b;
+        color:white;
+        font-size:12px;
+        font-weight:700;
+        padding:6px 12px;
+        border-radius:6px;
+        z-index:999999;
+        letter-spacing:1px;
+        font-family:Arial, sans-serif;
+        box-shadow:0 2px 8px rgba(0,0,0,0.35);
     }
     </style>
-                
-    <div id="web-testing-badge">{ENVIRONMENT}</div>
 
-    <div id="web-testing-badge">
+    <div class="web-testing-badge">
         WEB TESTING
     </div>
     """, unsafe_allow_html=True)
+
+if WEB_TESTING:
+    show_testing_badge()
 
 
 
