@@ -11,24 +11,24 @@ WEB_TESTING = False  # Cambia a False cuando la web esté estable
 if WEB_TESTING:
     st.markdown("""
     <style>
-    .testing-badge {
+    #web-testing-badge {
         position: fixed;
-        top: 14px;
-        right: 18px;
+        top: 12px;
+        right: 20px;
         background: #ff4b4b;
         color: white;
-        padding: 6px 12px;
+        padding: 6px 14px;
         font-size: 12px;
-        font-weight: 700;
+        font-weight: bold;
         border-radius: 6px;
+        z-index: 10000;
         letter-spacing: 1px;
-        z-index: 9999;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.35);
-        font-family: monospace;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+        pointer-events: none;
     }
     </style>
 
-    <div class="testing-badge">
+    <div id="web-testing-badge">
         WEB TESTING
     </div>
     """, unsafe_allow_html=True)
