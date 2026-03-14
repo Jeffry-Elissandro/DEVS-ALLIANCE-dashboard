@@ -8,6 +8,8 @@ if "mostrar_nota" not in st.session_state:
 
 WEB_TESTING = False  # Cambia a False cuando la web esté estable
 
+ENVIRONMENT = "TESTING"
+
 if WEB_TESTING:
     st.markdown("""
     <style>
@@ -27,11 +29,15 @@ if WEB_TESTING:
         pointer-events: none;
     }
     </style>
+                
+    <div id="web-testing-badge">{ENVIRONMENT}</div>
 
     <div id="web-testing-badge">
         WEB TESTING
     </div>
     """, unsafe_allow_html=True)
+
+
 
 
 
