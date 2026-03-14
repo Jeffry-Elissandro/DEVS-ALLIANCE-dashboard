@@ -6,7 +6,7 @@ if "mostrar_nota" not in st.session_state:
     st.session_state.mostrar_nota = True
 
 
-WEB_TESTING = True  # Cambia a False cuando la web esté estable
+WEB_TESTING = False  # Cambia a False cuando la web esté estable
 
 if WEB_TESTING:
     st.markdown("""
