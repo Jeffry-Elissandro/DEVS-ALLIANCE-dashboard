@@ -2,6 +2,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+if "mostrar_nota" not in st.session_state:
+    st.session_state.mostrar_nota = True
 
 # ============================
 # CONFIGURACIÓN
@@ -127,87 +129,30 @@ st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 st.title("💎 DEV'S ALLIANCE – WEB OFICIAL")
 
+st.write("Análisis de actividad, daño, puntos y consistencia")
 
 
 
-import streamlit as st
-
-# Banner nuevo
-st.markdown("""
-<div class="banner">
-<div class="banner-text">
-Comunidad, estrategia y actividad reunidas en un solo lugar.
-</div>
-</div>
-""", unsafe_allow_html=True)
 
 
-# Aviso importante rediseñado
+
+
+
+
+
 if st.session_state.mostrar_nota:
-
-    st.markdown("""
-    <div class="notice-box">
-    <div class="notice-title">📢 NOTA IMPORTANTE</div>
-
-    Este sistema evalúa el rendimiento de cada integrante en base a 
-    <b>actividad, daño, puntos y consistencia</b>.<br><br>
-
-    Los rangos se actualizan periódicamente y sirven como referencia interna 
-    para la gestión de la alianza.<br><br>
-
-    Todas las noticias o avisos serán informados por aquí.<br><br>
-
-    Ante dudas no temas en preguntar – <b>CHESS</b>
-    </div>
-    """, unsafe_allow_html=True)
-
+    st.warning(
+        "📢 NOTA IMPORTANTE:\n\n"
+    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
+    "daño, puntos y consistencia.\n"
+    "Los rangos se actualizan periódicamente y sirven como referencia interna "
+    "para la gestión de la alianza. Todas las noticias o avisos serán "
+     "informados por aquí. Ante dudas no temas en preguntar - CHESS \n" 
+    )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
 
 
-
-
-if "mostrar_nota" not in st.session_state:
-    st.session_state.mostrar_nota = True
-
-st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
-
-# CSS personalizado
-st.markdown("""
-<style>
-
-.banner {
-    background: linear-gradient(90deg, #1a1a1a, #2d2d2d);
-    padding: 18px;
-    border-radius: 12px;
-    border-left: 6px solid #00ffd5;
-    margin-bottom: 15px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
-}
-
-.banner-text {
-    font-size: 18px;
-    color: #e8e8e8;
-}
-
-.notice-box {
-    background: linear-gradient(90deg, #2c1b00, #3d2500);
-    border-left: 6px solid #ffcc00;
-    padding: 20px;
-    border-radius: 12px;
-    font-size: 16px;
-    color: #f5f5f5;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
-}
-
-.notice-title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 
 
