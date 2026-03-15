@@ -209,302 +209,7 @@ st.divider()
 
 
 
-#=========================
-#BACK TO THE SHOOW
-#=========================
 
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-admin_img = img_base64("Filia_confident.png")
-
-st.markdown("""
-<style>
-
-@keyframes pulseGlow {
-0% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
-50% { box-shadow: 0 0 35px rgba(34,211,238,0.6); }
-100% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
-}
-
-.return-note {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 18px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(34,211,238,0.10),
-        rgba(59,130,246,0.10)
-    );
-
-    border: 1px solid rgba(56,189,248,0.35);
-
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 28px;
-    align-items: center;
-
-    animation: pulseGlow 3s infinite ease-in-out;
-}
-
-.return-note img {
-    width: 100%;
-    border-radius: 14px;
-    filter: drop-shadow(0 0 15px rgba(34,211,238,0.45));
-}
-
-.return-title {
-    color: #e0f2fe;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.return-text {
-    color: #cbd5f7;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 14px;
-}
-
-.return-badge {
-    display: inline-block;
-    background: rgba(34,211,238,0.2);
-    border: 1px solid rgba(34,211,238,0.6);
-    padding: 4px 12px;
-    border-radius: 10px;
-    font-size: 13px;
-    color: #67e8f9;
-    margin-bottom: 10px;
-}
-
-.return-footer {
-    margin-top: 10px;
-    color: #7dd3fc;
-    font-size: 14px;
-}
-
-.return-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background: linear-gradient(90deg,#22d3ee,#3b82f6);
-    border-radius: 10px;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-.return-note {
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-
-st.markdown(f"""
-<div class="return-note">
-
-<div>
-
-<div class="return-badge">● ADMIN ONLINE</div>
-
-<div class="return-title">Estamos de vuelta ⚡</div>
-
-<div class="return-text">
-Después de una breve pausa para atender varios proyectos y responsabilidades,
-he regresado oficialmente al control de la alianza y la administración del sitio.
-</div>
-
-<div class="return-text">
-A partir de ahora retomamos las actividades normales: actualizaciones,
-mejoras en la página, eventos del gremio y nuevos contenidos para la comunidad.
-</div>
-
-<div class="return-text">
-Gracias por la paciencia durante estos días.  
-Ahora volvemos con más energía y nuevas ideas para seguir creciendo.
-</div>
-
-<div class="return-footer">
-La administración ha vuelto al mando. Nos vemos en las actividades y próximos anuncios. 💚
-</div>
-
-<div class="return-button">Back in Command</div>
-
-</div>
-
-<div>
-<img src="data:image/png;base64,{admin_img}">
-</div>
-
-</div>
-""", unsafe_allow_html=True)
-
-
-
-
-
-st.divider()
-
-
-
-
-
-
-
-
-
-
-
-#AGRADECER A LA ADMINISTRACIÓN
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-team_img = img_base64("Squigly_hugs.png")
-
-st.markdown("""
-<style>
-
-@keyframes goldGlow {
-0% { box-shadow: 0 0 18px rgba(250,204,21,0.25); }
-50% { box-shadow: 0 0 40px rgba(250,204,21,0.55); }
-100% { box-shadow: 0 0 18px rgba(250,204,21,0.25); }
-}
-
-.admin-team-note {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 28px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(250,204,21,0.10),
-        rgba(234,179,8,0.08)
-    );
-
-    border-radius: 18px;
-    border: 1px solid rgba(250,204,21,0.35);
-
-    box-shadow: 0 0 30px rgba(250,204,21,0.25);
-
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 26px;
-    align-items: center;
-
-    animation: goldGlow 3s ease-in-out infinite;
-}
-
-.admin-team-note img {
-    width: 100%;
-    border-radius: 14px;
-    filter: drop-shadow(0 0 12px rgba(250,204,21,0.45));
-}
-
-.admin-team-title {
-    color: #fef9c3;
-    font-size: 26px;
-    margin-bottom: 12px;
-    font-weight: 700;
-}
-
-.admin-team-text {
-    color: #fde68a;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 14px;
-}
-
-.admin-team-footer {
-    color: #facc15;
-    font-size: 14px;
-}
-
-.admin-badge {
-    display: inline-block;
-    background: rgba(250,204,21,0.2);
-    border: 1px solid rgba(250,204,21,0.5);
-    padding: 4px 12px;
-    border-radius: 10px;
-    font-size: 13px;
-    color: #fde047;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-.admin-team-note {
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-
-st.markdown(f"""
-<div class="admin-team-note">
-
-<div>
-
-<div class="admin-badge">Agradecimiento</div>
-
-<div class="admin-team-title">al equipo administrativo</div>
-
-<div class="admin-team-text">
-Durante mi ausencia temporal, la alianza continuó funcionando de forma
-estable gracias al trabajo y compromiso del equipo administrativo.
-</div>
-
-<div class="admin-team-text">
-Tanto colíder y especialistas mantuvieron el orden, la actividad y el
-equilibrio dentro de la comunidad, demostrando una gran responsabilidad
-y dedicación hacia el grupo.
-</div>
-
-<div class="admin-team-text">
-Este mensaje es un reconocimiento directo a su esfuerzo y al papel
-fundamental que desempeñaron durante ese periodo.
-</div>
-
-<div class="admin-team-footer">
-Gracias por mantener la alianza firme mientras yo no estaba. Su apoyo es realmente valioso. 💛
-</div>
-
-</div>
-
-<div>
-<img src="data:image/png;base64,{team_img}">
-</div>
-
-</div>
-""", unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-st.divider()
 
 
 
@@ -864,7 +569,7 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte es de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
@@ -872,7 +577,7 @@ components.html(
              width="250" height="250" />
 
         <div style="text-align:center;">
-      <strong style="color:#ffffff;">Gracias</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
     </div>
 
     </div>
@@ -1534,7 +1239,7 @@ components.html(
         ">
             Ha vuelto Eliza, uno de los jefes más frustrantes que hemos 
             tenido, pero aún así podemos demostrar que nada 
-            es siposible, todo problema supone un 
+            es imposible, todo problema supone un 
             reto más a superar ¡vamos con todo!
             Recomendación de equipo para el jefe de inmortales. 
             Video creado por: <strong>AlannAx</strong> 💚
@@ -2820,6 +2525,145 @@ st.markdown("""
 
 
 st.divider()
+
+
+
+
+
+
+
+
+
+
+
+
+# ==============================
+# CARRUSEL / EXPERIMENTAL / TEST
+# ==============================
+
+import streamlit as st
+import base64
+
+st.set_page_config(layout="wide")
+
+
+# Leer y codificar en base64
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+
+# ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
+img1 = img_base64("TEST_1.png")
+img2 = img_base64("TEST_2.png")
+img3 = img_base64("TEST_3.png")
+img4 = img_base64("TEST_4.png")
+img5 = img_base64("TEST_5.png")
+img6 = img_base64("TEST_6.png")
+img7 = img_base64("TEST_7.png")
+img8 = img_base64("TEST_8.png")
+img9 = img_base64("TEST_9.png")
+img10 = img_base64("TEST_10.png")
+
+css = """
+<style>
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(300px * 10);
+    animation: scroll 30s linear infinite;
+}
+
+.slide {
+    width: 300px;
+    margin: 0 10px;
+    background: #1e1e1e;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.desc {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-300px * 5)); }
+}
+</style>
+"""
+
+html = (
+'<div class="slider">'
+'  <div class="slide-track">'
+
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">Título 6</div><div class="desc">Descripción 6</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">Título 7</div><div class="desc">Descripción 7</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">Título 8</div><div class="desc">Descripción 8</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">Título 9</div><div class="desc">Descripción 9</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">Título 10</div><div class="desc">Descripción 10</div></div>'
+
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">Título 6</div><div class="desc">Descripción 6</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">Título 7</div><div class="desc">Descripción 7</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">Título 8</div><div class="desc">Descripción 8</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">Título 9</div><div class="desc">Descripción 9</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">Título 10</div><div class="desc">Descripción 10</div></div>'
+
+'  </div>'
+'</div>'
+)
+
+st.markdown(css + html, unsafe_allow_html=True)
+
+
+
+
+
+
+
+st.divider() 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
