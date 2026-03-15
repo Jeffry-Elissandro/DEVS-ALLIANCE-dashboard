@@ -2822,7 +2822,92 @@ st.divider()
 
 
 
+#===========================================
+# LAST VERSION / ALL MUSIC OST
+#===========================================
 
+#Para ambientar la web (bloque opcional)
+
+import streamlit as st
+import streamlit.components.v1 as components
+import base64
+
+def load_audio_base64(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+        return base64.b64encode(data).decode()
+
+# 🔊 Cargar audios locales
+audio_tipe = load_audio_base64("tipe_beat_web.mp3")
+audio_rnb = load_audio_base64("tipe_beat_web R&B Remix.mp3")
+audio_rnb2 = load_audio_base64("tipe_beat_web R&B 2 Remix.mp3")
+audio_rock = load_audio_base64("tipe_beat_web Rock Remix.mp3")
+audio_trap = load_audio_base64("tipe_beat_web Trap Remix.mp3")
+audio_drill = load_audio_base64("tipe_beat_web Drill Remix.mp3")
+audio_techno = load_audio_base64("tipe_beat_web Techno Remix.mp3")
+
+st.markdown("## 🌿 Ambiente")
+
+with st.expander("🎧 Música ambiental (opcional)", expanded=False):
+    st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
+
+    components.html(f"""
+    <style>
+    .music-buttons {{
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 25px 0;
+        flex-wrap: wrap;
+    }}
+    .music-buttons button {{
+        padding: 14px 26px;
+        border-radius: 12px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }}
+    .music-buttons button:hover {{
+        transform: scale(1.08);
+        box-shadow: 0 0 20px rgba(255,255,255,0.7);
+    }}
+    .btn-tipe {{ background: linear-gradient(135deg,#7c3aed,#a78bfa); }}
+    .btn-rnb {{ background: linear-gradient(135deg,#ec4899,#f472b6); }}
+    .btn-rnb2 {{ background: linear-gradient(135deg, #03a9f4, #3498db); }}
+    .btn-rock {{ background: linear-gradient(135deg,#ef4444,#f87171); }}
+    .btn-trap {{ background: linear-gradient(135deg,#22c55e,#4ade80); }}
+    .btn-lofi {{ background: linear-gradient(135deg,#06b6d4,#60a5fa); }}
+    .btn-drill {{ background: linear-gradient(135deg, #ffd700, #f5e647); }}
+    .btn-techno {{ background: linear-gradient(135deg, #75002D, #ad0341); }}
+    </style>
+
+    <div class="music-buttons">
+        <button class="btn-tipe" onclick="playMusic('{audio_tipe}')">Tipe beat</button>
+        <button class="btn-rnb" onclick="playMusic('{audio_rnb}')">R&B</button>
+        <button class="btn-rnb2" onclick="playMusic('{audio_rnb2}')">R&B 2</button>
+        <button class="btn-rock" onclick="playMusic('{audio_rock}')">Rock</button>
+        <button class="btn-trap" onclick="playMusic('{audio_trap}')">Trap</button>
+        <button class="btn-drill" onclick="playMusic('{audio_drill}')">Drill</button>
+        <button class="btn-techno" onclick="playMusic('{audio_techno}')">Techno</button>
+    </div>
+
+    <audio id="bg-music" controls loop style="width:100%; margin-top:15px; filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);"></audio>
+
+    <script>
+    function playMusic(base64Audio) {{
+        var player = document.getElementById('bg-music');
+        player.src = "data:audio/mp3;base64," + base64Audio;
+        player.loop = true;
+        player.play();
+    }}
+    </script>
+    """, height=300)
+
+
+st.divider()
 
 
 
