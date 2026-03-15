@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state:
 
 import streamlit as st
 
-WEB_TESTING = True
+WEB_TESTING = False
 
 def show_testing_badge():
     st.markdown("""
