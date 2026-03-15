@@ -15,17 +15,18 @@ def show_testing_badge():
     <style>
     .web-testing-badge{
         position:fixed;
-        top:10px;
-        right:10px;
-        background:#ff4b4b;
-        color:white;
+        top:12px;
+        left:18px;
+        background:linear-gradient(135deg,#3a3a3a,#1f1f1f);
+        color:#eaeaea;
         font-size:12px;
         font-weight:700;
         padding:6px 12px;
         border-radius:6px;
         z-index:999999;
         letter-spacing:1px;
-        font-family:Arial, sans-serif;
+        font-family:monospace;
+        border:1px solid rgba(255,255,255,0.15);
         box-shadow:0 2px 8px rgba(0,0,0,0.35);
     }
     </style>
@@ -740,7 +741,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15225   # Oro actual
+puntaje_actual = 15360   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1865,7 +1866,7 @@ img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
-img24 = img_base64("24.png")
+img24 = img_base64("Imagen_para_testeos.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
@@ -1986,8 +1987,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>STANLEY GOAT</span>
+  <img src="data:image/png;base64,{img24}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2011,8 +2012,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img16}">
-  <span>ELKIKIDECAROL</span>
+  <img src="data:image/png;base64,{img24}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2036,8 +2037,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img21}">
-  <span>William_Afton_1983</span>
+  <img src="data:image/png;base64,{img24}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2052,7 +2053,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}"> 
-  <span>DeluxDay</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2238,7 +2239,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_15.png"
+nombre_imagen = "skull_meme_16.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2290,7 +2291,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            yo si le doy
+            honorable mention :
         </p>
 
     </div>
@@ -2802,7 +2803,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/8ULbOwyoEw0" 
+      <iframe src="https://www.youtube.com/embed/KyqYRh2eXAc" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
