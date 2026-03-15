@@ -1869,7 +1869,7 @@ img23 = img_base64("23.png")
 img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
-img27 = img_base64("27.png")
+img27 = img_base64("Imagen_para_testeos.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
 img30 = img_base64("30.png")
@@ -2067,7 +2067,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}"> 
+  <img src="data:image/png;base64,{img27}"> 
   <span>DISPONIBLE</span>
 </div>
 
