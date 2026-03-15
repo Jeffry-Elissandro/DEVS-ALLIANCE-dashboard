@@ -741,7 +741,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15360   # Oro actual
+puntaje_actual = 15610   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1866,7 +1866,7 @@ img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
-img24 = img_base64("Imagen_para_testeos.png")
+img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
@@ -1987,8 +1987,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img11}">
+  <span>oscuro</span>
 </div>
 
 <div class="dev-card">
@@ -2012,8 +2012,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img16}">
+  <span>shrek embaraz@d0</span>
 </div>
 
 <div class="dev-card">
@@ -2037,8 +2037,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img21}">
+  <span>PABLOX3</span>
 </div>
 
 <div class="dev-card">
@@ -2053,7 +2053,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}"> 
-  <span>DISPONIBLE</span>
+  <span>Arturo.cl_berserk</span>
 </div>
 
 <div class="dev-card">
@@ -2067,8 +2067,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img27}"> 
-  <span>Kenji sato</span>
+  <img src="data:image/png;base64,{img24}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2138,9 +2138,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "DeluxDay", "imagen": "24.png"},
-    {"nombre": "Kenji sato", "imagen": "27.png"},
-    {"nombre": "bigban360", "imagen": "28.png"},
+    {"nombre": "oscuro", "imagen": "11.png"},
+    {"nombre": "shrek embaraz@d0", "imagen": "16.png"},
+    {"nombre": "PABLOX3", "imagen": "21.png"},
+    {"nombre": "Arturo.cl_berserk", "imagen": "24.png"},
 ]
 
 
