@@ -2803,88 +2803,90 @@ import base64
 
 st.set_page_config(layout="wide")
 
-
-# Leer y codificar en base64
 def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-
-# ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
 img1 = img_base64("s_cerebella.png")
 img2 = img_base64("s_peacock.png")
-img3 = img_base64("s_fortune.png")
-img4 = img_base64("s_double.png")
-img5 = img_base64("s_filia.png")
-img6 = img_base64("s_parasoul.png")
-img7 = img_base64("s_valentine.png")
-img8 = img_base64("s_squigly.png")
-img9 = img_base64("s_bigband.png")
-img10 = img_base64("s_painwheel.png")
-img11 = img_base64("s_beowulf.png")
-img12 = img_base64("s_eliza.png")
 
-css = """
+items = [
+    (img1, "CEREBELLA", "DESCRIPCIÓN"),
+    (img2, "PEACOCK", "DESCRIPCIÓN"),
+]
+
+def generar_slides(data):
+    slides = ""
+    for img, title, desc in data:
+        slides += f"""
+        <div class="sg-slide"
+             onclick="sg_openModal('data:image/png;base64,{img}', '{title}', '{desc}')">
+            <img src="data:image/png;base64,{img}">
+            <div class="sg-title">{title}</div>
+            <div class="sg-desc">{desc}</div>
+        </div>
+        """
+    return slides
+
+slides = generar_slides(items)
+slides_duplicados = slides + slides
+
+html = f"""
+<div id="carousel-skullgirls">
+
 <style>
-.slider {
+#carousel-skullgirls .sg-slider {{
     width: 100%;
     overflow: hidden;
-    position: relative;
     padding: 30px 0;
-}
+}}
 
-/* Track dinámico */
-.slide-track {
+#carousel-skullgirls .sg-track {{
     display: flex;
     width: max-content;
-    animation: scroll 80s linear infinite;
-}
+    animation: sg-scroll 40s linear infinite;
+}}
 
-/* TAMAÑO FIJO SIEMPRE */
-.slide {
-    flex: 0 0 320px; /* ← ancho fijo */
+#carousel-skullgirls .sg-slide {{
+    flex: 0 0 320px;
     margin: 0 15px;
     background: #1e1e1e;
     border-radius: 15px;
     padding: 15px;
     text-align: center;
     color: white;
+    cursor: pointer;
     transition: transform 0.3s ease;
-}
+}}
 
-/* Efecto hover opcional */
-.slide:hover {
+#carousel-skullgirls .sg-slide:hover {{
     transform: scale(1.05);
-}
+}}
 
-.slide img {
+#carousel-skullgirls .sg-slide img {{
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
-}
+}}
 
-.title {
+#carousel-skullgirls .sg-title {{
     font-weight: bold;
     margin-top: 10px;
-    font-size: 16px;
-}
+}}
 
-.desc {
+#carousel-skullgirls .sg-desc {{
     font-size: 14px;
     opacity: 0.8;
-}
+}}
 
-/* ANIMACIÓN INFINITA SUAVE */
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
+@keyframes sg-scroll {{
+    0% {{ transform: translateX(0); }}
+    100% {{ transform: translateX(-50%); }}
+}}
 
-
-
-
-.modal {
+/* MODAL AISLADO */
+#carousel-skullgirls .sg-modal {{
     display: none;
     position: fixed;
     z-index: 9999;
@@ -2892,12 +2894,10 @@ css = """
     top: 0;
     width: 100%;
     height: 100%;
-    
     background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
-}
+}}
 
-.modal-content {
+#carousel-skullgirls .sg-modal-content {{
     background: #1e1e1e;
     margin: 5% auto;
     padding: 20px;
@@ -2907,112 +2907,61 @@ css = """
     color: white;
     text-align: center;
     position: relative;
-}
+}}
 
-.modal-content img {
+#carousel-skullgirls .sg-modal img {{
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 10px;
-}
+}}
 
-.modal-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.modal-desc {
-    margin-top: 10px;
-    font-size: 15px;
-    opacity: 0.9;
-}
-
-/* BOTÓN CERRAR */
-.close {
+#carousel-skullgirls .sg-close {{
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 28px;
     cursor: pointer;
-}
-
-
-
-
-
+}}
 </style>
-"""
 
-html = (
-'<div class="slider">'
-'  <div class="slide-track">'
+<div class="sg-slider">
+  <div class="sg-track">
+    {slides_duplicados}
+  </div>
+</div>
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">FORTUNE</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">VALENTINE</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img11}"><div class="title">BEOWULF</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">FORTUNE</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">VALENTINE</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img11}"><div class="title">BEOWULF</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-
-'  </div>'
-'</div>'
-)
-
-st.markdown(css + html, unsafe_allow_html=True)
-
-
-html += """
-<!-- MODAL -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modal-img">
-    <div id="modal-title" class="modal-title"></div>
-    <div id="modal-desc" class="modal-desc"></div>
+<div id="sgModal" class="sg-modal">
+  <div class="sg-modal-content">
+    <span class="sg-close" onclick="sg_closeModal()">&times;</span>
+    <img id="sg-img">
+    <div id="sg-title"></div>
+    <div id="sg-desc"></div>
   </div>
 </div>
 
 <script>
-function openModal(img, title, desc) {
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("modal-img").src = img;
-    document.getElementById("modal-title").innerText = title;
-    document.getElementById("modal-desc").innerText = desc;
-}
+function sg_openModal(img, title, desc) {{
+    document.getElementById("sgModal").style.display = "block";
+    document.getElementById("sg-img").src = img;
+    document.getElementById("sg-title").innerText = title;
+    document.getElementById("sg-desc").innerText = desc;
+}}
 
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-}
+function sg_closeModal() {{
+    document.getElementById("sgModal").style.display = "none";
+}}
 
-/* Cerrar haciendo click fuera */
-window.onclick = function(event) {
-    const modal = document.getElementById("myModal");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+document.getElementById("sgModal").onclick = function(e) {{
+    if (e.target.id === "sgModal") {{
+        sg_closeModal();
+    }}
+}};
 </script>
+
+</div>
 """
+
+st.markdown(html, unsafe_allow_html=True)
 
 
 
