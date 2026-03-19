@@ -2837,7 +2837,7 @@ css = """
 .slide-track {
     display: flex;
     width: max-content;
-    animation: scroll 40s linear infinite;
+    animation: scroll 80s linear infinite;
 }
 
 /* 🔥 TAMAÑO FIJO SIEMPRE */
