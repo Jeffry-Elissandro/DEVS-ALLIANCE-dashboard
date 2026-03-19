@@ -63,9 +63,9 @@ data = [
         "Poder": 1266707,
         "Nivel": 79,
         "Actividad": 10,
-        "Daño": 10,
+        "Daño": 7,
         "Puntos": 10,
-        "Consistencia": 10
+        "Consistencia": 9
     },
     {
         "Nombre": "Lady_Navier",
@@ -124,7 +124,7 @@ data = [
     },
     {
         "Nombre": "DLGPRO", 
-        "Rango": "Miembro",
+        "Rango": "Especialista",
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 72,
@@ -190,7 +190,7 @@ data = [
     },
     {
         "Nombre": "BAKI", 
-        "Rango": "Miembro",
+        "Rango": "Especialista",
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 70,
@@ -300,7 +300,7 @@ data = [
     },
     {
         "Nombre": "PABLOX3",
-        "Rango": "Especialista",
+        "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
         "Nivel": 79,
@@ -1814,7 +1814,7 @@ def img_base64(path):
 
 img1 = img_base64("1.png")
 img2 = img_base64("2.png")
-img3 = img_base64("3.png")
+img3 = img_base64("Imagen_para_testeos.png")
 img4 = img_base64("4.png")
 img5 = img_base64("5.png")
 img6 = img_base64("6.png")
