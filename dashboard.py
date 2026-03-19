@@ -2981,7 +2981,38 @@ f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="ti
 st.markdown(css + html, unsafe_allow_html=True)
 
 
+html += """
+<!-- MODAL -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img">
+    <div id="modal-title" class="modal-title"></div>
+    <div id="modal-desc" class="modal-desc"></div>
+  </div>
+</div>
 
+<script>
+function openModal(img, title, desc) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modal-img").src = img;
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-desc").innerText = desc;
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+/* Cerrar haciendo click fuera */
+window.onclick = function(event) {
+    const modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+"""
 
 
 
