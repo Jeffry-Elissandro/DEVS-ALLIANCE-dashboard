@@ -57,7 +57,7 @@ PESO_CONSISTENCIA = 0.15
 # ============================
 data = [
     {
-        "Nombre": "TEST",
+        "Nombre": "CHESSDEV",
         "Rango": "Líder",
         "ID": "0gd5-r41k7",
         "Poder": 1266707,
@@ -68,49 +68,313 @@ data = [
         "Consistencia": 10
     },
     {
-        "Nombre": "TEST2", 
+        "Nombre": "Lady_Navier",
         "Rango": "Colíder",
-        "ID": "1l4y-eguc1",
-        "Poder": 958033,
+        "ID": "50is-suxy9",
+        "Poder": 705004,
+        "Nivel": 68,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "eduguti", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 80,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "MRchochox", 
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 55,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "œ oooooo",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 73,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Rukawa_Noceda",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 64,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "DLGPRO", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 72,
+        "Actividad": 10,
+        "Daño": 1,
+        "Puntos": 10,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "xXDrive_shXx", 
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 76,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "alejomaster123",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 73,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "KSTKBMS23", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
         "Nivel": 77,
-        "Actividad": 9,
-        "Daño": 9,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
+        "Consistencia":6
+    },
+    {
+        "Nombre": "jfglhg", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "bigban360", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 10,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "BAKI", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "KilLeo0217", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 78,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "Battousai saramo",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 8,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "ArtuxxD", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 73,
+        "Actividad": 10,
+        "Daño": 4,
+        "Puntos": 9,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "onediax",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 10,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "batgirl",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 77,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "shrek embaraz@d0",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 71,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "hyunjinnn111",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 68,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 10,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "black lagoon69", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 76,
+        "Actividad": 10,
+        "Daño": 6,
+        "Puntos": 10,
+        "Consistencia": 8
+    },
+    {
+        "Nombre": "dayia",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 10,
+        "Consistencia": 7
+    },
+    {
+        "Nombre": "PABLOX3",
+        "Rango": "Especialista",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 10,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "Military Goth",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "CoinXY", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 79,
+        "Actividad": 10,
+        "Daño": 10,
+        "Puntos": 10,
+        "Consistencia": 10
+    },
+    {
+        "Nombre": "rottqned", 
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 74,
+        "Actividad": 10,
+        "Daño": 3,
+        "Puntos": 10,
+        "Consistencia": 6
+    },
+    {
+        "Nombre": "oscuro",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 72,
+        "Actividad": 10,
+        "Daño": 10,
         "Puntos": 9,
         "Consistencia": 9
     },
     {
-        "Nombre": "TEST3", 
-        "Rango": "Especialista",
-        "ID": "50is-suxy9",
-        "Poder": 705004,
-        "Nivel": 67,
-        "Actividad": 7,
-        "Daño": 7,
-        "Puntos": 7,
+        "Nombre": "Aesick4u",
+        "Rango": "Miembro",
+        "ID": "0000-00000",
+        "Poder": 000,
+        "Nivel": 70,
+        "Actividad": 10,
+        "Daño": 2,
+        "Puntos": 10,
         "Consistencia": 7
     },
     {
-        "Nombre": "TEST4", 
+        "Nombre": "Arturo.cl_berserk",
         "Rango": "Miembro",
         "ID": "0000-00000",
         "Poder": 000,
-        "Nivel": 77,
-        "Actividad": 6,
-        "Daño": 6,
-        "Puntos": 6,
+        "Nivel": 60,
+        "Actividad": 10,
+        "Daño": 5,
+        "Puntos": 7,
         "Consistencia": 6
-    },
-    {
-        "Nombre": "TEST5", 
-        "Rango": "Miembro",
-        "ID": "0000-00000",
-        "Poder": 000,
-        "Nivel": 4,
-        "Actividad": 4,
-        "Daño": 4,
-        "Puntos": 4,
-        "Consistencia": 4
-    },
+    }
 ]
 
 # ============================
@@ -185,7 +449,7 @@ if st.session_state.mostrar_nota:
     "daño, puntos y consistencia.\n"
     "Los rangos se actualizan periódicamente y sirven como referencia interna "
     "para la gestión de la alianza. Todas las noticias o avisos serán "
-     "informados por aquí. Ante dudas no temas en preguntar - CHESS \n" 
+     "informados por aquí. Ante dudas no temas en preguntar - CHESSDEV \n" 
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
@@ -446,7 +710,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 8525   # Oro actual
+puntaje_actual = 10430   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -474,7 +738,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -569,7 +833,7 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
@@ -851,7 +1115,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="Rendimiento de los miembros - NO DATA ⚠️ ",
+    title="Rendimiento de los miembros - Semana NO.10 - 09/15 Marzo ",
     width=ancho_grafica
 )
 
@@ -1166,7 +1430,7 @@ st.markdown(f"""
       <strong style="color:#ffffff;">500</strong><br>Medallas / semana
     </div>
     <div style="text-align:center;">
-      <strong style="color:#ffffff;">200,000,000</strong><br>Daño total
+      <strong style="color:#ffffff;">200M</strong><br>Daño total
     </div>
   </div>
 
@@ -1195,7 +1459,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("📊 Tabla completa de miembros - INCOMPLETO ⚙️")
+st.subheader("Tabla completa de miembros 🎯")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
@@ -1233,12 +1497,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Ha vuelto Eliza, uno de los jefes más frustrantes que hemos 
-            tenido, pero aún así podemos demostrar que nada 
-            es imposible, todo problema supone un 
-            reto más a superar ¡vamos con todo!
-            Recomendación de equipo para el jefe de inmortales. 
-            Video creado por: <strong>AlannAx</strong> 💚
+            Tenemos nuevamente a la gata favorita de todos, sin dudas resulta el 
+            jefe de inmortales más diveretido de la semana. Esta temporada puedes volver 
+            a practicar estrategias para alcanzar un daño brutal y exponencial con las 
+            variantes ideales. Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, ten buena Fortuna!!!
+            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
         </p>
 
         <div style="
@@ -1257,7 +1521,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
+                    src="https://www.youtube.com/embed/VAL9efW_hHY"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1406,18 +1670,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.image("Soportes_1.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_annie_marcada.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
+    st.image("Atacantes.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_beowulf.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.image("Soportes_2.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -1574,7 +1838,7 @@ img23 = img_base64("23.png")
 img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
-img27 = img_base64("Imagen_para_testeos.png")
+img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
 img30 = img_base64("30.png")
@@ -1648,12 +1912,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img2}">
-  <span>»alex«</span>
+  <span>Lady_Navier</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img3}">
-  <span>Lady_Navier</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -1773,7 +2037,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img27}"> 
-  <span>DISPONIBLE</span>
+  <span>batgirl</span>
 </div>
 
 <div class="dev-card">
@@ -1843,10 +2107,7 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "oscuro", "imagen": "11.png"},
-    {"nombre": "shrek embaraz@d0", "imagen": "16.png"},
-    {"nombre": "PABLOX3", "imagen": "21.png"},
-    {"nombre": "Arturo.cl_berserk", "imagen": "24.png"},
+    {"nombre": "batgirl", "imagen": "27.png"},
 ]
 
 
@@ -1945,7 +2206,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_16.png"
+nombre_imagen = "skull_meme_17.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -1997,7 +2258,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            honorable mention :
+            a
         </p>
 
     </div>
