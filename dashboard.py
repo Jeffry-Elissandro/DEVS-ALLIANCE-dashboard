@@ -2828,33 +2828,44 @@ css = """
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
+/* Track dinámico */
 .slide-track {
     display: flex;
-    width: calc(300px * 10);
-    animation: scroll 30s linear infinite;
+    width: max-content;
+    animation: scroll 40s linear infinite;
 }
 
+/* 🔥 TAMAÑO FIJO SIEMPRE */
 .slide {
-    width: 300px;
-    margin: 0 10px;
+    flex: 0 0 320px; /* ← ancho fijo */
+    margin: 0 15px;
     background: #1e1e1e;
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover opcional */
+.slide:hover {
+    transform: scale(1.05);
 }
 
 .slide img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .title {
     font-weight: bold;
     margin-top: 10px;
+    font-size: 16px;
 }
 
 .desc {
@@ -2862,9 +2873,10 @@ css = """
     opacity: 0.8;
 }
 
+/* ANIMACIÓN INFINITA SUAVE */
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-300px * 5)); }
+    100% { transform: translateX(-50%); }
 }
 </style>
 """
