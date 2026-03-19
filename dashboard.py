@@ -2885,7 +2885,7 @@ html = (
 '<div class="slider">'
 '  <div class="slide-track">'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Lorem Ipsum 📌</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
