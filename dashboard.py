@@ -2811,16 +2811,18 @@ def img_base64(path):
 
 
 # ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
-img1 = img_base64("TEST_1.png")
-img2 = img_base64("TEST_2.png")
-img3 = img_base64("TEST_3.png")
-img4 = img_base64("TEST_4.png")
-img5 = img_base64("TEST_5.png")
-img6 = img_base64("TEST_6.png")
-img7 = img_base64("TEST_7.png")
-img8 = img_base64("TEST_8.png")
-img9 = img_base64("TEST_9.png")
-img10 = img_base64("TEST_10.png")
+img1 = img_base64("s_cerebella.png")
+img2 = img_base64("s_peacock.png")
+img3 = img_base64("s_fortune.png")
+img4 = img_base64("s_double.png")
+img5 = img_base64("s_filia.png")
+img6 = img_base64("s_parasoul.png")
+img7 = img_base64("s_valentine.png")
+img8 = img_base64("s_squigly.png")
+img9 = img_base64("s_bigband.png")
+img10 = img_base64("s_painwheel.png")
+img11 = img_base64("s_beowulf.png")
+img12 = img_base64("s_eliza.png")
 
 css = """
 <style>
@@ -2885,27 +2887,17 @@ html = (
 '<div class="slider">'
 '  <div class="slide-track">'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Lorem Ipsum 📌</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">Título 6</div><div class="desc">Descripción 6</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">Título 7</div><div class="desc">Descripción 7</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">Título 8</div><div class="desc">Descripción 8</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">Título 9</div><div class="desc">Descripción 9</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">Título 10</div><div class="desc">Descripción 10</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA 📌</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK 🎯</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">FORTUNE 🏆</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE ⚙️</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA 🎁</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">Título 1</div><div class="desc">Descripción 1</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">Título 2</div><div class="desc">Descripción 2</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">Título 3</div><div class="desc">Descripción 3</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">Título 4</div><div class="desc">Descripción 4</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">Título 5</div><div class="desc">Descripción 5</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">Título 6</div><div class="desc">Descripción 6</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">Título 7</div><div class="desc">Descripción 7</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">Título 8</div><div class="desc">Descripción 8</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">Título 9</div><div class="desc">Descripción 9</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">Título 10</div><div class="desc">Descripción 10</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA 📌</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK 🎯</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">FORTUNE 🏆</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE ⚙️</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA 🎁</div><div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit odio nec augue rhoncus pellentesque. Nunc sagittis vitae dolor a fringilla. Praesent eget ullamcorper nunc. Etiam sapien nunc, egestas et turpis sed, faucibus accumsan sem. Curabitur risus tortor, dictum eu lectus vel, consectetur porttitor eros. Sed finibus consectetur arcu, non semper est gravida eu. Quisque posuere sem tortor, ac consectetur massa ullamcorper quis.</div></div>'
 
 '  </div>'
 '</div>'
