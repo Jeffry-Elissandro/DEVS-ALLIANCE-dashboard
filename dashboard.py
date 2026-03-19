@@ -2880,6 +2880,67 @@ css = """
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: #1e1e1e;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.modal-desc {
+    margin-top: 10px;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* BOTÓN CERRAR */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+
+
+
 </style>
 """
 
