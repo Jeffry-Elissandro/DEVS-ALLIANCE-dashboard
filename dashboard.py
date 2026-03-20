@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 if "mostrar_nota" not in st.session_state:
-    st.session_state.mostrar_nota = True
+    st.session_state.mostrar_nota = False
 
 
 import streamlit as st
@@ -710,7 +710,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10430   # Oro actual
+puntaje_actual = 12290   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1814,7 +1814,7 @@ def img_base64(path):
 
 img1 = img_base64("1.png")
 img2 = img_base64("2.png")
-img3 = img_base64("Imagen_para_testeos.png")
+img3 = img_base64("3.png")
 img4 = img_base64("4.png")
 img5 = img_base64("5.png")
 img6 = img_base64("6.png")
@@ -1917,7 +1917,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img3}">
-  <span>DISPONIBLE</span>
+  <span>xXDrive_shXx</span>
 </div>
 
 <div class="dev-card">
@@ -2027,7 +2027,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img25}">
-  <span>xXDrive_shXx</span>
+  <span>LESLIE'M</span>
 </div>
 
 <div class="dev-card">
@@ -2107,7 +2107,7 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "batgirl", "imagen": "27.png"},
+    {"nombre": "LESLIE'M", "imagen": "25.png"},
 ]
 
 
@@ -2515,7 +2515,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_17.png"
+nombre_imagen = "skull_meme_18.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2567,7 +2567,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            a
+            yo si lo haría
         </p>
 
     </div>
