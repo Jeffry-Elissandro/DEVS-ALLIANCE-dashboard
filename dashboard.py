@@ -3,12 +3,12 @@ import plotly.express as px
 import streamlit as st
 
 if "mostrar_nota" not in st.session_state:
-    st.session_state.mostrar_nota = False
+    st.session_state.mostrar_nota = True
 
 
 import streamlit as st
 
-WEB_TESTING = True
+WEB_TESTING = False
 
 def show_testing_badge():
     st.markdown("""
