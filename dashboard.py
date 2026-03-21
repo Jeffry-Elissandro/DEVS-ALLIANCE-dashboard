@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state:
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -710,7 +710,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 12290   # Oro actual
+puntaje_actual = 13400   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1927,7 +1927,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>rottqned</span>
+  <span>Ren Hana's wife</span>
 </div>
 
 <div class="dev-card">
