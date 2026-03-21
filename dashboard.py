@@ -710,7 +710,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 13400   # Oro actual
+puntaje_actual = 15385   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2515,7 +2515,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_18.png"
+nombre_imagen = "skull_meme_19.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2567,7 +2567,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            yo si lo haría
+            tetonita
         </p>
 
     </div>
