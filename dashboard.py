@@ -1550,7 +1550,7 @@ components.html(f"""
                 200M
             </div>
             <div style="font-size:13px; color:#999999;">
-                DAÑO (REFERENCIA DE ACTIVIDAD)
+                DAÑO (OPCIONAL, NO CAUSA EXPULSIÓN)
             </div>
         </div>
 
@@ -1583,7 +1583,7 @@ components.html(f"""
     </div>
 
 </div>
-""", height=500)
+""", height=600)
 
 
 
