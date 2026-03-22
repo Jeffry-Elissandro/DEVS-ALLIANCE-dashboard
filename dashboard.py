@@ -1467,10 +1467,6 @@ with open("Recomendado_Imagen.gif", "rb") as f:
 
 imagen = f"data:image/gif;base64,{data}"
 
-st.set_page_config(
-    page_title="Condición de Permanencia",
-    layout="wide"
-)
 
 components.html(f"""
 <div style="
