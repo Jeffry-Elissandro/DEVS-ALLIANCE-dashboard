@@ -1461,72 +1461,145 @@ import streamlit as st
 
 
 
-st.set_page_config(page_title="Score Recomendado Alianza", layout="wide")
+st.set_page_config(page_title="DEV ALLIANCE", layout="wide")
 
 import base64
 with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
-Recomendado_Imagen = f"data:image/gif;base64,{data}"
+Requerido_Imagen = f"data:image/gif;base64,{data}"
 
-
-
-# Configuración global de la página
 st.set_page_config(
-    page_title="Score Recomendado Alianza",
-    layout="wide"   # 👈 Esto activa Wide mode por defecto
+    page_title="Requisito de Permanencia",
+    layout="wide"
 )
 
 st.markdown(f"""
-<div style="
-  max-width:900px;
-  margin:35px auto;
-  padding:22px 26px;
-  background:linear-gradient(180deg,#0f172a,#020617);
-  border-radius:16px;
-  box-shadow:0 0 25px rgba(99,102,241,0.25);
-  border:1px solid rgba(99,102,241,0.35);
-">
+<style>
+.panel {{
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 28px;
+    border-radius: 14px;
+    background: linear-gradient(160deg, #050505, #111111);
+    border: 1px solid rgba(255,75,75,0.4);
+    box-shadow: 0 0 35px rgba(255,75,75,0.25);
+    font-family: 'Segoe UI', sans-serif;
+}}
 
-  <h2 style="
-    text-align:center;
-    color:#ffffff;
-    font-size:26px;
-    letter-spacing:1.5px;
-    margin-bottom:10px;
-    text-shadow:0 0 12px rgba(99,102,241,0.6);
-  ">
-    🏆 Score Recomendado de la Alianza
-  </h2>
+.title {{
+    text-align: center;
+    color: #ff4b4b;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}}
 
-  <p style="
-    text-align:center;
-    color:#9fb3c8;
-    font-size:15px;
-    margin-bottom:18px;
-  ">
-    Este es el <strong style="color:#e5f3ff;">promedio sugerido</strong> que todo miembro debería alcanzar semanalmente para mantener a la Alianza en lo más alto.
-    Es una meta motivadora que refleja el compromiso colectivo.
-  </p>
+.subtitle {{
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}}
 
-  <!-- Imagen/GIF en Base64 -->
-  <div style="text-align:center; margin:20px 0;">
-    <img src="{Recomendado_Imagen}" alt="Imagen" style="max-width:100%; border-radius:12px; box-shadow:0 0 15px rgba(99,102,241,0.5);" />
-  </div>
-            
-  <div style="
-    display:flex;
-    justify-content:space-around;
-    margin-top:20px;
-    font-size:16px;
-    color:#cbd5f1;
-  ">
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">500</strong><br>Medallas / semana
+.divider {{
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ff4b4b, transparent);
+    margin: 15px 0 25px 0;
+}}
+
+.image-container {{
+    text-align: center;
+    margin: 20px 0;
+}}
+
+.image-container img {{
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,75,75,0.4);
+}}
+
+.rules {{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    text-align: center;
+}}
+
+.rule-box {{
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255,75,75,0.08);
+    border: 1px solid rgba(255,75,75,0.3);
+    width: 40%;
+}}
+
+.rule-main {{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}}
+
+.rule-label {{
+    font-size: 13px;
+    color: #bbbbbb;
+}}
+
+.warning {{
+    margin-top: 25px;
+    padding: 14px;
+    border-left: 4px solid #ff4b4b;
+    background: rgba(255,75,75,0.1);
+    color: #dddddd;
+    font-size: 14px;
+    line-height: 1.5;
+}}
+
+.footer {{
+    margin-top: 20px;
+    text-align: right;
+    font-size: 12px;
+    color: #777;
+    letter-spacing: 1px;
+}}
+</style>
+
+<div class="panel">
+
+    <div class="title">REQUISITO OBLIGATORIO</div>
+    <div class="subtitle">
+        Condición mínima para permanecer en el gremio
     </div>
-    <div style="text-align:center;">
-      <strong style="color:#ffffff;">200M</strong><br>Daño total
+
+    <div class="divider"></div>
+
+    <div class="image-container">
+        <img src="{Requerido_Imagen}" />
     </div>
-  </div>
+
+    <div class="rules">
+        <div class="rule-box">
+            <div class="rule-main">500</div>
+            <div class="rule-label">PUNTOS SEMANALES (OBLIGATORIO)</div>
+        </div>
+
+        <div class="rule-box">
+            <div class="rule-main">200M</div>
+            <div class="rule-label">DAÑO (REFERENCIA DE RENDIMIENTO)</div>
+        </div>
+    </div>
+
+    <div class="warning">
+        El cumplimiento de <strong>500 puntos semanales</strong> es obligatorio.  
+        No alcanzar esta cifra resultará en la expulsión del gremio sin excepción.
+        <br><br>
+        El daño total (200M) es un indicador de rendimiento individual y no afecta
+        la permanencia, pero sí refleja el nivel de compromiso dentro del equipo.
+    </div>
+
+    <div class="footer">
+        NORMA ACTIVA
+    </div>
 
 </div>
 """, unsafe_allow_html=True)
