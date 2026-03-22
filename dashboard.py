@@ -1569,7 +1569,7 @@ components.html(f"""
         <br><br>
         La falta de cumplimiento de forma continua podrá derivar en la rotación del miembro.
         <br><br>
-        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia.
+        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia (osea opcional pe).
     </div>
 
     <div style="
@@ -1583,7 +1583,7 @@ components.html(f"""
     </div>
 
 </div>
-""", height=600)
+""", height=800)
 
 
 
