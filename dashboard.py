@@ -491,9 +491,8 @@ img_colider = img_base64("Thanks_colider.png")
 st.markdown(
     f"""
     <style>
-    /* Contenedor superior */
     .tribute-card {{
-      max-width:900px;
+      max-width:950px;
       margin:50px auto;
       padding:50px;
       background:linear-gradient(180deg,#0f0f0f,#1f1f1f 70%,#0f0f0f);
@@ -522,7 +521,6 @@ st.markdown(
       margin-bottom:25px;
     }}
 
-    /* Imagen sobre pedestal */
     .colider-avatar {{
       width:140px;
       height:140px;
@@ -531,12 +529,11 @@ st.markdown(
       border:4px solid #9ca3af;
       box-shadow:0 0 35px rgba(200,200,200,0.85);
       display:block;
-      margin:0 auto -60px auto; /* Ajusta la distancia sobre el pedestal */
+      margin:0 auto -60px auto;
       position:relative;
       z-index:10;
     }}
 
-    /* Animaciones pedestal */
     @keyframes bounce {{
       0%,100% {{ translate:0px 36px; }}
       50% {{ translate:0px 46px; }}
@@ -560,7 +557,6 @@ st.markdown(
     #bounce2 {{ animation: bounce2 4s ease-in-out infinite; translate:0px 46px; animation-delay:0.5s; }}
     </style>
 
-    <!-- Parte superior -->
     <div class="tribute-card">
       <h2 class="tribute-title">💜 Gracias »alex«</h2>
       <p class="tribute-text">
@@ -572,24 +568,23 @@ st.markdown(
       <p class="tribute-text">
         Este no es un adiós, sino un hasta siempre. La alianza será siempre tu hogar, y las puertas permanecerán abiertas para ti. Si algún día decides regresar, serás recibido con el mismo entusiasmo y gratitud que hoy sentimos. Tu nombre y tu legado quedarán grabados en nuestra historia, recordándonos que el verdadero liderazgo se mide en hechos y en corazón.
       </p>
-    </div>
 
-    <!-- Parte inferior: imagen + pedestal -->
-    <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
+      <!-- Avatar sobre pedestal -->
+      <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
 
-    <div style="display:flex;justify-content:center;align-items:center;">
-      <svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
-        <g style="order:-1;">
-          <!-- Pedestal escalado y centrado -->
-          <polygon transform="rotate(45 150 150)" stroke-width="1" stroke="#d3a410" fill="none"
-            points="120,120 220,90 190,190 90,220" id="bounce"></polygon>
-          <polygon transform="rotate(45 150 150)" stroke-width="1" stroke="#d3a410" fill="none"
-            points="120,120 220,90 190,190 90,220" id="bounce2"></polygon>
-          <polygon transform="rotate(45 150 150)" stroke-width="2" fill="#414750"
-            points="120,120 220,90 190,190 90,220"></polygon>
-          <!-- resto de polígonos igual que tu código original -->
-        </g>
-      </svg>
+      <div style="display:flex;justify-content:center;align-items:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
+          <g style="order:-1;">
+            <polygon transform="rotate(45 150 150)" stroke-width="1" stroke="#d3a410" fill="none"
+              points="120,120 220,90 190,190 90,220" id="bounce"></polygon>
+            <polygon transform="rotate(45 150 150)" stroke-width="1" stroke="#d3a410" fill="none"
+              points="120,120 220,90 190,190 90,220" id="bounce2"></polygon>
+            <polygon transform="rotate(45 150 150)" stroke-width="2" fill="#414750"
+              points="120,120 220,90 190,190 90,220"></polygon>
+            <!-- resto de polígonos igual que tu código original -->
+          </g>
+        </svg>
+      </div>
     </div>
     """,
     unsafe_allow_html=True
