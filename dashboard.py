@@ -515,9 +515,11 @@ html_code = f"""
   color:#d1d5db;
   line-height:1.8;
   margin-bottom:20px;
-  max-width:750px;
+  max-width:950px;
   margin-left:auto;
   margin-right:auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }}
 .colider-avatar {{
   width:140px;
@@ -557,7 +559,7 @@ html_code = f"""
 
 <div class="tribute-card">
   <div class="tribute-title">Homenaje a »alex«</div>
-  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6; max-width:800px; word-wrap:break-word;">
+  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6;">
   <p>
     Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
     esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
