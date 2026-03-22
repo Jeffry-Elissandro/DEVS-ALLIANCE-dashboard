@@ -1154,7 +1154,7 @@ components.html(
 
     </div>
     """,
-    height=580
+    height=740
 )
 
 
@@ -1579,7 +1579,7 @@ components.html(f"""
     </div>
 
 </div>
-""", height=800)
+""", height=950)
 
 
 
@@ -1716,7 +1716,7 @@ components.html(
         </div>
     </div>
     """,
-    height=1200
+    height=1880
 )
 
 
