@@ -504,11 +504,11 @@ html_code = f"""
 }}
 .tribute-title {{
   font-size:34px;
-  color:#ffd700;
+  color:#fff;
   margin-bottom:30px;
   letter-spacing:2px;
   font-weight:bold;
-  text-shadow:0 0 25px rgba(255,215,0,0.6);
+  text-shadow:0 0 25px rgba(0, 0, 0, 0.8);
 }}
 .tribute-text {{
   font-size:16px;
@@ -622,7 +622,7 @@ html_code = f"""
 </div>
 """
 
-st.components.v1.html(html_code, height=1500)
+st.components.v1.html(html_code, height=1600)
 
 
 
@@ -631,7 +631,7 @@ st.components.v1.html(html_code, height=1500)
 
 
 
-
+st.divider()
 
 
 
