@@ -1464,18 +1464,20 @@ import streamlit as st
 st.set_page_config(page_title="DEV ALLIANCE", layout="wide")
 
 import base64
+import streamlit as st
+
 with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
-Requerido_Imagen = f"data:image/gif;base64,{data}"
+
+imagen = f"data:image/gif;base64,{data}"
 
 st.set_page_config(
-    page_title="Requisito de Permanencia",
+    page_title="Condición de Permanencia",
     layout="wide"
 )
 
-st.markdown(f"""
-<style>
-.panel {{
+html = f"""
+<div style="
     max-width: 900px;
     margin: 35px auto;
     padding: 28px;
@@ -1484,125 +1486,110 @@ st.markdown(f"""
     border: 1px solid rgba(255,75,75,0.4);
     box-shadow: 0 0 35px rgba(255,75,75,0.25);
     font-family: 'Segoe UI', sans-serif;
-}}
+">
 
-.title {{
-    text-align: center;
-    color: #ff4b4b;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}}
-
-.subtitle {{
-    text-align: center;
-    color: #aaaaaa;
-    font-size: 14px;
-    margin-bottom: 20px;
-}}
-
-.divider {{
-    height: 2px;
-    background: linear-gradient(to right, transparent, #ff4b4b, transparent);
-    margin: 15px 0 25px 0;
-}}
-
-.image-container {{
-    text-align: center;
-    margin: 20px 0;
-}}
-
-.image-container img {{
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255,75,75,0.4);
-}}
-
-.rules {{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-    text-align: center;
-}}
-
-.rule-box {{
-    padding: 15px;
-    border-radius: 10px;
-    background: rgba(255,75,75,0.08);
-    border: 1px solid rgba(255,75,75,0.3);
-    width: 40%;
-}}
-
-.rule-main {{
-    font-size: 22px;
-    font-weight: bold;
-    color: #ffffff;
-}}
-
-.rule-label {{
-    font-size: 13px;
-    color: #bbbbbb;
-}}
-
-.warning {{
-    margin-top: 25px;
-    padding: 14px;
-    border-left: 4px solid #ff4b4b;
-    background: rgba(255,75,75,0.1);
-    color: #dddddd;
-    font-size: 14px;
-    line-height: 1.5;
-}}
-
-.footer {{
-    margin-top: 20px;
-    text-align: right;
-    font-size: 12px;
-    color: #777;
-    letter-spacing: 1px;
-}}
-</style>
-
-<div class="panel">
-
-    <div class="title">REQUISITO OBLIGATORIO</div>
-    <div class="subtitle">
-        Condición mínima para permanecer en el gremio
+    <div style="
+        text-align:center;
+        color:#ff4b4b;
+        font-size:24px;
+        font-weight:bold;
+        letter-spacing:2px;
+    ">
+        CONDICIÓN DE PERMANENCIA
     </div>
 
-    <div class="divider"></div>
-
-    <div class="image-container">
-        <img src="{Requerido_Imagen}" />
+    <div style="
+        text-align:center;
+        color:#aaaaaa;
+        font-size:14px;
+        margin-bottom:20px;
+    ">
+        Parámetros mínimos requeridos para continuar en el gremio
     </div>
 
-    <div class="rules">
-        <div class="rule-box">
-            <div class="rule-main">500</div>
-            <div class="rule-label">PUNTOS SEMANALES (OBLIGATORIO)</div>
+    <div style="
+        height:2px;
+        background: linear-gradient(to right, transparent, #ff4b4b, transparent);
+        margin: 15px 0 25px 0;
+    "></div>
+
+    <div style="text-align:center; margin:20px 0;">
+        <img src="{imagen}" style="
+            max-width:100%;
+            border-radius:10px;
+            box-shadow:0 0 20px rgba(255,75,75,0.4);
+        ">
+    </div>
+
+    <div style="
+        display:flex;
+        justify-content:space-around;
+        margin-top:25px;
+        text-align:center;
+    ">
+
+        <div style="
+            padding:15px;
+            border-radius:10px;
+            background: rgba(255,75,75,0.08);
+            border: 1px solid rgba(255,75,75,0.3);
+            width:40%;
+        ">
+            <div style="font-size:22px; font-weight:bold; color:#ffffff;">
+                500
+            </div>
+            <div style="font-size:13px; color:#bbbbbb;">
+                PUNTOS SEMANALES (REQUISITO PRINCIPAL)
+            </div>
         </div>
 
-        <div class="rule-box">
-            <div class="rule-main">200M</div>
-            <div class="rule-label">DAÑO (REFERENCIA DE RENDIMIENTO)</div>
+        <div style="
+            padding:15px;
+            border-radius:10px;
+            background: rgba(255,75,75,0.05);
+            border: 1px solid rgba(255,75,75,0.2);
+            width:40%;
+        ">
+            <div style="font-size:22px; font-weight:bold; color:#ffffff;">
+                200M
+            </div>
+            <div style="font-size:13px; color:#999999;">
+                DAÑO (INDICADOR DE RENDIMIENTO)
+            </div>
         </div>
+
     </div>
 
-    <div class="warning">
-        El cumplimiento de <strong>500 puntos semanales</strong> es obligatorio.  
-        No alcanzar esta cifra resultará en la expulsión del gremio sin excepción.
+    <div style="
+        margin-top:25px;
+        padding:14px;
+        border-left:4px solid #ff4b4b;
+        background: rgba(255,75,75,0.1);
+        color:#dddddd;
+        font-size:14px;
+        line-height:1.5;
+    ">
+        Mantener un mínimo de <strong>500 puntos semanales</strong> es un requisito activo.
         <br><br>
-        El daño total (200M) es un indicador de rendimiento individual y no afecta
-        la permanencia, pero sí refleja el nivel de compromiso dentro del equipo.
+        No alcanzar este valor de forma recurrente podrá derivar en la salida del gremio.
+        <br><br>
+        El daño total es únicamente una referencia de desempeño individual y no condiciona la permanencia.
     </div>
 
-    <div class="footer">
-        NORMA ACTIVA
+    <div style="
+        margin-top:20px;
+        text-align:right;
+        font-size:12px;
+        color:#777;
+        letter-spacing:1px;
+    ">
+        PARÁMETRO VIGENTE
     </div>
 
 </div>
-""", unsafe_allow_html=True)
+"""
+
+st.markdown(html, unsafe_allow_html=True)
 
 
 
