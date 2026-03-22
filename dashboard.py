@@ -488,9 +488,8 @@ def img_base64(path):
 
 img_colider = img_base64("Thanks_colider.png")
 
-st.markdown(f"""
+html_code = f"""
 <style>
-
 .tribute-card {{
   max-width:950px;
   margin:60px auto;
@@ -498,14 +497,11 @@ st.markdown(f"""
   background:linear-gradient(180deg,#0a0c12,#111827 60%,#05070b);
   border-radius:30px;
   border:1px solid rgba(255,215,0,0.25);
-  box-shadow:
-    0 0 80px rgba(255,215,0,0.15),
-    inset 0 0 60px rgba(255,215,0,0.08);
+  box-shadow:0 0 80px rgba(255,215,0,0.15), inset 0 0 60px rgba(255,215,0,0.08);
   text-align:center;
   position:relative;
   overflow:hidden;
 }}
-
 .tribute-title {{
   font-size:34px;
   color:#ffd700;
@@ -514,7 +510,6 @@ st.markdown(f"""
   font-weight:bold;
   text-shadow:0 0 25px rgba(255,215,0,0.6);
 }}
-
 .tribute-text {{
   font-size:16px;
   color:#d1d5db;
@@ -524,30 +519,24 @@ st.markdown(f"""
   margin-left:auto;
   margin-right:auto;
 }}
-
 .colider-avatar {{
   width:140px;
   height:140px;
   border-radius:50%;
   object-fit:cover;
   border:4px solid #ffd700;
-  box-shadow:
-    0 0 35px rgba(255,215,0,0.7),
-    0 0 70px rgba(255,215,0,0.3);
+  box-shadow:0 0 35px rgba(255,215,0,0.7),0 0 70px rgba(255,215,0,0.3);
   display:block;
   margin:40px auto -70px auto;
   position:relative;
   z-index:10;
   background:#000;
 }}
-
 .pedestal-wrapper {{
   display:flex;
   justify-content:center;
   margin-top:20px;
 }}
-
-/* ✨ GLOW AMBIENTAL */
 .tribute-card::before {{
   content:"";
   position:absolute;
@@ -559,87 +548,46 @@ st.markdown(f"""
   transform:translateX(-50%);
   filter:blur(40px);
 }}
-
-/* 🔥 ANIMACIONES */
 @keyframes bounce {{
-  0%,100% {{ translate:0px 36px; }}
-  50% {{ translate:0px 46px; }}
+  0%,100% {{ transform:translate(0px,36px); }}
+  50% {{ transform:translate(0px,46px); }}
 }}
-
 @keyframes bounce2 {{
-  0%,100% {{ translate:0px 46px; }}
-  50% {{ translate:0px 56px; }}
+  0%,100% {{ transform:translate(0px,46px); }}
+  50% {{ transform:translate(0px,56px); }}
 }}
-
 @keyframes particles {{
-  0%,100% {{ translate:0px 16px; }}
-  50% {{ translate:0px 6px; }}
+  0%,100% {{ transform:translate(0px,16px); }}
+  50% {{ transform:translate(0px,6px); }}
 }}
-
 #particles {{ animation: particles 4s ease-in-out infinite; }}
-#bounce {{ animation: bounce 4s ease-in-out infinite; translate:0px 36px; }}
-#bounce2 {{ animation: bounce2 4s ease-in-out infinite; translate:0px 46px; }}
-
+#bounce {{ animation: bounce 4s ease-in-out infinite; }}
+#bounce2 {{ animation: bounce2 4s ease-in-out infinite; }}
 </style>
 
 <div class="tribute-card">
-
   <div class="tribute-title">Homenaje a «alex»</div>
-
   <p class="tribute-text">
-    Hoy queremos expresar nuestro más profundo agradecimiento. Cada decisión,
-    cada momento y cada esfuerzo que entregaste marcaron el camino de este gremio.
-    Tu presencia fue más que liderazgo: fue constancia, apoyo y ejemplo.
+    Hoy queremos expresar nuestro más profundo agradecimiento...
   </p>
-
-  <p class="tribute-text">
-    Entendemos tu decisión y la respetamos completamente. Hay momentos donde la vida
-    exige prioridad, y tomar ese camino también es una forma de fortaleza.
-  </p>
-
-  <p class="tribute-text">
-    Este no es un adiós. Este gremio siempre será tu hogar.
-    Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
-  </p>
-
-  <!-- 🧑 PERFIL -->
   <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
-
-  <!-- 🏛️ PEDESTAL -->
   <div class="pedestal-wrapper">
-
     <svg xmlns="http://www.w3.org/2000/svg" height="260" width="260">
       <g>
-
-        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none"
-          points="100,100 200,70 170,170 70,200" id="bounce"></polygon>
-
-        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none"
-          points="100,100 200,70 170,170 70,200" id="bounce2"></polygon>
-
-        <polygon transform="rotate(45 130 130)" fill="#2f3540"
-          points="100,100 200,70 170,170 70,200"></polygon>
-
-        <polygon fill="#d3a410"
-          points="130,95 200,130 130,165 60,130"></polygon>
-
-        <polygon fill="#1f2127"
-          points="60,130 130,165 130,210 60,175"></polygon>
-
-        <polygon fill="#2a2e36"
-          points="130,165 200,130 200,175 130,210"></polygon>
-
-        <!-- ✨ partículas -->
-        <polygon fill="#fff" points="2,0 2,2 0,2 0,0"
-          transform="translate(120,100)" id="particles"></polygon>
-
+        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none" points="100,100 200,70 170,170 70,200" id="bounce"/>
+        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none" points="100,100 200,70 170,170 70,200" id="bounce2"/>
+        <polygon transform="rotate(45 130 130)" fill="#2f3540" points="100,100 200,70 170,170 70,200"/>
+        <polygon fill="#d3a410" points="130,95 200,130 130,165 60,130"/>
+        <polygon fill="#1f2127" points="60,130 130,165 130,210 60,175"/>
+        <polygon fill="#2a2e36" points="130,165 200,130 200,175 130,210"/>
+        <polygon fill="#fff" points="2,0 2,2 0,2 0,0" transform="translate(120,100)" id="particles"/>
       </g>
     </svg>
-
   </div>
-
 </div>
-""", unsafe_allow_html=True)
+"""
+
+st.components.v1.html(html_code, height=700)
 
 
 
