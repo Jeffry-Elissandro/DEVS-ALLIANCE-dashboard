@@ -482,113 +482,211 @@ st.divider()
 import streamlit as st
 import base64
 
+# 🔹 FUNCIÓN PARA IMAGEN
 def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode("utf-8")
 
 img_colider = img_base64("Thanks_colider.png")
 
-st.markdown(
-    f"""
-    <style>
-    .tribute-card {{
-      max-width:950px;
-      margin:50px auto;
-      padding:50px;
-      background:linear-gradient(180deg,#0f0f0f,#1f1f1f 70%,#0f0f0f);
-      border-radius:28px;
-      border:2px solid rgba(180,180,255,0.45);
-      box-shadow:
-        0 0 65px rgba(180,180,255,0.35),
-        inset 0 0 45px rgba(180,180,255,0.25);
-      text-align:center;
-      position:relative;
-    }}
+# 🔹 HTML + CSS + SVG
+st.markdown(f"""
+<style>
 
-    .tribute-title {{
-      font-size:32px;
-      color:#f9fafb;
-      margin-bottom:30px;
-      letter-spacing:2px;
-      font-weight:bold;
-      text-shadow:0 0 20px rgba(180,180,255,0.9);
-    }}
+.homenaje-container {{
+    width: 100%;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #1c1f26, #0f1115);
+    text-align: center;
+    color: #eaeaea;
+}}
 
-    .tribute-text {{
-      font-size:17px;
-      color:#e5e7eb;
-      line-height:1.9;
-      margin-bottom:25px;
-    }}
+.homenaje-texto h1 {{
+    font-size: 36px;
+    color: #ffd700;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255,215,0,0.4);
+}}
 
-    .colider-avatar {{
-      width:140px;
-      height:140px;
-      border-radius:50%;
-      object-fit:cover;
-      border:4px solid #9ca3af;
-      box-shadow:0 0 35px rgba(200,200,200,0.85);
-      display:block;
-      margin:0 auto -60px auto;
-      position:relative;
-      z-index:10;
-    }}
+.homenaje-texto p {{
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 15px;
+    color: #bfbfbf;
+    line-height: 1.6;
+}}
 
-    @keyframes bounce {{
-      0%,100% {{ translate:0px 36px; }}
-      50% {{ translate:0px 46px; }}
-    }}
-    @keyframes bounce2 {{
-      0%,100% {{ translate:0px 46px; }}
-      50% {{ translate:0px 56px; }}
-    }}
-    @keyframes umbral {{
-      0% {{ stop-color:#d3a5102e; }}
-      50% {{ stop-color:rgba(211,165,16,0.519); }}
-      100% {{ stop-color:#d3a5102e; }}
-    }}
-    @keyframes partciles {{
-      0%,100% {{ translate:0px 16px; }}
-      50% {{ translate:0px 6px; }}
-    }}
-    #particles {{ animation: partciles 4s ease-in-out infinite; }}
-    #animatedStop {{ animation: umbral 4s infinite; }}
-    #bounce {{ animation: bounce 4s ease-in-out infinite; translate:0px 36px; }}
-    #bounce2 {{ animation: bounce2 4s ease-in-out infinite; translate:0px 46px; animation-delay:0.5s; }}
-    </style>
+.homenaje-visual {{
+    position: relative;
+    margin-top: 100px;
+}}
 
-    <div class="tribute-card">
-      <h2 class="tribute-title">💜 Gracias »alex«</h2>
-      <p class="tribute-text">
-        Hoy queremos expresar nuestra más profunda gratitud. Cada momento que compartiste, cada esfuerzo invertido y cada decisión tomada fueron pilares que sostuvieron a la alianza en sus días más difíciles. Tu entrega y constancia dejaron huella, y tu apoyo fue un faro que nos guió en los momentos de incertidumbre.
-      </p>
-      <p class="tribute-text">
-        Comprendemos plenamente tu decisión de dar un paso al costado en la administración. La vida nos presenta retos y prioridades que merecen toda nuestra atención, y tu sinceridad al compartirlo refleja la misma integridad con la que siempre lideraste. Respetamos tu elección y la abrazamos con empatía, sabiendo que tu presencia sigue siendo valiosa aunque tu rol cambie.
-      </p>
-      <p class="tribute-text">
-        Este no es un adiós, sino un hasta siempre. La alianza será siempre tu hogar, y las puertas permanecerán abiertas para ti. Si algún día decides regresar, serás recibido con el mismo entusiasmo y gratitud que hoy sentimos. Tu nombre y tu legado quedarán grabados en nuestra historia, recordándonos que el verdadero liderazgo se mide en hechos y en corazón.
-      </p>
+.perfil-colider {{
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}}
 
-      <!-- Avatar sobre pedestal -->
-      <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
+.perfil-colider img {{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    object-fit: cover;
+    background: #000;
+}}
 
-      <div style="display:flex;justify-content:center;align-items:center;">
-        <svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
-          <g style="order:-1;">
-            <polygon transform="rotate(45 150 150)" stroke-width="1" stroke="#d3a410" fill="none"
-              points="120,120 220,90 190,190 90,220" id="bounce"></polygon>
-            <polygon transform="rotate(45 150 150)" stroke-width="1" stroke="#d3a410" fill="none"
-              points="120,120 220,90 190,190 90,220" id="bounce2"></polygon>
-            <polygon transform="rotate(45 150 150)" stroke-width="2" fill="#414750"
-              points="120,120 220,90 190,190 90,220"></polygon>
-            <!-- resto de polígonos igual que tu código original -->
-          </g>
-        </svg>
-      </div>
+.pedestal {{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}}
+
+/* 🔥 ANIMACIONES SVG */
+@keyframes bounce {{
+  0%,100% {{ transform: translateY(36px); }}
+  50% {{ transform: translateY(46px); }}
+}}
+
+@keyframes bounce2 {{
+  0%,100% {{ transform: translateY(46px); }}
+  50% {{ transform: translateY(56px); }}
+}}
+
+@keyframes umbral {{
+  0% {{ stop-color: #d3a5102e; }}
+  50% {{ stop-color: rgba(211,165,16,0.5); }}
+  100% {{ stop-color: #d3a5102e; }}
+}}
+
+@keyframes particles {{
+  0%,100% {{ transform: translateY(16px); }}
+  50% {{ transform: translateY(6px); }}
+}}
+
+#particles {{
+  animation: particles 4s ease-in-out infinite;
+}}
+
+#animatedStop {{
+  animation: umbral 4s infinite;
+}}
+
+#bounce {{
+  animation: bounce 4s ease-in-out infinite;
+}}
+
+#bounce2 {{
+  animation: bounce2 4s ease-in-out infinite;
+  animation-delay: 0.5s;
+}}
+
+</style>
+
+<div class="homenaje-container">
+
+    <div class="homenaje-texto">
+        <h1>Homenaje al Colíder</h1>
+
+        <p>
+        Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
+        esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
+        importante que siempre será recordada.
+        </p>
+
+        <p>
+        Comprendemos tu decisión. Sabemos que hay momentos donde la vida exige prioridad,
+        y elegir ese camino demuestra responsabilidad y fortaleza.
+        </p>
+
+        <p>
+        Esto no es una despedida definitiva. Este gremio siempre será tu hogar.
+        Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
+        </p>
     </div>
-    """,
-    unsafe_allow_html=True
-)
+
+    <div class="homenaje-visual">
+
+        <!-- 🧑 PERFIL -->
+        <div class="perfil-colider">
+            <img src="data:image/png;base64,{img_colider}">
+        </div>
+
+        <!-- 🏛️ PEDESTAL -->
+        <div class="pedestal">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+  <g>
+    <polygon transform="rotate(45 100 100)" stroke="#d3a410" fill="none"
+      points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+
+    <polygon transform="rotate(45 100 100)" stroke="#d3a410" fill="none"
+      points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+
+    <polygon transform="rotate(45 100 100)" fill="#414750"
+      points="70,70 150,50 130,130 50,150"></polygon>
+
+    <polygon fill="url(#gradiente)"
+      points="100,70 150,100 100,130 50,100"></polygon>
+
+    <defs>
+      <linearGradient id="gradiente">
+        <stop offset="20%" stop-color="#1e2026"/>
+        <stop offset="60%" stop-color="#414750"/>
+      </linearGradient>
+    </defs>
+
+    <polygon transform="translate(20, 31)" fill="#b7870f"
+      points="80,50 80,75 80,99 40,75"></polygon>
+
+    <polygon transform="translate(20, 31)" fill="url(#gradiente2)"
+      points="40,-40 80,-40 80,99 40,75"></polygon>
+
+    <defs>
+      <linearGradient id="gradiente2">
+        <stop offset="20%" stop-color="#d3a51000"/>
+        <stop offset="100%" stop-color="#d3a51054" id="animatedStop"/>
+      </linearGradient>
+    </defs>
+
+    <polygon transform="rotate(180 100 100) translate(20, 20)"
+      fill="#d3a410" points="80,50 80,75 80,99 40,75"></polygon>
+
+    <polygon transform="translate(60, 20)" fill="url(#gradiente3)"
+      points="40,-40 80,-40 80,85 40,110.2"></polygon>
+
+    <defs>
+      <linearGradient id="gradiente3">
+        <stop offset="20%" stop-color="#d3a51000"/>
+        <stop offset="100%" stop-color="#d3a51054"/>
+      </linearGradient>
+    </defs>
+
+    <polygon transform="rotate(45 100 100) translate(80, 95)"
+      fill="#ffe4a1" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+
+    <polygon transform="rotate(45 100 100) translate(80, 55)"
+      fill="#ccb069" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+
+    <polygon transform="rotate(45 100 100) translate(70, 80)"
+      fill="#fff" points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+
+    <polygon fill="#292d34"
+      points="29.5,99.8 100,142 100,172 29.5,130"></polygon>
+
+    <polygon transform="translate(50, 92)" fill="#1f2127"
+      points="50,50 120.5,8 120.5,35 50,80"></polygon>
+  </g>
+</svg>
+
+        </div>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 
 
