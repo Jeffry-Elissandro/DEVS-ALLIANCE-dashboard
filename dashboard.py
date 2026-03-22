@@ -536,33 +536,27 @@ html_code = f"""
   display:flex;
   justify-content:center;
   margin-top:20px;
+  position:relative;
+  height:300px; /* ajusta según necesites */
 }}
-.tribute-card::before {{
-  content:"";
-  position:absolute;
-  width:300px;
-  height:300px;
-  background:radial-gradient(circle, rgba(255,215,0,0.15), transparent 70%);
-  top:-100px;
-  left:50%;
-  transform:translateX(-50%);
-  filter:blur(40px);
+/* Mejoras en el SVG del pedestal */
+.pedestal-svg {{
+  width: 200px;
+  height: 300px;
+  position: relative;
 }}
-@keyframes bounce {{
-  0%,100% {{ transform:translate(0px,36px); }}
-  50% {{ transform:translate(0px,46px); }}
+/* Añadimos sombra y estilo al pedestal */
+.pedestal {{
+  fill:#2f3540;
+  stroke:#d3a410;
+  stroke-width:4;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }}
-@keyframes bounce2 {{
-  0%,100% {{ transform:translate(0px,46px); }}
-  50% {{ transform:translate(0px,56px); }}
+.pedestal-base {{
+  fill:#d3a410;
+  stroke:none;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }}
-@keyframes particles {{
-  0%,100% {{ transform:translate(0px,16px); }}
-  50% {{ transform:translate(0px,6px); }}
-}}
-#particles {{ animation: particles 4s ease-in-out infinite; }}
-#bounce {{ animation: bounce 4s ease-in-out infinite; }}
-#bounce2 {{ animation: bounce2 4s ease-in-out infinite; }}
 </style>
 
 <div class="tribute-card">
@@ -572,16 +566,13 @@ html_code = f"""
   </p>
   <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
   <div class="pedestal-wrapper">
-    <svg xmlns="http://www.w3.org/2000/svg" height="260" width="260">
-      <g>
-        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none" points="100,100 200,70 170,170 70,200" id="bounce"/>
-        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none" points="100,100 200,70 170,170 70,200" id="bounce2"/>
-        <polygon transform="rotate(45 130 130)" fill="#2f3540" points="100,100 200,70 170,170 70,200"/>
-        <polygon fill="#d3a410" points="130,95 200,130 130,165 60,130"/>
-        <polygon fill="#1f2127" points="60,130 130,165 130,210 60,175"/>
-        <polygon fill="#2a2e36" points="130,165 200,130 200,175 130,210"/>
-        <polygon fill="#fff" points="2,0 2,2 0,2 0,0" transform="translate(120,100)" id="particles"/>
-      </g>
+    <svg class="pedestal-svg" viewBox="0 0 260 260">
+      <!-- Pedestal base -->
+      <polygon class="pedestal-base" points="130,250 50,200 210,200"/>
+      <!-- Cuerpo del pedestal -->
+      <rect x="100" y="80" width="60" height="120" class="pedestal"/>
+      <!-- Top del pedestal -->
+      <rect x="110" y="70" width="40" height="10" fill="#d3a410"/>
     </svg>
   </div>
 </div>
