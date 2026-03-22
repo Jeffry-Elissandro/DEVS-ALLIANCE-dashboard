@@ -1120,8 +1120,7 @@ components.html(
             <div class="text">
                 Recuperar el rendimiento del gremio y consolidarnos nuevamente entre los mejores.
                 El objetivo inmediato es superar nuestra posición actual en el 
-                <span class="highlight">TOP 150</span>.
-                <br><br>
+                <span class="highlight">TOP 150</span>. 
                 Este resultado depende directamente del cumplimiento de las normas establecidas.
             </div>
         </div>
@@ -1129,11 +1128,9 @@ components.html(
         <div class="section">
             <div class="title">ENFOQUE</div>
             <div class="text">
-                Las reglas <span class="highlight">NO son opcionales</span>. Son la base del orden interno.
-                <br><br>
+                Las reglas <span class="highlight">NO son opcionales</span>. Son la base del orden interno. 
                 Cualquier desacuerdo puede expresarse con respeto, pero el incumplimiento constante
-                llevará a medidas más estrictas.
-                <br><br>
+                llevará a medidas más estrictas. 
                 La permanencia en el gremio está sujeta al respeto de estas normas.
             </div>
         </div>
@@ -1141,9 +1138,8 @@ components.html(
         <div class="section">
             <div class="title">DIRECTIVA</div>
             <div class="text">
-                Cumplir las reglas no es complicado. Lo que se espera es compromiso y responsabilidad.
-                <br><br>
-                La administración no puede atender conflictos individuales constantes.
+                Cumplir las reglas no es complicado. Lo que se espera es compromiso y responsabilidad. 
+                La administración no puede atender conflictos individuales constantes. 
                 Se requiere paciencia, disciplina y cooperación colectiva.
             </div>
         </div>
