@@ -1451,20 +1451,16 @@ st.divider()
 
 
 
-
-#Para explicar el Promedio A Superar para mantenerse a flote en la alianza
-
-
-
-import streamlit as st
-
-
+#========================================================================
+#SCORE Y DAÑO DE ALIANZA
+#========================================================================
 
 
 st.set_page_config(page_title="DEV ALLIANCE", layout="wide")
 
 import base64
 import streamlit as st
+import streamlit.components.v1 as components
 
 with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
@@ -1476,7 +1472,7 @@ st.set_page_config(
     layout="wide"
 )
 
-html = f"""
+components.html(f"""
 <div style="
     max-width: 900px;
     margin: 35px auto;
@@ -1495,7 +1491,7 @@ html = f"""
         font-weight:bold;
         letter-spacing:2px;
     ">
-        CONDICIÓN DE PERMANENCIA
+        CONDICIÓN DE PARTICIPACIÓN
     </div>
 
     <div style="
@@ -1504,7 +1500,7 @@ html = f"""
         font-size:14px;
         margin-bottom:20px;
     ">
-        Parámetros mínimos requeridos para continuar en el gremio
+        Parámetros activos para mantenerse dentro del gremio
     </div>
 
     <div style="
@@ -1539,7 +1535,7 @@ html = f"""
                 500
             </div>
             <div style="font-size:13px; color:#bbbbbb;">
-                PUNTOS SEMANALES (REQUISITO PRINCIPAL)
+                PUNTOS SEMANALES (BASE REQUERIDA)
             </div>
         </div>
 
@@ -1554,7 +1550,7 @@ html = f"""
                 200M
             </div>
             <div style="font-size:13px; color:#999999;">
-                DAÑO (INDICADOR DE RENDIMIENTO)
+                DAÑO (REFERENCIA DE ACTIVIDAD)
             </div>
         </div>
 
@@ -1569,11 +1565,11 @@ html = f"""
         font-size:14px;
         line-height:1.5;
     ">
-        Mantener un mínimo de <strong>500 puntos semanales</strong> es un requisito activo.
+        Mantener un mínimo de <strong>500 puntos semanales</strong> forma parte de los parámetros activos del gremio.
         <br><br>
-        No alcanzar este valor de forma recurrente podrá derivar en la salida del gremio.
+        La falta de cumplimiento de forma continua podrá derivar en la rotación del miembro.
         <br><br>
-        El daño total es únicamente una referencia de desempeño individual y no condiciona la permanencia.
+        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia.
     </div>
 
     <div style="
@@ -1583,13 +1579,11 @@ html = f"""
         color:#777;
         letter-spacing:1px;
     ">
-        PARÁMETRO VIGENTE
+        ESTADO: ACTIVO
     </div>
 
 </div>
-"""
-
-st.markdown(html, unsafe_allow_html=True)
+""", height=500)
 
 
 
