@@ -556,10 +556,28 @@ html_code = f"""
 </style>
 
 <div class="tribute-card">
-  <div class="tribute-title">Homenaje a «alex»</div>
-  <p class="tribute-text">
-    Hoy queremos expresar nuestro más profundo agradecimiento...
+  <div class="tribute-title">Homenaje a »alex«</div>
+  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6;">
+  <p>
+    Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
+    esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
+    importante que siempre será recordada.
+    Gracias por cada momento, cada decisión y cada esfuerzo dedicado a este gremio.
+    Tu impacto permanecerá con nosotros.
   </p>
+  <p>
+    Comprendemos tu decisión. Sabemos que hay momentos donde la vida exige prioridad,
+    y elegir ese camino demuestra responsabilidad y fortaleza.
+    Entendemos tu decisión y la respetamos profundamente. Hay momentos donde la vida
+    exige prioridad, y eso también es parte del camino.
+  </p>
+  <p>
+    Esto no es una despedida definitiva. Este gremio siempre será tu hogar.
+    Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
+    Este nunca será un adiós. Siempre tendrás un lugar aquí.
+    Cuando decidas volver, serás bienvenido.
+  </p>
+</div>
   <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
   <!-- Contenedor del pedestal con SVG -->
   <div class="pedestal-container">
@@ -602,7 +620,7 @@ html_code = f"""
 </div>
 """
 
-st.components.v1.html(html_code, height=700)
+st.components.v1.html(html_code, height=1500)
 
 
 
