@@ -1674,6 +1674,46 @@ components.html(
                 ></iframe>
             </div>
         </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            Puedes apoyar viendo este video que justifica el daño exponencial que podemos 
+            lograr con la estrategia correcta, reflejo del 
+            poder matemático y planificador. Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, ten buena Fortuna!!!
+            Video creado por: <strong>CHESSDEV</strong> 💚
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/c17npuMkiUk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
     </div>
     """,
     height=1200
