@@ -1646,7 +1646,7 @@ components.html(
             a practicar estrategias para alcanzar un daño brutal y exponencial con las 
             variantes ideales. Si no conoces estas técnicas puedes ver los siguientes videos 
             por distintos creadores (con respectivos créditos) para practicar, ten buena Fortuna!!!
-            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
+            Video creado por: <strong>SiennaConHielo</strong> 💜
         </p>
 
         <div style="
@@ -1665,7 +1665,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/VAL9efW_hHY"
+                    src="https://www.youtube.com/embed/p4oruz478C8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2251,7 +2251,7 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "LESLIE'M", "imagen": "25.png"},
+    {"nombre": "aru_25", "imagen": "4.png"},
 ]
 
 
@@ -2312,7 +2312,7 @@ for miembro in nuevos_miembros:
               letter-spacing:1px;
               text-shadow:0 0 10px rgba(168,85,247,0.8);
             ">
-              ✨ Bienvenido, <span style="color:#d8b4fe;">{miembro["nombre"]}</span>
+              ✨ Bienvenido nuevamente, <span style="color:#d8b4fe;">{miembro["nombre"]}</span>
             </h3>
 
             <p style="
