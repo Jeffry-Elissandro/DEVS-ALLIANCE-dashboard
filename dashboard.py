@@ -482,161 +482,163 @@ st.divider()
 import streamlit as st
 import base64
 
-# 🔹 FUNCIÓN IMAGEN
 def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode("utf-8")
 
 img_colider = img_base64("Thanks_colider.png")
 
-# =========================
-# 🎨 1. CSS (SEPARADO)
-# =========================
-st.markdown("""
+st.markdown(f"""
 <style>
 
-.homenaje-container {
-    width: 100%;
-    padding: 60px 20px;
-    background: linear-gradient(180deg, #1c1f26, #0f1115);
-    text-align: center;
-    color: #eaeaea;
-}
+.tribute-card {{
+  max-width:950px;
+  margin:60px auto;
+  padding:60px 40px 80px;
+  background:linear-gradient(180deg,#0a0c12,#111827 60%,#05070b);
+  border-radius:30px;
+  border:1px solid rgba(255,215,0,0.25);
+  box-shadow:
+    0 0 80px rgba(255,215,0,0.15),
+    inset 0 0 60px rgba(255,215,0,0.08);
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}}
 
-/* TEXTO */
-.homenaje-texto h1 {
-    font-size: 34px;
-    color: #ffd700;
-    margin-bottom: 20px;
-    text-shadow: 0 0 12px rgba(255,215,0,0.4);
-}
+.tribute-title {{
+  font-size:34px;
+  color:#ffd700;
+  margin-bottom:30px;
+  letter-spacing:2px;
+  font-weight:bold;
+  text-shadow:0 0 25px rgba(255,215,0,0.6);
+}}
 
-.homenaje-texto p {
-    max-width: 700px;
-    margin: 10px auto;
-    font-size: 15px;
-    color: #bfbfbf;
-}
+.tribute-text {{
+  font-size:16px;
+  color:#d1d5db;
+  line-height:1.8;
+  margin-bottom:20px;
+  max-width:750px;
+  margin-left:auto;
+  margin-right:auto;
+}}
 
-/* VISUAL */
-.homenaje-visual {
-    position: relative;
-    margin-top: 100px;
-}
+.colider-avatar {{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #ffd700;
+  box-shadow:
+    0 0 35px rgba(255,215,0,0.7),
+    0 0 70px rgba(255,215,0,0.3);
+  display:block;
+  margin:40px auto -70px auto;
+  position:relative;
+  z-index:10;
+  background:#000;
+}}
 
-/* PERFIL */
-.perfil-colider {
-    position: absolute;
-    top: -65px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-}
+.pedestal-wrapper {{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}}
 
-.perfil-colider img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #ffd700;
-    box-shadow: 0 0 25px rgba(255,215,0,0.6);
-}
+/* ✨ GLOW AMBIENTAL */
+.tribute-card::before {{
+  content:"";
+  position:absolute;
+  width:300px;
+  height:300px;
+  background:radial-gradient(circle, rgba(255,215,0,0.15), transparent 70%);
+  top:-100px;
+  left:50%;
+  transform:translateX(-50%);
+  filter:blur(40px);
+}}
 
-/* PEDESTAL */
-.pedestal {
-    display: flex;
-    justify-content: center;
-}
+/* 🔥 ANIMACIONES */
+@keyframes bounce {{
+  0%,100% {{ translate:0px 36px; }}
+  50% {{ translate:0px 46px; }}
+}}
 
-/* SVG ANIMACIONES */
-#bounce { animation: bounce 4s infinite ease-in-out; }
-#bounce2 { animation: bounce2 4s infinite ease-in-out; }
+@keyframes bounce2 {{
+  0%,100% {{ translate:0px 46px; }}
+  50% {{ translate:0px 56px; }}
+}}
 
-@keyframes bounce {
-    0%,100% { transform: translateY(36px); }
-    50% { transform: translateY(46px); }
-}
+@keyframes particles {{
+  0%,100% {{ translate:0px 16px; }}
+  50% {{ translate:0px 6px; }}
+}}
 
-@keyframes bounce2 {
-    0%,100% { transform: translateY(46px); }
-    50% { transform: translateY(56px); }
-}
-
-#particles {
-    animation: particles 4s infinite ease-in-out;
-}
-
-@keyframes particles {
-    0%,100% { transform: translateY(16px); }
-    50% { transform: translateY(6px); }
-}
+#particles {{ animation: particles 4s ease-in-out infinite; }}
+#bounce {{ animation: bounce 4s ease-in-out infinite; translate:0px 36px; }}
+#bounce2 {{ animation: bounce2 4s ease-in-out infinite; translate:0px 46px; }}
 
 </style>
-""", unsafe_allow_html=True)
 
-# =========================
-# 🧱 2. HTML (SIN SVG)
-# =========================
-st.markdown(f"""
-<div class="homenaje-container">
+<div class="tribute-card">
 
-    <div class="homenaje-texto">
-        <h1>Homenaje al Colíder</h1>
+  <div class="tribute-title">Homenaje a «alex»</div>
 
-        <p>
-        Gracias por cada momento, cada decisión y cada esfuerzo dedicado a este gremio.
-        Tu impacto permanecerá con nosotros.
-        </p>
+  <p class="tribute-text">
+    Hoy queremos expresar nuestro más profundo agradecimiento. Cada decisión,
+    cada momento y cada esfuerzo que entregaste marcaron el camino de este gremio.
+    Tu presencia fue más que liderazgo: fue constancia, apoyo y ejemplo.
+  </p>
 
-        <p>
-        Entendemos tu decisión y la respetamos profundamente. Hay momentos donde la vida
-        exige prioridad, y eso también es parte del camino.
-        </p>
+  <p class="tribute-text">
+    Entendemos tu decisión y la respetamos completamente. Hay momentos donde la vida
+    exige prioridad, y tomar ese camino también es una forma de fortaleza.
+  </p>
 
-        <p>
-        Este nunca será un adiós. Siempre tendrás un lugar aquí.
-        Cuando decidas volver, serás bienvenido.
-        </p>
-    </div>
+  <p class="tribute-text">
+    Este no es un adiós. Este gremio siempre será tu hogar.
+    Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
+  </p>
 
-    <div class="homenaje-visual">
+  <!-- 🧑 PERFIL -->
+  <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
 
-        <div class="perfil-colider">
-            <img src="data:image/png;base64,{img_colider}">
-        </div>
+  <!-- 🏛️ PEDESTAL -->
+  <div class="pedestal-wrapper">
 
-        <div class="pedestal" id="pedestal-container">
-        </div>
+    <svg xmlns="http://www.w3.org/2000/svg" height="260" width="260">
+      <g>
 
-    </div>
+        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none"
+          points="100,100 200,70 170,170 70,200" id="bounce"></polygon>
+
+        <polygon transform="rotate(45 130 130)" stroke="#d3a410" fill="none"
+          points="100,100 200,70 170,170 70,200" id="bounce2"></polygon>
+
+        <polygon transform="rotate(45 130 130)" fill="#2f3540"
+          points="100,100 200,70 170,170 70,200"></polygon>
+
+        <polygon fill="#d3a410"
+          points="130,95 200,130 130,165 60,130"></polygon>
+
+        <polygon fill="#1f2127"
+          points="60,130 130,165 130,210 60,175"></polygon>
+
+        <polygon fill="#2a2e36"
+          points="130,165 200,130 200,175 130,210"></polygon>
+
+        <!-- ✨ partículas -->
+        <polygon fill="#fff" points="2,0 2,2 0,2 0,0"
+          transform="translate(120,100)" id="particles"></polygon>
+
+      </g>
+    </svg>
+
+  </div>
 
 </div>
-""", unsafe_allow_html=True)
-
-# =========================
-# 🏛️ 3. SVG (AISLADO)
-# =========================
-st.markdown("""
-<script>
-const pedestal = `
-<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
-  <g>
-    <polygon transform="rotate(45 100 100)" stroke="#d3a410" fill="none"
-      points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
-
-    <polygon transform="rotate(45 100 100)" stroke="#d3a410" fill="none"
-      points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
-
-    <polygon transform="rotate(45 100 100)" fill="#414750"
-      points="70,70 150,50 130,130 50,150"></polygon>
-
-    <polygon fill="#b7870f"
-      points="100,70 150,100 100,130 50,100"></polygon>
-  </g>
-</svg>
-`;
-
-document.getElementById("pedestal-container").innerHTML = pedestal;
-</script>
 """, unsafe_allow_html=True)
 
 
