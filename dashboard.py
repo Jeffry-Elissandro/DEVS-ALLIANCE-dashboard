@@ -722,7 +722,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15385   # Oro actual
+puntaje_actual = 17130   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -750,7 +750,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -845,12 +845,16 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte es de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
     </div>
     """,
@@ -1038,41 +1042,123 @@ import streamlit.components.v1 as components
 
 components.html(
     """
-    <div style="
-        background: linear-gradient(145deg, rgba(255,75,75,0.12), rgba(120,40,40,0.06));
-        border-radius: 18px;
-        padding: 22px 26px;
-        box-shadow: 0 10px 30px rgba(255,75,75,0.35);
-        max-width: 1000px;
-        margin: 20px auto 30px auto;
-        font-family: sans-serif;
-    ">
-        <h3 style="color:#ff4b4b; margin-bottom:10px;">
-            📌 Meta clara
-        </h3>
-        <p style="color:#dddddd; font-size:16px;">
-            Seguir mejorando los puntos de gremio para subir, actualmente nuestro <strong>¡TOP 110!</strong> 
-            .
-        </p>
+    <style>
+        .panel {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 14px;
+            background: linear-gradient(160deg, #0f0f0f, #1a1a1a);
+            border: 1px solid rgba(255, 75, 75, 0.4);
+            box-shadow: 0 0 40px rgba(255, 75, 75, 0.25);
+            font-family: 'Segoe UI', sans-serif;
+            color: #e6e6e6;
+        }
 
-        <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
-            🔥 Enfoque principal
-        </h3>
-        <p style="color:#dddddd; font-size:16px;">
-            Mantenernos estables con las <strong>operaciones de gremio</strong> y llegar a 
-            diamante u oro.
-        </p>
+        .header {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff4b4b;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
 
-        <h3 style="color:#ff4b4b; margin-top:18px; margin-bottom:10px;">
-            🏅 Recomendación
-        </h3>
-        <p style="color:#dddddd; font-size:16px;">
-            Realizar las operaciones constantemente, aprovechando que se
-            reinician cada 24 horas.
-        </p>
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ff4b4b, transparent);
+            margin: 15px 0 25px 0;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff4b4b;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .highlight {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .warning {
+            margin-top: 20px;
+            padding: 12px;
+            border-left: 4px solid #ff4b4b;
+            background: rgba(255, 75, 75, 0.08);
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            text-align: right;
+            font-size: 13px;
+            color: #888;
+            letter-spacing: 1px;
+        }
+    </style>
+
+    <div class="panel">
+
+        <div class="header">COMUNICADO OFICIAL</div>
+        <div class="divider"></div>
+
+        <div class="section">
+            <div class="title">META ACTUAL</div>
+            <div class="text">
+                Recuperar el rendimiento del gremio y consolidarnos nuevamente entre los mejores.
+                El objetivo inmediato es superar nuestra posición actual en el 
+                <span class="highlight">TOP 150</span>.
+                <br><br>
+                Este resultado depende directamente del cumplimiento de las normas establecidas.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">ENFOQUE</div>
+            <div class="text">
+                Las reglas <span class="highlight">NO son opcionales</span>. Son la base del orden interno.
+                <br><br>
+                Cualquier desacuerdo puede expresarse con respeto, pero el incumplimiento constante
+                llevará a medidas más estrictas.
+                <br><br>
+                La permanencia en el gremio está sujeta al respeto de estas normas.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="title">DIRECTIVA</div>
+            <div class="text">
+                Cumplir las reglas no es complicado. Lo que se espera es compromiso y responsabilidad.
+                <br><br>
+                La administración no puede atender conflictos individuales constantes.
+                Se requiere paciencia, disciplina y cooperación colectiva.
+            </div>
+        </div>
+
+        <div class="warning">
+            El incumplimiento reiterado resultará en la expulsión del gremio como última medida.
+        </div>
+
+        <div class="footer">
+            FIN DEL COMUNICADO
+        </div>
+
     </div>
     """,
-    height=400
+    height=420
 )
 
 
@@ -1828,7 +1914,7 @@ img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 img4 = img_base64("4.png")
-img5 = img_base64("5.png")
+img5 = img_base64("Imagen_para_testeos.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
@@ -1934,12 +2020,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img4}">
-  <span>hyunjinnn111</span>
+  <span>aru_25</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>Ren Hana's wife</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2527,7 +2613,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_19.png"
+nombre_imagen = "skull_meme_20.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2579,7 +2665,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            tetonita
+            facilmente seriamos todos
         </p>
 
     </div>
