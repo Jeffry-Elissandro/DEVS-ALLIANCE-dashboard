@@ -557,7 +557,7 @@ html_code = f"""
 
 <div class="tribute-card">
   <div class="tribute-title">Homenaje a »alex«</div>
-  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6;">
+  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6; max-width:800px; word-wrap:break-word;">
   <p>
     Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
     esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
