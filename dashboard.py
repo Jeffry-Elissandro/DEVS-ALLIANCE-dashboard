@@ -552,7 +552,7 @@ body {{
 }}
 
 /* 🔥 AJUSTES PARA PANTALLAS GRANDES */
-@media (min-width: 768px) {{
+@media (min-width: 468px) {{
 
     .admin-img {{
         max-height: 400px; /* 🔥 evita que sea gigante en PC */
