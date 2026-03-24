@@ -500,8 +500,8 @@ body {{
 }}
 
 .admin-img {{
-    width: 150px;  /* 🔥 MÁS GRANDE */
-    height: 150px;
+    width: 250px;  /* 🔥 MÁS GRANDE */
+    height: 450px;
     border-radius: 16px;
     background-image: url("data:image/png;base64,{img_admin}");
     background-size: cover;
@@ -595,10 +595,6 @@ body {{
 
         <div class="admin-text">
         Cada miembro ha sido y sigue siendo registrado en la plataforma DEV’S ALLIANCE. Esto incluye tanto miembros actuales como expulsados. Por lo tanto, cualquier intento de reingreso será evaluado en base a ese historial. Si el registro refleja bajo compromiso, simplemente no habrá retorno.
-        </div>
-
-        <div class="admin-text">
-        Este sistema no es para ejercer control sin sentido, sino para garantizar orden, mérito y progreso real.
         </div>
 
         <div class="admin-text">
