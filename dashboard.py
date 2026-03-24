@@ -508,8 +508,8 @@ body {{
 }}
 
 .admin-img {{
-    width: 130px;
-    height: 130px;
+    width: 330px;
+    height: 330px;
     border-radius: 16px;
     background-image: url("data:image/png;base64,{img_admin}");
     background-size: cover;
@@ -611,10 +611,6 @@ body {{
     </div>
 
     <div class="admin-text">
-    Este sistema no es para ejercer control sin sentido, sino para garantizar orden, mérito y progreso real.
-    </div>
-
-    <div class="admin-text">
     También es importante entender que el crecimiento del gremio no depende solo de mí. Yo establezco el orden, pero el avance depende del desempeño de cada uno. Quien aporte, se mantiene. Quien no, será reemplazado por alguien que sí esté dispuesto a hacerlo.
     </div>
 
@@ -633,7 +629,7 @@ body {{
 </div>
 """
 
-components.html(html_code, height=850, scrolling=False)
+components.html(html_code, height=1000, scrolling=False)
 
 
 
