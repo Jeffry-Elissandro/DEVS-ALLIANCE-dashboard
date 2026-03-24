@@ -473,6 +473,7 @@ st.divider()
 
 
 import streamlit as st
+import streamlit.components.v1 as components
 import base64
 
 def img_base64(path):
@@ -481,8 +482,11 @@ def img_base64(path):
 
 img_admin = img_base64("administracion_chess.png")
 
-st.markdown(f"""
+html_code = f"""
 <style>
+body {{
+    margin: 0;
+}}
 
 .admin-box {{
     background: linear-gradient(135deg, #0f172a, #020617);
@@ -492,7 +496,6 @@ st.markdown(f"""
     box-shadow: 0 0 25px rgba(0,255,150,0.08);
     display: flex;
     gap: 25px;
-    margin-top: 20px;
 }}
 
 .admin-img {{
@@ -503,12 +506,11 @@ st.markdown(f"""
     background-size: cover;
     background-position: center;
     border: 2px solid rgba(0,255,150,0.3);
-    box-shadow: 0 0 15px rgba(0,255,150,0.2);
 }}
 
 .admin-content {{
     flex: 1;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
     color: #e5e7eb;
 }}
 
@@ -516,14 +518,12 @@ st.markdown(f"""
     font-size: 22px;
     font-weight: bold;
     color: #00ffa6;
-    letter-spacing: 1.5px;
     margin-bottom: 15px;
 }}
 
 .admin-text {{
     font-size: 14px;
-    color: #cbd5e1;
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 12px;
 }}
 
@@ -532,33 +532,25 @@ st.markdown(f"""
     padding: 12px;
     border-left: 4px solid #00ffa6;
     background: rgba(0,255,150,0.05);
-    border-radius: 8px;
     font-weight: bold;
     color: #00ffa6;
-}}
-
-.list {{
-    margin-left: 15px;
-    margin-bottom: 12px;
 }}
 
 .footer {{
     margin-top: 20px;
     font-size: 12px;
     color: #64748b;
-    letter-spacing: 1px;
 }}
 
 </style>
 
 <div class="admin-box">
-
     <div class="admin-img"></div>
 
     <div class="admin-content">
 
         <div class="admin-title">
-            ADMINISTRACIÓN - DEV'S ALLIANCE
+        COMUNICADO OFICIAL – ADMINISTRACIÓN DEL GREMIO
         </div>
 
         <div class="admin-text">Saludos a todos.</div>
@@ -587,7 +579,7 @@ st.markdown(f"""
         Las únicas situaciones válidas serán:
         </div>
 
-        <div class="list">
+        <div class="admin-text">
         • Justificación previa y registrada en la web.<br>
         • Historial sólido que respalde una excepción puntual.
         </div>
@@ -622,9 +614,10 @@ st.markdown(f"""
         </div>
 
     </div>
-
 </div>
-""", unsafe_allow_html=True)
+"""
+
+components.html(html_code, height=600, scrolling=True)
 
 
 
@@ -2068,7 +2061,7 @@ components.html(
 
     </div>
     """,
-    height=1880
+    height=2450
 )
 
 
