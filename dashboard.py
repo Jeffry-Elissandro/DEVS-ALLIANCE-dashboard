@@ -496,16 +496,19 @@ body {{
     box-shadow: 0 0 25px rgba(0,255,150,0.08);
     display: flex;
     gap: 25px;
+    align-items: center; /* 🔥 CENTRADO VERTICAL */
 }}
 
 .admin-img {{
-    width: 110px;
-    height: 110px;
-    border-radius: 14px;
+    width: 150px;  /* 🔥 MÁS GRANDE */
+    height: 150px;
+    border-radius: 16px;
     background-image: url("data:image/png;base64,{img_admin}");
     background-size: cover;
     background-position: center;
     border: 2px solid rgba(0,255,150,0.3);
+    box-shadow: 0 0 20px rgba(0,255,150,0.25);
+    flex-shrink: 0; /* 🔥 evita que se deforme */
 }}
 
 .admin-content {{
@@ -515,25 +518,26 @@ body {{
 }}
 
 .admin-title {{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #00ffa6;
     margin-bottom: 15px;
 }}
 
 .admin-text {{
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.7;
     margin-bottom: 12px;
 }}
 
 .rule {{
     margin: 15px 0;
-    padding: 12px;
-    border-left: 4px solid #00ffa6;
-    background: rgba(0,255,150,0.05);
+    padding: 14px;
+    border-left: 5px solid #00ffa6;
+    background: rgba(0,255,150,0.07);
     font-weight: bold;
     color: #00ffa6;
+    border-radius: 6px;
 }}
 
 .footer {{
@@ -617,7 +621,8 @@ body {{
 </div>
 """
 
-components.html(html_code, height=600, scrolling=True)
+# 🔥 ALTURA DINÁMICA (sin scroll interno)
+components.html(html_code, height=900, scrolling=False)
 
 
 
