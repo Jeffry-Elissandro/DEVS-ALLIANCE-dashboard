@@ -508,8 +508,8 @@ body {{
 }}
 
 .admin-img {{
-    width: 330px;
-    height: 330px;
+    width: 130px;
+    height: 130px;
     border-radius: 16px;
     background-image: url("data:image/png;base64,{img_admin}");
     background-size: cover;
