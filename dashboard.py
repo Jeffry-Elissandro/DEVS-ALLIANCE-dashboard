@@ -2,13 +2,13 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-if "mostrar_nota" not in st.session_state:
+if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\Desktop\Equipo de imágenes\Black Dahlia para VSCode.png
     st.session_state.mostrar_nota = True
 
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -472,6 +472,170 @@ st.divider()
 
 
 
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+img_admin = img_base64("administracion_chess.png")
+
+st.markdown(f"""
+<style>
+
+.admin-box {{
+    background: linear-gradient(135deg, #0f172a, #020617);
+    border: 1px solid rgba(0,255,150,0.15);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0,255,150,0.08);
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}}
+
+.admin-img {{
+    width: 110px;
+    height: 110px;
+    border-radius: 14px;
+    background-image: url("data:image/png;base64,{img_admin}");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(0,255,150,0.3);
+    box-shadow: 0 0 15px rgba(0,255,150,0.2);
+}}
+
+.admin-content {{
+    flex: 1;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e5e7eb;
+}}
+
+.admin-title {{
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ffa6;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}}
+
+.admin-text {{
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}}
+
+.rule {{
+    margin: 15px 0;
+    padding: 12px;
+    border-left: 4px solid #00ffa6;
+    background: rgba(0,255,150,0.05);
+    border-radius: 8px;
+    font-weight: bold;
+    color: #00ffa6;
+}}
+
+.list {{
+    margin-left: 15px;
+    margin-bottom: 12px;
+}}
+
+.footer {{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #64748b;
+    letter-spacing: 1px;
+}}
+
+</style>
+
+<div class="admin-box">
+
+    <div class="admin-img"></div>
+
+    <div class="admin-content">
+
+        <div class="admin-title">
+            ADMINISTRACIÓN - DEV'S ALLIANCE
+        </div>
+
+        <div class="admin-text">Saludos a todos.</div>
+
+        <div class="admin-text">
+        A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado.
+        </div>
+
+        <div class="admin-text">
+        Los rangos han sido reiniciados deliberadamente. Serán devueltos o reasignados únicamente a quienes demuestren, con resultados, que realmente los merecen. Aquí no se trata de antigüedad ni de favoritismos, sino de rendimiento, compromiso y disciplina.
+        </div>
+
+        <div class="admin-text">
+        Se establece nuevamente —y de forma clara— la regla principal que siempre ha existido:
+        </div>
+
+        <div class="rule">
+        500 puntos de gremio como mínimo antes del sábado por la noche.
+        </div>
+
+        <div class="admin-text">
+        El incumplimiento de esta norma resultará en expulsión inmediata, sin excepciones innecesarias.
+        </div>
+
+        <div class="admin-text">
+        Las únicas situaciones válidas serán:
+        </div>
+
+        <div class="list">
+        • Justificación previa y registrada en la web.<br>
+        • Historial sólido que respalde una excepción puntual.
+        </div>
+
+        <div class="admin-text">
+        Quiero dejar algo completamente claro:<br>
+        El problema actual no es falta de reglas, es falta de cumplimiento. Y eso cambia desde ahora.
+        </div>
+
+        <div class="admin-text">
+        Cada miembro ha sido y sigue siendo registrado en la plataforma DEV’S ALLIANCE. Esto incluye tanto miembros actuales como expulsados. Por lo tanto, cualquier intento de reingreso será evaluado en base a ese historial. Si el registro refleja bajo compromiso, simplemente no habrá retorno.
+        </div>
+
+        <div class="admin-text">
+        Este sistema no es para ejercer control sin sentido, sino para garantizar orden, mérito y progreso real.
+        </div>
+
+        <div class="admin-text">
+        También es importante entender que el crecimiento del gremio no depende solo de mí. Yo establezco el orden, pero el avance depende del desempeño de cada uno. Quien aporte, se mantiene. Quien no, será reemplazado por alguien que sí esté dispuesto a hacerlo.
+        </div>
+
+        <div class="admin-text">
+        Estaré supervisando personalmente la evolución del gremio hasta asegurarme de que exista una mejora real.
+        </div>
+
+        <div class="admin-text" style="font-weight:bold; color:#00ffa6;">
+        Esto no es una advertencia. Es un cambio de dirección.
+        </div>
+
+        <div class="footer">
+        FIN DEL COMUNICADO • CHESSDEV
+        </div>
+
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+st.divider()
+
 
 
 # ==============================
@@ -869,7 +1033,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 17130   # Oro actual
+puntaje_actual = 6080   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -897,7 +1061,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -992,16 +1156,12 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1788,11 +1948,11 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Tenemos nuevamente a la gata favorita de todos, sin dudas resulta el 
-            jefe de inmortales más diveretido de la semana. Esta temporada puedes volver 
-            a practicar estrategias para alcanzar un daño brutal y exponencial con las 
-            variantes ideales. Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, ten buena Fortuna!!!
+            Marie ha vuelto, es la oportunidad de probar los equipos 
+            que surgieron para mejorar en nuestro daño. Además de ser un personaje 
+            bastante fácil de controlar y divertido para pasar el rato. 
+            Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
             Video creado por: <strong>SiennaConHielo</strong> 💜
         </p>
 
@@ -1812,7 +1972,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/p4oruz478C8"
+                    src="https://www.youtube.com/embed/D44Oi1f3cMc"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1829,10 +1989,53 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Puedes apoyar viendo este video que justifica el daño exponencial que podemos 
-            lograr con la estrategia correcta, reflejo del 
-            poder matemático y planificador. Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, ten buena Fortuna!!!
+            En caso de lo que busques son consejos directos, puedes 
+            avocarte a un personaje icónico de la comunidad, que 
+            puede ayudarte a comprender mejor los modificadores 
+            y equipos para contratacar al jefe de inmortales. 
+            Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
+            Video creado por: <strong>AlannAx</strong> 💚
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/_xyeuQrzEJY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            Puedes ver mi mínimo aporte a una técnica 
+            que me ha funcionado bastante contra el jefe 
+            de inmortales, con variantes accesibles. 
+            Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
             Video creado por: <strong>CHESSDEV</strong> 💚
         </p>
 
@@ -1852,7 +2055,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/c17npuMkiUk"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE&t=6s"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1861,6 +2064,8 @@ components.html(
                 ></iframe>
             </div>
         </div>
+
+
     </div>
     """,
     height=1880
@@ -2002,17 +2207,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_1.png", use_container_width=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("Atacantes.png", use_container_width=True)
+    st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_2.png", use_container_width=True)
+    st.image("carta_umbrella_campeonaza.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2267,8 +2472,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img7}">
-  <span>Military Goth</span>
+  <img src="data:image/png;base64,{img5}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2283,7 +2488,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img10}">
-  <span>alejomaster123</span>
+  <span>UnrealNat</span>
 </div>
 
 <div class="dev-card">
@@ -2348,7 +2553,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img23}">
-  <span>KSTKBMS23</span>
+  <span>GxJxGxSx</span>
 </div>
 
 <div class="dev-card">
@@ -2438,7 +2643,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "aru_25", "imagen": "4.png"},
+    {"nombre": "UnrealNat", "imagen": "10.png"},
+    {"nombre": "GxJxGxSx", "imagen": "23.png"},
 ]
 
 
@@ -2499,7 +2705,7 @@ for miembro in nuevos_miembros:
               letter-spacing:1px;
               text-shadow:0 0 10px rgba(168,85,247,0.8);
             ">
-              ✨ Bienvenido nuevamente, <span style="color:#d8b4fe;">{miembro["nombre"]}</span>
+              ✨ Bienvenido, <span style="color:#d8b4fe;">{miembro["nombre"]}</span>
             </h3>
 
             <p style="
@@ -2846,7 +3052,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_20.png"
+nombre_imagen = "skull_meme_21.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2898,7 +3104,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            facilmente seriamos todos
+            todo menos brechazzz
         </p>
 
     </div>
