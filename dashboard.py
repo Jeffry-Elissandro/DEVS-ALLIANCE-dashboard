@@ -488,11 +488,10 @@ html_code = f"""
 body {{
     margin: 0;
     font-family: Arial, sans-serif;
-    background: transparent;
 }}
 
 .container {{
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
 }}
@@ -505,24 +504,19 @@ body {{
     overflow: hidden;
 }}
 
-/* 🔥 GRID PRINCIPAL (DESKTOP) */
-.admin-grid {{
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 0;
-}}
-
-/* 🔥 IMAGEN */
+/* 🔥 IMAGEN ARRIBA (SIEMPRE) */
 .admin-img {{
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 🔥 CUADRADO PERFECTO */
     background-image: url("data:image/png;base64,{img_admin}");
     background-size: cover;
     background-position: center;
-    min-height: 100%;
+    border-bottom: 1px solid rgba(0,255,150,0.15);
 }}
 
 /* 🔥 CONTENIDO */
 .admin-content {{
-    padding: 30px;
+    padding: 25px;
     color: #e5e7eb;
 }}
 
@@ -555,24 +549,19 @@ body {{
     color: #64748b;
 }}
 
-/* 🔥 MOBILE OPTIMIZATION */
-@media (max-width: 768px) {{
-
-    .admin-grid {{
-        grid-template-columns: 1fr;
-    }}
+/* 🔥 AJUSTES PARA PANTALLAS GRANDES */
+@media (min-width: 768px) {{
 
     .admin-img {{
-        width: 100%;
-        height: 220px; /* 🔥 altura controlada en móvil */
+        max-height: 400px; /* 🔥 evita que sea gigante en PC */
     }}
 
     .admin-content {{
-        padding: 20px;
+        padding: 30px;
     }}
 
     .admin-title {{
-        font-size: 20px;
+        font-size: 26px;
     }}
 }}
 
@@ -580,79 +569,77 @@ body {{
 
 <div class="container">
     <div class="admin-box">
-        <div class="admin-grid">
 
-            <div class="admin-img"></div>
+        <div class="admin-img"></div>
 
-            <div class="admin-content">
+        <div class="admin-content">
 
-                <div class="admin-title">
-                COMUNICADO OFICIAL – ADMINISTRACIÓN DEL GREMIO
-                </div>
-
-                <div class="admin-text">Saludos a todos.</div>
-
-                <div class="admin-text">
-                A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado.
-                </div>
-
-                <div class="admin-text">
-                Los rangos han sido reiniciados deliberadamente. Serán devueltos o reasignados únicamente a quienes demuestren, con resultados, que realmente los merecen. Aquí no se trata de antigüedad ni de favoritismos, sino de rendimiento, compromiso y disciplina.
-                </div>
-
-                <div class="admin-text">
-                Se establece nuevamente —y de forma clara— la regla principal que siempre ha existido:
-                </div>
-
-                <div class="rule">
-                500 puntos de gremio como mínimo antes del sábado por la noche.
-                </div>
-
-                <div class="admin-text">
-                El incumplimiento de esta norma resultará en expulsión inmediata, sin excepciones innecesarias.
-                </div>
-
-                <div class="admin-text">
-                Las únicas situaciones válidas serán:
-                </div>
-
-                <div class="admin-text">
-                • Justificación previa y registrada en la web.<br>
-                • Historial sólido que respalde una excepción puntual.
-                </div>
-
-                <div class="admin-text">
-                Quiero dejar algo completamente claro:<br>
-                El problema actual no es falta de reglas, es falta de cumplimiento. Y eso cambia desde ahora.
-                </div>
-
-                <div class="admin-text">
-                Cada miembro ha sido y sigue siendo registrado en la plataforma DEV’S ALLIANCE. Esto incluye tanto miembros actuales como expulsados. Por lo tanto, cualquier intento de reingreso será evaluado en base a ese historial. Si el registro refleja bajo compromiso, simplemente no habrá retorno.
-                </div>
-
-                <div class="admin-text">
-                También es importante entender que el crecimiento del gremio no depende solo de mí. Yo establezco el orden, pero el avance depende del desempeño de cada uno. Quien aporte, se mantiene. Quien no, será reemplazado por alguien que sí esté dispuesto a hacerlo.
-                </div>
-
-                <div class="admin-text">
-                Estaré supervisando personalmente la evolución del gremio hasta asegurarme de que exista una mejora real.
-                </div>
-
-                <div class="admin-text" style="font-weight:bold; color:#00ffa6;">
-                Esto no es una advertencia. Es un cambio de dirección.
-                </div>
-
-                <div class="footer">
-                FIN DEL COMUNICADO • CHESSDEV
-                </div>
-
+            <div class="admin-title">
+            COMUNICADO OFICIAL – ADMINISTRACIÓN DEL GREMIO
             </div>
+
+            <div class="admin-text">Saludos a todos.</div>
+
+            <div class="admin-text">
+            A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado.
+            </div>
+
+            <div class="admin-text">
+            Los rangos han sido reiniciados deliberadamente. Serán devueltos o reasignados únicamente a quienes demuestren, con resultados, que realmente los merecen. Aquí no se trata de antigüedad ni de favoritismos, sino de rendimiento, compromiso y disciplina.
+            </div>
+
+            <div class="admin-text">
+            Se establece nuevamente —y de forma clara— la regla principal que siempre ha existido:
+            </div>
+
+            <div class="rule">
+            500 puntos de gremio como mínimo antes del sábado por la noche.
+            </div>
+
+            <div class="admin-text">
+            El incumplimiento de esta norma resultará en expulsión inmediata, sin excepciones innecesarias.
+            </div>
+
+            <div class="admin-text">
+            Las únicas situaciones válidas serán:
+            </div>
+
+            <div class="admin-text">
+            • Justificación previa y registrada en la web.<br>
+            • Historial sólido que respalde una excepción puntual.
+            </div>
+
+            <div class="admin-text">
+            Quiero dejar algo completamente claro:<br>
+            El problema actual no es falta de reglas, es falta de cumplimiento. Y eso cambia desde ahora.
+            </div>
+
+            <div class="admin-text">
+            Cada miembro ha sido y sigue siendo registrado en la plataforma DEV’S ALLIANCE. Esto incluye tanto miembros actuales como expulsados. Por lo tanto, cualquier intento de reingreso será evaluado en base a ese historial. Si el registro refleja bajo compromiso, simplemente no habrá retorno.
+            </div>
+
+            <div class="admin-text">
+            También es importante entender que el crecimiento del gremio no depende solo de mí. Yo establezco el orden, pero el avance depende del desempeño de cada uno. Quien aporte, se mantiene. Quien no, será reemplazado por alguien que sí esté dispuesto a hacerlo.
+            </div>
+
+            <div class="admin-text">
+            Estaré supervisando personalmente la evolución del gremio hasta asegurarme de que exista una mejora real.
+            </div>
+
+            <div class="admin-text" style="font-weight:bold; color:#00ffa6;">
+            Esto no es una advertencia. Es un cambio de dirección.
+            </div>
+
+            <div class="footer">
+            FIN DEL COMUNICADO • CHESSDEV
+            </div>
+
         </div>
     </div>
 </div>
 """
 
-components.html(html_code, height=900, scrolling=False)
+components.html(html_code, height=1100, scrolling=False)
 
 
 
