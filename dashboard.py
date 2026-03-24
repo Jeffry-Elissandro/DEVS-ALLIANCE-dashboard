@@ -583,10 +583,7 @@ body {{
             <div class="admin-text">Saludos a todos.</div>
 
             <div class="admin-text">
-            A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado.
-            </div>
-
-            <div class="admin-text">
+            A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado. 
             Los rangos han sido reiniciados deliberadamente. Serán devueltos o reasignados únicamente a quienes demuestren, con resultados, que realmente los merecen. Aquí no se trata de antigüedad ni de favoritismos, sino de rendimiento, compromiso y disciplina.
             </div>
 
@@ -603,25 +600,7 @@ body {{
             </div>
 
             <div class="admin-text">
-            Las únicas situaciones válidas serán:
-            </div>
-
-            <div class="admin-text">
-            • Justificación previa y registrada en la web.<br>
-            • Historial sólido que respalde una excepción puntual.
-            </div>
-
-            <div class="admin-text">
-            Quiero dejar algo completamente claro:<br>
-            El problema actual no es falta de reglas, es falta de cumplimiento. Y eso cambia desde ahora.
-            </div>
-
-            <div class="admin-text">
             Cada miembro ha sido y sigue siendo registrado en la plataforma DEV’S ALLIANCE. Esto incluye tanto miembros actuales como expulsados. Por lo tanto, cualquier intento de reingreso será evaluado en base a ese historial. Si el registro refleja bajo compromiso, simplemente no habrá retorno.
-            </div>
-
-            <div class="admin-text">
-            También es importante entender que el crecimiento del gremio no depende solo de mí. Yo establezco el orden, pero el avance depende del desempeño de cada uno. Quien aporte, se mantiene. Quien no, será reemplazado por alguien que sí esté dispuesto a hacerlo.
             </div>
 
             <div class="admin-text">
@@ -641,7 +620,7 @@ body {{
 </div>
 """
 
-components.html(html_code, height=1100, scrolling=False)
+components.html(html_code, height=1400, scrolling=False)
 
 
 
