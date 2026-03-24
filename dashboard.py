@@ -480,7 +480,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img_admin = img_base64("administracion_chess_2.png")
+img_admin = img_base64("administracion_chess.png")
 
 html_code = f"""
 <style>
