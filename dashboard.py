@@ -492,8 +492,10 @@ body {{
 
 .container {{
     width: 100%;
-    margin: 0;
-    padding: 10px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
 }}
 
 .admin-box {{
