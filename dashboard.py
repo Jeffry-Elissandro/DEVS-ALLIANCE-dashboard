@@ -500,28 +500,29 @@ body {{
 
 /* HEADER (IMAGEN + TITULO) */
 .admin-header {{
-    display: flex;
+    display: grid;
+    grid-template-columns: 130px 1fr;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
     margin-bottom: 20px;
 }}
 
 .admin-img {{
-    width: 90px;
-    height: 90px;
-    border-radius: 14px;
+    width: 130px;
+    height: 130px;
+    border-radius: 16px;
     background-image: url("data:image/png;base64,{img_admin}");
     background-size: cover;
     background-position: center;
     border: 2px solid rgba(0,255,150,0.3);
-    box-shadow: 0 0 15px rgba(0,255,150,0.25);
-    flex-shrink: 0;
+    box-shadow: 0 0 18px rgba(0,255,150,0.25);
 }}
 
 .admin-title {{
     font-size: 24px;
     font-weight: bold;
     color: #00ffa6;
+    line-height: 1.3;
 }}
 
 .admin-text {{
@@ -544,6 +545,18 @@ body {{
     margin-top: 20px;
     font-size: 12px;
     color: #64748b;
+}}
+
+/* RESPONSIVE (opcional pero recomendado) */
+@media (max-width: 600px) {{
+    .admin-header {{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }}
+
+    .admin-img {{
+        margin: 0 auto;
+    }}
 }}
 
 </style>
