@@ -620,169 +620,9 @@ body {{
 </div>
 """
 
-components.html(html_code, height=1400, scrolling=False)
+components.html(html_code, height=1700, scrolling=False)
 
 
-
-
-
-
-
-
-
-st.divider()
-
-
-
-# ==============================
-# THANKS YOU »alex«
-# ==============================
-
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
-
-img_colider = img_base64("Thanks_colider.png")
-
-html_code = f"""
-<style>
-.tribute-card {{
-  max-width:950px;
-  margin:60px auto;
-  padding:60px 40px 80px;
-  background:linear-gradient(180deg,#0a0c12,#111827 60%,#05070b);
-  border-radius:30px;
-  border:1px solid rgba(255,215,0,0.25);
-  box-shadow:0 0 80px rgba(255,215,0,0.15), inset 0 0 60px rgba(255,215,0,0.08);
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}}
-.tribute-title {{
-  font-size:34px;
-  color:#fff;
-  margin-bottom:30px;
-  letter-spacing:2px;
-  font-weight:bold;
-  text-shadow:0 0 25px rgba(0, 0, 0, 0.8);
-}}
-.tribute-text {{
-  font-size:16px;
-  color:#d1d5db;
-  line-height:1.8;
-  margin-bottom:20px;
-  max-width:950px;
-  margin-left:auto;
-  margin-right:auto;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}}
-.colider-avatar {{
-  width:140px;
-  height:140px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid #ffd700;
-  box-shadow:0 0 35px rgba(255,215,0,0.7),0 0 70px rgba(255,215,0,0.3);
-  display:block;
-  margin:40px auto -70px auto;
-  position:relative;
-  z-index:10;
-  background:#000;
-}}
-
-/* Estilo para el SVG del pedestal, ajustado a tamaño y posición */
-.pedestal-container {{
-  margin-top: -20px; /* ajusta si quieres más espacio */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}}
-
-.pedestal-svg {{
-  width: 220px;
-  height: 250px;
-}}
-
-/* Opcional: efectos en el SVG */
-.pedestal-svg polygon {{
-  stroke: #d3a410;
-  stroke-width: 2;
-  fill: #414750;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-}}
-</style>
-
-<div class="tribute-card">
-  <div class="tribute-title">Homenaje a »alex«</div>
-  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6;">
-  <p>
-    Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
-    esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
-    importante que siempre será recordada.
-    Gracias por cada momento, cada decisión y cada esfuerzo dedicado a este gremio.
-    Tu impacto permanecerá con nosotros.
-  </p>
-  <p>
-    Comprendemos tu decisión. Sabemos que hay momentos donde la vida exige prioridad,
-    y elegir ese camino demuestra responsabilidad y fortaleza.
-    Entendemos tu decisión y la respetamos profundamente. Hay momentos donde la vida
-    exige prioridad, y eso también es parte del camino.
-  </p>
-  <p>
-    Esto no es una despedida definitiva. Este gremio siempre será tu hogar.
-    Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
-    Este nunca será un adiós. Siempre tendrás un lugar aquí.
-    Cuando decidas volver, serás bienvenido.
-  </p>
-</div>
-  <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
-  <!-- Contenedor del pedestal con SVG -->
-  <div class="pedestal-container">
-    <svg class="pedestal-svg" xmlns="http://www.w3.org/2000/svg" height="250" width="220" viewBox="0 0 200 200">
-      <g style="order: -1;">
-        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
-        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
-        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750" points="70,70 150,50 130,130 50,150"></polygon>
-        <polygon stroke-width="2" stroke="" fill="url(#gradiente)" points="100,70 150,100 100,130 50,100"></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
-            <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
-            <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
-          </linearGradient>
-        </defs>
-        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#b7870f" points="80,50 80,75 80,99 40,75"></polygon>
-        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)" points="40,-40 80,-40 80,99 40,75"></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
-            <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-            <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke="" fill="#d3a410" points="80,50 80,75 80,99 40,75"></polygon>
-        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke="" fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
-            <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-            <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke="" fill="#ffe4a1" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
-        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke="" fill="#ccb069" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
-        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff" points="2,0 2,2 0,2 0,0" id="particles"></polygon>
-        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130"></polygon>
-        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127" points="50,50 120.5,8 120.5,35 50,80"></polygon>
-      </g>
-    </svg>
-  </div>
-</div>
-"""
-
-st.components.v1.html(html_code, height=1600)
 
 
 
@@ -3723,6 +3563,169 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
 st.divider()
 
 
+
+
+
+
+
+# ==============================
+# THANKS YOU »alex«
+# ==============================
+
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+img_colider = img_base64("Thanks_colider.png")
+
+html_code = f"""
+<style>
+.tribute-card {{
+  max-width:950px;
+  margin:60px auto;
+  padding:60px 40px 80px;
+  background:linear-gradient(180deg,#0a0c12,#111827 60%,#05070b);
+  border-radius:30px;
+  border:1px solid rgba(255,215,0,0.25);
+  box-shadow:0 0 80px rgba(255,215,0,0.15), inset 0 0 60px rgba(255,215,0,0.08);
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}}
+.tribute-title {{
+  font-size:34px;
+  color:#fff;
+  margin-bottom:30px;
+  letter-spacing:2px;
+  font-weight:bold;
+  text-shadow:0 0 25px rgba(0, 0, 0, 0.8);
+}}
+.tribute-text {{
+  font-size:16px;
+  color:#d1d5db;
+  line-height:1.8;
+  margin-bottom:20px;
+  max-width:950px;
+  margin-left:auto;
+  margin-right:auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}}
+.colider-avatar {{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #ffd700;
+  box-shadow:0 0 35px rgba(255,215,0,0.7),0 0 70px rgba(255,215,0,0.3);
+  display:block;
+  margin:40px auto -70px auto;
+  position:relative;
+  z-index:10;
+  background:#000;
+}}
+
+/* Estilo para el SVG del pedestal, ajustado a tamaño y posición */
+.pedestal-container {{
+  margin-top: -20px; /* ajusta si quieres más espacio */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}}
+
+.pedestal-svg {{
+  width: 220px;
+  height: 250px;
+}}
+
+/* Opcional: efectos en el SVG */
+.pedestal-svg polygon {{
+  stroke: #d3a410;
+  stroke-width: 2;
+  fill: #414750;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}}
+</style>
+
+<div class="tribute-card">
+  <div class="tribute-title">Homenaje a »alex«</div>
+  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6;">
+  <p>
+    Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
+    esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
+    importante que siempre será recordada.
+    Gracias por cada momento, cada decisión y cada esfuerzo dedicado a este gremio.
+    Tu impacto permanecerá con nosotros.
+  </p>
+  <p>
+    Comprendemos tu decisión. Sabemos que hay momentos donde la vida exige prioridad,
+    y elegir ese camino demuestra responsabilidad y fortaleza.
+    Entendemos tu decisión y la respetamos profundamente. Hay momentos donde la vida
+    exige prioridad, y eso también es parte del camino.
+  </p>
+  <p>
+    Esto no es una despedida definitiva. Este gremio siempre será tu hogar.
+    Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
+    Este nunca será un adiós. Siempre tendrás un lugar aquí.
+    Cuando decidas volver, serás bienvenido.
+  </p>
+</div>
+  <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
+  <!-- Contenedor del pedestal con SVG -->
+  <div class="pedestal-container">
+    <svg class="pedestal-svg" xmlns="http://www.w3.org/2000/svg" height="250" width="220" viewBox="0 0 200 200">
+      <g style="order: -1;">
+        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750" points="70,70 150,50 130,130 50,150"></polygon>
+        <polygon stroke-width="2" stroke="" fill="url(#gradiente)" points="100,70 150,100 100,130 50,100"></polygon>
+        <defs>
+          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+            <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+            <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+          </linearGradient>
+        </defs>
+        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#b7870f" points="80,50 80,75 80,99 40,75"></polygon>
+        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)" points="40,-40 80,-40 80,99 40,75"></polygon>
+        <defs>
+          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+            <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+            <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke="" fill="#d3a410" points="80,50 80,75 80,99 40,75"></polygon>
+        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke="" fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
+        <defs>
+          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+            <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+            <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke="" fill="#ffe4a1" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke="" fill="#ccb069" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff" points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130"></polygon>
+        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127" points="50,50 120.5,8 120.5,35 50,80"></polygon>
+      </g>
+    </svg>
+  </div>
+</div>
+"""
+
+st.components.v1.html(html_code, height=1600)
+
+
+
+
+
+
+
+
+st.divider()
 
 
 
