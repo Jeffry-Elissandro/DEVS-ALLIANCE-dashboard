@@ -580,7 +580,7 @@ body {{
             COMUNICADO OFICIAL – ADMINISTRACIÓN DEL GREMIO
             </div>
 
-            <div class="admin-text">Saludos a todos.</div>
+            <div class="admin-text">¡Saludos Gente!.</div>
 
             <div class="admin-text">
             A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado. 
@@ -612,7 +612,7 @@ body {{
             </div>
 
             <div class="footer">
-            FIN DEL COMUNICADO • CHESSDEV
+            FIN DEL COMUNICADO • CHESSDEV                                                                          3301
             </div>
 
         </div>
