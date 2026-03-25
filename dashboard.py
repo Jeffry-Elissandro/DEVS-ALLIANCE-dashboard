@@ -869,7 +869,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 6080   # Oro actual
+puntaje_actual = 9030   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2188,7 +2188,7 @@ img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 img4 = img_base64("4.png")
-img5 = img_base64("Imagen_para_testeos.png")
+img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
@@ -2299,7 +2299,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>DISPONIBLE</span>
+  <span>exe2029l</span>
 </div>
 
 <div class="dev-card">
@@ -2308,8 +2308,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img5}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img7}">
+  <span>void_13</span>
 </div>
 
 <div class="dev-card">
@@ -2479,8 +2479,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "UnrealNat", "imagen": "10.png"},
-    {"nombre": "GxJxGxSx", "imagen": "23.png"},
+    {"nombre": "exe2029l", "imagen": "5.png"},
+    {"nombre": "void_13", "imagen": "7.png"},
 ]
 
 
@@ -2888,7 +2888,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_21.png"
+nombre_imagen = "skull_meme_22.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2940,7 +2940,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            todo menos brechazzz
+            This is what an average programmer looks like.
         </p>
 
     </div>
