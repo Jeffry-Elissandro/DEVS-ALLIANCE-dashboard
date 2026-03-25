@@ -2042,17 +2042,17 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE</div>", unsafe_allow_html=True)
     st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
     st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE</div>", unsafe_allow_html=True)
     st.image("carta_umbrella_campeonaza.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
