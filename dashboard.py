@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = True
+WEB_TESTING = False
 
 def show_testing_badge():
     st.markdown("""
@@ -580,7 +580,7 @@ body {{
             COMUNICADO OFICIAL – ADMINISTRACIÓN DEL GREMIO
             </div>
 
-            <div class="admin-text">¡Saludos Gente!.</div>
+            <div class="admin-text">¡Saludos Gente!</div>
 
             <div class="admin-text">
             A partir de este momento, asumo de manera directa y temporal el control total de la administración del gremio. Esta decisión no es arbitraria, sino necesaria para corregir la evidente falta de cumplimiento de las normas y la decadencia que varios ya han señalado. 
@@ -612,7 +612,7 @@ body {{
             </div>
 
             <div class="footer">
-            FIN DEL COMUNICADO • CHESSDEV                                                                          3301
+            FIN DEL COMUNICADO • CHESSDEV
             </div>
 
         </div>
