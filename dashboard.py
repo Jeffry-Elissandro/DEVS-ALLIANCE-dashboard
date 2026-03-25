@@ -1904,7 +1904,7 @@ components.html(
 
     </div>
     """,
-    height=2450
+    height=2750
 )
 
 
@@ -3433,16 +3433,6 @@ st.markdown("""
 # Sección encapsulada con partículas
 st.markdown("""
 <div id="ultimo-video-section">
-  <div class="particlesB">
-    <div class="particleB" style="width:12px; height:12px; top:20%; left:30%;"></div>
-    <div class="particleB" style="width:8px; height:8px; top:50%; left:70%;"></div>
-    <div class="particleB" style="width:10px; height:10px; top:80%; left:40%;"></div>
-    <div class="particleB" style="width:14px; height:14px; top:35%; left:55%;"></div>
-    <div class="particleB" style="width:9px; height:9px; top:15%; left:80%;"></div>
-    <div class="particleB" style="width:11px; height:11px; top:65%; left:20%;"></div>
-    <div class="particleB" style="width:7px; height:7px; top:75%; left:60%;"></div>
-    <div class="particleB" style="width:13px; height:13px; top:45%; left:10%;"></div>
-  </div>
   <div class="new-badge">NEW</div>
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
