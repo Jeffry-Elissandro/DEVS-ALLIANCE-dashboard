@@ -2294,12 +2294,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img4}">
-  <span>aru_25</span>
+  <span>MRchochox</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>exe2029l</span>
+  <span>aru_25</span>
 </div>
 
 <div class="dev-card">
@@ -2419,7 +2419,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img29}">
-  <span>MRchochox</span>
+  <span>exe2029l</span>
 </div>
 
 <div class="dev-card">
@@ -2479,7 +2479,7 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "exe2029l", "imagen": "5.png"},
+    {"nombre": "exe2029l", "imagen": "29.png"},
     {"nombre": "void_13", "imagen": "7.png"},
 ]
 
