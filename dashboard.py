@@ -3442,7 +3442,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/KyqYRh2eXAc" 
+      <iframe src="https://www.youtube.com/embed/C7JoSvkrwGM" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
