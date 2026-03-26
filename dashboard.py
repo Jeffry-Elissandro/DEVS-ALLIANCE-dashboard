@@ -869,7 +869,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 9030   # Oro actual
+puntaje_actual = 10955   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1599,7 +1599,7 @@ st.divider()
 #========================================================================
 
 
-st.set_page_config(page_title="DEV ALLIANCE", layout="wide")
+st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 import base64
 import streamlit as st
