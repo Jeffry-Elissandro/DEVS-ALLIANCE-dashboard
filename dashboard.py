@@ -869,7 +869,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10955   # Oro actual
+puntaje_actual = 12155   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2888,7 +2888,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_22.png"
+nombre_imagen = "skull_meme_23.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2940,7 +2940,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            This is what an average programmer looks like.
+            Sí lo noté cuando lo actualizaron XD
         </p>
 
     </div>
