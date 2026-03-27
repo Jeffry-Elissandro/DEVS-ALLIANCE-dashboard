@@ -2681,7 +2681,7 @@ css = """
 
 /* TAMAÑO FIJO SIEMPRE */
 .slide {
-    flex: 0 0 700px; /* ← ancho fijo */
+    flex: 0 0 320px; /* ← ancho fijo */
     margin: 0 15px;
     background: #1e1e1e;
     border-radius: 15px;
@@ -2889,7 +2889,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_23.png"
+nombre_imagen = "skull_meme_24.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2941,7 +2941,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Sí lo noté cuando lo actualizaron XD
+            real
         </p>
 
     </div>
