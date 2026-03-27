@@ -2669,7 +2669,7 @@ css = """
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 30px 0;
+    padding: 800px 0;
 }
 
 /* Track dinámico */
