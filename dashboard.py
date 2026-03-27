@@ -2669,7 +2669,7 @@ css = """
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 800px 0;
+    padding: 30px 0;
 }
 
 /* Track dinámico */
@@ -2681,7 +2681,7 @@ css = """
 
 /* TAMAÑO FIJO SIEMPRE */
 .slide {
-    flex: 0 0 320px; /* ← ancho fijo */
+    flex: 0 0 700px; /* ← ancho fijo */
     margin: 0 15px;
     background: #1e1e1e;
     border-radius: 15px;
