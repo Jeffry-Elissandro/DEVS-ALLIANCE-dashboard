@@ -869,7 +869,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 14465   # Oro actual
+puntaje_actual = 15290   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2334,7 +2334,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img12}">
-  <span>dayia</span>
+  <span>m4tth3w_kn</span>
 </div>
 
 <div class="dev-card">
@@ -2479,9 +2479,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "exe2029l", "imagen": "29.png"},
-    {"nombre": "void_13", "imagen": "7.png"},
     {"nombre": "Blue lock isagi", "imagen": "13.png"},
+    {"nombre": "m4tth3w_kn", "imagen": "12.png"},
 ]
 
 
@@ -2889,7 +2888,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_24.png"
+nombre_imagen = "skull_meme_25.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2941,7 +2940,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            real
+            Yeah, she's died
         </p>
 
     </div>
@@ -3808,8 +3807,28 @@ st.markdown(f"""
 
 
 
+#FUEGO
+#Parasoul - La protegida 📌
+#Peacock - Réplica 
 
+#AIRE
+#BigBand - Bemol 📌
+#Double - Monjerias 📌
 
+#AGUA
+#Beowulf - Cold Stones 📌
+#Double - Bruja del mar 📌
+#
+
+#LUZ
+#Dahlia - Trituradora de almas 📌
+#Dahlia - Pistolera de oro 📌
+#Robo Fortune - M-I4U 📌
+#
+
+#OSCURIDAD
+#Filia - Descabellada 📌
+#Squigly - Pánico Escénico 📌
 
 
 
