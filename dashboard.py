@@ -869,7 +869,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15290   # Oro actual
+puntaje_actual = 16385   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2888,7 +2888,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_25.png"
+nombre_imagen = "skull_meme_26.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2940,7 +2940,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Yeah, she's died
+            Me atrapaste ✋
         </p>
 
     </div>
@@ -3442,7 +3442,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/C7JoSvkrwGM" 
+      <iframe src="https://www.youtube.com/embed/3w5n9sMQmiQ" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
