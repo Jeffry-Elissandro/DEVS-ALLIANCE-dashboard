@@ -1369,7 +1369,8 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Quieres más Variedad de equipos? 🖤
+            ¿Quieres más Variedad de equipos? 
+            Video creado por: <strong>Deny17S</strong> 🖤
         </p>
 
         <div style="
