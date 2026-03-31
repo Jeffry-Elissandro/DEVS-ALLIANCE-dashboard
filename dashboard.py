@@ -293,7 +293,7 @@ html_code = f"""
 </div>
 """
 
-st.components.v1.html(html_code, height=950, scrolling=False)
+st.components.v1.html(html_code, height=1180, scrolling=False)
 
 st.divider()
 
@@ -375,7 +375,7 @@ components.html(
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
-    height=850
+    height=900
 )
 
 
