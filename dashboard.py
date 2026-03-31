@@ -234,7 +234,8 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h4>En una sola noche. UNA NOCHE!! Cómo es posible (XD)? Desperté y al revisar me topé con todas esas peticiones. 
+      <h4>Esta mañana desperté y vi esto. ¿Cómo es posible que en una sola noche tenga más de 24 mensages? 
+      Nunca había visto tantas solicitudes para por el gremio. Es bueno saber que hay demanda y progreso en esto, creo. 
         No sé quien fue pero... alto tryhard promocionando 🤑</h4>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
