@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -1016,6 +1016,9 @@ components.html(
 #licuadodechocolate
 #yoremoik
 #Wsixww
+
+#nini_Taekjoo
+#marylalaloca2.0
 
 
 
