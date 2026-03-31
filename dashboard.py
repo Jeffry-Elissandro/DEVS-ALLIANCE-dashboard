@@ -283,12 +283,12 @@ html_code = f"""
 <div class="destacados-card">
   <h3 class="destacados-title">💜 Miembros Destacados</h3>
   <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada</div>
-  <div style="margin-bottom:25px;">
+  <div class="grid">
+    {members_html}
+    <div style="margin-bottom:25px;">
   <img src="data:image/gif;base64,{gif_chibi}" 
        style="width:130px; border-radius:12px; opacity:0.95;">
 </div>
-  <div class="grid">
-    {members_html}
   </div>
 </div>
 """
