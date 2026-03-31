@@ -228,7 +228,7 @@ components.html(
           width: 100%;  /* ocupa todo el ancho en mobile */
         }}
         .contenedor h4 {{
-          font-size: 24px;
+          font-size: 14px;
         }}
       }}
     </style>
