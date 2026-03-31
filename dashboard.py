@@ -208,7 +208,7 @@ components.html(
       }}
 
       .contenedor h4 {{
-        font-size: 16px;
+        font-size: 24px;
         color: #ffffff;
         text-shadow: 0 0 12px rgba(255,255,255,0.9),
                      0 0 24px rgba(200,200,200,0.7);
@@ -234,12 +234,12 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <h4>En una sola noche. UNA NOCHE!! Cómo es posible w (XD)? Desperté y al revisar me topé con todas esas peticiones. 
+      <h4>En una sola noche. UNA NOCHE!! Cómo es posible (XD)? Desperté y al revisar me topé con todas esas peticiones. 
         No sé quien fue pero... alto tryhard promocionando 🤑</h4>
       <img src="data:image/png;base64,{misterio_img}" />
     </div>
     """,
-    height=1100
+    height=800
 )
 
 
