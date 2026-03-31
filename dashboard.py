@@ -208,6 +208,8 @@ members_html = "".join(
     """ for m in miembros_destacados
 )
 
+gif_url = "https://media.tenor.com/2c6yK4O3k0AAAAAC/skullgirls-chibi.gif"
+
 html_code = f"""
 <style>
 
@@ -285,9 +287,13 @@ html_code = f"""
     {members_html}
   </div>
 </div>
+
+<div style="margin-bottom:25px;">
+  <img src="{gif_url}" style="width:120px; border-radius:12px; opacity:0.9;">
+</div>
 """
 
-st.components.v1.html(html_code, height=580, scrolling=False)
+st.components.v1.html(html_code, height=680, scrolling=False)
 
 st.divider()
 
