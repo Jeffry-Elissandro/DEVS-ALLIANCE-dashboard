@@ -192,26 +192,38 @@ img = img_base64("bruh_24.png")
 st.markdown(f"""
 <div style="
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 15px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    justify-content: center;
+    padding: 20px;
 ">
+
     <img src="data:image/png;base64,{img}" 
          style="
-            width: 120px;
-            border-radius: 10px;
+            width: 260px;
+            border-radius: 12px;
+            margin-bottom: 10px;
          ">
 
-    <div>
-        <h3 style="margin:0; color:white;">Bruh 💀</h3>
-        <p style="margin:5px 0 0 0; color:#ccc;">
-            En una sola noche. UNA NOCHE!! Cómo es posible w (XD)? Desperté y al revisar me topé con todas esas peticiones. 
-            No sé quien fue pero... alto tryhard promocionando 🤑
-        </p>
-    </div>
+    <h3 style="
+        margin: 0;
+        color: #eaeaea;
+        font-weight: 500;
+    ">
+        Bruh 💀
+    </h3>
+
+    <p style="
+        margin-top: 6px;
+        color: #aaaaaa;
+        font-size: 14px;
+        text-align: center;
+        max-width: 400px;
+    ">
+        En una sola noche. UNA NOCHE!! Cómo es posible w (XD)? Desperté y al revisar me topé con todas esas peticiones. 
+        No sé quien fue pero... alto tryhard promocionando 🤑
+    </p>
+
 </div>
 """, unsafe_allow_html=True)
 
