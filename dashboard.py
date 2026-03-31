@@ -293,7 +293,7 @@ html_code = f"""
 </div>
 """
 
-st.components.v1.html(html_code, height=1180, scrolling=False)
+st.components.v1.html(html_code, height=1080, scrolling=False)
 
 st.divider()
 
