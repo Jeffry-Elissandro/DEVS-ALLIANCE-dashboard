@@ -208,7 +208,7 @@ components.html(
       }}
 
       .contenedor h4 {{
-        font-size: 32px;
+        font-size: 16px;
         color: #ffffff;
         text-shadow: 0 0 12px rgba(255,255,255,0.9),
                      0 0 24px rgba(200,200,200,0.7);
@@ -228,7 +228,7 @@ components.html(
           width: 100%;  /* ocupa todo el ancho en mobile */
         }}
         .contenedor h4 {{
-          font-size: 14px;
+          font-size: 24px;
         }}
       }}
     </style>
