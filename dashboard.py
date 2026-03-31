@@ -208,7 +208,7 @@ members_html = "".join(
     """ for m in miembros_destacados
 )
 
-gif_url = "https://media.tenor.com/2c6yK4O3k0AAAAAC/skullgirls-chibi.gif"
+gif_chibi = img_base64("Skull_chibis_characteres.gif")
 
 html_code = f"""
 <style>
@@ -289,7 +289,8 @@ html_code = f"""
 </div>
 
 <div style="margin-bottom:25px;">
-  <img src="{gif_url}" style="width:120px; border-radius:12px; opacity:0.9;">
+  <img src="data:image/gif;base64,{gif_chibi}" 
+       style="width:130px; border-radius:12px; opacity:0.95;">
 </div>
 """
 
