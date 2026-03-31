@@ -1328,51 +1328,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Marie ha vuelto, es la oportunidad de probar los equipos 
-            que surgieron para mejorar en nuestro daño. Además de ser un personaje 
-            bastante fácil de controlar y divertido para pasar el rato. 
-            Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
-            Video creado por: <strong>SiennaConHielo</strong> 💜
-        </p>
-
-        <div style="
-            display:flex;
-            justify-content:center;
-            margin-bottom:40px;
-        ">
-            <div style="
-                border:4px solid #ff4b4b;
-                border-radius:16px;
-                padding:10px;
-                max-width:900px;
-                width:100%;
-                box-shadow:0 0 20px rgba(255,75,75,0.6);
-            ">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/D44Oi1f3cMc"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="border-radius:12px;"
-                ></iframe>
-            </div>
-        </div>
-
-        <p style="
-            color:#cccccc;
-            max-width:800px;
-            margin:0 auto 30px auto;
-            font-size:16px;
-            line-height:1.6;
-        ">
-            En caso de lo que busques son consejos directos, puedes 
-            avocarte a un personaje icónico de la comunidad, que 
-            puede ayudarte a comprender mejor los modificadores 
-            y equipos para contratacar al jefe de inmortales. 
+            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
+            debido a sus modificadores. Estos son complejos y requieren 
+            técnicas específicas para destacar en daño. ¿Te interesa saber más? 
             Si no conoces estas técnicas puedes ver los siguientes videos 
             por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
             Video creado por: <strong>AlannAx</strong> 💚
@@ -1394,7 +1352,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/_xyeuQrzEJY"
+                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1411,12 +1369,8 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Puedes ver mi mínimo aporte a una técnica 
-            que me ha funcionado bastante contra el jefe 
-            de inmortales, con variantes accesibles. 
-            Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
-            Video creado por: <strong>CHESSDEV</strong> 💚
+            ¿Quieres más Variedad de equipos? 
+            Video creado por: <strong>Deny17S</strong> 🩶
         </p>
 
         <div style="
@@ -1435,7 +1389,45 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
+                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            ¿Recuerdas esta jugada? Te recuerdo que lo han parchearo, pero 
+            fue divertido mientras duró.
+            Video creado por: <strong>RodirKW</strong> 🤍
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
