@@ -188,11 +188,11 @@ def img_base64(path):
         return base64.b64encode(f.read()).decode("utf-8")
 
 miembros_destacados = [
-    {"img": "1.png", "score": "16.465B - 700 points", "name": "CHESSDEV"},
-    {"img": "3.png", "score": "4.401B - 780 points", "name": "Lady_Navier"},
-    {"img": "6.png", "score": "3.047B - 810 points", "name": "CoinXY"},
-    {"img": "19.png", "score": "2.000B - 830 points", "name": "KilLeo0217"},
-    {"img": "2.png", "score": "2.264B - 725 points", "name": "»alex«"},
+    {"img": "8.png", "score": "5.147B - 740 points", "name": "œ oooooo"},
+    {"img": "7.png", "score": "4.366B - 760 points", "name": "void_13"},
+    {"img": "1.png", "score": "1.348B - 830 points", "name": "CHESSDEV"},
+    {"img": "2.png", "score": "1.241B - 810 points", "name": "Lady_Navier"},
+    {"img": "6.png", "score": "720M - 810 points", "name": "CoinXY"},
 ]
 
 for miembro in miembros_destacados:
@@ -287,7 +287,7 @@ html_code = f"""
 </div>
 """
 
-st.components.v1.html(html_code, height=900, scrolling=False)
+st.components.v1.html(html_code, height=580, scrolling=False)
 
 st.divider()
 
@@ -3493,150 +3493,6 @@ st.components.v1.html(html_code, height=1600)
 
 
 
-
-
-
-
-st.divider()
-
-
-
-
-
-
-
-
-#===========================
-# CREATED BY CHESS
-#===========================
-
-
-
-import streamlit as st
-
-st.set_page_config(layout="wide")
-
-st.markdown("""
-<style>
-/* Fondo general */
-body {
-    background-color: #0e1a1f;
-}
-
-/* Contenedor principal */
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-/* Tarjeta */
-.card {
-    position: relative;
-    width: 80%;
-    max-width: 900px;
-    padding: 60px 20px;
-    border: 2px solid #c9a86a;
-    text-align: center;
-    background-color: #1b2b31;
-}
-
-/* Texto principal (DEV) */
-.main-text {
-    font-size: 100px;
-    font-weight: bold;
-    color: #c9a86a;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* Texto oculto (ALLIANCE) */
-.main-text span {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    opacity: 0;
-    transform: translateX(10px);
-    transition: 0.4s ease;
-    white-space: nowrap;
-}
-
-/* Hover efecto */
-.main-text:hover span {
-    opacity: 1;
-    transform: translateX(20px);
-}
-
-/* Línea decorativa */
-.underline {
-    width: 80px;
-    height: 6px;
-    background-color: #c9a86a;
-    margin: 10px auto 30px auto;
-}
-
-/* Texto medio */
-.middle-text {
-    color: #c9a86a;
-    font-size: 18px;
-    letter-spacing: 6px;
-    margin-top: 20px;
-}
-
-/* Texto inferior */
-.bottom-text {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #c9a86a;
-    font-size: 14px;
-    letter-spacing: 4px;
-}
-
-/* Líneas laterales inferiores */
-.bottom-line {
-    position: absolute;
-    bottom: 20px;
-    width: 30%;
-    height: 2px;
-    background-color: #c9a86a;
-}
-
-.left-line {
-    left: 0;
-}
-
-.right-line {
-    right: 0;
-}
-</style>
-
-<div class="card-container">
-    <div class="card">
-        
-        <div class="main-text">
-            DEV'S
-            <span>&nbsp;ALLIANCE</span>
-        </div>
-
-        <div class="underline"></div>
-
-        <div class="middle-text">
-            BY CHESSDEV
-        </div>
-
-        <div class="bottom-line left-line"></div>
-        <div class="bottom-text">
-            Created with Streamlit
-        </div>
-        <div class="bottom-line right-line"></div>
-
-    </div>
-</div>
-""", unsafe_allow_html=True)
 
 
 
