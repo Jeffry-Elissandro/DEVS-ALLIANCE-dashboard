@@ -210,8 +210,8 @@ components.html(
       .contenedor h4 {{
         font-size: 24px;
         color: #ffffff;
-        text-shadow: 0 0 5px rgba(255,255,255,0.9),
-                     0 0 5px rgba(200,200,200,0.7);
+        text-shadow: 0 0 1px rgba(255,255,255,0.9),
+                     0 0 1px rgba(200,200,200,0.7);
         margin-bottom: 20px;
       }}
 
