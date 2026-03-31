@@ -288,7 +288,7 @@ html_code = f"""
   </div>
   <div style="margin-top:30px; text-align:center;">
     <img src="data:image/gif;base64,{gif_chibi}" 
-         style="width:35%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
+         style="width:85%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
   </div>
 </div>
 """
