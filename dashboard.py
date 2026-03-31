@@ -1875,7 +1875,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img13}">
-  <span>Blue lock isagi</span>
+  <span>Chopper:3</span>
 </div>
 
 <div class="dev-card">
@@ -1930,7 +1930,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}"> 
-  <span>Arturo.cl_berserk</span>
+  <span>Coldsoul9223</span>
 </div>
 
 <div class="dev-card">
@@ -1940,7 +1940,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img26}">
-  <span>DLGPRO</span>
+  <span>Sir Lag</span>
 </div>
 
 <div class="dev-card">
@@ -1950,7 +1950,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img28}"> 
-  <span>bigban360</span>
+  <span>! ice</span>
 </div>
 
 <div class="dev-card">
@@ -2015,8 +2015,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Blue lock isagi", "imagen": "13.png"},
-    {"nombre": "m4tth3w_kn", "imagen": "12.png"},
+    {"nombre": "Chopper:3", "imagen": "13.png"},
+    {"nombre": "Coldsoul9223", "imagen": "24.png"},
+    {"nombre": "Sir Lag", "imagen": "26.png"},
+    {"nombre": "! ice", "imagen": "28.png"},
 ]
 
 
@@ -2424,7 +2426,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_26.png"
+nombre_imagen = "skull_meme_27.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2476,7 +2478,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Me atrapaste ✋
+            Te haces Maestro 🤑
         </p>
 
     </div>
