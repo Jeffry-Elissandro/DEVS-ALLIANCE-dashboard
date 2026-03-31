@@ -1822,7 +1822,7 @@ img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
 img12 = img_base64("12.png")
-img13 = img_base64("Imagen_para_testeos.png")
+img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
 img16 = img_base64("16.png")
@@ -1965,7 +1965,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img13}">
-  <span>DISPONIBLE</span>
+  <span>Emmy</span>
 </div>
 
 <div class="dev-card">
@@ -2108,6 +2108,7 @@ nuevos_miembros = [
     {"nombre": "Coldsoul9223", "imagen": "24.png"},
     {"nombre": "Sir Lag", "imagen": "26.png"},
     {"nombre": "! ice", "imagen": "28.png"},
+    {"nombre": "Emmy", "imagen": "13.png"},
 ]
 
 
