@@ -2160,7 +2160,7 @@ st.markdown("""
 </style>
 
 <div style="margin:35px auto 20px; text-align:center;">
-  <h1 class="my-title">Skullgirls Mobile (TEST)</h1>
+  <h1 class="my-title">FAN-ARTS SEMANALES</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -2187,18 +2187,24 @@ def img_base64(path):
 
 
 # ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
-img1 = img_base64("s_cerebella.png")
-img2 = img_base64("s_peacock.png")
-img3 = img_base64("s_fortune.png")
-img4 = img_base64("s_double.png")
-img5 = img_base64("s_filia.png")
-img6 = img_base64("s_parasoul.png")
-img7 = img_base64("s_valentine.png")
-img8 = img_base64("s_squigly.png")
-img9 = img_base64("s_bigband.png")
-img10 = img_base64("s_painwheel.png")
-img11 = img_base64("s_beowulf.png")
-img12 = img_base64("s_eliza.png")
+img1 = img_base64("fn_cerebella.png")
+img2 = img_base64("fn_peacock.png")
+img3 = img_base64("fn_fortune.png")
+img4 = img_base64("fn_double.png")
+img5 = img_base64("fn_filia.png")
+img6 = img_base64("fn_parasoul.png")
+img7 = img_base64("fn_valentine.png")
+img8 = img_base64("fn_squigly.png")
+img9 = img_base64("fn_bigband.png")
+img10 = img_base64("fn_painwheel.png")
+img11 = img_base64("fn_beowulf.png")
+img12 = img_base64("fn_eliza.png")
+img13 = img_base64("fn_robo_fortune.png")
+img14 = img_base64("fn_dahlia.png")
+img15 = img_base64("fn_umbrella.png")
+img16 = img_base64("fn_fukua.png")
+img17 = img_base64("fn_annie.png")
+img18 = img_base64("fn_marie.png")
 
 css = """
 <style>
@@ -2324,31 +2330,45 @@ html = (
 '<div class="slider">'
 '  <div class="slide-track">'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div>DESCRIPTION TEST<div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">NADIA (MS.) FORTUNE</div><div class="desc">クミ 𓂃 ✒️ ωω𝗑𝗌𝗄𝗂 、zZz (wwxski)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc">Isabel (isabelgarciasofia3)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc">Santiago Hermosillo (santihermosillo)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc">Blaine Valentine (BlaineSilverlock)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">VALENTINE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc">🫰kisimisi (dianeserpientedelaenvidia17)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc">Rosmery Toledo (rosmerytoledo18)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc">YORUICHI (kiihan4)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img11}"><div class="title">BEOWULF</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc">YORUICHI (kiihan4)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img13}"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}"><div class="title">DAHLIA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img15}"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img16}"><div class="title">FUKUA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img17}"><div class="title">ANNIE</div><div class="desc">Joy Monet (JoyMonetUwU)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div>DESCRIPTION TEST<div class="desc"></div></div>'
+
+f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">NADIA (MS.) FORTUNE</div><div class="desc">クミ 𓂃 ✒️ ωω𝗑𝗌𝗄𝗂 、zZz (wwxski)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc">Isabel (isabelgarciasofia3)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc">Santiago Hermosillo (santihermosillo)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc">Blaine Valentine (BlaineSilverlock)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">VALENTINE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc">🫰kisimisi (dianeserpientedelaenvidia17)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc">Rosmery Toledo (rosmerytoledo18)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc">YORUICHI (kiihan4)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img11}"><div class="title">BEOWULF</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc">YORUICHI (kiihan4)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img13}"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}"><div class="title">DAHLIA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img15}"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img16}"><div class="title">FUKUA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img17}"><div class="title">ANNIE</div><div class="desc">Joy Monet (JoyMonetUwU)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
+
 
 '  </div>'
 '</div>'
