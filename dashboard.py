@@ -207,7 +207,7 @@ components.html(
         text-align: center;
       }}
 
-      .contenedor h2 {{
+      .contenedor h4 {{
         font-size: 32px;
         color: #ffffff;
         text-shadow: 0 0 12px rgba(255,255,255,0.9),
@@ -227,7 +227,7 @@ components.html(
         .contenedor img {{
           width: 100%;  /* ocupa todo el ancho en mobile */
         }}
-        .contenedor h2 {{
+        .contenedor h4 {{
           font-size: 24px;
         }}
       }}
