@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -285,10 +285,10 @@ html_code = f"""
   <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada</div>
   <div class="grid">
     {members_html}
-    <div style="margin-bottom:25px;">
-  <img src="data:image/gif;base64,{gif_chibi}" 
-       style="width:130px; border-radius:12px; opacity:0.95;">
-</div>
+  </div>
+  <div style="margin-top:30px; text-align:center;">
+    <img src="data:image/gif;base64,{gif_chibi}" 
+         style="width:130px; border-radius:12px; opacity:0.95;">
   </div>
 </div>
 """
