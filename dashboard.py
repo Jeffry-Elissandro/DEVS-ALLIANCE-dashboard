@@ -174,6 +174,70 @@ st.divider()
 
 
 
+# ==============================
+# 24 MESSAGES!!
+# ==============================
+
+
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+img = img_base64("bruh_24.png")
+
+st.markdown(f"""
+<div style="
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+">
+    <img src="data:image/png;base64,{img}" 
+         style="
+            width: 120px;
+            border-radius: 10px;
+         ">
+
+    <div>
+        <h3 style="margin:0; color:white;">Bruh 💀</h3>
+        <p style="margin:5px 0 0 0; color:#ccc;">
+            En una sola noche. UNA NOCHE!! Cómo es posible w (XD)? Desperté y al revisar me topé con todas esas peticiones. 
+            No sé quien fue pero... alto tryhard promocionando 🤑
+        </p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+st.divider()
+
 
 # ==============================
 # REGLAS DE RENDIMIENTO Y LIMPIEZA
