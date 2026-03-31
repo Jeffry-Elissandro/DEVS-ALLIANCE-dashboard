@@ -208,7 +208,7 @@ members_html = "".join(
     """ for m in miembros_destacados
 )
 
-gif_chibi = img_base64("Skull_chibis_characteres.gif")
+gif_chibi = img_base64("Filia_mini_celebrate.gif")
 
 html_code = f"""
 <style>
