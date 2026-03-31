@@ -2179,14 +2179,16 @@ import base64
 
 st.set_page_config(layout="wide")
 
-
-# Leer y codificar en base64
+# ==============================
+# FUNCION BASE64
+# ==============================
 def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-
-# ⚠️ REEMPLAZA SOLO ESTO (SIN "data:image/png;base64,")
+# ==============================
+# IMAGENES
+# ==============================
 img1 = img_base64("fn_cerebella.png")
 img2 = img_base64("fn_peacock.png")
 img3 = img_base64("fn_fortune.png")
@@ -2206,6 +2208,9 @@ img16 = img_base64("fn_fukua.png")
 img17 = img_base64("fn_annie.png")
 img18 = img_base64("fn_marie.png")
 
+# ==============================
+# CSS (CORREGIDO)
+# ==============================
 css = """
 <style>
 .slider {
@@ -2215,16 +2220,14 @@ css = """
     padding: 30px 0;
 }
 
-/* Track dinámico */
 .slide-track {
     display: flex;
     width: max-content;
     animation: scroll 80s linear infinite;
 }
 
-/* TAMAÑO FIJO SIEMPRE */
 .slide {
-    flex: 0 0 320px; /* ← ancho fijo */
+    flex: 0 0 320px;
     margin: 0 15px;
     background: #1e1e1e;
     border-radius: 15px;
@@ -2234,16 +2237,18 @@ css = """
     transition: transform 0.3s ease;
 }
 
-/* Efecto hover opcional */
 .slide:hover {
     transform: scale(1.05);
 }
 
+/* 🔥 IMAGEN CUADRADA SIN RECORTE */
 .slide img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #111;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .title {
@@ -2257,14 +2262,13 @@ css = """
     opacity: 0.8;
 }
 
-/* ANIMACIÓN INFINITA SUAVE */
+/* ANIMACIÓN */
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
 
-
-
+/* ================= MODAL ================= */
 
 .modal {
     display: none;
@@ -2274,9 +2278,8 @@ css = """
     top: 0;
     width: 100%;
     height: 100%;
-    
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
 }
 
 .modal-content {
@@ -2293,8 +2296,9 @@ css = """
 
 .modal-content img {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    max-height: 500px;
+    object-fit: contain;
+    background: #111;
     border-radius: 10px;
 }
 
@@ -2310,7 +2314,6 @@ css = """
     opacity: 0.9;
 }
 
-/* BOTÓN CERRAR */
 .close {
     position: absolute;
     top: 10px;
@@ -2318,67 +2321,64 @@ css = """
     font-size: 28px;
     cursor: pointer;
 }
-
-
-
-
-
 </style>
 """
 
+# ==============================
+# HTML (MISMA ESTRUCTURA + onclick)
+# ==============================
 html = (
 '<div class="slider">'
 '  <div class="slide-track">'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">NADIA (MS.) FORTUNE</div><div class="desc">クミ 𓂃 ✒️ ωω𝗑𝗌𝗄𝗂 、zZz (wwxski)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc">Isabel (isabelgarciasofia3)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc">Santiago Hermosillo (santihermosillo)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc">Blaine Valentine (BlaineSilverlock)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">VALENTINE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc">🫰kisimisi (dianeserpientedelaenvidia17)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc">Rosmery Toledo (rosmerytoledo18)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc">YORUICHI (kiihan4)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img11}"><div class="title">BEOWULF</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc">YORUICHI (kiihan4)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img13}"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}"><div class="title">DAHLIA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img15}"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img16}"><div class="title">FUKUA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img17}"><div class="title">ANNIE</div><div class="desc">Joy Monet (JoyMonetUwU)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img18}"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}" onclick="openModal(data:image/png;base64,{img2}, PEACOCK"><div class="title">PEACOCK</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}" onclick="openModal(data:image/png;base64,{img3}, NADIA (MS.) FORTUNE"><div class="title">NADIA (MS.) FORTUNE</div><div class="desc">クミ 𓂃 ✒️ ωω𝗑𝗌𝗄𝗂 、zZz (wwxski)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}" onclick="openModal(data:image/png;base64,{img4}, DOUBLE"><div class="title">DOUBLE</div><div class="desc">Isabel (isabelgarciasofia3)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}" onclick="openModal(data:image/png;base64,{img5}, FILIA"><div class="title">FILIA</div><div class="desc">Santiago Hermosillo (santihermosillo)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}" onclick="openModal(data:image/png;base64,{img6}, PARASOUL"><div class="title">PARASOUL</div><div class="desc">Blaine Valentine (BlaineSilverlock)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}" onclick="openModal(data:image/png;base64,{img7}, VALENTINE"><div class="title">VALENTINE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}" onclick="openModal(data:image/png;base64,{img8}, SQUIGLY"><div class="title">SQUIGLY</div><div class="desc">🫰kisimisi (dianeserpientedelaenvidia17)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}" onclick="openModal(data:image/png;base64,{img9}, BIGBAND"><div class="title">BIGBAND</div><div class="desc">Rosmery Toledo (rosmerytoledo18)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openModal(data:image/png;base64,{img10}, PAINWHEEL"><div class="title">PAINWHEEL</div><div class="desc">YORUICHI (kiihan4)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc">YORUICHI (kiihan4)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">Joy Monet (JoyMonetUwU)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
 
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}"><div class="title">CEREBELLA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}"><div class="title">PEACOCK</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}"><div class="title">NADIA (MS.) FORTUNE</div><div class="desc">クミ 𓂃 ✒️ ωω𝗑𝗌𝗄𝗂 、zZz (wwxski)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}"><div class="title">DOUBLE</div><div class="desc">Isabel (isabelgarciasofia3)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}"><div class="title">FILIA</div><div class="desc">Santiago Hermosillo (santihermosillo)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}"><div class="title">PARASOUL</div><div class="desc">Blaine Valentine (BlaineSilverlock)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}"><div class="title">VALENTINE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}"><div class="title">SQUIGLY</div><div class="desc">🫰kisimisi (dianeserpientedelaenvidia17)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}"><div class="title">BIGBAND</div><div class="desc">Rosmery Toledo (rosmerytoledo18)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}"><div class="title">PAINWHEEL</div><div class="desc">YORUICHI (kiihan4)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img11}"><div class="title">BEOWULF</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}"><div class="title">ELIZA</div><div class="desc">YORUICHI (kiihan4)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img13}"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}"><div class="title">DAHLIA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img15}"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img16}"><div class="title">FUKUA</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img17}"><div class="title">ANNIE</div><div class="desc">Joy Monet (JoyMonetUwU)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img18}"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}" onclick="openModal(data:image/png;base64,{img2}, PEACOCK"><div class="title">PEACOCK</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}" onclick="openModal(data:image/png;base64,{img3}, NADIA (MS.) FORTUNE"><div class="title">NADIA (MS.) FORTUNE</div><div class="desc">クミ 𓂃 ✒️ ωω𝗑𝗌𝗄𝗂 、zZz (wwxski)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}" onclick="openModal(data:image/png;base64,{img4}, DOUBLE"><div class="title">DOUBLE</div><div class="desc">Isabel (isabelgarciasofia3)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}" onclick="openModal(data:image/png;base64,{img5}, FILIA"><div class="title">FILIA</div><div class="desc">Santiago Hermosillo (santihermosillo)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}" onclick="openModal(data:image/png;base64,{img6}, PARASOUL"><div class="title">PARASOUL</div><div class="desc">Blaine Valentine (BlaineSilverlock)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}" onclick="openModal(data:image/png;base64,{img7}, VALENTINE"><div class="title">VALENTINE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}" onclick="openModal(data:image/png;base64,{img8}, SQUIGLY"><div class="title">SQUIGLY</div><div class="desc">🫰kisimisi (dianeserpientedelaenvidia17)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}" onclick="openModal(data:image/png;base64,{img9}, BIGBAND"><div class="title">BIGBAND</div><div class="desc">Rosmery Toledo (rosmerytoledo18)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openModal(data:image/png;base64,{img10}, PAINWHEEL"><div class="title">PAINWHEEL</div><div class="desc">YORUICHI (kiihan4)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc">YORUICHI (kiihan4)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">Joy Monet (JoyMonetUwU)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
 
 
 '  </div>'
 '</div>'
 )
 
-st.markdown(css + html, unsafe_allow_html=True)
-
-
+# ==============================
+# MODAL + SCRIPT (ANTES DEL RENDER)
+# ==============================
 html += """
-<!-- MODAL -->
 <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
@@ -2400,7 +2400,6 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
 
-/* Cerrar haciendo click fuera */
 window.onclick = function(event) {
     const modal = document.getElementById("myModal");
     if (event.target == modal) {
@@ -2409,6 +2408,11 @@ window.onclick = function(event) {
 }
 </script>
 """
+
+# ==============================
+# RENDER FINAL
+# ==============================
+st.markdown(css + html, unsafe_allow_html=True)
 
 
 
