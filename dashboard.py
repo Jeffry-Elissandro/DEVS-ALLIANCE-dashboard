@@ -173,14 +173,143 @@ st.divider()
 
 
 
+# ==============================
+# DESTACADOS DE TEMPORADA
+# ==============================
+
+
+# VERSIÓN COLECTIVA 5 MIEMBROS (SIN JERARQUÍA)
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+miembros_destacados = [
+    {"img": "1.png", "score": "16.465B - 700 points", "name": "CHESSDEV"},
+    {"img": "3.png", "score": "4.401B - 780 points", "name": "Lady_Navier"},
+    {"img": "6.png", "score": "3.047B - 810 points", "name": "CoinXY"},
+    {"img": "19.png", "score": "2.000B - 830 points", "name": "KilLeo0217"},
+    {"img": "2.png", "score": "2.264B - 725 points", "name": "»alex«"},
+]
+
+for miembro in miembros_destacados:
+    miembro["img_b64"] = img_base64(miembro["img"])
+
+members_html = "".join(
+    f"""
+    <div class="member">
+      <img src="data:image/png;base64,{m['img_b64']}">
+      <div class="score">{m['score']}</div>
+      <div class="name">{m['name']}</div>
+    </div>
+    """ for m in miembros_destacados
+)
+
+html_code = f"""
+<style>
+
+.destacados-card {{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px 20px;
+  background: radial-gradient(circle at top, #1a102d, #050505 80%);
+  border-radius:20px;
+  border:2px solid rgba(124,58,237,0.3);
+  box-shadow:0 0 40px rgba(124,58,237,0.3);
+  text-align:center;
+}}
+
+.destacados-title {{
+  font-size:34px;
+  font-weight:bold;
+  margin-bottom:10px;
+  color:#c084fc;
+  letter-spacing:2px;
+}}
+
+.destacados-sub {{
+  font-size:14px;
+  color:#a78bfa;
+  margin-bottom:30px;
+  opacity:0.8;
+}}
+
+.grid {{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}}
+
+.member {{
+  text-align:center;
+  transition:0.3s ease;
+}}
+
+.member img {{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 20px rgba(167,139,250,0.5);
+  margin-bottom:10px;
+  transition:0.3s ease;
+}}
+
+.member:hover img {{
+  transform:scale(1.08);
+  box-shadow:0 0 30px rgba(167,139,250,0.8);
+}}
+
+.score {{
+  font-size:14px;
+  font-weight:bold;
+  color:#e9d5ff;
+}}
+
+.name {{
+  font-size:13px;
+  color:#d8b4fe;
+}}
+
+</style>
+
+<div class="destacados-card">
+  <h3 class="destacados-title">💜 Miembros Destacados</h3>
+  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada</div>
+  <div class="grid">
+    {members_html}
+  </div>
+</div>
+"""
+
+st.components.v1.html(html_code, height=900, scrolling=False)
+
+st.divider()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # ==============================
 # 24 MESSAGES!!
 # ==============================
-
-
-
-#Para Promocionar el nuevo JEFE MS.FORTUNE
 
 
 import streamlit.components.v1 as components
@@ -3369,6 +3498,155 @@ st.components.v1.html(html_code, height=1600)
 
 
 st.divider()
+
+
+
+
+
+
+
+
+#===========================
+# CREATED BY CHESS
+#===========================
+
+
+
+import streamlit as st
+
+st.set_page_config(layout="wide")
+
+st.markdown("""
+<style>
+/* Fondo general */
+body {
+    background-color: #0e1a1f;
+}
+
+/* Contenedor principal */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Tarjeta */
+.card {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    padding: 60px 20px;
+    border: 2px solid #c9a86a;
+    text-align: center;
+    background-color: #1b2b31;
+}
+
+/* Texto principal (DEV) */
+.main-text {
+    font-size: 100px;
+    font-weight: bold;
+    color: #c9a86a;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Texto oculto (ALLIANCE) */
+.main-text span {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.4s ease;
+    white-space: nowrap;
+}
+
+/* Hover efecto */
+.main-text:hover span {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+/* Línea decorativa */
+.underline {
+    width: 80px;
+    height: 6px;
+    background-color: #c9a86a;
+    margin: 10px auto 30px auto;
+}
+
+/* Texto medio */
+.middle-text {
+    color: #c9a86a;
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin-top: 20px;
+}
+
+/* Texto inferior */
+.bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c9a86a;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+/* Líneas laterales inferiores */
+.bottom-line {
+    position: absolute;
+    bottom: 20px;
+    width: 30%;
+    height: 2px;
+    background-color: #c9a86a;
+}
+
+.left-line {
+    left: 0;
+}
+
+.right-line {
+    right: 0;
+}
+</style>
+
+<div class="card-container">
+    <div class="card">
+        
+        <div class="main-text">
+            DEV'S
+            <span>&nbsp;ALLIANCE</span>
+        </div>
+
+        <div class="underline"></div>
+
+        <div class="middle-text">
+            BY CHESSDEV
+        </div>
+
+        <div class="bottom-line left-line"></div>
+        <div class="bottom-text">
+            Created with Streamlit
+        </div>
+        <div class="bottom-line right-line"></div>
+
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+st.divider()
+
+
+
+
+
 
 
 
