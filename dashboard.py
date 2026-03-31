@@ -1369,8 +1369,7 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Quieres más Variedad de equipos? 
-            Video creado por: <strong>Deny17S</strong> 🩶
+            ¿Quieres más Variedad de equipos? 🖤
         </p>
 
         <div style="
@@ -1406,7 +1405,7 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Recuerdas esta jugada? Te recuerdo que lo han parchearo, pero 
+            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
             fue divertido mientras duró.
             Video creado por: <strong>RodirKW</strong> 🤍
         </p>
