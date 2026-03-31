@@ -187,7 +187,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img = img_base64("bruh_24.png")
+img_xd = img_base64("bruh_24.png")
 
 st.markdown(f"""
 <div style="
@@ -198,7 +198,7 @@ st.markdown(f"""
     padding: 20px;
 ">
 
-    <img src="data:image/png;base64,{img}" 
+    <img src="data:image/png;base64,{img_xd}" 
          style="
             width: 260px;
             border-radius: 12px;
