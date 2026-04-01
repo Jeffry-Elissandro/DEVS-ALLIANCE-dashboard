@@ -164,6 +164,7 @@ st.divider()
 
 import streamlit as st
 import base64
+import random
 
 # =========================
 # CONFIGURACIÓN BASE
@@ -185,24 +186,23 @@ img_base64 = get_base64("Fukuas_birthday.png")
 st.markdown("""
 <style>
 
-            
-@keyframes glow {{
-  0% {{
+@keyframes glow {
+  0% {
     text-shadow: 
       0 0 6px rgba(255,255,255,0.7),
       0 0 14px rgba(192,192,192,0.6),
       0 0 28px rgba(255,255,255,0.5);
-  }}
-  100% {{
+  }
+  100% {
     text-shadow: 
       0 0 10px rgba(255,255,255,0.9),
       0 0 20px rgba(192,192,192,0.8),
       0 0 40px rgba(255,255,255,0.7);
-  }}
-}}
+  }
+}
 
 /* SOLO afecta al título con clase .birthday-title */
-.birthday-title {{
+.birthday-title {
   font-family: 'Orbitron', sans-serif;
   font-size:42px;
   font-weight:800;
@@ -210,9 +210,9 @@ st.markdown("""
   color:#f0f0f0;
   text-transform:uppercase;
   animation: glow 1.5s ease-in-out infinite alternate;
-}}
+}
 
-.birthday-title:hover {{
+.birthday-title:hover {
   color:#ffffff;
   text-shadow:
     0 0 12px rgba(255,255,255,1),
@@ -220,90 +220,85 @@ st.markdown("""
     0 0 48px rgba(255,255,255,0.8);
   transform: scale(1.05);
   transition: all 0.3s ease;
-}}
+}
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
+@keyframes glowBox {
+    0% { box-shadow: 0 0 10px #5CE65C; }
+    50% { box-shadow: 0 0 30px #5CE65C; }
+    100% { box-shadow: 0 0 10px #5CE65C; }
+}
 
-            
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
 
-
-@keyframes fadeIn {{
-    from {{ opacity: 0; transform: translateY(30px); }}
-    to {{ opacity: 1; transform: translateY(0); }}
-}}
-
-@keyframes glowBox {{
-    0% {{ box-shadow: 0 0 10px #5CE65C; }}
-    50% {{ box-shadow: 0 0 30px #5CE65C; }}
-    100% {{ box-shadow: 0 0 10px #5CE65C; }}
-}}
-
-@keyframes float {{
-    0% {{ transform: translateY(0px); }}
-    50% {{ transform: translateY(-10px); }}
-    100% {{ transform: translateY(0px); }}
-}}
-
-.birthday-container {{
+.birthday-container {
     background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
     animation: fadeIn 1.2s ease-in-out;
-}}
+}
 
-.birthday-title2 {{
+.birthday-title2 {
     font-size: 50px;
     font-weight: 900;
     color: #5CE65C;
     text-shadow: 0 0 20px #5CE65C;
     margin-bottom: 10px;
-}}
+}
 
-.birthday-subtitle {{
+.birthday-subtitle {
     font-size: 22px;
     color: #caffca;
     margin-bottom: 30px;
-}}
+}
 
-.birthday-img {{
+.birthday-img {
     width: 280px;
     border-radius: 15px;
     animation: float 3s ease-in-out infinite, glowBox 2s infinite;
-}}
+}
 
-.birthday-desc {{
+.birthday-desc {
     margin-top: 25px;
     font-size: 18px;
     color: #eaffea;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-}}
+}
 
-.particles {{
+.particles {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     pointer-events: none;
-}}
+}
 
-.particle {{
+.particle {
     position: absolute;
     width: 6px;
     height: 6px;
     background: #5CE65C;
     border-radius: 50%;
     animation: floatParticle 6s linear infinite;
-}}
+}
 
-@keyframes floatParticle {{
-    0% {{ transform: translateY(100vh); opacity: 0; }}
-    50% {{ opacity: 1; }}
-    100% {{ transform: translateY(-10vh); opacity: 0; }}
-}}
+@keyframes floatParticle {
+    0% { transform: translateY(100vh); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
 
 </style>
 """, unsafe_allow_html=True)
@@ -315,7 +310,7 @@ st.markdown(f"""
 <div class="birthday-container">
 
     <div style="margin:35px auto 20px; text-align:center;">
-    <h1 class="birthday-title">CUMPLEAÑOS DE FUKUA</h1>
+        <h1 class="birthday-title">CUMPLEAÑOS DE FUKUA</h1>
     </div>
     
     <div class="birthday-subtitle">Celebrando a la chica más caótica 💚</div>
@@ -338,8 +333,6 @@ st.markdown(f"""
 # =========================
 # PARTÍCULAS DINÁMICAS
 # =========================
-import random
-
 particles_html = '<div class="particles">'
 for _ in range(40):
     left = random.randint(0, 100)
