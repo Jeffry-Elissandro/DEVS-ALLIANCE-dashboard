@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -224,6 +224,7 @@ st.markdown(f"""
 
 
 
+            
 
 
 @keyframes fadeIn {{
@@ -251,7 +252,7 @@ st.markdown(f"""
     animation: fadeIn 1.2s ease-in-out;
 }}
 
-.birthday-title {{
+.birthday-title2 {{
     font-size: 50px;
     font-weight: 900;
     color: #5CE65C;
