@@ -396,7 +396,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img_regla = img_base64("guild_rules.png")  # Cambia el nombre si deseas
+img_regla = img_base64("Robofortune_april_fools.png")  # Cambia el nombre si deseas
 
 # ==============================
 # BLOQUE CSS
@@ -2547,7 +2547,7 @@ f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA (Mi vieja w)</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">luz25 Casasola (luzariadnacasasola)</div></div>'
@@ -2568,7 +2568,7 @@ f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA (Mi vieja w)</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">luz25 Casasola (luzariadnacasasola)</div></div>'
