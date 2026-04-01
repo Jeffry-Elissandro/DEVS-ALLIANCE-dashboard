@@ -154,6 +154,213 @@ st.divider()
 
 
 
+
+
+
+# =========================
+# FUKUA'S BIRTHDAY !!!
+# =========================
+
+
+import streamlit as st
+import base64
+
+# =========================
+# CONFIGURACIÓN BASE
+# =========================
+st.set_page_config(page_title="Fukua Birthday", layout="wide")
+
+# =========================
+# CARGAR IMAGEN LOCAL
+# =========================
+def get_base64(file):
+    with open(file, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+img_base64 = get_base64("Fukuas_birthday.png")
+
+# =========================
+# ESTILOS + ANIMACIONES
+# =========================
+st.markdown(f"""
+<style>
+
+            
+@keyframes glow {{
+  0% {{
+    text-shadow: 
+      0 0 6px rgba(255,255,255,0.7),
+      0 0 14px rgba(192,192,192,0.6),
+      0 0 28px rgba(255,255,255,0.5);
+  }}
+  100% {{
+    text-shadow: 
+      0 0 10px rgba(255,255,255,0.9),
+      0 0 20px rgba(192,192,192,0.8),
+      0 0 40px rgba(255,255,255,0.7);
+  }}
+}}
+
+/* SOLO afecta al título con clase .birthday-title */
+.birthday-title {{
+  font-family: 'Orbitron', sans-serif;
+  font-size:42px;
+  font-weight:800;
+  letter-spacing:2px;
+  color:#f0f0f0;
+  text-transform:uppercase;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}}
+
+.birthday-title:hover {{
+  color:#ffffff;
+  text-shadow:
+    0 0 12px rgba(255,255,255,1),
+    0 0 24px rgba(192,192,192,0.9),
+    0 0 48px rgba(255,255,255,0.8);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}}
+
+
+
+
+
+@keyframes fadeIn {{
+    from {{ opacity: 0; transform: translateY(30px); }}
+    to {{ opacity: 1; transform: translateY(0); }}
+}}
+
+@keyframes glow {{
+    0% {{ box-shadow: 0 0 10px #5CE65C; }}
+    50% {{ box-shadow: 0 0 30px #5CE65C; }}
+    100% {{ box-shadow: 0 0 10px #5CE65C; }}
+}}
+
+@keyframes float {{
+    0% {{ transform: translateY(0px); }}
+    50% {{ transform: translateY(-10px); }}
+    100% {{ transform: translateY(0px); }}
+}}
+
+.birthday-container {{
+    background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}}
+
+.birthday-title {{
+    font-size: 50px;
+    font-weight: 900;
+    color: #5CE65C;
+    text-shadow: 0 0 20px #5CE65C;
+    margin-bottom: 10px;
+}}
+
+.birthday-subtitle {{
+    font-size: 22px;
+    color: #caffca;
+    margin-bottom: 30px;
+}}
+
+.birthday-img {{
+    width: 280px;
+    border-radius: 15px;
+    animation: float 3s ease-in-out infinite, glow 2s infinite;
+}}
+
+.birthday-desc {{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #eaffea;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}}
+
+.particles {{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}}
+
+.particle {{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #5CE65C;
+    border-radius: 50%;
+    animation: floatParticle 6s linear infinite;
+}}
+
+@keyframes floatParticle {{
+    0% {{ transform: translateY(100vh); opacity: 0; }}
+    50% {{ opacity: 1; }}
+    100% {{ transform: translateY(-10vh); opacity: 0; }}
+}}
+
+</style>
+""", unsafe_allow_html=True)
+
+# =========================
+# CONTENEDOR PRINCIPAL
+# =========================
+st.markdown(f"""
+<div class="birthday-container">
+
+    <div style="margin:35px auto 20px; text-align:center;">
+    <h1 class="birthday-title">Equipo de la Semana</h1>
+    </div>
+    
+    <div class="birthday-subtitle">Celebrando a la chica más caótica 💚</div>
+
+    <img class="birthday-img" src="data:image/png;base64,{img_base64}">
+
+    <div class="birthday-desc">
+        <strong>¡Hoy es el cumpleaños de Fukua!</strong>
+        <br><br>
+        En honor al ego más alterado de Nuevo Meridiano, la administración otorga este espacio para rendir 
+        homenaje a uno de nuestros personajes más queridos en la comunidad.
+        <br><br>
+        Además, recuerda ir a la sección OFERTAS DIARIAS de la TIENDA para reclamar tu regalo <strong>GRATIS</strong>, 
+        que inicluye movimientos de Fukua, puntos de habilidad, repescas y una reliquia!! Que tengas dulces sueños...
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+# =========================
+# PARTÍCULAS DINÁMICAS
+# =========================
+import random
+
+particles_html = '<div class="particles">'
+for _ in range(40):
+    left = random.randint(0, 100)
+    delay = random.random() * 5
+    particles_html += f'''
+    <div class="particle" style="
+        left:{left}%;
+        animation-delay:{delay}s;
+    "></div>
+    '''
+particles_html += '</div>'
+
+st.markdown(particles_html, unsafe_allow_html=True)
+
+
+
+
+
+
+st.divider()
+
+
 # ==============================
 # DESTACADOS DE TEMPORADA
 # ==============================
