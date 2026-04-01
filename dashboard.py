@@ -164,7 +164,6 @@ st.divider()
 
 import streamlit as st
 import base64
-import random
 
 # =========================
 # CONFIGURACIÓN BASE
@@ -185,7 +184,7 @@ img_base64 = get_base64("Fukuas_birthday.png")
 # =========================
 st.markdown(
     """
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 
     <style>
     @keyframes fukua-glow {
@@ -201,6 +200,13 @@ st.markdown(
           0 0 20px rgba(192,192,192,0.8),
           0 0 40px rgba(255,255,255,0.7);
       }
+    }
+
+    .fukua-container {
+        background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
     }
 
     .fukua-title {
@@ -223,32 +229,6 @@ st.markdown(
       transition: all 0.3s ease;
     }
 
-    @keyframes fukua-fadeIn {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fukua-glowBox {
-        0% { box-shadow: 0 0 10px #5CE65C; }
-        50% { box-shadow: 0 0 30px #5CE65C; }
-        100% { box-shadow: 0 0 10px #5CE65C; }
-    }
-
-    @keyframes fukua-float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-    }
-
-    .fukua-container {
-        position: relative;
-        background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
-        padding: 40px;
-        border-radius: 20px;
-        text-align: center;
-        animation: fukua-fadeIn 1.2s ease-in-out;
-    }
-
     .fukua-subtitle {
         font-size: 22px;
         color: #caffca;
@@ -258,7 +238,6 @@ st.markdown(
     .fukua-img {
         width: 280px;
         border-radius: 15px;
-        animation: fukua-float 3s ease-in-out infinite, fukua-glowBox 2s infinite;
     }
 
     .fukua-desc {
@@ -268,30 +247,6 @@ st.markdown(
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .fukua-particles {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-    }
-
-    .fukua-particle {
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        background: #5CE65C;
-        border-radius: 50%;
-        animation: fukua-floatParticle 6s linear infinite;
-    }
-
-    @keyframes fukua-floatParticle {
-        0% { transform: translateY(100vh); opacity: 0; }
-        50% { opacity: 1; }
-        100% { transform: translateY(-10vh); opacity: 0; }
     }
     </style>
     """,
@@ -328,22 +283,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# =========================
-# PARTÍCULAS DINÁMICAS
-# =========================
-particles_html = '<div class="fukua-particles">'
-for _ in range(40):
-    left = random.randint(0, 100)
-    delay = random.random() * 5
-    particles_html += f'''
-    <div class="fukua-particle" style="
-        left:{left}%;
-        animation-delay:{delay}s;
-    "></div>
-    '''
-particles_html += '</div>'
-
-st.markdown(particles_html, unsafe_allow_html=True)
 
 
 
