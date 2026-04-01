@@ -1401,6 +1401,8 @@ components.html(f"""
             max-width:100%;
             border-radius:10px;
             box-shadow:0 0 20px rgba(255,75,75,0.4);
+            width: 50%;
+            height: auto;
         ">
     </div>
 
@@ -1610,7 +1612,7 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            <strong>Este video camció mi vida</strong>
+            <strong>Este video cambió mi vida</strong>
         </p>
 
         <div style="
@@ -1952,6 +1954,7 @@ img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
 img30 = img_base64("30.png")
+img31 = img_base64("31.png")
 
 st.markdown(f"""
 <style>
@@ -2221,7 +2224,7 @@ nuevos_miembros = [
     {"nombre": "Sir Lag", "imagen": "26.png"},
     {"nombre": "! ice", "imagen": "28.png"},
     {"nombre": "Emmy", "imagen": "13.png"},
-    {"nombre": "Enrique", "imagen": "Pablo_cat.png"},
+    {"nombre": "Enrique", "imagen": "31.png"},
 ]
 
 
