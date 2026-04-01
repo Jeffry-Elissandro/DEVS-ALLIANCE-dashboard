@@ -136,11 +136,7 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 if st.session_state.mostrar_nota:
     st.warning(
         "📢 NOTA IMPORTANTE:\n\n"
-    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
-    "daño, puntos y consistencia.\n"
-    "Los rangos se actualizan periódicamente y sirven como referencia interna "
-    "para la gestión de la alianza. Todas las noticias o avisos serán "
-     "informados por aquí. Ante dudas no temas en preguntar - CHESSDEV \n" 
+    "FELIZ DÍA DE LAS BROMAS!!!"
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
@@ -175,7 +171,7 @@ def img_base64(path):
 miembros_destacados = [
     {"img": "8.png", "score": "5.147B - 740 points", "name": "œ oooooo"},
     {"img": "7.png", "score": "4.366B - 760 points", "name": "void_13"},
-    {"img": "1.png", "score": "1.348B - 830 points", "name": "CHESSDEV"},
+    {"img": "Filia_anomanches.png", "score": "1.348B - 830 points", "name": "CHESSDEV"},
     {"img": "2.png", "score": "1.241B - 810 points", "name": "Lady_Navier"},
     {"img": "6.png", "score": "720M - 810 points", "name": "CoinXY"},
 ]
@@ -1496,7 +1492,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("Tabla completa de miembros 🎯")
+st.subheader("Tabla completa de miembros 🗣️🔥")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
@@ -1924,7 +1920,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img1 = img_base64("1.png")
+img1 = img_base64("Filia_anomanches.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 img4 = img_base64("4.png")
