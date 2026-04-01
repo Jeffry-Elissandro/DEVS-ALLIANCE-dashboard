@@ -185,6 +185,8 @@ img_base64 = get_base64("Fukuas_birthday.png")
 # =========================
 st.markdown(
     """
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+
     <style>
     @keyframes fukua-glow {
       0% {
