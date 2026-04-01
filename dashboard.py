@@ -56,31 +56,16 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-    {"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1336707},
-    {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Especialista", "ID": "50is-suxy9", "Nivel": 68, "Poder": 000},
-    {"Nombre":"MRchochox","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 61, "Poder": 000},
-    {"Nombre":"Kileo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
-    {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
-    {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"BAKI","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 75, "Poder": 000},
-    {"Nombre":"Aesick4u","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},
-    {"Nombre":"jfglhg","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"xXDrive_shXx","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},
-    {"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"œ oooooo","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
-    {"Nombre":"black lagoon69","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
-    {"Nombre":"onediax","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
-    {"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
-    {"Nombre":"shrek embaraz@d0","Actividad":10,"Daño":8,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 000},
-    {"Nombre":"PABLOX3","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"ArtuxxD","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
-    {"Nombre":"oscuro","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
-    {"Nombre":"LESLIE'M","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
-    {"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"aru_25","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
-    {"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
-    {"Nombre":"exe2029l","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 000},
-    {"Nombre":"UnrealNat","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 75, "Poder": 000}
+    {"Nombre":"Aquiles Castro","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Débora Cabezas Paradas","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Rosa Melano","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Elvio Lado","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Dolores Delano","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Aquiles Brinco","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Debora Melo","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Esteban Dido","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Lucho Portuano","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Poto Salvaje69","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80000, "Poder": 000},
 ]
 
 # ============================
@@ -632,49 +617,13 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 125485   # Oro actual
+puntaje_actual = 18625485   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
 
 
 import streamlit.components.v1 as components
-
-
-import random
-import time
-
-# Inicializar estado
-if "puntaje_fake" not in st.session_state:
-    st.session_state.puntaje_fake = puntaje_actual
-
-# Control de tiempo para evitar lag
-if "last_update" not in st.session_state:
-    st.session_state.last_update = time.time()
-
-# Intervalo (segundos)
-intervalo = 1.5
-
-# Solo actualizar cada cierto tiempo
-if time.time() - st.session_state.last_update > intervalo:
-    
-    cambio = random.randint(-1200, 1500)  # sube y baja
-    
-    nuevo_valor = st.session_state.puntaje_fake + cambio
-
-    # Limitar entre 0 y la meta
-    nuevo_valor = max(0, min(puntaje_meta, nuevo_valor))
-
-    st.session_state.puntaje_fake = nuevo_valor
-    st.session_state.last_update = time.time()
-
-# Usar el valor falso
-puntaje_actual = st.session_state.puntaje_fake
-
-# Recalcular porcentaje
-porcentaje = int((puntaje_actual / puntaje_meta) * 100)
-
-
 
 
 
@@ -1279,9 +1228,7 @@ st.markdown(
             line-height: 1.6;
         ">
             💬 <strong>¿Notas algo extraño en tu puntuación?</strong><br>
-            Si consideras que tu puntuación presenta algún error o no refleja correctamente tu actividad, 
-            puedes dejar un comentario más abajo. Lo revisaré personalmente y, si corresponde, se corregirá. 
-            Este sistema es una referencia interna y siempre está abierto a cambios justos.
+            Ps ni modo, ya Cagaste 😂
         </p>
     </div>
     """,
@@ -1406,7 +1353,7 @@ import base64
 import streamlit as st
 import streamlit.components.v1 as components
 
-with open("Recomendado_Imagen.gif", "rb") as f:
+with open("April_fools_peacock.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
 
 imagen = f"data:image/gif;base64,{data}"
@@ -1472,7 +1419,7 @@ components.html(f"""
             width:40%;
         ">
             <div style="font-size:22px; font-weight:bold; color:#ffffff;">
-                500
+                960
             </div>
             <div style="font-size:13px; color:#bbbbbb;">
                 PUNTOS SEMANALES (BASE REQUERIDA)
@@ -1487,10 +1434,10 @@ components.html(f"""
             width:40%;
         ">
             <div style="font-size:22px; font-weight:bold; color:#ffffff;">
-                200M
+                200B
             </div>
             <div style="font-size:13px; color:#999999;">
-                DAÑO (OPCIONAL, NO CAUSA EXPULSIÓN)
+                DAÑO (seh...)
             </div>
         </div>
 
@@ -1505,7 +1452,7 @@ components.html(f"""
         font-size:14px;
         line-height:1.5;
     ">
-        Mantener un mínimo de <strong>500 puntos semanales</strong> forma parte de los parámetros activos del gremio.
+        Mantener un mínimo de <strong>960 puntos semanales</strong> forma parte de los parámetros activos del gremio.
         <br><br>
         La falta de cumplimiento de forma continua podrá derivar en la rotación del miembro.
         <br><br>
@@ -1663,9 +1610,7 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
-            fue divertido mientras duró.
-            Video creado por: <strong>RodirKW</strong> 🤍
+            <strong>Este video camció mi vida</strong>
         </p>
 
         <div style="
@@ -1684,7 +1629,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
+                    src="https://www.youtube.com/embed/wx8nmd0oiGY"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2276,6 +2221,7 @@ nuevos_miembros = [
     {"nombre": "Sir Lag", "imagen": "26.png"},
     {"nombre": "! ice", "imagen": "28.png"},
     {"nombre": "Emmy", "imagen": "13.png"},
+    {"nombre": "Enrique", "imagen": "Pablo_cat.png"},
 ]
 
 
@@ -2464,6 +2410,7 @@ img15 = img_base64("fn_umbrella.png")
 img16 = img_base64("fn_fukua.png")
 img17 = img_base64("fn_annie.png")
 img18 = img_base64("fn_marie.png")
+img19 = img_base64("cat_shoot.png")
 
 # ==============================
 # CSS (CORREGIDO)
@@ -2606,6 +2553,7 @@ f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">luz25 Casasola (luzariadnacasasola)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img19}" onclick="openModal(data:image/png;base64,{img19}, HONORABLE MENTION"><div class="title">HONORABLE MENTION</div><div class="desc">No sé, solo xd</div></div>'
 
 
 f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA</div><div class="desc"></div></div>'
@@ -2626,7 +2574,7 @@ f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">luz25 Casasola (luzariadnacasasola)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
-
+f'    <div class="slide"><img src="data:image/png;base64,{img19}" onclick="openModal(data:image/png;base64,{img19}, HONORABLE MENTION"><div class="title">HONORABLE MENTION</div><div class="desc">No sé, solo xd</div></div>'
 
 '  </div>'
 '</div>'
