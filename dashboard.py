@@ -674,7 +674,8 @@ puntaje_actual = st.session_state.puntaje_fake
 # Recalcular porcentaje
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
 
-
+time.sleep(intervalo)
+st.rerun()
 
 
 
