@@ -258,30 +258,31 @@ st.markdown(
 # =========================
 st.markdown(
     f"""
-    <div class="fukua-container">
+<div class="fukua-container">
 
-        <div style="margin:35px auto 20px; text-align:center;">
+    <div style="margin:35px auto 20px; text-align:center;">
         <h1 class="fukua-title">CUMPLEAÑOS DE FUKUA</h1>
-        </div>
-        
-        <div class="fukua-subtitle">Celebrando a la chica más caótica 💚</div>
-
-        <img class="fukua-img" src="data:image/png;base64,{img_base64}">
-
-        <div class="fukua-desc">
-            <strong>¡Hoy es el cumpleaños de Fukua!</strong>
-            <br><br>
-            En honor al ego más alterado de Nuevo Meridiano, la administración otorga este espacio para rendir 
-            homenaje a uno de nuestros personajes más queridos en la comunidad.
-            <br><br>
-            Además, recuerda ir a la sección OFERTAS DIARIAS de la TIENDA para reclamar tu regalo <strong>GRATIS</strong>, 
-            que incluye movimientos de Fukua, puntos de habilidad, repescas y una reliquia!! Que tengas dulces sueños...
-        </div>
-
     </div>
-    """,
+    
+    <div class="fukua-subtitle">Celebrando a la chica más caótica 💚</div>
+
+    <img class="fukua-img" src="data:image/png;base64,{img_base64}">
+
+    <div class="fukua-desc">
+        <strong>¡Hoy es el cumpleaños de Fukua!</strong>
+        <br><br>
+        En honor al ego más alterado de Nuevo Meridiano, la administración otorga este espacio para rendir 
+        homenaje a uno de nuestros personajes más queridos en la comunidad.
+        <br><br>
+        Además, recuerda ir a la sección OFERTAS DIARIAS de la TIENDA para reclamar tu regalo <strong>GRATIS</strong>, 
+        que incluye movimientos de Fukua, puntos de habilidad, repescas y una reliquia!! Que tengas dulces sueños...
+    </div>
+
+</div>
+""",
     unsafe_allow_html=True,
 )
+
 
 
 
