@@ -239,6 +239,7 @@ st.markdown(
     }
 
     .birthday-container {
+        position: relative;
         background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
         padding: 40px;
         border-radius: 20px;
