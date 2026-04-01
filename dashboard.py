@@ -164,6 +164,7 @@ st.divider()
 
 import streamlit as st
 import base64
+import streamlit.components.v1 as components
 
 # =========================
 # CONFIGURACIÓN BASE
@@ -180,84 +181,75 @@ def get_base64(file):
 img_fukua = get_base64("Fukuas_birthday.png")
 
 # =========================
-# ESTILOS + ANIMACIONES
+# HTML COMPLETO (TODO JUNTO)
 # =========================
-st.markdown(
-    """
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+html_code = f"""
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 
-    <style>
-    @keyframes fukua-glow {
-      0% {
-        text-shadow: 
-          0 0 6px rgba(255,255,255,0.7),
-          0 0 14px rgba(192,192,192,0.6),
-          0 0 28px rgba(255,255,255,0.5);
-      }
-      100% {
-        text-shadow: 
-          0 0 10px rgba(255,255,255,0.9),
-          0 0 20px rgba(192,192,192,0.8),
-          0 0 40px rgba(255,255,255,0.7);
-      }
-    }
+<style>
+@keyframes fukua-glow {{
+  0% {{
+    text-shadow: 
+      0 0 6px rgba(255,255,255,0.7),
+      0 0 14px rgba(192,192,192,0.6),
+      0 0 28px rgba(255,255,255,0.5);
+  }}
+  100% {{
+    text-shadow: 
+      0 0 10px rgba(255,255,255,0.9),
+      0 0 20px rgba(192,192,192,0.8),
+      0 0 40px rgba(255,255,255,0.7);
+  }}
+}}
 
-    .fukua-container {
-        background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
-        padding: 40px;
-        border-radius: 20px;
-        text-align: center;
-    }
+.fukua-container {{
+    background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}}
 
-    .fukua-title {
-      font-family: 'Orbitron', sans-serif;
-      font-size:42px;
-      font-weight:800;
-      letter-spacing:2px;
-      color:#f0f0f0;
-      text-transform:uppercase;
-      animation: fukua-glow 1.5s ease-in-out infinite alternate;
-    }
+.fukua-title {{
+  font-family: 'Orbitron', sans-serif;
+  font-size:42px;
+  font-weight:800;
+  letter-spacing:2px;
+  color:#f0f0f0;
+  text-transform:uppercase;
+  animation: fukua-glow 1.5s ease-in-out infinite alternate;
+}}
 
-    .fukua-title:hover {
-      color:#ffffff;
-      text-shadow:
-        0 0 12px rgba(255,255,255,1),
-        0 0 24px rgba(192,192,192,0.9),
-        0 0 48px rgba(255,255,255,0.8);
-      transform: scale(1.05);
-      transition: all 0.3s ease;
-    }
+.fukua-title:hover {{
+  color:#ffffff;
+  text-shadow:
+    0 0 12px rgba(255,255,255,1),
+    0 0 24px rgba(192,192,192,0.9),
+    0 0 48px rgba(255,255,255,0.8);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}}
 
-    .fukua-subtitle {
-        font-size: 22px;
-        color: #caffca;
-        margin-bottom: 30px;
-    }
+.fukua-subtitle {{
+    font-size: 22px;
+    color: #caffca;
+    margin-bottom: 30px;
+}}
 
-    .fukua-img {
-        width: 280px;
-        border-radius: 15px;
-    }
+.fukua-img {{
+    width: 280px;
+    border-radius: 15px;
+}}
 
-    .fukua-desc {
-        margin-top: 25px;
-        font-size: 18px;
-        color: #eaffea;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+.fukua-desc {{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #eaffea;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}}
+</style>
 
-# =========================
-# CONTENEDOR PRINCIPAL
-# =========================
-st.markdown(
-    f"""
 <div class="fukua-container">
 
     <div style="margin:35px auto 20px; text-align:center;">
@@ -279,9 +271,12 @@ st.markdown(
     </div>
 
 </div>
-""",
-    unsafe_allow_html=True,
-)
+"""
+
+# =========================
+# RENDER HTML CORRECTAMENTE
+# =========================
+components.html(html_code, height=600, scrolling=False)
 
 
 
