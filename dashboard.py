@@ -177,7 +177,7 @@ def get_base64(file):
     with open(file, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img_base64 = get_base64("Fukuas_birthday.png")
+img_fukua = get_base64("Fukuas_birthday.png")
 
 # =========================
 # ESTILOS + ANIMACIONES
@@ -266,7 +266,7 @@ st.markdown(
     
     <div class="fukua-subtitle">Celebrando a la chica más caótica 💚</div>
 
-    <img class="fukua-img" src="data:image/png;base64,{img_base64}">
+    <img class="fukua-img" src="data:image/png;base64,{img_fukua}">
 
     <div class="fukua-desc">
         <strong>¡Hoy es el cumpleaños de Fukua!</strong>
