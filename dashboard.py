@@ -231,7 +231,7 @@ st.markdown(f"""
     to {{ opacity: 1; transform: translateY(0); }}
 }}
 
-@keyframes glow {{
+@keyframes glowBox {{
     0% {{ box-shadow: 0 0 10px #5CE65C; }}
     50% {{ box-shadow: 0 0 30px #5CE65C; }}
     100% {{ box-shadow: 0 0 10px #5CE65C; }}
@@ -268,7 +268,7 @@ st.markdown(f"""
 .birthday-img {{
     width: 280px;
     border-radius: 15px;
-    animation: float 3s ease-in-out infinite, glow 2s infinite;
+    animation: float 3s ease-in-out infinite, glowBox 2s infinite;
 }}
 
 .birthday-desc {{
@@ -314,7 +314,7 @@ st.markdown(f"""
 <div class="birthday-container">
 
     <div style="margin:35px auto 20px; text-align:center;">
-    <h1 class="birthday-title">Equipo de la Semana</h1>
+    <h1 class="birthday-title">CUMPLEAÑOS DE FUKUA</h1>
     </div>
     
     <div class="birthday-subtitle">Celebrando a la chica más caótica 💚</div>
