@@ -182,7 +182,7 @@ img_base64 = get_base64("Fukuas_birthday.png")
 # =========================
 # ESTILOS + ANIMACIONES
 # =========================
-st.markdown(f"""
+st.markdown("""
 <style>
 
             
