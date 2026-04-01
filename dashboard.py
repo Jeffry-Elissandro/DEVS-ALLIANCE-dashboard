@@ -641,7 +641,38 @@ porcentaje = int((puntaje_actual / puntaje_meta) * 100)
 import streamlit.components.v1 as components
 
 
+import random
+import time
 
+# Inicializar estado
+if "puntaje_fake" not in st.session_state:
+    st.session_state.puntaje_fake = puntaje_actual
+
+# Control de tiempo para evitar lag
+if "last_update" not in st.session_state:
+    st.session_state.last_update = time.time()
+
+# Intervalo (segundos)
+intervalo = 1.5
+
+# Solo actualizar cada cierto tiempo
+if time.time() - st.session_state.last_update > intervalo:
+    
+    cambio = random.randint(-1200, 1500)  # sube y baja
+    
+    nuevo_valor = st.session_state.puntaje_fake + cambio
+
+    # Limitar entre 0 y la meta
+    nuevo_valor = max(0, min(puntaje_meta, nuevo_valor))
+
+    st.session_state.puntaje_fake = nuevo_valor
+    st.session_state.last_update = time.time()
+
+# Usar el valor falso
+puntaje_actual = st.session_state.puntaje_fake
+
+# Recalcular porcentaje
+porcentaje = int((puntaje_actual / puntaje_meta) * 100)
 
 
 
@@ -660,7 +691,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "Skull_chibis_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
