@@ -1836,17 +1836,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.image("carta_fukua_demonio.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_annie_marcada.png", use_container_width=True)
+    st.image("carta_double_altar.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_beowulf.png", use_container_width=True)
+    st.image("carta_cerebella_manos.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2707,7 +2707,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_27.png"
+nombre_imagen = "skull_meme_28.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2759,7 +2759,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Te haces Maestro 🤑
+            Ay cabron
         </p>
 
     </div>
