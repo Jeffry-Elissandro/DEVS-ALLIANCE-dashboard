@@ -236,7 +236,8 @@ html_code = f"""
 }}
 
 .fukua-img {{
-    width: 280px;
+    width: 380px;
+    Height: auto;
     border-radius: 15px;
 }}
 
@@ -253,7 +254,7 @@ html_code = f"""
 <div class="fukua-container">
 
     <div style="margin:35px auto 20px; text-align:center;">
-        <h1 class="fukua-title">CUMPLEAÑOS DE FUKUA</h1>
+        <h1 class="fukua-title">FUKUA'S BIRTHDAY</h1>
     </div>
     
     <div class="fukua-subtitle">Celebrando a la chica más caótica 💚</div>
@@ -276,7 +277,7 @@ html_code = f"""
 # =========================
 # RENDER HTML CORRECTAMENTE
 # =========================
-components.html(html_code, height=600, scrolling=False)
+components.html(html_code, height=800, scrolling=False)
 
 
 
