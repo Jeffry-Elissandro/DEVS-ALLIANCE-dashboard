@@ -202,20 +202,24 @@ html_code = f"""
   }}
 }}
 
+/* CONTENEDOR */
 .fukua-container {{
     background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
+    max-width: 900px;
+    margin: auto;
 }}
 
+/* TÍTULO */
 .fukua-title {{
   font-family: 'Orbitron', sans-serif;
-  font-size:42px;
-  font-weight:800;
-  letter-spacing:2px;
-  color:#f0f0f0;
-  text-transform:uppercase;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #f0f0f0;
+  text-transform: uppercase;
   animation: fukua-glow 1.5s ease-in-out infinite alternate;
 }}
 
@@ -229,18 +233,22 @@ html_code = f"""
   transition: all 0.3s ease;
 }}
 
+/* SUBTÍTULO */
 .fukua-subtitle {{
     font-size: 22px;
     color: #caffca;
     margin-bottom: 30px;
 }}
 
+/* IMAGEN */
 .fukua-img {{
-    width: 300px;
-    Height: auto;
+    width: 280px;
+    max-width: 90%;
+    height: auto;
     border-radius: 15px;
 }}
 
+/* DESCRIPCIÓN */
 .fukua-desc {{
     margin-top: 25px;
     font-size: 18px;
@@ -249,6 +257,36 @@ html_code = f"""
     margin-left: auto;
     margin-right: auto;
 }}
+
+/* =========================
+   📱 RESPONSIVE (MOBILE)
+   ========================= */
+@media (max-width: 768px) {{
+
+  .fukua-container {{
+      padding: 25px;
+      border-radius: 15px;
+  }}
+
+  .fukua-title {{
+      font-size: 28px;
+      letter-spacing: 1px;
+  }}
+
+  .fukua-subtitle {{
+      font-size: 18px;
+  }}
+
+  .fukua-desc {{
+      font-size: 15px;
+      padding: 0 10px;
+  }}
+
+  .fukua-img {{
+      width: 220px;
+  }}
+}}
+
 </style>
 
 <div class="fukua-container">
