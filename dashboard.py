@@ -184,7 +184,7 @@ img_fukua = get_base64("Fukuas_birthday.png")
 # HTML COMPLETO (TODO JUNTO)
 # =========================
 html_code = f"""
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 @keyframes fukua-glow {{
@@ -214,7 +214,7 @@ html_code = f"""
 
 /* TÍTULO */
 .fukua-title {{
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Great Vibes', cursive;
   font-size: 42px;
   font-weight: 800;
   letter-spacing: 2px;
