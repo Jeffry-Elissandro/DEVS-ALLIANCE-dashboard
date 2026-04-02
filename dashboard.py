@@ -242,7 +242,7 @@ html_code = f"""
 
 /* IMAGEN */
 .fukua-img {{
-    width: 280px;
+    width: 350px;
     max-width: 90%;
     height: auto;
     border-radius: 15px;
@@ -269,8 +269,12 @@ html_code = f"""
   }}
 
   .fukua-title {{
-      font-size: 28px;
-      letter-spacing: 1px;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #f0f0f0;
+      text-transform: uppercase;
+      animation: fukua-glow 1.5s ease-in-out infinite alternate;
   }}
 
   .fukua-subtitle {{
@@ -283,7 +287,7 @@ html_code = f"""
   }}
 
   .fukua-img {{
-      width: 220px;
+      width: 280px;
   }}
 }}
 
