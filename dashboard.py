@@ -261,7 +261,7 @@ html_code = f"""
 /* =========================
    📱 RESPONSIVE (MOBILE)
    ========================= */
-@media (max-width: 768px) {{
+@media (max-width: 788px) {{
 
   .fukua-container {{
       padding: 25px;
