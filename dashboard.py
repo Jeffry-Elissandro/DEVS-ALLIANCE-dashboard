@@ -296,7 +296,7 @@ html_code = f"""
 <div class="fukua-container">
 
     <div style="margin:35px auto 20px; text-align:center;">
-        <h1 class="fukua-title">FUKUA'S BIRTHDAY</h1>
+        <h1 class="fukua-title">Fukua's Birthday</h1>
     </div>
     
     <div class="fukua-subtitle">Celebrando a la chica más caótica 💚</div>
