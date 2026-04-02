@@ -319,7 +319,7 @@ html_code = f"""
 # =========================
 # RENDER HTML CORRECTAMENTE
 # =========================
-components.html(html_code, height=800, scrolling=False)
+components.html(html_code, height=830, scrolling=False)
 
 
 
