@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -56,16 +56,31 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-    {"Nombre":"Aquiles Castro","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Débora Cabezas Paradas","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Rosa Melano","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Elvio Lado","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Dolores Delano","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Aquiles Brinco","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Debora Melo","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Esteban Dido","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Lucho Portuano","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Poto Salvaje69","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80000, "Poder": 000},
+    {"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1336707},
+    {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Especialista", "ID": "50is-suxy9", "Nivel": 68, "Poder": 000},
+    {"Nombre":"MRchochox","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 61, "Poder": 000},
+    {"Nombre":"Kileo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
+    {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
+    {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"BAKI","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 75, "Poder": 000},
+    {"Nombre":"Aesick4u","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},
+    {"Nombre":"jfglhg","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"xXDrive_shXx","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},
+    {"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"œ oooooo","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
+    {"Nombre":"black lagoon69","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
+    {"Nombre":"onediax","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
+    {"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
+    {"Nombre":"shrek embaraz@d0","Actividad":10,"Daño":8,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 000},
+    {"Nombre":"PABLOX3","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"ArtuxxD","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
+    {"Nombre":"oscuro","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
+    {"Nombre":"LESLIE'M","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
+    {"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"aru_25","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
+    {"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
+    {"Nombre":"exe2029l","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 000},
+    {"Nombre":"UnrealNat","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 75, "Poder": 000}
 ]
 
 # ============================
@@ -136,7 +151,11 @@ st.write("Análisis de actividad, daño, puntos y consistencia")
 if st.session_state.mostrar_nota:
     st.warning(
         "📢 NOTA IMPORTANTE:\n\n"
-    "FELIZ DÍA DE LAS BROMAS!!!"
+    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
+    "daño, puntos y consistencia.\n"
+    "Los rangos se actualizan periódicamente y sirven como referencia interna "
+    "para la gestión de la alianza. Todas las noticias o avisos serán "
+     "informados por aquí. Ante dudas no temas en preguntar - CHESSDEV \n" 
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
@@ -350,7 +369,7 @@ def img_base64(path):
 miembros_destacados = [
     {"img": "8.png", "score": "5.147B - 740 points", "name": "œ oooooo"},
     {"img": "7.png", "score": "4.366B - 760 points", "name": "void_13"},
-    {"img": "Filia_anomanches.png", "score": "1.348B - 830 points", "name": "CHESSDEV"},
+    {"img": "1.png", "score": "1.348B - 830 points", "name": "CHESSDEV"},
     {"img": "2.png", "score": "1.241B - 810 points", "name": "Lady_Navier"},
     {"img": "6.png", "score": "720M - 810 points", "name": "CoinXY"},
 ]
@@ -575,7 +594,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img_regla = img_base64("Robofortune_april_fools.png")  # Cambia el nombre si deseas
+img_regla = img_base64("guild_rules.png")  # Cambia el nombre si deseas
 
 # ==============================
 # BLOQUE CSS
@@ -792,7 +811,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 18625485   # Oro actual
+puntaje_actual = 11550   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -815,7 +834,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_chibis_characteres.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1403,7 +1422,9 @@ st.markdown(
             line-height: 1.6;
         ">
             💬 <strong>¿Notas algo extraño en tu puntuación?</strong><br>
-            Ps ni modo, ya Cagaste 😂
+            Si consideras que tu puntuación presenta algún error o no refleja correctamente tu actividad, 
+            puedes dejar un comentario más abajo. Lo revisaré personalmente y, si corresponde, se corregirá. 
+            Este sistema es una referencia interna y siempre está abierto a cambios justos.
         </p>
     </div>
     """,
@@ -1528,7 +1549,7 @@ import base64
 import streamlit as st
 import streamlit.components.v1 as components
 
-with open("April_fools_peacock.gif", "rb") as f:
+with open("Recomendado_Imagen.gif", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
 
 imagen = f"data:image/gif;base64,{data}"
@@ -1596,7 +1617,7 @@ components.html(f"""
             width:40%;
         ">
             <div style="font-size:22px; font-weight:bold; color:#ffffff;">
-                960
+                500
             </div>
             <div style="font-size:13px; color:#bbbbbb;">
                 PUNTOS SEMANALES (BASE REQUERIDA)
@@ -1611,10 +1632,10 @@ components.html(f"""
             width:40%;
         ">
             <div style="font-size:22px; font-weight:bold; color:#ffffff;">
-                200B
+                200M
             </div>
             <div style="font-size:13px; color:#999999;">
-                DAÑO (seh...)
+                DAÑO (OPCIONAL, NO CAUSA EXPULSIÓN)
             </div>
         </div>
 
@@ -1629,7 +1650,7 @@ components.html(f"""
         font-size:14px;
         line-height:1.5;
     ">
-        Mantener un mínimo de <strong>960 puntos semanales</strong> forma parte de los parámetros activos del gremio.
+        Mantener un mínimo de <strong>500 puntos semanales</strong> forma parte de los parámetros activos del gremio.
         <br><br>
         La falta de cumplimiento de forma continua podrá derivar en la rotación del miembro.
         <br><br>
@@ -1671,7 +1692,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("Tabla completa de miembros 🗣️🔥")
+st.subheader("Tabla completa de miembros 🎯")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
@@ -1787,7 +1808,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            <strong>Este video cambió mi vida</strong>
+            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
+            fue divertido mientras duró.
+            Video creado por: <strong>RodirKW</strong> 🤍
         </p>
 
         <div style="
@@ -1806,7 +1829,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/wx8nmd0oiGY"
+                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1958,17 +1981,17 @@ col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
     st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_fukua_demonio.png", use_container_width=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
     st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_double_altar.png", use_container_width=True)
+    st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
     st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_cerebella_manos.png", use_container_width=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2099,7 +2122,7 @@ def img_base64(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img1 = img_base64("Filia_anomanches.png")
+img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 img4 = img_base64("4.png")
@@ -2129,7 +2152,6 @@ img27 = img_base64("27.png")
 img28 = img_base64("28.png")
 img29 = img_base64("29.png")
 img30 = img_base64("30.png")
-img31 = img_base64("31.png")
 
 st.markdown(f"""
 <style>
@@ -2399,7 +2421,6 @@ nuevos_miembros = [
     {"nombre": "Sir Lag", "imagen": "26.png"},
     {"nombre": "! ice", "imagen": "28.png"},
     {"nombre": "Emmy", "imagen": "13.png"},
-    {"nombre": "Enrique", "imagen": "31.png"},
 ]
 
 
@@ -2588,7 +2609,6 @@ img15 = img_base64("fn_umbrella.png")
 img16 = img_base64("fn_fukua.png")
 img17 = img_base64("fn_annie.png")
 img18 = img_base64("fn_marie.png")
-img19 = img_base64("cat_shoot.png")
 
 # ==============================
 # CSS (CORREGIDO)
@@ -2726,12 +2746,11 @@ f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA (Mi vieja w)</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">luz25 Casasola (luzariadnacasasola)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img19}" onclick="openModal(data:image/png;base64,{img19}, HONORABLE MENTION"><div class="title">HONORABLE MENTION</div><div class="desc">No sé, solo xd</div></div>'
 
 
 f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA</div><div class="desc"></div></div>'
@@ -2747,12 +2766,11 @@ f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc"></div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA (Mi vieja w)</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">DAHLIA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">Nezuko Kamado (leslieestradahernandez639)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc"></div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">luz25 Casasola (luzariadnacasasola)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Neko_Niki (CanyaKrash)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img19}" onclick="openModal(data:image/png;base64,{img19}, HONORABLE MENTION"><div class="title">HONORABLE MENTION</div><div class="desc">No sé, solo xd</div></div>'
 
 '  </div>'
 '</div>'
@@ -2833,7 +2851,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_28.png"
+nombre_imagen = "skull_meme_29.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2885,7 +2903,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Ay cabron
+            No me lo recuerdes
         </p>
 
     </div>
