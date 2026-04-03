@@ -3384,10 +3384,10 @@ st.markdown("""
   </h2>
   <div class="ultimo-video-line"></div>
   <p style="font-size:1.2rem; margin-bottom:40px;">
-      SPECIAL APRIL FOOL'S
+      Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/RaBdDuMWglY" 
+      <iframe src="https://www.youtube.com/embed/6cmAFt-dnBI" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
