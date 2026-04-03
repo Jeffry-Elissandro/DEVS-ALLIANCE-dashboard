@@ -1597,8 +1597,6 @@ components.html(f"""
             max-width:100%;
             border-radius:10px;
             box-shadow:0 0 20px rgba(255,75,75,0.4);
-            width: 50%;
-            height: auto;
         ">
     </div>
 
