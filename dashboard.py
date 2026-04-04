@@ -197,7 +197,7 @@ def get_base64(file):
     with open(file, "rb") as f:
         return base64.b64encode(f.read()).decode()
 
-img_fukua = get_base64("Fukuas_birthday.png")
+img_fukua = get_base64("Maries_birthday.png")
 
 # =========================
 # HTML COMPLETO (TODO JUNTO)
@@ -223,7 +223,7 @@ html_code = f"""
 
 /* CONTENEDOR */
 .fukua-container {{
-    background: linear-gradient(135deg, #0f2f0f, #1f5c1f);
+    background: linear-gradient(135deg, ##0f122f, ##2a317d);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -318,18 +318,18 @@ html_code = f"""
         <h1 class="fukua-title">Fukua's Birthday</h1>
     </div>
     
-    <div class="fukua-subtitle">Celebrando a la chica más caótica 💚</div>
+    <div class="fukua-subtitle">Celebrando a la Skullgirl de Nuevo Meridiano 💙</div>
 
     <img class="fukua-img" src="data:image/png;base64,{img_fukua}">
 
     <div class="fukua-desc">
         <strong>¡Hoy es el cumpleaños de Fukua!</strong>
         <br><br>
-        En honor al ego más alterado de Nuevo Meridiano, la administración otorga este espacio para rendir 
+        En honor al alma torturada favorita de todos, la administración otorga este espacio para rendir 
         homenaje a uno de nuestros personajes más queridos en la comunidad.
         <br><br>
         Además, recuerda ir a la sección OFERTAS DIARIAS de la TIENDA para reclamar tu regalo <strong>GRATIS</strong>, 
-        que incluye movimientos de Fukua, puntos de habilidad, repescas y una reliquia!! Que tengas dulces sueños...
+        que incluye movimientos de Marie, puntos de habilidad, repescas y una reliquia!! Hora de ordenar...
     </div>
 
 </div>
