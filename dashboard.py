@@ -223,7 +223,7 @@ html_code = f"""
 
 /* CONTENEDOR */
 .fukua-container {{
-    background: linear-gradient(135deg, ##0f122f, ##2a317d);
+    background: linear-gradient(135deg, #0f122f, #2a317d);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -315,7 +315,7 @@ html_code = f"""
 <div class="fukua-container">
 
     <div style="margin:35px auto 20px; text-align:center;">
-        <h1 class="fukua-title">Fukua's Birthday</h1>
+        <h1 class="fukua-title">Marie's Birthday</h1>
     </div>
     
     <div class="fukua-subtitle">Celebrando a la Skullgirl de Nuevo Meridiano 💙</div>
@@ -323,7 +323,7 @@ html_code = f"""
     <img class="fukua-img" src="data:image/png;base64,{img_fukua}">
 
     <div class="fukua-desc">
-        <strong>¡Hoy es el cumpleaños de Fukua!</strong>
+        <strong>¡Hoy es el cumpleaños de Marie!</strong>
         <br><br>
         En honor al alma torturada favorita de todos, la administración otorga este espacio para rendir 
         homenaje a uno de nuestros personajes más queridos en la comunidad.
