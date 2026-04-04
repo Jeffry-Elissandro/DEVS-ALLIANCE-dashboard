@@ -811,7 +811,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 11550   # Oro actual
+puntaje_actual = 12900   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2225,7 +2225,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img3}">
-  <span>xXDrive_shXx</span>
+  <span>CoinXY</span>
 </div>
 
 <div class="dev-card">
@@ -2240,7 +2240,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img6}">
-  <span>CoinXY</span>
+  <span>angel vados</span>
 </div>
 
 <div class="dev-card">
@@ -2285,7 +2285,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>onediax</span>
+  <span>SansanoPerfecto</span>
 </div>
 
 <div class="dev-card">
@@ -2320,7 +2320,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img22}">
-  <span>jfglhg</span>
+  <span>lanera_8043</span>
 </div>
 
 <div class="dev-card">
@@ -2415,8 +2415,9 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "! ice", "imagen": "28.png"},
-    {"nombre": "Emmy", "imagen": "13.png"},
+    {"nombre": "angel vados", "imagen": "6.png"},
+    {"nombre": "SansanoPerfecto", "imagen": "15.png"},
+    {"nombre": "lanera_8043", "imagen": "22.png"},
 ]
 
 
