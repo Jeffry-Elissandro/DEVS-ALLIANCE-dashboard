@@ -371,7 +371,7 @@ miembros_destacados = [
     {"img": "7.png", "score": "4.366B - 760 points", "name": "void_13"},
     {"img": "1.png", "score": "1.348B - 830 points", "name": "CHESSDEV"},
     {"img": "2.png", "score": "1.241B - 810 points", "name": "Lady_Navier"},
-    {"img": "6.png", "score": "720M - 810 points", "name": "CoinXY"},
+    {"img": "3.png", "score": "720M - 810 points", "name": "CoinXY"},
 ]
 
 for miembro in miembros_destacados:
@@ -811,7 +811,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 12900   # Oro actual
+puntaje_actual = 12980   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
