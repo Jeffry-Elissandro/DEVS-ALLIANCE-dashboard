@@ -190,6 +190,10 @@ def load_gif(path):
 
 
 gif_update = load_gif("no_update.gif")
+with open(gif_update, "rb") as f:
+    data = f.read()
+    encoded = base64.b64encode(data).decode("utf-8")
+
 
 components.html(
     f"""
@@ -233,7 +237,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <img src="data:image/gif;base64,{gif_update}" alt="gif update"
+      <img src="data:image/gif;base64,{encoded}" alt="gif update"
              width="250" height="250" />
     </div>
     """,
