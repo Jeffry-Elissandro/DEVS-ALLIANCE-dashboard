@@ -184,15 +184,12 @@ import base64
 
 def load_gif(path):
     with open(path, "rb") as f:
-        data = base64.b64encode(f.read()).decode("utf-8")
-    return f"data:image/gif;base64,{data}"
+        return base64.b64encode(f.read()).decode("utf-8")
 
 
 
 gif_update = load_gif("no_update.gif")
-with open(gif_update, "rb") as f:
-    data = f.read()
-    encoded = base64.b64encode(data).decode("utf-8")
+
 
 
 components.html(
