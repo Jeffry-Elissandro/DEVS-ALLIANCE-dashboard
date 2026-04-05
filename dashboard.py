@@ -237,7 +237,7 @@ components.html(
     </style>
 
     <div class="contenedor">
-      <img src="data:image/gif;base64,{encoded}" alt="gif update"
+      <img src="data:image/gif;base64,{gif_update}" alt="gif update"
              width="250" height="250" />
     </div>
     """,
