@@ -474,94 +474,6 @@ html_code = f"""
 
 st.components.v1.html(html_code, height=1080, scrolling=False)
 
-st.divider()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ==============================
-# 24 MESSAGES!!
-# ==============================
-
-
-import streamlit.components.v1 as components
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-misterio_img = img_base64("bruh_24.png")
-
-components.html(
-    f"""
-    <style>
-      .contenedor {{
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 18px;
-        background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
-        border-radius: 22px;
-        border: 2px solid rgba(180,180,180,0.55);
-        box-shadow: 0 0 25px rgba(120,120,120,0.45),
-                    inset 0 0 18px rgba(80,80,80,0.35);
-        text-align: center;
-      }}
-
-      .contenedor h4 {{
-        font-size: 24px;
-        color: #ffffff;
-        text-shadow: 0 0 1px rgba(255,255,255,0.9),
-                     0 0 1px rgba(200,200,200,0.7);
-        margin-bottom: 20px;
-      }}
-
-      .contenedor img {{
-        width: 50%;   /* por defecto en PC */
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 0 25px rgba(255,255,255,0.15);
-      }}
-
-      /* En pantallas pequeñas (mobile) */
-      @media (max-width: 768px) {{
-        .contenedor img {{
-          width: 100%;  /* ocupa todo el ancho en mobile */
-        }}
-        .contenedor h4 {{
-          font-size: 24px;
-        }}
-      }}
-    </style>
-
-    <div class="contenedor">
-      <h4>Esta mañana desperté y vi esto. ¿Cómo es posible que en una sola noche tenga más de 24 mensages? 
-      Nunca había visto tantas solicitudes para por el gremio. Es bueno saber que hay demanda y progreso en esto, creo. 
-        No sé quien fue pero... alto tryhard promocionando 🤑</h4>
-      <img src="data:image/png;base64,{misterio_img}" />
-    </div>
-    """,
-    height=900
-)
-
-
-
-
-
-
 
 
 
@@ -811,7 +723,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 12980   # Oro actual
+puntaje_actual = 16280   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -834,7 +746,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "Test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -935,6 +847,10 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
 
     </div>
@@ -2350,12 +2266,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img28}"> 
-  <span>! ice</span>
+  <span>DeMauku</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img29}">
-  <span>exe2029l</span>
+  <span>nini_Taekjoo</span>
 </div>
 
 <div class="dev-card">
@@ -2415,9 +2331,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "angel vados", "imagen": "6.png"},
-    {"nombre": "SansanoPerfecto", "imagen": "15.png"},
-    {"nombre": "lanera_8043", "imagen": "22.png"},
+    {"nombre": "DeMauku", "imagen": "28.png"},
+    {"nombre": "nini_Taekjoo", "imagen": "29.png"},
 ]
 
 
@@ -2848,7 +2763,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_29.png"
+nombre_imagen = "skull_meme_30.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2900,7 +2815,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            No me lo recuerdes
+            Fortune Presents
         </p>
 
     </div>
