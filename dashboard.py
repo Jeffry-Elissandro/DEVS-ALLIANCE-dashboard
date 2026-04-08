@@ -632,7 +632,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 3790   # Oro actual
+puntaje_actual = 8720   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2681,7 +2681,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_31.png"
+nombre_imagen = "skull_meme_32.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2733,7 +2733,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Oztias un Therian (no mentira, que moda tan absurda, ojala los borr...)
+            Insertar Texto
         </p>
 
     </div>
