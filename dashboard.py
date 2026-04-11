@@ -2127,8 +2127,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img17}">
-  <span>ArtuxxD</span>
+  <img src="data:image/png;base64,{img5}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2187,8 +2187,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>nini_Taekjoo</span>
+  <img src="data:image/png;base64,{img5}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
