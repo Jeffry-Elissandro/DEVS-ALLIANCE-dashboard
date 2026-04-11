@@ -632,7 +632,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 11135   # Oro actual
+puntaje_actual = 15465   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1957,7 +1957,7 @@ img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 img4 = img_base64("4.png")
-img5 = img_base64("5.png")
+img5 = img_base64("Imagen_para_testeos.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
@@ -2068,7 +2068,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>aru_25</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2082,8 +2082,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img8}">
-  <span>œ oooooo</span>
+  <img src="data:image/png;base64,{img5}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2118,7 +2118,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>SansanoPerfecto</span>
+  <span>shira2025</span>
 </div>
 
 <div class="dev-card">
@@ -2153,7 +2153,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img22}">
-  <span>lanera_8043</span>
+  <span>(Daniel's version)</span>
 </div>
 
 <div class="dev-card">
@@ -2248,9 +2248,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "DeMauku", "imagen": "28.png"},
-    {"nombre": "nini_Taekjoo", "imagen": "29.png"},
-    {"nombre": "Light", "imagen": "25.png"},
+    {"nombre": "shira2025", "imagen": "15.png"},
+    {"nombre": "(Daniel's version)", "imagen": "22.png"},
 ]
 
 
@@ -2681,7 +2680,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_32.png"
+nombre_imagen = "skull_meme_33.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2733,7 +2732,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Insertar Texto
+            ¿Te hace daño o te da poder?
         </p>
 
     </div>
