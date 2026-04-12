@@ -225,7 +225,7 @@ html_code = f"""
 
 /* CONTENEDOR */
 .fukua-container {{
-    background: linear-gradient(135deg, #543c08, #8a6221);
+    background: linear-gradient(135deg, #473711, #856324);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -340,7 +340,7 @@ html_code = f"""
 # =========================
 # RENDER HTML CORRECTAMENTE
 # =========================
-components.html(html_code, height=850, scrolling=False)
+components.html(html_code, height=830, scrolling=False)
 
 
 
