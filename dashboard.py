@@ -815,7 +815,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15965   # Oro actual
+puntaje_actual = 17385   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -838,7 +838,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "Test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -933,12 +933,16 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte es de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
     </div>
     """,
@@ -2140,7 +2144,7 @@ img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
 img4 = img_base64("4.png")
-img5 = img_base64("Imagen_para_testeos.png")
+img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
@@ -2251,7 +2255,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img5}">
-  <span>DISPONIBLE</span>
+  <span>PABLOX3</span>
 </div>
 
 <div class="dev-card">
@@ -2310,8 +2314,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img5}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img17}">
+  <span>Kavioka</span>
 </div>
 
 <div class="dev-card">
@@ -2331,7 +2335,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img21}">
-  <span>PABLOX3</span>
+  <span>Soarinngchu</span>
 </div>
 
 <div class="dev-card">
@@ -2370,8 +2374,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img5}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img29}">
+  <span>yoremoik</span>
 </div>
 
 <div class="dev-card">
@@ -2434,6 +2438,9 @@ nuevos_miembros = [
     {"nombre": "shira2025", "imagen": "15.png"},
     {"nombre": "(Daniel's version)", "imagen": "22.png"},
     {"nombre": "crasyon", "imagen": "8.png"},
+    {"nombre": "Kavioka", "imagen": "17.png"},
+    {"nombre": "Soarinngchu", "imagen": "21.png"},
+    {"nombre": "yoremoik", "imagen": "29.png"},
 ]
 
 
@@ -2864,7 +2871,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_33.png"
+nombre_imagen = "skull_meme_34.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2916,7 +2923,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            ¿Te hace daño o te da poder?
+            facilmente podrían ser
         </p>
 
     </div>
