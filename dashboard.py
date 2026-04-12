@@ -172,6 +172,189 @@ if st.session_state.mostrar_nota:
 
 
 
+
+
+st.divider()
+
+
+
+# =========================
+# FUKUA'S BIRTHDAY !!!
+# =========================
+
+
+import streamlit as st
+import base64
+import streamlit.components.v1 as components
+
+# =========================
+# CONFIGURACIÓN BASE
+# =========================
+st.set_page_config(page_title="Cerebella Birthday", layout="wide")
+
+# =========================
+# CARGAR IMAGEN LOCAL
+# =========================
+def get_base64(file):
+    with open(file, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+img_fukua = get_base64("Cerebellas_birthday.png")
+
+# =========================
+# HTML COMPLETO (TODO JUNTO)
+# =========================
+html_code = f"""
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<style>
+@keyframes fukua-glow {{
+  0% {{
+    text-shadow: 
+      0 0 6px rgba(255,255,255,0.7),
+      0 0 14px rgba(192,192,192,0.6),
+      0 0 28px rgba(255,255,255,0.5);
+  }}
+  100% {{
+    text-shadow: 
+      0 0 10px rgba(255,255,255,0.9),
+      0 0 20px rgba(192,192,192,0.8),
+      0 0 40px rgba(255,255,255,0.7);
+  }}
+}}
+
+/* CONTENEDOR */
+.fukua-container {{
+    background: linear-gradient(135deg, #543c08, #8a6221);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}}
+
+/* TÍTULO */
+.fukua-title {{
+  font-family: 'Dancing Script', cursive;
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  animation: fukua-glow 1.5s ease-in-out infinite alternate;
+}}
+
+.fukua-title:hover {{
+  color:#ffffff;
+  text-shadow:
+    0 0 12px rgba(255,255,255,1),
+    0 0 24px rgba(192,192,192,0.9),
+    0 0 48px rgba(255,255,255,0.8);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}}
+
+/* SUBTÍTULO */
+.fukua-subtitle {{
+    font-size: 22px;
+    color: #caffca;
+    margin-bottom: 30px;
+}}
+
+/* IMAGEN */
+.fukua-img {{
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+}}
+
+/* DESCRIPCIÓN */
+.fukua-desc {{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #eaffea;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}}
+
+/* =========================
+   📱 RESPONSIVE (MOBILE)
+   ========================= */
+@media (max-width: 788px) {{
+
+  .fukua-container {{
+      padding: 25px;
+      border-radius: 15px;
+  }}
+
+  .fukua-title {{
+      font-size: 50px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #f0f0f0;
+      text-transform: uppercase;
+      animation: fukua-glow 1.5s ease-in-out infinite alternate;
+  }}
+
+  .fukua-subtitle {{
+      font-size: 18px;
+  }}
+
+  .fukua-desc {{
+      font-size: 15px;
+      padding: 0 10px;
+  }}
+
+  .fukua-img {{
+      width: 280px;
+  }}
+}}
+
+</style>
+
+<div class="fukua-container">
+
+    <div style="margin:35px auto 20px; text-align:center;">
+        <h1 class="fukua-title">Cerebella's Birthday</h1>
+    </div>
+    
+    <div class="fukua-subtitle">Celebrando a la mejor trapecista 🧡</div>
+
+    <img class="fukua-img" src="data:image/png;base64,{img_fukua}">
+
+    <div class="fukua-desc">
+        <strong>¡Hoy es el cumpleaños de Cerebella!</strong>
+        <br><br>
+        En honor a la matona más despistada de los Medici, la administración otorga este espacio para rendir 
+        homenaje a uno de nuestros personajes más queridos en la comunidad.
+        <br><br>
+        Además, recuerda ir a la sección OFERTAS DIARIAS de la TIENDA para reclamar tu regalo <strong>GRATIS</strong>, 
+        que incluye movimientos de Cerebella, puntos de habilidad, repescas y una reliquia!! Disfruta siendo el centro de atención...
+    </div>
+
+</div>
+"""
+
+# =========================
+# RENDER HTML CORRECTAMENTE
+# =========================
+components.html(html_code, height=850, scrolling=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 st.divider()
 
 
