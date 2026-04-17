@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = True
+WEB_TESTING = False
 
 def show_testing_badge():
     st.markdown("""
@@ -416,7 +416,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 11560   # Oro actual
+puntaje_actual = 13020   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1733,7 +1733,7 @@ img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
-img9 = img_base64("Imagen_para_testeos.png")
+img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
 img12 = img_base64("12.png")
@@ -1860,7 +1860,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img9}"> 
-  <span>DISPONIBLE</span>
+  <span>Rukawa_Noceda</span>
 </div>
 
 <div class="dev-card">
@@ -1965,7 +1965,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img30}">
-  <span>Rukawa_Noceda</span>
+  <span>Angelg ANV</span>
 </div>
 
 
@@ -2020,9 +2020,9 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "MichiC@ch0ndo", "imagen": "25.png"},
     {"nombre": "lulu12XD", "imagen": "29.png"},
     {"nombre": "lenreht", "imagen": "14.png"},
+    {"nombre": "Angelg ANV", "imagen": "30.png"},
 ]
 
 
