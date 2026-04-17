@@ -265,7 +265,7 @@ st.markdown(f"""
     <div class="regla-text" style="flex:2;">
         <h2>DEVS - REGLA</h2>
         <p>Para mantener el equilibrio y asegurar el crecimiento de la alianza, se realiza una 
-        <span class="regla-warning">LIMPIEZA semanal cada sábado por la noche</span>.</p>
+        <span class="regla-warning">LIMPIEZA semanal cada sábado por la mañana</span>.</p>
         <p>El objetivo es claro y accesible: cada miembro debe alcanzar al menos 
         <span class="regla-highlight">500 puntos semanales</span>.</p>
         <p>Esta meta puede lograrse fácilmente completando actividades diarias, sin necesidad de exigencias extremas.</p>
@@ -1885,7 +1885,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img14}">
-  <span>black lagoon69</span>
+  <span>lenreht</span>
 </div>
 
 <div class="dev-card">
@@ -2022,6 +2022,7 @@ nuevos_miembros = [
 
     {"nombre": "MichiC@ch0ndo", "imagen": "25.png"},
     {"nombre": "lulu12XD", "imagen": "29.png"},
+    {"nombre": "lenreht", "imagen": "14.png"},
 ]
 
 
