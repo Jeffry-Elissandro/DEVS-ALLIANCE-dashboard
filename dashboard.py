@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -56,36 +56,11 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-    {"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1336707},
-    {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Especialista", "ID": "50is-suxy9", "Nivel": 68, "Poder": 000},
-    {"Nombre":"MRchochox","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 61, "Poder": 000},
-    {"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
-    {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
-    {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"BAKI","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 75, "Poder": 000},
-    {"Nombre":"Aesick4u","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},
-    {"Nombre":"eduguti","Actividad":10,"Daño":9,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"œ oooooo","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
-    {"Nombre":"black lagoon69","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
-    {"Nombre":"batgirl","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
-    {"Nombre":"shrek embaraz@d0","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 000},
-    {"Nombre":"PABLOX3","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"ArtuxxD","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
-    {"Nombre":"oscuro","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
-    {"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"aru_25","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
-    {"Nombre":"GxJxGxSx","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
-    {"Nombre":"UnrealNat","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 75, "Poder": 000},
-    {"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
-    {"Nombre":"Sir Lag","Actividad":10,"Daño":7,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 000},
-    {"Nombre":"Emmy","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 70, "Poder": 000},
-    {"Nombre":"Coldsoul9223","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},
-    {"Nombre":"m4tth3w_kn","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},
-    {"Nombre":"nini_Taekjoo","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 56, "Poder": 000},
-    {"Nombre":"DeMauku","Actividad":10,"Daño":1,"Puntos":7,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},
-    {"Nombre":"SansanoPerfecto","Actividad":10,"Daño":1,"Puntos":6,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 000},
-    {"Nombre":"Light","Actividad":10,"Daño":2,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 64, "Poder": 000},
-    {"Nombre":"lanera_8043","Actividad":10,"Daño":1,"Puntos":4,"Consistencia":4, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 59, "Poder": 000},
+    {"Nombre":"TEST","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
+    {"Nombre":"TEST_2","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "50is-suxy9", "Nivel": 68, "Poder": 000},
+    {"Nombre":"TEST_3","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 61, "Poder": 000},
+    {"Nombre":"TEST_4","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
+    {"Nombre":"TEST_5","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
 ]
 
 # ============================
@@ -174,186 +149,6 @@ if st.session_state.mostrar_nota:
 
 
 
-st.divider()
-
-
-
-# =========================
-# FUKUA'S BIRTHDAY !!!
-# =========================
-
-
-import streamlit as st
-import base64
-import streamlit.components.v1 as components
-
-# =========================
-# CONFIGURACIÓN BASE
-# =========================
-st.set_page_config(page_title="Cerebella Birthday", layout="wide")
-
-# =========================
-# CARGAR IMAGEN LOCAL
-# =========================
-def get_base64(file):
-    with open(file, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-img_fukua = get_base64("Cerebellas_birthday.png")
-
-# =========================
-# HTML COMPLETO (TODO JUNTO)
-# =========================
-html_code = f"""
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-<style>
-@keyframes fukua-glow {{
-  0% {{
-    text-shadow: 
-      0 0 6px rgba(255,255,255,0.7),
-      0 0 14px rgba(192,192,192,0.6),
-      0 0 28px rgba(255,255,255,0.5);
-  }}
-  100% {{
-    text-shadow: 
-      0 0 10px rgba(255,255,255,0.9),
-      0 0 20px rgba(192,192,192,0.8),
-      0 0 40px rgba(255,255,255,0.7);
-  }}
-}}
-
-/* CONTENEDOR */
-.fukua-container {{
-    background: linear-gradient(135deg, #473711, #856324);
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}}
-
-/* TÍTULO */
-.fukua-title {{
-  font-family: 'Dancing Script', cursive;
-  font-size: 58px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #f0f0f0;
-  text-transform: uppercase;
-  animation: fukua-glow 1.5s ease-in-out infinite alternate;
-}}
-
-.fukua-title:hover {{
-  color:#ffffff;
-  text-shadow:
-    0 0 12px rgba(255,255,255,1),
-    0 0 24px rgba(192,192,192,0.9),
-    0 0 48px rgba(255,255,255,0.8);
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}}
-
-/* SUBTÍTULO */
-.fukua-subtitle {{
-    font-size: 22px;
-    color: #caffca;
-    margin-bottom: 30px;
-}}
-
-/* IMAGEN */
-.fukua-img {{
-    width: 350px;
-    max-width: 90%;
-    height: auto;
-    border-radius: 15px;
-}}
-
-/* DESCRIPCIÓN */
-.fukua-desc {{
-    margin-top: 25px;
-    font-size: 18px;
-    color: #eaffea;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}}
-
-/* =========================
-   📱 RESPONSIVE (MOBILE)
-   ========================= */
-@media (max-width: 788px) {{
-
-  .fukua-container {{
-      padding: 25px;
-      border-radius: 15px;
-  }}
-
-  .fukua-title {{
-      font-size: 50px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: #f0f0f0;
-      text-transform: uppercase;
-      animation: fukua-glow 1.5s ease-in-out infinite alternate;
-  }}
-
-  .fukua-subtitle {{
-      font-size: 18px;
-  }}
-
-  .fukua-desc {{
-      font-size: 15px;
-      padding: 0 10px;
-  }}
-
-  .fukua-img {{
-      width: 280px;
-  }}
-}}
-
-</style>
-
-<div class="fukua-container">
-
-    <div style="margin:35px auto 20px; text-align:center;">
-        <h1 class="fukua-title">Cerebella's Birthday</h1>
-    </div>
-    
-    <div class="fukua-subtitle">Celebrando a la mejor trapecista 🧡</div>
-
-    <img class="fukua-img" src="data:image/png;base64,{img_fukua}">
-
-    <div class="fukua-desc">
-        <strong>¡Hoy es el cumpleaños de Cerebella!</strong>
-        <br><br>
-        En honor a la matona más despistada de los Medici, la administración otorga este espacio para rendir 
-        homenaje a uno de nuestros personajes más queridos en la comunidad.
-        <br><br>
-        Además, recuerda ir a la sección OFERTAS DIARIAS de la TIENDA para reclamar tu regalo <strong>GRATIS</strong>, 
-        que incluye movimientos de Cerebella, puntos de habilidad, repescas y una reliquia!! Disfruta siendo el centro de atención...
-    </div>
-
-</div>
-"""
-
-# =========================
-# RENDER HTML CORRECTAMENTE
-# =========================
-components.html(html_code, height=830, scrolling=False)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 st.divider()
 
@@ -363,85 +158,16 @@ st.divider()
 
 
 # ==============================
-# 24 MESSAGES!!
+# Hoy no habrá Update (Oguri best character)
 # ==============================
 
 
-import streamlit.components.v1 as components
-import base64
-
-def load_gif(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
-
-
-
-gif_update = load_gif("no_update.gif")
-
-
-
-components.html(
-    f"""
-    <style>
-      .contenedor {{
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 18px;
-        background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
-        border-radius: 22px;
-        border: 2px solid rgba(180,180,180,0.55);
-        box-shadow: 0 0 25px rgba(120,120,120,0.45),
-                    inset 0 0 18px rgba(80,80,80,0.35);
-        text-align: center;
-      }}
-
-      .contenedor h4 {{
-        font-size: 24px;
-        color: #ffffff;
-        text-shadow: 0 0 1px rgba(255,255,255,0.9),
-                     0 0 1px rgba(200,200,200,0.7);
-        margin-bottom: 20px;
-      }}
-
-      .contenedor img {{
-        width: 50%;   /* por defecto en PC */
-        height: auto;
-        border-radius: 12px;
-        box-shadow: 0 0 25px rgba(255,255,255,0.15);
-      }}
-
-      /* En pantallas pequeñas (mobile) */
-      @media (max-width: 768px) {{
-        .contenedor img {{
-          width: 100%;  /* ocupa todo el ancho en mobile */
-        }}
-        .contenedor h4 {{
-          font-size: 24px;
-        }}
-      }}
-    </style>
-
-    <div class="contenedor">
-      <img src="data:image/gif;base64,{gif_update}" alt="gif update"
-             width="250" height="250" />
-    </div>
-    """,
-    height=700
-)
 
 
 
 
 
 
-
-
-
-
-
-
-
-st.divider()
 
 
 # ==============================
@@ -449,122 +175,6 @@ st.divider()
 # ==============================
 
 
-# VERSIÓN COLECTIVA 5 MIEMBROS (SIN JERARQUÍA)
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
-
-miembros_destacados = [
-    {"img": "6.png", "score": "1.668B - 770 points", "name": "angel vados"},
-    {"img": "3.png", "score": "536M - 810 points", "name": "CoinXY"},
-    {"img": "2.png", "score": "247M - 730 points", "name": "Lady_Navier"},
-    {"img": "19.png", "score": "304M - 670 points", "name": "KilLeo0217"},
-    {"img": "11.png", "score": "284M - 695 points", "name": "oscuro"},
-]
-
-for miembro in miembros_destacados:
-    miembro["img_b64"] = img_base64(miembro["img"])
-
-members_html = "".join(
-    f"""
-    <div class="member">
-      <img src="data:image/png;base64,{m['img_b64']}">
-      <div class="score">{m['score']}</div>
-      <div class="name">{m['name']}</div>
-    </div>
-    """ for m in miembros_destacados
-)
-
-gif_chibi = img_base64("Filia_mini_celebrate.gif")
-
-html_code = f"""
-<style>
-
-.destacados-card {{
-  max-width:900px;
-  margin:60px auto;
-  padding:40px 20px;
-  background: radial-gradient(circle at top, #1a102d, #050505 80%);
-  border-radius:20px;
-  border:2px solid rgba(124,58,237,0.3);
-  box-shadow:0 0 40px rgba(124,58,237,0.3);
-  text-align:center;
-}}
-
-.destacados-title {{
-  font-size:34px;
-  font-weight:bold;
-  margin-bottom:10px;
-  color:#c084fc;
-  letter-spacing:2px;
-}}
-
-.destacados-sub {{
-  font-size:14px;
-  color:#a78bfa;
-  margin-bottom:30px;
-  opacity:0.8;
-}}
-
-.grid {{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:30px;
-}}
-
-.member {{
-  text-align:center;
-  transition:0.3s ease;
-}}
-
-.member img {{
-  width:110px;
-  height:110px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #a78bfa;
-  box-shadow:0 0 20px rgba(167,139,250,0.5);
-  margin-bottom:10px;
-  transition:0.3s ease;
-}}
-
-.member:hover img {{
-  transform:scale(1.08);
-  box-shadow:0 0 30px rgba(167,139,250,0.8);
-}}
-
-.score {{
-  font-size:14px;
-  font-weight:bold;
-  color:#e9d5ff;
-}}
-
-.name {{
-  font-size:13px;
-  color:#d8b4fe;
-}}
-
-</style>
-
-<div class="destacados-card">
-  <h3 class="destacados-title">💜 Miembros Destacados</h3>
-  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada</div>
-  <div class="grid">
-    {members_html}
-  </div>
-  <div style="margin-top:30px; text-align:center;">
-    <img src="data:image/gif;base64,{gif_chibi}" 
-         style="width:85%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
-  </div>
-</div>
-"""
-
-st.components.v1.html(html_code, height=1080, scrolling=False)
 
 
 
@@ -573,15 +183,6 @@ st.components.v1.html(html_code, height=1080, scrolling=False)
 
 
 
-
-
-
-
-
-
-
-
-st.divider()
 
 
 # ==============================
@@ -815,7 +416,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 17385   # Oro actual
+puntaje_actual = 11560   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -838,7 +439,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -933,16 +534,12 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1303,7 +900,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="RENDIMIENTOS 📌 | Semana NO.13 | 30 Marzo/05 Abril ",
+    title="RENDIMIENTOS 📌 | Semana #14 | 06/12 Abril | NO DATA 😔 ",
     width=ancho_grafica
 )
 
@@ -1735,12 +1332,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡Ha vuelto! Así es, me refiero a que ha vuelto 
-             el jefe de inmortales <strong>Critty Kitty</strong> 
-             a esta temporada de Gremios. Para muchos, la temporada 
-             más esperada y divertida de todas. Es solo en esta 
-             época en la que podemos hacer un verdadero daño exponencial... 
-             las expectativas se elevan y la emoción crece. ¿Te interesa saber más? 
+            De vuelta a la semana con Marie Goku. Vamos a demostrar 
+            cómo se pelea con todo nuestro poder. ¿Quieres hacer 
+            más daño y demostrar tu verdadero potencial? ¿Te interesa saber más? 
             Si no conoces estas técnicas puedes ver los siguientes videos 
             por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
             Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
@@ -1762,7 +1356,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/VAL9efW_hHY"
+                    src="https://www.youtube.com/embed/w4BaaMptZ6I"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1779,12 +1373,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Para llegar a la cima primero debes conocer tu terreno. 
-            Si quieres hacer un verdadero daño exponencial, primero debes 
-            de conocer las técnicas y modificadores para aplicar 
-            en batalla. Si en verdad quieres conocer las ventajas de estos 
-            modificadores, puedes conocer más aquí... 
-            Video creado por: <strong>SiennaConHielo</strong> 💜
+            Si necesitas un atacante puedes probar con alguno de todos estos 
+            que han sido los mejores para esta temporada. 
+            Video creado por: <strong>Deny17S</strong> 💙
         </p>
 
         <div style="
@@ -1803,7 +1394,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/p4oruz478C8"
+                    src="https://www.youtube.com/embed/aHKgC75RqYc"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1820,15 +1411,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Todos coincidimos en una cosa, y esa es que 
-            el equipo definitivo es este. Las Painwheel son la 
-            verdadera clave para hacer un daño exponencial, esto 
-            debido a sus modificadores y por sus combos de 
-            muchos golpes. Además, de ser una variante que tiene 
-            Blockbusters que conectan de maravilla y recargan 
-            realmente rápido. Si no me crees, observa estas jugadas 
-            que reflejan el valor real de una buena estrategia. 
-            Video creado por: <strong>AlannAx</strong> 💚
+            ¡No te pierdas! Si lo que necesitas es una guía paso a paso, puedes ver mi video en el que te explico 
+            la ventaja que puedes aprovechar de los modificadores en esta temporada.  
+            Video creado por: <strong>CHESSDEV</strong> 💚
         </p>
 
         <div style="
@@ -1847,7 +1432,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/Xfkj03jsJzY"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1860,7 +1445,7 @@ components.html(
 
     </div>
     """,
-    height=2750
+    height=2550
 )
 
 
@@ -1998,18 +1583,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_1.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/BUFFS</div>", unsafe_allow_html=True)
+    st.image("carta_marie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("Atacantes.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
+    st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_2.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/DEBUFS</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2148,7 +1733,7 @@ img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
 img8 = img_base64("8.png")
-img9 = img_base64("9.png")
+img9 = img_base64("imagen_para_testeos.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
 img12 = img_base64("12.png")
@@ -2274,8 +1859,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img9}">
-  <span>BAKI</span>
+  <img src="data:image/png;base64,{img9}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2355,7 +1940,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img25}">
-  <span>Light</span>
+  <span>MichiC@ch0ndo</span>
 </div>
 
 <div class="dev-card">
@@ -2375,7 +1960,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img29}">
-  <span>yoremoik</span>
+  <span>lulu12XD</span>
 </div>
 
 <div class="dev-card">
@@ -2435,12 +2020,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "shira2025", "imagen": "15.png"},
-    {"nombre": "(Daniel's version)", "imagen": "22.png"},
-    {"nombre": "crasyon", "imagen": "8.png"},
-    {"nombre": "Kavioka", "imagen": "17.png"},
-    {"nombre": "Soarinngchu", "imagen": "21.png"},
-    {"nombre": "yoremoik", "imagen": "29.png"},
+    {"nombre": "MichiC@ch0ndo", "imagen": "25.png"},
+    {"nombre": "lulu12XD", "imagen": "29.png"},
 ]
 
 
@@ -2871,7 +2452,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_34.png"
+nombre_imagen = "skull_meme_35.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2923,7 +2504,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            facilmente podrían ser
+            ya te la sabes broer
         </p>
 
     </div>
