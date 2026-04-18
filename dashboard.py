@@ -416,7 +416,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 13355   # Oro actual
+puntaje_actual = 15470   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1735,7 +1735,7 @@ img7 = img_base64("7.png")
 img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
-img11 = img_base64("11.png")
+img11 = img_base64("Imagen_para_testeos.png")
 img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
@@ -1745,7 +1745,7 @@ img17 = img_base64("17.png")
 img18 = img_base64("18.png")
 img19 = img_base64("19.png")
 img20 = img_base64("20.png")
-img21 = img_base64("Imagen_para_testeos.png")
+img21 = img_base64("21.png")
 img22 = img_base64("22.png")
 img23 = img_base64("23.png")
 img24 = img_base64("24.png")
@@ -1870,7 +1870,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img11}">
-  <span>oscuro</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -1884,13 +1884,13 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img14}">
-  <span>lenreht</span>
+  <img src="data:image/png;base64,{img11}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img15}">
-  <span>shira2025</span>
+  <img src="data:image/png;base64,{img11}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -1919,7 +1919,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img21}">
+  <img src="data:image/png;base64,{img11}">
   <span>DISPONIBLE</span>
 </div>
 
@@ -1959,8 +1959,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>lulu12XD</span>
+  <img src="data:image/png;base64,{img11}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2020,8 +2020,6 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "lulu12XD", "imagen": "29.png"},
-    {"nombre": "lenreht", "imagen": "14.png"},
     {"nombre": "Angelg ANV", "imagen": "30.png"},
     {"nombre": "Peacock_mi_esposa", "imagen": "24.png"},
 ]
@@ -2454,7 +2452,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_35.png"
+nombre_imagen = "skull_meme_36.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2506,7 +2504,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            ya te la sabes broer
+            Marie' s my wife
         </p>
 
     </div>
