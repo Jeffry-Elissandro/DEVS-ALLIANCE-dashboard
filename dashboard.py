@@ -416,7 +416,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15470   # Oro actual
+puntaje_actual = 15800   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1959,8 +1959,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img29}">
+  <span>Lim minho</span>
 </div>
 
 <div class="dev-card">
@@ -2022,6 +2022,7 @@ nuevos_miembros = [
 
     {"nombre": "Angelg ANV", "imagen": "30.png"},
     {"nombre": "Peacock_mi_esposa", "imagen": "24.png"},
+    {"nombre": "Lim minho", "imagen": "29.png"},
 ]
 
 
