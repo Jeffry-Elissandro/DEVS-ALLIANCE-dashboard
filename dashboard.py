@@ -416,7 +416,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15800   # Oro actual
+puntaje_actual = 16665   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -439,7 +439,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -540,6 +540,10 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
     </div>
     """,
@@ -1889,8 +1893,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img15}">
+  <span>lucixx</span>
 </div>
 
 <div class="dev-card">
@@ -1919,8 +1923,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img21}">
+  <span>Kricked</span>
 </div>
 
 <div class="dev-card">
@@ -2020,9 +2024,9 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Angelg ANV", "imagen": "30.png"},
-    {"nombre": "Peacock_mi_esposa", "imagen": "24.png"},
     {"nombre": "Lim minho", "imagen": "29.png"},
+    {"nombre": "lucixx", "imagen": "15.png"},
+    {"nombre": "Kricked", "imagen": "21.png"},
 ]
 
 
@@ -2453,7 +2457,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_36.png"
+nombre_imagen = "skull_meme_37.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2505,7 +2509,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Marie' s my wife
+            SUS
         </p>
 
     </div>
