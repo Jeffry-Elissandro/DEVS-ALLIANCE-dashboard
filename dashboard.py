@@ -56,35 +56,35 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-    {"Nombre":"CHESSDEV","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
-    {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"MRchochox","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8},
-    {"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8},
-    {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"Aesick4u","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
-    {"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"batgirl","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7},
-    {"Nombre":"shrek embaraz@d0","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"PABLOX3","Actividad":10,"Daño":7,"Puntos":10,"Consistencia":9},
-    {"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
-    {"Nombre":"UnrealNat","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
-    {"Nombre":"angel vados","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8},
-    {"Nombre":"Sir Lag","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
-    {"Nombre":"Emmy","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
-    {"Nombre":"m4tth3w_kn","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
+    {"Nombre":"CHESSDEV","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
+    {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 68, "Poder": 000},
+    {"Nombre":"MRchochox","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
+    {"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
+    {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 000},
+    {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Aesick4u","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
+    {"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"batgirl","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
+    {"Nombre":"shrek embaraz@d0","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},
+    {"Nombre":"PABLOX3","Actividad":10,"Daño":7,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},
+    {"Nombre":"UnrealNat","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 000},
+    {"Nombre":"angel vados","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Sir Lag","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
+    {"Nombre":"Emmy","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 70, "Poder": 000},
+    {"Nombre":"m4tth3w_kn","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
 
-    {"Nombre":"Kavioka","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9},
-    {"Nombre":"crasyon","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
-    {"Nombre":"(Daniel's version)","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9},
-    {"Nombre":"lucixx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
-    {"Nombre":"Angelg ANV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":7},
-    {"Nombre":"Kricked","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8},
-    {"Nombre":"Peacock_mi_esposa","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
-    {"Nombre":"MichiC@ch0ndo","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"Kavioka","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 000},
+    {"Nombre":"crasyon","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"(Daniel's version)","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},
+    {"Nombre":"lucixx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 000},
+    {"Nombre":"Angelg ANV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},
+    {"Nombre":"Kricked","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
+    {"Nombre":"Peacock_mi_esposa","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 69, "Poder": 000},
+    {"Nombre":"MichiC@ch0ndo","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},
 
-    {"Nombre":"querri cachucha","Actividad":10,"Daño":4,"Puntos":5,"Consistencia":5}
+    {"Nombre":"querri cachucha","Actividad":10,"Daño":4,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000}
 ]
 
 # ============================
@@ -229,6 +229,8 @@ members_html = "".join(
     """ for m in miembros_destacados
 )
 
+gif_chibi = img_base64("Filia_mini_celebrate.gif")
+
 html_code = f"""
 <style>
 
@@ -305,10 +307,14 @@ html_code = f"""
   <div class="grid">
     {members_html}
   </div>
+  <div style="margin-top:30px; text-align:center;">
+    <img src="data:image/gif;base64,{gif_chibi}" 
+         style="width:85%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
+  </div>
 </div>
 """
 
-st.components.v1.html(html_code, height=900, scrolling=False)
+st.components.v1.html(html_code, height=1080, scrolling=False)
 
 st.divider()
 
@@ -1033,7 +1039,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="RENDIMIENTOS 📌 | Semana #14 | 06/12 Abril | NO DATA 😔 ",
+    title="RENDIMIENTOS ✒️ | Semana #15 | 13/19 Abril",
     width=ancho_grafica
 )
 
