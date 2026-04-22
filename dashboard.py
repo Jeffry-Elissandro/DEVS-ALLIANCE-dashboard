@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -56,11 +56,35 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-    {"Nombre":"TEST","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
-    {"Nombre":"TEST_2","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "50is-suxy9", "Nivel": 68, "Poder": 000},
-    {"Nombre":"TEST_3","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 61, "Poder": 000},
-    {"Nombre":"TEST_4","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
-    {"Nombre":"TEST_5","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
+    {"Nombre":"CHESSDEV","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
+    {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"MRchochox","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8},
+    {"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8},
+    {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"Aesick4u","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
+    {"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"batgirl","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7},
+    {"Nombre":"shrek embaraz@d0","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"PABLOX3","Actividad":10,"Daño":7,"Puntos":10,"Consistencia":9},
+    {"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
+    {"Nombre":"UnrealNat","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
+    {"Nombre":"angel vados","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8},
+    {"Nombre":"Sir Lag","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+    {"Nombre":"Emmy","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
+    {"Nombre":"m4tth3w_kn","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
+
+    {"Nombre":"Kavioka","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9},
+    {"Nombre":"crasyon","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
+    {"Nombre":"(Daniel's version)","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9},
+    {"Nombre":"lucixx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8},
+    {"Nombre":"Angelg ANV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":7},
+    {"Nombre":"Kricked","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8},
+    {"Nombre":"Peacock_mi_esposa","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7},
+    {"Nombre":"MichiC@ch0ndo","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10},
+
+    {"Nombre":"querri cachucha","Actividad":10,"Daño":4,"Puntos":5,"Consistencia":5}
 ]
 
 # ============================
@@ -177,7 +201,116 @@ st.divider()
 
 
 
+import streamlit as st
+import base64
 
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+miembros_destacados = [
+    {"img": "11.png", "score": "1.187B - 830 points", "name": "shrek embaraz@d0"},
+    {"img": "3.png", "score": "1.008B - 810 points", "name": "CoinXY"},
+    {"img": "2.png", "score": "515M - 810 points", "name": "Lady_Navier"},
+    {"img": "7.png", "score": "1.979B  - 640 points", "name": "void_13"},
+    {"img": "20.png", "score": "609M - 700 points", "name": "eduguti"},
+]
+
+for miembro in miembros_destacados:
+    miembro["img_b64"] = img_base64(miembro["img"])
+
+members_html = "".join(
+    f"""
+    <div class="member">
+      <img src="data:image/png;base64,{m['img_b64']}">
+      <div class="score">{m['score']}</div>
+      <div class="name">{m['name']}</div>
+    </div>
+    """ for m in miembros_destacados
+)
+
+html_code = f"""
+<style>
+
+.destacados-card {{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px 20px;
+  background: radial-gradient(circle at top, #1a102d, #050505 80%);
+  border-radius:20px;
+  border:2px solid rgba(124,58,237,0.3);
+  box-shadow:0 0 40px rgba(124,58,237,0.3);
+  text-align:center;
+}}
+
+.destacados-title {{
+  font-size:34px;
+  font-weight:bold;
+  margin-bottom:10px;
+  color:#c084fc;
+  letter-spacing:2px;
+}}
+
+.destacados-sub {{
+  font-size:14px;
+  color:#a78bfa;
+  margin-bottom:30px;
+  opacity:0.8;
+}}
+
+.grid {{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}}
+
+.member {{
+  text-align:center;
+  transition:0.3s ease;
+}}
+
+.member img {{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 20px rgba(167,139,250,0.5);
+  margin-bottom:10px;
+  transition:0.3s ease;
+}}
+
+.member:hover img {{
+  transform:scale(1.08);
+  box-shadow:0 0 30px rgba(167,139,250,0.8);
+}}
+
+.score {{
+  font-size:14px;
+  font-weight:bold;
+  color:#e9d5ff;
+}}
+
+.name {{
+  font-size:13px;
+  color:#d8b4fe;
+}}
+
+</style>
+
+<div class="destacados-card">
+  <h3 class="destacados-title">💜 Miembros Destacados</h3>
+  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada</div>
+  <div class="grid">
+    {members_html}
+  </div>
+</div>
+"""
+
+st.components.v1.html(html_code, height=900, scrolling=False)
+
+st.divider()
 
 
 
@@ -416,7 +549,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 17895   # Oro actual
+puntaje_actual = 6965   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -439,7 +572,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -540,10 +673,6 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1336,12 +1465,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            De vuelta a la semana con Marie Goku. Vamos a demostrar 
-            cómo se pelea con todo nuestro poder. ¿Quieres hacer 
-            más daño y demostrar tu verdadero potencial? ¿Te interesa saber más? 
+            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
+            debido a sus modificadores. Estos son complejos y requieren 
+            técnicas específicas para destacar en daño. ¿Te interesa saber más?  
             Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
-            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
+            Video creado por: <strong>AlannAx</strong> 💚
         </p>
 
         <div style="
@@ -1360,7 +1489,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/w4BaaMptZ6I"
+                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1377,9 +1506,8 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Si necesitas un atacante puedes probar con alguno de todos estos 
-            que han sido los mejores para esta temporada. 
-            Video creado por: <strong>Deny17S</strong> 💙
+            ¿Quieres más Variedad de equipos? 
+            Video creado por: <strong>Deny17S</strong> 🖤
         </p>
 
         <div style="
@@ -1398,7 +1526,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/aHKgC75RqYc"
+                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1415,9 +1543,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡No te pierdas! Si lo que necesitas es una guía paso a paso, puedes ver mi video en el que te explico 
-            la ventaja que puedes aprovechar de los modificadores en esta temporada.  
-            Video creado por: <strong>CHESSDEV</strong> 💚
+            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
+            fue divertido mientras duró.
+            Video creado por: <strong>RodirKW</strong> 🤍
         </p>
 
         <div style="
@@ -1436,7 +1564,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
+                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1449,7 +1577,7 @@ components.html(
 
     </div>
     """,
-    height=2550
+    height=2330
 )
 
 
@@ -1587,18 +1715,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/BUFFS</div>", unsafe_allow_html=True)
-    st.image("carta_marie.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO GRADUAL</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
+    st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/DEBUFS</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO BRUTO</div>", unsafe_allow_html=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -1739,7 +1867,7 @@ img7 = img_base64("7.png")
 img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
-img11 = img_base64("Imagen_para_testeos.png")
+img11 = img_base64("11.png")
 img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
@@ -1874,7 +2002,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img11}">
-  <span>DISPONIBLE</span>
+  <span>shrek embaraz@d0</span>
 </div>
 
 <div class="dev-card">
@@ -1888,8 +2016,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img11}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img14}">
+  <span>Amy Rose (M's GF)</span>
 </div>
 
 <div class="dev-card">
@@ -1899,7 +2027,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img16}">
-  <span>shrek embaraz@d0</span>
+  <span>yo 456</span>
 </div>
 
 <div class="dev-card">
@@ -1959,12 +2087,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img28}"> 
-  <span>DeMauku</span>
+  <span>Cesar7w7</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img29}">
-  <span>Lim minho</span>
+  <span>querri cachucha</span>
 </div>
 
 <div class="dev-card">
@@ -2024,9 +2152,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Lim minho", "imagen": "29.png"},
-    {"nombre": "lucixx", "imagen": "15.png"},
-    {"nombre": "Kricked", "imagen": "21.png"},
+    {"nombre": "querri cachucha", "imagen": "29.png"},
+    {"nombre": "Cesar7w7", "imagen": "28.png"},
+    {"nombre": "Amy Rose (M's GF)", "imagen": "14.png"},
+    {"nombre": "yo 456", "imagen": "16.png"},
 ]
 
 
@@ -2457,7 +2586,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_37.png"
+nombre_imagen = "skull_meme_38.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2509,7 +2638,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            SUS
+            No juego Brawl, pero entendí
         </p>
 
     </div>
@@ -3123,168 +3252,6 @@ st.divider()
 
 
 
-
-
-
-
-# ==============================
-# THANKS YOU »alex«
-# ==============================
-
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
-
-img_colider = img_base64("Thanks_colider.png")
-
-html_code = f"""
-<style>
-.tribute-card {{
-  max-width:950px;
-  margin:60px auto;
-  padding:60px 40px 80px;
-  background:linear-gradient(180deg,#0a0c12,#111827 60%,#05070b);
-  border-radius:30px;
-  border:1px solid rgba(255,215,0,0.25);
-  box-shadow:0 0 80px rgba(255,215,0,0.15), inset 0 0 60px rgba(255,215,0,0.08);
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}}
-.tribute-title {{
-  font-size:34px;
-  color:#fff;
-  margin-bottom:30px;
-  letter-spacing:2px;
-  font-weight:bold;
-  text-shadow:0 0 25px rgba(0, 0, 0, 0.8);
-}}
-.tribute-text {{
-  font-size:16px;
-  color:#d1d5db;
-  line-height:1.8;
-  margin-bottom:20px;
-  max-width:950px;
-  margin-left:auto;
-  margin-right:auto;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}}
-.colider-avatar {{
-  width:140px;
-  height:140px;
-  border-radius:50%;
-  object-fit:cover;
-  border:4px solid #ffd700;
-  box-shadow:0 0 35px rgba(255,215,0,0.7),0 0 70px rgba(255,215,0,0.3);
-  display:block;
-  margin:40px auto -70px auto;
-  position:relative;
-  z-index:10;
-  background:#000;
-}}
-
-/* Estilo para el SVG del pedestal, ajustado a tamaño y posición */
-.pedestal-container {{
-  margin-top: -20px; /* ajusta si quieres más espacio */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}}
-
-.pedestal-svg {{
-  width: 220px;
-  height: 250px;
-}}
-
-/* Opcional: efectos en el SVG */
-.pedestal-svg polygon {{
-  stroke: #d3a410;
-  stroke-width: 2;
-  fill: #414750;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-}}
-</style>
-
-<div class="tribute-card">
-  <div class="tribute-title">Homenaje a »alex«</div>
-  <div class="tribute-text" style="margin-top:30px; padding:0 20px; color:#d1d5db; font-size:16px; line-height:1.6;">
-  <p>
-    Hoy queremos expresar nuestro más sincero agradecimiento por todo el tiempo,
-    esfuerzo y dedicación que brindaste a este gremio. Tu presencia marcó una etapa
-    importante que siempre será recordada.
-    Gracias por cada momento, cada decisión y cada esfuerzo dedicado a este gremio.
-    Tu impacto permanecerá con nosotros.
-  </p>
-  <p>
-    Comprendemos tu decisión. Sabemos que hay momentos donde la vida exige prioridad,
-    y elegir ese camino demuestra responsabilidad y fortaleza.
-    Entendemos tu decisión y la respetamos profundamente. Hay momentos donde la vida
-    exige prioridad, y eso también es parte del camino.
-  </p>
-  <p>
-    Esto no es una despedida definitiva. Este gremio siempre será tu hogar.
-    Cuando decidas volver, serás recibido con el mismo respeto y aprecio.
-    Este nunca será un adiós. Siempre tendrás un lugar aquí.
-    Cuando decidas volver, serás bienvenido.
-  </p>
-</div>
-  <img src="data:image/png;base64,{img_colider}" class="colider-avatar">
-  <!-- Contenedor del pedestal con SVG -->
-  <div class="pedestal-container">
-    <svg class="pedestal-svg" xmlns="http://www.w3.org/2000/svg" height="250" width="220" viewBox="0 0 200 200">
-      <g style="order: -1;">
-        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
-        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
-        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750" points="70,70 150,50 130,130 50,150"></polygon>
-        <polygon stroke-width="2" stroke="" fill="url(#gradiente)" points="100,70 150,100 100,130 50,100"></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
-            <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
-            <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
-          </linearGradient>
-        </defs>
-        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#b7870f" points="80,50 80,75 80,99 40,75"></polygon>
-        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)" points="40,-40 80,-40 80,99 40,75"></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
-            <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-            <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke="" fill="#d3a410" points="80,50 80,75 80,99 40,75"></polygon>
-        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke="" fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
-        <defs>
-          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
-            <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-            <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke="" fill="#ffe4a1" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
-        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke="" fill="#ccb069" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
-        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff" points="2,0 2,2 0,2 0,0" id="particles"></polygon>
-        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130"></polygon>
-        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127" points="50,50 120.5,8 120.5,35 50,80"></polygon>
-      </g>
-    </svg>
-  </div>
-</div>
-"""
-
-st.components.v1.html(html_code, height=1600)
-
-
-
-
-
-
-
-
-st.divider()
 
 
 
