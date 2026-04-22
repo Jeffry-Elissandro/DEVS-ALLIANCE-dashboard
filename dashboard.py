@@ -58,7 +58,7 @@ PESO_CONSISTENCIA = 0.15
 data = [
     {"Nombre":"CHESSDEV","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
     {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 68, "Poder": 000},
-    {"Nombre":"MRchochox","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
+    {"Nombre":"MRchochox","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Especialista", "ID": "0000-00000", "Nivel": 65, "Poder": 000},
     {"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},
     {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 000},
     {"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},
@@ -555,7 +555,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 6965   # Oro actual
+puntaje_actual = 7355   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
