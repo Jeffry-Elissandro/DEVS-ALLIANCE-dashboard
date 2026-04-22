@@ -555,7 +555,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 7355   # Oro actual
+puntaje_actual = 7740   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2491,7 +2491,7 @@ f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">ZODASH7 (szuffp)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc">CYFRUS ARTS (Wallace Wells)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">Naru (x_Naru)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">unknown owner</div></div>'
 
 
 f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA (Cassandra)</div><div class="desc">unknown owner</div></div>'
@@ -2511,7 +2511,7 @@ f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openM
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">ZODASH7 (szuffp)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc">CYFRUS ARTS (Wallace Wells)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">Naru (x_Naru)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc"></div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">unknown owner</div></div>'
 
 '  </div>'
 '</div>'
