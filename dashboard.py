@@ -555,7 +555,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 9745   # Oro actual
+puntaje_actual = 10520   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2592,7 +2592,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_38.png"
+nombre_imagen = "skull_meme_39.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2644,7 +2644,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            No juego Brawl, pero entendí
+            xd a la Umbrella si le queda
         </p>
 
     </div>
