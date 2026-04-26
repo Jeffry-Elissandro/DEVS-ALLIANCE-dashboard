@@ -555,7 +555,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15870   # Oro actual
+puntaje_actual = 16110   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -578,7 +578,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -679,6 +679,10 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
     </div>
     """,
@@ -1874,7 +1878,7 @@ img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
-img12 = img_base64("Imagen_para_testeos.png")
+img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
@@ -1891,7 +1895,7 @@ img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
-img29 = img_base64("29.png")
+img29 = img_base64("Imagen_para_testeos.png")
 img30 = img_base64("30.png")
 
 st.markdown(f"""
@@ -2013,7 +2017,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img12}">
-  <span>DISPONIBLE</span>
+  <span>Dark Swordsmans</span>
 </div>
 
 <div class="dev-card">
@@ -2072,13 +2076,13 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img12}"> 
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img24}"> 
+  <span>Leu' Name</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img12}">
-  <span>DISPONIBLE</span>
+  <img src="data:image/png;base64,{img25}">
+  <span>Dranze</span>
 </div>
 
 <div class="dev-card">
@@ -2097,7 +2101,7 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img12}">
+  <img src="data:image/png;base64,{img29}">
   <span>DISPONIBLE</span>
 </div>
 
@@ -2158,9 +2162,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Cesar7w7", "imagen": "28.png"},
-    {"nombre": "yo 456", "imagen": "16.png"},
     {"nombre": "DariuxMax", "imagen": "14.png"},
+    {"nombre": "Dark Swordsmans", "imagen": "12.png"},
+    {"nombre": "Leu' Name", "imagen": "24.png"},
+    {"nombre": "Dranze", "imagen": "25.png"},
 ]
 
 
