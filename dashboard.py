@@ -555,7 +555,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16110   # Oro actual
+puntaje_actual = 16855   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1895,7 +1895,7 @@ img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
-img29 = img_base64("Imagen_para_testeos.png")
+img29 = img_base64("29.png")
 img30 = img_base64("30.png")
 
 st.markdown(f"""
@@ -2102,7 +2102,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img29}">
-  <span>DISPONIBLE</span>
+  <span>Welcome to BrawlStar</span>
 </div>
 
 <div class="dev-card">
@@ -2162,10 +2162,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "DariuxMax", "imagen": "14.png"},
     {"nombre": "Dark Swordsmans", "imagen": "12.png"},
     {"nombre": "Leu' Name", "imagen": "24.png"},
     {"nombre": "Dranze", "imagen": "25.png"},
+    {"nombre": "Welcome to BrawlStar", "imagen": "29.png"},
 ]
 
 
