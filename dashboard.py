@@ -555,7 +555,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 13010   # Oro actual
+puntaje_actual = 15870   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1874,9 +1874,9 @@ img8 = img_base64("8.png")
 img9 = img_base64("9.png")
 img10 = img_base64("10.png")
 img11 = img_base64("11.png")
-img12 = img_base64("12.png")
+img12 = img_base64("Imagen_para_testeos.png")
 img13 = img_base64("13.png")
-img14 = img_base64("Imagen_para_testeos.png")
+img14 = img_base64("14.png")
 img15 = img_base64("15.png")
 img16 = img_base64("16.png")
 img17 = img_base64("17.png")
@@ -2013,7 +2013,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img12}">
-  <span>m4tth3w_kn</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2023,7 +2023,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img14}">
-  <span>DISPONIBLE</span>
+  <span>DariuxMax</span>
 </div>
 
 <div class="dev-card">
@@ -2072,13 +2072,13 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}"> 
-  <span>Peacock_mi_esposa</span>
+  <img src="data:image/png;base64,{img12}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img25}">
-  <span>MichiC@ch0ndo</span>
+  <img src="data:image/png;base64,{img12}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2097,8 +2097,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>Caterig miau</span>
+  <img src="data:image/png;base64,{img12}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2160,7 +2160,7 @@ nuevos_miembros = [
 
     {"nombre": "Cesar7w7", "imagen": "28.png"},
     {"nombre": "yo 456", "imagen": "16.png"},
-    {"nombre": "Caterig miau", "imagen": "29.png"},
+    {"nombre": "DariuxMax", "imagen": "14.png"},
 ]
 
 
@@ -2591,7 +2591,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_39.png"
+nombre_imagen = "skull_meme_40.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2643,7 +2643,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            xd a la Umbrella si le queda
+            todos lo pensamos
         </p>
 
     </div>
