@@ -143,7 +143,7 @@ st.set_page_config(page_title="DEV'S ALLIANCE", layout="wide")
 
 st.title("💎 DEV'S ALLIANCE – WEB OFICIAL")
 
-st.write("Análisis de actividad, daño, puntos y consistencia")
+st.write("CREATED BY CHESSDEV")
 
 
 
