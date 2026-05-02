@@ -211,7 +211,7 @@ def img_base64(path):
         return base64.b64encode(f.read()).decode("utf-8")
 
 miembros_destacados = [
-    {"img": "2.png", "score": "207M - 790 points", "name": "Lady_Navier"},
+    {"img": "2.png", "score": "207M - 790 points", "name": "⁠๑•Lady_Navier•⁠๑"},
     {"img": "3.png", "score": "495M - 770 points", "name": "CoinXY"},
     {"img": "6.png", "score": "304M - 760 points", "name": "angel vados"},
     {"img": "1.png", "score": "218M  - 760 points", "name": "CHESSDEV"},
@@ -557,7 +557,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15125   # Oro actual
+puntaje_actual = 15515   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1980,7 +1980,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img2}">
-  <span>Lady_Navier</span>
+  <span>⁠๑•Lady_Navier•⁠๑</span>
 </div>
 
 <div class="dev-card">
