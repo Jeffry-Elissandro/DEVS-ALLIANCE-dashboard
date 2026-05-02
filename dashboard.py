@@ -56,37 +56,37 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-{"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":9,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
+{"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
 {"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 68, "Poder": 0},
-{"Nombre":"MRchochox","Actividad":10,"Daño":1,"Puntos":7,"Consistencia":7, "Rango": "Especialista", "ID": "0000-00000", "Nivel": 65, "Poder": 0},
-{"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":7,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 0},
+{"Nombre":"MRchochox","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":7, "Rango": "Especialista", "ID": "0000-00000", "Nivel": 65, "Poder": 0},
+{"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 0},
 {"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 0},
-{"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":9,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Aesick4u","Actividad":10,"Daño":2,"Puntos":9,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 0},
-{"Nombre":"eduguti","Actividad":10,"Daño":5,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":7,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"PABLOX3","Actividad":10,"Daño":4,"Puntos":8,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":7,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"GxJxGxSx","Actividad":10,"Daño":2,"Puntos":6,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
-{"Nombre":"UnrealNat","Actividad":10,"Daño":4,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
-{"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":9,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Sir Lag","Actividad":10,"Daño":5,"Puntos":8,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"Emmy","Actividad":10,"Daño":2,"Puntos":6,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 70, "Poder": 0},
+{"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"Aesick4u","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 0},
+{"Nombre":"eduguti","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
+{"Nombre":"PABLOX3","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"GxJxGxSx","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
+{"Nombre":"UnrealNat","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
+{"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"Sir Lag","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
+{"Nombre":"Emmy","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 70, "Poder": 0},
 
-{"Nombre":"Kavioka","Actividad":10,"Daño":10,"Puntos":7,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
-{"Nombre":"crasyon","Actividad":10,"Daño":4,"Puntos":9,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"(Daniel's version)","Actividad":10,"Daño":4,"Puntos":6,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"lucixx","Actividad":10,"Daño":4,"Puntos":7,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 0},
-{"Nombre":"Angelg ANV","Actividad":10,"Daño":4,"Puntos":9,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 0},
-{"Nombre":"Kricked","Actividad":10,"Daño":10,"Puntos":6,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"Kavioka","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
+{"Nombre":"crasyon","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"(Daniel's version)","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
+{"Nombre":"lucixx","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 0},
+{"Nombre":"Angelg ANV","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 0},
+{"Nombre":"Kricked","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
 
-{"Nombre":"Dark Swordsmans","Actividad":10,"Daño":6,"Puntos":9,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Cesar7w7","Actividad":10,"Daño":2,"Puntos":8,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
-{"Nombre":"Welcome to BrawlStar","Actividad":10,"Daño":3,"Puntos":8,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"DariuxMax","Actividad":10,"Daño":9,"Puntos":8,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Leu' Name","Actividad":10,"Daño":2,"Puntos":8,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 0},
-{"Nombre":"yo 456","Actividad":10,"Daño":2,"Puntos":6,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"satoru","Actividad":10,"Daño":1,"Puntos":2,"Consistencia":2, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 0}
+{"Nombre":"Dark Swordsmans","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"Cesar7w7","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
+{"Nombre":"Welcome to BrawlStar","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
+{"Nombre":"DariuxMax","Actividad":10,"Daño":9,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"Leu' Name","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 0},
+{"Nombre":"yo 456","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
+{"Nombre":"satoru","Actividad":10,"Daño":1,"Puntos":3,"Consistencia":2, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 0}
 ]
 
 # ============================
@@ -681,10 +681,6 @@ components.html(
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1401,7 +1397,7 @@ components.html(f"""
         <br><br>
         La falta de cumplimiento de forma continua podrá derivar en la rotación del miembro.
         <br><br>
-        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia (osea opcional pe).
+        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia (osea opcional).
     </div>
 
     <div style="
