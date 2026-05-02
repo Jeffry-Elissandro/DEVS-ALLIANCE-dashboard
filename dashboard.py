@@ -66,7 +66,7 @@ data = [
 {"Nombre":"eduguti","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
 {"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
 {"Nombre":"PABLOX3","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
 {"Nombre":"GxJxGxSx","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
 {"Nombre":"UnrealNat","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
 {"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
@@ -78,7 +78,7 @@ data = [
 {"Nombre":"(Daniel's version)","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
 {"Nombre":"lucixx","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 0},
 {"Nombre":"Angelg ANV","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 0},
-{"Nombre":"Kricked","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"Kricked","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
 
 {"Nombre":"Dark Swordsmans","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
 {"Nombre":"Cesar7w7","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
