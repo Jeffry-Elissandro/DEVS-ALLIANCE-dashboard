@@ -557,7 +557,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16305   # Oro actual
+puntaje_actual = 18765   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1898,7 +1898,7 @@ img11 = img_base64("11.png")
 img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
-img15 = img_base64("15.png")
+img15 = img_base64("Imagen_para_testeos.png")
 img16 = img_base64("16.png")
 img17 = img_base64("17.png")
 img18 = img_base64("18.png")
@@ -2049,7 +2049,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>lucixx</span>
+  <span>DISPONILBE</span>
 </div>
 
 <div class="dev-card">
@@ -2058,8 +2058,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img17}">
-  <span>Kavioka</span>
+  <img src="data:image/png;base64,{img15}">
+  <span>DISPONILBE</span>
 </div>
 
 <div class="dev-card">
@@ -2098,8 +2098,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img25}">
-  <span>alexproxd98</span>
+  <img src="data:image/png;base64,{img15}">
+  <span>DISPONILBE</span>
 </div>
 
 <div class="dev-card">
@@ -2611,7 +2611,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_41.png"
+nombre_imagen = "skull_meme_42.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2663,7 +2663,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            solo lo encontré xd
+            
         </p>
 
     </div>
