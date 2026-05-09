@@ -196,133 +196,6 @@ st.divider()
 
 
 
-# ==============================
-# DESTACADOS DE TEMPORADA
-# ==============================
-
-
-
-
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
-
-miembros_destacados = [
-    {"img": "2.png", "score": "207M - 790 points", "name": "⁠๑•Lady_Navier•⁠๑"},
-    {"img": "3.png", "score": "495M - 770 points", "name": "CoinXY"},
-    {"img": "6.png", "score": "304M - 760 points", "name": "angel vados"},
-    {"img": "1.png", "score": "218M  - 760 points", "name": "CHESSDEV"},
-    {"img": "17.png", "score": "212M - 575 points", "name": "Kavioka"},
-]
-
-for miembro in miembros_destacados:
-    miembro["img_b64"] = img_base64(miembro["img"])
-
-members_html = "".join(
-    f"""
-    <div class="member">
-      <img src="data:image/png;base64,{m['img_b64']}">
-      <div class="score">{m['score']}</div>
-      <div class="name">{m['name']}</div>
-    </div>
-    """ for m in miembros_destacados
-)
-
-gif_chibi = img_base64("Filia_mini_celebrate.gif")
-
-html_code = f"""
-<style>
-
-.destacados-card {{
-  max-width:900px;
-  margin:60px auto;
-  padding:40px 20px;
-  background: radial-gradient(circle at top, #1a102d, #050505 80%);
-  border-radius:20px;
-  border:2px solid rgba(124,58,237,0.3);
-  box-shadow:0 0 40px rgba(124,58,237,0.3);
-  text-align:center;
-}}
-
-.destacados-title {{
-  font-size:34px;
-  font-weight:bold;
-  margin-bottom:10px;
-  color:#c084fc;
-  letter-spacing:2px;
-}}
-
-.destacados-sub {{
-  font-size:14px;
-  color:#a78bfa;
-  margin-bottom:30px;
-  opacity:0.8;
-}}
-
-.grid {{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:30px;
-}}
-
-.member {{
-  text-align:center;
-  transition:0.3s ease;
-}}
-
-.member img {{
-  width:110px;
-  height:110px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #a78bfa;
-  box-shadow:0 0 20px rgba(167,139,250,0.5);
-  margin-bottom:10px;
-  transition:0.3s ease;
-}}
-
-.member:hover img {{
-  transform:scale(1.08);
-  box-shadow:0 0 30px rgba(167,139,250,0.8);
-}}
-
-.score {{
-  font-size:14px;
-  font-weight:bold;
-  color:#e9d5ff;
-}}
-
-.name {{
-  font-size:13px;
-  color:#d8b4fe;
-}}
-
-</style>
-
-<div class="destacados-card">
-  <h3 class="destacados-title">💜 Miembros Destacados</h3>
-  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada | Semana #16 | 20/26 Abril</div>
-  <div class="grid">
-    {members_html}
-  </div>
-  <div style="margin-top:30px; text-align:center;">
-    <img src="data:image/gif;base64,{gif_chibi}" 
-         style="width:85%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
-  </div>
-</div>
-"""
-
-st.components.v1.html(html_code, height=1080, scrolling=False)
-
-st.divider()
-
-
-
-
 
 
 
@@ -557,7 +430,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 19695   # Oro actual
+puntaje_actual = 16005   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1477,12 +1350,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡Ha vuelto! Así es, me refiero a que ha vuelto 
-            el jefe de inmortales <strong>Critty Kitty</strong> 
-            a esta temporada de Gremios. Para muchos, la temporada 
-            más esperada y divertida de todas. Es solo en esta 
-            época en la que podemos hacer un verdadero daño exponencial... 
-            las expectativas se elevan y la emoción crece. ¿Te interesa saber más?   
+            ¡De vuelta a la semana con Marie Goku. Vamos a demostrar 
+            cómo se pelea con todo nuestro poder. ¿Quieres hacer 
+            más daño y demostrar tu verdadero potencial? ¿Te interesa saber más?    
             Si no conoces estas técnicas puedes ver los siguientes videos 
             por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
             Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
@@ -1504,7 +1374,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/VAL9efW_hHY"
+                    src="https://www.youtube.com/embed/w4BaaMptZ6I"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1521,12 +1391,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Para llegar a la cima primero debes conocer tu terreno. 
-            Si quieres hacer un verdadero daño exponencial, primero debes 
-            de conocer las técnicas y modificadores para aplicar 
-            en batalla. Si en verdad quieres conocer las ventajas de estos 
-            modificadores, puedes conocer más aquí... 
-            Video creado por: <strong>SiennaConHielo</strong> 💜
+            Si necesitas un atacante puedes probar con alguno de todos estos 
+            que han sido los mejores para esta temporada. 
+            Video creado por: <strong>Deny17S</strong> 💙
         </p>
 
         <div style="
@@ -1545,7 +1412,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/p4oruz478C8"
+                    src="https://www.youtube.com/embed/aHKgC75RqYc"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1562,16 +1429,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
-            Todos coincidimos en una cosa, y esa es que 
-            el equipo definitivo es este. Las Painwheel son la 
-            verdadera clave para hacer un daño exponencial, esto 
-            debido a sus modificadores y por sus combos de 
-            muchos golpes. Además, de ser una variante que tiene 
-            Blockbusters que conectan de maravilla y recargan 
-            realmente rápido. Si no me crees, observa estas jugadas 
-            que reflejan el valor real de una buena estrategia. 
-            Video creado por: <strong>AlannAx</strong> 💚
+            ¡No te pierdas! Si lo que necesitas es una guía paso a paso, puedes ver mi video en el que te explico 
+            la ventaja que puedes aprovechar de los modificadores en esta temporada.  
+            Video creado por: <strong>CHESSDEV</strong> 💚
         </p>
 
         <div style="
@@ -1590,7 +1450,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/Xfkj03jsJzY"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1603,7 +1463,7 @@ components.html(
 
     </div>
     """,
-    height=2630
+    height=2550
 
 )
 
@@ -1742,18 +1602,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_1.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/BUFFS</div>", unsafe_allow_html=True)
+    st.image("carta_marie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("Atacantes.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
+    st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_2.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/DEBUFS</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -1899,7 +1759,7 @@ img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
-img16 = img_base64("16.png")
+img16 = img_base64("Imagen_para_testeos.png")
 img17 = img_base64("17.png")
 img18 = img_base64("18.png")
 img19 = img_base64("19.png")
@@ -2054,7 +1914,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img16}">
-  <span>yo 456</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2084,7 +1944,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img22}">
-  <span>(Daniel's version)</span>
+  <span>Midodeku</span>
 </div>
 
 <div class="dev-card">
@@ -2611,7 +2471,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_42.png"
+nombre_imagen = "skull_meme_43.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2663,7 +2523,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            no encontré uno mejor, toca esperar para contenido de calidad
+            Oh no... 
         </p>
 
     </div>
