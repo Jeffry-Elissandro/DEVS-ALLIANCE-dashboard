@@ -430,7 +430,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 18295   # Oro actual
+puntaje_actual = 18935   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -3025,7 +3025,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/V2DwAi1Fjsw" 
+      <iframe src="https://www.youtube.com/embed/8-KWJCBdybI" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
