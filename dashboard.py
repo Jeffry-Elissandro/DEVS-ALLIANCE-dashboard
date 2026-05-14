@@ -56,37 +56,36 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-{"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1438649},
-{"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 68, "Poder": 0},
-{"Nombre":"MRchochox","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":7, "Rango": "Especialista", "ID": "0000-00000", "Nivel": 65, "Poder": 0},
-{"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 0},
-{"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 0},
-{"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Aesick4u","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 0},
-{"Nombre":"eduguti","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"PABLOX3","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"GxJxGxSx","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
-{"Nombre":"UnrealNat","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
-{"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Sir Lag","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"Emmy","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 70, "Poder": 0},
+{"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Líder", "ID":"0gd5-r41k7", "Nivel":80, "Poder":1438649},
+{"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Colíder", "ID":"0000-00000", "Nivel":68, "Poder":0},
+{"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":79, "Poder":0},
+{"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":66, "Poder":0},
+{"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"Aesick4u","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":79, "Poder":0},
+{"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango":"Miembro", "ID":"0000-00000", "Nivel":77, "Poder":0},
+{"Nombre":"PABLOX3","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango":"Miembro", "ID":"0000-00000", "Nivel":74, "Poder":0},
+{"Nombre":"UnrealNat","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":76, "Poder":0},
+{"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"Sir Lag","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":77, "Poder":0},
+{"Nombre":"Emmy","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
 
-{"Nombre":"Kavioka","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 76, "Poder": 0},
-{"Nombre":"crasyon","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"(Daniel's version)","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"lucixx","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 0},
-{"Nombre":"Angelg ANV","Actividad":10,"Daño":4,"Puntos":10,"Consistencia":8, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 0},
-{"Nombre":"Kricked","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
+{"Nombre":"crasyon","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"Angelg ANV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":73, "Poder":0},
+{"Nombre":"Kricked","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
 
-{"Nombre":"Dark Swordsmans","Actividad":10,"Daño":6,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Cesar7w7","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 0},
-{"Nombre":"Welcome to BrawlStar","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"DariuxMax","Actividad":10,"Daño":9,"Puntos":10,"Consistencia":9, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 0},
-{"Nombre":"Leu' Name","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":7, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 0},
-{"Nombre":"yo 456","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":6, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 0},
-{"Nombre":"satoru","Actividad":10,"Daño":1,"Puntos":3,"Consistencia":2, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 66, "Poder": 0}
+{"Nombre":"Dark Swordsmans","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"Cesar7w7","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":74, "Poder":0},
+{"Nombre":"Welcome to BrawlStar","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":9, "Rango":"Miembro", "ID":"0000-00000", "Nivel":77, "Poder":0},
+{"Nombre":"DariuxMax","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+
+{"Nombre":"/NAJIMI/","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
+{"Nombre":"black lagoon69","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{"Nombre":"Midodeku","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{"Nombre":"txmioka","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{"Nombre":"oancito:>","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":9, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0}
 ]
 
 # ============================
@@ -430,7 +429,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 18935   # Oro actual
+puntaje_actual = 10655   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -453,7 +452,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -548,16 +547,12 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
-
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -918,7 +913,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="RENDIMIENTOS ✒️ | Semana #16 | 20/26 Abril",
+    title="RENDIMIENTOS ✒️ | Semana #18 | 04/10 Mayo",
     width=ancho_grafica
 )
 
@@ -1350,12 +1345,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡De vuelta a la semana con Marie Goku. Vamos a demostrar 
-            cómo se pelea con todo nuestro poder. ¿Quieres hacer 
-            más daño y demostrar tu verdadero potencial? ¿Te interesa saber más?    
-            Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
-            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
+            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
+            debido a sus modificadores. Estos son complejos y requieren 
+            técnicas específicas para destacar en daño. ¿Te interesa saber más?  
+            Si no conoces estas técnicas puedes ver los siguientes videos  
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
+            Video creado por: <strong>AlannAx</strong> 💚
         </p>
 
         <div style="
@@ -1374,7 +1369,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/w4BaaMptZ6I"
+                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1391,9 +1386,8 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Si necesitas un atacante puedes probar con alguno de todos estos 
-            que han sido los mejores para esta temporada. 
-            Video creado por: <strong>Deny17S</strong> 💙
+            ¿Quieres más Variedad de equipos? 
+            Video creado por: <strong>Deny17S</strong> 🖤
         </p>
 
         <div style="
@@ -1412,7 +1406,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/aHKgC75RqYc"
+                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1429,9 +1423,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡No te pierdas! Si lo que necesitas es una guía paso a paso, puedes ver mi video en el que te explico 
-            la ventaja que puedes aprovechar de los modificadores en esta temporada.  
-            Video creado por: <strong>CHESSDEV</strong> 💚
+            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
+            fue divertido mientras duró.
+            Video creado por: <strong>RodirKW</strong> 🤍
         </p>
 
         <div style="
@@ -1450,7 +1444,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
+                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1463,7 +1457,7 @@ components.html(
 
     </div>
     """,
-    height=2550
+    height=2330
 
 )
 
@@ -1602,18 +1596,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/BUFFS</div>", unsafe_allow_html=True)
-    st.image("carta_marie.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO GRADUAL</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
+    st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/DEBUFS</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO BRUTO</div>", unsafe_allow_html=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -1747,7 +1741,7 @@ def img_base64(path):
 img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
-img4 = img_base64("4.png")
+img4 = img_base64("Imagen_para_testeos.png")
 img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
@@ -1759,7 +1753,7 @@ img12 = img_base64("12.png")
 img13 = img_base64("13.png")
 img14 = img_base64("14.png")
 img15 = img_base64("15.png")
-img16 = img_base64("Imagen_para_testeos.png")
+img16 = img_base64("16.png")
 img17 = img_base64("17.png")
 img18 = img_base64("18.png")
 img19 = img_base64("19.png")
@@ -1854,7 +1848,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img4}">
-  <span>MRchochox</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -1914,7 +1908,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img16}">
-  <span>DISPONIBLE</span>
+  <span>Cristianogar27</span>
 </div>
 
 <div class="dev-card">
@@ -1954,7 +1948,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}"> 
-  <span>Leu' Name</span>
+  <span>marilin_min</span>
 </div>
 
 <div class="dev-card">
@@ -2039,8 +2033,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "/NAJIMI/", "imagen": "17.png"},
-    {"nombre": "pancito:>", "imagen": "25.png"},
+    {"nombre": "Cristianogar27", "imagen": "16.png"},
+    {"nombre": "marilin_min:>", "imagen": "24.png"},
 ]
 
 
@@ -2471,7 +2465,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_43.png"
+nombre_imagen = "skull_meme_44.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2523,7 +2517,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            Oh no... 
+            XD
         </p>
 
     </div>
