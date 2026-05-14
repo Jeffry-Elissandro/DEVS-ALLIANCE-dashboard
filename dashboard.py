@@ -183,7 +183,7 @@ st.divider()
 
 
 # ==============================
-# Hoy no habrá Update (Oguri best character)
+# Hoy no habrá Update (Oguri best Uma)
 # ==============================
 
 
@@ -194,6 +194,132 @@ st.divider()
 
 
 
+
+
+
+# ==============================
+# DESTACADOS DE TEMPORADA / ÚLTIMA VERSIÓN
+# ==============================
+
+
+
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+miembros_destacados = [
+    {"img": "17.png", "score": "3.113B - 700 points", "name": "/NAJIMI/"},
+    {"img": "3.png", "score": "888M - 810 points", "name": "CoinXY"},
+    {"img": "12.png", "score": "513M - 830 points", "name": "Dark Swordsmans"},
+    {"img": "6.png", "score": "229M  - 830 points", "name": "angel vados"},
+    {"img": "20.png", "score": "939M - 760 points", "name": "eduguti"},
+]
+
+for miembro in miembros_destacados:
+    miembro["img_b64"] = img_base64(miembro["img"])
+
+members_html = "".join(
+    f"""
+    <div class="member">
+      <img src="data:image/png;base64,{m['img_b64']}">
+      <div class="score">{m['score']}</div>
+      <div class="name">{m['name']}</div>
+    </div>
+    """ for m in miembros_destacados
+)
+
+gif_chibi = img_base64("Filia_mini_celebrate.gif")
+
+html_code = f"""
+<style>
+
+.destacados-card {{
+  max-width:900px;
+  margin:60px auto;
+  padding:40px 20px;
+  background: radial-gradient(circle at top, #1a102d, #050505 80%);
+  border-radius:20px;
+  border:2px solid rgba(124,58,237,0.3);
+  box-shadow:0 0 40px rgba(124,58,237,0.3);
+  text-align:center;
+}}
+
+.destacados-title {{
+  font-size:34px;
+  font-weight:bold;
+  margin-bottom:10px;
+  color:#c084fc;
+  letter-spacing:2px;
+}}
+
+.destacados-sub {{
+  font-size:14px;
+  color:#a78bfa;
+  margin-bottom:30px;
+  opacity:0.8;
+}}
+
+.grid {{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}}
+
+.member {{
+  text-align:center;
+  transition:0.3s ease;
+}}
+
+.member img {{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #a78bfa;
+  box-shadow:0 0 20px rgba(167,139,250,0.5);
+  margin-bottom:10px;
+  transition:0.3s ease;
+}}
+
+.member:hover img {{
+  transform:scale(1.08);
+  box-shadow:0 0 30px rgba(167,139,250,0.8);
+}}
+
+.score {{
+  font-size:14px;
+  font-weight:bold;
+  color:#e9d5ff;
+}}
+
+.name {{
+  font-size:13px;
+  color:#d8b4fe;
+}}
+
+</style>
+
+<div class="destacados-card">
+  <h3 class="destacados-title">💜 Miembros Destacados</h3>
+  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada | Semana #16 | 20/26 Abril</div>
+  <div class="grid">
+    {members_html}
+  </div>
+  <div style="margin-top:30px; text-align:center;">
+    <img src="data:image/gif;base64,{gif_chibi}" 
+         style="width:85%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
+  </div>
+</div>
+"""
+
+st.components.v1.html(html_code, height=1080, scrolling=False)
+
+st.divider()
 
 
 
