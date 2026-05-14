@@ -306,7 +306,7 @@ html_code = f"""
 
 <div class="destacados-card">
   <h3 class="destacados-title">💜 Miembros Destacados</h3>
-  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada | Semana #16 | 20/26 Abril</div>
+  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada | Semana #18 | 04/10 Mayo</div>
   <div class="grid">
     {members_html}
   </div>
