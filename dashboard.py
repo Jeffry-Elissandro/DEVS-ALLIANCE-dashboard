@@ -216,7 +216,7 @@ miembros_destacados = [
     {"img": "3.png", "score": "888M - 810 points", "name": "CoinXY"},
     {"img": "12.png", "score": "513M - 830 points", "name": "Dark Swordsmans"},
     {"img": "6.png", "score": "229M  - 830 points", "name": "angel vados"},
-    {"img": "20.png", "score": "939M - 760 points", "name": "eduguti"},
+    {"img": "4.png", "score": "939M - 760 points", "name": "eduguti"},
 ]
 
 for miembro in miembros_destacados:
@@ -1867,7 +1867,7 @@ def img_base64(path):
 img1 = img_base64("1.png")
 img2 = img_base64("2.png")
 img3 = img_base64("3.png")
-img4 = img_base64("Imagen_para_testeos.png")
+img4 = img_base64("4.png")
 img5 = img_base64("5.png")
 img6 = img_base64("6.png")
 img7 = img_base64("7.png")
