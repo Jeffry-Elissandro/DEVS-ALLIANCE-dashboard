@@ -209,12 +209,12 @@ with open("Medallas.pdf", "rb") as file:
 st.markdown("""
 <style>
 
-/* FONDO GENERAL */
+
 .main {
     background-color: #050d18;
 }
 
-/* CONTENEDOR PRINCIPAL */
+
 .premium-section {
     background: linear-gradient(145deg, #071120, #0d1b2a, #10243d);
     border: 2px solid rgba(0, 180, 255, 0.35);
@@ -230,7 +230,7 @@ st.markdown("""
     animation: glowPulse 4s infinite ease-in-out;
 }
 
-/* EFECTO BRILLO */
+
 @keyframes glowPulse {
     0% {
         box-shadow:
@@ -249,7 +249,7 @@ st.markdown("""
     }
 }
 
-/* TITULO */
+
 .section-title {
     color: #d8ecff;
     font-size: 34px;
@@ -258,7 +258,7 @@ st.markdown("""
     text-shadow: 0 0 12px rgba(0,180,255,0.4);
 }
 
-/* SUBTEXTO */
+
 .section-subtitle {
     color: #9ec9ff;
     font-size: 16px;
@@ -266,7 +266,7 @@ st.markdown("""
     opacity: 0.9;
 }
 
-/* VIDEO */
+
 .video-container iframe {
     width: 100%;
     max-width: 900px;
@@ -276,7 +276,7 @@ st.markdown("""
     box-shadow: 0 0 25px rgba(0,180,255,0.18);
 }
 
-/* BOTÓN HTML */
+
 .button-group {
     margin-top: 28px;
     display: flex;
@@ -303,7 +303,7 @@ st.markdown("""
     background: linear-gradient(135deg, #1170ff, #00bfff);
 }
 
-/* BOTÓN DOWNLOAD STREAMLIT */
+
 .stDownloadButton {
     display: flex;
     justify-content: center;
@@ -340,9 +340,13 @@ st.markdown("""
 
     <div class="video-container">
         <iframe 
-            src="https://www.youtube.com/embed/aNyZGd1VZoI"
-            frameborder="0"
-            allowfullscreen>
+            width="900"
+        height="500"
+        src="https://www.youtube.com/embed/aNyZGd1VZoI?rel=0"
+        title="Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
         </iframe>
     </div>
 
