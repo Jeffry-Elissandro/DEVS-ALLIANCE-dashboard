@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -185,6 +185,194 @@ st.divider()
 # ==============================
 # Hoy no habrá Update (Oguri best Uma)
 # ==============================
+
+
+
+
+
+
+
+# ==============================
+# Video de Operaciones de Gremio
+# ==============================
+
+import streamlit as st
+
+# DEBE IR PRIMERO
+st.set_page_config(layout="wide")
+
+# Cargar PDF
+with open("Medallas.pdf", "rb") as file:
+    pdf_data = file.read()
+
+# CSS
+st.markdown("""
+<style>
+
+/* FONDO GENERAL */
+.main {
+    background-color: #050d18;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.premium-section {
+    background: linear-gradient(145deg, #071120, #0d1b2a, #10243d);
+    border: 2px solid rgba(0, 180, 255, 0.35);
+    border-radius: 22px;
+    padding: 35px;
+    margin: 35px auto;
+    width: 90%;
+    box-shadow:
+        0 0 12px rgba(0, 180, 255, 0.25),
+        0 0 35px rgba(0, 80, 180, 0.20),
+        inset 0 0 15px rgba(255,255,255,0.03);
+    text-align: center;
+    animation: glowPulse 4s infinite ease-in-out;
+}
+
+/* EFECTO BRILLO */
+@keyframes glowPulse {
+    0% {
+        box-shadow:
+            0 0 10px rgba(0,180,255,0.2),
+            0 0 20px rgba(0,80,180,0.15);
+    }
+    50% {
+        box-shadow:
+            0 0 18px rgba(0,180,255,0.35),
+            0 0 35px rgba(0,80,180,0.25);
+    }
+    100% {
+        box-shadow:
+            0 0 10px rgba(0,180,255,0.2),
+            0 0 20px rgba(0,80,180,0.15);
+    }
+}
+
+/* TITULO */
+.section-title {
+    color: #d8ecff;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 0 0 12px rgba(0,180,255,0.4);
+}
+
+/* SUBTEXTO */
+.section-subtitle {
+    color: #9ec9ff;
+    font-size: 16px;
+    margin-bottom: 28px;
+    opacity: 0.9;
+}
+
+/* VIDEO */
+.video-container iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 180, 255, 0.4);
+    box-shadow: 0 0 25px rgba(0,180,255,0.18);
+}
+
+/* BOTÓN HTML */
+.button-group {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.premium-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #0b3d91, #0a66c2);
+    color: white !important;
+    padding: 15px 30px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid rgba(0,180,255,0.45);
+    box-shadow: 0 0 15px rgba(0,180,255,0.25);
+    transition: all 0.35s ease;
+}
+
+.premium-btn:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 0 22px rgba(0,180,255,0.55);
+    background: linear-gradient(135deg, #1170ff, #00bfff);
+}
+
+/* BOTÓN DOWNLOAD STREAMLIT */
+.stDownloadButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.stDownloadButton button {
+    background: linear-gradient(135deg, #0b3d91, #0a66c2);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,180,255,0.45);
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(0,180,255,0.25);
+    transition: all 0.35s ease;
+}
+
+.stDownloadButton button:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 0 22px rgba(0,180,255,0.55);
+    background: linear-gradient(135deg, #1170ff, #00bfff);
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+# SECCIÓN PRINCIPAL
+st.markdown("""
+<div class="premium-section">
+
+    <div class="section-title">GREMIO</div>
+
+    <div class="section-subtitle">
+        Explora nuestro material para las operaciones del gremio.
+    </div>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/aNyZGd1VZoI"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="button-group">
+        <a class="premium-btn"
+           href="https://youtube.com/watch?v=aNyZGd1VZoI"
+           target="_blank">
+            ▶ Ver Video Completo
+        </a>
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+
+# DESCARGA DIRECTA PDF
+st.download_button(
+    label="⬇ Descargar PDF",
+    data=pdf_data,
+    file_name="Medallas.pdf",
+    mime="application/pdf"
+)
+
+
+st.divider ()
+
+
+
 
 
 
