@@ -318,6 +318,8 @@ st.markdown("""
     border: 1px solid rgba(255,255,255,0.25);
     font-weight: 600;
     font-size: 17px;
+    display: flex;
+    justify-content: center;
     box-shadow:
         0 0 12px rgba(255,255,255,0.12),
         0 0 22px rgba(255,255,255,0.06);
@@ -332,6 +334,8 @@ st.markdown("""
     border: 1px solid rgba(0,180,255,0.45);
     font-weight: 600;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
     box-shadow: 0 0 15px rgba(0,180,255,0.25);
     transition: all 0.35s ease;
 }
