@@ -333,19 +333,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.markdown("""            
-
-<div class="premium-section">
-
-    <div class="section-title">GREMIO</div>
-
-    <div class="section-subtitle">
-        Explora nuestro material para las operaciones del gremio.
-    </div>
-            
-</div>
-            
-""", unsafe_allow_html=True)
 
 st.video("https://www.youtube.com/watch?v=aNyZGd1VZoI")
 
