@@ -330,6 +330,11 @@ st.markdown("""
 
 </style>
 
+""", unsafe_allow_html=True)
+
+
+st.markdown("""            
+
 <div class="premium-section">
 
     <div class="section-title">GREMIO</div>
@@ -337,19 +342,14 @@ st.markdown("""
     <div class="section-subtitle">
         Explora nuestro material para las operaciones del gremio.
     </div>
+            
+</div>
+            
+""", unsafe_allow_html=True)
 
-    <div class="video-container">
-        <iframe 
-            width="900"
-        height="500"
-        src="https://www.youtube.com/embed/aNyZGd1VZoI?rel=0"
-        title="Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-        </iframe>
-    </div>
+st.video("https://www.youtube.com/watch?v=aNyZGd1VZoI")
 
+st.markdown("""            
     <div class="button-group">
         <a class="premium-btn"
            href="https://youtube.com/watch?v=aNyZGd1VZoI"
@@ -357,8 +357,6 @@ st.markdown("""
             ▶ Ver Video Completo
         </a>
     </div>
-
-</div>
 """, unsafe_allow_html=True)
 
 # DESCARGA DIRECTA PDF
