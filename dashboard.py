@@ -286,31 +286,42 @@ st.markdown("""
 }
 
 .premium-btn {
-    text-decoration: none;
-    background: linear-gradient(135deg, #0b3d91, #0a66c2);
-    color: white !important;
+    text-decoration: none !important;
+    background: linear-gradient(145deg, #050505, #121212, #1a1a1a);
+    color: #ffffff !important;
     padding: 16px 42px;
     border-radius: 16px;
     font-weight: 600;
     font-size: 17px;
-    border: 1px solid rgba(0,180,255,0.45);
-    box-shadow: 0 0 15px rgba(0,180,255,0.25);
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow:
+        0 0 12px rgba(255,255,255,0.12),
+        0 0 22px rgba(255,255,255,0.06);
     transition: all 0.35s ease;
 }
 
 .premium-btn:hover {
+    text-decoration: none !important;
     transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 0 22px rgba(0,180,255,0.55);
-    background: linear-gradient(135deg, #1170ff, #00bfff);
+    background: linear-gradient(145deg, #0b0b0b, #1f1f1f, #2a2a2a);
+    box-shadow:
+        0 0 18px rgba(255,255,255,0.35),
+        0 0 35px rgba(255,255,255,0.12);
 }
 
 
 .stDownloadButton {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: -72px;
-    margin-bottom: 35px;
+    background: linear-gradient(145deg, #050505, #121212, #1a1a1a);
+    color: white;
+    padding: 16px 42px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.25);
+    font-weight: 600;
+    font-size: 17px;
+    box-shadow:
+        0 0 12px rgba(255,255,255,0.12),
+        0 0 22px rgba(255,255,255,0.06);
+    transition: all 0.35s ease;
 }
 
 .stDownloadButton > div {
@@ -327,8 +338,10 @@ st.markdown("""
 
 .stDownloadButton button:hover {
     transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 0 22px rgba(0,180,255,0.55);
-    background: linear-gradient(135deg, #1170ff, #00bfff);
+    background: linear-gradient(145deg, #0b0b0b, #1f1f1f, #2a2a2a);
+    box-shadow:
+        0 0 18px rgba(255,255,255,0.35),
+        0 0 35px rgba(255,255,255,0.12);
 }
 
 </style>
@@ -344,7 +357,7 @@ st.markdown("""
         <a class="premium-btn"
            href="https://youtube.com/watch?v=aNyZGd1VZoI"
            target="_blank">
-            ▶ Ver Video Completo
+            ▶ Video Original
         </a>
     </div>
 """, unsafe_allow_html=True)
