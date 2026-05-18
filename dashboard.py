@@ -278,20 +278,21 @@ st.markdown("""
 
 
 .button-group {
-    margin-top: 28px;
+    margin-top: 18px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 18px;
 }
 
 .premium-btn {
     text-decoration: none;
     background: linear-gradient(135deg, #0b3d91, #0a66c2);
     color: white !important;
-    padding: 15px 30px;
-    border-radius: 14px;
+    padding: 16px 42px;
+    border-radius: 16px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     border: 1px solid rgba(0,180,255,0.45);
     box-shadow: 0 0 15px rgba(0,180,255,0.25);
     transition: all 0.35s ease;
@@ -307,10 +308,12 @@ st.markdown("""
 .stDownloadButton {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: -72px;
+    margin-bottom: 35px;
 }
 
-.stDownloadButton button {
+.stDownloadButton > div {
     background: linear-gradient(135deg, #0b3d91, #0a66c2);
     color: white;
     padding: 15px 30px;
