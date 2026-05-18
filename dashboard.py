@@ -329,10 +329,7 @@ st.markdown("""
 }
 
 </style>
-""", unsafe_allow_html=True)
 
-# SECCIÓN PRINCIPAL
-st.markdown("""
 <div class="premium-section">
 
     <div class="section-title">GREMIO</div>
