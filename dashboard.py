@@ -156,10 +156,10 @@ st.write("CREATED BY CHESSDEV")
 if st.session_state.mostrar_nota:
     st.warning(
         "📢 NOTA IMPORTANTE:\n\n"
-    "Este sistema evalúa el rendimiento de cada integrante en base a actividad, "
-    "daño, puntos y consistencia.\n"
-    "Los rangos se actualizan periódicamente y sirven como referencia interna "
-    "para la gestión de la alianza. Todas las noticias o avisos serán "
+    "Bienvenido a la web Oficial del gremio, aquí encontrarás más, "
+    "información, noticias, reglas y multimedias interesantes.\n"
+    "La web está diseñada principalmente para PC, la compatibilidad "
+    "con móviles sigue en trabajo. Todas las noticias o avisos serán "
      "informados por aquí. Ante dudas no temas en preguntar - CHESSDEV \n" 
     )
     if st.button("Entendido"):
