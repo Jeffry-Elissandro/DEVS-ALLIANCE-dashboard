@@ -2906,56 +2906,8 @@ def obtener_inicio_temporada():
 
 
 # ==============================
-# LIMPIEZA AUTOMÁTICA POR TEMPORADA
+# LIMPIEZA AUTOMÁTICA POR TEMPORADA / DISABLE 23/05/2026
 # ==============================
-
-def limpiar_por_temporada():
-    try:
-        with open("comentarios.txt", "r", encoding="utf-8") as f:
-            contenido = f.read()
-
-        # Unificar delimitadores
-        contenido = contenido.replace("===\n", "§§§")
-        bloques = contenido.split("§§§")
-
-        inicio_temporada = obtener_inicio_temporada()
-        inicio_siguiente = inicio_temporada + timedelta(days=7)
-
-        bloques_validos = []
-
-        for bloque in bloques:
-            bloque = bloque.strip()
-            if not bloque:
-                continue
-
-            if "Fecha:" in bloque:
-                lineas = bloque.split("\n")
-                fecha_texto = ""
-
-                for linea in lineas:
-                    if linea.startswith("Fecha:"):
-                        fecha_texto = linea.replace("Fecha:", "").strip()
-
-                if fecha_texto:
-                    try:
-                        fecha_comentario = datetime.strptime(
-                            fecha_texto,
-                            "%Y-%m-%d %H:%M:%S"
-                        )
-                    except:
-                        continue
-
-                    # Validar si pertenece a la temporada actual
-                    if inicio_temporada <= fecha_comentario < inicio_siguiente:
-                        bloques_validos.append(bloque + "\n===\n")
-
-        # Reescribir archivo solo con temporada actual
-        with open("comentarios.txt", "w", encoding="utf-8") as f:
-            for bloque in bloques_validos:
-                f.write(bloque)
-
-    except FileNotFoundError:
-        pass
 
 
 
@@ -3343,7 +3295,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/EZcdF6J4Hn0" 
+      <iframe src="https://www.youtube.com/embed/pwPrI09JCjE" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
