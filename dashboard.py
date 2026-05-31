@@ -1080,7 +1080,7 @@ import streamlit.components.v1 as components
 components.html(
     """
     <style>
-        .panel {{
+        .panel {
             max-width: 1000px;
             margin: 30px auto;
             padding: 30px;
@@ -1090,62 +1090,61 @@ components.html(
             box-shadow: 0 0 40px rgba(255, 75, 75, 0.25);
             font-family: 'Segoe UI', sans-serif;
             color: #e6e6e6;
-        }}
+        }
 
-        .header {{
+        .header {
             font-size: 22px;
             font-weight: bold;
             color: #ff4b4b;
             margin-bottom: 5px;
             letter-spacing: 1px;
-        }}
+        }
 
-        .divider {{
+        .divider {
             height: 2px;
             background: linear-gradient(to right, transparent, #ff4b4b, transparent);
             margin: 15px 0 25px 0;
-        }}
+        }
 
-        .section {{
+        .section {
             margin-bottom: 25px;
-        }}
+        }
 
-        .title {{
+        .title {
             font-size: 16px;
             font-weight: bold;
             color: #ff4b4b;
             margin-bottom: 8px;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }}
+        }
 
-        .text {{
+        .text {
             font-size: 15px;
             line-height: 1.6;
             color: #cccccc;
-        }}
+        }
 
-        .highlight {{
+        .highlight {
             color: #ffffff;
             font-weight: bold;
-        }}
+        }
 
-        .warning {{
+        .warning {
             margin-top: 20px;
             padding: 12px;
             border-left: 4px solid #ff4b4b;
             background: rgba(255, 75, 75, 0.08);
             font-size: 14px;
-        }}
+        }
 
-        .footer {{
+        .footer {
             margin-top: 25px;
             text-align: right;
             font-size: 13px;
             color: #888;
             letter-spacing: 1px;
-        }}
-            
+        }
     </style>
 
     <div class="panel">
