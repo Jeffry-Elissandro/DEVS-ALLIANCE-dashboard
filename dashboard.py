@@ -2282,8 +2282,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img24}"> 
-  <span>marilin_min</span>
+  <img src="data:image/png;base64,{img28}"> 
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
