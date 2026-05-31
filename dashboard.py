@@ -1075,7 +1075,7 @@ st.markdown("---")
 
 st.subheader("🎯 Objetivo Semanal de la Alianza")
 
-import streamlit.components.v1 as components
+import streamlit as st
 
 st.markdown(f"""
     <style>
