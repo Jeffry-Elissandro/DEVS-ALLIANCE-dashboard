@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -56,36 +56,11 @@ PESO_CONSISTENCIA = 0.15
 # (Edita aquí tus 30 jugadores)
 # ============================
 data = [
-{"Nombre":"CHESSDEV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Líder", "ID":"0gd5-r41k7", "Nivel":80, "Poder":1438649},
-{"Nombre":"Lady_Navier","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Colíder", "ID":"0000-00000", "Nivel":68, "Poder":0},
-{"Nombre":"KiLeo0217","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":79, "Poder":0},
-{"Nombre":"Rukawa_Noceda","Actividad":10,"Daño":2,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":66, "Poder":0},
-{"Nombre":"CoinXY","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"Aesick4u","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":79, "Poder":0},
-{"Nombre":"eduguti","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"batgirl","Actividad":10,"Daño":1,"Puntos":10,"Consistencia":6, "Rango":"Miembro", "ID":"0000-00000", "Nivel":77, "Poder":0},
-{"Nombre":"PABLOX3","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"void_13","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"GxJxGxSx","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":7, "Rango":"Miembro", "ID":"0000-00000", "Nivel":74, "Poder":0},
-{"Nombre":"UnrealNat","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":76, "Poder":0},
-{"Nombre":"angel vados","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"Sir Lag","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":77, "Poder":0},
-{"Nombre":"Emmy","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
-
-{"Nombre":"crasyon","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"Angelg ANV","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":73, "Poder":0},
-{"Nombre":"Kricked","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-
-{"Nombre":"Dark Swordsmans","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"Cesar7w7","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":74, "Poder":0},
-{"Nombre":"Welcome to BrawlStar","Actividad":10,"Daño":5,"Puntos":10,"Consistencia":9, "Rango":"Miembro", "ID":"0000-00000", "Nivel":77, "Poder":0},
-{"Nombre":"DariuxMax","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-
-{"Nombre":"/NAJIMI/","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":80, "Poder":0},
-{"Nombre":"black lagoon69","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
-{"Nombre":"Midodeku","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
-{"Nombre":"txmioka","Actividad":10,"Daño":3,"Puntos":10,"Consistencia":8, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
-{"Nombre":"oancito:>","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":9, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0}
+{"Nombre":"Test_1","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Líder", "ID":"0gd5-r41k7", "Nivel":80, "Poder":1580685},
+{"Nombre":"Test_2","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango":"Colíder", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{"Nombre":"Test_3","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango":"Especialista", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{"Nombre":"Test_4","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{"Nombre":"Test_5","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
 ]
 
 # ============================
@@ -385,6 +360,155 @@ st.divider ()
 
 
 
+#=========================
+#BACK TO THE SHOOW
+#=========================
+
+
+import streamlit as st
+import base64
+
+def img_base64(path):
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+admin_img = img_base64("Filia_confident.png")
+
+st.markdown("""
+<style>
+
+@keyframes pulseGlow {
+0% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
+50% { box-shadow: 0 0 35px rgba(34,211,238,0.6); }
+100% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
+}
+
+.return-note {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 18px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(34,211,238,0.10),
+        rgba(59,130,246,0.10)
+    );
+
+    border: 1px solid rgba(56,189,248,0.35);
+
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 28px;
+    align-items: center;
+
+    animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.return-note img {
+    width: 100%;
+    border-radius: 14px;
+    filter: drop-shadow(0 0 15px rgba(34,211,238,0.45));
+}
+
+.return-title {
+    color: #e0f2fe;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.return-text {
+    color: #cbd5f7;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.return-badge {
+    display: inline-block;
+    background: rgba(34,211,238,0.2);
+    border: 1px solid rgba(34,211,238,0.6);
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #67e8f9;
+    margin-bottom: 10px;
+}
+
+.return-footer {
+    margin-top: 10px;
+    color: #7dd3fc;
+    font-size: 14px;
+}
+
+.return-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: linear-gradient(90deg,#22d3ee,#3b82f6);
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.return-note {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+st.markdown(f"""
+<div class="return-note">
+
+<div>
+
+<div class="return-badge">● ADMIN ONLINE</div>
+
+<div class="return-title">Estamos de vuelta ⚡</div>
+
+<div class="return-text">
+Después de una breve pausa para atender varios proyectos y responsabilidades,
+he regresado oficialmente al control de la alianza y la administración del sitio.
+</div>
+
+<div class="return-text">
+A partir de ahora retomamos las actividades normales: actualizaciones,
+mejoras en la página, eventos del gremio y nuevos contenidos para la comunidad.
+</div>
+
+<div class="return-text">
+Gracias por la paciencia durante estos días.  
+Ahora volvemos con más energía y nuevas ideas para seguir creciendo.
+</div>
+
+<div class="return-footer">
+La administración ha vuelto al mando. Nos vemos en las actividades y próximos anuncios. 💚
+</div>
+
+<div class="return-button">Back in Command</div>
+
+</div>
+
+<div>
+<img src="data:image/png;base64,{admin_img}">
+</div>
+
+</div>
+""", unsafe_allow_html=True)
+
+
+
+
+
+st.divider()
+
 
 
 
@@ -398,122 +522,7 @@ st.divider ()
 
 
 
-import streamlit as st
-import base64
 
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8")
-
-miembros_destacados = [
-    {"img": "17.png", "score": "3.113B - 700 points", "name": "/NAJIMI/"},
-    {"img": "3.png", "score": "888M - 810 points", "name": "CoinXY"},
-    {"img": "12.png", "score": "513M - 830 points", "name": "Dark Swordsmans"},
-    {"img": "6.png", "score": "229M  - 830 points", "name": "angel vados"},
-    {"img": "4.png", "score": "939M - 760 points", "name": "eduguti"},
-]
-
-for miembro in miembros_destacados:
-    miembro["img_b64"] = img_base64(miembro["img"])
-
-members_html = "".join(
-    f"""
-    <div class="member">
-      <img src="data:image/png;base64,{m['img_b64']}">
-      <div class="score">{m['score']}</div>
-      <div class="name">{m['name']}</div>
-    </div>
-    """ for m in miembros_destacados
-)
-
-gif_chibi = img_base64("Filia_mini_celebrate.gif")
-
-html_code = f"""
-<style>
-
-.destacados-card {{
-  max-width:900px;
-  margin:60px auto;
-  padding:40px 20px;
-  background: radial-gradient(circle at top, #1a102d, #050505 80%);
-  border-radius:20px;
-  border:2px solid rgba(124,58,237,0.3);
-  box-shadow:0 0 40px rgba(124,58,237,0.3);
-  text-align:center;
-}}
-
-.destacados-title {{
-  font-size:34px;
-  font-weight:bold;
-  margin-bottom:10px;
-  color:#c084fc;
-  letter-spacing:2px;
-}}
-
-.destacados-sub {{
-  font-size:14px;
-  color:#a78bfa;
-  margin-bottom:30px;
-  opacity:0.8;
-}}
-
-.grid {{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:30px;
-}}
-
-.member {{
-  text-align:center;
-  transition:0.3s ease;
-}}
-
-.member img {{
-  width:110px;
-  height:110px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #a78bfa;
-  box-shadow:0 0 20px rgba(167,139,250,0.5);
-  margin-bottom:10px;
-  transition:0.3s ease;
-}}
-
-.member:hover img {{
-  transform:scale(1.08);
-  box-shadow:0 0 30px rgba(167,139,250,0.8);
-}}
-
-.score {{
-  font-size:14px;
-  font-weight:bold;
-  color:#e9d5ff;
-}}
-
-.name {{
-  font-size:13px;
-  color:#d8b4fe;
-}}
-
-</style>
-
-<div class="destacados-card">
-  <h3 class="destacados-title">💜 Miembros Destacados</h3>
-  <div class="destacados-sub">Reconocimiento colectivo al rendimiento de la temporada | Semana #18 | 04/10 Mayo</div>
-  <div class="grid">
-    {members_html}
-  </div>
-  <div style="margin-top:30px; text-align:center;">
-    <img src="data:image/gif;base64,{gif_chibi}" 
-         style="width:85%; max-width:300px; height:auto; border-radius:12px; opacity:0.95;">
-  </div>
-</div>
-"""
-
-st.components.v1.html(html_code, height=1080, scrolling=False)
-
-st.divider()
 
 
 
@@ -749,7 +758,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 19435   # Oro actual
+puntaje_actual = 16310   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -1140,21 +1149,21 @@ components.html(
 
     <div class="panel">
 
-        <div class="header">COMUNICADO OFICIAL</div>
+        <div class="header">¡Atentos!</div>
         <div class="divider"></div>
 
         <div class="section">
-            <div class="title">META ACTUAL</div>
+            <div class="title">Nuestra Meta Actual</div>
             <div class="text">
-                Recuperar el rendimiento del gremio y consolidarnos nuevamente entre los mejores.
+                Mantener el rendimiento del gremio y seguir consolidando el gremio de entre los mejores.
                 El objetivo inmediato es superar nuestra posición actual en el 
-                <span class="highlight">TOP 150</span>. 
+                <span class="highlight">TOP 110</span>. 
                 Este resultado depende directamente del cumplimiento de las normas establecidas.
             </div>
         </div>
 
         <div class="section">
-            <div class="title">ENFOQUE</div>
+            <div class="title">Enfoque</div>
             <div class="text">
                 Las reglas <span class="highlight">NO son opcionales</span>. Son la base del orden interno. 
                 Cualquier desacuerdo puede expresarse con respeto, pero el incumplimiento constante
@@ -1164,7 +1173,7 @@ components.html(
         </div>
 
         <div class="section">
-            <div class="title">DIRECTIVA</div>
+            <div class="title">Faltas</div>
             <div class="text">
                 Cumplir las reglas no es complicado. Lo que se espera es compromiso y responsabilidad. 
                 La administración no puede atender conflictos individuales constantes. 
@@ -1177,7 +1186,7 @@ components.html(
         </div>
 
         <div class="footer">
-            FIN DEL COMUNICADO
+            Edición 30/05/2026
         </div>
 
     </div>
@@ -1199,6 +1208,7 @@ st.caption(
 st.divider()
 
 
+st.subheader("🎖️ Resultados Semanales")
 
 
 # Filtro
@@ -1237,7 +1247,7 @@ fig = px.bar(
         "Consistencia": True,
         "Score": False
     },
-    title="RENDIMIENTOS ✒️ | Semana #18 | 04/10 Mayo",
+    title="RENDIMIENTOS ✒️ | Semana #?? | 00/00 Mayo",
     width=ancho_grafica
 )
 
@@ -1593,7 +1603,7 @@ components.html(f"""
         <br><br>
         La falta de cumplimiento de forma continua podrá derivar en la rotación del miembro.
         <br><br>
-        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia (osea opcional).
+        El daño total es únicamente una métrica de rendimiento y no condiciona la permanencia (o sea opcional).
     </div>
 
     <div style="
@@ -1631,7 +1641,7 @@ st.divider()
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("Tabla completa de miembros 🎯")
+st.subheader("Tabla de Stats ⚔️")
 st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
 
 
@@ -1669,12 +1679,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
-            debido a sus modificadores. Estos son complejos y requieren 
-            técnicas específicas para destacar en daño. ¿Te interesa saber más?  
-            Si no conoces estas técnicas puedes ver los siguientes videos  
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
-            Video creado por: <strong>AlannAx</strong> 💚
+            ¡De vuelta a la semana con Marie Goku. Vamos a demostrar 
+            cómo se pelea con todo nuestro poder. ¿Quieres hacer 
+            más daño y demostrar tu verdadero potencial? ¿Te interesa saber más?    
+            Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
+            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
         </p>
 
         <div style="
@@ -1693,7 +1703,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
+                    src="https://www.youtube.com/embed/w4BaaMptZ6I"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1710,8 +1720,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Quieres más Variedad de equipos? 
-            Video creado por: <strong>Deny17S</strong> 🖤
+            Si necesitas un atacante puedes probar con alguno de todos estos 
+            que han sido los mejores para esta temporada. 
+            Video creado por: <strong>Deny17S</strong> 💙
         </p>
 
         <div style="
@@ -1730,7 +1741,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
+                    src="https://www.youtube.com/embed/aHKgC75RqYc"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1747,9 +1758,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
-            fue divertido mientras duró.
-            Video creado por: <strong>RodirKW</strong> 🤍
+            ¡No te pierdas! Si lo que necesitas es una guía paso a paso, puedes ver mi video en el que te explico 
+            la ventaja que puedes aprovechar de los modificadores en esta temporada.  
+            Video creado por: <strong>CHESSDEV</strong> 💚
         </p>
 
         <div style="
@@ -1768,7 +1779,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
+                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1781,7 +1792,7 @@ components.html(
 
     </div>
     """,
-    height=2330
+    height=2550
 
 )
 
@@ -1920,18 +1931,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO GRADUAL</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/BUFFS</div>", unsafe_allow_html=True)
+    st.image("carta_marie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
-    st.image("carta_annie_marcada.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
+    st.image("carta_annie.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO BRUTO</div>", unsafe_allow_html=True)
-    st.image("carta_beowulf.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/DEBUFS</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2089,7 +2100,7 @@ img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
-img28 = img_base64("28.png")
+img28 = img_base64("Imagen_para_testeos.png")
 img29 = img_base64("29.png")
 img30 = img_base64("30.png")
 
@@ -2252,7 +2263,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img20}">
-  <span>Akytom</span>
+  <span>Fukua! >:D</span>
 </div>
 
 <div class="dev-card">
@@ -2262,7 +2273,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img22}">
-  <span>Midodeku</span>
+  <span>Zoheyyyyy</span>
 </div>
 
 <div class="dev-card">
@@ -2277,7 +2288,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img25}">
-  <span>pancito:></span>
+  <span>Speed HCK</span>
 </div>
 
 <div class="dev-card">
@@ -2292,12 +2303,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img28}"> 
-  <span>Cesar7w7</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>Welcome to BrawlStar</span>
+  <img src="data:image/png;base64,{img28}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2357,8 +2368,9 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "marilin_min:>", "imagen": "24.png"},
-    {"nombre": "Akytom", "imagen": "20.png"},
+    {"nombre": "Fukua! >:D", "imagen": "20.png"},
+    {"nombre": "Zoheyyyyy", "imagen": "22.png"},
+    {"nombre": "Speed HCK", "imagen": "25.png"},
 ]
 
 
@@ -2789,7 +2801,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_44.png"
+nombre_imagen = "skull_meme_45.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -2841,7 +2853,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            XD
+            😈(🥺)
         </p>
 
     </div>
@@ -2932,7 +2944,7 @@ import base64
 from datetime import datetime
 
 st.markdown("---")
-st.subheader("💬 Comentarios de la Alianza")
+st.subheader("OPINAR ✒️")
 
 nombre = st.text_input("Tu nombre o Nick")
 comentario = st.text_area("Escribe tu comentario")
@@ -2962,7 +2974,7 @@ st.divider()
 
 #Para mostrar los comentarios
 
-st.subheader("🌟 Opiniones de los Miembros")
+st.subheader("COMENTARIOS ✅")
 
 try:
     with open("comentarios.txt", "r", encoding="utf-8") as f:
@@ -3049,7 +3061,7 @@ except FileNotFoundError:
 
 st.divider()
 
-admin_pass = st.text_input("Clave admin", type="password")
+admin_pass = st.text_input("Access to ADMIN functions", type="password")
 
 if admin_pass == "CHESSCOM":
     st.success("Acceso concedido")
@@ -3245,16 +3257,6 @@ st.markdown("""
         transform: scale(1.08);
     }
 
-    /* Línea decorativa encapsulada */
-    #ultimo-video-section .ultimo-video-line {
-        width: 100px;
-        height: 4px;
-        background: linear-gradient(90deg, #00ffa3, #00c3ff);
-        margin: 0 auto 20px auto;
-        border-radius: 2px;
-        box-shadow: 0 0 15px rgba(0,255,163,0.8);
-        animation: pulse 2s infinite;
-    }
     @keyframes pulse {
         0% { transform: scaleX(1); opacity: 1; }
         50% { transform: scaleX(1.3); opacity: 0.6; }
@@ -3290,12 +3292,11 @@ st.markdown("""
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
-  <div class="ultimo-video-line"></div>
   <p style="font-size:1.2rem; margin-bottom:40px;">
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/JhwiwHqF2Lc" 
+      <iframe src="https://www.youtube.com/embed/_rj67HZ0C84" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
@@ -3342,9 +3343,9 @@ audio_trap = load_audio_base64("tipe_beat_web Trap Remix.mp3")
 audio_drill = load_audio_base64("tipe_beat_web Drill Remix.mp3")
 audio_techno = load_audio_base64("tipe_beat_web Techno Remix.mp3")
 
-st.markdown("## 🌿 Ambiente")
+st.markdown("## 🎵 MUSICS")
 
-with st.expander("🎧 Música ambiental (opcional)", expanded=False):
+with st.expander("Web's Music", expanded=False):
     st.caption("Activa el sonido si deseas una experiencia más inmersiva. Elige tu versión favorita:")
 
     components.html(f"""
@@ -3381,7 +3382,7 @@ with st.expander("🎧 Música ambiental (opcional)", expanded=False):
     </style>
 
     <div class="music-buttons">
-        <button class="btn-tipe" onclick="playMusic('{audio_tipe}')">Tipe beat</button>
+        <button class="btn-tipe" onclick="playMusic('{audio_tipe}')">Devs</button>
         <button class="btn-rnb" onclick="playMusic('{audio_rnb}')">R&B</button>
         <button class="btn-rnb2" onclick="playMusic('{audio_rnb2}')">R&B 2</button>
         <button class="btn-rock" onclick="playMusic('{audio_rock}')">Rock</button>
