@@ -1190,9 +1190,7 @@ components.html(
         </div>
 
     </div>
-    """,
-    height=855
-)
+    """, unsafe_allow_html=True)
 
 
 
