@@ -1075,9 +1075,10 @@ st.markdown("---")
 
 st.subheader("🎯 Objetivo Semanal de la Alianza")
 
-import streamlit as st
+import streamlit.components.v1 as components
 
-st.markdown(f"""
+components.html(
+    """
     <style>
         .panel {{
             max-width: 1000px;
@@ -1190,7 +1191,9 @@ st.markdown(f"""
         </div>
 
     </div>
-    """, unsafe_allow_html=True)
+    """,
+    height=855
+)
 
 
 
