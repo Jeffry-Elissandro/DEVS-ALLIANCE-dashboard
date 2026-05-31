@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = True
+WEB_TESTING = False
 
 def show_testing_badge():
     st.markdown("""
@@ -634,7 +634,7 @@ import streamlit as st
 import base64
 
 # Convertir imagen a base64
-with open("TOP_97.png", "rb") as f:
+with open("TOP_97_AGAIN.png", "rb") as f:
     data = base64.b64encode(f.read()).decode("utf-8")
 top_img = f"data:image/png;base64,{data}"
 
@@ -714,7 +714,7 @@ st.markdown(f"""
     margin-top:22px;
     text-shadow:0 0 12px rgba(250,204,21,0.6);
   ">
-    Este no es el final — Gracias
+    03/05/2026
   </p>
 
 </div>
@@ -758,7 +758,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 16310   # Oro actual
+puntaje_actual = 17825   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2278,7 +2278,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img23}">
-  <span>GxJxGxSx</span>
+  <span>GHOSTMW360</span>
 </div>
 
 <div class="dev-card">
@@ -2371,6 +2371,7 @@ nuevos_miembros = [
     {"nombre": "Fukua! >:D", "imagen": "20.png"},
     {"nombre": "Zoheyyyyy", "imagen": "22.png"},
     {"nombre": "Speed HCK", "imagen": "25.png"},
+    {"nombre": "GHOSTMW360", "imagen": "23.png"},
 ]
 
 
