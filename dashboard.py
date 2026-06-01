@@ -3289,7 +3289,7 @@ st.markdown("""
 # Sección encapsulada con partículas
 st.markdown("""
 <div id="ultimo-video-section">
-  <div class="new-badge">NEW</div>
+  <div class="new-badge">ESTRENO</div>
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
@@ -3297,7 +3297,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/_rj67HZ0C84" 
+      <iframe src="https://www.youtube.com/embed/Gp_XWdiWtCI" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
