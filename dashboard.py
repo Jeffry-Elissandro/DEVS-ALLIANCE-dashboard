@@ -63,39 +63,35 @@ PESO_DANO_CONSISTENCIA = 0.15
 # (Ingresar datos REALES)
 # ============================
 data = [
-{
-"Nombre": "Test_1",
-"Puntos_Reales": 500,
-"Dano_M": 200,
-"Rango": "Líder",
-"ID": "0000-00000",
-"Nivel": 80,
-"Poder": 1500000
-},
-
-
-{
-    "Nombre": "Test_2",
-    "Puntos_Reales": 350,
-    "Dano_M": 250,
-    "Rango": "Miembro",
-    "ID": "0000-00000",
-    "Nivel": 75,
-    "Poder": 1200000
-},
-
-
-{
-    "Nombre": "Test_3",
-    "Puntos_Reales": 830,
-    "Dano_M": 400,
-    "Rango": "Miembro",
-    "ID": "0000-00000",
-    "Nivel": 75,
-    "Poder": 1200000
-}
-
-
+{"Nombre": "CHESSDEV", "Puntos_Reales": 500, "Dano_M": 130, "Rango": "Líder", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "⁠๑•Lady_Navier•⁠๑", "Puntos_Reales": 755, "Dano_M": 619, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 69, "Poder": 000},#
+{"Nombre": "CoinXY", "Puntos_Reales": 780, "Dano_M": 607, "Rango": "Especialista", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "eduguti", "Puntos_Reales": 760, "Dano_M": 534, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "PABLOX3", "Puntos_Reales": 705, "Dano_M": 91, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "angel vados", "Puntos_Reales": 690, "Dano_M": 129, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "void_13", "Puntos_Reales": 760, "Dano_M": 1277, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "crasyon", "Puntos_Reales": 670, "Dano_M": 86, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "Rukawa_Noceda", "Puntos_Reales": 820, "Dano_M": 62, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 67, "Poder": 000},#
+{"Nombre": "UnrealNat", "Puntos_Reales": 560, "Dano_M": 166, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},#
+{"Nombre": "txmioka", "Puntos_Reales": 515, "Dano_M": 52, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},#
+{"Nombre": "Dark Swordsmans", "Puntos_Reales": 740, "Dano_M": 434, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "Emmy", "Puntos_Reales": 730, "Dano_M": 22, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},#
+{"Nombre": "DariuxMax", "Puntos_Reales": 755, "Dano_M": 247, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "black lagoon69", "Puntos_Reales": 665, "Dano_M": 721, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},#
+{"Nombre": "Cristianogar27", "Puntos_Reales": 670, "Dano_M": 113, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},#
+{"Nombre": "/NAJIMI/", "Puntos_Reales": 695, "Dano_M": 2608, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "Aesick4u", "Puntos_Reales": 515, "Dano_M": 31, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "KilLeo0217", "Puntos_Reales": 670, "Dano_M": 618, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "Fukua! >:D", "Puntos_Reales": 520, "Dano_M": 476, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},#
+{"Nombre": "Kricked", "Puntos_Reales": 645, "Dano_M": 76, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
+{"Nombre": "Zoheyyyyy", "Puntos_Reales": 725, "Dano_M": 1358, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 000},#
+{"Nombre": "GHOSTMW360", "Puntos_Reales": 540, "Dano_M": 60, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 000},#
+{"Nombre": "Speed HCK", "Puntos_Reales": 600, "Dano_M": 198, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},#
+{"Nombre": "Sir Lag", "Puntos_Reales": 575, "Dano_M": 156, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},#
+{"Nombre": "batgirl", "Puntos_Reales": 670, "Dano_M": 32, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},#
+{"Nombre": "SavageAlva", "Puntos_Reales": 310, "Dano_M": 596, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 000},#
+{"Nombre": "Lic.Andres gabriel", "Puntos_Reales": 310, "Dano_M": 69, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},#
+{"Nombre": "Angelg ANV", "Puntos_Reales": 700, "Dano_M": 207, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},#
 ]
 
 # ============================
