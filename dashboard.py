@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -43,71 +43,201 @@ if WEB_TESTING:
 
 
 
+
+
+
 # ============================
-# CONFIGURACIÓN
+
+# CONFIGURACIÓN DEL SISTEMA
+
 # ============================
-PESO_ACTIVIDAD = 0.30
-PESO_DANO = 0.25
-PESO_PUNTOS = 0.30
-PESO_CONSISTENCIA = 0.15
+
+META_PUNTOS = 500
+META_DANO = 200  # Millones
+
+PESO_PUNTOS_CONSISTENCIA = 0.85
+PESO_DANO_CONSISTENCIA = 0.15
 
 # ============================
 # DATOS DE LA ALIANZA
-# (Edita aquí tus 30 jugadores)
+# (Ingresar datos REALES)
 # ============================
 data = [
-{"Nombre":"Test_1","Actividad":10,"Daño":10,"Puntos":10,"Consistencia":10, "Rango":"Líder", "ID":"0gd5-r41k7", "Nivel":80, "Poder":1580685},
-{"Nombre":"Test_2","Actividad":9,"Daño":9,"Puntos":9,"Consistencia":9, "Rango":"Colíder", "ID":"0000-00000", "Nivel":70, "Poder":0},
-{"Nombre":"Test_3","Actividad":7,"Daño":7,"Puntos":7,"Consistencia":7, "Rango":"Especialista", "ID":"0000-00000", "Nivel":70, "Poder":0},
-{"Nombre":"Test_4","Actividad":5,"Daño":5,"Puntos":5,"Consistencia":5, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
-{"Nombre":"Test_5","Actividad":3,"Daño":3,"Puntos":3,"Consistencia":3, "Rango":"Miembro", "ID":"0000-00000", "Nivel":70, "Poder":0},
+{
+"Nombre": "Test_1",
+"Puntos_Reales": 500,
+"Dano_M": 200,
+"Rango": "Líder",
+"ID": "0000-00000",
+"Nivel": 80,
+"Poder": 1500000
+},
+
+
+{
+    "Nombre": "Test_2",
+    "Puntos_Reales": 350,
+    "Dano_M": 250,
+    "Rango": "Miembro",
+    "ID": "0000-00000",
+    "Nivel": 75,
+    "Poder": 1200000
+},
+
+
+{
+    "Nombre": "Test_3",
+    "Puntos_Reales": 830,
+    "Dano_M": 400,
+    "Rango": "Miembro",
+    "ID": "0000-00000",
+    "Nivel": 75,
+    "Poder": 1200000
+}
+
+
 ]
 
 # ============================
-# CÁLCULO DE RENDIMIENTO
+# DATAFRAME
 # ============================
 df = pd.DataFrame(data)
+# ============================
+# CÁLCULO DE NOTA DE PUNTOS
+# ============================
 
-df["Score"] = (
-    df["Actividad"] * PESO_ACTIVIDAD +
-    df["Daño"] * PESO_DANO +
-    df["Puntos"] * PESO_PUNTOS +
-    df["Consistencia"] * PESO_CONSISTENCIA
-) * 10  # Convertir a %
+def calcular_puntos(puntos):
+    return round(min(10, (puntos / META_PUNTOS) * 10), 2)
 
-# Clasificación
+# ============================
+
+# CÁLCULO DE NOTA DE DAÑO
+
+# ============================
+
+def calcular_dano(dano_m):
+    return round(min(10, (dano_m / META_DANO) * 10), 2)
+
+# ============================
+
+# CÁLCULO DE CONSISTENCIA
+
+# ============================
+
+def calcular_consistencia(nota_puntos, nota_dano):
+    consistencia = (
+nota_puntos * PESO_PUNTOS_CONSISTENCIA +
+nota_dano * PESO_DANO_CONSISTENCIA
+)
+
+
+    return round(consistencia, 2)
+
+
+# ============================
+
+# CÁLCULO DE SCORE GLOBAL
+
+# ============================
+
+def calcular_score(consistencia):
+    return round(consistencia * 10, 2)
+
+# ============================
+
+# CLASIFICACIÓN
+
+# ============================
+
 def clasificar(score):
+
+
     if score == 100:
         return "TOP"
+
     elif score >= 85:
         return "Elite"
+
     elif score >= 70:
         return "Sólido"
+
     elif score >= 50:
         return "Aceptable"
+
     else:
         return "Ineficiente"
 
 
-df["Estado"] = df["Score"].apply(clasificar)
+# ============================
 
-orden_estados = ["TOP", "Elite", "Sólido", "Aceptable", "Ineficiente"]
+# GENERACIÓN AUTOMÁTICA
 
-df["Estado"] = pd.Categorical(
-    df["Estado"],
-    categories=orden_estados,
-    ordered=True
+# ============================
+
+df["Puntos"] = df["Puntos_Reales"].apply(calcular_puntos)
+
+df["Daño"] = df["Dano_M"].apply(calcular_dano)
+
+df["Consistencia"] = df.apply(
+lambda row: calcular_consistencia(
+row["Puntos"],
+row["Daño"]
+),
+axis=1
 )
 
-df = df.sort_values(by=["Estado", "Score"], ascending=[True, False])
+df["Score"] = df["Consistencia"].apply(calcular_score)
+
+df["Estado"] = df["Score"].apply(clasificar)
+
+# ============================
+
+# ORDENAMIENTO
+
+# ============================
+
+orden_estados = [
+"TOP",
+"Elite",
+"Sólido",
+"Aceptable",
+"Ineficiente"
+]
+
+df["Estado"] = pd.Categorical(
+df["Estado"],
+categories=orden_estados,
+ordered=True
+)
+
+df = df.sort_values(
+by=["Estado", "Score"],
+ascending=[True, False]
+)
+
+
+#============================
+#COLORES DE ESTADO
+#============================
 
 color_map = {
-    "TOP": "#ffff26",          # amarillo
-    "Elite": "#1349dd",        # azul
-    "Sólido": "#0ff10f",       # verde
-    "Aceptable": "#e67e22",    # naranja
-    "Ineficiente": "#e74c3c"   # rojo oscuro
+"TOP": "#ffff26",
+"Elite": "#1349dd",
+"Sólido": "#0ff10f",
+"Aceptable": "#e67e22",
+"Ineficiente": "#e74c3c"
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ============================
@@ -1208,145 +1338,249 @@ st.caption(
 st.divider()
 
 
+
+
+
+
+
+
+
+# ============================
+# TÍTULO
+# ============================
+
 st.subheader("🎖️ Resultados Semanales")
 
+# ============================
+# FILTRO POR ESTADO
+# ============================
 
-# Filtro
 estado_filtrado = st.multiselect(
-    "Filtrar por estado:",
-    orden_estados,
-    default=orden_estados
+"Filtrar por estado:",
+orden_estados,
+default=orden_estados
 )
 
 df_filtrado = df[df["Estado"].isin(estado_filtrado)]
 
-# Ancho dinámico según cantidad de jugadores visibles
-ancho_grafica = max(1200, len(df_filtrado) * 120)
+# ============================
+# ANCHO DINÁMICO
+# ============================
 
-
+ancho_grafica = max(
+1200,
+len(df_filtrado) * 120
+)
 
 # ============================
-# GRÁFICA INTERACTIVA
+# GRÁFICA PRINCIPAL
 # ============================
+
 fig = px.bar(
-    df_filtrado,
-    x="Nombre",
-    y="Score",
-    color="Estado",
-    color_discrete_map=color_map,
-    text="Score",
-    hover_data={
-        "Estado": True,
-        "Rango": True,
-        "ID": True,
-        "Nivel": True,
-        "Poder": True,
-        "Actividad": True,
-        "Daño": True,
-        "Puntos": True,
-        "Consistencia": True,
-        "Score": False
-    },
-    title="RENDIMIENTOS ✒️ | Semana #?? | 00/00 Mayo",
-    width=ancho_grafica
+df_filtrado.sort_values("Score", ascending=False),
+
+
+x="Nombre",
+y="Score",
+
+color="Estado",
+color_discrete_map=color_map,
+
+text="Score",
+
+hover_data={
+    "Estado": True,
+    "Rango": True,
+    "ID": True,
+    "Nivel": True,
+    "Poder": True,
+
+    "Puntos_Reales": True,
+    "Dano_M": True,
+
+    "Puntos": True,
+    "Daño": True,
+    "Consistencia": True,
+
+    "Score": False
+},
+
+title="RENDIMIENTOS SEMANALES",
+
+width=ancho_grafica
+
+
 )
 
-fig_mobile = px.bar(
-    df_filtrado.sort_values("Score"),
-    x="Score",
-    y="Nombre",
-    color="Estado",
-    color_discrete_map=color_map,
-    orientation="h",
-    text="Score",
-    hover_data=[
-        "Estado", "Rango", "ID", "Nivel", "Poder",
-        "Actividad", "Daño", "Puntos", "Consistencia"
-    ],
-    title="Rendimiento de los miembros (Vista Mobile)",
-    height=max(600, len(df_filtrado) * 35)
+# ============================
+# FORMATO DE BARRAS
+# ============================
+
+fig.update_traces(
+texttemplate="%{text}%",
+textposition="outside"
 )
 
-fig_mobile.update_traces(texttemplate="%{text}%", textposition="outside")
-fig_mobile.update_layout(
-    xaxis_title="Rendimiento %",
-    yaxis_title="",
-    margin=dict(l=120, r=40, t=80, b=40)
-)
-
-# Selector de vista
-modo_mobile = st.checkbox("📱 Modo Mobile - vista optimizada (En Desarrollo)", value=False)
-
-
-st.info("➡️ En móvil, observa en horizontal la gráfica")
-
-
-fig.update_traces(texttemplate="%{text}%", textposition="outside")
+# ============================
+# DISEÑO GENERAL
+# ============================
 
 fig.update_layout(
-    xaxis_tickangle=-45,
-    yaxis_title="Rendimiento %",
-    height=600,
-    margin=dict(l=40, r=40, t=80, b=150),
-    xaxis=dict(
-        tickfont=dict(size=12),
-        automargin=True
-    )
+
+
+dragmode="pan",
+
+xaxis_tickangle=-45,
+
+yaxis_title="Rendimiento %",
+
+height=600,
+
+margin=dict(
+    l=40,
+    r=40,
+    t=80,
+    b=150
+),
+
+xaxis=dict(
+    tickfont=dict(size=12),
+    automargin=True
 )
 
-st.markdown(
-    """
-    <div style="overflow-x: auto; width: 100%;">
-    """,
-    unsafe_allow_html=True
+
 )
 
 # ============================
-# CONFIGURACIÓN DE PLOTLY
+# CONFIGURACIÓN PLOTLY
 # ============================
+
 plotly_config = {
-    "scrollZoom": False,        # ❌ desactiva zoom con scroll / touch
-    "displayModeBar": True,
-    "displaylogo": False,
-    "modeBarButtonsToRemove": [
-        "zoom2d",
-        "select2d",
-        "lasso2d",
-        "zoomIn2d",
-        "zoomOut2d",
-        "autoScale2d",
-        "resetScale2d"
-    ]
+
+
+"scrollZoom": False,
+
+"displayModeBar": True,
+
+"displaylogo": False,
+
+"modeBarButtonsToRemove": [
+
+    "zoom2d",
+    "select2d",
+    "lasso2d",
+
+    "zoomIn2d",
+    "zoomOut2d",
+
+    "autoScale2d",
+    "resetScale2d"
+]
+
+
 }
 
-fig.update_layout(dragmode="pan")
-
-fig.update_traces(texttemplate="%{text}%", textposition="outside")
-
-fig.update_layout(
-    dragmode="pan",            # ✅ PAN por defecto
-    xaxis_tickangle=-45,
-    yaxis_title="Rendimiento %",
-    height=600,
-    margin=dict(l=40, r=40, t=80, b=150)
-)
-
+# ============================
+# RENDERIZADO
+# ============================
 
 st.plotly_chart(
-    fig,
-    use_container_width=False,
-    key="grafica_rendimiento",
-    config=plotly_config
+fig,
+
+
+use_container_width=False,
+
+key="grafica_rendimiento",
+
+config=plotly_config
+
+
+)
+
+# ============================
+# VISTA MÓVIL
+# ============================
+
+st.divider()
+
+st.subheader("📱 Vista Mobile")
+
+fig_mobile = px.bar(
+
+
+df_filtrado.sort_values("Score"),
+
+x="Score",
+y="Nombre",
+
+orientation="h",
+
+color="Estado",
+color_discrete_map=color_map,
+
+text="Score",
+
+hover_data={
+
+    "Estado": True,
+    "Rango": True,
+    "ID": True,
+
+    "Nivel": True,
+    "Poder": True,
+
+    "Puntos_Reales": True,
+    "Dano_M": True,
+
+    "Puntos": True,
+    "Daño": True,
+    "Consistencia": True
+},
+
+title="Rendimiento de los miembros",
+
+height=max(
+    600,
+    len(df_filtrado) * 35
+)
+
+
+)
+
+fig_mobile.update_traces(
+texttemplate="%{text}%",
+textposition="outside"
+)
+
+fig_mobile.update_layout(
+
+
+xaxis_title="Rendimiento %",
+
+yaxis_title="",
+
+margin=dict(
+    l=120,
+    r=40,
+    t=80,
+    b=40
+)
+
+
+)
+
+st.plotly_chart(
+fig_mobile,
+use_container_width=True
 )
 
 
 
-st.markdown(
-    """
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+
+
+
+
+
 
 
 
@@ -1638,11 +1872,179 @@ components.html(f"""
 st.divider()
 
 
+
+
+
+
+
+
+
 # ============================
 # TABLA DE DATOS
 # ============================
-st.subheader("Tabla de Stats ⚔️")
-st.dataframe(df_filtrado.sort_values("Score", ascending=False), use_container_width=True)
+
+st.subheader("⚔️ Tabla de Estadísticas")
+
+# ============================
+# COLUMNAS A MOSTRAR
+# ============================
+
+columnas_tabla = [
+
+
+"Nombre",
+
+"Estado",
+"Score",
+
+"Puntos_Reales",
+"Dano_M",
+
+"Puntos",
+"Daño",
+"Consistencia",
+
+"Rango",
+"Nivel",
+"Poder",
+"ID"
+
+
+]
+
+# ============================
+# TABLA ORDENADA
+# ============================
+
+tabla_resultados = (
+df_filtrado[columnas_tabla]
+.sort_values(
+by="Score",
+ascending=False
+)
+.reset_index(drop=True)
+)
+
+# ============================
+# FORMATO VISUAL
+# ============================
+
+st.dataframe(
+
+
+tabla_resultados,
+
+use_container_width=True,
+
+column_config={
+
+    "Nombre": st.column_config.TextColumn(
+        "Jugador"
+    ),
+
+    "Estado": st.column_config.TextColumn(
+        "Estado"
+    ),
+
+    "Score": st.column_config.NumberColumn(
+        "Rendimiento %",
+        format="%.2f"
+    ),
+
+    "Puntos_Reales": st.column_config.NumberColumn(
+        "Puntos Reales",
+        format="%d"
+    ),
+
+    "Dano_M": st.column_config.NumberColumn(
+        "Daño (M)",
+        format="%.0f"
+    ),
+
+    "Puntos": st.column_config.NumberColumn(
+        "Nota Puntos",
+        format="%.2f"
+    ),
+
+    "Daño": st.column_config.NumberColumn(
+        "Nota Daño",
+        format="%.2f"
+    ),
+
+    "Consistencia": st.column_config.NumberColumn(
+        "Consistencia",
+        format="%.2f"
+    ),
+
+    "Nivel": st.column_config.NumberColumn(
+        "Nivel",
+        format="%d"
+    ),
+
+    "Poder": st.column_config.NumberColumn(
+        "Poder",
+        format="%d"
+    )
+}
+
+
+)
+
+# ============================
+# RESUMEN GENERAL
+# ============================
+
+st.divider()
+
+st.subheader("📊 Resumen")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric(
+"Jugadores",
+len(df_filtrado)
+)
+
+with col2:
+    st.metric(
+"TOP",
+len(df_filtrado[df_filtrado["Estado"] == "TOP"])
+)
+
+with col3:
+    st.metric(
+"Elite",
+len(df_filtrado[df_filtrado["Estado"] == "Elite"])
+)
+
+with col4:
+    promedio = round(
+df_filtrado["Score"].mean(),
+2
+)
+
+
+st.metric(
+    "Promedio General",
+    f"{promedio}%"
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Video Promocional DEVS
