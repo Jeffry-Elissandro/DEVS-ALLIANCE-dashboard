@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = True
+WEB_TESTING = False
 
 def show_testing_badge():
     st.markdown("""
@@ -3682,7 +3682,7 @@ st.markdown("""
 # Sección encapsulada con partículas
 st.markdown("""
 <div id="ultimo-video-section">
-  <div class="new-badge">ESTRENO</div>
+  <div class="new-badge">NEW</div>
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
