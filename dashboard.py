@@ -884,7 +884,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 18580   # Oro actual
+puntaje_actual = 10900   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -907,7 +907,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1002,16 +1002,13 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
 
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
     </div>
     """,
@@ -1401,7 +1398,7 @@ hover_data={
     "Score": False
 },
 
-title="RENDIMIENTOS SEMANALES",
+title="RENDIMIENTOS ✒️ | Semana #21 | 25/31 Mayo",
 
 width=ancho_grafica
 
@@ -2077,12 +2074,12 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡De vuelta a la semana con Marie Goku. Vamos a demostrar 
-            cómo se pelea con todo nuestro poder. ¿Quieres hacer 
-            más daño y demostrar tu verdadero potencial? ¿Te interesa saber más?    
-            Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
-            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
+            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
+            debido a sus modificadores. Estos son complejos y requieren 
+            técnicas específicas para destacar en daño. ¿Te interesa saber más?  
+            Si no conoces estas técnicas puedes ver los siguientes videos  
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
+            Video creado por: <strong>AlannAx</strong> 💚
         </p>
 
         <div style="
@@ -2101,7 +2098,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/w4BaaMptZ6I"
+                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2118,9 +2115,8 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Si necesitas un atacante puedes probar con alguno de todos estos 
-            que han sido los mejores para esta temporada. 
-            Video creado por: <strong>Deny17S</strong> 💙
+            ¿Quieres más Variedad de equipos? 
+            Video creado por: <strong>Deny17S</strong>🖤
         </p>
 
         <div style="
@@ -2139,7 +2135,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/aHKgC75RqYc"
+                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2156,9 +2152,9 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡No te pierdas! Si lo que necesitas es una guía paso a paso, puedes ver mi video en el que te explico 
-            la ventaja que puedes aprovechar de los modificadores en esta temporada.  
-            Video creado por: <strong>CHESSDEV</strong> 💚
+            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
+            fue divertido mientras duró.
+            Video creado por: <strong>RodirKW</strong> 🤍
         </p>
 
         <div style="
@@ -2177,7 +2173,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/XwXHEG6iJbE"
+                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2190,7 +2186,8 @@ components.html(
 
     </div>
     """,
-    height=2550
+    height=2330
+
 
 )
 
@@ -2329,18 +2326,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/BUFFS</div>", unsafe_allow_html=True)
-    st.image("carta_marie.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO GRADUAL</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE</div>", unsafe_allow_html=True)
-    st.image("carta_annie.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATAATACANTE/DAÑO ESTRATÉGICOCANTE</div>", unsafe_allow_html=True)
+    st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTE/DEBUFS</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO BRUTO</div>", unsafe_allow_html=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2676,7 +2673,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img23}">
-  <span>GHOSTMW360</span>
+  <span>Guill0tina</span>
 </div>
 
 <div class="dev-card">
@@ -2766,10 +2763,6 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "Fukua! >:D", "imagen": "20.png"},
-    {"nombre": "Zoheyyyyy", "imagen": "22.png"},
-    {"nombre": "Speed HCK", "imagen": "25.png"},
-    {"nombre": "GHOSTMW360", "imagen": "23.png"},
     {"nombre": "SavageAlva", "imagen": "28.png"},
     {"nombre": "Lic.Andres gabriel", "imagen": "29.png"},
 ]
@@ -3202,7 +3195,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_46.png"
+nombre_imagen = "skull_meme_47.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -3254,7 +3247,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            mi ídolo
+            :|
         </p>
 
     </div>
