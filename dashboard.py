@@ -884,7 +884,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10900   # Oro actual
+puntaje_actual = 15970   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2331,7 +2331,7 @@ with col1:
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATAATACANTE/DAÑO ESTRATÉGICOCANTE</div>", unsafe_allow_html=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
     st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
