@@ -491,149 +491,6 @@ st.divider ()
 #=========================
 
 
-import streamlit as st
-import base64
-
-def img_base64(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-admin_img = img_base64("Filia_confident.png")
-
-st.markdown("""
-<style>
-
-@keyframes pulseGlow {
-0% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
-50% { box-shadow: 0 0 35px rgba(34,211,238,0.6); }
-100% { box-shadow: 0 0 15px rgba(34,211,238,0.3); }
-}
-
-.return-note {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 18px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(34,211,238,0.10),
-        rgba(59,130,246,0.10)
-    );
-
-    border: 1px solid rgba(56,189,248,0.35);
-
-    display: grid;
-    grid-template-columns: 1fr 260px;
-    gap: 28px;
-    align-items: center;
-
-    animation: pulseGlow 3s infinite ease-in-out;
-}
-
-.return-note img {
-    width: 100%;
-    border-radius: 14px;
-    filter: drop-shadow(0 0 15px rgba(34,211,238,0.45));
-}
-
-.return-title {
-    color: #e0f2fe;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.return-text {
-    color: #cbd5f7;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-bottom: 14px;
-}
-
-.return-badge {
-    display: inline-block;
-    background: rgba(34,211,238,0.2);
-    border: 1px solid rgba(34,211,238,0.6);
-    padding: 4px 12px;
-    border-radius: 10px;
-    font-size: 13px;
-    color: #67e8f9;
-    margin-bottom: 10px;
-}
-
-.return-footer {
-    margin-top: 10px;
-    color: #7dd3fc;
-    font-size: 14px;
-}
-
-.return-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background: linear-gradient(90deg,#22d3ee,#3b82f6);
-    border-radius: 10px;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-.return-note {
-    grid-template-columns: 1fr;
-    text-align: center;
-}
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-
-st.markdown(f"""
-<div class="return-note">
-
-<div>
-
-<div class="return-badge">● ADMIN ONLINE</div>
-
-<div class="return-title">Estamos de vuelta ⚡</div>
-
-<div class="return-text">
-Después de una breve pausa para atender varios proyectos y responsabilidades,
-he regresado oficialmente al control de la alianza y la administración del sitio.
-</div>
-
-<div class="return-text">
-A partir de ahora retomamos las actividades normales: actualizaciones,
-mejoras en la página, eventos del gremio y nuevos contenidos para la comunidad.
-</div>
-
-<div class="return-text">
-Gracias por la paciencia durante estos días.  
-Ahora volvemos con más energía y nuevas ideas para seguir creciendo.
-</div>
-
-<div class="return-footer">
-La administración ha vuelto al mando. Nos vemos en las actividades y próximos anuncios. 💚
-</div>
-
-<div class="return-button">Back in Command</div>
-
-</div>
-
-<div>
-<img src="data:image/png;base64,{admin_img}">
-</div>
-
-</div>
-""", unsafe_allow_html=True)
-
-
-
-
-
-st.divider()
 
 
 
@@ -884,7 +741,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 15970   # Oro actual
+puntaje_actual = 20185   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -907,7 +764,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -1002,12 +859,16 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte es de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
 
     </div>
@@ -3683,7 +3544,7 @@ st.markdown("""
 # Sección encapsulada con partículas
 st.markdown("""
 <div id="ultimo-video-section">
-  <div class="new-badge">NEW</div>
+  <div class="new-badge">ESTRENO</div>
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
@@ -3691,7 +3552,7 @@ st.markdown("""
       Aquí te comparto mi más reciente novedad en el canal.
   </p>
   <div class="ultimo-video-box">
-      <iframe src="https://www.youtube.com/embed/Gp_XWdiWtCI" 
+      <iframe src="https://www.youtube.com/embed/qrRS86QDUJ0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
