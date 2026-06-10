@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -63,35 +63,36 @@ PESO_DANO_CONSISTENCIA = 0.15
 # (Ingresar datos REALES)
 # ============================
 data = [
-{"Nombre": "CHESSDEV", "Puntos_Reales": 500, "Dano_M": 130, "Rango": "Líder", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "⁠๑•Lady_Navier•⁠๑", "Puntos_Reales": 755, "Dano_M": 619, "Rango": "Colíder", "ID": "0000-00000", "Nivel": 69, "Poder": 000},#
-{"Nombre": "CoinXY", "Puntos_Reales": 780, "Dano_M": 607, "Rango": "Especialista", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "eduguti", "Puntos_Reales": 760, "Dano_M": 534, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "PABLOX3", "Puntos_Reales": 705, "Dano_M": 91, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "angel vados", "Puntos_Reales": 690, "Dano_M": 129, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "void_13", "Puntos_Reales": 760, "Dano_M": 1277, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "crasyon", "Puntos_Reales": 670, "Dano_M": 86, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "Rukawa_Noceda", "Puntos_Reales": 820, "Dano_M": 62, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 67, "Poder": 000},#
-{"Nombre": "UnrealNat", "Puntos_Reales": 560, "Dano_M": 166, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},#
-{"Nombre": "txmioka", "Puntos_Reales": 515, "Dano_M": 52, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},#
-{"Nombre": "Dark Swordsmans", "Puntos_Reales": 740, "Dano_M": 434, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "Emmy", "Puntos_Reales": 730, "Dano_M": 22, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},#
-{"Nombre": "DariuxMax", "Puntos_Reales": 755, "Dano_M": 247, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "black lagoon69", "Puntos_Reales": 665, "Dano_M": 721, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},#
-{"Nombre": "Cristianogar27", "Puntos_Reales": 670, "Dano_M": 113, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 74, "Poder": 000},#
-{"Nombre": "/NAJIMI/", "Puntos_Reales": 695, "Dano_M": 2608, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "Aesick4u", "Puntos_Reales": 515, "Dano_M": 31, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "KilLeo0217", "Puntos_Reales": 670, "Dano_M": 618, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "Fukua! >:D", "Puntos_Reales": 520, "Dano_M": 476, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 79, "Poder": 000},#
-{"Nombre": "Kricked", "Puntos_Reales": 645, "Dano_M": 76, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 80, "Poder": 000},#
-{"Nombre": "Zoheyyyyy", "Puntos_Reales": 725, "Dano_M": 1358, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 71, "Poder": 000},#
-{"Nombre": "GHOSTMW360", "Puntos_Reales": 540, "Dano_M": 60, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 000},#
-{"Nombre": "Speed HCK", "Puntos_Reales": 600, "Dano_M": 198, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},#
-{"Nombre": "Sir Lag", "Puntos_Reales": 575, "Dano_M": 156, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 77, "Poder": 000},#
-{"Nombre": "batgirl", "Puntos_Reales": 670, "Dano_M": 32, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 78, "Poder": 000},#
-{"Nombre": "SavageAlva", "Puntos_Reales": 310, "Dano_M": 596, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 68, "Poder": 000},#
-{"Nombre": "Lic.Andres gabriel", "Puntos_Reales": 310, "Dano_M": 69, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 72, "Poder": 000},#
-{"Nombre": "Angelg ANV", "Puntos_Reales": 700, "Dano_M": 207, "Rango": "Miembro", "ID": "0000-00000", "Nivel": 73, "Poder": 000},#
+{"Nombre": "CHESSDEV", "Puntos_Reales": 760, "Dano_M": 24, "Rango": "Líder", "ID": "0gd5-r41k7", "Nivel": 80, "Poder": 1647341},#
+{"Nombre": "⁠๑•Lady_Navier•⁠๑", "Puntos_Reales": 765, "Dano_M": 172, "Rango": "Colíder", "ID": "50is-suxy9", "Nivel": 70, "Poder": 1023860},#
+{"Nombre": "CoinXY", "Puntos_Reales": 810, "Dano_M": 419, "Rango": "Especialista", "ID": "0y4p-7uf8h", "Nivel": 80, "Poder": 4761157},#
+{"Nombre": "eduguti", "Puntos_Reales": 640, "Dano_M": 75, "Rango": "Miembro", "ID": "39lc-lxje9", "Nivel": 80, "Poder": 1939864},#
+{"Nombre": "PABLOX3", "Puntos_Reales": 730, "Dano_M": 25, "Rango": "Miembro", "ID": "511l-mcucl", "Nivel": 80, "Poder": 1419912},#
+{"Nombre": "angel vados", "Puntos_Reales": 710, "Dano_M": 210, "Rango": "Miembro", "ID": "4xnj-c05oo", "Nivel": 80, "Poder": 2481609},#
+{"Nombre": "void_13", "Puntos_Reales": 620, "Dano_M": 885, "Rango": "Miembro", "ID": "2vo3-sr32g", "Nivel": 80, "Poder": 2111358},#
+{"Nombre": "crasyon", "Puntos_Reales": 760, "Dano_M": 91, "Rango": "Miembro", "ID": "3xua-gniy6", "Nivel": 80, "Poder": 3239709},#
+{"Nombre": "Rukawa_Noceda", "Puntos_Reales": 770, "Dano_M": 26, "Rango": "Miembro", "ID": "3ywo-gqkkn", "Nivel": 68, "Poder": 1058514},#
+{"Nombre": "UnrealNat", "Puntos_Reales": 555, "Dano_M": 64, "Rango": "Miembro", "ID": "0idw-cb7xv", "Nivel": 77, "Poder": 1745821},#
+{"Nombre": "Dark Swordsmans", "Puntos_Reales": 760, "Dano_M": 118, "Rango": "Miembro", "ID": "1m10-mw0ur", "Nivel": 80, "Poder": 2219757},#
+{"Nombre": "Emmy", "Puntos_Reales": 660, "Dano_M": 21, "Rango": "Miembro", "ID": "3blm-t0ltl", "Nivel": 72, "Poder": 758770},#
+{"Nombre": "DariuxMax", "Puntos_Reales": 760, "Dano_M": 233, "Rango": "Miembro", "ID": "0xqj-csjgj", "Nivel": 80, "Poder": 3086080},#
+{"Nombre": "black lagoon69", "Puntos_Reales": 660, "Dano_M": 146, "Rango": "Miembro", "ID": "4iu7-dxzm0", "Nivel": 79, "Poder": 2238433},#
+{"Nombre": "Cristianogar27", "Puntos_Reales": 705, "Dano_M": 20, "Rango": "Miembro", "ID": "397t-9lhsv", "Nivel": 75, "Poder": 893698},#
+{"Nombre": "/NAJIMI/", "Puntos_Reales": 805, "Dano_M": 1022, "Rango": "Miembro", "ID": "1k28-b5x76", "Nivel": 80, "Poder": 1930652},#
+{"Nombre": "Aesick4u", "Puntos_Reales": 530, "Dano_M": 66, "Rango": "Miembro", "ID": "4sjt-1crby", "Nivel": 80, "Poder": 1542771},#
+{"Nombre": "KilLeo0217", "Puntos_Reales": 615, "Dano_M": 297, "Rango": "Miembro", "ID": "4prw-barhu", "Nivel": 80, "Poder": 2838459},#
+{"Nombre": "Kricked", "Puntos_Reales": 655, "Dano_M": 86, "Rango": "Miembro", "ID": "4llx-odozy", "Nivel": 80, "Poder": 2035023},#
+{"Nombre": "Zoheyyyyy", "Puntos_Reales": 770, "Dano_M": 111, "Rango": "Miembro", "ID": "4cti-9yzcq", "Nivel": 74, "Poder": 543915},#
+{"Nombre": "Speed HCK", "Puntos_Reales": 675, "Dano_M": 125, "Rango": "Miembro", "ID": "03yl-bzddj", "Nivel": 75, "Poder": 643017},#
+{"Nombre": "Sir Lag", "Puntos_Reales": 550, "Dano_M": 69, "Rango": "Miembro", "ID": "33lt-7ghq8", "Nivel": 77, "Poder": 1685407},#
+{"Nombre": "batgirl", "Puntos_Reales": 620, "Dano_M": 22, "Rango": "Miembro", "ID": "44q9-d4pzh", "Nivel": 78, "Poder": 1984778},#
+{"Nombre": "SavageAlva", "Puntos_Reales": 650, "Dano_M": 3355, "Rango": "Miembro", "ID": "2uie-trhys", "Nivel": 71, "Poder": 360555},#
+{"Nombre": "Angelg ANV", "Puntos_Reales": 640, "Dano_M": 44, "Rango": "Miembro", "ID": "1dm5-26y31", "Nivel": 73, "Poder": 834244},#
+{"Nombre": "xCub0_", "Puntos_Reales": 660, "Dano_M": 19, "Rango": "Miembro", "ID": "0hgr-v1yv6", "Nivel": 66, "Poder": 212029},#
+{"Nombre": "GxJxGxSx", "Puntos_Reales": 590, "Dano_M": 21, "Rango": "Miembro", "ID": "3wrr-jsn6h", "Nivel": 75, "Poder": 890656},#
+{"Nombre": "ashxsje", "Puntos_Reales": 565, "Dano_M": 8, "Rango": "Miembro", "ID": "30nb-cpten", "Nivel": 71, "Poder": 569526},#
+{"Nombre": "Blitz", "Puntos_Reales": 520, "Dano_M": 240, "Rango": "Miembro", "ID": "3nog-9dy9e", "Nivel": 80, "Poder": 1764243},#
+{"Nombre": "Cassbeuxx", "Puntos_Reales": 470, "Dano_M": 26, "Rango": "Miembro", "ID": "016h-1pxsl", "Nivel": 77, "Poder": 3080015},#
 ]
 
 # ============================
@@ -261,7 +262,7 @@ if st.session_state.mostrar_nota:
     "información, noticias, reglas y multimedias interesantes.\n"
     "La web está diseñada principalmente para PC, la compatibilidad "
     "con móviles sigue en trabajo. Todas las noticias o avisos serán "
-     "informados por aquí. Ante dudas no temas en preguntar - CHESSDEV \n" 
+     "informados por aquí. Ante dudas no temas en preguntar.\n" 
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
@@ -467,13 +468,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# DESCARGA DIRECTA PDF
-st.download_button(
-    label="⬇ Descargar PDF",
-    data=pdf_data,
-    file_name="Medallas.pdf",
-    mime="application/pdf"
-)
 
 
 st.divider ()
@@ -741,7 +735,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 20185   # Oro actual
+puntaje_actual = 9440   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -764,7 +758,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "test_gif.gif" #Para el gif
+file_path = "Skull_characteres.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -859,16 +853,13 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte fue de gran ayuda
+            {porcentaje}% completado — cada aporte es de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
 
-        <div style="text-align:center;">
-      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
-    </div>
 
 
     </div>
@@ -1175,7 +1166,7 @@ components.html(
 
     </div>
     """,
-    height=855
+    height=875
 )
 
 
@@ -1259,7 +1250,7 @@ hover_data={
     "Score": False
 },
 
-title="RENDIMIENTOS ✒️ | Semana #21 | 25/31 Mayo",
+title="RENDIMIENTOS ✒️ | Semana #22 | 01/07 Junio",
 
 width=ancho_grafica
 
@@ -1705,7 +1696,7 @@ components.html(f"""
     </div>
 
 </div>
-""", height=950)
+""", height=965)
 
 
 
@@ -1737,7 +1728,7 @@ st.divider()
 # TABLA DE DATOS
 # ============================
 
-st.subheader("⚔️ Tabla de Estadísticas")
+st.subheader("⚔️ Tabla de Stats")
 
 # ============================
 # COLUMNAS A MOSTRAR
@@ -1844,47 +1835,6 @@ column_config={
 
 )
 
-# ============================
-# RESUMEN GENERAL
-# ============================
-
-st.divider()
-
-st.subheader("📊 Resumen")
-
-col1, col2, col3, col4 = st.columns(4)
-
-with col1:
-    st.metric(
-"Jugadores",
-len(df_filtrado)
-)
-
-with col2:
-    st.metric(
-"TOP",
-len(df_filtrado[df_filtrado["Estado"] == "TOP"])
-)
-
-with col3:
-    st.metric(
-"Elite",
-len(df_filtrado[df_filtrado["Estado"] == "Elite"])
-)
-
-with col4:
-    promedio = round(
-df_filtrado["Score"].mean(),
-2
-)
-
-
-st.metric(
-    "Promedio General",
-    f"{promedio}%"
-)
-
-
 
 
 
@@ -1935,11 +1885,99 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
-            debido a sus modificadores. Estos son complejos y requieren 
-            técnicas específicas para destacar en daño. ¿Te interesa saber más?  
-            Si no conoces estas técnicas puedes ver los siguientes videos  
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
+            ¡Ha vuelto! Así es, me refiero a que ha vuelto 
+            el jefe de inmortales <strong>Critty Kitty</strong> 
+            a esta temporada de Gremios. Para muchos, la temporada 
+            más esperada y divertida de todas. Es solo en esta 
+            época en la que podemos hacer un verdadero daño exponencial... 
+            las expectativas se elevan y la emoción crece. ¿Te interesa saber más?
+            Si no conoces estas técnicas puedes ver los siguientes videos 
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
+            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/VAL9efW_hHY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            Para llegar a la cima primero debes conocer tu terreno. 
+            Si quieres hacer un verdadero daño exponencial, primero debes 
+            de conocer las técnicas y modificadores para aplicar 
+            en batalla. Si en verdad quieres conocer las ventajas de estos 
+            modificadores, puedes conocer más aquí... 
+            Video creado por: <strong>SiennaConHielo</strong> 💜
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/p4oruz478C8"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            Todos coincidimos en una cosa, y esa es que 
+            el equipo definitivo es este. Las Painwheel son la 
+            verdadera clave para hacer un daño exponencial, esto 
+            debido a sus modificadores y por sus combos de 
+            muchos golpes. Además, de ser una variante que tiene 
+            Blockbusters que conectan de maravilla y recargan 
+            realmente rápido. Si no me crees, observa estas jugadas 
+            que reflejan el valor real de una buena estrategia. 
             Video creado por: <strong>AlannAx</strong> 💚
         </p>
 
@@ -1959,82 +1997,7 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="border-radius:12px;"
-                ></iframe>
-            </div>
-        </div>
-
-        <p style="
-            color:#cccccc;
-            max-width:800px;
-            margin:0 auto 30px auto;
-            font-size:16px;
-            line-height:1.6;
-        ">
-            ¿Quieres más Variedad de equipos? 
-            Video creado por: <strong>Deny17S</strong>🖤
-        </p>
-
-        <div style="
-            display:flex;
-            justify-content:center;
-            margin-bottom:40px;
-        ">
-            <div style="
-                border:4px solid #ff4b4b;
-                border-radius:16px;
-                padding:10px;
-                max-width:900px;
-                width:100%;
-                box-shadow:0 0 20px rgba(255,75,75,0.6);
-            ">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="border-radius:12px;"
-                ></iframe>
-            </div>
-        </div>
-
-        <p style="
-            color:#cccccc;
-            max-width:800px;
-            margin:0 auto 30px auto;
-            font-size:16px;
-            line-height:1.6;
-        ">
-            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
-            fue divertido mientras duró.
-            Video creado por: <strong>RodirKW</strong> 🤍
-        </p>
-
-        <div style="
-            display:flex;
-            justify-content:center;
-            margin-bottom:40px;
-        ">
-            <div style="
-                border:4px solid #ff4b4b;
-                border-radius:16px;
-                padding:10px;
-                max-width:900px;
-                width:100%;
-                box-shadow:0 0 20px rgba(255,75,75,0.6);
-            ">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
+                    src="https://www.youtube.com/embed/Xfkj03jsJzY"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2047,8 +2010,7 @@ components.html(
 
     </div>
     """,
-    height=2330
-
+    height=2630
 
 )
 
@@ -2187,18 +2149,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO GRADUAL</div>", unsafe_allow_html=True)
-    st.image("carta_fukua.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.image("Soportes_1.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
-    st.image("carta_annie_marcada.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
+    st.image("Atacantes.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO BRUTO</div>", unsafe_allow_html=True)
-    st.image("carta_beowulf.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
+    st.image("Soportes_2.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2519,7 +2481,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img20}">
-  <span>Fukua! >:D</span>
+  <span>xCub0_</span>
 </div>
 
 <div class="dev-card">
@@ -2534,12 +2496,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img23}">
-  <span>Guill0tina</span>
+  <span>Blitz</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img24}"> 
-  <span>Susodicha2000</span>
+  <span>ashxsje</span>
 </div>
 
 <div class="dev-card">
@@ -2564,7 +2526,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img29}">
-  <span>Lic.Andres gabriel</span>
+  <span>Cassbeuxx</span>
 </div>
 
 <div class="dev-card">
@@ -2624,9 +2586,10 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "SavageAlva", "imagen": "28.png"},
-    {"nombre": "Lic.Andres gabriel", "imagen": "29.png"},
-    {"nombre": "Susodicha2000", "imagen": "24.png"},
+    {"nombre": "xCub0_", "imagen": "20.png"},
+    {"nombre": "Blitz", "imagen": "23.png"},
+    {"nombre": "ashxsje", "imagen": "24.png"},
+    {"nombre": "Cassbeuxx", "imagen": "29.png"},
 ]
 
 
@@ -3109,7 +3072,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            cheezburgr 👍
+            mi situación actual: 
         </p>
 
     </div>
