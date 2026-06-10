@@ -735,7 +735,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 9440   # Oro actual
+puntaje_actual = 10030   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2778,6 +2778,10 @@ img15 = img_base64("fn_umbrella.png")
 img16 = img_base64("fn_fukua.png")
 img17 = img_base64("fn_annie.png")
 img18 = img_base64("fn_marie.png")
+img19 = img_base64("fn_feng.png")
+img20 = img_base64("fn_minette.png")
+img21 = img_base64("fn_braindrain.png")
+img22 = img_base64("fn_aeon.png")
 
 # ==============================
 # CSS (CORREGIDO)
@@ -2902,44 +2906,52 @@ html = (
 '<div class="slider">'
 '  <div class="slide-track">'
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA (Cassandra)</div><div class="desc">Sel Beilschmidt (LadyNoireSel)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}" onclick="openModal(data:image/png;base64,{img2}, PEACOCK"><div class="title">PEACOCK (Patricia)</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}" onclick="openModal(data:image/png;base64,{img3}, NADIA (MS.) FORTUNE"><div class="title">NADIA "MS." FORTUNE</div><div class="desc">★彡BEETLE (zhukotlan)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}" onclick="openModal(data:image/png;base64,{img4}, DOUBLE"><div class="title">DOUBLE (Agatha)</div><div class="desc">Sel Beilschmidt (LadyNoireSel)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}" onclick="openModal(data:image/png;base64,{img5}, FILIA"><div class="title">FILIA</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}" onclick="openModal(data:image/png;base64,{img6}, PARASOUL"><div class="title">PARASOUL</div><div class="desc">sunsunny31</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}" onclick="openModal(data:image/png;base64,{img7}, VALENTINE"><div class="title">VALENTINE</div><div class="desc">Maxuw (Maxuww·ela)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}" onclick="openModal(data:image/png;base64,{img8}, SQUIGLY"><div class="title">SQUIGLY (Sienna Contiello)</div><div class="desc">Eddy The Fox (eddythefox)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}" onclick="openModal(data:image/png;base64,{img9}, BIGBAND"><div class="title">BIGBAND (Ben Birdland)</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openModal(data:image/png;base64,{img10}, PAINWHEEL"><div class="title">PAINWHEEL (Carol)</div><div class="desc">ミク (skullgirls47)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc">✿ ۪ 𝙁𝘶𝘳̫𝘪𝘯𝙖 🫐ᩙ: (lunatt0971)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc">VIRUs (G0dnix)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc">Hall !(MeARandom)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">BLACK DAHLIA</div><div class="desc">BLACK DAHLIA-ARCHIVE</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA (Cassandra)</div><div class="desc">Karla Magallanes (karlamagallanes6pcta)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}" onclick="openModal(data:image/png;base64,{img2}, PEACOCK"><div class="title">PEACOCK (Patricia)</div><div class="desc">AVIUnit (AVI_Unit)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}" onclick="openModal(data:image/png;base64,{img3}, NADIA (MS.) FORTUNE"><div class="title">NADIA "MS." FORTUNE</div><div class="desc">Kitxe (kitxe_icons)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}" onclick="openModal(data:image/png;base64,{img4}, DOUBLE"><div class="title">DOUBLE (Agatha)</div><div class="desc">Arturo Solórzano (vegettaarturo3)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}" onclick="openModal(data:image/png;base64,{img5}, FILIA"><div class="title">FILIA</div><div class="desc">Victor Hugo (SeoShizune)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}" onclick="openModal(data:image/png;base64,{img6}, PARASOUL"><div class="title">PARASOUL</div><div class="desc">Keiscarlet (Keiscarlet)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}" onclick="openModal(data:image/png;base64,{img7}, VALENTINE"><div class="title">VALENTINE</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}" onclick="openModal(data:image/png;base64,{img8}, SQUIGLY"><div class="title">SQUIGLY (Sienna Contiello)</div><div class="desc">ᴇʟʏ (cursedlust)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}" onclick="openModal(data:image/png;base64,{img9}, BIGBAND"><div class="title">BIGBAND (Ben Birdland)</div><div class="desc">minashashiny882</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openModal(data:image/png;base64,{img10}, PAINWHEEL"><div class="title">PAINWHEEL (Carol)</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc">Mendez Dkz (cherrito_11)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc">YORUICHI (shihooin)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc">Kuraine (ImKuraine)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">BLACK DAHLIA</div><div class="desc">Kitxe (kitxe_icons)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">RolySparda (dantesparda0091)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Blazey (Blazeyolo</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc">Sophie (cacaohuetesouyeaaq12)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img19}" onclick="openModal(data:image/png;base64,{img19}, FENG"><div class="title">FENG</div><div class="desc">Mr Krugger (isaacherediagarcia07)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img20}" onclick="openModal(data:image/png;base64,{img20}, MINETTE"><div class="title">MINETTE</div><div class="desc">marco aurelio (marcosombrasso)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img21}" onclick="openModal(data:image/png;base64,{img21}, BRAIN DRAIN"><div class="title">BRAIN DRAIN</div><div class="desc">Sel Beilschmidt (LadyNoireSel)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img22}" onclick="openModal(data:image/png;base64,{img22}, AEON"><div class="title">AEON</div><div class="desc">unknown owner</div></div>'
 
 
-f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA (Cassandra)</div><div class="desc">Sel Beilschmidt (LadyNoireSel)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img2}" onclick="openModal(data:image/png;base64,{img2}, PEACOCK"><div class="title">PEACOCK (Patricia)</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img3}" onclick="openModal(data:image/png;base64,{img3}, NADIA (MS.) FORTUNE"><div class="title">NADIA "MS." FORTUNE</div><div class="desc">★彡BEETLE (zhukotlan)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img4}" onclick="openModal(data:image/png;base64,{img4}, DOUBLE"><div class="title">DOUBLE (Agatha)</div><div class="desc">Sel Beilschmidt (LadyNoireSel)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img5}" onclick="openModal(data:image/png;base64,{img5}, FILIA"><div class="title">FILIA</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img6}" onclick="openModal(data:image/png;base64,{img6}, PARASOUL"><div class="title">PARASOUL</div><div class="desc">sunsunny31</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img7}" onclick="openModal(data:image/png;base64,{img7}, VALENTINE"><div class="title">VALENTINE</div><div class="desc">Maxuw (Maxuww·ela)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img8}" onclick="openModal(data:image/png;base64,{img8}, SQUIGLY"><div class="title">SQUIGLY (Sienna Contiello)</div><div class="desc">Eddy The Fox (eddythefox)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img9}" onclick="openModal(data:image/png;base64,{img9}, BIGBAND"><div class="title">BIGBAND (Ben Birdland)</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openModal(data:image/png;base64,{img10}, PAINWHEEL"><div class="title">PAINWHEEL (Carol)</div><div class="desc">ミク (skullgirls47)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc">✿ ۪ 𝙁𝘶𝘳̫𝘪𝘯𝙖 🫐ᩙ: (lunatt0971)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc">VIRUs (G0dnix)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc">Hall !(MeARandom)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">BLACK DAHLIA</div><div class="desc">BLACK DAHLIA-ARCHIVE</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img1}" onclick="openModal(data:image/png;base64,{img1}, CEREBELLA")><div class="title">CEREBELLA (Cassandra)</div><div class="desc">Karla Magallanes (karlamagallanes6pcta)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img2}" onclick="openModal(data:image/png;base64,{img2}, PEACOCK"><div class="title">PEACOCK (Patricia)</div><div class="desc">AVIUnit (AVI_Unit)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img3}" onclick="openModal(data:image/png;base64,{img3}, NADIA (MS.) FORTUNE"><div class="title">NADIA "MS." FORTUNE</div><div class="desc">Kitxe (kitxe_icons)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img4}" onclick="openModal(data:image/png;base64,{img4}, DOUBLE"><div class="title">DOUBLE (Agatha)</div><div class="desc">Arturo Solórzano (vegettaarturo3)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img5}" onclick="openModal(data:image/png;base64,{img5}, FILIA"><div class="title">FILIA</div><div class="desc">Victor Hugo (SeoShizune)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img6}" onclick="openModal(data:image/png;base64,{img6}, PARASOUL"><div class="title">PARASOUL</div><div class="desc">Keiscarlet (Keiscarlet)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img7}" onclick="openModal(data:image/png;base64,{img7}, VALENTINE"><div class="title">VALENTINE</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img8}" onclick="openModal(data:image/png;base64,{img8}, SQUIGLY"><div class="title">SQUIGLY (Sienna Contiello)</div><div class="desc">ᴇʟʏ (cursedlust)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img9}" onclick="openModal(data:image/png;base64,{img9}, BIGBAND"><div class="title">BIGBAND (Ben Birdland)</div><div class="desc">minashashiny882</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img10}" onclick="openModal(data:image/png;base64,{img10}, PAINWHEEL"><div class="title">PAINWHEEL (Carol)</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img11}" onclick="openModal(data:image/png;base64,{img11}, BEOWULF"><div class="title">BEOWULF</div><div class="desc">Mendez Dkz (cherrito_11)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img12}" onclick="openModal(data:image/png;base64,{img12}, ELIZA"><div class="title">ELIZA</div><div class="desc">YORUICHI (shihooin)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img13}" onclick="openModal(data:image/png;base64,{img13}, ROBO FORTUNE"><div class="title">ROBO FORTUNE</div><div class="desc">Kuraine (ImKuraine)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img14}" onclick="openModal(data:image/png;base64,{img14}, DAHLIA"><div class="title">BLACK DAHLIA</div><div class="desc">Kitxe (kitxe_icons)</div></div>'
 f'    <div class="slide"><img src="data:image/png;base64,{img15}" onclick="openModal(data:image/png;base64,{img15}, UMBRELLA"><div class="title">UMBRELLA</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc">unknown owner</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">RolySparda (dantesparda0091)</div></div>'
-f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">Blazey (Blazeyolo</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img16}" onclick="openModal(data:image/png;base64,{img16}, FUKUA"><div class="title">FUKUA</div><div class="desc">Sophie (cacaohuetesouyeaaq12)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img17}" onclick="openModal(data:image/png;base64,{img17}, ANNIE"><div class="title">ANNIE</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img18}" onclick="openModal(data:image/png;base64,{img18}, MARIE"><div class="title">MARIE</div><div class="desc">unknown owner</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img19}" onclick="openModal(data:image/png;base64,{img19}, FENG"><div class="title">FENG</div><div class="desc">Mr Krugger (isaacherediagarcia07)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img20}" onclick="openModal(data:image/png;base64,{img20}, MINETTE"><div class="title">MINETTE</div><div class="desc">marco aurelio (marcosombrasso)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img21}" onclick="openModal(data:image/png;base64,{img21}, BRAIN DRAIN"><div class="title">BRAIN DRAIN</div><div class="desc">Sel Beilschmidt (LadyNoireSel)</div></div>'
+f'    <div class="slide"><img src="data:image/png;base64,{img22}" onclick="openModal(data:image/png;base64,{img22}, AEON"><div class="title">AEON</div><div class="desc">unknown owner</div></div>'
 
 '  </div>'
 '</div>'
