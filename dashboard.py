@@ -3020,7 +3020,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_48.png"
+nombre_imagen = "skull_meme_49.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
