@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -735,7 +735,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 10030   # Oro actual
+puntaje_actual = 19505   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -853,12 +853,16 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte es de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
+
+        <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
 
 
@@ -2313,7 +2317,7 @@ img19 = img_base64("19.png")
 img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
-img23 = img_base64("23.png")
+img23 = img_base64("Imagen_para_testeos.png")
 img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
@@ -2496,7 +2500,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img23}">
-  <span>Blitz</span>
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2525,8 +2529,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img29}">
-  <span>Cassbeuxx</span>
+  <img src="data:image/png;base64,{img23}">
+  <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
@@ -2586,10 +2590,7 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "xCub0_", "imagen": "20.png"},
-    {"nombre": "Blitz", "imagen": "23.png"},
     {"nombre": "ashxsje", "imagen": "24.png"},
-    {"nombre": "Cassbeuxx", "imagen": "29.png"},
 ]
 
 
@@ -3519,7 +3520,7 @@ st.markdown("""
 # Sección encapsulada con partículas
 st.markdown("""
 <div id="ultimo-video-section">
-  <div class="new-badge">ESTRENO</div>
+  <div class="new-badge">NEW</div>
   <h2 class="ultimo-video-title">
       Mi <span>Último Video</span>
   </h2>
