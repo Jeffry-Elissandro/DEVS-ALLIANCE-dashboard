@@ -2416,7 +2416,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img7}">
-  <span>void_13</span>
+  <span>AlejandroUkyo</span>
 </div>
 
 <div class="dev-card">
@@ -2451,7 +2451,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img14}">
-  <span>DariuxMax</span>
+  <span>shotito_todoroki</span>
 </div>
 
 <div class="dev-card">
@@ -2506,12 +2506,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img25}">
-  <span>Speed HCK</span>
+  <span>monkey D. tenshi</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img26}">
-  <span>Sir Lag</span>
+  <span>Catering miau</span>
 </div>
 
 <div class="dev-card">
@@ -2521,7 +2521,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img28}"> 
-  <span>SavageAlva</span>
+  <span>haruko ICSN</span>
 </div>
 
 <div class="dev-card">
@@ -2530,8 +2530,8 @@ gap:14px;
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img30}">
-  <span>Angelg ANV</span>
+  <img src="data:image/png;base64,{img23}">
+  <span>DISPONIBLE</span>
 </div>
 
 
@@ -2586,7 +2586,11 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "ashxsje", "imagen": "24.png"},
+    {"nombre": "AlejandroUkyo", "imagen": "7.png"},
+    {"nombre": "shotito_todoroki", "imagen": "14.png"},
+    {"nombre": "monkey D. tenshi", "imagen": "25.png"},
+    {"nombre": "Catering miau", "imagen": "26.png"},
+    {"nombre": "haruko ICSN", "imagen": "28.png"},
 ]
 
 
