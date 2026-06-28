@@ -735,7 +735,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 4615   # Oro actual
+puntaje_actual = 17170   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -758,7 +758,7 @@ diamante_img = img_to_base64("Gremio_Diamante_Logotipo.png")
 
 
 
-file_path = "Skull_characteres.gif" #Para el gif
+file_path = "test_gif.gif" #Para el gif
 with open(file_path, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data).decode("utf-8")
@@ -853,13 +853,17 @@ components.html(
             margin-top: 12px;
             font-size: 14px;
         ">
-            {porcentaje}% completado — cada aporte es de gran ayuda
+            {porcentaje}% completado — cada aporte fue de gran ayuda
         </p>
 
                 <!-- GIF -->
         <img src="data:image/gif;base64,{encoded}" alt="gif animado"
              width="250" height="250" />
 
+
+             <div style="text-align:center;">
+      <strong style="color:#ffffff;">¡Gracias!</strong><br><strong style="color:#fff;">Logramos Llegar a Rango Diamante esta Temporada</strong>
+    </div>
 
 
     </div>
@@ -1885,99 +1889,11 @@ components.html(
             font-size:16px;
             line-height:1.6;
         ">
-            ¡Ha vuelto! Así es, me refiero a que ha vuelto 
-            el jefe de inmortales <strong>Critty Kitty</strong> 
-            a esta temporada de Gremios. Para muchos, la temporada 
-            más esperada y divertida de todas. Es solo en esta 
-            época en la que podemos hacer un verdadero daño exponencial... 
-            las expectativas se elevan y la emoción crece. ¿Te interesa saber más?
-            Si no conoces estas técnicas puedes ver los siguientes videos 
-            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!! 
-            Video creado por: <strong>Skullgirls | Garzas Negras (Chvcho)</strong> 🧡
-        </p>
-
-        <div style="
-            display:flex;
-            justify-content:center;
-            margin-bottom:40px;
-        ">
-            <div style="
-                border:4px solid #ff4b4b;
-                border-radius:16px;
-                padding:10px;
-                max-width:900px;
-                width:100%;
-                box-shadow:0 0 20px rgba(255,75,75,0.6);
-            ">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/VAL9efW_hHY"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="border-radius:12px;"
-                ></iframe>
-            </div>
-        </div>
-
-        <p style="
-            color:#cccccc;
-            max-width:800px;
-            margin:0 auto 30px auto;
-            font-size:16px;
-            line-height:1.6;
-        ">
-            Para llegar a la cima primero debes conocer tu terreno. 
-            Si quieres hacer un verdadero daño exponencial, primero debes 
-            de conocer las técnicas y modificadores para aplicar 
-            en batalla. Si en verdad quieres conocer las ventajas de estos 
-            modificadores, puedes conocer más aquí... 
-            Video creado por: <strong>SiennaConHielo</strong> 💜
-        </p>
-
-        <div style="
-            display:flex;
-            justify-content:center;
-            margin-bottom:40px;
-        ">
-            <div style="
-                border:4px solid #ff4b4b;
-                border-radius:16px;
-                padding:10px;
-                max-width:900px;
-                width:100%;
-                box-shadow:0 0 20px rgba(255,75,75,0.6);
-            ">
-                <iframe
-                    width="100%"
-                    height="500"
-                    src="https://www.youtube.com/embed/p4oruz478C8"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="border-radius:12px;"
-                ></iframe>
-            </div>
-        </div>
-
-        <p style="
-            color:#cccccc;
-            max-width:800px;
-            margin:0 auto 30px auto;
-            font-size:16px;
-            line-height:1.6;
-        ">
-            Todos coincidimos en una cosa, y esa es que 
-            el equipo definitivo es este. Las Painwheel son la 
-            verdadera clave para hacer un daño exponencial, esto 
-            debido a sus modificadores y por sus combos de 
-            muchos golpes. Además, de ser una variante que tiene 
-            Blockbusters que conectan de maravilla y recargan 
-            realmente rápido. Si no me crees, observa estas jugadas 
-            que reflejan el valor real de una buena estrategia. 
+            Tenemos de vuelta al jefe más molesto y desafiante de todos, 
+            debido a sus modificadores. Estos son complejos y requieren 
+            técnicas específicas para destacar en daño. ¿Te interesa saber más?  
+            Si no conoces estas técnicas puedes ver los siguientes videos  
+            por distintos creadores (con respectivos créditos) para practicar, buena suerte!!!
             Video creado por: <strong>AlannAx</strong> 💚
         </p>
 
@@ -1997,7 +1913,82 @@ components.html(
                 <iframe
                     width="100%"
                     height="500"
-                    src="https://www.youtube.com/embed/Xfkj03jsJzY"
+                    src="https://www.youtube.com/embed/EsdLZ80r1cE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            ¿Quieres más Variedad de equipos? 
+            Video creado por: <strong>Deny17S</strong>🖤
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/VGm-StKu0Kk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="border-radius:12px;"
+                ></iframe>
+            </div>
+        </div>
+
+        <p style="
+            color:#cccccc;
+            max-width:800px;
+            margin:0 auto 30px auto;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            ¿Recuerdas esta loca jugada? Te recuerdo que ya ha sido parcheado, pero 
+            fue divertido mientras duró.
+            Video creado por: <strong>RodirKW</strong> 🤍
+        </p>
+
+        <div style="
+            display:flex;
+            justify-content:center;
+            margin-bottom:40px;
+        ">
+            <div style="
+                border:4px solid #ff4b4b;
+                border-radius:16px;
+                padding:10px;
+                max-width:900px;
+                width:100%;
+                box-shadow:0 0 20px rgba(255,75,75,0.6);
+            ">
+                <iframe
+                    width="100%"
+                    height="500"
+                    src="https://www.youtube.com/embed/tVqGYTvZyn8"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -2010,7 +2001,7 @@ components.html(
 
     </div>
     """,
-    height=2630
+    height=2330
 
 )
 
@@ -2149,18 +2140,18 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col1:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_1.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO GRADUAL</div>", unsafe_allow_html=True)
+    st.image("carta_fukua.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col2:
-    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTES</div>", unsafe_allow_html=True)
-    st.image("Atacantes.png", use_container_width=True)
+    st.markdown("<div class='card-container card-main'><div class='card-caption'>ATACANTE/DAÑO ESTRATÉGICO</div>", unsafe_allow_html=True)
+    st.image("carta_annie_marcada.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col3:
-    st.markdown("<div class='card-container'><div class='card-caption'>SOPORTES</div>", unsafe_allow_html=True)
-    st.image("Soportes_2.png", use_container_width=True)
+    st.markdown("<div class='card-container'><div class='card-caption'>ATACANTE/DAÑO BRUTO</div>", unsafe_allow_html=True)
+    st.image("carta_beowulf.png", use_container_width=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -2416,7 +2407,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img7}">
-  <span>AlejandroUkyo</span>
+  <span>black lagoon69</span>
 </div>
 
 <div class="dev-card">
@@ -2451,12 +2442,12 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img14}">
-  <span>shotito_todoroki</span>
+  <span>KilLeo0217</span>
 </div>
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img15}">
-  <span>black lagoon69</span>
+  <span>AlejandroUkyo</span>
 </div>
 
 <div class="dev-card">
@@ -2476,7 +2467,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img19}">
-  <span>KilLeo0217</span>
+  <span>shotito_todoroki</span>
 </div>
 
 <div class="dev-card">
@@ -2586,8 +2577,8 @@ def img_base64(path):
 # Lista de nuevos miembros (nombre + imagen)
 nuevos_miembros = [
 
-    {"nombre": "AlejandroUkyo", "imagen": "7.png"},
-    {"nombre": "shotito_todoroki", "imagen": "14.png"},
+    {"nombre": "AlejandroUkyo", "imagen": "15.png"},
+    {"nombre": "shotito_todoroki", "imagen": "19.png"},
     {"nombre": "monkey D. tenshi", "imagen": "25.png"},
     {"nombre": "Catering miau", "imagen": "26.png"},
     {"nombre": "haruko ICSN", "imagen": "28.png"},
@@ -3033,7 +3024,7 @@ import base64
 import streamlit as st
 
 # 🔢 Cambia SOLO este nombre cada día
-nombre_imagen = "skull_meme_49.png"
+nombre_imagen = "skull_meme_50.png"
 
 try:
     with open(nombre_imagen, "rb") as img_file:
@@ -3085,7 +3076,7 @@ try:
             text-align:center;
             font-style:italic;
         ">
-            mi situación actual: 
+            xd
         </p>
 
     </div>
