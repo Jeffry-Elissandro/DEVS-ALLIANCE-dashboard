@@ -8,7 +8,7 @@ if "mostrar_nota" not in st.session_state: #DOKI THEME PATH: C:\Users\CompuFire\
 
 import streamlit as st
 
-WEB_TESTING = False
+WEB_TESTING = True
 
 def show_testing_badge():
     st.markdown("""
@@ -258,11 +258,7 @@ st.write("CREATED BY CHESSDEV")
 if st.session_state.mostrar_nota:
     st.warning(
         "📢 NOTA IMPORTANTE:\n\n"
-    "Bienvenido a la web Oficial del gremio, aquí encontrarás más, "
-    "información, noticias, reglas y multimedias interesantes.\n"
-    "La web está diseñada principalmente para PC, la compatibilidad "
-    "con móviles sigue en trabajo. Todas las noticias o avisos serán "
-     "informados por aquí. Ante dudas no temas en preguntar.\n" 
+    "ACTUALIZACIÓN 2.0 EN PROGRESO..."
     )
     if st.button("Entendido"):
         st.session_state.mostrar_nota = False
