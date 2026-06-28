@@ -735,7 +735,7 @@ st.divider()
 # PROGRESO HACIA DIAMANTE
 # ============================
 
-puntaje_actual = 17170   # Oro actual
+puntaje_actual = 17380   # Oro actual
 puntaje_meta = 16000     # Diamante
 
 porcentaje = int((puntaje_actual / puntaje_meta) * 100)
@@ -2304,13 +2304,13 @@ img19 = img_base64("19.png")
 img20 = img_base64("20.png")
 img21 = img_base64("21.png")
 img22 = img_base64("22.png")
-img23 = img_base64("Imagen_para_testeos.png")
+img23 = img_base64("23.png")
 img24 = img_base64("24.png")
 img25 = img_base64("25.png")
 img26 = img_base64("26.png")
 img27 = img_base64("27.png")
 img28 = img_base64("28.png")
-img29 = img_base64("29.png")
+img29 = img_base64("Imagen_para_testeos.png")
 img30 = img_base64("30.png")
 
 st.markdown(f"""
@@ -2487,7 +2487,7 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img23}">
-  <span>DISPONIBLE</span>
+  <span>Somblast</span>
 </div>
 
 <div class="dev-card">
@@ -2512,16 +2512,16 @@ gap:14px;
 
 <div class="dev-card">
   <img src="data:image/png;base64,{img28}"> 
-  <span>haruko ICSN</span>
+  <span>YADIERJM</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img23}">
+  <img src="data:image/png;base64,{img29}">
   <span>DISPONIBLE</span>
 </div>
 
 <div class="dev-card">
-  <img src="data:image/png;base64,{img23}">
+  <img src="data:image/png;base64,{img29}">
   <span>DISPONIBLE</span>
 </div>
 
@@ -2581,7 +2581,8 @@ nuevos_miembros = [
     {"nombre": "shotito_todoroki", "imagen": "19.png"},
     {"nombre": "monkey D. tenshi", "imagen": "25.png"},
     {"nombre": "Catering miau", "imagen": "26.png"},
-    {"nombre": "haruko ICSN", "imagen": "28.png"},
+    {"nombre": "Somblast", "imagen": "23.png"},
+    {"nombre": "YADIERJM", "imagen": "28.png"},
 ]
 
 
