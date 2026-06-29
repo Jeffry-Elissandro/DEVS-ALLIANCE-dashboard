@@ -20,7 +20,7 @@ from pages import (
 )
 
 ROUTES = {
-    routes.LANDING: landing.render,
+    routes.LANDING: landing.render_page,
     routes.DASHBOARD: dashboard.render,
     routes.HOME: home.render,
     routes.LEGACY: legacy.render,
