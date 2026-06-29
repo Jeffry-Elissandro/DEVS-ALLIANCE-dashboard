@@ -1,23 +1,22 @@
-from components.hero.hero_card import (
-    open_hero_card,
-    close_hero_card,
-)
+import streamlit as st
 
-# from components.hero.hero_logo import render_logo
-# from components.hero.hero_title import render_title
-# from components.hero.hero_quote import render_quote
-# from components.hero.hero_info import render_info
-# from components.hero.hero_button import render_start_button
+from components.hero.hero_title import render_title
 
 
 def render() -> None:
+    """
+    Renderiza la Hero completa.
+    """
 
-    open_hero_card()
+    html = f"""
+    <div class="hero-card">
 
-    # render_logo()
-    # render_title()
-    # render_quote()
-    # render_info()
-    # render_start_button()
+        {render_title()}
 
-    close_hero_card()
+    </div>
+    """
+
+    st.markdown(
+        html,
+        unsafe_allow_html=True,
+    )

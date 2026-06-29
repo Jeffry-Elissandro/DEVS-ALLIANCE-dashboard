@@ -2,22 +2,20 @@
 components/hero/hero_title.py
 """
 
-import streamlit as st
 
+def render_title() -> str:
+    """
+    Devuelve el HTML del título principal.
+    """
 
-def render_title() -> None:
+    return """
+    <div class="title-container">
 
-    st.markdown(
-        """
-        <div class="title-container">
+        <h1>DEV'S ALLIANCE</h1>
 
-            <h1>DEV'S ALLIANCE</h1>
+        <p class="subtitle">
+            Comunidad Oficial del Gremio
+        </p>
 
-            <p class="subtitle">
-                Comunidad Oficial del Gremio
-            </p>
-
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    </div>
+    """
