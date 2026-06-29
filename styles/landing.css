@@ -1,0 +1,23 @@
+:root {
+  --bg: #0a0a23;
+
+  --glass: rgba(255, 255, 255, 0.08);
+
+  --border: rgba(255, 255, 255, 0.15);
+
+  --text: #ffffff;
+
+  --muted: rgba(255, 255, 255, 0.75);
+
+  --purple: #8a2be2;
+
+  --blue: #00bfff;
+}
+
+body {
+  min-height: 100vh;
+
+  color: var(--text);
+
+  background: var(--bg);
+}

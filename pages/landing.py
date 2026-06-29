@@ -4,25 +4,28 @@ pages/landing.py
 Página de bienvenida de DEV'S ALLIANCE.
 """
 
-from styles.landing import load_landing_styles
+from utils.css_loader import load_css_files
 
 from components.background.gradients import render_gradient_background
 from components.background.stars import render_star_background
 
-from components.hero.hero import render_hero
+from components.hero.hero import render
 
 
-def render() -> None:
+def render_page() -> None:
     """
-    Renderiza la página de bienvenida.
+    Renderiza la Landing.
     """
 
-    # Cargar estilos
-    load_landing_styles()
+    load_css_files(
+        "styles/global.css",
+        "styles/landing.css",
+        "styles/landing_components.css",
+        "styles/landing_animations.css",
+    )
 
-    # Fondo
     render_gradient_background()
+
     render_star_background()
 
-    # Hero principal
-    render_hero()
+    render()

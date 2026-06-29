@@ -10,7 +10,7 @@ from components.hero.hero_info import render_info
 from components.hero.hero_button import render_start_button
 
 
-def render_hero() -> None:
+def render() -> None:
     """
     Renderiza la Hero Section completa.
     """

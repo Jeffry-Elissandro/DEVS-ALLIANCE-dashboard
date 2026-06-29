@@ -1,0 +1,19 @@
+/* ===========================
+   RESET GENERAL
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
