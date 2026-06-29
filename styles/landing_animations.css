@@ -1,0 +1,78 @@
+/* ==========================
+   STAR BACKGROUND
+========================== */
+
+#star-container {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: -1;
+
+  overflow: hidden;
+
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+
+  width: 2px;
+
+  height: 2px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  opacity: 0.7;
+
+  animation: twinkle 4s infinite ease-in-out;
+}
+
+/* Distribución pseudoaleatoria */
+
+.star:nth-child(3n) {
+  left: 15%;
+
+  top: 20%;
+}
+
+.star:nth-child(5n) {
+  left: 40%;
+
+  top: 75%;
+}
+
+.star:nth-child(7n) {
+  left: 70%;
+
+  top: 15%;
+}
+
+.star:nth-child(11n) {
+  left: 90%;
+
+  top: 45%;
+}
+
+.star:nth-child(13n) {
+  left: 55%;
+
+  top: 60%;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+
+    transform: scale(1.6);
+  }
+}
