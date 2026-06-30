@@ -23,18 +23,56 @@ def main() -> None:
 
     # Mostrar imagen y descripción
     st.markdown(
-        f"""
-        <div style="text-align:center; margin-bottom:20px;">
-            <img src="data:image/png;base64,{img_base64}" width="180">
-            <p style="font-size:18px; color:#666;">
-                <b>En Desarrollo...</b> Página Web en mantenimiento. 
-                Reestructuración completa del código fuente y nuevo servicio de hosting. 
-                <b>(Update V10.62)</b>
-            </p>
+    f"""
+    <style>
+        .container {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+            text-align: center;
+        }}
+
+        .responsive-img {{
+            width: 90%;
+            max-width: 900px;
+            height: auto;
+        }}
+
+        .description {{
+            margin-top: 25px;
+            font-size: clamp(16px, 2vw, 24px);
+            color: #666;
+            max-width: 900px;
+            line-height: 1.6;
+        }}
+
+        @media (max-width: 768px) {{
+            .responsive-img {{
+                width: 100%;
+            }}
+
+            .description {{
+                font-size: 16px;
+                padding: 0 10px;
+            }}
+        }}
+    </style>
+
+    <div class="container">
+        <img class="responsive-img"
+             src="data:image/png;base64,{img_base64}">
+        <div class="description">
+            <b>En Desarrollo...</b><br>
+            Página Web en mantenimiento.<br>
+            Reestructuración completa del código fuente y nuevo servicio de hosting.<br>
+            <b>(Update V10.62)</b>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
     render(app_state.current_page)
 
